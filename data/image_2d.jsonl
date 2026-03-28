@@ -1,0 +1,40 @@
+# controllable-generation
+{"id":"precisecam","title":"PreciseCam: Precise Camera Control for Text-to-Image Generation","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text","camera"],"open_source":true}
+{"id":"type-r","title":"Type-R: Automatically Retouching Typos for Text-to-Image Generation","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"compass-control","title":"Compass Control: Multi Object Orientation Control for Text-to-Image Generation","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"generative-photography","title":"Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text","camera"],"open_source":true}
+{"id":"make-it-count","title":"Make It Count: Text-to-Image Generation with an Accurate Number of Objects","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"mccd","title":"MCCD: Multi-Agent Collaboration-based Compositional Diffusion for Complex Text-to-Image Generation","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion","llm-agent"],"conditioning":["text"],"open_source":false}
+{"id":"shapewords","title":"ShapeWords: Guiding Text-to-Image Synthesis with 3D Shape-Aware Prompts","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"focus-n-fix","title":"Focus-N-Fix: Region-Aware Fine-Tuning for Text-to-Image Generation","venue":"CVPR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"silmm","title":"SILMM: Self-Improving Large Multimodal Models for Compositional Text-to-Image Generation","venue":"CVPR 2025","task":"controllable-generation","method":["transformer"],"conditioning":["text"],"open_source":false}
+{"id":"progressive-compositionality","title":"Progressive Compositionality in Text-to-Image Generative Models","venue":"ICLR 2025","task":"controllable-generation","method":["diffusion"],"conditioning":["text"],"open_source":false}
+
+# alignment-safety
+{"id":"text-embedding-not-all-you-need","title":"Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps","venue":"CVPR 2025","task":"alignment-safety","method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"dual-space-concept-control","title":"Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control","venue":"CVPR 2025","task":"alignment-safety","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"noise-diffusion","title":"Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis","venue":"CVPR 2025","task":"alignment-safety","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"improving-long-text-alignment","title":"Improving Long-Text Alignment for Text-to-Image Diffusion Models","venue":"ICLR 2025","task":"alignment-safety","method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"information-theoretic-t2i-alignment","title":"Information Theoretic Text-to-Image Alignment","venue":"ICLR 2025","task":"alignment-safety","method":["diffusion"],"conditioning":["text"],"open_source":false}
+
+# personalization
+{"id":"para","title":"PaRa: Personalizing Text-to-Image Diffusion via Parameter Rank Reduction","venue":"ICLR 2025","task":"personalization","method":["diffusion"],"conditioning":["text","image"],"open_source":false}
+
+# model-efficiency
+{"id":"one-way-ticket","title":"One-Way Ticket: Time-Independent Unified Encoder for Distilling Text-to-Image Diffusion Models","venue":"CVPR 2025","task":"model-efficiency","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"snapgen","title":"SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training","venue":"CVPR 2025","task":"model-efficiency","method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"scaling-down-text-encoders","title":"Scaling Down Text Encoders of Text-to-Image Diffusion Models","venue":"CVPR 2025","task":"model-efficiency","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"speculative-jacobi-t2i","title":"Accelerating Auto-regressive Text-to-Image Generation with Training-free Speculative Jacobi Decoding","venue":"ICLR 2025","task":"model-efficiency","method":["autoregressive"],"conditioning":["text"],"open_source":false}
+{"id":"pt-t2iv","title":"PT-T2I/V: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Image/Video-Task","venue":"ICLR 2025","task":"model-efficiency","method":["diffusion","transformer"],"conditioning":["text"],"open_source":false}
+{"id":"ifsq","title":"iFSQ: Improving FSQ for Image Generation with 1 Line of Code","venue":"arXiv 2026","task":"model-efficiency","method":["autoregressive","diffusion"],"conditioning":["text"],"open_source":true,"summary":"用极简量化改动统一比较 AR 与 diffusion 图像生成，是离散/连续表征交界处很值得收录的工作。","paper":"https://arxiv.org/abs/2601.17124","repo":"https://github.com/Tencent-Hunyuan/iFSQ"}
+
+# text-to-image
+{"id":"meissonic","title":"Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis","venue":"ICLR 2025","task":"text-to-image","method":["transformer"],"conditioning":["text"],"open_source":false}
+{"id":"fluid","title":"Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens","venue":"ICLR 2025","task":"text-to-image","method":["autoregressive"],"conditioning":["text"],"open_source":false}
+{"id":"denoising-autoregressive-transformers","title":"Denoising Autoregressive Transformers for Scalable Text-to-Image Generation","venue":"ICLR 2025","task":"text-to-image","method":["autoregressive","diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"one-prompt-one-story","title":"One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt","venue":"ICLR 2025","task":"text-to-image","method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"tiger","title":"TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models","venue":"ICLR 2025","task":"text-to-image","method":["transformer"],"conditioning":["text"],"open_source":false}
+{"id":"sana","title":"SANA: Efficient High-Resolution Text-to-Image Synthesis with Linear Diffusion Transformers","venue":"ICLR 2025","task":"text-to-image","method":["diffusion","transformer"],"conditioning":["text"],"open_source":false}
+{"id":"rectified-flow-priors-t2i","title":"Text-to-Image Rectified Flow as Plug-and-Play Priors","venue":"ICLR 2025","task":"text-to-image","method":["rectified-flow"],"conditioning":["text"],"open_source":false}
+{"id":"d-ar","title":"D-AR: Diffusion via Autoregressive Models","venue":"arXiv 2025","task":"text-to-image","method":["autoregressive","diffusion"],"conditioning":["text"],"open_source":true,"summary":"把扩散过程改写成标准 next-token 生成，是 diffusion 与 AR 融合路线的代表作。","paper":"https://arxiv.org/abs/2505.23660","repo":"https://github.com/showlab/D-AR"}
+{"id":"lina","title":"LINA: Linear Autoregressive Image Generative Models with Continuous Tokens","venue":"arXiv 2026","task":"text-to-image","method":["autoregressive","transformer"],"conditioning":["text"],"open_source":true,"summary":"用 linear attention 做高效 T2I，是 2026 年初非常值得跟踪的 AR 图像生成工作。","paper":"https://arxiv.org/abs/2601.22630","repo":"https://github.com/techmonsterwang/LINA"}

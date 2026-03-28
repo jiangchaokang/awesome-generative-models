@@ -1,0 +1,45 @@
+# text-to-video
+{"id":"rapo","title":"RAPO: The Devil is in the Prompts: Retrieval-Augmented Prompt Optimization for Text-to-Video Generation","venue":"CVPR 2025","task":"text-to-video","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"bytheway","title":"ByTheWay: Boost Your Text-to-Video Generation Model to Higher Quality in a Training-free Way","venue":"CVPR 2025","task":"text-to-video","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"consistid","title":"ConsistID: Identity-Preserving Text-to-Video Generation by Frequency Decomposition","venue":"CVPR 2025","task":"text-to-video","domain":["human-avatar"],"method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"eidt-v","title":"EIDT-V: Exploiting Intersections in Diffusion Trajectories for Model-Agnostic, Zero-Shot, Training-Free Text-to-Video Generation","venue":"CVPR 2025","task":"text-to-video","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"transpixeler","title":"TransPixeler: Advancing Text-to-Video Generation with Transparency","venue":"CVPR 2025","task":"text-to-video","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"phyt2v","title":"PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation","venue":"CVPR 2025","task":"text-to-video","method":["diffusion","llm-agent"],"conditioning":["text"],"open_source":true}
+{"id":"instancecap","title":"InstanceCap: Improving Text-to-Video Generation via Instance-aware Structured Caption","venue":"CVPR 2025","task":"text-to-video","method":["diffusion"],"conditioning":["text"],"open_source":true}
+{"id":"blobgen-vid","title":"BlobGEN-Vid: Compositional Text-to-Video Generation with Blob Video Representations","venue":"CVPR 2025","task":"text-to-video","representation":["video-latent"],"method":["diffusion"],"conditioning":["text"],"open_source":false}
+{"id":"lingen","title":"LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity","venue":"CVPR 2025","task":"long-video","method":["diffusion","transformer"],"conditioning":["text"],"open_source":false}
+
+# image-to-video
+{"id":"motionstone","title":"MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation","venue":"CVPR 2025","task":"image-to-video","method":["diffusion","transformer"],"conditioning":["image"],"open_source":false}
+{"id":"motionpro","title":"MotionPro: A Precise Motion Controller for Image-to-Video Generation","venue":"CVPR 2025","task":"image-to-video","method":["diffusion"],"conditioning":["image","motion"],"open_source":true}
+{"id":"through-the-mask","title":"Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation","venue":"CVPR 2025","task":"image-to-video","method":["diffusion"],"conditioning":["image","mask"],"open_source":false}
+{"id":"anyi2v","title":"AnyI2V: Animating Any Conditional Image with Motion Control","venue":"ICCV 2025","task":"image-to-video","method":["diffusion"],"conditioning":["image","motion"],"open_source":true}
+{"id":"sg-i2v","title":"SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation","venue":"ICLR 2025","task":"image-to-video","method":["diffusion"],"conditioning":["image","trajectory"],"open_source":true}
+{"id":"pyramidal-flow-matching","title":"Pyramidal Flow Matching for Efficient Video Generative Modeling","venue":"ICLR 2025","task":"image-to-video","method":["flow-matching"],"conditioning":["image"],"open_source":true}
+
+# video-editing
+{"id":"videodirector","title":"VideoDirector: Precise Video Editing via Text-to-Video Models","venue":"CVPR 2025","task":"video-editing","method":["diffusion"],"conditioning":["video","text"],"open_source":true}
+{"id":"videomage","title":"VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models","venue":"CVPR 2025","task":"video-editing","method":["diffusion"],"conditioning":["video","text"],"open_source":false}
+{"id":"sketchvideo","title":"SketchVideo: Sketch-based Video Generation and Editing","venue":"CVPR 2025","task":"video-editing","method":["diffusion"],"conditioning":["video","sketch"],"open_source":true}
+{"id":"h-edit","title":"h-Edit: Effective and Flexible Diffusion-Based Editing via Doob's h-Transform","venue":"CVPR 2025","task":"video-editing","method":["diffusion"],"conditioning":["video","text"],"open_source":true}
+{"id":"vace","title":"VACE: All-in-One Video Creation and Editing","venue":"ICCV 2025","task":"video-editing","method":["diffusion"],"conditioning":["video","text"],"open_source":true}
+
+# human-animation
+{"id":"x-dyna","title":"X-Dyna: Expressive Dynamic Human Image Animation","venue":"CVPR 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion"],"conditioning":["image","pose"],"open_source":true}
+{"id":"stableanimator","title":"StableAnimator: High-Quality Identity-Preserving Human Image Animation","venue":"CVPR 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion"],"conditioning":["image","pose"],"open_source":true}
+{"id":"dreamactor-m1","title":"DreamActor-M1: Holistic, Expressive and Robust Human Image Animation with Hybrid Guidance","venue":"ICCV 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion"],"conditioning":["image","pose"],"open_source":false}
+{"id":"animate-anyone-2","title":"Animate Anyone 2: High-Fidelity Character Image Animation with Environment Affordance","venue":"ICCV 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion"],"conditioning":["image","pose"],"open_source":true}
+{"id":"omnihuman-1","title":"OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models","venue":"ICCV 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion"],"conditioning":["image","pose"],"open_source":false}
+{"id":"animate-x","title":"Animate-X: Universal Character Image Animation with Enhanced Motion Representation","venue":"ICLR 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion"],"conditioning":["image","pose"],"open_source":true}
+{"id":"egocontrol","title":"EgoControl: Controllable Egocentric Video Generation via 3D Full-Body Poses","venue":"arXiv 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion"],"conditioning":["pose"],"open_source":true}
+{"id":"unianimate-dit","title":"UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer","venue":"arXiv 2025","task":"human-animation","domain":["human-avatar"],"method":["diffusion","transformer"],"conditioning":["image","pose"],"open_source":true}
+
+# long-video
+{"id":"minute-long-videos-dual-parallelisms","title":"Minute-Long Videos with Dual Parallelisms","venue":"AAAI 2026","task":"long-video","method":["diffusion","transformer"],"conditioning":["text"],"open_source":true}
+
+# autonomous-driving-video
+{"id":"drivedreamer-2","title":"DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation","venue":"AAAI 2025","task":"autonomous-driving-video","domain":["autonomous-driving"],"method":["diffusion","llm-agent"],"conditioning":["text","trajectory"],"open_source":true}
+{"id":"streetcrafter","title":"StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models","venue":"CVPR 2025","task":"autonomous-driving-video","domain":["autonomous-driving"],"method":["diffusion"],"conditioning":["trajectory","camera"],"open_source":true}
+{"id":"drivescape","title":"DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation","venue":"CVPR 2025","task":"autonomous-driving-video","domain":["autonomous-driving"],"method":["diffusion"],"conditioning":["camera","trajectory"],"open_source":false}
+{"id":"magicdrive-v2","title":"MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control","venue":"ICCV 2025","task":"autonomous-driving-video","domain":["autonomous-driving"],"method":["diffusion"],"conditioning":["trajectory","camera"],"open_source":true}
+{"id":"cogen","title":"CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving","venue":"arXiv 2025","task":"autonomous-driving-video","domain":["autonomous-driving"],"method":["diffusion"],"conditioning":["video","trajectory"],"open_source":false}

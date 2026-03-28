@@ -2,175 +2,181 @@
 
 <div align="center">
 
-# 🚀 Awesome Generative Models
+# ✨ Awesome Generative Models
 
-**A curated, continuously-updated collection of state-of-the-art generative models**
-**for images, videos, 3D objects, 3D scenes, and 4D dynamic worlds.**
+**A rigorously curated, English-only catalog of recent generative-model work**
+**for images, videos, 3D assets, 3D scenes, and 4D dynamic worlds.**
 
-![Awesome](https://img.shields.io/badge/Awesome-Generative_Models-FC60A8?style=for-the-badge&logo=awesomelists&logoColor=white)
-![Papers](https://img.shields.io/badge/Papers-190-blue?style=for-the-badge)
-![Open Source](https://img.shields.io/badge/Open_Source-127-brightgreen?style=for-the-badge)
-![Topics](https://img.shields.io/badge/Topics-6-orange?style=for-the-badge)
-![Updated](https://img.shields.io/badge/Updated-2025%2F2026-informational?style=for-the-badge)
+![Papers: 199](https://img.shields.io/badge/Papers-199-2563EB?style=for-the-badge&logo=googlescholar)
+![Open Source: 47](https://img.shields.io/badge/Open%20Source-47-16A34A?style=for-the-badge&logo=opensourceinitiative)
+![Scope: 2025+](https://img.shields.io/badge/Scope-2025%2B-0EA5E9?style=for-the-badge)
+![Links: Exact Only](https://img.shields.io/badge/Links-Exact%20Only-B31B1B?style=for-the-badge&logo=link)
+![Review: Human Curated](https://img.shields.io/badge/Review-Human%20Curated-7C3AED?style=for-the-badge&logo=github)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
-
-*Only works active or published since 2025 are tracked.*
+[![License: MIT](https://img.shields.io/badge/License-MIT-0F766E?style=flat-square)](LICENSE)
+[[![Contributing: PRs Welcome](https://img.shields.io/badge/Contributing-PRs%20Welcome-2563EB?style=flat-square&logo=github)](CONTRIBUTING.md)]
+[[![Daily Candidates: Inbox](https://img.shields.io/badge/Daily%20Candidates-Inbox-EA580C?style=flat-square&logo=githubactions)](metadata/candidates/latest.md)]
 
 </div>
 
 ---
 
-## ⭐ Featured & Highlighted Works
+## Why this repository is different
 
-| Title | Category | Venue | Tags | Links |
-|:------|:---------|:------|:-----|:------|
-| **Generative Modeling via Drifting** | 🖼️ image-2d | `arXiv 2026` | `drifting` `open-source` | [Paper](https://arxiv.org/abs/2602.04770) / [Code](https://github.com/search?q=Generative%20Modeling%20via%20Drifting&type=repositories) |
-| **Mean Flows for One-step Generative Modeling** | 🖼️ image-2d | `NeurIPS 2025` | `flow` `open-source` | [Paper](https://arxiv.org/abs/2505.13447) / [Code](https://github.com/gengzhengyang/meanflow) |
-| **Cosmos World Foundation Model Platform for Physical AI** | 🌍 4d-dynamic-scene-world | `arXiv 2025` | `diffusion` `autoregressive` `world-latent` `video-latent` `open-source` | [Paper](https://arxiv.org/abs/2501.03575) / [Code](https://github.com/nvidia-cosmos) |
-| **FLUX.1: Scalable Rectified Flow Transformers for High-Resolution Image Synthesis** | 🖼️ image-2d | `arXiv 2025` | `rectified-flow` `transformer` `open-source` | [Paper](https://arxiv.org/abs/2403.03206) / [Code](https://github.com/black-forest-labs/flux) |
-| **Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation** | 🧊 3d-object-asset | `arXiv 2025` | `diffusion` `transformer` `mesh` `open-source` | [Paper](https://arxiv.org/abs/2501.12202) / [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |
-| **HunyuanVideo: A Systematic Framework for Large Video Generation Models** | 🎬 video | `arXiv 2025` | `diffusion` `transformer` `open-source` | [Paper](https://arxiv.org/abs/2412.03603) / [Code](https://github.com/Tencent/HunyuanVideo) |
-| **HY-World 1.5 (WorldPlay): A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency** | 🌍 4d-dynamic-scene-world | `arXiv 2025` | `diffusion` `world-model` `world-latent` `open-source` | [Paper](https://arxiv.org/abs/2512.14614) / [Code](https://github.com/Tencent-Hunyuan/HY-WorldPlay) |
-| **Improved Mean Flows: On the Challenges of Fastforward Generative Models** | 🖼️ image-2d | `arXiv 2025` | `flow` `open-source` | [Paper](https://arxiv.org/abs/2512.02012) / [Code](https://github.com/search?q=Improved%20Mean%20Flows%3A%20On%20the%20Challenges%20of%20Fastforward%20Generative%20Models&type=repositories) |
-| **Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model** | 🎬 video | `arXiv 2025` | `diffusion` `transformer` | [Paper](https://arxiv.org/abs/2504.08685) |
-| **VACE: All-in-One Video Creation and Editing (Wan2.1-VACE)** | 🎬 video | `arXiv 2025` | `diffusion` `transformer` `open-source` | [Paper](https://arxiv.org/abs/2503.07598) / [Code](https://github.com/ali-vilab/VACE) |
-| **Wan 2.1: Open-Source Video Foundation Model** | 🎬 video | `arXiv 2025` | `diffusion` `transformer` `open-source` | [Paper](https://arxiv.org/abs/2503.20314) / [Code](https://github.com/Wan-Video/Wan2.1) |
+- **Taxonomy does not mix axes.** Primary artifact decides the home page; domain / method / representation / conditioning / orgs are metadata.
+- **Public links are exact.** No search-result links are surfaced as if they were canonical paper or code URLs.
+- **Daily harvesting is separate from final inclusion.** Candidates go into a review inbox; accepted entries are merged manually.
+- **Pages are generated, not hand-edited.** The repo stays consistent as it grows.
 
----
+## Browse the Catalog
 
-## 📂 Directory Structure
+| Directory | Focus | Count |
+|:--|:--|--:|
+| [00-surveys-and-foundations](00-surveys-and-foundations/README.md) | Surveys, policy, and taxonomy | — |
+| [10-image-2d](10-image-2d/README.md) | Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference. | 54 |
+| [20-video](20-video/README.md) | Final output is a video: text-to-video, image-to-video, editing, human animation, long video, and surround-view video. | 49 |
+| [30-3d-object-asset](30-3d-object-asset/README.md) | Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation. | 38 |
+| [40-3d-scene](40-3d-scene/README.md) | Multi-object 3D scene generation, indoor/outdoor scenes, layout-conditioned scenes, and scene editing. | 36 |
+| [50-4d-dynamic-scene-world](50-4d-dynamic-scene-world/README.md) | Dynamic 3D/4D scenes, world models, simulation, autonomous driving, game worlds, and interactive world modeling. | 22 |
+| [90-topics](90-topics/README.md) | Cross-cutting domain pages | 7 |
+| [91-organizations](91-organizations/README.md) | Cross-cutting organization pages | 0 |
 
-| # | Directory | Focus | Count |
-|:-:|:----------|:------|------:|
-| 📚 | [00-surveys-and-foundations](00-surveys-and-foundations/README.md) | Surveys, taxonomy, maintenance policy | — |
-| 🖼️ | [10-image-2d](10-image-2d/README.md) | Final artifact is a single 2D image: T2I, controllable generation, editing, supe… | **38** |
-| 🎬 | [20-video](20-video/README.md) | Final artifact is a video or video edit: T2V, I2V, video editing, human animatio… | **43** |
-| 🧊 | [30-3d-object-asset](30-3d-object-asset/README.md) | Single-object 3D assets, reusable avatars, articulated / part-aware assets.… | **36** |
-| 🏙️ | [40-3d-scene](40-3d-scene/README.md) | Multi-object 3D scenes: indoor, outdoor-urban, explorable scenes, layout-guided … | **32** |
-| 🌍 | [50-4d-dynamic-scene-world](50-4d-dynamic-scene-world/README.md) | Explicit dynamic 3D/4D scenes, world models, simulation, autonomous driving, gam… | **41** |
-| 🏷️ | [90-topics](90-topics/README.md) | Cross-cutting topic pages | 57 tag hits |
+## Featured Radar
 
----
+### 🖼️ Image 2D
 
-## 🗂️ Taxonomy Overview
+### iFSQ: Improving FSQ for Image Generation with 1 Line of Code
 
-| Axis | Role | Examples |
-|:-----|:-----|:--------|
-| `primary_artifact` | **Top-level directory** | image-2d, video, 3d-object-asset, 3d-scene, 4d-dynamic-scene-world |
-| `task` | **Sub-page** | text-to-image, video-editing, autonomous-driving, 4d-generation |
-| `domain` | Topic page / tag | indoor, autonomous-driving, human-avatar, gameplay |
-| `representation` | Tag | mesh, point-cloud, occupancy, 3dgs, vector-graph |
-| `method` | Tag | diffusion, autoregressive, flow, world-model, llm-agent |
-| `conditioning` | Tag | text, image, video, camera, pose, action, trajectory |
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: model-efficiency](https://img.shields.io/badge/Task-model-efficiency-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Tencent-Hunyuan/iFSQ) [![GitHub: ★ 96](https://img.shields.io/badge/GitHub-%E2%98%85%2096-181717?style=flat-square&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
 
-**Key rules:** classify by *final artifact*; `domain / method / representation` are tags only; each paper appears exactly once.
+> A simple quantization improvement that makes FSQ stronger for high-quality image generation with minimal code changes.
 
----
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 96](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2096-181717?style=flat-square&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
 
-### 🖼️ [Image 2D](10-image-2d/README.md) (38 papers)
+### Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation
 
-| Task | # | Highlights |
-|:-----|--:|:-----------|
-| [text-to-image](10-image-2d/text-to-image.md) | 13 | LINA: Linear Autoregressive Image Genera, Denoising Autoregressive Transformers fo, Fluid: Scaling Autoregressive Text-to-im… |
-| [controllable-generation](10-image-2d/controllable-generation.md) | 10 | Compass Control: Multi Object Orientatio, Focus-N-Fix: Region-Aware Fine-Tuning fo, Generative Photography: Scene-Consistent… |
-| [model-efficiency](10-image-2d/model-efficiency.md) | 9 | Generative Modeling via Drifting, iFSQ: Improving FSQ for Image Generation, One-Way Ticket: Time-Independent Unified… |
-| [alignment-safety](10-image-2d/alignment-safety.md) | 5 | Noise Diffusion for Enhancing Semantic F, Plug-and-Play Interpretable Responsible , Text Embedding is Not All You Need: Atte… |
-| [personalization](10-image-2d/personalization.md) | 1 | PaRa: Personalizing Text-to-Image Diffus… |
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: controllable-generation](https://img.shields.io/badge/Task-controllable-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-### 🎬 [Video](20-video/README.md) (43 papers)
+> Uses agentic search over flow trajectories to improve spatial grounding for difficult compositional prompts.
 
-| Task | # | Highlights |
-|:-----|--:|:-----------|
-| [text-to-video](20-video/text-to-video.md) | 15 | BlobGEN-Vid: Compositional Text-to-Video, ByTheWay: Boost Your Text-to-Video Gener, ConsistID: Identity-Preserving Text-to-V… |
-| [human-animation](20-video/human-animation.md) | 9 | StableAnimator: High-Quality Identity-Pr, X-Dyna: Expressive Dynamic Human Image A, Animate Anyone 2: High-Fidelity Characte… |
-| [image-to-video](20-video/image-to-video.md) | 6 | MotionPro: A Precise Motion Controller f, MotionStone: Decoupled Motion Intensity , Through-The-Mask: Mask-based Motion Traj… |
-| [video-editing](20-video/video-editing.md) | 6 | h-Edit: Effective and Flexible Diffusion, SketchVideo: Sketch-based Video Generati, VideoDirector: Precise Video Editing via… |
-| [autonomous-driving-video](20-video/autonomous-driving-video.md) | 5 | DriveScape: Towards High-Resolution Cont, StreetCrafter: Street View Synthesis wit, MagicDrive-V2: High-Resolution Long Vide… |
-| [long-video](20-video/long-video.md) | 2 | Minute-Long Videos with Dual Parallelism, LinGen: Towards High-Resolution Minute-L… |
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.18627)
 
-### 🧊 [3D Object / Asset](30-3d-object-asset/README.md) (36 papers)
+### 🎬 Video
 
-| Task | # | Highlights |
-|:-----|--:|:-----------|
-| [3d-shape-generation](30-3d-object-asset/3d-shape-generation.md) | 17 | TRELLIS: Structured 3D Latents for Scala, LaGeM: A Large Geometry Model for 3D Rep, OctGPT: Octree-based Multiscale Autoregr… |
-| [image-to-3d](30-3d-object-asset/image-to-3d.md) | 6 | Fuse3D: Generating 3D Assets Controlled , InstantMesh: Efficient 3D Mesh Generatio, TripoSR: Fast 3D Object Reconstruction f… |
-| [part-aware-generation](30-3d-object-asset/part-aware-generation.md) | 6 | From One to More: Contextual Part Latent, Assembler: Scalable 3D Part Assembly via, Efficient Part-level 3D Object Generatio… |
-| [articulated-asset](30-3d-object-asset/articulated-asset.md) | 4 | MeshArt: Generating Articulated Meshes w, PrimitiveAnything: Human-Crafted 3D Prim, Articulate AnyMesh: Open-Vocabulary 3D A… |
-| [text-to-3d](30-3d-object-asset/text-to-3d.md) | 2 | AssetFormer: Modular 3D Assets Generatio, ITS3D: Inference-Time Scaling for Text-G… |
-| [human-avatar](30-3d-object-asset/human-avatar.md) | 1 | AdaHuman: Animatable Detailed 3D Human G… |
+### Anti-I2V: Safeguarding your photos from malicious image-to-video generation
 
-### 🏙️ [3D Scene](40-3d-scene/README.md) (32 papers)
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: image-to-video](https://img.shields.io/badge/Task-image-to-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-| Task | # | Highlights |
-|:-----|--:|:-----------|
-| [general-scene-generation](40-3d-scene/general-scene-generation.md) | 12 | GeoDiff3D: Self-Supervised 3D Scene Gene, LT3SD: Latent Trees for 3D Scene Diffusi, Prometheus: 3D-Aware Latent Diffusion Mo… |
-| [layout-to-scene](40-3d-scene/layout-to-scene.md) | 6 | SPATIALGEN: Layout-guided 3D Indoor Scen, LayoutVLM: Differentiable Optimization o, MesaTask: Towards Task-Driven Tabletop S… |
-| [agentic-scene-generation](40-3d-scene/agentic-scene-generation.md) | 5 | SceneWeaver: All-in-One 3D Scene Synthes, SceneX: Procedural Controllable Large-sc, 3D-GPT: Procedural 3D Modeling with Larg… |
-| [indoor](40-3d-scene/indoor.md) | 3 | Global-Local Tree Search in VLMs for 3D , Hierarchically-Structured Open-Vocabular, RoomCraft: Controllable and Complete 3D … |
-| [outdoor-urban](40-3d-scene/outdoor-urban.md) | 3 | NuiScene: Exploring Efficient Generation, MeSS: City Mesh-Guided Outdoor Scene Gen, SynCity: Training-Free Generation of 3D … |
-| [single-image-to-scene](40-3d-scene/single-image-to-scene.md) | 2 | WonderWorld: Interactive 3D Scene Genera, Bolt3D: Generating 3D Scenes in Seconds… |
-| [scene-editing](40-3d-scene/scene-editing.md) | 1 | ReSpace: Text-Driven 3D Scene Synthesis … |
+> A defensive method for protecting photos against misuse by malicious image-to-video generation systems.
 
-### 🌍 [4D Dynamic Scene / World](50-4d-dynamic-scene-world/README.md) (41 papers)
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.24570)
 
-| Task | # | Highlights |
-|:-----|--:|:-----------|
-| [autonomous-driving](50-4d-dynamic-scene-world/autonomous-driving.md) | 17 | Seeing the Future, Perceiving the Future, DriveWorld-VLA: Unified Latent-Space Wor, DynFlowDrive: Flow-Based Dynamic World M… |
-| [4d-generation](50-4d-dynamic-scene-world/4d-generation.md) | 11 | Captain Safari: A World Engine, PerpetualWonder: Long-Horizon Action-Con, FantasyWorld: Geometry-Consistent World … |
-| [game-worlds](50-4d-dynamic-scene-world/game-worlds.md) | 6 | GameFactory: Creating New Games with Gen, Diffusion Models Are Real-Time Game Engi, GameGen-X: Interactive Open-world Game V… |
-| [world-models](50-4d-dynamic-scene-world/world-models.md) | 4 | AdaWorld: Learning Adaptable World Model, Cosmos World Foundation Model Platform f, HY-World 1.5 (WorldPlay): A Systematic F… |
-| [simulation](50-4d-dynamic-scene-world/simulation.md) | 3 | DiffusionHarmonizer: Bridging Neural Rec, DrivingSphere: Building a High-fidelity , Waymax: An Accelerated, Data-Driven Simu… |
+### Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling
 
----
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-video](https://img.shields.io/badge/Task-text-to-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-## 🏷️ Topic Pages
+> A flow-based inference acceleration method with better data-noise coupling forl generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.15279)
+
+### 🧊 3D Object / Asset
+
+### AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Advocate99/AssetFormer) [![GitHub: ★ 33](https://img.shields.io/badge/GitHub-%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+
+> Targets modular assets directly with autoregressive generation over part-aware structures.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 33](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+
+### DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A collaborative latent-denoising framework for semantically grounded part-level 3D object generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19216)
+
+### 🏙️ 3D Scene
+
+### FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: indoor](https://img.shields.io/badge/Task-indoor-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A graph-based rectified-flow approach to style-consistent indoor scene generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19598)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A self-supervised 3D scene generator using coarse geometry anchors plus geometry-constrained 2D diffusion guidance.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.19785)
+
+### 🌍 4D Dynamic Scene / World
+
+### DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/liulin815/DriveWorld-VLA) [![GitHub: ★ 61](https://img.shields.io/badge/GitHub-%E2%98%85%2061-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
+
+> Deeply couples a VLA planner with a latent driving world model for planning-aware rollout.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.06521) [![Code: GitHub ★ 61](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2061-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/xiaolul2/DynFlowDrive) [![GitHub: ★ 15](https://img.shields.io/badge/GitHub-%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/xiaolul2/DynFlowDrive)
+
+> A flow-based latent dynamics model for action-conditioned autonomous-driving world simulation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19675) [![Code: GitHub ★ 15](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/xiaolul2/DynFlowDrive)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+## Topic Pages
 
 | Topic | Papers |
-|:------|-------:|
-| [autonomous-driving](90-topics/autonomous-driving.md) | 26 |
-| [human-avatar](90-topics/human-avatar.md) | 11 |
-| [indoor](90-topics/indoor.md) | 9 |
-| [gameplay](90-topics/gameplay.md) | 7 |
+|:--|--:|
+| [autonomous-driving](90-topics/autonomous-driving.md) | 18 |
+| [indoor](90-topics/indoor.md) | 10 |
+| [human-avatar](90-topics/human-avatar.md) | 9 |
+| [gameplay](90-topics/gameplay.md) | 5 |
 | [outdoor-urban](90-topics/outdoor-urban.md) | 3 |
+| [robotics](90-topics/robotics.md) | 1 |
 | [tabletop](90-topics/tabletop.md) | 1 |
 
----
+## Organization Pages
 
-## 📊 Statistics
+| Organization | Papers |
+|:--|--:|
+| _No organization metadata yet_ | 0 |
 
-- **Total papers:** 190
-- **Open-source:** 127 (66%)
-- **Topic pages:** 6
-- **Artifact categories:** 5
+## Curation Pipeline
 
----
-
-## 🛠️ Build & Usage
-
-```bash
-# Generate all pages from data/*.jsonl
-python scripts/build.py
-
-# Fetch daily arXiv candidates (writes to metadata/candidates/)
-python scripts/fetch_candidates.py
+```text
+Daily harvesting -> metadata/candidates/YYYY-MM-DD/ -> human review -> data/*.jsonl -> validate -> build -> publish
 ```
 
-**Workflow:**
-1. Add or edit entries in `data/*.jsonl`
-2. Push to `main` — GitHub Actions runs `build.py` automatically
-3. Or run `python scripts/build.py` locally before committing
+## Build & Maintenance
 
-**Daily candidate harvesting** runs via GitHub Actions cron.
-New candidates are posted as a **GitHub Issue** for human review.
-Approved papers are manually added to `data/*.jsonl`.
+```bash
+# validate source data and refresh repo stats cache
+python scripts/validate_data.py --write-cache
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+# rebuild README and all generated pages
+python scripts/build.py
 
----
+# refresh the daily candidate inbox
+python scripts/fetch_candidates.py --days 14
+```
 
-## 📖 Recommended Surveys
+## Recommended Surveys
 
 - [Simulating the Real World: A Unified Survey of Multimodal Generative Models](https://arxiv.org/abs/2503.04641)
 - [A Survey of World Models for Autonomous Driving](https://arxiv.org/abs/2501.11260)
@@ -181,6 +187,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 <div align="center">
 
-**If you find this repository useful, please consider giving it a ⭐!**
+**If this repository helps your research or engineering work, consider giving it a star.**
 
 </div>

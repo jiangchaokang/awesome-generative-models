@@ -1,34 +1,215 @@
 # 🏷️ Topic: autonomous-driving
 
-> 26 papers across all artifact categories.
+**Entries:** 18
 
-[↑ Root](../README.md) · [↑ Topics](README.md)
+[← Root](../README.md) · [← Topics](README.md)
 
-| Title | Artifact | Venue | Open | Links |
-|:------|:---------|:------|:----:|:------|
-| **Seeing the Future, Perceiving the Future: A Unified Driving World Model for Future Generation and Perception** | 4d-dynamic-scene-world | ICRA 2026 | ✅ | [Paper](https://scholar.google.com/scholar?q=Seeing%20the%20Future%2C%20Perceiving%20the%20Future%3A%20A%20Unified%20Driving%20World%20Model%20for%20Future%20Generation%20and%20Perception) / [Code](https://github.com/search?q=Seeing%20the%20Future%2C%20Perceiving%20the%20Future%3A%20A%20Unified%20Driving%20World%20Model%20for%20Future%20Generation%20and%20Perception&type=repositories) |
-| **DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer** | 4d-dynamic-scene-world | arXiv 2026 | — | [Paper](https://arxiv.org/abs/2602.24096) |
-| **DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2602.06521) / [Code](https://github.com/liulin815/DriveWorld-VLA.git) |
-| **DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2603.19675) / [Code](https://github.com/xiaolul2/DynFlowDrive) |
-| **UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2602.01536) / [Code](https://github.com/Say2L/UniDWM) |
-| **VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2603.17652) / [Code](https://github.com/jiangchaokang/VectorWorld) |
-| **DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation** | video | CVPR 2025 | — | [Paper](https://scholar.google.com/scholar?q=DriveScape%3A%20Towards%20High-Resolution%20Controllable%20Multi-View%20Driving%20Video%20Generation) |
-| **DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=DrivingSphere%3A%20Building%20a%20High-fidelity%204D%20World%20for%20Closed-loop%20Simulation) / [Code](https://github.com/search?q=DrivingSphere%3A%20Building%20a%20High-fidelity%204D%20World%20for%20Closed-loop%20Simulation&type=repositories) |
-| **GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=GEM%3A%20A%20Generalizable%20Ego-Vision%20Multimodal%20World%20Model%20for%20Fine-Grained%20Ego-Motion%2C%20Object%20Dynamics%2C%20and%20Scene%20Composition%20Control) / [Code](https://github.com/search?q=GEM%3A%20A%20Generalizable%20Ego-Vision%20Multimodal%20World%20Model%20for%20Fine-Grained%20Ego-Motion%2C%20Object%20Dynamics%2C%20and%20Scene%20Composition%20Control&type=repositories) |
-| **Generating Multimodal Driving Scenes via Next-Scene Prediction** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=Generating%20Multimodal%20Driving%20Scenes%20via%20Next-Scene%20Prediction) / [Code](https://github.com/search?q=Generating%20Multimodal%20Driving%20Scenes%20via%20Next-Scene%20Prediction&type=repositories) |
-| **StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models** | video | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models) / [Code](https://github.com/search?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models&type=repositories) |
-| **UniScene: Unified Occupancy-centric Driving Scene Generation** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=UniScene%3A%20Unified%20Occupancy-centric%20Driving%20Scene%20Generation) / [Code](https://github.com/search?q=UniScene%3A%20Unified%20Occupancy-centric%20Driving%20Scene%20Generation&type=repositories) |
-| **InfiniCube: Unbounded and Controllable Dynamic 3D Driving Scene Generation with World-Guided Video Models** | 4d-dynamic-scene-world | ICCV 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=InfiniCube%3A%20Unbounded%20and%20Controllable%20Dynamic%203D%20Driving%20Scene%20Generation%20with%20World-Guided%20Video%20Models) / [Code](https://github.com/search?q=InfiniCube%3A%20Unbounded%20and%20Controllable%20Dynamic%203D%20Driving%20Scene%20Generation%20with%20World-Guided%20Video%20Models&type=repositories) |
-| **MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control** | video | ICCV 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control) / [Code](https://github.com/search?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control&type=repositories) |
-| **DynamicCity: Large-Scale Occupancy Generation from Dynamic Scenes** | 4d-dynamic-scene-world | ICLR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=DynamicCity%3A%20Large-Scale%20Occupancy%20Generation%20from%20Dynamic%20Scenes) / [Code](https://github.com/search?q=DynamicCity%3A%20Large-Scale%20Occupancy%20Generation%20from%20Dynamic%20Scenes&type=repositories) |
-| **Glad: A Streaming Scene Generator for Autonomous Driving** | 4d-dynamic-scene-world | ICLR 2025 | — | [Paper](https://scholar.google.com/scholar?q=Glad%3A%20A%20Streaming%20Scene%20Generator%20for%20Autonomous%20Driving) |
-| **DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation** | video | AAAI 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation) / [Code](https://github.com/search?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation&type=repositories) |
-| **CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving** | video | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=CoGen%3A%203D%20Consistent%20Video%20Generation%20via%20Adaptive%20Conditioning%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **DiST-4D: Disentangled Spatiotemporal Diffusion with Metric Depth for 4D Driving Scene Generation** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/search/?query=DiST-4D%3A%20Disentangled%20Spatiotemporal%20Diffusion%20with%20Metric%20Depth%20for%204D%20Driving%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=DiST-4D%3A%20Disentangled%20Spatiotemporal%20Diffusion%20with%20Metric%20Depth%20for%204D%20Driving%20Scene%20Generation&type=repositories) |
-| **DreamDrive: Generative 4D Scene Modeling from Street View Images** | 4d-dynamic-scene-world | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=DreamDrive%3A%20Generative%204D%20Scene%20Modeling%20from%20Street%20View%20Images&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Epona: Autoregressive Diffusion World Model for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/abs/2506.24113) / [Code](https://github.com/Kevin-thu/Epona/) |
-| **GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=GAIA-2%3A%20A%20Controllable%20Multi-View%20Generative%20World%20Model%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/abs/2501.14729) / [Code](https://github.com/LMD0311/HERMES) |
-| **MaskGWM: A Generalizable Driving World Model with Video Mask Reconstruction** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/search/?query=MaskGWM%3A%20A%20Generalizable%20Driving%20World%20Model%20with%20Video%20Mask%20Reconstruction&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=MaskGWM%3A%20A%20Generalizable%20Driving%20World%20Model%20with%20Video%20Mask%20Reconstruction&type=repositories) |
-| **World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/abs/2507.00603) / [Code](https://github.com/ucaszyp/World4Drive) |
-| **Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research** | 4d-dynamic-scene-world | NeurIPS 2024 | ✅ | [Paper](https://arxiv.org/abs/2310.08710) / [Code](https://github.com/waymo-research/waymax) |
+### DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/liulin815/DriveWorld-VLA) [![GitHub: ★ 61](https://img.shields.io/badge/GitHub-%E2%98%85%2061-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
+
+> Deeply couples a VLA planner with a latent driving world model for planning-aware rollout.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.06521) [![Code: GitHub ★ 61](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2061-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/xiaolul2/DynFlowDrive) [![GitHub: ★ 15](https://img.shields.io/badge/GitHub-%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/xiaolul2/DynFlowDrive)
+
+> A flow-based latent dynamics model for action-conditioned autonomous-driving world simulation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19675) [![Code: GitHub ★ 15](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/xiaolul2/DynFlowDrive)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/jiangchaokang/VectorWorld) [![GitHub: ★ 15](https://img.shields.io/badge/GitHub-%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/jiangchaokang/VectorWorld)
+
+> A streaming vector-graph world model designed for kilometer-scale closed-loop autonomous-driving simulation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.17652) [![Code: GitHub ★ 15](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/jiangchaokang/VectorWorld)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: simulation](https://img.shields.io/badge/Task-simulation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Enhances reconstructed 3D scenes into temporally consistent photorealistic simulation outputs with online diffusion.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.24096) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Say2L/UniDWM)
+
+> A unified driving world model that explicitly balances geometry, appearance, and dynamics in one latent space.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.01536) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/Say2L/UniDWM)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research
+
+![Venue: NeurIPS 2024](https://img.shields.io/badge/Venue-NeurIPS%202024-7C3AED?style=flat-square) ![Task: simulation](https://img.shields.io/badge/Task-simulation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/waymo-research/waymax) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square) [![GitHub: ★ 1.1k](https://img.shields.io/badge/GitHub-%E2%98%85%201.1k-181717?style=flat-square&logo=github)](https://github.com/waymo-research/waymax)
+
+> A widely used large-scale autonomous-driving simulator that remained actively relevant throughout 2025 evaluation workflows.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2310.08710) [![Code: GitHub ★ 1.1k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%201.1k-181717?style=flat-square&logo=github)](https://github.com/waymo-research/waymax)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+_Scope note: Kept because Waymax remained a core simulator in 2025 autonomous-driving research._
+
+### MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control
+
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/flymin/MagicDrive-V2) [![GitHub: ★ 707](https://img.shields.io/badge/GitHub-%E2%98%85%20707-181717?style=flat-square&logo=github)](https://github.com/flymin/MagicDrive-V2)
+
+> A high-resolution long-form multi-view driving video model with richer geometric and scenario control.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.13807) [![Code: GitHub ★ 707](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20707-181717?style=flat-square&logo=github)](https://github.com/flymin/MagicDrive-V2) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://magicdrive-v2.github.io/)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### Epona: Autoregressive Diffusion World Model for Autonomous Driving
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Kevin-thu/Epona) [![GitHub: ★ 320](https://img.shields.io/badge/GitHub-%E2%98%85%20320-181717?style=flat-square&logo=github)](https://github.com/Kevin-thu/Epona)
+
+> Combines autoregression and diffusion inside a driving world model for controllable long-horizon rollout.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.24113) [![Code: GitHub ★ 320](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20320-181717?style=flat-square&logo=github)](https://github.com/Kevin-thu/Epona)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/LMD0311/HERMES) [![GitHub: ★ 242](https://img.shields.io/badge/GitHub-%E2%98%85%20242-181717?style=flat-square&logo=github)](https://github.com/LMD0311/HERMES)
+
+> Unifies driving-scene understanding and future scene generation within one BEV-centric world model.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2501.14729) [![Code: GitHub ★ 242](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20242-181717?style=flat-square&logo=github)](https://github.com/LMD0311/HERMES)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ucaszyp/World4Drive) [![GitHub: ★ 73](https://img.shields.io/badge/GitHub-%E2%98%85%2073-181717?style=flat-square&logo=github)](https://github.com/ucaszyp/World4Drive)
+
+> A physical latent world model that couples intention-aware scene evolution with planning-oriented driving control.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.00603) [![Code: GitHub ★ 73](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2073-181717?style=flat-square&logo=github)](https://github.com/ucaszyp/World4Drive)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Improves 3D consistency in controllable driving video generation through spatially adaptive 3D conditions.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.22231) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://xiaomi-research.github.io/cogen/)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation
+
+![Venue: AAAI 2025](https://img.shields.io/badge/Venue-AAAI%202025-059669?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> An LLM-enhanced driving video generator that converts user intent into trajectories, maps, and multi-view videos.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2403.06845)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation
+
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A high-resolution multi-view driving video generator with strong spatial-temporal alignment under sparse 3D control.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2409.05463) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://metadrivescape.github.io/papers_project/drivescapev1/index.html)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: simulation](https://img.shields.io/badge/Task-simulation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Builds a realistic 4D world and visual synthesis stack for closed-loop autonomous-driving simulation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.11252)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> An occupancy-generation framework for large-scale dynamic urban scenes with strong 4D structural priors.
+
+[![Paper](https://img.shields.io/badge/Paper-B31B1B?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2025/file/6506964d22ede4d36adae956e6a9919a-Paper-Conference.pdf)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A multimodal world model that jointly controls ego motion, object dynamics, and scene composition across domains.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.11198)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A controllable street-view synthesis model driven by LiDAR renderings for precise view control.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.13188)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### UniScene: Unified Occupancy-centric Driving Scene Generation
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A unified occupancy-centric generator for semantic occupancy, video, and LiDAR in driving scenes.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.05435)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+## Compact Index
+
+<details>
+<summary><b>Open compact index</b></summary>
+
+| Title | Artifact | Task | Venue | Links |
+|:--|:--|:--|:--|:--|
+| **DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving** | 4D Dynamic Scene / World | autonomous-driving | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.06521) / [Code](https://github.com/liulin815/DriveWorld-VLA) |
+| **DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving** | 4D Dynamic Scene / World | autonomous-driving | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.19675) / [Code](https://github.com/xiaolul2/DynFlowDrive) |
+| **VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs** | 4D Dynamic Scene / World | autonomous-driving | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.17652) / [Code](https://github.com/jiangchaokang/VectorWorld) |
+| **DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer** | 4D Dynamic Scene / World | simulation | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.24096) / [Project](https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/) |
+| **UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning** | 4D Dynamic Scene / World | autonomous-driving | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.01536) / [Code](https://github.com/Say2L/UniDWM) |
+| **Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research** | 4D Dynamic Scene / World | simulation | NeurIPS 2024 | [Paper](https://arxiv.org/abs/2310.08710) / [Code](https://github.com/waymo-research/waymax) |
+| **MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control** | Video | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2411.13807) / [Code](https://github.com/flymin/MagicDrive-V2) / [Project](https://magicdrive-v2.github.io/) |
+| **Epona: Autoregressive Diffusion World Model for Autonomous Driving** | 4D Dynamic Scene / World | autonomous-driving | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.24113) / [Code](https://github.com/Kevin-thu/Epona) |
+| **HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation** | 4D Dynamic Scene / World | autonomous-driving | arXiv 2025 | [Paper](https://arxiv.org/abs/2501.14729) / [Code](https://github.com/LMD0311/HERMES) |
+| **World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model** | 4D Dynamic Scene / World | autonomous-driving | arXiv 2025 | [Paper](https://arxiv.org/abs/2507.00603) / [Code](https://github.com/ucaszyp/World4Drive) |
+| **CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving** | Video | autonomous-driving-video | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.22231) / [Project](https://xiaomi-research.github.io/cogen/) |
+| **DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation** | Video | autonomous-driving-video | AAAI 2025 | [Paper](https://arxiv.org/abs/2403.06845) |
+| **DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation** | Video | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2409.05463) / [Project](https://metadrivescape.github.io/papers_project/drivescapev1/index.html) |
+| **DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation** | 4D Dynamic Scene / World | simulation | CVPR 2025 | [Paper](https://arxiv.org/abs/2411.11252) |
+| **DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes** | 4D Dynamic Scene / World | autonomous-driving | ICLR 2025 | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/file/6506964d22ede4d36adae956e6a9919a-Paper-Conference.pdf) |
+| **GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control** | 4D Dynamic Scene / World | autonomous-driving | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.11198) |
+| **StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models** | Video | autonomous-driving-video | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.13188) |
+| **UniScene: Unified Occupancy-centric Driving Scene Generation** | 4D Dynamic Scene / World | autonomous-driving | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.05435) |
+
+</details>

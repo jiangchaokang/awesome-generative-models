@@ -1,30 +1,33 @@
-# 🎬 20-video / long-video
+# 🎬 Video / long-video
 
-> **2 papers.**
+**Entries:** 2
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **Minute-Long Videos with Dual Parallelisms** | AAAI 2026 | `diffusion` `transformer` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=Minute-Long%20Videos%20with%20Dual%20Parallelisms) / [Code](https://github.com/search?q=Minute-Long%20Videos%20with%20Dual%20Parallelisms&type=repositories) |
-| **LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity** | CVPR 2025 | `diffusion` `transformer` | — | [Paper](https://scholar.google.com/scholar?q=LinGen%3A%20Towards%20High-Resolution%20Minute-Length%20Text-to-Video%20Generation%20with%20Linear%20Computational%20Complexity) |
+### Minute-Long Videos with Dual Parallelisms
 
-## Details
+![Venue: AAAI 2026](https://img.shields.io/badge/Venue-AAAI%202026-059669?style=flat-square) ![Task: long-video](https://img.shields.io/badge/Task-long-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A distributed inference scheme that parallelizes both frames and layers for minute-long DiT video generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.21070)
+
+### LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: long-video](https://img.shields.io/badge/Task-long-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A linear-complexity architecture aimed at minute-length high-resolution T2V generation on modest hardware.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.09856) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://lineargen.github.io/)
+
+## Compact Index
 
 <details>
-<summary><b>Minute-Long Videos with Dual Parallelisms</b> &mdash; <code>AAAI 2026</code> `diffusion` `transformer` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A long video approach targeting video generation using diffusion/transformer conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Minute-Long%20Videos%20with%20Dual%20Parallelisms) &nbsp; [💻 Code](https://github.com/search?q=Minute-Long%20Videos%20with%20Dual%20Parallelisms&type=repositories)
-
-</details>
-
-<details>
-<summary><b>LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity</b> &mdash; <code>CVPR 2025</code> `diffusion` `transformer` </summary>
-
-> A long video approach targeting video generation using diffusion/transformer conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=LinGen%3A%20Towards%20High-Resolution%20Minute-Length%20Text-to-Video%20Generation%20with%20Linear%20Computational%20Complexity)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **Minute-Long Videos with Dual Parallelisms** | long-video | AAAI 2026 | [Paper](https://arxiv.org/abs/2505.21070) |
+| **LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity** | long-video | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.09856) / [Project](https://lineargen.github.io/) |
 
 </details>

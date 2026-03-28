@@ -1,14 +1,15 @@
-# 🏷️ Cross-Cutting Topics
+# 🏷️ Topic Pages
 
-> Topic pages generated from `domain` tags. Each paper appears under its primary artifact directory; topics provide cross-cutting views.
+> Cross-cutting topic views generated from `domain` tags.
 
-[↑ Back to root](../README.md)
+[← Root](../README.md)
 
 | Topic | Papers |
-|:------|-------:|
-| [autonomous-driving](autonomous-driving.md) | 26 |
-| [human-avatar](human-avatar.md) | 11 |
-| [indoor](indoor.md) | 9 |
-| [gameplay](gameplay.md) | 7 |
+|:--|--:|
+| [autonomous-driving](autonomous-driving.md) | 18 |
+| [indoor](indoor.md) | 10 |
+| [human-avatar](human-avatar.md) | 9 |
+| [gameplay](gameplay.md) | 5 |
 | [outdoor-urban](outdoor-urban.md) | 3 |
+| [robotics](robotics.md) | 1 |
 | [tabletop](tabletop.md) | 1 |

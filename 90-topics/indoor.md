@@ -1,17 +1,125 @@
 # 🏷️ Topic: indoor
 
-> 9 papers across all artifact categories.
+**Entries:** 10
 
-[↑ Root](../README.md) · [↑ Topics](README.md)
+[← Root](../README.md) · [← Topics](README.md)
 
-| Title | Artifact | Venue | Open | Links |
-|:------|:---------|:------|:----:|:------|
-| **SPATIALGEN: Layout-guided 3D Indoor Scene Generation** | 3d-scene | 3DV 2026 | ✅ | [Paper](https://scholar.google.com/scholar?q=SPATIALGEN%3A%20Layout-guided%203D%20Indoor%20Scene%20Generation) / [Code](https://github.com/search?q=SPATIALGEN%3A%20Layout-guided%203D%20Indoor%20Scene%20Generation&type=repositories) |
-| **Global-Local Tree Search in VLMs for 3D Indoor Scene Generation** | 3d-scene | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=Global-Local%20Tree%20Search%20in%20VLMs%20for%203D%20Indoor%20Scene%20Generation) / [Code](https://github.com/search?q=Global-Local%20Tree%20Search%20in%20VLMs%20for%203D%20Indoor%20Scene%20Generation&type=repositories) |
-| **LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models** | 3d-scene | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=LayoutVLM%3A%20Differentiable%20Optimization%20of%203D%20Layout%20via%20Vision-Language%20Models) / [Code](https://github.com/search?q=LayoutVLM%3A%20Differentiable%20Optimization%20of%203D%20Layout%20via%20Vision-Language%20Models&type=repositories) |
-| **Hierarchically-Structured Open-Vocabulary Indoor Scene Synthesis with Pre-trained Large Language Model** | 3d-scene | AAAI 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=Hierarchically-Structured%20Open-Vocabulary%20Indoor%20Scene%20Synthesis%20with%20Pre-trained%20Large%20Language%20Model) / [Code](https://github.com/search?q=Hierarchically-Structured%20Open-Vocabulary%20Indoor%20Scene%20Synthesis%20with%20Pre-trained%20Large%20Language%20Model&type=repositories) |
-| **Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via Spatial Reasoning** | 3d-scene | arXiv 2025 | ✅ | [Paper](https://arxiv.org/search/?query=Direct%20Numerical%20Layout%20Generation%20for%203D%20Indoor%20Scene%20Synthesis%20via%20Spatial%20Reasoning&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Direct%20Numerical%20Layout%20Generation%20for%203D%20Indoor%20Scene%20Synthesis%20via%20Spatial%20Reasoning&type=repositories) |
-| **DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis** | 3d-scene | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=DisCo-Layout%3A%20Disentangling%20and%20Coordinating%20Semantic%20and%20Physical%20Refinement%20in%20a%20Multi-Agent%20Framework%20for%203D%20Indoor%20Layout%20Synthesis&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **HLG: Comprehensive 3D Room Construction via Hierarchical Layout Generation** | 3d-scene | arXiv 2025 | ✅ | [Paper](https://arxiv.org/search/?query=HLG%3A%20Comprehensive%203D%20Room%20Construction%20via%20Hierarchical%20Layout%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=HLG%3A%20Comprehensive%203D%20Room%20Construction%20via%20Hierarchical%20Layout%20Generation&type=repositories) |
-| **ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment** | 3d-scene | arXiv 2025 | ✅ | [Paper](https://arxiv.org/search/?query=ReSpace%3A%20Text-Driven%203D%20Scene%20Synthesis%20and%20Editing%20with%20Preference%20Alignment&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=ReSpace%3A%20Text-Driven%203D%20Scene%20Synthesis%20and%20Editing%20with%20Preference%20Alignment&type=repositories) |
-| **RoomCraft: Controllable and Complete 3D Indoor Scene Generation** | 3d-scene | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=RoomCraft%3A%20Controllable%20and%20Complete%203D%20Indoor%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+### FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: indoor](https://img.shields.io/badge/Task-indoor-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A graph-based rectified-flow approach to style-consistent indoor scene generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19598)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### SPATIALGEN: Layout-guided 3D Indoor Scene Generation
+
+![Venue: 3DV 2026](https://img.shields.io/badge/Venue-3DV%202026-059669?style=flat-square) ![Task: layout-to-scene](https://img.shields.io/badge/Task-layout-to-scene-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A multi-view multi-modal diffusion model for realistic 3D indoor scene generation from layout plus image reference.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2509.14981)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via Spatial Reasoning
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: layout-to-scene](https://img.shields.io/badge/Task-layout-to-scene-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Directly predicts numerical 3D layouts from text via chain-of-thought spatial reasoning.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.05341)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: layout-to-scene](https://img.shields.io/badge/Task-layout-to-scene-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Uses coordinated semantic and physical refinement tools inside a multi-agent loop for indoor layout synthesis.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2510.02178)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### Global-Local Tree Search in VLMs for 3D Indoor Scene Generation
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: indoor](https://img.shields.io/badge/Task-indoor-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Frames indoor scene synthesis as a global-local search problem over placements using VLMs as the planner.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.18476)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### Hierarchically-Structured Open-Vocabulary Indoor Scene Synthesis with Pre-trained Large Language Model
+
+![Venue: AAAI 2025](https://img.shields.io/badge/Venue-AAAI%202025-059669?style=flat-square) ![Task: indoor](https://img.shields.io/badge/Task-indoor-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Generates hierarchical scene descriptions and optimizes them into feasible indoor layouts for open-vocabulary room synthesis.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2502.10675)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### HLG: Comprehensive 3D Room Construction via Hierarchical Layout Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: layout-to-scene](https://img.shields.io/badge/Task-layout-to-scene-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A coarse-to-fine hierarchical layout generator for more detailed and physically plausible room construction.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2508.17832)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: layout-to-scene](https://img.shields.io/badge/Task-layout-to-scene-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Uses a differentiable scene-layout representation and VLM supervision to improve open-universe 3D layout generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.02193)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: scene-editing](https://img.shields.io/badge/Task-scene-editing-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A language-model-based indoor scene synthesis and editing framework with explicit preference alignment.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.02459)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+### RoomCraft: Controllable and Complete 3D Indoor Scene Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: indoor](https://img.shields.io/badge/Task-indoor-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A controllable indoor scene generator focused on both completeness and realistic arrangement.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.22291)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+## Compact Index
+
+<details>
+<summary><b>Open compact index</b></summary>
+
+| Title | Artifact | Task | Venue | Links |
+|:--|:--|:--|:--|:--|
+| **FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow** | 3D Scene | indoor | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.19598) |
+| **SPATIALGEN: Layout-guided 3D Indoor Scene Generation** | 3D Scene | layout-to-scene | 3DV 2026 | [Paper](https://arxiv.org/abs/2509.14981) |
+| **Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via Spatial Reasoning** | 3D Scene | layout-to-scene | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.05341) |
+| **DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis** | 3D Scene | layout-to-scene | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.02178) |
+| **Global-Local Tree Search in VLMs for 3D Indoor Scene Generation** | 3D Scene | indoor | CVPR 2025 | [Paper](https://arxiv.org/abs/2503.18476) |
+| **Hierarchically-Structured Open-Vocabulary Indoor Scene Synthesis with Pre-trained Large Language Model** | 3D Scene | indoor | AAAI 2025 | [Paper](https://arxiv.org/abs/2502.10675) |
+| **HLG: Comprehensive 3D Room Construction via Hierarchical Layout Generation** | 3D Scene | layout-to-scene | arXiv 2025 | [Paper](https://arxiv.org/abs/2508.17832) |
+| **LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models** | 3D Scene | layout-to-scene | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.02193) |
+| **ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment** | 3D Scene | scene-editing | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.02459) |
+| **RoomCraft: Controllable and Complete 3D Indoor Scene Generation** | 3D Scene | indoor | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.22291) |
+
+</details>

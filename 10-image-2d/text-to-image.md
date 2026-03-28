@@ -1,140 +1,163 @@
-# 🖼️ 10-image-2d / text-to-image
+# 🖼️ Image 2D / text-to-image
 
-> **13 papers.**
+**Entries:** 16
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **LINA: Linear Autoregressive Image Generative Models with Continuous Tokens** | arXiv 2026 | `autoregressive` `transformer` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2601.22630) / [Code](https://github.com/techmonsterwang/LINA) |
-| **Denoising Autoregressive Transformers for Scalable Text-to-Image Generation** | ICLR 2025 | `autoregressive` `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=Denoising%20Autoregressive%20Transformers%20for%20Scalable%20Text-to-Image%20Generation) |
-| **Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens** | ICLR 2025 | `autoregressive` | — | [Paper](https://scholar.google.com/scholar?q=Fluid%3A%20Scaling%20Autoregressive%20Text-to-image%20Generative%20Models%20with%20Continuous%20Tokens) |
-| **Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis** | ICLR 2025 | `transformer` | — | [Paper](https://scholar.google.com/scholar?q=Meissonic%3A%20Revitalizing%20Masked%20Generative%20Transformers%20for%20Efficient%20High-Resolution%20Text-to-Image%20Synthesis) |
-| **One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt** | ICLR 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=One-Prompt-One-Story%3A%20Free-Lunch%20Consistent%20Text-to-Image%20Generation%20Using%20a%20Single%20Prompt) |
-| **SANA: Efficient High-Resolution Text-to-Image Synthesis with Linear Diffusion Transformers** | ICLR 2025 | `diffusion` `transformer` | — | [Paper](https://scholar.google.com/scholar?q=SANA%3A%20Efficient%20High-Resolution%20Text-to-Image%20Synthesis%20with%20Linear%20Diffusion%20Transformers) |
-| **Text-to-Image Rectified Flow as Plug-and-Play Priors** | ICLR 2025 | `rectified-flow` | — | [Paper](https://scholar.google.com/scholar?q=Text-to-Image%20Rectified%20Flow%20as%20Plug-and-Play%20Priors) |
-| **TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models** | ICLR 2025 | `transformer` | — | [Paper](https://scholar.google.com/scholar?q=TIGeR%3A%20Unifying%20Text-to-Image%20Generation%20and%20Retrieval%20with%20Large%20Multimodal%20Models) |
-| **D-AR: Diffusion via Autoregressive Models** | arXiv 2025 | `autoregressive` `diffusion` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2505.23660) / [Code](https://github.com/showlab/D-AR) |
-| **FLUX.1: Scalable Rectified Flow Transformers for High-Resolution Image Synthesis** | arXiv 2025 | `rectified-flow` `transformer` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2403.03206) / [Code](https://github.com/black-forest-labs/flux) |
-| **SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer** | arXiv 2025 | `diffusion` `transformer` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2501.18427) / [Code](https://github.com/NVlabs/Sana) |
-| **Stable Diffusion 3.5: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis** | arXiv 2025 | `rectified-flow` `transformer` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2403.03206) / [Code](https://github.com/Stability-AI/sd3.5) |
-| **PixArt-Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation** | ECCV 2024 | `diffusion` `transformer` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2403.04692) / [Code](https://github.com/PixArt-alpha/PixArt-sigma) |
+### DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation
 
-## Details
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> An agentic model-merging system for assembling stronger in-the-wild T2I pipelines from community checkpoints.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.20470)
+
+### LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A unified system for generating and decomposing layered editable graphic media rather than flat raster outputs only.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.17965)
+
+### LINA: Linear Autoregressive Image Generative Models with Continuous Tokens
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://huggingface.co/papers/2601.22630)
+
+> A linear-attention autoregressive T2I model that pushes continuous-token image generation toward better scaling.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.22630) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://huggingface.co/papers/2601.22630)
+
+### SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A domain-oriented T2I adaptation framework targeting high-resolution remote-sensing synthesis with spectrum-aware tuning.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.21783)
+
+### UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A policy-optimization view of reasoning-driven visual generation for stronger prompt following and planning.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.23500)
+
+### FLUX.1: Scalable Rectified Flow Transformers for High-Resolution Image Synthesis
+
+![Venue: arXiv 2024](https://img.shields.io/badge/Venue-arXiv%202024-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/black-forest-labs/flux) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square) [![GitHub: ★ 25.4k](https://img.shields.io/badge/GitHub-%E2%98%85%2025.4k-181717?style=flat-square&logo=github)](https://github.com/black-forest-labs/flux)
+
+> A highly influential rectified-flow image generator that remained one of the dominant open ecosystems throughout 2025.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2403.03206) [![Code: GitHub ★ 25.4k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2025.4k-181717?style=flat-square&logo=github)](https://github.com/black-forest-labs/flux)
+
+_Scope note: Kept because the FLUX open ecosystem remained one of the most active image-generation backbones in 2025._
+
+### SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/NVlabs/Sana) [![GitHub: ★ 5.0k](https://img.shields.io/badge/GitHub-%E2%98%85%205.0k-181717?style=flat-square&logo=github)](https://github.com/NVlabs/Sana)
+
+> A stronger SANA release focused on efficient scaling of both training-time and inference-time compute for high-resolution T2I.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2501.18427) [![Code: GitHub ★ 5.0k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%205.0k-181717?style=flat-square&logo=github)](https://github.com/NVlabs/Sana)
+
+### PixArt-Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation
+
+![Venue: ECCV 2024](https://img.shields.io/badge/Venue-ECCV%202024-2563EB?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/PixArt-alpha/PixArt-sigma) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square) [![GitHub: ★ 1.9k](https://img.shields.io/badge/GitHub-%E2%98%85%201.9k-181717?style=flat-square&logo=github)](https://github.com/PixArt-alpha/PixArt-sigma)
+
+> An important open DiT baseline that continued to matter in 2025 as a widely reused high-resolution training recipe.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2403.04692) [![Code: GitHub ★ 1.9k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%201.9k-181717?style=flat-square&logo=github)](https://github.com/PixArt-alpha/PixArt-sigma)
+
+_Scope note: Kept because PixArt-Sigma remained a strong open 4K DiT baseline actively reused in 2025._
+
+### One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/byliutao/1Prompt1Story) [![GitHub: ★ 314](https://img.shields.io/badge/GitHub-%E2%98%85%20314-181717?style=flat-square&logo=github)](https://github.com/byliutao/1Prompt1Story)
+
+> A training-free method for identity-consistent image sequences by concatenating story prompts into one context.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2501.13554) [![Code: GitHub ★ 314](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20314-181717?style=flat-square&logo=github)](https://github.com/byliutao/1Prompt1Story)
+
+### D-AR: Diffusion via Autoregressive Models
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/showlab/D-AR) [![GitHub: ★ 137](https://img.shields.io/badge/GitHub-%E2%98%85%20137-181717?style=flat-square&logo=github)](https://github.com/showlab/D-AR)
+
+> Rewrites diffusion-style generation in an autoregressive form and studies the bridge between AR and diffusion paradigms.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.23660) [![Code: GitHub ★ 137](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20137-181717?style=flat-square&logo=github)](https://github.com/showlab/D-AR)
+
+### Denoising Autoregressive Transformers for Scalable Text-to-Image Generation
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> DART unifies autoregressive generation and denoising ideas for scalable image synthesis.
+
+[![Paper](https://img.shields.io/badge/Paper-B31B1B?style=flat-square)](https://openreview.net/forum?id=amDkNPVWcn)
+
+### Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A large-scale autoregressive T2I model built on continuous tokens and random-order generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2410.13863)
+
+### Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A masked generative transformer that closes much of the gap to diffusion while staying efficient at high resolution.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2410.08261)
+
+### SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A linear-attention DiT family that made high-resolution image generation substantially cheaper and faster.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2410.10629) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://nvlabs.github.io/Sana/)
+
+### Text-to-Image Rectified Flow as Plug-and-Play Priors
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Shows rectified-flow T2I models can act as plug-and-play priors beyond direct image synthesis.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2406.03293)
+
+### TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: text-to-image](https://img.shields.io/badge/Task-text-to-image-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Unifies generation and retrieval in a single multimodal model and lets the system choose the better response mode.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2406.05814)
+
+## Compact Index
 
 <details>
-<summary><b>LINA: Linear Autoregressive Image Generative Models with Continuous Tokens</b> &mdash; <code>arXiv 2026</code> `autoregressive` `transformer` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> 用 linear attention 做高效 T2I，是 2026 年初非常值得跟踪的 AR 图像生成工作。
-
-[📄 Paper](https://arxiv.org/abs/2601.22630) &nbsp; [💻 Code](https://github.com/techmonsterwang/LINA)
-
-</details>
-
-<details>
-<summary><b>Denoising Autoregressive Transformers for Scalable Text-to-Image Generation</b> &mdash; <code>ICLR 2025</code> `autoregressive` `diffusion` </summary>
-
-> A text to image approach targeting image 2d generation using autoregressive/diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Denoising%20Autoregressive%20Transformers%20for%20Scalable%20Text-to-Image%20Generation)
-
-</details>
-
-<details>
-<summary><b>Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens</b> &mdash; <code>ICLR 2025</code> `autoregressive` </summary>
-
-> A text to image approach targeting image 2d generation using autoregressive conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Fluid%3A%20Scaling%20Autoregressive%20Text-to-image%20Generative%20Models%20with%20Continuous%20Tokens)
-
-</details>
-
-<details>
-<summary><b>Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis</b> &mdash; <code>ICLR 2025</code> `transformer` </summary>
-
-> A text to image approach targeting image 2d generation using transformer conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Meissonic%3A%20Revitalizing%20Masked%20Generative%20Transformers%20for%20Efficient%20High-Resolution%20Text-to-Image%20Synthesis)
-
-</details>
-
-<details>
-<summary><b>One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt</b> &mdash; <code>ICLR 2025</code> `diffusion` </summary>
-
-> A text to image approach targeting image 2d generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=One-Prompt-One-Story%3A%20Free-Lunch%20Consistent%20Text-to-Image%20Generation%20Using%20a%20Single%20Prompt)
-
-</details>
-
-<details>
-<summary><b>SANA: Efficient High-Resolution Text-to-Image Synthesis with Linear Diffusion Transformers</b> &mdash; <code>ICLR 2025</code> `diffusion` `transformer` </summary>
-
-> A text to image approach targeting image 2d generation using diffusion/transformer conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=SANA%3A%20Efficient%20High-Resolution%20Text-to-Image%20Synthesis%20with%20Linear%20Diffusion%20Transformers)
-
-</details>
-
-<details>
-<summary><b>Text-to-Image Rectified Flow as Plug-and-Play Priors</b> &mdash; <code>ICLR 2025</code> `rectified-flow` </summary>
-
-> A text to image approach targeting image 2d generation using rectified-flow conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Text-to-Image%20Rectified%20Flow%20as%20Plug-and-Play%20Priors)
-
-</details>
-
-<details>
-<summary><b>TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models</b> &mdash; <code>ICLR 2025</code> `transformer` </summary>
-
-> A text to image approach targeting image 2d generation using transformer conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=TIGeR%3A%20Unifying%20Text-to-Image%20Generation%20and%20Retrieval%20with%20Large%20Multimodal%20Models)
-
-</details>
-
-<details>
-<summary><b>D-AR: Diffusion via Autoregressive Models</b> &mdash; <code>arXiv 2025</code> `autoregressive` `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> 把扩散过程改写成标准 next-token 生成，是 diffusion 与 AR 融合路线的代表作。
-
-[📄 Paper](https://arxiv.org/abs/2505.23660) &nbsp; [💻 Code](https://github.com/showlab/D-AR)
-
-</details>
-
-<details>
-<summary><b>FLUX.1: Scalable Rectified Flow Transformers for High-Resolution Image Synthesis</b> &mdash; <code>arXiv 2025</code> `rectified-flow` `transformer` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Black Forest Labs' scalable rectified flow transformer for T2I, becoming one of the most popular open-source image generators in 2025.
-
-[📄 Paper](https://arxiv.org/abs/2403.03206) &nbsp; [💻 Code](https://github.com/black-forest-labs/flux)
-
-</details>
-
-<details>
-<summary><b>SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Scales linear DiT for efficient high-res T2I; demonstrates inference-time compute scaling for improved quality. From NVIDIA/MIT.
-
-[📄 Paper](https://arxiv.org/abs/2501.18427) &nbsp; [💻 Code](https://github.com/NVlabs/Sana)
-
-</details>
-
-<details>
-<summary><b>Stable Diffusion 3.5: Scaling Rectified Flow Transformers for High-Resolution Image Synthesis</b> &mdash; <code>arXiv 2025</code> `rectified-flow` `transformer` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Stability AI's latest DiT-based T2I model with MMDiT architecture, widely adopted for commercial and research use.
-
-[📄 Paper](https://arxiv.org/abs/2403.03206) &nbsp; [💻 Code](https://github.com/Stability-AI/sd3.5)
-
-</details>
-
-<details>
-<summary><b>PixArt-Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation</b> &mdash; <code>ECCV 2024</code> `diffusion` `transformer` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Efficient DiT training pipeline enabling 4K T2I generation; highly influential in the DiT generation line of work.
-
-[📄 Paper](https://arxiv.org/abs/2403.04692) &nbsp; [💻 Code](https://github.com/PixArt-alpha/PixArt-sigma)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation** | text-to-image | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.20470) |
+| **LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition** | text-to-image | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.17965) |
+| **LINA: Linear Autoregressive Image Generative Models with Continuous Tokens** | text-to-image | arXiv 2026 | [Paper](https://arxiv.org/abs/2601.22630) / [Code](https://huggingface.co/papers/2601.22630) |
+| **SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis** | text-to-image | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.21783) |
+| **UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation** | text-to-image | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.23500) |
+| **FLUX.1: Scalable Rectified Flow Transformers for High-Resolution Image Synthesis** | text-to-image | arXiv 2024 | [Paper](https://arxiv.org/abs/2403.03206) / [Code](https://github.com/black-forest-labs/flux) |
+| **SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer** | text-to-image | arXiv 2025 | [Paper](https://arxiv.org/abs/2501.18427) / [Code](https://github.com/NVlabs/Sana) |
+| **PixArt-Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation** | text-to-image | ECCV 2024 | [Paper](https://arxiv.org/abs/2403.04692) / [Code](https://github.com/PixArt-alpha/PixArt-sigma) |
+| **One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt** | text-to-image | ICLR 2025 | [Paper](https://arxiv.org/abs/2501.13554) / [Code](https://github.com/byliutao/1Prompt1Story) |
+| **D-AR: Diffusion via Autoregressive Models** | text-to-image | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.23660) / [Code](https://github.com/showlab/D-AR) |
+| **Denoising Autoregressive Transformers for Scalable Text-to-Image Generation** | text-to-image | ICLR 2025 | [Paper](https://openreview.net/forum?id=amDkNPVWcn) |
+| **Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens** | text-to-image | ICLR 2025 | [Paper](https://arxiv.org/abs/2410.13863) |
+| **Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis** | text-to-image | ICLR 2025 | [Paper](https://arxiv.org/abs/2410.08261) |
+| **SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers** | text-to-image | ICLR 2025 | [Paper](https://arxiv.org/abs/2410.10629) / [Project](https://nvlabs.github.io/Sana/) |
+| **Text-to-Image Rectified Flow as Plug-and-Play Priors** | text-to-image | ICLR 2025 | [Paper](https://arxiv.org/abs/2406.03293) |
+| **TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models** | text-to-image | ICLR 2025 | [Paper](https://arxiv.org/abs/2406.05814) |
 
 </details>

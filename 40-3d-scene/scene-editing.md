@@ -1,20 +1,26 @@
-# 🏙️ 40-3d-scene / scene-editing
+# 🏙️ 3D Scene / scene-editing
 
-> **1 papers.**
+**Entries:** 1
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment** | arXiv 2025 | `diffusion` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=ReSpace%3A%20Text-Driven%203D%20Scene%20Synthesis%20and%20Editing%20with%20Preference%20Alignment&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=ReSpace%3A%20Text-Driven%203D%20Scene%20Synthesis%20and%20Editing%20with%20Preference%20Alignment&type=repositories) |
+### ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment
 
-## Details
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: scene-editing](https://img.shields.io/badge/Task-scene-editing-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A language-model-based indoor scene synthesis and editing framework with explicit preference alignment.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.02459)
+
+![indoor](https://img.shields.io/badge/indoor-EA580C?style=flat-square)
+
+## Compact Index
 
 <details>
-<summary><b>ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment</b> &mdash; <code>arXiv 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A scene editing approach targeting 3d scene generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=ReSpace%3A%20Text-Driven%203D%20Scene%20Synthesis%20and%20Editing%20with%20Preference%20Alignment&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=ReSpace%3A%20Text-Driven%203D%20Scene%20Synthesis%20and%20Editing%20with%20Preference%20Alignment&type=repositories)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment** | scene-editing | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.02459) |
 
 </details>

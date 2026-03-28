@@ -1,50 +1,51 @@
-# 🧊 30-3d-object-asset / articulated-asset
+# 🧊 3D Object / Asset / articulated-asset
 
-> **4 papers.**
+**Entries:** 4
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **MeshArt: Generating Articulated Meshes with Structure-guided Transformers** | CVPR 2025 | `transformer` `mesh` `part-graph` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers) / [Code](https://github.com/search?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers&type=repositories) |
-| **PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer** | SIGGRAPH 2025 | `autoregressive` `transformer` `part-graph` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer) / [Code](https://github.com/search?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer&type=repositories) |
-| **Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling** | arXiv 2025 | `transformer` `mesh` | — | [Paper](https://arxiv.org/search/?query=Articulate%20AnyMesh%3A%20Open-Vocabulary%203D%20Articulated%20Objects%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation** | arXiv 2025 | `procedural` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&type=repositories) |
+### Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation
 
-## Details
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Intern-Nexus/Infinite-Mobility) [![GitHub: ★ 187](https://img.shields.io/badge/GitHub-%E2%98%85%20187-181717?style=flat-square&logo=github)](https://github.com/Intern-Nexus/Infinite-Mobility)
 
-<details>
-<summary><b>MeshArt: Generating Articulated Meshes with Structure-guided Transformers</b> &mdash; <code>CVPR 2025</code> `transformer` `mesh` `part-graph` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A procedural articulated-object synthesis pipeline built for scale, fidelity, and simulation usefulness.
 
-> A articulated asset approach targeting 3d object asset generation using transformer conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.13424) [![Code: GitHub ★ 187](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20187-181717?style=flat-square&logo=github)](https://github.com/Intern-Nexus/Infinite-Mobility)
 
-[📄 Paper](https://scholar.google.com/scholar?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers) &nbsp; [💻 Code](https://github.com/search?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers&type=repositories)
+### Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer</b> &mdash; <code>SIGGRAPH 2025</code> `autoregressive` `transformer` `part-graph` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Converts rigid meshes into articulated open-vocabulary assets by combining VLM semantics with joint construction.
 
-> A articulated asset approach targeting 3d object asset generation using autoregressive/transformer conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2502.02590) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://articulate-anymesh.github.io)
 
-[📄 Paper](https://scholar.google.com/scholar?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer) &nbsp; [💻 Code](https://github.com/search?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer&type=repositories)
+### MeshArt: Generating Articulated Meshes with Structure-guided Transformers
 
-</details>
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling</b> &mdash; <code>arXiv 2025</code> `transformer` `mesh` </summary>
+> A hierarchical transformer that generates articulated meshes part by part with explicit structure guidance.
 
-> A articulated asset approach targeting 3d object asset generation using transformer conditioned on image/text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.11596)
 
-[📄 Paper](https://arxiv.org/search/?query=Articulate%20AnyMesh%3A%20Open-Vocabulary%203D%20Articulated%20Objects%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer
 
-</details>
+![Venue: SIGGRAPH 2025](https://img.shields.io/badge/Venue-SIGGRAPH%202025-EA580C?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Learns human-like primitive abstractions and assemblies for editable structured 3D assets.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.04622) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://primitiveanything.github.io)
+
+## Compact Index
 
 <details>
-<summary><b>Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation</b> &mdash; <code>arXiv 2025</code> `procedural` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A articulated asset approach targeting 3d object asset generation using procedural conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&type=repositories)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation** | articulated-asset | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.13424) / [Code](https://github.com/Intern-Nexus/Infinite-Mobility) |
+| **Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling** | articulated-asset | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.02590) / [Project](https://articulate-anymesh.github.io) |
+| **MeshArt: Generating Articulated Meshes with Structure-guided Transformers** | articulated-asset | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.11596) |
+| **PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer** | articulated-asset | SIGGRAPH 2025 | [Paper](https://arxiv.org/abs/2505.04622) / [Project](https://primitiveanything.github.io) |
 
 </details>

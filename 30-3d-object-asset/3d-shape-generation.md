@@ -1,180 +1,177 @@
-# 🧊 30-3d-object-asset / 3d-shape-generation
+# 🧊 3D Object / Asset / 3d-shape-generation
 
-> **17 papers.**
+**Entries:** 18
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation** | CVPR 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation) / [Code](https://github.com/search?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation&type=repositories) |
-| **LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion** | ICLR 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion) / [Code](https://github.com/search?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion&type=repositories) |
-| **OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation** | SIGGRAPH 2025 | `autoregressive` `octree` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation) / [Code](https://github.com/search?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation&type=repositories) |
-| **OctFusion: Octree-based Diffusion Models for 3D Shape Generation** | SGP 2025 | `diffusion` `octree` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation) / [Code](https://github.com/search?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation&type=repositories) |
-| **3D Point Cloud Generation via Autoregressive Up-sampling** | arXiv 2025 | `autoregressive` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=3D%20Point%20Cloud%20Generation%20via%20Autoregressive%20Up-sampling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention** | arXiv 2025 | `flow` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=EAGLE%3A%20Contextual%20Point%20Cloud%20Generation%20via%20Adaptive%20Continuous%20Normalizing%20Flow%20with%20Self-Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation** | arXiv 2025 | `diffusion` `transformer` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2501.12202) / [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) / [Web](https://hunyuan-3d.com/) |
-| **Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details** | arXiv 2025 | `diffusion` `transformer` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2506.16504) / [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |
-| **LATTICE: Democratize High-Fidelity 3D Generation at Scale** | arXiv 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&type=repositories) |
-| **Not-So-Optimal Transport Flows for 3D Point Cloud Generation** | arXiv 2025 | `flow` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=Not-So-Optimal%20Transport%20Flows%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling** | arXiv 2025 | `transformer` `mesh` | — | [Paper](https://arxiv.org/search/?query=Sparc3D%3A%20Sparse%20Representation%20and%20Construction%20for%20High-Resolution%203D%20Shapes%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling (TripoSF)** | arXiv 2025 | `diffusion` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&type=repositories) |
-| **Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor** | arXiv 2025 | `transformer` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&type=repositories) |
-| **TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation** | arXiv 2025 | `diffusion` `transformer` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=TopoDiT-3D%3A%20Topology-Aware%20Diffusion%20Transformer%20with%20Bottleneck%20Structure%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention** | arXiv 2025 | `diffusion` `mesh` | — | [Paper](https://arxiv.org/search/?query=Ultra3D%3A%20Efficient%20and%20High-Fidelity%203D%20Generation%20with%20Part%20Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement** | arXiv 2025 | `diffusion` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&type=repositories) |
-| **UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation** | arXiv 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&type=repositories) |
+### SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents
 
-## Details
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation</b> &mdash; <code>CVPR 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Extends structured 3D latents from geometry toward material-property prediction for simulation-ready assets.
 
-> 2025 年非常关键的 3D foundation-style work，适合放在 3D 资产主线靠前位置。
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.23973)
 
-[📄 Paper](https://scholar.google.com/scholar?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation) &nbsp; [💻 Code](https://github.com/search?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation&type=repositories)
+### Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Tencent/Hunyuan3D-2) [![GitHub: ★ 13.4k](https://img.shields.io/badge/GitHub-%E2%98%85%2013.4k-181717?style=flat-square&logo=github)](https://github.com/Tencent/Hunyuan3D-2)
 
-<details>
-<summary><b>LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion</b> &mdash; <code>ICLR 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A strong open 3D asset system combining large-scale shape generation and texture synthesis for production-quality assets.
 
-> 把大规模几何表征学习与生成统一起来，是 3D geometry model 路线的重要代表。
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2501.12202) [![Code: GitHub ★ 13.4k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2013.4k-181717?style=flat-square&logo=github)](https://github.com/Tencent/Hunyuan3D-2)
 
-[📄 Paper](https://scholar.google.com/scholar?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion) &nbsp; [💻 Code](https://github.com/search?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion&type=repositories)
+### TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation
 
-</details>
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/microsoft/TRELLIS) [![GitHub: ★ 12.1k](https://img.shields.io/badge/GitHub-%E2%98%85%2012.1k-181717?style=flat-square&logo=github)](https://github.com/microsoft/TRELLIS)
 
-<details>
-<summary><b>OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation</b> &mdash; <code>SIGGRAPH 2025</code> `autoregressive` `octree` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A large-scale unified latent representation for text- and image-conditioned 3D asset generation across multiple output formats.
 
-> A 3d shape generation approach targeting 3d object asset generation using autoregressive conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.01506) [![Code: GitHub ★ 12.1k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2012.1k-181717?style=flat-square&logo=github)](https://github.com/microsoft/TRELLIS) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://microsoft.github.io/TRELLIS/)
 
-[📄 Paper](https://scholar.google.com/scholar?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation) &nbsp; [💻 Code](https://github.com/search?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation&type=repositories)
+### Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling
 
-</details>
+![Venue: NeurIPS 2025](https://img.shields.io/badge/Venue-NeurIPS%202025-7C3AED?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/lizhihao6/Sparc3D) [![GitHub: ★ 1.3k](https://img.shields.io/badge/GitHub-%E2%98%85%201.3k-181717?style=flat-square&logo=github)](https://github.com/lizhihao6/Sparc3D)
 
-<details>
-<summary><b>OctFusion: Octree-based Diffusion Models for 3D Shape Generation</b> &mdash; <code>SGP 2025</code> `diffusion` `octree` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A sparse deformable marching-cubes representation plus sparse-conv VAE for near-lossless high-resolution 3D generation.
 
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.14521) [![Code: GitHub ★ 1.3k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%201.3k-181717?style=flat-square&logo=github)](https://github.com/lizhihao6/Sparc3D) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://lizhihao6.github.io/Sparc3D)
 
-[📄 Paper](https://scholar.google.com/scholar?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation) &nbsp; [💻 Code](https://github.com/search?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation&type=repositories)
+### OctFusion: Octree-based Diffusion Models for 3D Shape Generation
 
-</details>
+![Venue: SGP 2025](https://img.shields.io/badge/Venue-SGP%202025-EA580C?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/octree-nn/octfusion) [![GitHub: ★ 230](https://img.shields.io/badge/GitHub-%E2%98%85%20230-181717?style=flat-square&logo=github)](https://github.com/octree-nn/octfusion)
 
-<details>
-<summary><b>3D Point Cloud Generation via Autoregressive Up-sampling</b> &mdash; <code>arXiv 2025</code> `autoregressive` `point-cloud` </summary>
+> An octree latent representation plus unified multi-scale diffusion model for fast high-quality shape generation.
 
-> A 3d shape generation approach targeting 3d object asset generation using autoregressive conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2408.14732) [![Code: GitHub ★ 230](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20230-181717?style=flat-square&logo=github)](https://github.com/octree-nn/octfusion)
 
-[📄 Paper](https://arxiv.org/search/?query=3D%20Point%20Cloud%20Generation%20via%20Autoregressive%20Up-sampling&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Zechao-Guan/TopoDiT-3D) [![GitHub: ★ 14](https://img.shields.io/badge/GitHub-%E2%98%85%2014-181717?style=flat-square&logo=github)](https://github.com/Zechao-Guan/TopoDiT-3D)
 
-<details>
-<summary><b>EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention</b> &mdash; <code>arXiv 2025</code> `flow` `point-cloud` </summary>
+> Injects persistent-homology topology cues into diffusion transformers for better point-cloud generation.
 
-> A 3d shape generation approach targeting 3d object asset generation using flow conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.09140) [![Code: GitHub ★ 14](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2014-181717?style=flat-square&logo=github)](https://github.com/Zechao-Guan/TopoDiT-3D)
 
-[📄 Paper](https://arxiv.org/search/?query=EAGLE%3A%20Contextual%20Point%20Cloud%20Generation%20via%20Adaptive%20Continuous%20Normalizing%20Flow%20with%20Self-Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### 3D Point Cloud Generation via Autoregressive Up-sampling
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Treats point-cloud generation as progressive next-scale up-sampling rather than flat-token prediction.
 
-> Tencent's two-stage 3D generation system (DiT shape + Paint texture) achieving SOTA in geometry detail and texture quality. 2.6M+ downloads on HuggingFace.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.08594)
 
-[📄 Paper](https://arxiv.org/abs/2501.12202) &nbsp; [💻 Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) &nbsp; [🌐 Project](https://hunyuan-3d.com/)
+### EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A flow-based point-cloud generator that augments continuous normalizing flows with global self-attention.
 
-> Major upgrade with 1024 geometric resolution, improved PBR textures, and skeleton-animation-compatible topology.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.13479)
 
-[📄 Paper](https://arxiv.org/abs/2506.16504) &nbsp; [💻 Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
+### Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>LATTICE: Democratize High-Fidelity 3D Generation at Scale</b> &mdash; <code>arXiv 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A 2.5-generation upgrade emphasizing finer geometry, stronger textures, and better asset readiness for downstream use.
 
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text/image.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.16504)
 
-[📄 Paper](https://arxiv.org/search/?query=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&type=repositories)
+### LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion
 
-</details>
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Not-So-Optimal Transport Flows for 3D Point Cloud Generation</b> &mdash; <code>arXiv 2025</code> `flow` `point-cloud` </summary>
+> A hierarchical geometry autoencoder and cascaded diffusion pipeline for scalable high-fidelity 3D generation.
 
-> A 3d shape generation approach targeting 3d object asset generation using flow conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2410.01295)
 
-[📄 Paper](https://arxiv.org/search/?query=Not-So-Optimal%20Transport%20Flows%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### LATTICE: Democratize High-Fidelity 3D Generation at Scale
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling</b> &mdash; <code>arXiv 2025</code> `transformer` `mesh` </summary>
+> A scalable two-stage 3D asset generator built on structured voxel-set latents and rectified-flow transformers.
 
-> A 3d shape generation approach targeting 3d object asset generation using transformer conditioned on image.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2512.03052)
 
-[📄 Paper](https://arxiv.org/search/?query=Sparc3D%3A%20Sparse%20Representation%20and%20Construction%20for%20High-Resolution%203D%20Shapes%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### Not-So-Optimal Transport Flows for 3D Point Cloud Generation
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling (TripoSF)</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> An approximate-OT flow model designed to scale better and train more easily on large point clouds.
 
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on image.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2502.12456)
 
-[📄 Paper](https://arxiv.org/search/?query=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&type=repositories)
+### OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation
 
-</details>
+![Venue: SIGGRAPH 2025](https://img.shields.io/badge/Venue-SIGGRAPH%202025-EA580C?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor</b> &mdash; <code>arXiv 2025</code> `transformer` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A multiscale octree autoregressive model that makes high-resolution 3D generation far more efficient.
 
-> A 3d shape generation approach targeting 3d object asset generation using transformer conditioned on text/image.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2504.09975)
 
-[📄 Paper](https://arxiv.org/search/?query=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&type=repositories)
+### SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `point-cloud` </summary>
+> A sparse-structured differentiable mesh representation that supports arbitrary topology and high-resolution 3D generation.
 
-> A 3d shape generation approach targeting 3d object asset generation using diffusion/transformer conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.21732)
 
-[📄 Paper](https://arxiv.org/search/?query=TopoDiT-3D%3A%20Topology-Aware%20Diffusion%20Transformer%20with%20Bottleneck%20Structure%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Repurposes pretrained 3D generators as powerful implicit compressors for meshes, point clouds, and radiance fields.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.07932)
+
+### Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Introduces geometry-aware part attention for faster high-resolution 3D generation without losing detail.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.17745)
+
+### UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A two-stage geometry generation pipeline emphasizing high-resolution local refinement and strong watertight processing.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2512.21185)
+
+### UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Unifies geometry and appearance in one latent space so 3D assets can be generated in a single stage.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2509.25079)
+
+## Compact Index
 
 <details>
-<summary><b>Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` </summary>
+<summary><b>Open compact index</b></summary>
 
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=Ultra3D%3A%20Efficient%20and%20High-Fidelity%203D%20Generation%20with%20Part%20Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&type=repositories)
-
-</details>
-
-<details>
-<summary><b>UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</b> &mdash; <code>arXiv 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text/image.
-
-[📄 Paper](https://arxiv.org/search/?query=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&type=repositories)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents** | 3d-shape-generation | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.23973) |
+| **Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2501.12202) / [Code](https://github.com/Tencent/Hunyuan3D-2) |
+| **TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation** | 3d-shape-generation | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.01506) / [Code](https://github.com/microsoft/TRELLIS) / [Project](https://microsoft.github.io/TRELLIS/) |
+| **Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling** | 3d-shape-generation | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2505.14521) / [Code](https://github.com/lizhihao6/Sparc3D) / [Project](https://lizhihao6.github.io/Sparc3D) |
+| **OctFusion: Octree-based Diffusion Models for 3D Shape Generation** | 3d-shape-generation | SGP 2025 | [Paper](https://arxiv.org/abs/2408.14732) / [Code](https://github.com/octree-nn/octfusion) |
+| **TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.09140) / [Code](https://github.com/Zechao-Guan/TopoDiT-3D) |
+| **3D Point Cloud Generation via Autoregressive Up-sampling** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.08594) |
+| **EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.13479) |
+| **Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.16504) |
+| **LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion** | 3d-shape-generation | ICLR 2025 | [Paper](https://arxiv.org/abs/2410.01295) |
+| **LATTICE: Democratize High-Fidelity 3D Generation at Scale** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2512.03052) |
+| **Not-So-Optimal Transport Flows for 3D Point Cloud Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.12456) |
+| **OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation** | 3d-shape-generation | SIGGRAPH 2025 | [Paper](https://arxiv.org/abs/2504.09975) |
+| **SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.21732) |
+| **Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.07932) |
+| **Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2507.17745) |
+| **UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2512.21185) |
+| **UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2509.25079) |
 
 </details>

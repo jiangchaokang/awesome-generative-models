@@ -1,70 +1,78 @@
-# 🎬 20-video / video-editing
+# 🎬 Video / video-editing
 
-> **6 papers.**
+**Entries:** 7
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **h-Edit: Effective and Flexible Diffusion-Based Editing via Doob's h-Transform** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=h-Edit%3A%20Effective%20and%20Flexible%20Diffusion-Based%20Editing%20via%20Doob%27s%20h-Transform) / [Code](https://github.com/search?q=h-Edit%3A%20Effective%20and%20Flexible%20Diffusion-Based%20Editing%20via%20Doob%27s%20h-Transform&type=repositories) |
-| **SketchVideo: Sketch-based Video Generation and Editing** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=SketchVideo%3A%20Sketch-based%20Video%20Generation%20and%20Editing) / [Code](https://github.com/search?q=SketchVideo%3A%20Sketch-based%20Video%20Generation%20and%20Editing&type=repositories) |
-| **VideoDirector: Precise Video Editing via Text-to-Video Models** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=VideoDirector%3A%20Precise%20Video%20Editing%20via%20Text-to-Video%20Models) / [Code](https://github.com/search?q=VideoDirector%3A%20Precise%20Video%20Editing%20via%20Text-to-Video%20Models&type=repositories) |
-| **VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models** | CVPR 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=VideoMage%3A%20Multi-Subject%20and%20Motion%20Customization%20of%20Text-to-Video%20Diffusion%20Models) |
-| **VACE: All-in-One Video Creation and Editing** | ICCV 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=VACE%3A%20All-in-One%20Video%20Creation%20and%20Editing) / [Code](https://github.com/search?q=VACE%3A%20All-in-One%20Video%20Creation%20and%20Editing&type=repositories) |
-| **VACE: All-in-One Video Creation and Editing (Wan2.1-VACE)** | arXiv 2025 | `diffusion` `transformer` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2503.07598) / [Code](https://github.com/ali-vilab/VACE) |
+### P-Flow: Prompting Visual Effects Generation
 
-## Details
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: video-editing](https://img.shields.io/badge/Task-video-editing-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A prompting-based framework for generating controllable visual effects sequences in video.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.22091)
+
+### ViFeEdit: A Video-Free Tuner of Your Video Diffusion Transformer
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: video-editing](https://img.shields.io/badge/Task-video-editing-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Tunes video diffusion transformers for editing tasks without requiring task-specific video training data.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.15478)
+
+### VACE: All-in-One Video Creation and Editing
+
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: video-editing](https://img.shields.io/badge/Task-video-editing-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ali-vilab/VACE) [![GitHub: ★ 3.7k](https://img.shields.io/badge/GitHub-%E2%98%85%203.7k-181717?style=flat-square&logo=github)](https://github.com/ali-vilab/VACE)
+
+> A unified diffusion-transformer framework for reference-to-video, V2V editing, and masked editing in one model.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.07598) [![Code: GitHub ★ 3.7k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%203.7k-181717?style=flat-square&logo=github)](https://github.com/ali-vilab/VACE) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://ali-vilab.github.io/VACE-Page/)
+
+### h-Edit: Effective and Flexible Diffusion-Based Editing via Doob's h-Transform
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: video-editing](https://img.shields.io/badge/Task-video-editing-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/nktoan/h-edit) [![GitHub: ★ 75](https://img.shields.io/badge/GitHub-%E2%98%85%2075-181717?style=flat-square&logo=github)](https://github.com/nktoan/h-edit)
+
+> A general bridge-based editing framework that supports flexible composition of editing objectives.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.02187) [![Code: GitHub ★ 75](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2075-181717?style=flat-square&logo=github)](https://github.com/nktoan/h-edit)
+
+### SketchVideo: Sketch-based Video Generation and Editing
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: video-editing](https://img.shields.io/badge/Task-video-editing-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A sketch-conditioned video model supporting sparse keyframe control for both generation and local editing.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.23284)
+
+### VideoDirector: Precise Video Editing via Text-to-Video Models
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: video-editing](https://img.shields.io/badge/Task-video-editing-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Brings inversion and attention-control ideas into native T2V models for more accurate video editing.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.17592)
+
+### VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: video-editing](https://img.shields.io/badge/Task-video-editing-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Customizes both multiple identities and their interactive motions within one text-to-video system.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.21781)
+
+## Compact Index
 
 <details>
-<summary><b>h-Edit: Effective and Flexible Diffusion-Based Editing via Doob&#x27;s h-Transform</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A video editing approach targeting video generation using diffusion conditioned on video/text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=h-Edit%3A%20Effective%20and%20Flexible%20Diffusion-Based%20Editing%20via%20Doob%27s%20h-Transform) &nbsp; [💻 Code](https://github.com/search?q=h-Edit%3A%20Effective%20and%20Flexible%20Diffusion-Based%20Editing%20via%20Doob%27s%20h-Transform&type=repositories)
-
-</details>
-
-<details>
-<summary><b>SketchVideo: Sketch-based Video Generation and Editing</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A video editing approach targeting video generation using diffusion conditioned on video/sketch.
-
-[📄 Paper](https://scholar.google.com/scholar?q=SketchVideo%3A%20Sketch-based%20Video%20Generation%20and%20Editing) &nbsp; [💻 Code](https://github.com/search?q=SketchVideo%3A%20Sketch-based%20Video%20Generation%20and%20Editing&type=repositories)
-
-</details>
-
-<details>
-<summary><b>VideoDirector: Precise Video Editing via Text-to-Video Models</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A video editing approach targeting video generation using diffusion conditioned on video/text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=VideoDirector%3A%20Precise%20Video%20Editing%20via%20Text-to-Video%20Models) &nbsp; [💻 Code](https://github.com/search?q=VideoDirector%3A%20Precise%20Video%20Editing%20via%20Text-to-Video%20Models&type=repositories)
-
-</details>
-
-<details>
-<summary><b>VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models</b> &mdash; <code>CVPR 2025</code> `diffusion` </summary>
-
-> A video editing approach targeting video generation using diffusion conditioned on video/text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=VideoMage%3A%20Multi-Subject%20and%20Motion%20Customization%20of%20Text-to-Video%20Diffusion%20Models)
-
-</details>
-
-<details>
-<summary><b>VACE: All-in-One Video Creation and Editing</b> &mdash; <code>ICCV 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A video editing approach targeting video generation using diffusion conditioned on video/text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=VACE%3A%20All-in-One%20Video%20Creation%20and%20Editing) &nbsp; [💻 Code](https://github.com/search?q=VACE%3A%20All-in-One%20Video%20Creation%20and%20Editing&type=repositories)
-
-</details>
-
-<details>
-<summary><b>VACE: All-in-One Video Creation and Editing (Wan2.1-VACE)</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Alibaba's unified model for video generation and editing with multi-modal inputs. First open-source all-in-one video creation solution.
-
-[📄 Paper](https://arxiv.org/abs/2503.07598) &nbsp; [💻 Code](https://github.com/ali-vilab/VACE)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **P-Flow: Prompting Visual Effects Generation** | video-editing | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.22091) |
+| **ViFeEdit: A Video-Free Tuner of Your Video Diffusion Transformer** | video-editing | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.15478) |
+| **VACE: All-in-One Video Creation and Editing** | video-editing | ICCV 2025 | [Paper](https://arxiv.org/abs/2503.07598) / [Code](https://github.com/ali-vilab/VACE) / [Project](https://ali-vilab.github.io/VACE-Page/) |
+| **h-Edit: Effective and Flexible Diffusion-Based Editing via Doob's h-Transform** | video-editing | CVPR 2025 | [Paper](https://arxiv.org/abs/2503.02187) / [Code](https://github.com/nktoan/h-edit) |
+| **SketchVideo: Sketch-based Video Generation and Editing** | video-editing | CVPR 2025 | [Paper](https://arxiv.org/abs/2503.23284) |
+| **VideoDirector: Precise Video Editing via Text-to-Video Models** | video-editing | CVPR 2025 | [Paper](https://arxiv.org/abs/2411.17592) |
+| **VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models** | video-editing | CVPR 2025 | [Paper](https://arxiv.org/abs/2503.21781) |
 
 </details>

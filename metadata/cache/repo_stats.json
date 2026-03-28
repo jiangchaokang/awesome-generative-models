@@ -1,0 +1,266 @@
+{
+  "Advocate99/AssetFormer": {
+    "stars": 33,
+    "pushed_at": "2026-02-13T02:39:10Z",
+    "archived": false,
+    "license": ""
+  },
+  "liulin815/DriveWorld-VLA": {
+    "stars": 61,
+    "pushed_at": "2026-03-27T07:02:46Z",
+    "archived": false,
+    "license": ""
+  },
+  "xiaolul2/DynFlowDrive": {
+    "stars": 15,
+    "pushed_at": "2026-03-23T06:06:02Z",
+    "archived": false,
+    "license": ""
+  },
+  "Tencent-Hunyuan/iFSQ": {
+    "stars": 96,
+    "pushed_at": "2026-01-27T14:25:02Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "jiangchaokang/VectorWorld": {
+    "stars": 15,
+    "pushed_at": "2026-03-24T04:06:14Z",
+    "archived": false,
+    "license": ""
+  },
+  "Bujiazi/ByTheWay": {
+    "stars": 49,
+    "pushed_at": "2025-10-10T11:33:06Z",
+    "archived": false,
+    "license": ""
+  },
+  "THUDM/CogVideo": {
+    "stars": 12567,
+    "pushed_at": "2025-11-04T11:19:04Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "PKU-YuanGroup/ConsisID": {
+    "stars": 834,
+    "pushed_at": "2026-03-08T12:49:42Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "NVIDIA/Cosmos": {
+    "stars": 8096,
+    "pushed_at": "2026-01-06T01:52:23Z",
+    "archived": false,
+    "license": ""
+  },
+  "showlab/D-AR": {
+    "stars": 137,
+    "pushed_at": "2026-01-29T14:31:40Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "Kevin-thu/Epona": {
+    "stars": 320,
+    "pushed_at": "2025-07-22T06:35:46Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "pengHTYX/Era3D": {
+    "stars": 635,
+    "pushed_at": "2024-12-09T05:41:15Z",
+    "archived": false,
+    "license": "AGPL-3.0"
+  },
+  "black-forest-labs/flux": {
+    "stars": 25358,
+    "pushed_at": "2025-07-31T13:58:55Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "nktoan/h-edit": {
+    "stars": 75,
+    "pushed_at": "2025-06-11T11:08:09Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "LMD0311/HERMES": {
+    "stars": 242,
+    "pushed_at": "2025-07-14T14:36:55Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "Tencent/Hunyuan3D-2": {
+    "stars": 13388,
+    "pushed_at": "2025-10-28T09:58:12Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "Tencent/HunyuanVideo": {
+    "stars": 11898,
+    "pushed_at": "2025-11-21T06:36:57Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "Tencent-Hunyuan/HY-WorldPlay": {
+    "stars": 1346,
+    "pushed_at": "2026-03-24T03:20:14Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "luping-liu/LongAlign": {
+    "stars": 80,
+    "pushed_at": "2025-04-23T03:08:46Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "Intern-Nexus/Infinite-Mobility": {
+    "stars": 187,
+    "pushed_at": "2025-07-25T03:18:07Z",
+    "archived": false,
+    "license": "BSD-3-Clause"
+  },
+  "Chao0511/mitune": {
+    "stars": 6,
+    "pushed_at": "2025-03-23T14:38:36Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "TencentARC/InstantMesh": {
+    "stars": 4324,
+    "pushed_at": "2025-01-03T09:09:13Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "ZhenglinZhou/ITS3D": {
+    "stars": 8,
+    "pushed_at": "2025-12-01T03:15:10Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "flymin/MagicDrive-V2": {
+    "stars": 707,
+    "pushed_at": "2025-06-26T01:36:37Z",
+    "archived": false,
+    "license": "AGPL-3.0"
+  },
+  "SkyworkAI/Matrix-Game": {
+    "stars": 1932,
+    "pushed_at": "2026-03-27T14:27:38Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "Bomingmiao/NoiseDiffusion": {
+    "stars": 14,
+    "pushed_at": "2025-11-08T18:51:53Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "octree-nn/octfusion": {
+    "stars": 230,
+    "pushed_at": "2025-07-02T13:28:30Z",
+    "archived": false,
+    "license": ""
+  },
+  "byliutao/1Prompt1Story": {
+    "stars": 314,
+    "pushed_at": "2025-10-20T04:52:19Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "pittisl/PhyT2V": {
+    "stars": 64,
+    "pushed_at": "2025-07-31T03:37:04Z",
+    "archived": false,
+    "license": ""
+  },
+  "PixArt-alpha/PixArt-sigma": {
+    "stars": 1912,
+    "pushed_at": "2024-10-31T01:20:19Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "NVlabs/Sana": {
+    "stars": 5034,
+    "pushed_at": "2026-03-17T15:47:58Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "lizhihao6/Sparc3D": {
+    "stars": 1315,
+    "pushed_at": "2025-06-16T05:29:19Z",
+    "archived": false,
+    "license": ""
+  },
+  "stepfun-ai/Step-Video-T2V": {
+    "stars": 3180,
+    "pushed_at": "2025-03-17T03:26:54Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "Zechao-Guan/TopoDiT-3D": {
+    "stars": 14,
+    "pushed_at": "2025-05-13T06:39:50Z",
+    "archived": false,
+    "license": ""
+  },
+  "microsoft/TRELLIS": {
+    "stars": 12075,
+    "pushed_at": "2025-11-05T13:18:15Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "VAST-AI-Research/TripoSR": {
+    "stars": 6309,
+    "pushed_at": "2024-08-16T00:03:43Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "ali-vilab/UniAnimate-DiT": {
+    "stars": 842,
+    "pushed_at": "2025-04-27T08:11:49Z",
+    "archived": false,
+    "license": ""
+  },
+  "AiuniAI/Unique3D": {
+    "stars": 3553,
+    "pushed_at": "2025-07-17T21:29:05Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "ali-vilab/VACE": {
+    "stars": 3706,
+    "pushed_at": "2025-10-17T05:46:57Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "Wan-Video/Wan2.1": {
+    "stars": 15698,
+    "pushed_at": "2026-03-05T09:38:07Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "waymo-research/waymax": {
+    "stars": 1054,
+    "pushed_at": "2025-10-23T04:29:20Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "KovenYu/WonderWorld": {
+    "stars": 716,
+    "pushed_at": "2025-04-14T04:52:47Z",
+    "archived": false,
+    "license": ""
+  },
+  "ucaszyp/World4Drive": {
+    "stars": 73,
+    "pushed_at": "2025-12-31T15:00:36Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "bytedance/X-Dyna": {
+    "stars": 266,
+    "pushed_at": "2025-01-30T01:40:29Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  }
+}

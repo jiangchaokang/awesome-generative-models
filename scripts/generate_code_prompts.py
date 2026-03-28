@@ -4,6 +4,18 @@
 """
 Example:
     python3 scripts/generate_code_prompts.py /content/awesome-generative-models
+
+python scripts/validate_data.py --write-cache
+python scripts/build.py
+
+工作流应该是：
+看 metadata/candidates/latest.md
+打开当天 raw JSON
+人工筛
+写入 data/*.jsonl
+运行 validate + build
+发布
+
 """
 
 import argparse

@@ -1,30 +1,42 @@
-# 🏙️ 40-3d-scene / single-image-to-scene
+# 🏙️ 3D Scene / single-image-to-scene
 
-> **2 papers.**
+**Entries:** 3
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **WonderWorld: Interactive 3D Scene Generation from a Single Image** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=WonderWorld%3A%20Interactive%203D%20Scene%20Generation%20from%20a%20Single%20Image) / [Code](https://github.com/search?q=WonderWorld%3A%20Interactive%203D%20Scene%20Generation%20from%20a%20Single%20Image&type=repositories) |
-| **Bolt3D: Generating 3D Scenes in Seconds** | ICCV 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=Bolt3D%3A%20Generating%203D%20Scenes%20in%20Seconds) |
+### WonderWorld: Interactive 3D Scene Generation from a Single Image
 
-## Details
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: single-image-to-scene](https://img.shields.io/badge/Task-single-image-to-scene-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/KovenYu/WonderWorld) [![GitHub: ★ 716](https://img.shields.io/badge/GitHub-%E2%98%85%20716-181717?style=flat-square&logo=github)](https://github.com/KovenYu/WonderWorld)
+
+> A fast interactive pipeline that turns one image into a connected explorable 3D scene in seconds.
+
+[![Paper](https://img.shields.io/badge/Paper-B31B1B?style=flat-square)](https://openaccess.thecvf.com/content/CVPR2025/html/Yu_WonderWorld_Interactive_3D_Scene_Generation_from_a_Single_Image_CVPR_2025_paper.html) [![Code: GitHub ★ 716](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20716-181717?style=flat-square&logo=github)](https://github.com/KovenYu/WonderWorld) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://kovenyu.com/WonderWorld/)
+
+### Bolt3D: Generating 3D Scenes in Seconds
+
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: single-image-to-scene](https://img.shields.io/badge/Task-single-image-to-scene-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A latent diffusion model that directly samples a 3D scene from one or more images in a few seconds.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.14445)
+
+### WonderFree: Enhancing Novel View Quality and Cross-View Consistency for 3D Scene Exploration
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: single-image-to-scene](https://img.shields.io/badge/Task-single-image-to-scene-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A follow-up exploration system that restores novel views and improves global cross-view consistency for single-image 3D worlds.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.20590) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://wonder-free.github.io/)
+
+## Compact Index
 
 <details>
-<summary><b>WonderWorld: Interactive 3D Scene Generation from a Single Image</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A single image to scene approach targeting 3d scene generation using diffusion conditioned on image.
-
-[📄 Paper](https://scholar.google.com/scholar?q=WonderWorld%3A%20Interactive%203D%20Scene%20Generation%20from%20a%20Single%20Image) &nbsp; [💻 Code](https://github.com/search?q=WonderWorld%3A%20Interactive%203D%20Scene%20Generation%20from%20a%20Single%20Image&type=repositories)
-
-</details>
-
-<details>
-<summary><b>Bolt3D: Generating 3D Scenes in Seconds</b> &mdash; <code>ICCV 2025</code> `diffusion` </summary>
-
-> A single image to scene approach targeting 3d scene generation using diffusion conditioned on image/text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Bolt3D%3A%20Generating%203D%20Scenes%20in%20Seconds)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **WonderWorld: Interactive 3D Scene Generation from a Single Image** | single-image-to-scene | CVPR 2025 | [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Yu_WonderWorld_Interactive_3D_Scene_Generation_from_a_Single_Image_CVPR_2025_paper.html) / [Code](https://github.com/KovenYu/WonderWorld) / [Project](https://kovenyu.com/WonderWorld/) |
+| **Bolt3D: Generating 3D Scenes in Seconds** | single-image-to-scene | ICCV 2025 | [Paper](https://arxiv.org/abs/2503.14445) |
+| **WonderFree: Enhancing Novel View Quality and Cross-View Consistency for 3D Scene Exploration** | single-image-to-scene | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.20590) / [Project](https://wonder-free.github.io/) |
 
 </details>

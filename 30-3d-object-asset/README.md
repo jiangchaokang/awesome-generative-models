@@ -1,381 +1,451 @@
-# 🧊 30-3d-object-asset — 3D Object / Asset
+# 🧊 3D Object / Asset
 
-> **36 papers.** Single-object 3D assets, reusable avatars, articulated / part-aware assets.
+> Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation.
 
-[↑ Back to root](../README.md)
+**Curated entries:** 38
 
-## Tasks
+[← Root](../README.md) · [Taxonomy](../docs/taxonomy.md) · [Candidate Inbox](../metadata/candidates/latest.md)
 
-- [3d-shape-generation](3d-shape-generation.md) (17)
-- [image-to-3d](image-to-3d.md) (6)
-- [part-aware-generation](part-aware-generation.md) (6)
-- [articulated-asset](articulated-asset.md) (4)
-- [text-to-3d](text-to-3d.md) (2)
-- [human-avatar](human-avatar.md) (1)
+## Quick Navigation
 
-## All Papers
+[`3d-shape-generation`](#3d-shape-generation) [`image-to-3d`](#image-to-3d) [`part-aware-generation`](#part-aware-generation) [`articulated-asset`](#articulated-asset) [`text-to-3d`](#text-to-3d) [`human-avatar`](#human-avatar)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer** | arXiv 2026 | `autoregressive` `transformer` `part-graph` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2602.12100) / [Code](https://github.com/Advocate99/AssetFormer) |
-| **Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion** | arXiv 2026 | `diffusion` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2602.17040) / [Code](https://jinnmnm.github.io/Fuse3d.github.io/) |
-| **MeshArt: Generating Articulated Meshes with Structure-guided Transformers** | CVPR 2025 | `transformer` `mesh` `part-graph` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers) / [Code](https://github.com/search?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers&type=repositories) |
-| **TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation** | CVPR 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation) / [Code](https://github.com/search?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation&type=repositories) |
-| **AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion** | ICCV 2025 | `diffusion` `mesh` `multiview` | — | [Paper](https://scholar.google.com/scholar?q=AdaHuman%3A%20Animatable%20Detailed%203D%20Human%20Generation%20with%20Compositional%20Multiview%20Diffusion) |
-| **From One to More: Contextual Part Latents for 3D Generation** | ICCV 2025 | `diffusion` `part-graph` | — | [Paper](https://scholar.google.com/scholar?q=From%20One%20to%20More%3A%20Contextual%20Part%20Latents%20for%203D%20Generation) |
-| **LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion** | ICLR 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion) / [Code](https://github.com/search?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion&type=repositories) |
-| **OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation** | SIGGRAPH 2025 | `autoregressive` `octree` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation) / [Code](https://github.com/search?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation&type=repositories) |
-| **PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer** | SIGGRAPH 2025 | `autoregressive` `transformer` `part-graph` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer) / [Code](https://github.com/search?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer&type=repositories) |
-| **OctFusion: Octree-based Diffusion Models for 3D Shape Generation** | SGP 2025 | `diffusion` `octree` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation) / [Code](https://github.com/search?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation&type=repositories) |
-| **3D Point Cloud Generation via Autoregressive Up-sampling** | arXiv 2025 | `autoregressive` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=3D%20Point%20Cloud%20Generation%20via%20Autoregressive%20Up-sampling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling** | arXiv 2025 | `transformer` `mesh` | — | [Paper](https://arxiv.org/search/?query=Articulate%20AnyMesh%3A%20Open-Vocabulary%203D%20Articulated%20Objects%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=Assembler%3A%20Scalable%203D%20Part%20Assembly%20via%20Anchor%20Point%20Diffusion&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention** | arXiv 2025 | `flow` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=EAGLE%3A%20Contextual%20Point%20Cloud%20Generation%20via%20Adaptive%20Continuous%20Normalizing%20Flow%20with%20Self-Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Efficient Part-level 3D Object Generation via Dual Volume Packing** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=Efficient%20Part-level%203D%20Object%20Generation%20via%20Dual%20Volume%20Packing&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **FullPart: Generating each 3D Part at Full Resolution** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=FullPart%3A%20Generating%20each%203D%20Part%20at%20Full%20Resolution&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation** | arXiv 2025 | `diffusion` `transformer` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2501.12202) / [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) / [Web](https://hunyuan-3d.com/) |
-| **Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details** | arXiv 2025 | `diffusion` `transformer` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2506.16504) / [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |
-| **Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation** | arXiv 2025 | `procedural` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&type=repositories) |
-| **InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models** | arXiv 2025 | `transformer` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2404.07191) / [Code](https://github.com/TencentARC/InstantMesh) |
-| **ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models** | arXiv 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2511.22456) / [Code](https://github.com/ZhenglinZhou/ITS3D) |
-| **LATTICE: Democratize High-Fidelity 3D Generation at Scale** | arXiv 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&type=repositories) |
-| **Not-So-Optimal Transport Flows for 3D Point Cloud Generation** | arXiv 2025 | `flow` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=Not-So-Optimal%20Transport%20Flows%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=OmniPart%3A%20Part-Aware%203D%20Generation%20with%20Semantic%20Decoupling%20and%20Structural%20Cohesion&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers** | arXiv 2025 | `diffusion` `transformer` `mesh` `part-graph` | — | [Paper](https://arxiv.org/search/?query=PartCrafter%3A%20Structured%203D%20Mesh%20Generation%20via%20Compositional%20Latent%20Diffusion%20Transformers&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling** | arXiv 2025 | `transformer` `mesh` | — | [Paper](https://arxiv.org/search/?query=Sparc3D%3A%20Sparse%20Representation%20and%20Construction%20for%20High-Resolution%203D%20Shapes%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling (TripoSF)** | arXiv 2025 | `diffusion` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&type=repositories) |
-| **Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor** | arXiv 2025 | `transformer` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&type=repositories) |
-| **TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation** | arXiv 2025 | `diffusion` `transformer` `point-cloud` | — | [Paper](https://arxiv.org/search/?query=TopoDiT-3D%3A%20Topology-Aware%20Diffusion%20Transformer%20with%20Bottleneck%20Structure%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **TripoSR: Fast 3D Object Reconstruction from a Single Image** | arXiv 2025 | `transformer` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2403.02151) / [Code](https://github.com/VAST-AI-Research/TripoSR) |
-| **Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention** | arXiv 2025 | `diffusion` `mesh` | — | [Paper](https://arxiv.org/search/?query=Ultra3D%3A%20Efficient%20and%20High-Fidelity%203D%20Generation%20with%20Part%20Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement** | arXiv 2025 | `diffusion` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&type=repositories) |
-| **UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation** | arXiv 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&type=repositories) |
-| **Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image** | arXiv 2025 | `diffusion` `mesh` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2405.20343) / [Code](https://github.com/AiuniAI/Unique3D) |
-| **Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention** | NeurIPS 2024 | `diffusion` `multiview` `open-source` | ✅ | [Paper](https://arxiv.org/abs/2405.11616) / [Code](https://github.com/pengHTYX/Era3D) |
-| **RGB2Point: 3D Point Cloud Generation from Single RGB Images** | ACM Multimedia 2024 | `transformer` `point-cloud` | — | [Paper](https://scholar.google.com/scholar?q=RGB2Point%3A%203D%20Point%20Cloud%20Generation%20from%20Single%20RGB%20Images) |
+## Highlights
 
-## Paper Details
+### AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Advocate99/AssetFormer) [![GitHub: ★ 33](https://img.shields.io/badge/GitHub-%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+
+> Targets modular assets directly with autoregressive generation over part-aware structures.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 33](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+
+### DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A collaborative latent-denoising framework for semantically grounded part-level 3D object generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19216)
+
+### Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: image-to-3d](https://img.shields.io/badge/Task-image-to-3d-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A multi-image control framework for generating one fused 3D asset with region-level guidance.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.17040) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://jinnmnm.github.io/Fuse3d.github.io/)
+
+### SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Extends structured 3D latents from geometry toward material-property prediction for simulation-ready assets.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.23973)
+
+### Text-Image Conditioned 3D Generation
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A joint text-and-image conditioned 3D generation framework aimed at stronger controllability over asset content.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.21295)
+
+### Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Tencent/Hunyuan3D-2) [![GitHub: ★ 13.4k](https://img.shields.io/badge/GitHub-%E2%98%85%2013.4k-181717?style=flat-square&logo=github)](https://github.com/Tencent/Hunyuan3D-2)
+
+> A strong open 3D asset system combining large-scale shape generation and texture synthesis for production-quality assets.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2501.12202) [![Code: GitHub ★ 13.4k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2013.4k-181717?style=flat-square&logo=github)](https://github.com/Tencent/Hunyuan3D-2)
+
+## By Task
+
+## 3d-shape-generation
+
+**18 entries**
+
+### SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Extends structured 3D latents from geometry toward material-property prediction for simulation-ready assets.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.23973)
+
+### Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Tencent/Hunyuan3D-2) [![GitHub: ★ 13.4k](https://img.shields.io/badge/GitHub-%E2%98%85%2013.4k-181717?style=flat-square&logo=github)](https://github.com/Tencent/Hunyuan3D-2)
+
+> A strong open 3D asset system combining large-scale shape generation and texture synthesis for production-quality assets.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2501.12202) [![Code: GitHub ★ 13.4k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2013.4k-181717?style=flat-square&logo=github)](https://github.com/Tencent/Hunyuan3D-2)
+
+### TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/microsoft/TRELLIS) [![GitHub: ★ 12.1k](https://img.shields.io/badge/GitHub-%E2%98%85%2012.1k-181717?style=flat-square&logo=github)](https://github.com/microsoft/TRELLIS)
+
+> A large-scale unified latent representation for text- and image-conditioned 3D asset generation across multiple output formats.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.01506) [![Code: GitHub ★ 12.1k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2012.1k-181717?style=flat-square&logo=github)](https://github.com/microsoft/TRELLIS) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://microsoft.github.io/TRELLIS/)
+
+### Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling
+
+![Venue: NeurIPS 2025](https://img.shields.io/badge/Venue-NeurIPS%202025-7C3AED?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/lizhihao6/Sparc3D) [![GitHub: ★ 1.3k](https://img.shields.io/badge/GitHub-%E2%98%85%201.3k-181717?style=flat-square&logo=github)](https://github.com/lizhihao6/Sparc3D)
+
+> A sparse deformable marching-cubes representation plus sparse-conv VAE for near-lossless high-resolution 3D generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.14521) [![Code: GitHub ★ 1.3k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%201.3k-181717?style=flat-square&logo=github)](https://github.com/lizhihao6/Sparc3D) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://lizhihao6.github.io/Sparc3D)
+
+### OctFusion: Octree-based Diffusion Models for 3D Shape Generation
+
+![Venue: SGP 2025](https://img.shields.io/badge/Venue-SGP%202025-EA580C?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/octree-nn/octfusion) [![GitHub: ★ 230](https://img.shields.io/badge/GitHub-%E2%98%85%20230-181717?style=flat-square&logo=github)](https://github.com/octree-nn/octfusion)
+
+> An octree latent representation plus unified multi-scale diffusion model for fast high-quality shape generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2408.14732) [![Code: GitHub ★ 230](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20230-181717?style=flat-square&logo=github)](https://github.com/octree-nn/octfusion)
+
+### TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Zechao-Guan/TopoDiT-3D) [![GitHub: ★ 14](https://img.shields.io/badge/GitHub-%E2%98%85%2014-181717?style=flat-square&logo=github)](https://github.com/Zechao-Guan/TopoDiT-3D)
+
+> Injects persistent-homology topology cues into diffusion transformers for better point-cloud generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.09140) [![Code: GitHub ★ 14](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2014-181717?style=flat-square&logo=github)](https://github.com/Zechao-Guan/TopoDiT-3D)
+
+### 3D Point Cloud Generation via Autoregressive Up-sampling
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Treats point-cloud generation as progressive next-scale up-sampling rather than flat-token prediction.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.08594)
+
+### EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A flow-based point-cloud generator that augments continuous normalizing flows with global self-attention.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.13479)
+
+### Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A 2.5-generation upgrade emphasizing finer geometry, stronger textures, and better asset readiness for downstream use.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.16504)
+
+### LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A hierarchical geometry autoencoder and cascaded diffusion pipeline for scalable high-fidelity 3D generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2410.01295)
+
+### LATTICE: Democratize High-Fidelity 3D Generation at Scale
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A scalable two-stage 3D asset generator built on structured voxel-set latents and rectified-flow transformers.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2512.03052)
+
+### Not-So-Optimal Transport Flows for 3D Point Cloud Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> An approximate-OT flow model designed to scale better and train more easily on large point clouds.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2502.12456)
+
+### OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation
+
+![Venue: SIGGRAPH 2025](https://img.shields.io/badge/Venue-SIGGRAPH%202025-EA580C?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A multiscale octree autoregressive model that makes high-resolution 3D generation far more efficient.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2504.09975)
+
+### SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A sparse-structured differentiable mesh representation that supports arbitrary topology and high-resolution 3D generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.21732)
+
+### Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Repurposes pretrained 3D generators as powerful implicit compressors for meshes, point clouds, and radiance fields.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.07932)
+
+### Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Introduces geometry-aware part attention for faster high-resolution 3D generation without losing detail.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.17745)
+
+### UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A two-stage geometry generation pipeline emphasizing high-resolution local refinement and strong watertight processing.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2512.21185)
+
+### UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: 3d-shape-generation](https://img.shields.io/badge/Task-3d-shape-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Unifies geometry and appearance in one latent space so 3D assets can be generated in a single stage.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2509.25079)
+
+## image-to-3d
+
+**6 entries**
+
+### Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: image-to-3d](https://img.shields.io/badge/Task-image-to-3d-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A multi-image control framework for generating one fused 3D asset with region-level guidance.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.17040) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://jinnmnm.github.io/Fuse3d.github.io/)
+
+### TripoSR: Fast 3D Object Reconstruction from a Single Image
+
+![Venue: arXiv 2024](https://img.shields.io/badge/Venue-arXiv%202024-B31B1B?style=flat-square) ![Task: image-to-3d](https://img.shields.io/badge/Task-image-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/VAST-AI-Research/TripoSR) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square) [![GitHub: ★ 6.3k](https://img.shields.io/badge/GitHub-%E2%98%85%206.3k-181717?style=flat-square&logo=github)](https://github.com/VAST-AI-Research/TripoSR)
+
+> A fast feed-forward single-image 3D reconstruction model that remained actively used in 2025 pipelines and baselines.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2403.02151) [![Code: GitHub ★ 6.3k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%206.3k-181717?style=flat-square&logo=github)](https://github.com/VAST-AI-Research/TripoSR)
+
+_Scope note: Kept because TripoSR remained a widely used image-to-3D feed-forward baseline in 2025._
+
+### InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models
+
+![Venue: arXiv 2024](https://img.shields.io/badge/Venue-arXiv%202024-B31B1B?style=flat-square) ![Task: image-to-3d](https://img.shields.io/badge/Task-image-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/TencentARC/InstantMesh) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square) [![GitHub: ★ 4.3k](https://img.shields.io/badge/GitHub-%E2%98%85%204.3k-181717?style=flat-square&logo=github)](https://github.com/TencentARC/InstantMesh)
+
+> A highly practical single-image mesh generator that continued to be heavily used in 2025 open workflows.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2404.07191) [![Code: GitHub ★ 4.3k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%204.3k-181717?style=flat-square&logo=github)](https://github.com/TencentARC/InstantMesh)
+
+_Scope note: Kept because InstantMesh remained one of the most used open image-to-mesh baselines in 2025._
+
+### Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image
+
+![Venue: arXiv 2024](https://img.shields.io/badge/Venue-arXiv%202024-B31B1B?style=flat-square) ![Task: image-to-3d](https://img.shields.io/badge/Task-image-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/AiuniAI/Unique3D) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square) [![GitHub: ★ 3.6k](https://img.shields.io/badge/GitHub-%E2%98%85%203.6k-181717?style=flat-square&logo=github)](https://github.com/AiuniAI/Unique3D)
+
+> A strong multi-level diffusion image-to-3D mesh baseline that stayed active in 2025 open 3D asset pipelines.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2405.20343) [![Code: GitHub ★ 3.6k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%203.6k-181717?style=flat-square&logo=github)](https://github.com/AiuniAI/Unique3D)
+
+_Scope note: Kept because Unique3D continued to be used as a strong open image-to-3D baseline in 2025._
+
+### Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention
+
+![Venue: NeurIPS 2024](https://img.shields.io/badge/Venue-NeurIPS%202024-7C3AED?style=flat-square) ![Task: image-to-3d](https://img.shields.io/badge/Task-image-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/pengHTYX/Era3D) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square) [![GitHub: ★ 635](https://img.shields.io/badge/GitHub-%E2%98%85%20635-181717?style=flat-square&logo=github)](https://github.com/pengHTYX/Era3D)
+
+> A multiview generation model that remained relevant in 2025 for single-image 3D asset pipelines.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2405.11616) [![Code: GitHub ★ 635](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20635-181717?style=flat-square&logo=github)](https://github.com/pengHTYX/Era3D)
+
+_Scope note: Kept because Era3D remained an active multiview generation component in 2025 image-to-3D stacks._
+
+### RGB2Point: 3D Point Cloud Generation from Single RGB Images
+
+![Venue: ACM MM 2024](https://img.shields.io/badge/Venue-ACM%20MM%202024-64748B?style=flat-square) ![Task: image-to-3d](https://img.shields.io/badge/Task-image-to-3d-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square) ![Scope: Active since 2025](https://img.shields.io/badge/Scope-Active%20since%202025-F59E0B?style=flat-square)
+
+> A transformer-based single-image point-cloud generator that stayed useful in 2025 as a strong lightweight baseline.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2407.14979)
+
+_Scope note: Kept as a still-active lightweight image-to-point-cloud baseline used in 2025 comparisons._
+
+## part-aware-generation
+
+**6 entries**
+
+### DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A collaborative latent-denoising framework for semantically grounded part-level 3D object generation.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19216)
+
+### Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Recasts part assembly as a generative diffusion problem over sparse anchor points rather than rigid pose prediction.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.17074) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://assembler3d.github.io)
+
+### From One to More: Contextual Part Latents for 3D Generation
+
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Decomposes objects into contextual part latents for coherent part-aware generation and editing.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.08772)
+
+### FullPart: Generating each 3D Part at Full Resolution
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Generates each semantic part in its own full-resolution grid instead of sharing a globally coarse voxel space.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2510.26140)
+
+### OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A two-stage part planning and part synthesis framework for editable and controllable 3D assets.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.06165)
+
+### PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A compositional latent DiT that jointly denoises multiple semantic parts into decomposable 3D meshes.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.05573)
+
+## articulated-asset
+
+**4 entries**
+
+### Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Intern-Nexus/Infinite-Mobility) [![GitHub: ★ 187](https://img.shields.io/badge/GitHub-%E2%98%85%20187-181717?style=flat-square&logo=github)](https://github.com/Intern-Nexus/Infinite-Mobility)
+
+> A procedural articulated-object synthesis pipeline built for scale, fidelity, and simulation usefulness.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.13424) [![Code: GitHub ★ 187](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20187-181717?style=flat-square&logo=github)](https://github.com/Intern-Nexus/Infinite-Mobility)
+
+### Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Converts rigid meshes into articulated open-vocabulary assets by combining VLM semantics with joint construction.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2502.02590) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://articulate-anymesh.github.io)
+
+### MeshArt: Generating Articulated Meshes with Structure-guided Transformers
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A hierarchical transformer that generates articulated meshes part by part with explicit structure guidance.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.11596)
+
+### PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer
+
+![Venue: SIGGRAPH 2025](https://img.shields.io/badge/Venue-SIGGRAPH%202025-EA580C?style=flat-square) ![Task: articulated-asset](https://img.shields.io/badge/Task-articulated-asset-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Learns human-like primitive abstractions and assemblies for editable structured 3D assets.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.04622) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://primitiveanything.github.io)
+
+## text-to-3d
+
+**3 entries**
+
+### AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Advocate99/AssetFormer) [![GitHub: ★ 33](https://img.shields.io/badge/GitHub-%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+
+> Targets modular assets directly with autoregressive generation over part-aware structures.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 33](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+
+### Text-Image Conditioned 3D Generation
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A joint text-and-image conditioned 3D generation framework aimed at stronger controllability over asset content.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.21295)
+
+### ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ZhenglinZhou/ITS3D) [![GitHub: ★ 8](https://img.shields.io/badge/GitHub-%E2%98%85%208-181717?style=flat-square&logo=github)](https://github.com/ZhenglinZhou/ITS3D)
+
+> Brings inference-time scaling into text-guided 3D diffusion to improve asset quality at test time.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.22456) [![Code: GitHub ★ 8](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%208-181717?style=flat-square&logo=github)](https://github.com/ZhenglinZhou/ITS3D)
+
+## human-avatar
+
+**1 entries**
+
+### AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion
+
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: human-avatar](https://img.shields.io/badge/Task-human-avatar-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A single-image avatar generator that targets animation-ready humans with strong local detail and consistent 3D structure.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.24877)
+
+![human-avatar](https://img.shields.io/badge/human-avatar-EA580C?style=flat-square)
+
+## Compact Index
 
 <details>
-<summary><b>AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer</b> &mdash; <code>arXiv 2026</code> `autoregressive` `transformer` `part-graph` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> 面向 modular 3D assets 的 AR 生成框架，适合放在可复用资产生成分支。
-
-[📄 Paper](https://arxiv.org/abs/2602.12100) &nbsp; [💻 Code](https://github.com/Advocate99/AssetFormer)
-
-</details>
-
-<details>
-<summary><b>Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion</b> &mdash; <code>arXiv 2026</code> `diffusion` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> 强调多图融合控制的 3D 资产生成，适合 image-to-3d 精控子类。
-
-[📄 Paper](https://arxiv.org/abs/2602.17040) &nbsp; [💻 Code](https://jinnmnm.github.io/Fuse3d.github.io/)
-
-</details>
-
-<details>
-<summary><b>MeshArt: Generating Articulated Meshes with Structure-guided Transformers</b> &mdash; <code>CVPR 2025</code> `transformer` `mesh` `part-graph` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A articulated asset approach targeting 3d object asset generation using transformer conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers) &nbsp; [💻 Code](https://github.com/search?q=MeshArt%3A%20Generating%20Articulated%20Meshes%20with%20Structure-guided%20Transformers&type=repositories)
-
-</details>
-
-<details>
-<summary><b>TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation</b> &mdash; <code>CVPR 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> 2025 年非常关键的 3D foundation-style work，适合放在 3D 资产主线靠前位置。
-
-[📄 Paper](https://scholar.google.com/scholar?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation) &nbsp; [💻 Code](https://github.com/search?q=TRELLIS%3A%20Structured%203D%20Latents%20for%20Scalable%20and%20Versatile%203D%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><b>AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion</b> &mdash; <code>ICCV 2025</code> `diffusion` `mesh` `multiview` </summary>
-
-> 面向可动画 3D 人体资产生成，应该作为 human-avatar topic 的重要条目。
-
-[📄 Paper](https://scholar.google.com/scholar?q=AdaHuman%3A%20Animatable%20Detailed%203D%20Human%20Generation%20with%20Compositional%20Multiview%20Diffusion)
-
-</details>
-
-<details>
-<summary><b>From One to More: Contextual Part Latents for 3D Generation</b> &mdash; <code>ICCV 2025</code> `diffusion` `part-graph` </summary>
-
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=From%20One%20to%20More%3A%20Contextual%20Part%20Latents%20for%203D%20Generation)
-
-</details>
-
-<details>
-<summary><b>LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion</b> &mdash; <code>ICLR 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> 把大规模几何表征学习与生成统一起来，是 3D geometry model 路线的重要代表。
-
-[📄 Paper](https://scholar.google.com/scholar?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion) &nbsp; [💻 Code](https://github.com/search?q=LaGeM%3A%20A%20Large%20Geometry%20Model%20for%203D%20Representation%20Learning%20and%20Diffusion&type=repositories)
-
-</details>
-
-<details>
-<summary><b>OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation</b> &mdash; <code>SIGGRAPH 2025</code> `autoregressive` `octree` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using autoregressive conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation) &nbsp; [💻 Code](https://github.com/search?q=OctGPT%3A%20Octree-based%20Multiscale%20Autoregressive%20Models%20for%203D%20Shape%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><b>PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer</b> &mdash; <code>SIGGRAPH 2025</code> `autoregressive` `transformer` `part-graph` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A articulated asset approach targeting 3d object asset generation using autoregressive/transformer conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer) &nbsp; [💻 Code](https://github.com/search?q=PrimitiveAnything%3A%20Human-Crafted%203D%20Primitive%20Assembly%20Generation%20with%20Auto-Regressive%20Transformer&type=repositories)
-
-</details>
-
-<details>
-<summary><b>OctFusion: Octree-based Diffusion Models for 3D Shape Generation</b> &mdash; <code>SGP 2025</code> `diffusion` `octree` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation) &nbsp; [💻 Code](https://github.com/search?q=OctFusion%3A%20Octree-based%20Diffusion%20Models%20for%203D%20Shape%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><b>3D Point Cloud Generation via Autoregressive Up-sampling</b> &mdash; <code>arXiv 2025</code> `autoregressive` `point-cloud` </summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using autoregressive conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=3D%20Point%20Cloud%20Generation%20via%20Autoregressive%20Up-sampling&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling</b> &mdash; <code>arXiv 2025</code> `transformer` `mesh` </summary>
-
-> A articulated asset approach targeting 3d object asset generation using transformer conditioned on image/text.
-
-[📄 Paper](https://arxiv.org/search/?query=Articulate%20AnyMesh%3A%20Open-Vocabulary%203D%20Articulated%20Objects%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
-
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=Assembler%3A%20Scalable%203D%20Part%20Assembly%20via%20Anchor%20Point%20Diffusion&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention</b> &mdash; <code>arXiv 2025</code> `flow` `point-cloud` </summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using flow conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=EAGLE%3A%20Contextual%20Point%20Cloud%20Generation%20via%20Adaptive%20Continuous%20Normalizing%20Flow%20with%20Self-Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>Efficient Part-level 3D Object Generation via Dual Volume Packing</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
-
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=Efficient%20Part-level%203D%20Object%20Generation%20via%20Dual%20Volume%20Packing&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>FullPart: Generating each 3D Part at Full Resolution</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
-
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=FullPart%3A%20Generating%20each%203D%20Part%20at%20Full%20Resolution&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Tencent's two-stage 3D generation system (DiT shape + Paint texture) achieving SOTA in geometry detail and texture quality. 2.6M+ downloads on HuggingFace.
-
-[📄 Paper](https://arxiv.org/abs/2501.12202) &nbsp; [💻 Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) &nbsp; [🌐 Project](https://hunyuan-3d.com/)
-
-</details>
-
-<details>
-<summary><b>Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Major upgrade with 1024 geometric resolution, improved PBR textures, and skeleton-animation-compatible topology.
-
-[📄 Paper](https://arxiv.org/abs/2506.16504) &nbsp; [💻 Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
-
-</details>
-
-<details>
-<summary><b>Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation</b> &mdash; <code>arXiv 2025</code> `procedural` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A articulated asset approach targeting 3d object asset generation using procedural conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Infinite%20Mobility%3A%20Scalable%20High-Fidelity%20Synthesis%20of%20Articulated%20Objects%20via%20Procedural%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><b>InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models</b> &mdash; <code>arXiv 2025</code> `transformer` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> TencentARC's efficient single-image to mesh pipeline combining multi-view diffusion with sparse-view reconstruction.
-
-[📄 Paper](https://arxiv.org/abs/2404.07191) &nbsp; [💻 Code](https://github.com/TencentARC/InstantMesh)
-
-</details>
-
-<details>
-<summary><b>ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models</b> &mdash; <code>arXiv 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> 把 inference-time scaling 引入 text-guided 3D diffusion，是 3D 生成推理期增强路线的代表作。
-
-[📄 Paper](https://arxiv.org/abs/2511.22456) &nbsp; [💻 Code](https://github.com/ZhenglinZhou/ITS3D)
-
-</details>
-
-<details>
-<summary><b>LATTICE: Democratize High-Fidelity 3D Generation at Scale</b> &mdash; <code>arXiv 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text/image.
-
-[📄 Paper](https://arxiv.org/search/?query=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=LATTICE%3A%20Democratize%20High-Fidelity%203D%20Generation%20at%20Scale&type=repositories)
-
-</details>
-
-<details>
-<summary><b>Not-So-Optimal Transport Flows for 3D Point Cloud Generation</b> &mdash; <code>arXiv 2025</code> `flow` `point-cloud` </summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using flow conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=Not-So-Optimal%20Transport%20Flows%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
-
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=OmniPart%3A%20Part-Aware%203D%20Generation%20with%20Semantic%20Decoupling%20and%20Structural%20Cohesion&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `mesh` `part-graph` </summary>
-
-> A part aware generation approach targeting 3d object asset generation using diffusion/transformer conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=PartCrafter%3A%20Structured%203D%20Mesh%20Generation%20via%20Compositional%20Latent%20Diffusion%20Transformers&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling</b> &mdash; <code>arXiv 2025</code> `transformer` `mesh` </summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using transformer conditioned on image.
-
-[📄 Paper](https://arxiv.org/search/?query=Sparc3D%3A%20Sparse%20Representation%20and%20Construction%20for%20High-Resolution%203D%20Shapes%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling (TripoSF)</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on image.
-
-[📄 Paper](https://arxiv.org/search/?query=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=SparseFlex%3A%20High-Resolution%20and%20Arbitrary-Topology%203D%20Shape%20Modeling%20%28TripoSF%29&type=repositories)
-
-</details>
-
-<details>
-<summary><b>Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor</b> &mdash; <code>arXiv 2025</code> `transformer` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using transformer conditioned on text/image.
-
-[📄 Paper](https://arxiv.org/search/?query=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Squeeze3D%3A%20Your%203D%20Generation%20Model%20is%20Secretly%20an%20Extreme%20Neural%20Compressor&type=repositories)
-
-</details>
-
-<details>
-<summary><b>TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `point-cloud` </summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion/transformer conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=TopoDiT-3D%3A%20Topology-Aware%20Diffusion%20Transformer%20with%20Bottleneck%20Structure%20for%203D%20Point%20Cloud%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>TripoSR: Fast 3D Object Reconstruction from a Single Image</b> &mdash; <code>arXiv 2025</code> `transformer` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Tripo/StabilityAI's fast feed-forward single-image-to-3D model. Sub-second reconstruction with high quality.
-
-[📄 Paper](https://arxiv.org/abs/2403.02151) &nbsp; [💻 Code](https://github.com/VAST-AI-Research/TripoSR)
-
-</details>
-
-<details>
-<summary><b>Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` </summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=Ultra3D%3A%20Efficient%20and%20High-Fidelity%203D%20Generation%20with%20Part%20Attention&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><b>UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=UltraShape%201.0%3A%20High-Fidelity%203D%20Shape%20Generation%20via%20Scalable%20Geometric%20Refinement&type=repositories)
-
-</details>
-
-<details>
-<summary><b>UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation</b> &mdash; <code>arXiv 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A 3d shape generation approach targeting 3d object asset generation using diffusion conditioned on text/image.
-
-[📄 Paper](https://arxiv.org/search/?query=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=UniLat3D%3A%20Geometry-Appearance%20Unified%20Latents%20for%20Single-Stage%203D%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><b>Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Multi-level diffusion pipeline for single-image 3D generation producing high-quality meshes with consistent geometry.
-
-[📄 Paper](https://arxiv.org/abs/2405.20343) &nbsp; [💻 Code](https://github.com/AiuniAI/Unique3D)
-
-</details>
-
-<details>
-<summary><b>Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention</b> &mdash; <code>NeurIPS 2024</code> `diffusion` `multiview` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> Efficient multi-view generation using row-wise attention for high-resolution novel view synthesis from a single image.
-
-[📄 Paper](https://arxiv.org/abs/2405.11616) &nbsp; [💻 Code](https://github.com/pengHTYX/Era3D)
-
-</details>
-
-<details>
-<summary><b>RGB2Point: 3D Point Cloud Generation from Single RGB Images</b> &mdash; <code>ACM Multimedia 2024</code> `transformer` `point-cloud` </summary>
-
-> A image to 3d approach targeting 3d object asset generation using transformer conditioned on image.
-
-[📄 Paper](https://scholar.google.com/scholar?q=RGB2Point%3A%203D%20Point%20Cloud%20Generation%20from%20Single%20RGB%20Images)
+<summary><b>Open compact index</b></summary>
+
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer** | text-to-3d | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.12100) / [Code](https://github.com/Advocate99/AssetFormer) |
+| **DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising** | part-aware-generation | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.19216) |
+| **Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion** | image-to-3d | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.17040) / [Project](https://jinnmnm.github.io/Fuse3d.github.io/) |
+| **SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents** | 3d-shape-generation | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.23973) |
+| **Text-Image Conditioned 3D Generation** | text-to-3d | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.21295) |
+| **Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2501.12202) / [Code](https://github.com/Tencent/Hunyuan3D-2) |
+| **TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation** | 3d-shape-generation | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.01506) / [Code](https://github.com/microsoft/TRELLIS) / [Project](https://microsoft.github.io/TRELLIS/) |
+| **TripoSR: Fast 3D Object Reconstruction from a Single Image** | image-to-3d | arXiv 2024 | [Paper](https://arxiv.org/abs/2403.02151) / [Code](https://github.com/VAST-AI-Research/TripoSR) |
+| **InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models** | image-to-3d | arXiv 2024 | [Paper](https://arxiv.org/abs/2404.07191) / [Code](https://github.com/TencentARC/InstantMesh) |
+| **Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image** | image-to-3d | arXiv 2024 | [Paper](https://arxiv.org/abs/2405.20343) / [Code](https://github.com/AiuniAI/Unique3D) |
+| **Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling** | 3d-shape-generation | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2505.14521) / [Code](https://github.com/lizhihao6/Sparc3D) / [Project](https://lizhihao6.github.io/Sparc3D) |
+| **Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention** | image-to-3d | NeurIPS 2024 | [Paper](https://arxiv.org/abs/2405.11616) / [Code](https://github.com/pengHTYX/Era3D) |
+| **OctFusion: Octree-based Diffusion Models for 3D Shape Generation** | 3d-shape-generation | SGP 2025 | [Paper](https://arxiv.org/abs/2408.14732) / [Code](https://github.com/octree-nn/octfusion) |
+| **Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation** | articulated-asset | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.13424) / [Code](https://github.com/Intern-Nexus/Infinite-Mobility) |
+| **TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.09140) / [Code](https://github.com/Zechao-Guan/TopoDiT-3D) |
+| **ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models** | text-to-3d | arXiv 2025 | [Paper](https://arxiv.org/abs/2511.22456) / [Code](https://github.com/ZhenglinZhou/ITS3D) |
+| **3D Point Cloud Generation via Autoregressive Up-sampling** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.08594) |
+| **AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion** | human-avatar | ICCV 2025 | [Paper](https://arxiv.org/abs/2505.24877) |
+| **Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling** | articulated-asset | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.02590) / [Project](https://articulate-anymesh.github.io) |
+| **Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.17074) / [Project](https://assembler3d.github.io) |
+| **EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.13479) |
+| **From One to More: Contextual Part Latents for 3D Generation** | part-aware-generation | ICCV 2025 | [Paper](https://arxiv.org/abs/2507.08772) |
+| **FullPart: Generating each 3D Part at Full Resolution** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.26140) |
+| **Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.16504) |
+| **LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion** | 3d-shape-generation | ICLR 2025 | [Paper](https://arxiv.org/abs/2410.01295) |
+| **LATTICE: Democratize High-Fidelity 3D Generation at Scale** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2512.03052) |
+| **MeshArt: Generating Articulated Meshes with Structure-guided Transformers** | articulated-asset | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.11596) |
+| **Not-So-Optimal Transport Flows for 3D Point Cloud Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2502.12456) |
+| **OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation** | 3d-shape-generation | SIGGRAPH 2025 | [Paper](https://arxiv.org/abs/2504.09975) |
+| **OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2507.06165) |
+| **PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.05573) |
+| **PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer** | articulated-asset | SIGGRAPH 2025 | [Paper](https://arxiv.org/abs/2505.04622) / [Project](https://primitiveanything.github.io) |
+| **RGB2Point: 3D Point Cloud Generation from Single RGB Images** | image-to-3d | ACM MM 2024 | [Paper](https://arxiv.org/abs/2407.14979) |
+| **SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.21732) |
+| **Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.07932) |
+| **Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2507.17745) |
+| **UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2512.21185) |
+| **UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation** | 3d-shape-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2509.25079) |
 
 </details>

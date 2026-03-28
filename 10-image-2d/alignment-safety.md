@@ -1,60 +1,78 @@
-# 🖼️ 10-image-2d / alignment-safety
+# 🖼️ Image 2D / alignment-safety
 
-> **5 papers.**
+**Entries:** 7
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=Noise%20Diffusion%20for%20Enhancing%20Semantic%20Faithfulness%20in%20Text-to-Image%20Synthesis) / [Code](https://github.com/search?q=Noise%20Diffusion%20for%20Enhancing%20Semantic%20Faithfulness%20in%20Text-to-Image%20Synthesis&type=repositories) |
-| **Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=Plug-and-Play%20Interpretable%20Responsible%20Text-to-Image%20Generation%20via%20Dual-Space%20Multi-facet%20Concept%20Control) / [Code](https://github.com/search?q=Plug-and-Play%20Interpretable%20Responsible%20Text-to-Image%20Generation%20via%20Dual-Space%20Multi-facet%20Concept%20Control&type=repositories) |
-| **Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps** | CVPR 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=Text%20Embedding%20is%20Not%20All%20You%20Need%3A%20Attention%20Control%20for%20Text-to-Image%20Semantic%20Alignment%20with%20Text%20Self-Attention%20Maps) |
-| **Improving Long-Text Alignment for Text-to-Image Diffusion Models** | ICLR 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=Improving%20Long-Text%20Alignment%20for%20Text-to-Image%20Diffusion%20Models) |
-| **Information Theoretic Text-to-Image Alignment** | ICLR 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=Information%20Theoretic%20Text-to-Image%20Alignment) |
+### DTVI: Dual-Stage Textual and Visual Intervention for Safe Text-to-Image Generation
 
-## Details
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: alignment-safety](https://img.shields.io/badge/Task-alignment-safety-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A two-stage safeguard that intervenes on both prompt and visual generation pathways for safer T2I outputs.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.22041)
+
+### Self-Corrected Image Generation with Explainable Latent Rewards
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: alignment-safety](https://img.shields.io/badge/Task-alignment-safety-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A reward-driven self-correction method that edits latent trajectories using interpretable feedback signals.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.24965)
+
+### Improving Long-Text Alignment for Text-to-Image Diffusion Models
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: alignment-safety](https://img.shields.io/badge/Task-alignment-safety-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/luping-liu/LongAlign) [![GitHub: ★ 80](https://img.shields.io/badge/GitHub-%E2%98%85%2080-181717?style=flat-square&logo=github)](https://github.com/luping-liu/LongAlign)
+
+> A long-text encoding and decomposed preference-optimization framework for better alignment to lengthy prompts.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2410.11817) [![Code: GitHub ★ 80](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2080-181717?style=flat-square&logo=github)](https://github.com/luping-liu/LongAlign)
+
+### Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: alignment-safety](https://img.shields.io/badge/Task-alignment-safety-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Bomingmiao/NoiseDiffusion) [![GitHub: ★ 14](https://img.shields.io/badge/GitHub-%E2%98%85%2014-181717?style=flat-square&logo=github)](https://github.com/Bomingmiao/NoiseDiffusion)
+
+> Optimizes the initial noisy latent with LVLM guidance to improve prompt-image semantic fidelity across diffusion models.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.16503) [![Code: GitHub ★ 14](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2014-181717?style=flat-square&logo=github)](https://github.com/Bomingmiao/NoiseDiffusion)
+
+### Information Theoretic Text-to-Image Alignment
+
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: alignment-safety](https://img.shields.io/badge/Task-alignment-safety-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Chao0511/mitune) [![GitHub: ★ 6](https://img.shields.io/badge/GitHub-%E2%98%85%206-181717?style=flat-square&logo=github)](https://github.com/Chao0511/mitune)
+
+> Improves T2I alignment by using mutual-information-based self-supervised fine-tuning without extra annotation pipelines.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2405.20759) [![Code: GitHub ★ 6](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%206-181717?style=flat-square&logo=github)](https://github.com/Chao0511/mitune)
+
+### Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: alignment-safety](https://img.shields.io/badge/Task-alignment-safety-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A plug-and-play responsible generation framework that jointly controls multiple safety and fairness facets with interpretable mechanisms.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.18324)
+
+### Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: alignment-safety](https://img.shields.io/badge/Task-alignment-safety-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Transfers syntactic relations from text self-attention to cross-attention to improve semantic binding and prompt faithfulness.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.15236)
+
+## Compact Index
 
 <details>
-<summary><b>Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A alignment safety approach targeting image 2d generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Noise%20Diffusion%20for%20Enhancing%20Semantic%20Faithfulness%20in%20Text-to-Image%20Synthesis) &nbsp; [💻 Code](https://github.com/search?q=Noise%20Diffusion%20for%20Enhancing%20Semantic%20Faithfulness%20in%20Text-to-Image%20Synthesis&type=repositories)
-
-</details>
-
-<details>
-<summary><b>Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A alignment safety approach targeting image 2d generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Plug-and-Play%20Interpretable%20Responsible%20Text-to-Image%20Generation%20via%20Dual-Space%20Multi-facet%20Concept%20Control) &nbsp; [💻 Code](https://github.com/search?q=Plug-and-Play%20Interpretable%20Responsible%20Text-to-Image%20Generation%20via%20Dual-Space%20Multi-facet%20Concept%20Control&type=repositories)
-
-</details>
-
-<details>
-<summary><b>Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps</b> &mdash; <code>CVPR 2025</code> `diffusion` </summary>
-
-> A alignment safety approach targeting image 2d generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Text%20Embedding%20is%20Not%20All%20You%20Need%3A%20Attention%20Control%20for%20Text-to-Image%20Semantic%20Alignment%20with%20Text%20Self-Attention%20Maps)
-
-</details>
-
-<details>
-<summary><b>Improving Long-Text Alignment for Text-to-Image Diffusion Models</b> &mdash; <code>ICLR 2025</code> `diffusion` </summary>
-
-> A alignment safety approach targeting image 2d generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Improving%20Long-Text%20Alignment%20for%20Text-to-Image%20Diffusion%20Models)
-
-</details>
-
-<details>
-<summary><b>Information Theoretic Text-to-Image Alignment</b> &mdash; <code>ICLR 2025</code> `diffusion` </summary>
-
-> A alignment safety approach targeting image 2d generation using diffusion conditioned on text.
-
-[📄 Paper](https://scholar.google.com/scholar?q=Information%20Theoretic%20Text-to-Image%20Alignment)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **DTVI: Dual-Stage Textual and Visual Intervention for Safe Text-to-Image Generation** | alignment-safety | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.22041) |
+| **Self-Corrected Image Generation with Explainable Latent Rewards** | alignment-safety | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.24965) |
+| **Improving Long-Text Alignment for Text-to-Image Diffusion Models** | alignment-safety | ICLR 2025 | [Paper](https://arxiv.org/abs/2410.11817) / [Code](https://github.com/luping-liu/LongAlign) |
+| **Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis** | alignment-safety | CVPR 2025 | [Paper](https://arxiv.org/abs/2411.16503) / [Code](https://github.com/Bomingmiao/NoiseDiffusion) |
+| **Information Theoretic Text-to-Image Alignment** | alignment-safety | ICLR 2025 | [Paper](https://arxiv.org/abs/2405.20759) / [Code](https://github.com/Chao0511/mitune) |
+| **Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control** | alignment-safety | CVPR 2025 | [Paper](https://arxiv.org/abs/2503.18324) |
+| **Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps** | alignment-safety | CVPR 2025 | [Paper](https://arxiv.org/abs/2411.15236) |
 
 </details>

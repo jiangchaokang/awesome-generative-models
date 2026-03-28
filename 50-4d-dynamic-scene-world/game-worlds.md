@@ -1,70 +1,59 @@
-# 🌍 50-4d-dynamic-scene-world / game-worlds
+# 🌍 4D Dynamic Scene / World / game-worlds
 
-> **6 papers.**
+**Entries:** 4
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **GameFactory: Creating New Games with Generative Interactive Videos** | ICCV 2025 | `world-model` `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=GameFactory%3A%20Creating%20New%20Games%20with%20Generative%20Interactive%20Videos) / [Code](https://github.com/search?q=GameFactory%3A%20Creating%20New%20Games%20with%20Generative%20Interactive%20Videos&type=repositories) |
-| **Diffusion Models Are Real-Time Game Engines** | ICLR 2025 | `diffusion` `world-model` | — | [Paper](https://scholar.google.com/scholar?q=Diffusion%20Models%20Are%20Real-Time%20Game%20Engines) |
-| **GameGen-X: Interactive Open-world Game Video Generation** | ICLR 2025 | `world-model` `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=GameGen-X%3A%20Interactive%20Open-world%20Game%20Video%20Generation) / [Code](https://github.com/search?q=GameGen-X%3A%20Interactive%20Open-world%20Game%20Video%20Generation&type=repositories) |
-| **Generative World Explorer** | ICLR 2025 | `world-model` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=Generative%20World%20Explorer) / [Code](https://github.com/search?q=Generative%20World%20Explorer&type=repositories) |
-| **Matrix-Game 2.0: An Open-Source, Real-Time, and Streaming Interactive World Model** | arXiv 2025 | `world-model` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Matrix-Game%202.0%3A%20An%20Open-Source%2C%20Real-Time%2C%20and%20Streaming%20Interactive%20World%20Model&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Matrix-Game%202.0%3A%20An%20Open-Source%2C%20Real-Time%2C%20and%20Streaming%20Interactive%20World%20Model&type=repositories) |
-| **Matrix-Game: Interactive World Foundation Model** | arXiv 2025 | `world-model` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Matrix-Game%3A%20Interactive%20World%20Foundation%20Model&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Matrix-Game%3A%20Interactive%20World%20Foundation%20Model&type=repositories) |
+### Matrix-Game: Interactive World Foundation Model
 
-## Details
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: game-worlds](https://img.shields.io/badge/Task-game-worlds-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/SkyworkAI/Matrix-Game) [![GitHub: ★ 1.9k](https://img.shields.io/badge/GitHub-%E2%98%85%201.9k-181717?style=flat-square&logo=github)](https://github.com/SkyworkAI/Matrix-Game)
 
-<details>
-<summary><b>GameFactory: Creating New Games with Generative Interactive Videos</b> &mdash; <code>ICCV 2025</code> `world-model` `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A large Minecraft-style interactive world foundation model with strong action controllability and open benchmark release.
 
-> A game worlds approach targeting 4d dynamic scene world generation using world-model/diffusion conditioned on action.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.18701) [![Code: GitHub ★ 1.9k](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%201.9k-181717?style=flat-square&logo=github)](https://github.com/SkyworkAI/Matrix-Game)
 
-[📄 Paper](https://scholar.google.com/scholar?q=GameFactory%3A%20Creating%20New%20Games%20with%20Generative%20Interactive%20Videos) &nbsp; [💻 Code](https://github.com/search?q=GameFactory%3A%20Creating%20New%20Games%20with%20Generative%20Interactive%20Videos&type=repositories)
+![gameplay](https://img.shields.io/badge/gameplay-EA580C?style=flat-square)
 
-</details>
+### Diffusion Models Are Real-Time Game Engines
 
-<details>
-<summary><b>Diffusion Models Are Real-Time Game Engines</b> &mdash; <code>ICLR 2025</code> `diffusion` `world-model` </summary>
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: game-worlds](https://img.shields.io/badge/Task-game-worlds-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-> A game worlds approach targeting 4d dynamic scene world generation using diffusion/world-model conditioned on action.
+> Shows that a diffusion model can function as a real-time neural game engine over long interactive rollouts.
 
-[📄 Paper](https://scholar.google.com/scholar?q=Diffusion%20Models%20Are%20Real-Time%20Game%20Engines)
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2408.14837)
 
-</details>
+![gameplay](https://img.shields.io/badge/gameplay-EA580C?style=flat-square)
 
-<details>
-<summary><b>GameGen-X: Interactive Open-world Game Video Generation</b> &mdash; <code>ICLR 2025</code> `world-model` `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+### GameFactory: Creating New Games with Generative Interactive Videos
 
-> A game worlds approach targeting 4d dynamic scene world generation using world-model/diffusion conditioned on action.
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: game-worlds](https://img.shields.io/badge/Task-game-worlds-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-[📄 Paper](https://scholar.google.com/scholar?q=GameGen-X%3A%20Interactive%20Open-world%20Game%20Video%20Generation) &nbsp; [💻 Code](https://github.com/search?q=GameGen-X%3A%20Interactive%20Open-world%20Game%20Video%20Generation&type=repositories)
+> A framework for creating entirely new interactive games from generative video building blocks.
 
-</details>
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2501.08325)
 
-<details>
-<summary><b>Generative World Explorer</b> &mdash; <code>ICLR 2025</code> `world-model` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+![gameplay](https://img.shields.io/badge/gameplay-EA580C?style=flat-square)
 
-> A game worlds approach targeting 4d dynamic scene world generation using world-model conditioned on action.
+### GameGen-X: Interactive Open-world Game Video Generation
 
-[📄 Paper](https://scholar.google.com/scholar?q=Generative%20World%20Explorer) &nbsp; [💻 Code](https://github.com/search?q=Generative%20World%20Explorer&type=repositories)
+![Venue: ICLR 2025](https://img.shields.io/badge/Venue-ICLR%202025-7C3AED?style=flat-square) ![Task: game-worlds](https://img.shields.io/badge/Task-game-worlds-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-</details>
+> An open-world game video generator built for both open-domain synthesis and interactive controllability.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.00769)
+
+![gameplay](https://img.shields.io/badge/gameplay-EA580C?style=flat-square)
+
+## Compact Index
 
 <details>
-<summary><b>Matrix-Game 2.0: An Open-Source, Real-Time, and Streaming Interactive World Model</b> &mdash; <code>arXiv 2025</code> `world-model` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A game worlds approach targeting 4d dynamic scene world generation using world-model conditioned on action.
-
-[📄 Paper](https://arxiv.org/search/?query=Matrix-Game%202.0%3A%20An%20Open-Source%2C%20Real-Time%2C%20and%20Streaming%20Interactive%20World%20Model&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Matrix-Game%202.0%3A%20An%20Open-Source%2C%20Real-Time%2C%20and%20Streaming%20Interactive%20World%20Model&type=repositories)
-
-</details>
-
-<details>
-<summary><b>Matrix-Game: Interactive World Foundation Model</b> &mdash; <code>arXiv 2025</code> `world-model` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A game worlds approach targeting 4d dynamic scene world generation using world-model conditioned on action.
-
-[📄 Paper](https://arxiv.org/search/?query=Matrix-Game%3A%20Interactive%20World%20Foundation%20Model&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Matrix-Game%3A%20Interactive%20World%20Foundation%20Model&type=repositories)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **Matrix-Game: Interactive World Foundation Model** | game-worlds | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.18701) / [Code](https://github.com/SkyworkAI/Matrix-Game) |
+| **Diffusion Models Are Real-Time Game Engines** | game-worlds | ICLR 2025 | [Paper](https://arxiv.org/abs/2408.14837) |
+| **GameFactory: Creating New Games with Generative Interactive Videos** | game-worlds | ICCV 2025 | [Paper](https://arxiv.org/abs/2501.08325) |
+| **GameGen-X: Interactive Open-world Game Video Generation** | game-worlds | ICLR 2025 | [Paper](https://arxiv.org/abs/2411.00769) |
 
 </details>

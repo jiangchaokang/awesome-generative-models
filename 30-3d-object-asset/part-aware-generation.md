@@ -1,70 +1,69 @@
-# 🧊 30-3d-object-asset / part-aware-generation
+# 🧊 3D Object / Asset / part-aware-generation
 
-> **6 papers.**
+**Entries:** 6
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **From One to More: Contextual Part Latents for 3D Generation** | ICCV 2025 | `diffusion` `part-graph` | — | [Paper](https://scholar.google.com/scholar?q=From%20One%20to%20More%3A%20Contextual%20Part%20Latents%20for%203D%20Generation) |
-| **Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=Assembler%3A%20Scalable%203D%20Part%20Assembly%20via%20Anchor%20Point%20Diffusion&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Efficient Part-level 3D Object Generation via Dual Volume Packing** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=Efficient%20Part-level%203D%20Object%20Generation%20via%20Dual%20Volume%20Packing&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **FullPart: Generating each 3D Part at Full Resolution** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=FullPart%3A%20Generating%20each%203D%20Part%20at%20Full%20Resolution&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion** | arXiv 2025 | `diffusion` `part-graph` | — | [Paper](https://arxiv.org/search/?query=OmniPart%3A%20Part-Aware%203D%20Generation%20with%20Semantic%20Decoupling%20and%20Structural%20Cohesion&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers** | arXiv 2025 | `diffusion` `transformer` `mesh` `part-graph` | — | [Paper](https://arxiv.org/search/?query=PartCrafter%3A%20Structured%203D%20Mesh%20Generation%20via%20Compositional%20Latent%20Diffusion%20Transformers&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+### DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising
 
-## Details
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>From One to More: Contextual Part Latents for 3D Generation</b> &mdash; <code>ICCV 2025</code> `diffusion` `part-graph` </summary>
+> A collaborative latent-denoising framework for semantically grounded part-level 3D object generation.
 
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.19216)
 
-[📄 Paper](https://scholar.google.com/scholar?q=From%20One%20to%20More%3A%20Contextual%20Part%20Latents%20for%203D%20Generation)
+### Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
+> Recasts part assembly as a generative diffusion problem over sparse anchor points rather than rigid pose prediction.
 
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.17074) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://assembler3d.github.io)
 
-[📄 Paper](https://arxiv.org/search/?query=Assembler%3A%20Scalable%203D%20Part%20Assembly%20via%20Anchor%20Point%20Diffusion&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### From One to More: Contextual Part Latents for 3D Generation
 
-</details>
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Efficient Part-level 3D Object Generation via Dual Volume Packing</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
+> Decomposes objects into contextual part latents for coherent part-aware generation and editing.
 
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.08772)
 
-[📄 Paper](https://arxiv.org/search/?query=Efficient%20Part-level%203D%20Object%20Generation%20via%20Dual%20Volume%20Packing&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### FullPart: Generating each 3D Part at Full Resolution
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>FullPart: Generating each 3D Part at Full Resolution</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
+> Generates each semantic part in its own full-resolution grid instead of sharing a globally coarse voxel space.
 
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2510.26140)
 
-[📄 Paper](https://arxiv.org/search/?query=FullPart%3A%20Generating%20each%203D%20Part%20at%20Full%20Resolution&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion</b> &mdash; <code>arXiv 2025</code> `diffusion` `part-graph` </summary>
+> A two-stage part planning and part synthesis framework for editable and controllable 3D assets.
 
-> A part aware generation approach targeting 3d object asset generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.06165)
 
-[📄 Paper](https://arxiv.org/search/?query=OmniPart%3A%20Part-Aware%203D%20Generation%20with%20Semantic%20Decoupling%20and%20Structural%20Cohesion&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: part-aware-generation](https://img.shields.io/badge/Task-part-aware-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A compositional latent DiT that jointly denoises multiple semantic parts into decomposable 3D meshes.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2506.05573)
+
+## Compact Index
 
 <details>
-<summary><b>PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers</b> &mdash; <code>arXiv 2025</code> `diffusion` `transformer` `mesh` `part-graph` </summary>
+<summary><b>Open compact index</b></summary>
 
-> A part aware generation approach targeting 3d object asset generation using diffusion/transformer conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=PartCrafter%3A%20Structured%203D%20Mesh%20Generation%20via%20Compositional%20Latent%20Diffusion%20Transformers&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising** | part-aware-generation | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.19216) |
+| **Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.17074) / [Project](https://assembler3d.github.io) |
+| **From One to More: Contextual Part Latents for 3D Generation** | part-aware-generation | ICCV 2025 | [Paper](https://arxiv.org/abs/2507.08772) |
+| **FullPart: Generating each 3D Part at Full Resolution** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.26140) |
+| **OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2507.06165) |
+| **PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers** | part-aware-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2506.05573) |
 
 </details>

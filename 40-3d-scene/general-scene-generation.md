@@ -1,130 +1,141 @@
-# 🏙️ 40-3d-scene / general-scene-generation
+# 🏙️ 3D Scene / general-scene-generation
 
-> **12 papers.**
+**Entries:** 14
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance** | arXiv 2026 | `diffusion` | — | [Paper](https://arxiv.org/search/?query=GeoDiff3D%3A%20Self-Supervised%203D%20Scene%20Generation%20with%20Geometry-Constrained%202D%20Diffusion%20Guidance&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **LT3SD: Latent Trees for 3D Scene Diffusion** | CVPR 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=LT3SD%3A%20Latent%20Trees%20for%203D%20Scene%20Diffusion) / [Code](https://github.com/search?q=LT3SD%3A%20Latent%20Trees%20for%203D%20Scene%20Diffusion&type=repositories) |
-| **Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation** | CVPR 2025 | `diffusion` `latent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=Prometheus%3A%203D-Aware%20Latent%20Diffusion%20Models%20for%20Feed-Forward%20Text-to-3D%20Scene%20Generation) / [Code](https://github.com/search?q=Prometheus%3A%203D-Aware%20Latent%20Diffusion%20Models%20for%20Feed-Forward%20Text-to-3D%20Scene%20Generation&type=repositories) |
-| **SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis** | CVPR 2025 | `rectified-flow` `splatting` `3dgs` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=SplatFlow%3A%20Multi-View%20Rectified%20Flow%20Model%20for%203D%20Gaussian%20Splatting%20Synthesis) / [Code](https://github.com/search?q=SplatFlow%3A%20Multi-View%20Rectified%20Flow%20Model%20for%203D%20Gaussian%20Splatting%20Synthesis&type=repositories) |
-| **ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment** | ICCV 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=ScenePainter%3A%20Semantically%20Consistent%20Perpetual%203D%20Scene%20Generation%20with%20Concept%20Relation%20Alignment) / [Code](https://github.com/search?q=ScenePainter%3A%20Semantically%20Consistent%20Perpetual%203D%20Scene%20Generation%20with%20Concept%20Relation%20Alignment&type=repositories) |
-| **Causal Reasoning Elicits Controllable 3D Scene Generation** | arXiv 2025 | `llm-agent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Causal%20Reasoning%20Elicits%20Controllable%203D%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Causal%20Reasoning%20Elicits%20Controllable%203D%20Scene%20Generation&type=repositories) |
-| **FlashWorld: High-quality 3D Scene Generation within Seconds** | arXiv 2025 | `diffusion` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=FlashWorld%3A%20High-quality%203D%20Scene%20Generation%20within%20Seconds&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=FlashWorld%3A%20High-quality%203D%20Scene%20Generation%20within%20Seconds&type=repositories) |
-| **Terra: Explorable Native 3D World Model with Point Latents** | arXiv 2025 | `world-model` `point-latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=Terra%3A%20Explorable%20Native%203D%20World%20Model%20with%20Point%20Latents&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=Terra%3A%20Explorable%20Native%203D%20World%20Model%20with%20Point%20Latents&type=repositories) |
-| **TRELLISWorld: Training-Free World Generation from Object Generators** | arXiv 2025 | `training-free` | — | [Paper](https://arxiv.org/search/?query=TRELLISWorld%3A%20Training-Free%20World%20Generation%20from%20Object%20Generators&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding** | arXiv 2025 | `transformer` `latent` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=UniUGG%3A%20Unified%203D%20Understanding%20and%20Generation%20via%20Geometric-Semantic%20Encoding&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=UniUGG%3A%20Unified%203D%20Understanding%20and%20Generation%20via%20Geometric-Semantic%20Encoding&type=repositories) |
-| **VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling** | arXiv 2025 | `diffusion` `splatting` `3dgs` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=VideoRFSplat%3A%20Direct%20Scene-Level%20Text-to-3D%20Gaussian%20Splatting%20Generation%20with%20Flexible%20Pose%20and%20Multi-View%20Joint%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=VideoRFSplat%3A%20Direct%20Scene-Level%20Text-to-3D%20Gaussian%20Splatting%20Generation%20with%20Flexible%20Pose%20and%20Multi-View%20Joint%20Modeling&type=repositories) |
-| **WonderZoom: Multi-Scale 3D World Generation** | arXiv 2025 | `diffusion` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=WonderZoom%3A%20Multi-Scale%203D%20World%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=WonderZoom%3A%20Multi-Scale%203D%20World%20Generation&type=repositories) |
+### GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance
 
-## Details
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance</b> &mdash; <code>arXiv 2026</code> `diffusion` </summary>
+> A self-supervised 3D scene generator using coarse geometry anchors plus geometry-constrained 2D diffusion guidance.
 
-> A general scene generation approach targeting 3d scene generation using diffusion conditioned on image/text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2601.19785)
 
-[📄 Paper](https://arxiv.org/search/?query=GeoDiff3D%3A%20Self-Supervised%203D%20Scene%20Generation%20with%20Geometry-Constrained%202D%20Diffusion%20Guidance&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder
 
-</details>
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>LT3SD: Latent Trees for 3D Scene Diffusion</b> &mdash; <code>CVPR 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Uses a unified 3D representation autoencoder to reduce the cross-view inconsistency of scene generation.
 
-> A general scene generation approach targeting 3d scene generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.16099)
 
-[📄 Paper](https://scholar.google.com/scholar?q=LT3SD%3A%20Latent%20Trees%20for%203D%20Scene%20Diffusion) &nbsp; [💻 Code](https://github.com/search?q=LT3SD%3A%20Latent%20Trees%20for%203D%20Scene%20Diffusion&type=repositories)
+### WorldMesh: Generating Navigable Multi-Room 3D Scenes via Mesh-Conditioned Image Diffusion
 
-</details>
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation</b> &mdash; <code>CVPR 2025</code> `diffusion` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A mesh-conditioned image-diffusion route to multi-room navigable 3D scene generation.
 
-> A general scene generation approach targeting 3d scene generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.22972)
 
-[📄 Paper](https://scholar.google.com/scholar?q=Prometheus%3A%203D-Aware%20Latent%20Diffusion%20Models%20for%20Feed-Forward%20Text-to-3D%20Scene%20Generation) &nbsp; [💻 Code](https://github.com/search?q=Prometheus%3A%203D-Aware%20Latent%20Diffusion%20Models%20for%20Feed-Forward%20Text-to-3D%20Scene%20Generation&type=repositories)
+### Causal Reasoning Elicits Controllable 3D Scene Generation
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis</b> &mdash; <code>CVPR 2025</code> `rectified-flow` `splatting` `3dgs` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Injects causal graphs and interventions into scene generation for stronger logical and physical coherence.
 
-> A general scene generation approach targeting 3d scene generation using rectified-flow/splatting conditioned on multiview/text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2509.15249)
 
-[📄 Paper](https://scholar.google.com/scholar?q=SplatFlow%3A%20Multi-View%20Rectified%20Flow%20Model%20for%203D%20Gaussian%20Splatting%20Synthesis) &nbsp; [💻 Code](https://github.com/search?q=SplatFlow%3A%20Multi-View%20Rectified%20Flow%20Model%20for%203D%20Gaussian%20Splatting%20Synthesis&type=repositories)
+### FlashWorld: High-quality 3D Scene Generation within Seconds
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment</b> &mdash; <code>ICCV 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A fast 3D-oriented scene generator that directly predicts Gaussian representations from text or image prompts.
 
-> A general scene generation approach targeting 3d scene generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2510.13678)
 
-[📄 Paper](https://scholar.google.com/scholar?q=ScenePainter%3A%20Semantically%20Consistent%20Perpetual%203D%20Scene%20Generation%20with%20Concept%20Relation%20Alignment) &nbsp; [💻 Code](https://github.com/search?q=ScenePainter%3A%20Semantically%20Consistent%20Perpetual%203D%20Scene%20Generation%20with%20Concept%20Relation%20Alignment&type=repositories)
+### LT3SD: Latent Trees for 3D Scene Diffusion
 
-</details>
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Causal Reasoning Elicits Controllable 3D Scene Generation</b> &mdash; <code>arXiv 2025</code> `llm-agent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A latent-tree scene representation for large-scale patchwise diffusion over complex 3D scenes.
 
-> A general scene generation approach targeting 3d scene generation using llm-agent conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2409.08215)
 
-[📄 Paper](https://arxiv.org/search/?query=Causal%20Reasoning%20Elicits%20Controllable%203D%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Causal%20Reasoning%20Elicits%20Controllable%203D%20Scene%20Generation&type=repositories)
+### Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation
 
-</details>
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>FlashWorld: High-quality 3D Scene Generation within Seconds</b> &mdash; <code>arXiv 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A feed-forward latent diffusion approach for fast text-to-3D object and scene generation with RGB-D latents.
 
-> A general scene generation approach targeting 3d scene generation using diffusion conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.21117) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://freemty.github.io/project-prometheus/)
 
-[📄 Paper](https://arxiv.org/search/?query=FlashWorld%3A%20High-quality%203D%20Scene%20Generation%20within%20Seconds&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=FlashWorld%3A%20High-quality%203D%20Scene%20Generation%20within%20Seconds&type=repositories)
+### ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment
 
-</details>
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>Terra: Explorable Native 3D World Model with Point Latents</b> &mdash; <code>arXiv 2025</code> `world-model` `point-latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Reduces semantic drift in long-horizon 3D scene expansion by aligning concept relations during outpainting.
 
-> 更像 native 3D world representation 路线，而不是纯 2D/video lifting。
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.19058) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://xiac20.github.io/ScenePainter/)
 
-[📄 Paper](https://arxiv.org/search/?query=Terra%3A%20Explorable%20Native%203D%20World%20Model%20with%20Point%20Latents&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=Terra%3A%20Explorable%20Native%203D%20World%20Model%20with%20Point%20Latents&type=repositories)
+### SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis
 
-</details>
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>TRELLISWorld: Training-Free World Generation from Object Generators</b> &mdash; <code>arXiv 2025</code> `training-free` </summary>
+> A rectified-flow framework that directly supports 3DGS generation and editing through multi-view latent modeling.
 
-> A general scene generation approach targeting 3d scene generation using training-free conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.16443)
 
-[📄 Paper](https://arxiv.org/search/?query=TRELLISWorld%3A%20Training-Free%20World%20Generation%20from%20Object%20Generators&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### Terra: Explorable Native 3D World Model with Point Latents
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding</b> &mdash; <code>arXiv 2025</code> `transformer` `latent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> A native 3D point-latent scene generator with exact multi-view consistency and progressive explorable generation.
 
-> A general scene generation approach targeting 3d scene generation using transformer conditioned on text/image.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2510.14977)
 
-[📄 Paper](https://arxiv.org/search/?query=UniUGG%3A%20Unified%203D%20Understanding%20and%20Generation%20via%20Geometric-Semantic%20Encoding&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=UniUGG%3A%20Unified%203D%20Understanding%20and%20Generation%20via%20Geometric-Semantic%20Encoding&type=repositories)
+### TRELLISWorld: Training-Free World Generation from Object Generators
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling</b> &mdash; <code>arXiv 2025</code> `diffusion` `splatting` `3dgs` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Repurposes object generators as modular 3D tiles for scalable training-free scene synthesis.
 
-> A general scene generation approach targeting 3d scene generation using diffusion/splatting conditioned on text/multiview.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2510.23880)
 
-[📄 Paper](https://arxiv.org/search/?query=VideoRFSplat%3A%20Direct%20Scene-Level%20Text-to-3D%20Gaussian%20Splatting%20Generation%20with%20Flexible%20Pose%20and%20Multi-View%20Joint%20Modeling&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=VideoRFSplat%3A%20Direct%20Scene-Level%20Text-to-3D%20Gaussian%20Splatting%20Generation%20with%20Flexible%20Pose%20and%20Multi-View%20Joint%20Modeling&type=repositories)
+### UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A unified framework spanning 3D understanding and generation with shared geometric-semantic representations.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2508.11952)
+
+### VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Directly generates scene-level 3DGS from text by jointly modeling poses and multi-view images with a dual-stream architecture.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.15855)
+
+### WonderZoom: Multi-Scale 3D World Generation
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: general-scene-generation](https://img.shields.io/badge/Task-general-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A multi-scale 3D world generator that supports progressive zoom-in synthesis of finer spatial details.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2512.09164) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://wonderzoom.github.io/)
+
+## Compact Index
 
 <details>
-<summary><b>WonderZoom: Multi-Scale 3D World Generation</b> &mdash; <code>arXiv 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+<summary><b>Open compact index</b></summary>
 
-> A general scene generation approach targeting 3d scene generation using diffusion conditioned on text.
-
-[📄 Paper](https://arxiv.org/search/?query=WonderZoom%3A%20Multi-Scale%203D%20World%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=WonderZoom%3A%20Multi-Scale%203D%20World%20Generation&type=repositories)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance** | general-scene-generation | arXiv 2026 | [Paper](https://arxiv.org/abs/2601.19785) |
+| **OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder** | general-scene-generation | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.16099) |
+| **WorldMesh: Generating Navigable Multi-Room 3D Scenes via Mesh-Conditioned Image Diffusion** | general-scene-generation | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.22972) |
+| **Causal Reasoning Elicits Controllable 3D Scene Generation** | general-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2509.15249) |
+| **FlashWorld: High-quality 3D Scene Generation within Seconds** | general-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.13678) |
+| **LT3SD: Latent Trees for 3D Scene Diffusion** | general-scene-generation | CVPR 2025 | [Paper](https://arxiv.org/abs/2409.08215) |
+| **Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation** | general-scene-generation | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.21117) / [Project](https://freemty.github.io/project-prometheus/) |
+| **ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment** | general-scene-generation | ICCV 2025 | [Paper](https://arxiv.org/abs/2507.19058) / [Project](https://xiac20.github.io/ScenePainter/) |
+| **SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis** | general-scene-generation | CVPR 2025 | [Paper](https://arxiv.org/abs/2411.16443) |
+| **Terra: Explorable Native 3D World Model with Point Latents** | general-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.14977) |
+| **TRELLISWorld: Training-Free World Generation from Object Generators** | general-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.23880) |
+| **UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding** | general-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2508.11952) |
+| **VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling** | general-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.15855) |
+| **WonderZoom: Multi-Scale 3D World Generation** | general-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2512.09164) / [Project](https://wonderzoom.github.io/) |
 
 </details>

@@ -1,60 +1,60 @@
-# 🏙️ 40-3d-scene / agentic-scene-generation
+# 🏙️ 3D Scene / agentic-scene-generation
 
-> **5 papers.**
+**Entries:** 5
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent** | NeurIPS 2025 | `llm-agent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=SceneWeaver%3A%20All-in-One%203D%20Scene%20Synthesis%20with%20an%20Extensible%20and%20Self-Reflective%20Agent) / [Code](https://github.com/search?q=SceneWeaver%3A%20All-in-One%203D%20Scene%20Synthesis%20with%20an%20Extensible%20and%20Self-Reflective%20Agent&type=repositories) |
-| **SceneX: Procedural Controllable Large-scale Scene Generation** | AAAI 2025 | `llm-agent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=SceneX%3A%20Procedural%20Controllable%20Large-scale%20Scene%20Generation) / [Code](https://github.com/search?q=SceneX%3A%20Procedural%20Controllable%20Large-scale%20Scene%20Generation&type=repositories) |
-| **3D-GPT: Procedural 3D Modeling with Large Language Models** | 3DV 2025 | `llm-agent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=3D-GPT%3A%20Procedural%203D%20Modeling%20with%20Large%20Language%20Models) / [Code](https://github.com/search?q=3D-GPT%3A%20Procedural%203D%20Modeling%20with%20Large%20Language%20Models&type=repositories) |
-| **LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation** | arXiv 2025 | `llm-agent` | — | [Paper](https://arxiv.org/search/?query=LatticeWorld%3A%20A%20Multimodal%20Large%20Language%20Model-Empowered%20Framework%20for%20Interactive%20Complex%20World%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
-| **Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation** | arXiv 2025 | `llm-agent` | — | [Paper](https://arxiv.org/search/?query=Scenethesis%3A%20A%20Language%20and%20Vision%20Agentic%20Framework%20for%203D%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+### 3D-GPT: Procedural 3D Modeling with Large Language Models
 
-## Details
+![Venue: 3DV 2025](https://img.shields.io/badge/Venue-3DV%202025-059669?style=flat-square) ![Task: agentic-scene-generation](https://img.shields.io/badge/Task-agentic-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent</b> &mdash; <code>NeurIPS 2025</code> `llm-agent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> An early but still relevant LLM-driven procedural 3D modeling framework for scene and asset construction.
 
-> A agentic scene generation approach targeting 3d scene generation using llm-agent conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2310.12945)
 
-[📄 Paper](https://scholar.google.com/scholar?q=SceneWeaver%3A%20All-in-One%203D%20Scene%20Synthesis%20with%20an%20Extensible%20and%20Self-Reflective%20Agent) &nbsp; [💻 Code](https://github.com/search?q=SceneWeaver%3A%20All-in-One%203D%20Scene%20Synthesis%20with%20an%20Extensible%20and%20Self-Reflective%20Agent&type=repositories)
+### LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: agentic-scene-generation](https://img.shields.io/badge/Task-agentic-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>SceneX: Procedural Controllable Large-scale Scene Generation</b> &mdash; <code>AAAI 2025</code> `llm-agent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> An MLLM-plus-engine framework for interactive large-scale world generation with dynamic agents and physics.
 
-> A agentic scene generation approach targeting 3d scene generation using llm-agent conditioned on text/layout.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2509.05263)
 
-[📄 Paper](https://scholar.google.com/scholar?q=SceneX%3A%20Procedural%20Controllable%20Large-scale%20Scene%20Generation) &nbsp; [💻 Code](https://github.com/search?q=SceneX%3A%20Procedural%20Controllable%20Large-scale%20Scene%20Generation&type=repositories)
+### Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation
 
-</details>
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: agentic-scene-generation](https://img.shields.io/badge/Task-agentic-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>3D-GPT: Procedural 3D Modeling with Large Language Models</b> &mdash; <code>3DV 2025</code> `llm-agent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+> Combines LLM planning with vision-guided refinement to produce more realistic and physically plausible 3D scenes.
 
-> A agentic scene generation approach targeting 3d scene generation using llm-agent conditioned on text.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2505.02836)
 
-[📄 Paper](https://scholar.google.com/scholar?q=3D-GPT%3A%20Procedural%203D%20Modeling%20with%20Large%20Language%20Models) &nbsp; [💻 Code](https://github.com/search?q=3D-GPT%3A%20Procedural%203D%20Modeling%20with%20Large%20Language%20Models&type=repositories)
+### SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent
 
-</details>
+![Venue: NeurIPS 2025](https://img.shields.io/badge/Venue-NeurIPS%202025-7C3AED?style=flat-square) ![Task: agentic-scene-generation](https://img.shields.io/badge/Task-agentic-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
 
-<details>
-<summary><b>LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation</b> &mdash; <code>arXiv 2025</code> `llm-agent` </summary>
+> A reflective agent that plans, evaluates, and repairs 3D scenes by invoking an extensible toolchain.
 
-> A agentic scene generation approach targeting 3d scene generation using llm-agent conditioned on text/image.
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2509.20414) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://scene-weaver.github.io/)
 
-[📄 Paper](https://arxiv.org/search/?query=LatticeWorld%3A%20A%20Multimodal%20Large%20Language%20Model-Empowered%20Framework%20for%20Interactive%20Complex%20World%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+### SceneX: Procedural Controllable Large-scale Scene Generation
 
-</details>
+![Venue: AAAI 2025](https://img.shields.io/badge/Venue-AAAI%202025-059669?style=flat-square) ![Task: agentic-scene-generation](https://img.shields.io/badge/Task-agentic-scene-generation-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> An LLM-assisted procedural generation framework for controllable large-scale scene creation in Blender-style pipelines.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2403.15698)
+
+## Compact Index
 
 <details>
-<summary><b>Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation</b> &mdash; <code>arXiv 2025</code> `llm-agent` </summary>
+<summary><b>Open compact index</b></summary>
 
-> A agentic scene generation approach targeting 3d scene generation using llm-agent conditioned on text/image.
-
-[📄 Paper](https://arxiv.org/search/?query=Scenethesis%3A%20A%20Language%20and%20Vision%20Agentic%20Framework%20for%203D%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **3D-GPT: Procedural 3D Modeling with Large Language Models** | agentic-scene-generation | 3DV 2025 | [Paper](https://arxiv.org/abs/2310.12945) |
+| **LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation** | agentic-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2509.05263) |
+| **Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation** | agentic-scene-generation | arXiv 2025 | [Paper](https://arxiv.org/abs/2505.02836) |
+| **SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent** | agentic-scene-generation | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2509.20414) / [Project](https://scene-weaver.github.io/) |
+| **SceneX: Procedural Controllable Large-scale Scene Generation** | agentic-scene-generation | AAAI 2025 | [Paper](https://arxiv.org/abs/2403.15698) |
 
 </details>

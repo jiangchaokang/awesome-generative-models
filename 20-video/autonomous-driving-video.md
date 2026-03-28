@@ -1,60 +1,70 @@
-# 🎬 20-video / autonomous-driving-video
+# 🎬 Video / autonomous-driving-video
 
-> **5 papers.**
+**Entries:** 5
 
-[↑ Root](../README.md) · [↑ Category](README.md)
+[← Root](../README.md) · [← Category](README.md)
 
-| Title | Venue | Tags | Open | Links |
-|:------|:------|:-----|:----:|:------|
-| **DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation** | CVPR 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=DriveScape%3A%20Towards%20High-Resolution%20Controllable%20Multi-View%20Driving%20Video%20Generation) |
-| **StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models) / [Code](https://github.com/search?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models&type=repositories) |
-| **MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control** | ICCV 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control) / [Code](https://github.com/search?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control&type=repositories) |
-| **DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation** | AAAI 2025 | `diffusion` `llm-agent` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation) / [Code](https://github.com/search?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation&type=repositories) |
-| **CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving** | arXiv 2025 | `diffusion` | — | [Paper](https://arxiv.org/search/?query=CoGen%3A%203D%20Consistent%20Video%20Generation%20via%20Adaptive%20Conditioning%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+### MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control
 
-## Details
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/flymin/MagicDrive-V2) [![GitHub: ★ 707](https://img.shields.io/badge/GitHub-%E2%98%85%20707-181717?style=flat-square&logo=github)](https://github.com/flymin/MagicDrive-V2)
+
+> A high-resolution long-form multi-view driving video model with richer geometric and scenario control.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.13807) [![Code: GitHub ★ 707](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20707-181717?style=flat-square&logo=github)](https://github.com/flymin/MagicDrive-V2) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://magicdrive-v2.github.io/)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> Improves 3D consistency in controllable driving video generation through spatially adaptive 3D conditions.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.22231) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://xiaomi-research.github.io/cogen/)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation
+
+![Venue: AAAI 2025](https://img.shields.io/badge/Venue-AAAI%202025-059669?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> An LLM-enhanced driving video generator that converts user intent into trajectories, maps, and multi-view videos.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2403.06845)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation
+
+![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A high-resolution multi-view driving video generator with strong spatial-temporal alignment under sparse 3D control.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2409.05463) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://metadrivescape.github.io/papers_project/drivescapev1/index.html)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+### StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models
+
+![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+
+> A controllable street-view synthesis model driven by LiDAR renderings for precise view control.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.13188)
+
+![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+
+## Compact Index
 
 <details>
-<summary><b>DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation</b> &mdash; <code>CVPR 2025</code> `diffusion` </summary>
+<summary><b>Open compact index</b></summary>
 
-> A autonomous driving video approach targeting video generation using diffusion conditioned on camera/trajectory.
-
-[📄 Paper](https://scholar.google.com/scholar?q=DriveScape%3A%20Towards%20High-Resolution%20Controllable%20Multi-View%20Driving%20Video%20Generation)
-
-</details>
-
-<details>
-<summary><b>StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A autonomous driving video approach targeting video generation using diffusion conditioned on trajectory/camera.
-
-[📄 Paper](https://scholar.google.com/scholar?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models) &nbsp; [💻 Code](https://github.com/search?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models&type=repositories)
-
-</details>
-
-<details>
-<summary><b>MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control</b> &mdash; <code>ICCV 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A autonomous driving video approach targeting video generation using diffusion conditioned on trajectory/camera.
-
-[📄 Paper](https://scholar.google.com/scholar?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control) &nbsp; [💻 Code](https://github.com/search?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control&type=repositories)
-
-</details>
-
-<details>
-<summary><b>DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation</b> &mdash; <code>AAAI 2025</code> `diffusion` `llm-agent` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
-
-> A autonomous driving video approach targeting video generation using diffusion/llm-agent conditioned on text/trajectory.
-
-[📄 Paper](https://scholar.google.com/scholar?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation) &nbsp; [💻 Code](https://github.com/search?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><b>CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving</b> &mdash; <code>arXiv 2025</code> `diffusion` </summary>
-
-> A autonomous driving video approach targeting video generation using diffusion conditioned on video/trajectory.
-
-[📄 Paper](https://arxiv.org/search/?query=CoGen%3A%203D%20Consistent%20Video%20Generation%20via%20Adaptive%20Conditioning%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+| Title | Task | Venue | Links |
+|:--|:--|:--|:--|
+| **MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control** | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2411.13807) / [Code](https://github.com/flymin/MagicDrive-V2) / [Project](https://magicdrive-v2.github.io/) |
+| **CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving** | autonomous-driving-video | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.22231) / [Project](https://xiaomi-research.github.io/cogen/) |
+| **DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation** | autonomous-driving-video | AAAI 2025 | [Paper](https://arxiv.org/abs/2403.06845) |
+| **DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation** | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2409.05463) / [Project](https://metadrivescape.github.io/papers_project/drivescapev1/index.html) |
+| **StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models** | autonomous-driving-video | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.13188) |
 
 </details>

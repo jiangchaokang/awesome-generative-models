@@ -27,7 +27,7 @@
 | Title | Category | Venue | Tags | Links |
 |:------|:---------|:------|:-----|:------|
 | **Generative Modeling via Drifting** | 🖼️ image-2d | `arXiv 2026` | `drifting` `open-source` | [Paper](https://arxiv.org/abs/2602.04770) / [Code](https://github.com/search?q=Generative%20Modeling%20via%20Drifting&type=repositories) |
-| **Mean Flows for One-step Generative Modeling** | 🖼️ image-2d | `NeurIPS 2025` | `flow` `open-source` | [Paper](https://arxiv.org/abs/2505.13447) / [Code](https://github.com/Gsunshine/meanflow) |
+| **Mean Flows for One-step Generative Modeling** | 🖼️ image-2d | `NeurIPS 2025` | `flow` `open-source` | [Paper](https://arxiv.org/abs/2505.13447) / [Code](https://github.com/gengzhengyang/meanflow) |
 | **Cosmos World Foundation Model Platform for Physical AI** | 🌍 4d-dynamic-scene-world | `arXiv 2025` | `diffusion` `autoregressive` `world-latent` `video-latent` `open-source` | [Paper](https://arxiv.org/abs/2501.03575) / [Code](https://github.com/nvidia-cosmos) |
 | **FLUX.1: Scalable Rectified Flow Transformers for High-Resolution Image Synthesis** | 🖼️ image-2d | `arXiv 2025` | `rectified-flow` `transformer` `open-source` | [Paper](https://arxiv.org/abs/2403.03206) / [Code](https://github.com/black-forest-labs/flux) |
 | **Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation** | 🧊 3d-object-asset | `arXiv 2025` | `diffusion` `transformer` `mesh` `open-source` | [Paper](https://arxiv.org/abs/2501.12202) / [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |

@@ -2,7 +2,7 @@
 
 > Auto-generated from arXiv. **Manual review required before adding to `data/*.jsonl`.**
 
-- Generated: `2026-03-28 13:42 UTC`
+- Generated: `2026-03-28 14:22 UTC`
 - Window: last **14** days
 
 ## image-2d

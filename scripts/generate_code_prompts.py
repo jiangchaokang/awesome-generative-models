@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-python3 generate_code_prompts.py /content/awesome-generative-models
+python3 scripts/generate_code_prompts.py /content/awesome-generative-models
 """
 
 import argparse
@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 from typing import Iterable, List, Set
 
-DEFAULT_OUTPUT = Path("ai_code_temp.txt")
+DEFAULT_OUTPUT = Path("/content/ai_code_temp.txt")
 
 
 def iter_code_files_in_dir(dir_path: Path, extensions: Set[str] = None) -> Iterable[Path]:
@@ -22,7 +22,7 @@ def iter_code_files_in_dir(dir_path: Path, extensions: Set[str] = None) -> Itera
     skip_dirs = {
         ".git", ".hg", ".svn",
         "__pycache__", ".mypy_cache", ".pytest_cache",
-        ".venv", "venv", "env", "node_modules"
+        ".venv", "venv", "env", "node_modules","00-surveys-and-foundations", "10-image-2d", "20-video", "30-3d-object-asset", "40-3d-scene", "50-4d-dynamic-scene-world", "90-topics",
     }
     
     for root, dirs, files in os.walk(dir_path, topdown=True, followlinks=False):

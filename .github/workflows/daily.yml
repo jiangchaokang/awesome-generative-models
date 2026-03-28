@@ -1,59 +1,59 @@
 name: daily-build
 
 on:
-    workflow_dispatch:
-        push:
-              branches:
-                      - main
-                              - master
-                                    paths:
-                                            - "data/**"
-                                                    - "docs/**"
-                                                            - "scripts/**"
-                                                                    - ".github/workflows/daily.yml"
-                                                                        schedule:
-                                                                              - cron: "25 1 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "data/**"
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/daily.yml"
+  schedule:
+    - cron: "25 1 * * *"
 
-                                                                                permissions:
-                                                                                    contents: write
+permissions:
+  contents: write
 
-                                                                                    jobs:
-                                                                                        build:
-                                                                                              runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-                                                                                                    steps:
-                                                                                                            - name: Checkout
-                                                                                                                      uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-                                                                                                                              - name: Setup Python
-                                                                                                                                        uses: actions/setup-python@v5
-                                                                                                                                                  with:
-                                                                                                                                                              python-version: "3.11"
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-                                                                                                                                                                      - name: Fetch daily candidates
-                                                                                                                                                                                run: python scripts/fetch_candidates.py
+      - name: Fetch daily candidates
+        run: python scripts/fetch_candidates.py
 
-                                                                                                                                                                                        - name: Build README and pages
-                                                                                                                                                                                                  run: python scripts/build.py
+      - name: Build README and pages
+        run: python scripts/build.py
 
-                                                                                                                                                                                                          - name: Commit changes
-                                                                                                                                                                                                                    run: |
-                                                                                                                                                                                                                                git config user.name "github-actions[bot]"
-                                                                                                                                                                                                                                          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-                                                                                                                                                                                                                                                    git add README.md
-                                                                                                                                                                                                                                                              git add 00-surveys-and-foundations
-                                                                                                                                                                                                                                                                        git add 10-image-2d
-                                                                                                                                                                                                                                                                                  git add 20-video
-                                                                                                                                                                                                                                                                                            git add 30-3d-object-asset
-                                                                                                                                                                                                                                                                                                      git add 40-3d-scene
-                                                                                                                                                                                                                                                                                                                git add 50-4d-dynamic-scene-world
-                                                                                                                                                                                                                                                                                                                          git add 90-topics
-                                                                                                                                                                                                                                                                                                                                    git add metadata
+          git add README.md
+          git add 00-surveys-and-foundations
+          git add 10-image-2d
+          git add 20-video
+          git add 30-3d-object-asset
+          git add 40-3d-scene
+          git add 50-4d-dynamic-scene-world
+          git add 90-topics
+          git add metadata
 
-                                                                                                                                                                                                                                                                                                                                              if git diff --cached --quiet; then
-                                                                                                                                                                                                                                                                                                                                                          echo "No changes to commit."
-                                                                                                                                                                                                                                                                                                                                                                    else
-                                                                                                                                                                                                                                                                                                                                                                                git commit -m "build: refresh index and daily candidates"
-                                                                                                                                                                                                                                                                                                                                                                                              git push
-                                                                                                                                                                                                                                                                                                                                                                                                        fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "build: refresh index and daily candidates"
+            git push
+          fi

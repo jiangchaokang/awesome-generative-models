@@ -1,53 +1,70 @@
-# 20-video / image-to-video
+# 🎬 20-video / image-to-video
 
-> 6 papers.
+> **6 papers.**
 
-[↑ Back to root](../README.md) · [↑ Back to artifact](README.md)
+[↑ Root](../README.md) · [↑ Category](README.md)
+
+| Title | Venue | Tags | Open | Links |
+|:------|:------|:-----|:----:|:------|
+| **MotionPro: A Precise Motion Controller for Image-to-Video Generation** | CVPR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=MotionPro%3A%20A%20Precise%20Motion%20Controller%20for%20Image-to-Video%20Generation) / [Code](https://github.com/search?q=MotionPro%3A%20A%20Precise%20Motion%20Controller%20for%20Image-to-Video%20Generation&type=repositories) |
+| **MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation** | CVPR 2025 | `diffusion` `transformer` | — | [Paper](https://scholar.google.com/scholar?q=MotionStone%3A%20Decoupled%20Motion%20Intensity%20Modulation%20with%20Diffusion%20Transformer%20for%20Image-to-Video%20Generation) |
+| **Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation** | CVPR 2025 | `diffusion` | — | [Paper](https://scholar.google.com/scholar?q=Through-The-Mask%3A%20Mask-based%20Motion%20Trajectories%20for%20Image-to-Video%20Generation) |
+| **AnyI2V: Animating Any Conditional Image with Motion Control** | ICCV 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=AnyI2V%3A%20Animating%20Any%20Conditional%20Image%20with%20Motion%20Control) / [Code](https://github.com/search?q=AnyI2V%3A%20Animating%20Any%20Conditional%20Image%20with%20Motion%20Control&type=repositories) |
+| **Pyramidal Flow Matching for Efficient Video Generative Modeling** | ICLR 2025 | `flow-matching` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=Pyramidal%20Flow%20Matching%20for%20Efficient%20Video%20Generative%20Modeling) / [Code](https://github.com/search?q=Pyramidal%20Flow%20Matching%20for%20Efficient%20Video%20Generative%20Modeling&type=repositories) |
+| **SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation** | ICLR 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=SG-I2V%3A%20Self-Guided%20Trajectory%20Control%20in%20Image-to-Video%20Generation) / [Code](https://github.com/search?q=SG-I2V%3A%20Self-Guided%20Trajectory%20Control%20in%20Image-to-Video%20Generation&type=repositories) |
+
+## Details
 
 <details>
-<summary><strong>MotionPro: A Precise Motion Controller for Image-to-Video Generation</strong> — `CVPR 2025` `image-to-video` `diffusion` `image` `motion` `open-source`</summary>
+<summary><b>MotionPro: A Precise Motion Controller for Image-to-Video Generation</b> &mdash; <code>CVPR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
 
-- **TL;DR**: 面向 图像到视频 的 视频 工作；方法：diffusion；条件：image/motion。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=MotionPro%3A%20A%20Precise%20Motion%20Controller%20for%20Image-to-Video%20Generation) · [Code](https://github.com/search?q=MotionPro%3A%20A%20Precise%20Motion%20Controller%20for%20Image-to-Video%20Generation&type=repositories)
+> A image to video approach targeting video generation using diffusion conditioned on image/motion.
+
+[📄 Paper](https://scholar.google.com/scholar?q=MotionPro%3A%20A%20Precise%20Motion%20Controller%20for%20Image-to-Video%20Generation) &nbsp; [💻 Code](https://github.com/search?q=MotionPro%3A%20A%20Precise%20Motion%20Controller%20for%20Image-to-Video%20Generation&type=repositories)
 
 </details>
 
 <details>
-<summary><strong>MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation</strong> — `CVPR 2025` `image-to-video` `diffusion` `transformer` `image`</summary>
+<summary><b>MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation</b> &mdash; <code>CVPR 2025</code> `diffusion` `transformer` </summary>
 
-- **TL;DR**: 面向 图像到视频 的 视频 工作；方法：diffusion/transformer；条件：image。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=MotionStone%3A%20Decoupled%20Motion%20Intensity%20Modulation%20with%20Diffusion%20Transformer%20for%20Image-to-Video%20Generation)
+> A image to video approach targeting video generation using diffusion/transformer conditioned on image.
 
-</details>
-
-<details>
-<summary><strong>Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation</strong> — `CVPR 2025` `image-to-video` `diffusion` `image` `mask`</summary>
-
-- **TL;DR**: 面向 图像到视频 的 视频 工作；方法：diffusion；条件：image/mask。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=Through-The-Mask%3A%20Mask-based%20Motion%20Trajectories%20for%20Image-to-Video%20Generation)
+[📄 Paper](https://scholar.google.com/scholar?q=MotionStone%3A%20Decoupled%20Motion%20Intensity%20Modulation%20with%20Diffusion%20Transformer%20for%20Image-to-Video%20Generation)
 
 </details>
 
 <details>
-<summary><strong>AnyI2V: Animating Any Conditional Image with Motion Control</strong> — `ICCV 2025` `image-to-video` `diffusion` `image` `motion` `open-source`</summary>
+<summary><b>Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation</b> &mdash; <code>CVPR 2025</code> `diffusion` </summary>
 
-- **TL;DR**: 面向 图像到视频 的 视频 工作；方法：diffusion；条件：image/motion。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=AnyI2V%3A%20Animating%20Any%20Conditional%20Image%20with%20Motion%20Control) · [Code](https://github.com/search?q=AnyI2V%3A%20Animating%20Any%20Conditional%20Image%20with%20Motion%20Control&type=repositories)
+> A image to video approach targeting video generation using diffusion conditioned on image/mask.
 
-</details>
-
-<details>
-<summary><strong>Pyramidal Flow Matching for Efficient Video Generative Modeling</strong> — `ICLR 2025` `image-to-video` `flow-matching` `image` `open-source`</summary>
-
-- **TL;DR**: 面向 图像到视频 的 视频 工作；方法：flow-matching；条件：image。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=Pyramidal%20Flow%20Matching%20for%20Efficient%20Video%20Generative%20Modeling) · [Code](https://github.com/search?q=Pyramidal%20Flow%20Matching%20for%20Efficient%20Video%20Generative%20Modeling&type=repositories)
+[📄 Paper](https://scholar.google.com/scholar?q=Through-The-Mask%3A%20Mask-based%20Motion%20Trajectories%20for%20Image-to-Video%20Generation)
 
 </details>
 
 <details>
-<summary><strong>SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation</strong> — `ICLR 2025` `image-to-video` `diffusion` `image` `trajectory` `open-source`</summary>
+<summary><b>AnyI2V: Animating Any Conditional Image with Motion Control</b> &mdash; <code>ICCV 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
 
-- **TL;DR**: 面向 图像到视频 的 视频 工作；方法：diffusion；条件：image/trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=SG-I2V%3A%20Self-Guided%20Trajectory%20Control%20in%20Image-to-Video%20Generation) · [Code](https://github.com/search?q=SG-I2V%3A%20Self-Guided%20Trajectory%20Control%20in%20Image-to-Video%20Generation&type=repositories)
+> A image to video approach targeting video generation using diffusion conditioned on image/motion.
+
+[📄 Paper](https://scholar.google.com/scholar?q=AnyI2V%3A%20Animating%20Any%20Conditional%20Image%20with%20Motion%20Control) &nbsp; [💻 Code](https://github.com/search?q=AnyI2V%3A%20Animating%20Any%20Conditional%20Image%20with%20Motion%20Control&type=repositories)
+
+</details>
+
+<details>
+<summary><b>Pyramidal Flow Matching for Efficient Video Generative Modeling</b> &mdash; <code>ICLR 2025</code> `flow-matching` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+
+> A image to video approach targeting video generation using flow-matching conditioned on image.
+
+[📄 Paper](https://scholar.google.com/scholar?q=Pyramidal%20Flow%20Matching%20for%20Efficient%20Video%20Generative%20Modeling) &nbsp; [💻 Code](https://github.com/search?q=Pyramidal%20Flow%20Matching%20for%20Efficient%20Video%20Generative%20Modeling&type=repositories)
+
+</details>
+
+<details>
+<summary><b>SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation</b> &mdash; <code>ICLR 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
+
+> A image to video approach targeting video generation using diffusion conditioned on image/trajectory.
+
+[📄 Paper](https://scholar.google.com/scholar?q=SG-I2V%3A%20Self-Guided%20Trajectory%20Control%20in%20Image-to-Video%20Generation) &nbsp; [💻 Code](https://github.com/search?q=SG-I2V%3A%20Self-Guided%20Trajectory%20Control%20in%20Image-to-Video%20Generation&type=repositories)
 
 </details>

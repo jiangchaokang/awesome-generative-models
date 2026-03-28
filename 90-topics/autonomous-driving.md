@@ -1,206 +1,34 @@
-# 90-topics / autonomous-driving
-
-> 24 papers.
-
-[↑ Back to root](../README.md) · [↑ Back to topics](README.md)
-
-## By artifact
-
-| Artifact | Count |
-|---|---:|
-| video | 5 |
-| 4d-dynamic-scene-world | 19 |
-
-## Papers
-
-<details>
-<summary><strong>Seeing the Future, Perceiving the Future: A Unified Driving World Model for Future Generation and Perception</strong> — `ICRA 2026` `autonomous-driving` `world-latent` `world-model` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：world-latent；方法：world-model；条件：trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=Seeing%20the%20Future%2C%20Perceiving%20the%20Future%3A%20A%20Unified%20Driving%20World%20Model%20for%20Future%20Generation%20and%20Perception) · [Code](https://github.com/search?q=Seeing%20the%20Future%2C%20Perceiving%20the%20Future%3A%20A%20Unified%20Driving%20World%20Model%20for%20Future%20Generation%20and%20Perception&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving</strong> — `arXiv 2026` `autonomous-driving` `world-latent` `trajectory` `world-model` `transformer` `action` `open-source`</summary>
-
-- **TL;DR**: 把 VLA planner 与 latent-space world model 做深度耦合，是 planning-aware world modeling 的代表作。
-- **Links**: [Paper](https://arxiv.org/abs/2602.06521) · [Code](https://github.com/liulin815/DriveWorld-VLA.git)
-
-</details>
-
-<details>
-<summary><strong>DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving</strong> — `arXiv 2026` `autonomous-driving` `world-latent` `flow` `world-model` `trajectory` `action` `open-source`</summary>
-
-- **TL;DR**: 用 flow-based dynamics 建模 driving latent transitions，适合放在 world-model / planning 接口分支。
-- **Links**: [Paper](https://arxiv.org/abs/2603.19675) · [Code](https://github.com/xiaolul2/DynFlowDrive)
-
-</details>
-
-<details>
-<summary><strong>UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning</strong> — `arXiv 2026` `autonomous-driving` `world-latent` `vae` `diffusion` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 强调 geometry / appearance / dynamics 的统一 latent 表示，是 2026 初 driving world model 的重要工作。
-- **Links**: [Paper](https://arxiv.org/abs/2602.01536) · [Code](https://github.com/Say2L/UniDWM)
-
-</details>
-
-<details>
-<summary><strong>VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs</strong> — `arXiv 2026` `autonomous-driving` `vector-graph` `vae` `diffusion` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 流式向量图世界模型，按 64m×64m lane-agent tile 增量外扩，结合 motion-aware VAE、EGR-DiT 与 DeltaSim 做 km 级闭环仿真。
-- **Links**: [Paper](https://arxiv.org/abs/2603.17652) · [Code](https://github.com/jiangchaokang/VectorWorld)
-
-</details>
-
-<details>
-<summary><strong>DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation</strong> — `CVPR 2025` `autonomous-driving-video` `autonomous-driving` `diffusion` `camera` `trajectory`</summary>
-
-- **TL;DR**: 面向 自动驾驶视频生成 的 视频 工作；领域：自动驾驶世界模型；方法：diffusion；条件：camera/trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=DriveScape%3A%20Towards%20High-Resolution%20Controllable%20Multi-View%20Driving%20Video%20Generation)
-
-</details>
-
-<details>
-<summary><strong>DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation</strong> — `CVPR 2025` `simulation` `autonomous-driving` `4dgs` `world-model` `splatting` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 仿真 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：4dgs；方法：world-model/splatting；条件：trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=DrivingSphere%3A%20Building%20a%20High-fidelity%204D%20World%20for%20Closed-loop%20Simulation) · [Code](https://github.com/search?q=DrivingSphere%3A%20Building%20a%20High-fidelity%204D%20World%20for%20Closed-loop%20Simulation&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control</strong> — `CVPR 2025` `autonomous-driving` `world-latent` `world-model` `trajectory` `action` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：world-latent；方法：world-model；条件：trajectory/action。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=GEM%3A%20A%20Generalizable%20Ego-Vision%20Multimodal%20World%20Model%20for%20Fine-Grained%20Ego-Motion%2C%20Object%20Dynamics%2C%20and%20Scene%20Composition%20Control) · [Code](https://github.com/search?q=GEM%3A%20A%20Generalizable%20Ego-Vision%20Multimodal%20World%20Model%20for%20Fine-Grained%20Ego-Motion%2C%20Object%20Dynamics%2C%20and%20Scene%20Composition%20Control&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>Generating Multimodal Driving Scenes via Next-Scene Prediction</strong> — `CVPR 2025` `autonomous-driving` `world-model` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；方法：world-model；条件：trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=Generating%20Multimodal%20Driving%20Scenes%20via%20Next-Scene%20Prediction) · [Code](https://github.com/search?q=Generating%20Multimodal%20Driving%20Scenes%20via%20Next-Scene%20Prediction&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models</strong> — `CVPR 2025` `autonomous-driving-video` `autonomous-driving` `diffusion` `trajectory` `camera` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶视频生成 的 视频 工作；领域：自动驾驶世界模型；方法：diffusion；条件：trajectory/camera。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models) · [Code](https://github.com/search?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>UniScene: Unified Occupancy-centric Driving Scene Generation</strong> — `CVPR 2025` `autonomous-driving` `occupancy` `diffusion` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：occupancy；方法：diffusion；条件：trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=UniScene%3A%20Unified%20Occupancy-centric%20Driving%20Scene%20Generation) · [Code](https://github.com/search?q=UniScene%3A%20Unified%20Occupancy-centric%20Driving%20Scene%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>InfiniCube: Unbounded and Controllable Dynamic 3D Driving Scene Generation with World-Guided Video Models</strong> — `ICCV 2025` `4d-generation` `autonomous-driving` `4dgs` `diffusion` `world-model` `image` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 4D 生成 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：4dgs；方法：diffusion/world-model；条件：image/trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=InfiniCube%3A%20Unbounded%20and%20Controllable%20Dynamic%203D%20Driving%20Scene%20Generation%20with%20World-Guided%20Video%20Models) · [Code](https://github.com/search?q=InfiniCube%3A%20Unbounded%20and%20Controllable%20Dynamic%203D%20Driving%20Scene%20Generation%20with%20World-Guided%20Video%20Models&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control</strong> — `ICCV 2025` `autonomous-driving-video` `autonomous-driving` `diffusion` `trajectory` `camera` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶视频生成 的 视频 工作；领域：自动驾驶世界模型；方法：diffusion；条件：trajectory/camera。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control) · [Code](https://github.com/search?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>DynamicCity: Large-Scale Occupancy Generation from Dynamic Scenes</strong> — `ICLR 2025` `autonomous-driving` `occupancy` `diffusion` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：occupancy；方法：diffusion；条件：trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=DynamicCity%3A%20Large-Scale%20Occupancy%20Generation%20from%20Dynamic%20Scenes) · [Code](https://github.com/search?q=DynamicCity%3A%20Large-Scale%20Occupancy%20Generation%20from%20Dynamic%20Scenes&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>Glad: A Streaming Scene Generator for Autonomous Driving</strong> — `ICLR 2025` `autonomous-driving` `world-model` `trajectory`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；方法：world-model；条件：trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=Glad%3A%20A%20Streaming%20Scene%20Generator%20for%20Autonomous%20Driving)
-
-</details>
-
-<details>
-<summary><strong>DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation</strong> — `AAAI 2025` `autonomous-driving-video` `autonomous-driving` `diffusion` `llm-agent` `text` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶视频生成 的 视频 工作；领域：自动驾驶世界模型；方法：diffusion/llm-agent；条件：text/trajectory。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation) · [Code](https://github.com/search?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving</strong> — `arXiv 2025` `autonomous-driving-video` `autonomous-driving` `diffusion` `video` `trajectory`</summary>
-
-- **TL;DR**: 面向 自动驾驶视频生成 的 视频 工作；领域：自动驾驶世界模型；方法：diffusion；条件：video/trajectory。
-- **Links**: [Paper](https://arxiv.org/search/?query=CoGen%3A%203D%20Consistent%20Video%20Generation%20via%20Adaptive%20Conditioning%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><strong>DiST-4D: Disentangled Spatiotemporal Diffusion with Metric Depth for 4D Driving Scene Generation</strong> — `arXiv 2025` `autonomous-driving` `4dgs` `depth` `diffusion` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：4dgs/depth；方法：diffusion；条件：trajectory/depth。
-- **Links**: [Paper](https://arxiv.org/search/?query=DiST-4D%3A%20Disentangled%20Spatiotemporal%20Diffusion%20with%20Metric%20Depth%20for%204D%20Driving%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) · [Code](https://github.com/search?q=DiST-4D%3A%20Disentangled%20Spatiotemporal%20Diffusion%20with%20Metric%20Depth%20for%204D%20Driving%20Scene%20Generation&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>DreamDrive: Generative 4D Scene Modeling from Street View Images</strong> — `arXiv 2025` `autonomous-driving` `4dgs` `diffusion` `image`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：4dgs；方法：diffusion；条件：image。
-- **Links**: [Paper](https://arxiv.org/search/?query=DreamDrive%3A%20Generative%204D%20Scene%20Modeling%20from%20Street%20View%20Images&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><strong>Epona: Autoregressive Diffusion World Model for Autonomous Driving</strong> — `arXiv 2025` `autonomous-driving` `world-latent` `autoregressive` `diffusion` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 把 AR 与 diffusion 结合到 driving world model 中，兼顾长时预测与规划接口。
-- **Links**: [Paper](https://arxiv.org/abs/2506.24113) · [Code](https://github.com/Kevin-thu/Epona/)
-
-</details>
-
-<details>
-<summary><strong>GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving</strong> — `arXiv 2025` `autonomous-driving` `multiview` `world-latent` `world-model` `diffusion` `trajectory` `camera`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：multiview/world-latent；方法：world-model/diffusion；条件：trajectory/camera。
-- **Links**: [Paper](https://arxiv.org/search/?query=GAIA-2%3A%20A%20Controllable%20Multi-View%20Generative%20World%20Model%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
-
-</details>
-
-<details>
-<summary><strong>HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation</strong> — `arXiv 2025` `autonomous-driving` `bev` `world-model` `transformer` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 把 driving scene understanding 与 future generation 合在同一世界模型里，是自动驾驶 world model 路线的重要条目。
-- **Links**: [Paper](https://arxiv.org/abs/2501.14729) · [Code](https://github.com/LMD0311/HERMES)
-
-</details>
-
-<details>
-<summary><strong>MaskGWM: A Generalizable Driving World Model with Video Mask Reconstruction</strong> — `arXiv 2025` `autonomous-driving` `video-latent` `world-model` `diffusion` `trajectory` `open-source`</summary>
-
-- **TL;DR**: 面向 自动驾驶世界模型 的 4D 动态场景/世界 工作；领域：自动驾驶世界模型；表示：video-latent；方法：world-model/diffusion；条件：trajectory。
-- **Links**: [Paper](https://arxiv.org/search/?query=MaskGWM%3A%20A%20Generalizable%20Driving%20World%20Model%20with%20Video%20Mask%20Reconstruction&searchtype=all&abstracts=show&order=-announced_date_first&size=50) · [Code](https://github.com/search?q=MaskGWM%3A%20A%20Generalizable%20Driving%20World%20Model%20with%20Video%20Mask%20Reconstruction&type=repositories)
-
-</details>
-
-<details>
-<summary><strong>World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model</strong> — `arXiv 2025` `autonomous-driving` `world-latent` `trajectory` `world-model` `open-source`</summary>
-
-- **TL;DR**: 强调 intention-aware latent world modeling 与规划闭环结合，适合放在 autonomous-driving 主线。
-- **Links**: [Paper](https://arxiv.org/abs/2507.00603) · [Code](https://github.com/ucaszyp/World4Drive)
-
-</details>
+# 🏷️ Topic: autonomous-driving
+
+> 26 papers across all artifact categories.
+
+[↑ Root](../README.md) · [↑ Topics](README.md)
+
+| Title | Artifact | Venue | Open | Links |
+|:------|:---------|:------|:----:|:------|
+| **Seeing the Future, Perceiving the Future: A Unified Driving World Model for Future Generation and Perception** | 4d-dynamic-scene-world | ICRA 2026 | ✅ | [Paper](https://scholar.google.com/scholar?q=Seeing%20the%20Future%2C%20Perceiving%20the%20Future%3A%20A%20Unified%20Driving%20World%20Model%20for%20Future%20Generation%20and%20Perception) / [Code](https://github.com/search?q=Seeing%20the%20Future%2C%20Perceiving%20the%20Future%3A%20A%20Unified%20Driving%20World%20Model%20for%20Future%20Generation%20and%20Perception&type=repositories) |
+| **DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer** | 4d-dynamic-scene-world | arXiv 2026 | — | [Paper](https://arxiv.org/abs/2602.24096) |
+| **DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2602.06521) / [Code](https://github.com/liulin815/DriveWorld-VLA.git) |
+| **DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2603.19675) / [Code](https://github.com/xiaolul2/DynFlowDrive) |
+| **UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2602.01536) / [Code](https://github.com/Say2L/UniDWM) |
+| **VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs** | 4d-dynamic-scene-world | arXiv 2026 | ✅ | [Paper](https://arxiv.org/abs/2603.17652) / [Code](https://github.com/jiangchaokang/VectorWorld) |
+| **DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation** | video | CVPR 2025 | — | [Paper](https://scholar.google.com/scholar?q=DriveScape%3A%20Towards%20High-Resolution%20Controllable%20Multi-View%20Driving%20Video%20Generation) |
+| **DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=DrivingSphere%3A%20Building%20a%20High-fidelity%204D%20World%20for%20Closed-loop%20Simulation) / [Code](https://github.com/search?q=DrivingSphere%3A%20Building%20a%20High-fidelity%204D%20World%20for%20Closed-loop%20Simulation&type=repositories) |
+| **GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=GEM%3A%20A%20Generalizable%20Ego-Vision%20Multimodal%20World%20Model%20for%20Fine-Grained%20Ego-Motion%2C%20Object%20Dynamics%2C%20and%20Scene%20Composition%20Control) / [Code](https://github.com/search?q=GEM%3A%20A%20Generalizable%20Ego-Vision%20Multimodal%20World%20Model%20for%20Fine-Grained%20Ego-Motion%2C%20Object%20Dynamics%2C%20and%20Scene%20Composition%20Control&type=repositories) |
+| **Generating Multimodal Driving Scenes via Next-Scene Prediction** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=Generating%20Multimodal%20Driving%20Scenes%20via%20Next-Scene%20Prediction) / [Code](https://github.com/search?q=Generating%20Multimodal%20Driving%20Scenes%20via%20Next-Scene%20Prediction&type=repositories) |
+| **StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models** | video | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models) / [Code](https://github.com/search?q=StreetCrafter%3A%20Street%20View%20Synthesis%20with%20Controllable%20Video%20Diffusion%20Models&type=repositories) |
+| **UniScene: Unified Occupancy-centric Driving Scene Generation** | 4d-dynamic-scene-world | CVPR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=UniScene%3A%20Unified%20Occupancy-centric%20Driving%20Scene%20Generation) / [Code](https://github.com/search?q=UniScene%3A%20Unified%20Occupancy-centric%20Driving%20Scene%20Generation&type=repositories) |
+| **InfiniCube: Unbounded and Controllable Dynamic 3D Driving Scene Generation with World-Guided Video Models** | 4d-dynamic-scene-world | ICCV 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=InfiniCube%3A%20Unbounded%20and%20Controllable%20Dynamic%203D%20Driving%20Scene%20Generation%20with%20World-Guided%20Video%20Models) / [Code](https://github.com/search?q=InfiniCube%3A%20Unbounded%20and%20Controllable%20Dynamic%203D%20Driving%20Scene%20Generation%20with%20World-Guided%20Video%20Models&type=repositories) |
+| **MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control** | video | ICCV 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control) / [Code](https://github.com/search?q=MagicDrive-V2%3A%20High-Resolution%20Long%20Video%20Generation%20for%20Autonomous%20Driving%20with%20Adaptive%20Control&type=repositories) |
+| **DynamicCity: Large-Scale Occupancy Generation from Dynamic Scenes** | 4d-dynamic-scene-world | ICLR 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=DynamicCity%3A%20Large-Scale%20Occupancy%20Generation%20from%20Dynamic%20Scenes) / [Code](https://github.com/search?q=DynamicCity%3A%20Large-Scale%20Occupancy%20Generation%20from%20Dynamic%20Scenes&type=repositories) |
+| **Glad: A Streaming Scene Generator for Autonomous Driving** | 4d-dynamic-scene-world | ICLR 2025 | — | [Paper](https://scholar.google.com/scholar?q=Glad%3A%20A%20Streaming%20Scene%20Generator%20for%20Autonomous%20Driving) |
+| **DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation** | video | AAAI 2025 | ✅ | [Paper](https://scholar.google.com/scholar?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation) / [Code](https://github.com/search?q=DriveDreamer-2%3A%20LLM-Enhanced%20World%20Models%20for%20Diverse%20Driving%20Video%20Generation&type=repositories) |
+| **CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving** | video | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=CoGen%3A%203D%20Consistent%20Video%20Generation%20via%20Adaptive%20Conditioning%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+| **DiST-4D: Disentangled Spatiotemporal Diffusion with Metric Depth for 4D Driving Scene Generation** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/search/?query=DiST-4D%3A%20Disentangled%20Spatiotemporal%20Diffusion%20with%20Metric%20Depth%20for%204D%20Driving%20Scene%20Generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=DiST-4D%3A%20Disentangled%20Spatiotemporal%20Diffusion%20with%20Metric%20Depth%20for%204D%20Driving%20Scene%20Generation&type=repositories) |
+| **DreamDrive: Generative 4D Scene Modeling from Street View Images** | 4d-dynamic-scene-world | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=DreamDrive%3A%20Generative%204D%20Scene%20Modeling%20from%20Street%20View%20Images&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+| **Epona: Autoregressive Diffusion World Model for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/abs/2506.24113) / [Code](https://github.com/Kevin-thu/Epona/) |
+| **GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving** | 4d-dynamic-scene-world | arXiv 2025 | — | [Paper](https://arxiv.org/search/?query=GAIA-2%3A%20A%20Controllable%20Multi-View%20Generative%20World%20Model%20for%20Autonomous%20Driving&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+| **HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/abs/2501.14729) / [Code](https://github.com/LMD0311/HERMES) |
+| **MaskGWM: A Generalizable Driving World Model with Video Mask Reconstruction** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/search/?query=MaskGWM%3A%20A%20Generalizable%20Driving%20World%20Model%20with%20Video%20Mask%20Reconstruction&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=MaskGWM%3A%20A%20Generalizable%20Driving%20World%20Model%20with%20Video%20Mask%20Reconstruction&type=repositories) |
+| **World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model** | 4d-dynamic-scene-world | arXiv 2025 | ✅ | [Paper](https://arxiv.org/abs/2507.00603) / [Code](https://github.com/ucaszyp/World4Drive) |
+| **Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research** | 4d-dynamic-scene-world | NeurIPS 2024 | ✅ | [Paper](https://arxiv.org/abs/2310.08710) / [Code](https://github.com/waymo-research/waymax) |

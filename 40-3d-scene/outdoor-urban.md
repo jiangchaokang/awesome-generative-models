@@ -1,29 +1,40 @@
-# 40-3d-scene / outdoor-urban
+# 🏙️ 40-3d-scene / outdoor-urban
 
-> 3 papers.
+> **3 papers.**
 
-[↑ Back to root](../README.md) · [↑ Back to artifact](README.md)
+[↑ Root](../README.md) · [↑ Category](README.md)
+
+| Title | Venue | Tags | Open | Links |
+|:------|:------|:-----|:----:|:------|
+| **NuiScene: Exploring Efficient Generation of Unbounded Outdoor Scenes** | ICCV 2025 | `diffusion` `open-source` | ✅ | [Paper](https://scholar.google.com/scholar?q=NuiScene%3A%20Exploring%20Efficient%20Generation%20of%20Unbounded%20Outdoor%20Scenes) / [Code](https://github.com/search?q=NuiScene%3A%20Exploring%20Efficient%20Generation%20of%20Unbounded%20Outdoor%20Scenes&type=repositories) |
+| **MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion** | arXiv 2025 | `diffusion` `mesh` | — | [Paper](https://arxiv.org/search/?query=MeSS%3A%20City%20Mesh-Guided%20Outdoor%20Scene%20Generation%20with%20Cross-View%20Consistent%20Diffusion&searchtype=all&abstracts=show&order=-announced_date_first&size=50) |
+| **SynCity: Training-Free Generation of 3D Worlds** | arXiv 2025 | `training-free` `open-source` | ✅ | [Paper](https://arxiv.org/search/?query=SynCity%3A%20Training-Free%20Generation%20of%203D%20Worlds&searchtype=all&abstracts=show&order=-announced_date_first&size=50) / [Code](https://github.com/search?q=SynCity%3A%20Training-Free%20Generation%20of%203D%20Worlds&type=repositories) |
+
+## Details
 
 <details>
-<summary><strong>NuiScene: Exploring Efficient Generation of Unbounded Outdoor Scenes</strong> — `ICCV 2025` `outdoor-urban` `diffusion` `text` `open-source`</summary>
+<summary><b>NuiScene: Exploring Efficient Generation of Unbounded Outdoor Scenes</b> &mdash; <code>ICCV 2025</code> `diffusion` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
 
-- **TL;DR**: 面向 室外/城市场景 的 3D 场景 工作；领域：室外/城市场景；方法：diffusion；条件：text。
-- **Links**: [Paper](https://scholar.google.com/scholar?q=NuiScene%3A%20Exploring%20Efficient%20Generation%20of%20Unbounded%20Outdoor%20Scenes) · [Code](https://github.com/search?q=NuiScene%3A%20Exploring%20Efficient%20Generation%20of%20Unbounded%20Outdoor%20Scenes&type=repositories)
+> A outdoor urban approach targeting 3d scene generation using diffusion conditioned on text.
+
+[📄 Paper](https://scholar.google.com/scholar?q=NuiScene%3A%20Exploring%20Efficient%20Generation%20of%20Unbounded%20Outdoor%20Scenes) &nbsp; [💻 Code](https://github.com/search?q=NuiScene%3A%20Exploring%20Efficient%20Generation%20of%20Unbounded%20Outdoor%20Scenes&type=repositories)
 
 </details>
 
 <details>
-<summary><strong>MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion</strong> — `arXiv 2025` `outdoor-urban` `mesh` `diffusion` `text` `multiview`</summary>
+<summary><b>MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion</b> &mdash; <code>arXiv 2025</code> `diffusion` `mesh` </summary>
 
-- **TL;DR**: 面向 室外/城市场景 的 3D 场景 工作；领域：室外/城市场景；表示：mesh；方法：diffusion；条件：text/multiview。
-- **Links**: [Paper](https://arxiv.org/search/?query=MeSS%3A%20City%20Mesh-Guided%20Outdoor%20Scene%20Generation%20with%20Cross-View%20Consistent%20Diffusion&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
+> A outdoor urban approach targeting 3d scene generation using diffusion conditioned on text/multiview.
+
+[📄 Paper](https://arxiv.org/search/?query=MeSS%3A%20City%20Mesh-Guided%20Outdoor%20Scene%20Generation%20with%20Cross-View%20Consistent%20Diffusion&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
 
 </details>
 
 <details>
-<summary><strong>SynCity: Training-Free Generation of 3D Worlds</strong> — `arXiv 2025` `outdoor-urban` `training-free` `text` `open-source`</summary>
+<summary><b>SynCity: Training-Free Generation of 3D Worlds</b> &mdash; <code>arXiv 2025</code> `training-free` `open-source` ![Open Source](https://img.shields.io/badge/Open_Source-brightgreen)</summary>
 
-- **TL;DR**: 面向 室外/城市场景 的 3D 场景 工作；领域：室外/城市场景；方法：training-free；条件：text。
-- **Links**: [Paper](https://arxiv.org/search/?query=SynCity%3A%20Training-Free%20Generation%20of%203D%20Worlds&searchtype=all&abstracts=show&order=-announced_date_first&size=50) · [Code](https://github.com/search?q=SynCity%3A%20Training-Free%20Generation%20of%203D%20Worlds&type=repositories)
+> A outdoor urban approach targeting 3d scene generation using training-free conditioned on text.
+
+[📄 Paper](https://arxiv.org/search/?query=SynCity%3A%20Training-Free%20Generation%20of%203D%20Worlds&searchtype=all&abstracts=show&order=-announced_date_first&size=50) &nbsp; [💻 Code](https://github.com/search?q=SynCity%3A%20Training-Free%20Generation%20of%203D%20Worlds&type=repositories)
 
 </details>

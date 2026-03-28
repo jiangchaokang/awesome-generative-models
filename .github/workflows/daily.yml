@@ -3,24 +3,22 @@ name: daily-build
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
-      - master
+    branches: [main, master]
     paths:
       - "data/**"
       - "docs/**"
       - "scripts/**"
       - ".github/workflows/daily.yml"
   schedule:
-    - cron: "25 1 * * *"
+    - cron: "25 1 * * *"   # Every day at 01:25 UTC
 
 permissions:
   contents: write
+  issues: write             # needed to create Issues
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,8 +28,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Fetch daily candidates
-        run: python scripts/fetch_candidates.py
+      - name: Fetch daily candidates & create Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_candidates.py --issue
 
       - name: Build README and pages
         run: python scripts/build.py
@@ -40,20 +40,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add README.md
-          git add 00-surveys-and-foundations
-          git add 10-image-2d
-          git add 20-video
-          git add 30-3d-object-asset
-          git add 40-3d-scene
-          git add 50-4d-dynamic-scene-world
-          git add 90-topics
-          git add metadata
-
+          git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "build: refresh index and daily candidates"
+            git commit -m "build: refresh pages $(date -u +%Y-%m-%d)"
             git push
           fi

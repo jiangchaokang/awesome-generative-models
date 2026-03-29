@@ -7,8 +7,8 @@
 **A rigorously curated, English-only catalog of recent generative-model work**
 **for images, videos, 3D assets, 3D scenes, and 4D dynamic worlds.**
 
-![Papers: 199](https://img.shields.io/badge/Papers-199-2563EB?style=for-the-badge&logo=googlescholar)
-![Open Source: 47](https://img.shields.io/badge/Open%20Source-47-16A34A?style=for-the-badge&logo=opensourceinitiative)
+![Papers: 207](https://img.shields.io/badge/Papers-207-2563EB?style=for-the-badge&logo=googlescholar)
+![Open Source: 52](https://img.shields.io/badge/Open%20Source-52-16A34A?style=for-the-badge&logo=opensourceinitiative)
 ![Scope: 2025+](https://img.shields.io/badge/Scope-2025%2B-0EA5E9?style=for-the-badge)
 ![Links: Exact Only](https://img.shields.io/badge/Links-Exact%20Only-B31B1B?style=for-the-badge&logo=link)
 ![Review: Human Curated](https://img.shields.io/badge/Review-Human%20Curated-7C3AED?style=for-the-badge&logo=github)
@@ -20,6 +20,18 @@
 </div>
 
 ---
+
+## 🚨 Pinned Spotlight
+
+### VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs
+
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/jiangchaokang/VectorWorld) [![GitHub: ★ 15](https://img.shields.io/badge/GitHub-%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/jiangchaokang/VectorWorld) ![Independent](https://img.shields.io/badge/Independent-475569?style=flat-square)
+
+> VectorWorld is a streaming autonomous-driving world model that incrementally generates ego-centric lane-agent vector-graph tiles during rollout. It uses a motion-aware VAE and one-step masked completion on vector graphs to achieve stable, real-time long-horizon simulation. The work is valuable because it targets policy-compatible closed-loop generation instead of offline video-only realism.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.17652) [![Code: GitHub ★ 15](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2015-181717?style=flat-square&logo=github)](https://github.com/jiangchaokang/VectorWorld)
+
+![vae](https://img.shields.io/badge/vae-7C3AED?style=flat-square) ![diffusion](https://img.shields.io/badge/diffusion-7C3AED?style=flat-square) ![flow](https://img.shields.io/badge/flow-7C3AED?style=flat-square) ![vector-graph](https://img.shields.io/badge/vector-graph-0D9488?style=flat-square) ![trajectory](https://img.shields.io/badge/trajectory-475569?style=flat-square) ![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
 
 ## Why this repository is different
 
@@ -33,13 +45,13 @@
 | Directory | Focus | Count |
 |:--|:--|--:|
 | [00-surveys-and-foundations](00-surveys-and-foundations/README.md) | Surveys, policy, and taxonomy | — |
-| [10-image-2d](10-image-2d/README.md) | Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference. | 54 |
-| [20-video](20-video/README.md) | Final output is a video: text-to-video, image-to-video, editing, human animation, long video, and surround-view video. | 49 |
-| [30-3d-object-asset](30-3d-object-asset/README.md) | Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation. | 38 |
+| [10-image-2d](10-image-2d/README.md) | Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference. | 56 |
+| [20-video](20-video/README.md) | Final output is a video: text-to-video, image-to-video, editing, human animation, long video, and surround-view video. | 51 |
+| [30-3d-object-asset](30-3d-object-asset/README.md) | Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation. | 40 |
 | [40-3d-scene](40-3d-scene/README.md) | Multi-object 3D scene generation, indoor/outdoor scenes, layout-conditioned scenes, and scene editing. | 36 |
-| [50-4d-dynamic-scene-world](50-4d-dynamic-scene-world/README.md) | Dynamic 3D/4D scenes, world models, simulation, autonomous driving, game worlds, and interactive world modeling. | 22 |
+| [50-4d-dynamic-scene-world](50-4d-dynamic-scene-world/README.md) | Dynamic 3D/4D scenes, world models, simulation, autonomous driving, game worlds, and interactive world modeling. | 24 |
 | [90-topics](90-topics/README.md) | Cross-cutting domain pages | 7 |
-| [91-organizations](91-organizations/README.md) | Cross-cutting organization pages | 0 |
+| [91-organizations](91-organizations/README.md) | Cross-cutting organization pages | 4 |
 
 ## Featured Radar
 
@@ -121,11 +133,11 @@
 
 ### DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving
 
-![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/liulin815/DriveWorld-VLA) [![GitHub: ★ 61](https://img.shields.io/badge/GitHub-%E2%98%85%2061-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
+![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: autonomous-driving](https://img.shields.io/badge/Task-autonomous-driving-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/liulin815/DriveWorld-VLA) [![GitHub: ★ 62](https://img.shields.io/badge/GitHub-%E2%98%85%2062-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
 
 > Deeply couples a VLA planner with a latent driving world model for planning-aware rollout.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.06521) [![Code: GitHub ★ 61](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2061-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.06521) [![Code: GitHub ★ 62](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2062-181717?style=flat-square&logo=github)](https://github.com/liulin815/DriveWorld-VLA)
 
 ![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
 
@@ -155,7 +167,10 @@
 
 | Organization | Papers |
 |:--|--:|
-| _No organization metadata yet_ | 0 |
+| [Tencent Hunyuan](91-organizations/tencent-hunyuan.md) | 9 |
+| [Independent](91-organizations/independent.md) | 1 |
+| [Alibaba](91-organizations/alibaba.md) | 1 |
+| [ByteDance Seed](91-organizations/bytedance-seed.md) | 1 |
 
 ## Curation Pipeline
 

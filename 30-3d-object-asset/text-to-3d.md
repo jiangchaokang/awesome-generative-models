@@ -22,11 +22,11 @@
 
 ### ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models
 
-![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ZhenglinZhou/ITS3D) [![GitHub: ★ 8](https://img.shields.io/badge/GitHub-%E2%98%85%208-181717?style=flat-square&logo=github)](https://github.com/ZhenglinZhou/ITS3D)
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ZhenglinZhou/ITS3D)
 
 > Brings inference-time scaling into text-guided 3D diffusion to improve asset quality at test time.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.22456) [![Code: GitHub ★ 8](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%208-181717?style=flat-square&logo=github)](https://github.com/ZhenglinZhou/ITS3D)
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.22456) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/ZhenglinZhou/ITS3D)
 
 ## Compact Index
 

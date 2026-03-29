@@ -4,6 +4,9 @@
 
 [← Root](../README.md)
 
-_No organization metadata has been added yet._
-
-Add `orgs` to high-value entries to enable organization badges and pages.
+| Organization | Papers |
+|:--|--:|
+| [Tencent Hunyuan](tencent-hunyuan.md) | 9 |
+| [Alibaba](alibaba.md) | 1 |
+| [ByteDance Seed](bytedance-seed.md) | 1 |
+| [Independent](independent.md) | 1 |

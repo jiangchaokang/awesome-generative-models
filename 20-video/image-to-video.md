@@ -1,6 +1,6 @@
 # 🎬 Video / image-to-video
 
-**Entries:** 8
+**Entries:** 9
 
 [← Root](../README.md) · [← Category](README.md)
 
@@ -27,6 +27,14 @@
 > A training-free motion-control framework that animates diverse condition images, including non-standard modalities.
 
 [![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2507.02857) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://henghuiding.com/AnyI2V/)
+
+### HunyuanVideo-I2V: A Customizable Image-to-Video Model based on HunyuanVideo
+
+![Venue: Technical Report 2025](https://img.shields.io/badge/Venue-Technical%20Report%202025-64748B?style=flat-square) ![Task: image-to-video](https://img.shields.io/badge/Task-image-to-video-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V) ![Tencent Hunyuan](https://img.shields.io/badge/Tencent%20Hunyuan-0064FF?style=flat-square&logo=tencentqq)
+
+> Tencent Hunyuan’s image-to-video extension builds on HunyuanVideo and targets customizable motion and stronger first-frame consistency for open I2V workflows.
+
+[![Code: GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V)
 
 ### MotionPro: A Precise Motion Controller for Image-to-Video Generation
 
@@ -78,6 +86,7 @@
 | **Anti-I2V: Safeguarding your photos from malicious image-to-video generation** | image-to-video | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.24570) |
 | **Search2Motion: Training-Free Object-Level Motion Control via Attention-Consensus Search** | image-to-video | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.16711) |
 | **AnyI2V: Animating Any Conditional Image with Motion Control** | image-to-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2507.02857) / [Project](https://henghuiding.com/AnyI2V/) |
+| **HunyuanVideo-I2V: A Customizable Image-to-Video Model based on HunyuanVideo** | image-to-video | Technical Report 2025 | [Code](https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V) |
 | **MotionPro: A Precise Motion Controller for Image-to-Video Generation** | image-to-video | CVPR 2025 | [Paper](https://arxiv.org/abs/2505.20287) / [Project](https://zhw-zhang.github.io/MotionPro-page/) |
 | **MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation** | image-to-video | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.05848) |
 | **Pyramidal Flow Matching for Efficient Video Generative Modeling** | image-to-video | ICLR 2025 | [Paper](https://arxiv.org/abs/2410.05954) / [Project](https://pyramid-flow.github.io/) |

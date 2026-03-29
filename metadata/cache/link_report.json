@@ -1,356 +1,5 @@
 {
-  "abot-physworld": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.23376"
-    }
-  },
-  "agentic-flow-steering": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.18627"
-    }
-  },
-  "anti-i2v": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.24570"
-    }
-  },
-  "assetformer": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.12100"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Advocate99/AssetFormer",
-      "full_name": "Advocate99/AssetFormer",
-      "stars": 33,
-      "pushed_at": "2026-02-13T02:39:10Z",
-      "archived": false,
-      "license": ""
-    }
-  },
-  "dak-ucb": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.23140"
-    }
-  },
-  "diffgraph": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.20470"
-    }
-  },
-  "diffusionharmonizer": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.24096"
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/"
-    }
-  },
-  "dreampartgen": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.19216"
-    }
-  },
-  "driveworld-vla": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.06521"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/liulin815/DriveWorld-VLA",
-      "full_name": "liulin815/DriveWorld-VLA",
-      "stars": 61,
-      "pushed_at": "2026-03-27T07:02:46Z",
-      "archived": false,
-      "license": ""
-    }
-  },
-  "dtvi": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.22041"
-    }
-  },
-  "dynflowdrive": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.19675"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/xiaolul2/DynFlowDrive",
-      "full_name": "xiaolul2/DynFlowDrive",
-      "stars": 15,
-      "pushed_at": "2026-03-23T06:06:02Z",
-      "archived": false,
-      "license": ""
-    }
-  },
-  "faster-inference-flow-based-generative-models": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.15279"
-    }
-  },
-  "flowscene": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.19598"
-    }
-  },
-  "foveated-diffusion": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.23491"
-    }
-  },
-  "fuse3d": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.17040"
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://jinnmnm.github.io/Fuse3d.github.io/"
-    }
-  },
-  "drifting": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.04770"
-    }
-  },
-  "geodiff3d": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2601.19785"
-    }
-  },
-  "ifsq": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2601.17124"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Tencent-Hunyuan/iFSQ",
-      "full_name": "Tencent-Hunyuan/iFSQ",
-      "stars": 96,
-      "pushed_at": "2026-01-27T14:25:02Z",
-      "archived": false,
-      "license": "NOASSERTION"
-    }
-  },
-  "lade": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.17965"
-    }
-  },
-  "lgtm": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.24086"
-    }
-  },
-  "lina": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2601.22630"
-    },
-    "repo": {
-      "ok": false,
-      "status": 404,
-      "final_url": "https://github.com/techmonsterwang/LINA",
-      "full_name": "techmonsterwang/LINA",
-      "error": "GitHub API HTTP 404"
-    }
-  },
-  "lumosx": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.20192"
-    }
-  },
-  "minute-long-videos-dual-parallelisms": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2505.21070"
-    }
-  },
-  "ms-customnet": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.21136"
-    }
-  },
-  "oneworld": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.16099"
-    }
-  },
-  "p-flow": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.22091"
-    }
-  },
-  "personalq": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.22943"
-    }
-  },
-  "premier": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.20725"
-    }
-  },
-  "relevance-feedback-t2i": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.14936"
-    }
-  },
-  "rpiae": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.19206"
-    }
-  },
-  "search2motion": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.16711"
-    }
-  },
-  "self-corrected-latent-rewards": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.24965"
-    }
-  },
-  "sharp": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.21783"
-    }
-  },
-  "slat-phys": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.23973"
-    }
-  },
-  "spatialgen": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2509.14981"
-    }
-  },
-  "spatialreward": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.22228"
-    }
-  },
-  "spectrally-guided-diffusion-noise-schedules": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.19222"
-    }
-  },
-  "text-image-conditioned-3d-generation": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.21295"
-    }
-  },
-  "tmpdiff": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.14062"
-    }
-  },
-  "unidwm": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.01536"
-    },
-    "repo": {
-      "ok": false,
-      "status": 404,
-      "final_url": "https://github.com/Say2L/UniDWM",
-      "full_name": "Say2L/UniDWM",
-      "error": "GitHub API HTTP 404"
-    }
-  },
-  "unigrpo": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.23500"
-    }
-  },
-  "vectorworld": {
+  "50-4d-dynamic-scene-world/vectorworld (world_4d.jsonl:2)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -367,77 +16,407 @@
       "license": ""
     }
   },
-  "vifeedit": {
+  "50-4d-dynamic-scene-world/abot-physworld (world_4d.jsonl:31)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.23376"
+    }
+  },
+  "10-image-2d/agentic-flow-steering (image_2d.jsonl:14)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.18627"
+    }
+  },
+  "20-video/anti-i2v (video.jsonl:31)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.24570"
+    }
+  },
+  "30-3d-object-asset/assetformer (object_3d.jsonl:21)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.12100"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Advocate99/AssetFormer",
+      "full_name": "Advocate99/AssetFormer",
+      "stars": 33,
+      "pushed_at": "2026-02-13T02:39:10Z",
+      "archived": false,
+      "license": ""
+    }
+  },
+  "10-image-2d/dak-ucb (image_2d.jsonl:45)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.23140"
+    }
+  },
+  "10-image-2d/diffgraph (image_2d.jsonl:60)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.20470"
+    }
+  },
+  "50-4d-dynamic-scene-world/diffusionharmonizer (world_4d.jsonl:21)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.24096"
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/"
+    }
+  },
+  "30-3d-object-asset/dreampartgen (object_3d.jsonl:47)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.19216"
+    }
+  },
+  "50-4d-dynamic-scene-world/driveworld-vla (world_4d.jsonl:14)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.06521"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/liulin815/DriveWorld-VLA",
+      "full_name": "liulin815/DriveWorld-VLA",
+      "stars": 62,
+      "pushed_at": "2026-03-27T07:02:46Z",
+      "archived": false,
+      "license": ""
+    }
+  },
+  "10-image-2d/dtvi (image_2d.jsonl:24)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.22041"
+    }
+  },
+  "50-4d-dynamic-scene-world/dynflowdrive (world_4d.jsonl:13)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.19675"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/xiaolul2/DynFlowDrive",
+      "full_name": "xiaolul2/DynFlowDrive",
+      "stars": 15,
+      "pushed_at": "2026-03-23T06:06:02Z",
+      "archived": false,
+      "license": ""
+    }
+  },
+  "20-video/faster-inference-flow-based-generative-models (video.jsonl:20)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.15279"
+    }
+  },
+  "40-3d-scene/flowscene (scene_3d.jsonl:19)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.19598"
+    }
+  },
+  "20-video/foveated-diffusion (video.jsonl:22)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.23491"
+    }
+  },
+  "30-3d-object-asset/fuse3d (object_3d.jsonl:22)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.17040"
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://jinnmnm.github.io/Fuse3d.github.io/"
+    }
+  },
+  "10-image-2d/drifting (image_2d.jsonl:41)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.04770"
+    }
+  },
+  "40-3d-scene/geodiff3d (scene_3d.jsonl:38)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2601.19785"
+    }
+  },
+  "10-image-2d/ifsq (image_2d.jsonl:38)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2601.17124"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/iFSQ",
+      "full_name": "Tencent-Hunyuan/iFSQ",
+      "stars": 96,
+      "pushed_at": "2026-01-27T14:25:02Z",
+      "archived": false,
+      "license": "NOASSERTION"
+    }
+  },
+  "10-image-2d/lade (image_2d.jsonl:65)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.17965"
+    }
+  },
+  "10-image-2d/lgtm (image_2d.jsonl:12)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.24086"
+    }
+  },
+  "20-video/lumosx (video.jsonl:21)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.20192"
+    }
+  },
+  "20-video/minute-long-videos-dual-parallelisms (video.jsonl:55)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2505.21070"
+    }
+  },
+  "10-image-2d/ms-customnet (image_2d.jsonl:29)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.21136"
+    }
+  },
+  "40-3d-scene/oneworld (scene_3d.jsonl:40)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.16099"
+    }
+  },
+  "20-video/p-flow (video.jsonl:40)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.22091"
+    }
+  },
+  "10-image-2d/personalq (image_2d.jsonl:28)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.22943"
+    }
+  },
+  "10-image-2d/premier (image_2d.jsonl:30)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.20725"
+    }
+  },
+  "10-image-2d/relevance-feedback-t2i (image_2d.jsonl:15)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.14936"
+    }
+  },
+  "10-image-2d/rpiae (image_2d.jsonl:44)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.19206"
+    }
+  },
+  "20-video/search2motion (video.jsonl:32)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.16711"
+    }
+  },
+  "10-image-2d/self-corrected-latent-rewards (image_2d.jsonl:23)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.24965"
+    }
+  },
+  "10-image-2d/sharp (image_2d.jsonl:61)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.21783"
+    }
+  },
+  "30-3d-object-asset/slat-phys (object_3d.jsonl:13)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.23973"
+    }
+  },
+  "40-3d-scene/spatialgen (scene_3d.jsonl:18)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2509.14981"
+    }
+  },
+  "10-image-2d/spatialreward (image_2d.jsonl:13)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.22228"
+    }
+  },
+  "20-video/spectrally-guided-diffusion-noise-schedules (video.jsonl:19)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.19222"
+    }
+  },
+  "30-3d-object-asset/text-image-conditioned-3d-generation (object_3d.jsonl:23)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.21295"
+    }
+  },
+  "10-image-2d/tmpdiff (image_2d.jsonl:42)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.14062"
+    }
+  },
+  "50-4d-dynamic-scene-world/unidwm (world_4d.jsonl:10)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.01536"
+    }
+  },
+  "10-image-2d/unigrpo (image_2d.jsonl:59)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.23500"
+    }
+  },
+  "20-video/vifeedit (video.jsonl:41)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2603.15478"
     }
   },
-  "warm-start-flow-matching": {
+  "10-image-2d/warm-start-flow-matching (image_2d.jsonl:43)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2603.19360"
     }
   },
-  "worldmesh": {
+  "40-3d-scene/worldmesh (scene_3d.jsonl:39)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2603.22972"
     }
   },
-  "pointcloud-ar-upsampling": {
+  "30-3d-object-asset/pointcloud-ar-upsampling (object_3d.jsonl:17)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.08594"
     }
   },
-  "3d-gpt": {
+  "40-3d-scene/3d-gpt (scene_3d.jsonl:3)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2310.12945"
     }
   },
-  "speculative-jacobi-t2i": {
+  "10-image-2d/speculative-jacobi-t2i (image_2d.jsonl:36)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2410.01699"
     }
   },
-  "adahuman": {
+  "30-3d-object-asset/adahuman (object_3d.jsonl:46)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2505.24877"
     }
   },
-  "adaworld": {
+  "50-4d-dynamic-scene-world/adaworld (world_4d.jsonl:17)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.18938"
     }
   },
-  "animate-anyone-2": {
+  "20-video/animate-anyone-2 (video.jsonl:47)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2502.06145"
     }
   },
-  "animate-x": {
+  "20-video/animate-x (video.jsonl:49)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2410.10306"
     }
   },
-  "anyi2v": {
+  "20-video/anyi2v (video.jsonl:28)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -449,7 +428,7 @@
       "final_url": "https://henghuiding.com/AnyI2V/"
     }
   },
-  "articulate-anymesh": {
+  "30-3d-object-asset/articulate-anymesh (object_3d.jsonl:45)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -461,7 +440,7 @@
       "final_url": "https://articulate-anymesh.github.io"
     }
   },
-  "assembler": {
+  "30-3d-object-asset/assembler (object_3d.jsonl:39)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -473,21 +452,21 @@
       "final_url": "https://assembler3d.github.io"
     }
   },
-  "blobgen-vid": {
+  "20-video/blobgen-vid (video.jsonl:9)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2501.07647"
     }
   },
-  "bolt3d": {
+  "40-3d-scene/bolt3d (scene_3d.jsonl:33)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.14445"
     }
   },
-  "bytheway": {
+  "20-video/bytheway (video.jsonl:3)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -509,14 +488,14 @@
       "final_url": "https://bujiazi.github.io/bytheway.github.io/"
     }
   },
-  "causalstruct": {
+  "40-3d-scene/causalstruct (scene_3d.jsonl:22)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2509.15249"
     }
   },
-  "cogen": {
+  "20-video/cogen (video.jsonl:62)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -528,7 +507,7 @@
       "final_url": "https://xiaomi-research.github.io/cogen/"
     }
   },
-  "cogvideox": {
+  "20-video/cogvideox (video.jsonl:16)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -538,21 +517,21 @@
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/THUDM/CogVideo",
-      "full_name": "THUDM/CogVideo",
-      "stars": 12567,
+      "full_name": "zai-org/CogVideo",
+      "stars": 12568,
       "pushed_at": "2025-11-04T11:19:04Z",
       "archived": false,
       "license": "Apache-2.0"
     }
   },
-  "compass-control": {
+  "10-image-2d/compass-control (image_2d.jsonl:4)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2504.06752"
     }
   },
-  "consistid": {
+  "20-video/consistid (video.jsonl:4)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -574,7 +553,7 @@
       "final_url": "https://pku-yuangroup.github.io/ConsisID/"
     }
   },
-  "nvidia-cosmos": {
+  "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -596,7 +575,7 @@
       "final_url": "https://www.nvidia.com/en-us/ai/cosmos/"
     }
   },
-  "d-ar": {
+  "10-image-2d/d-ar (image_2d.jsonl:58)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -607,13 +586,14 @@
       "status": 200,
       "final_url": "https://github.com/showlab/D-AR",
       "full_name": "showlab/D-AR",
-      "stars": 137,
-      "pushed_at": "2026-01-29T14:31:40Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "denoising-autoregressive-transformers": {
+  "10-image-2d/denoising-autoregressive-transformers (image_2d.jsonl:53)": {
     "paper": {
       "ok": true,
       "status": 403,
@@ -621,28 +601,28 @@
       "warning": "HTTP 403: blocked by the remote host, but the URL may still be valid."
     }
   },
-  "gamengen": {
+  "50-4d-dynamic-scene-world/gamengen (world_4d.jsonl:26)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2408.14837"
     }
   },
-  "directlayout": {
+  "40-3d-scene/directlayout (scene_3d.jsonl:14)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2506.05341"
     }
   },
-  "disco-layout": {
+  "40-3d-scene/disco-layout (scene_3d.jsonl:17)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2510.02178"
     }
   },
-  "dreamactor-m1": {
+  "20-video/dreamactor-m1 (video.jsonl:46)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -654,14 +634,14 @@
       "final_url": "https://grisoon.github.io/DreamActor-M1/"
     }
   },
-  "drivedreamer-2": {
+  "20-video/drivedreamer-2 (video.jsonl:58)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2403.06845"
     }
   },
-  "drivescape": {
+  "20-video/drivescape (video.jsonl:60)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -673,43 +653,47 @@
       "final_url": "https://metadrivescape.github.io/papers_project/drivescapev1/index.html"
     }
   },
-  "drivingsphere": {
+  "50-4d-dynamic-scene-world/drivingsphere (world_4d.jsonl:7)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.11252"
     }
   },
-  "dynamiccity": {
+  "50-4d-dynamic-scene-world/dynamiccity (world_4d.jsonl:6)": {
     "paper": {
-      "ok": false,
-      "status": 500,
-      "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/6506964d22ede4d36adae956e6a9919a-Paper-Conference.pdf",
-      "error": "HTTP 500"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2410.18084"
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://dynamic-city.github.io/"
     }
   },
-  "eagle": {
+  "30-3d-object-asset/eagle (object_3d.jsonl:18)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.13479"
     }
   },
-  "egocontrol": {
+  "20-video/egocontrol (video.jsonl:50)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2511.18173"
     }
   },
-  "eidt-v": {
+  "20-video/eidt-v (video.jsonl:5)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2504.06861"
     }
   },
-  "epona": {
+  "50-4d-dynamic-scene-world/epona (world_4d.jsonl:5)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -720,13 +704,14 @@
       "status": 200,
       "final_url": "https://github.com/Kevin-thu/Epona",
       "full_name": "Kevin-thu/Epona",
-      "stars": 320,
-      "pushed_at": "2025-07-22T06:35:46Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "era3d": {
+  "30-3d-object-asset/era3d (object_3d.jsonl:33)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -737,27 +722,28 @@
       "status": 200,
       "final_url": "https://github.com/pengHTYX/Era3D",
       "full_name": "pengHTYX/Era3D",
-      "stars": 635,
-      "pushed_at": "2024-12-09T05:41:15Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "AGPL-3.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "flashworld": {
+  "40-3d-scene/flashworld (scene_3d.jsonl:29)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2510.13678"
     }
   },
-  "fluid": {
+  "10-image-2d/fluid (image_2d.jsonl:52)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2410.13863"
     }
   },
-  "flux": {
+  "10-image-2d/flux (image_2d.jsonl:49)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -768,69 +754,70 @@
       "status": 200,
       "final_url": "https://github.com/black-forest-labs/flux",
       "full_name": "black-forest-labs/flux",
-      "stars": 25358,
-      "pushed_at": "2025-07-31T13:58:55Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "focus-n-fix": {
+  "10-image-2d/focus-n-fix (image_2d.jsonl:9)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2501.06481"
     }
   },
-  "from-one-to-more": {
+  "30-3d-object-asset/from-one-to-more (object_3d.jsonl:38)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2507.08772"
     }
   },
-  "fullpart": {
+  "30-3d-object-asset/fullpart (object_3d.jsonl:37)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2510.26140"
     }
   },
-  "gamefactory": {
+  "50-4d-dynamic-scene-world/gamefactory (world_4d.jsonl:27)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2501.08325"
     }
   },
-  "gamegen-x": {
+  "50-4d-dynamic-scene-world/gamegen-x (world_4d.jsonl:25)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.00769"
     }
   },
-  "gem": {
+  "50-4d-dynamic-scene-world/gem (world_4d.jsonl:9)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.11198"
     }
   },
-  "generative-photography": {
+  "10-image-2d/generative-photography (image_2d.jsonl:5)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.02168"
     }
   },
-  "global-local-tree-search-vlms": {
+  "40-3d-scene/global-local-tree-search-vlms (scene_3d.jsonl:10)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.18476"
     }
   },
-  "h-edit": {
+  "20-video/h-edit (video.jsonl:38)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -841,13 +828,14 @@
       "status": 200,
       "final_url": "https://github.com/nktoan/h-edit",
       "full_name": "nktoan/h-edit",
-      "stars": 75,
-      "pushed_at": "2025-06-11T11:08:09Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "hermes": {
+  "50-4d-dynamic-scene-world/hermes (world_4d.jsonl:3)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -858,27 +846,28 @@
       "status": 200,
       "final_url": "https://github.com/LMD0311/HERMES",
       "full_name": "LMD0311/HERMES",
-      "stars": 242,
-      "pushed_at": "2025-07-14T14:36:55Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "hs-openvocab-indoor-scene": {
+  "40-3d-scene/hs-openvocab-indoor-scene (scene_3d.jsonl:9)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2502.10675"
     }
   },
-  "hlg": {
+  "40-3d-scene/hlg (scene_3d.jsonl:15)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2508.17832"
     }
   },
-  "hunyuan3d-2": {
+  "30-3d-object-asset/hunyuan3d-2 (object_3d.jsonl:26)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -887,22 +876,85 @@
     "repo": {
       "ok": true,
       "status": 200,
-      "final_url": "https://github.com/Tencent/Hunyuan3D-2",
-      "full_name": "Tencent/Hunyuan3D-2",
-      "stars": 13388,
-      "pushed_at": "2025-10-28T09:58:12Z",
+      "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+      "full_name": "Tencent-Hunyuan/Hunyuan3D-2",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "NOASSERTION"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "hunyuan3d-2.5": {
+  "30-3d-object-asset/hunyuan3d-2.1 (object_3d.jsonl:27)": {
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
+      "full_name": "Tencent-Hunyuan/Hunyuan3D-2.1",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    }
+  },
+  "30-3d-object-asset/hunyuan3d-2.5 (object_3d.jsonl:29)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2506.16504"
     }
   },
-  "hunyuanvideo": {
+  "10-image-2d/hunyuanimage-3.0 (image_2d.jsonl:63)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2509.23951"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
+      "full_name": "Tencent-Hunyuan/HunyuanImage-3.0",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    }
+  },
+  "20-video/hunyuanvideo-1.5 (video.jsonl:13)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2511.18870"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+      "full_name": "Tencent-Hunyuan/HunyuanVideo-1.5",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    }
+  },
+  "20-video/hunyuanvideo-i2v (video.jsonl:12)": {
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V",
+      "full_name": "Tencent-Hunyuan/HunyuanVideo-I2V",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    }
+  },
+  "20-video/hunyuanvideo (video.jsonl:11)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -911,15 +963,34 @@
     "repo": {
       "ok": true,
       "status": 200,
-      "final_url": "https://github.com/Tencent/HunyuanVideo",
-      "full_name": "Tencent/HunyuanVideo",
-      "stars": 11898,
-      "pushed_at": "2025-11-21T06:36:57Z",
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
+      "full_name": "Tencent-Hunyuan/HunyuanVideo",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "NOASSERTION"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "hy-worldplay": {
+  "50-4d-dynamic-scene-world/hunyuanworld-1.0 (world_4d.jsonl:12)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2507.21809"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0",
+      "full_name": "Tencent-Hunyuan/HunyuanWorld-1.0",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    }
+  },
+  "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -930,26 +1001,26 @@
       "status": 200,
       "final_url": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
       "full_name": "Tencent-Hunyuan/HY-WorldPlay",
-      "stars": 1346,
-      "pushed_at": "2026-03-24T03:20:14Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "NOASSERTION"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     },
     "homepage": {
-      "ok": false,
-      "status": 404,
-      "final_url": "https://tencent-hunyuan.github.io/HYWorldPlay/",
-      "error": "HTTP 404"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://3d-models.hunyuan.tencent.com/world/"
     }
   },
-  "improved-meanflow": {
+  "10-image-2d/improved-meanflow (image_2d.jsonl:40)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2512.02012"
     }
   },
-  "improving-long-text-alignment": {
+  "10-image-2d/improving-long-text-alignment (image_2d.jsonl:21)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -960,13 +1031,14 @@
       "status": 200,
       "final_url": "https://github.com/luping-liu/LongAlign",
       "full_name": "luping-liu/LongAlign",
-      "stars": 80,
-      "pushed_at": "2025-04-23T03:08:46Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "infinite-mobility": {
+  "30-3d-object-asset/infinite-mobility (object_3d.jsonl:44)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -975,15 +1047,16 @@
     "repo": {
       "ok": true,
       "status": 200,
-      "final_url": "https://github.com/Intern-Nexus/Infinite-Mobility",
-      "full_name": "Intern-Nexus/Infinite-Mobility",
-      "stars": 187,
-      "pushed_at": "2025-07-25T03:18:07Z",
+      "final_url": "https://github.com/InternRobotics/Infinite-Mobility",
+      "full_name": "InternRobotics/Infinite-Mobility",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "BSD-3-Clause"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "information-theoretic-t2i-alignment": {
+  "10-image-2d/information-theoretic-t2i-alignment (image_2d.jsonl:22)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -994,20 +1067,21 @@
       "status": 200,
       "final_url": "https://github.com/Chao0511/mitune",
       "full_name": "Chao0511/mitune",
-      "stars": 6,
-      "pushed_at": "2025-03-23T14:38:36Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "instancecap": {
+  "20-video/instancecap (video.jsonl:8)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.09283"
     }
   },
-  "instantmesh": {
+  "30-3d-object-asset/instantmesh (object_3d.jsonl:31)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1018,13 +1092,14 @@
       "status": 200,
       "final_url": "https://github.com/TencentARC/InstantMesh",
       "full_name": "TencentARC/InstantMesh",
-      "stars": 4324,
-      "pushed_at": "2025-01-03T09:09:13Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "its3d": {
+  "30-3d-object-asset/its3d (object_3d.jsonl:36)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1035,48 +1110,49 @@
       "status": 200,
       "final_url": "https://github.com/ZhenglinZhou/ITS3D",
       "full_name": "ZhenglinZhou/ITS3D",
-      "stars": 8,
-      "pushed_at": "2025-12-01T03:15:10Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "kling": {
+  "20-video/kling (video.jsonl:17)": {
     "homepage": {
       "ok": true,
       "status": 200,
       "final_url": "https://kling.ai/"
     }
   },
-  "lagem": {
+  "30-3d-object-asset/lagem (object_3d.jsonl:3)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2410.01295"
     }
   },
-  "lattice-3d": {
+  "30-3d-object-asset/lattice-3d (object_3d.jsonl:5)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2512.03052"
     }
   },
-  "latticeworld": {
+  "40-3d-scene/latticeworld (scene_3d.jsonl:4)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2509.05263"
     }
   },
-  "layoutvlm": {
+  "40-3d-scene/layoutvlm (scene_3d.jsonl:11)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.02193"
     }
   },
-  "lingen": {
+  "20-video/lingen (video.jsonl:54)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1088,14 +1164,14 @@
       "final_url": "https://lineargen.github.io/"
     }
   },
-  "lt3sd": {
+  "40-3d-scene/lt3sd (scene_3d.jsonl:23)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2409.08215"
     }
   },
-  "magicdrive-v2": {
+  "20-video/magicdrive-v2 (video.jsonl:61)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1106,10 +1182,11 @@
       "status": 200,
       "final_url": "https://github.com/flymin/MagicDrive-V2",
       "full_name": "flymin/MagicDrive-V2",
-      "stars": 707,
-      "pushed_at": "2025-06-26T01:36:37Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "AGPL-3.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     },
     "homepage": {
       "ok": true,
@@ -1117,14 +1194,14 @@
       "final_url": "https://magicdrive-v2.github.io/"
     }
   },
-  "make-it-count": {
+  "10-image-2d/make-it-count (image_2d.jsonl:6)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2406.10210"
     }
   },
-  "matrix-game": {
+  "50-4d-dynamic-scene-world/matrix-game (world_4d.jsonl:28)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1135,41 +1212,46 @@
       "status": 200,
       "final_url": "https://github.com/SkyworkAI/Matrix-Game",
       "full_name": "SkyworkAI/Matrix-Game",
-      "stars": 1932,
-      "pushed_at": "2026-03-27T14:27:38Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "mccd": {
+  "10-image-2d/mccd (image_2d.jsonl:7)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2505.02648"
     }
   },
-  "meanflow": {
+  "10-image-2d/meanflow (image_2d.jsonl:39)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2505.13447"
     },
     "repo": {
-      "ok": false,
-      "status": 404,
-      "final_url": "https://github.com/gengzhengyang/meanflow",
-      "full_name": "gengzhengyang/meanflow",
-      "error": "GitHub API HTTP 404"
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Gsunshine/meanflow",
+      "full_name": "Gsunshine/meanflow",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "meissonic": {
+  "10-image-2d/meissonic (image_2d.jsonl:51)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2410.08261"
     }
   },
-  "mesatask": {
+  "40-3d-scene/mesatask (scene_3d.jsonl:16)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1181,21 +1263,21 @@
       "final_url": "https://mesatask.github.io/"
     }
   },
-  "meshart": {
+  "30-3d-object-asset/meshart (object_3d.jsonl:40)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.11596"
     }
   },
-  "mess": {
+  "40-3d-scene/mess (scene_3d.jsonl:35)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2508.15169"
     }
   },
-  "motionpro": {
+  "20-video/motionpro (video.jsonl:26)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1207,14 +1289,14 @@
       "final_url": "https://zhw-zhang.github.io/MotionPro-page/"
     }
   },
-  "motionstone": {
+  "20-video/motionstone (video.jsonl:25)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.05848"
     }
   },
-  "noise-diffusion": {
+  "10-image-2d/noise-diffusion (image_2d.jsonl:20)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1225,27 +1307,28 @@
       "status": 200,
       "final_url": "https://github.com/Bomingmiao/NoiseDiffusion",
       "full_name": "Bomingmiao/NoiseDiffusion",
-      "stars": 14,
-      "pushed_at": "2025-11-08T18:51:53Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "not-so-optimal-transport-flows": {
+  "30-3d-object-asset/not-so-optimal-transport-flows (object_3d.jsonl:19)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2502.12456"
     }
   },
-  "nuiscene": {
+  "40-3d-scene/nuiscene (scene_3d.jsonl:26)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.16375"
     }
   },
-  "octfusion": {
+  "30-3d-object-asset/octfusion (object_3d.jsonl:11)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1256,20 +1339,21 @@
       "status": 200,
       "final_url": "https://github.com/octree-nn/octfusion",
       "full_name": "octree-nn/octfusion",
-      "stars": 230,
-      "pushed_at": "2025-07-02T13:28:30Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": ""
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "octgpt": {
+  "30-3d-object-asset/octgpt (object_3d.jsonl:9)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2504.09975"
     }
   },
-  "omnihuman-1": {
+  "20-video/omnihuman-1 (video.jsonl:48)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1281,27 +1365,14 @@
       "final_url": "https://omnihuman-lab.github.io/"
     }
   },
-  "omnihuman-2": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.07597"
-    },
-    "homepage": {
-      "ok": false,
-      "status": 404,
-      "final_url": "https://omnihuman2.github.io/",
-      "error": "HTTP 404"
-    }
-  },
-  "omnipart": {
+  "30-3d-object-asset/omnipart (object_3d.jsonl:42)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2507.06165"
     }
   },
-  "one-prompt-one-story": {
+  "10-image-2d/one-prompt-one-story (image_2d.jsonl:54)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1312,34 +1383,35 @@
       "status": 200,
       "final_url": "https://github.com/byliutao/1Prompt1Story",
       "full_name": "byliutao/1Prompt1Story",
-      "stars": 314,
-      "pushed_at": "2025-10-20T04:52:19Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "one-way-ticket": {
+  "10-image-2d/one-way-ticket (image_2d.jsonl:33)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2505.21960"
     }
   },
-  "para": {
+  "10-image-2d/para (image_2d.jsonl:27)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2406.05641"
     }
   },
-  "partcrafter": {
+  "30-3d-object-asset/partcrafter (object_3d.jsonl:43)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2506.05573"
     }
   },
-  "phyt2v": {
+  "20-video/phyt2v (video.jsonl:7)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1350,13 +1422,14 @@
       "status": 200,
       "final_url": "https://github.com/pittisl/PhyT2V",
       "full_name": "pittisl/PhyT2V",
-      "stars": 64,
-      "pushed_at": "2025-07-31T03:37:04Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": ""
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "pixart-sigma": {
+  "10-image-2d/pixart-sigma (image_2d.jsonl:50)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1367,20 +1440,21 @@
       "status": 200,
       "final_url": "https://github.com/PixArt-alpha/PixArt-sigma",
       "full_name": "PixArt-alpha/PixArt-sigma",
-      "stars": 1912,
-      "pushed_at": "2024-10-31T01:20:19Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "dual-space-concept-control": {
+  "10-image-2d/dual-space-concept-control (image_2d.jsonl:19)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.18324"
     }
   },
-  "precisecam": {
+  "10-image-2d/precisecam (image_2d.jsonl:2)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1392,7 +1466,7 @@
       "final_url": "http://graphics.unizar.es/projects/PreciseCam2024/"
     }
   },
-  "primitiveanything": {
+  "30-3d-object-asset/primitiveanything (object_3d.jsonl:41)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1404,14 +1478,14 @@
       "final_url": "https://primitiveanything.github.io"
     }
   },
-  "progressive-compositionality": {
+  "10-image-2d/progressive-compositionality (image_2d.jsonl:11)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2410.16719"
     }
   },
-  "prometheus": {
+  "40-3d-scene/prometheus (scene_3d.jsonl:25)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1423,7 +1497,7 @@
       "final_url": "https://freemty.github.io/project-prometheus/"
     }
   },
-  "pt-t2iv": {
+  "10-image-2d/pt-t2iv (image_2d.jsonl:37)": {
     "paper": {
       "ok": true,
       "status": 403,
@@ -1431,7 +1505,7 @@
       "warning": "HTTP 403: blocked by the remote host, but the URL may still be valid."
     }
   },
-  "pyramidal-flow-matching": {
+  "20-video/pyramidal-flow-matching (video.jsonl:30)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1443,35 +1517,53 @@
       "final_url": "https://pyramid-flow.github.io/"
     }
   },
-  "rapo": {
+  "10-image-2d/qwen-image (image_2d.jsonl:62)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2508.02324"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/QwenLM/Qwen-Image",
+      "full_name": "QwenLM/Qwen-Image",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    }
+  },
+  "20-video/rapo (video.jsonl:2)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2504.11739"
     }
   },
-  "respace": {
+  "40-3d-scene/respace (scene_3d.jsonl:13)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2506.02459"
     }
   },
-  "rgb2point": {
+  "30-3d-object-asset/rgb2point (object_3d.jsonl:20)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2407.14979"
     }
   },
-  "roomcraft": {
+  "40-3d-scene/roomcraft (scene_3d.jsonl:12)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2506.22291"
     }
   },
-  "sana-1.5": {
+  "10-image-2d/sana-1.5 (image_2d.jsonl:48)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1482,13 +1574,14 @@
       "status": 200,
       "final_url": "https://github.com/NVlabs/Sana",
       "full_name": "NVlabs/Sana",
-      "stars": 5034,
-      "pushed_at": "2026-03-17T15:47:58Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "sana": {
+  "10-image-2d/sana (image_2d.jsonl:56)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1500,14 +1593,14 @@
       "final_url": "https://nvlabs.github.io/Sana/"
     }
   },
-  "scaling-down-text-encoders": {
+  "10-image-2d/scaling-down-text-encoders (image_2d.jsonl:35)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.19897"
     }
   },
-  "scenepainter": {
+  "40-3d-scene/scenepainter (scene_3d.jsonl:37)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1519,14 +1612,14 @@
       "final_url": "https://xiac20.github.io/ScenePainter/"
     }
   },
-  "scenethesis": {
+  "40-3d-scene/scenethesis (scene_3d.jsonl:6)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2505.02836"
     }
   },
-  "sceneweaver": {
+  "40-3d-scene/sceneweaver (scene_3d.jsonl:5)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1538,14 +1631,14 @@
       "final_url": "https://scene-weaver.github.io/"
     }
   },
-  "scenex": {
+  "40-3d-scene/scenex (scene_3d.jsonl:2)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2403.15698"
     }
   },
-  "seaweed-7b": {
+  "20-video/seaweed-7b (video.jsonl:14)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1557,7 +1650,7 @@
       "final_url": "https://seaweed.video/"
     }
   },
-  "seedance": {
+  "20-video/seedance (video.jsonl:15)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1569,42 +1662,54 @@
       "final_url": "https://seed.bytedance.com/en/seedance"
     }
   },
-  "sg-i2v": {
+  "10-image-2d/seedream-3.0 (image_2d.jsonl:64)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2504.11346"
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://seed.bytedance.com/en/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83"
+    }
+  },
+  "20-video/sg-i2v (video.jsonl:29)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.04989"
     }
   },
-  "shapewords": {
+  "10-image-2d/shapewords (image_2d.jsonl:8)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.02912"
     }
   },
-  "silmm": {
+  "10-image-2d/silmm (image_2d.jsonl:10)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.05818"
     }
   },
-  "sketchvideo": {
+  "20-video/sketchvideo (video.jsonl:37)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.23284"
     }
   },
-  "snapgen": {
+  "10-image-2d/snapgen (image_2d.jsonl:34)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.09619"
     }
   },
-  "sparc3d": {
+  "30-3d-object-asset/sparc3d (object_3d.jsonl:8)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1615,10 +1720,11 @@
       "status": 200,
       "final_url": "https://github.com/lizhihao6/Sparc3D",
       "full_name": "lizhihao6/Sparc3D",
-      "stars": 1315,
-      "pushed_at": "2025-06-16T05:29:19Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": ""
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     },
     "homepage": {
       "ok": true,
@@ -1626,35 +1732,35 @@
       "final_url": "https://lizhihao6.github.io/Sparc3D/"
     }
   },
-  "sparseflex": {
+  "30-3d-object-asset/sparseflex (object_3d.jsonl:10)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.21732"
     }
   },
-  "splatflow": {
+  "40-3d-scene/splatflow (scene_3d.jsonl:24)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.16443"
     }
   },
-  "squeeze3d": {
+  "30-3d-object-asset/squeeze3d (object_3d.jsonl:12)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2506.07932"
     }
   },
-  "stableanimator": {
+  "20-video/stableanimator (video.jsonl:45)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.17697"
     }
   },
-  "step-video": {
+  "20-video/step-video (video.jsonl:18)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1665,48 +1771,49 @@
       "status": 200,
       "final_url": "https://github.com/stepfun-ai/Step-Video-T2V",
       "full_name": "stepfun-ai/Step-Video-T2V",
-      "stars": 3180,
-      "pushed_at": "2025-03-17T03:26:54Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "streetcrafter": {
+  "20-video/streetcrafter (video.jsonl:59)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.13188"
     }
   },
-  "syncity": {
+  "40-3d-scene/syncity (scene_3d.jsonl:34)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.16420"
     }
   },
-  "terra": {
+  "40-3d-scene/terra (scene_3d.jsonl:30)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2510.14977"
     }
   },
-  "text-embedding-not-all-you-need": {
+  "10-image-2d/text-embedding-not-all-you-need (image_2d.jsonl:18)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.15236"
     }
   },
-  "rectified-flow-priors-t2i": {
+  "10-image-2d/rectified-flow-priors-t2i (image_2d.jsonl:57)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2406.03293"
     }
   },
-  "through-the-mask": {
+  "20-video/through-the-mask (video.jsonl:27)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1718,14 +1825,14 @@
       "final_url": "https://guyyariv.github.io/TTM/"
     }
   },
-  "tiger": {
+  "10-image-2d/tiger (image_2d.jsonl:55)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2406.05814"
     }
   },
-  "topodit-3d": {
+  "30-3d-object-asset/topodit-3d (object_3d.jsonl:16)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1736,20 +1843,21 @@
       "status": 200,
       "final_url": "https://github.com/Zechao-Guan/TopoDiT-3D",
       "full_name": "Zechao-Guan/TopoDiT-3D",
-      "stars": 14,
-      "pushed_at": "2025-05-13T06:39:50Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": ""
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "transpixeler": {
+  "20-video/transpixeler (video.jsonl:6)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2501.03006"
     }
   },
-  "trellis": {
+  "30-3d-object-asset/trellis (object_3d.jsonl:2)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1760,10 +1868,11 @@
       "status": 200,
       "final_url": "https://github.com/microsoft/TRELLIS",
       "full_name": "microsoft/TRELLIS",
-      "stars": 12075,
-      "pushed_at": "2025-11-05T13:18:15Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     },
     "homepage": {
       "ok": true,
@@ -1771,14 +1880,14 @@
       "final_url": "https://microsoft.github.io/TRELLIS/"
     }
   },
-  "trellisworld": {
+  "40-3d-scene/trellisworld (scene_3d.jsonl:31)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2510.23880"
     }
   },
-  "triposr": {
+  "30-3d-object-asset/triposr (object_3d.jsonl:30)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1789,34 +1898,35 @@
       "status": 200,
       "final_url": "https://github.com/VAST-AI-Research/TripoSR",
       "full_name": "VAST-AI-Research/TripoSR",
-      "stars": 6309,
-      "pushed_at": "2024-08-16T00:03:43Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "type-r": {
+  "10-image-2d/type-r (image_2d.jsonl:3)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.18159"
     }
   },
-  "ultra3d": {
+  "30-3d-object-asset/ultra3d (object_3d.jsonl:7)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2507.17745"
     }
   },
-  "ultrashape": {
+  "30-3d-object-asset/ultrashape (object_3d.jsonl:4)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2512.21185"
     }
   },
-  "unianimate-dit": {
+  "20-video/unianimate-dit (video.jsonl:51)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1827,20 +1937,21 @@
       "status": 200,
       "final_url": "https://github.com/ali-vilab/UniAnimate-DiT",
       "full_name": "ali-vilab/UniAnimate-DiT",
-      "stars": 842,
-      "pushed_at": "2025-04-27T08:11:49Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": ""
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "unilat3d": {
+  "30-3d-object-asset/unilat3d (object_3d.jsonl:6)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2509.25079"
     }
   },
-  "unique3d": {
+  "30-3d-object-asset/unique3d (object_3d.jsonl:32)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1851,27 +1962,46 @@
       "status": 200,
       "final_url": "https://github.com/AiuniAI/Unique3D",
       "full_name": "AiuniAI/Unique3D",
-      "stars": 3553,
-      "pushed_at": "2025-07-17T21:29:05Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "MIT"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "uniscene": {
+  "50-4d-dynamic-scene-world/uniscene (world_4d.jsonl:8)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.05435"
     }
   },
-  "uniugg": {
+  "40-3d-scene/uniugg (scene_3d.jsonl:28)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2508.11952"
     }
   },
-  "vace": {
+  "30-3d-object-asset/flashvdm (object_3d.jsonl:28)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.16302"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/FlashVDM",
+      "full_name": "Tencent-Hunyuan/FlashVDM",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    }
+  },
+  "20-video/vace (video.jsonl:39)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1882,10 +2012,11 @@
       "status": 200,
       "final_url": "https://github.com/ali-vilab/VACE",
       "full_name": "ali-vilab/VACE",
-      "stars": 3706,
-      "pushed_at": "2025-10-17T05:46:57Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     },
     "homepage": {
       "ok": true,
@@ -1893,28 +2024,51 @@
       "final_url": "https://ali-vilab.github.io/VACE-Page/"
     }
   },
-  "videodirector": {
+  "20-video/videodirector (video.jsonl:35)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2411.17592"
     }
   },
-  "videomage": {
+  "20-video/videomage (video.jsonl:36)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.21781"
     }
   },
-  "videorfsplat": {
+  "40-3d-scene/videorfsplat (scene_3d.jsonl:27)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2503.15855"
     }
   },
-  "wan2.1": {
+  "50-4d-dynamic-scene-world/hunyuanworld-voyager (world_4d.jsonl:11)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2506.04225"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
+      "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
+      "stars": 0,
+      "pushed_at": "",
+      "archived": false,
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://3d-models.hunyuan.tencent.com/world/"
+    }
+  },
+  "20-video/wan2.1 (video.jsonl:10)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1925,13 +2079,14 @@
       "status": 200,
       "final_url": "https://github.com/Wan-Video/Wan2.1",
       "full_name": "Wan-Video/Wan2.1",
-      "stars": 15698,
-      "pushed_at": "2026-03-05T09:38:07Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "waymax": {
+  "50-4d-dynamic-scene-world/waymax (world_4d.jsonl:22)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1942,13 +2097,14 @@
       "status": 200,
       "final_url": "https://github.com/waymo-research/waymax",
       "full_name": "waymo-research/waymax",
-      "stars": 1054,
-      "pushed_at": "2025-10-23T04:29:20Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "NOASSERTION"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "wonderfree": {
+  "40-3d-scene/wonderfree (scene_3d.jsonl:41)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1960,7 +2116,7 @@
       "final_url": "https://wonder-free.github.io/"
     }
   },
-  "wonderworld": {
+  "40-3d-scene/wonderworld (scene_3d.jsonl:32)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1982,7 +2138,7 @@
       "final_url": "https://kovenyu.com/wonderworld/"
     }
   },
-  "wonderzoom": {
+  "40-3d-scene/wonderzoom (scene_3d.jsonl:36)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -1994,7 +2150,7 @@
       "final_url": "https://wonderzoom.github.io/"
     }
   },
-  "world4drive": {
+  "50-4d-dynamic-scene-world/world4drive (world_4d.jsonl:4)": {
     "paper": {
       "ok": true,
       "status": 200,
@@ -2005,20 +2161,21 @@
       "status": 200,
       "final_url": "https://github.com/ucaszyp/World4Drive",
       "full_name": "ucaszyp/World4Drive",
-      "stars": 73,
-      "pushed_at": "2025-12-31T15:00:36Z",
+      "stars": 0,
+      "pushed_at": "",
       "archived": false,
-      "license": "Apache-2.0"
+      "license": "",
+      "warning": "GitHub API HTTP 403; validated via HTML fallback."
     }
   },
-  "worldmem": {
+  "50-4d-dynamic-scene-world/worldmem (world_4d.jsonl:18)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2504.12369"
     }
   },
-  "x-dyna": {
+  "20-video/x-dyna (video.jsonl:44)": {
     "paper": {
       "ok": true,
       "status": 200,

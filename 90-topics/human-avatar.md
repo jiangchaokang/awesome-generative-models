@@ -4,16 +4,6 @@
 
 [← Root](../README.md) · [← Topics](README.md)
 
-### UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer
-
-![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: human-animation](https://img.shields.io/badge/Task-human-animation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ali-vilab/UniAnimate-DiT) [![GitHub: ★ 842](https://img.shields.io/badge/GitHub-%E2%98%85%20842-181717?style=flat-square&logo=github)](https://github.com/ali-vilab/UniAnimate-DiT)
-
-> Builds high-fidelity human animation on top of a large open video backbone with lightweight LoRA tuning.
-
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2504.11289) [![Code: GitHub ★ 842](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%20842-181717?style=flat-square&logo=github)](https://github.com/ali-vilab/UniAnimate-DiT)
-
-![human-avatar](https://img.shields.io/badge/human-avatar-EA580C?style=flat-square)
-
 ### X-Dyna: Expressive Dynamic Human Image Animation
 
 ![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: human-animation](https://img.shields.io/badge/Task-human-animation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/bytedance/X-Dyna) [![GitHub: ★ 266](https://img.shields.io/badge/GitHub-%E2%98%85%20266-181717?style=flat-square&logo=github)](https://github.com/bytedance/X-Dyna)
@@ -94,6 +84,16 @@
 
 ![human-avatar](https://img.shields.io/badge/human-avatar-EA580C?style=flat-square)
 
+### UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer
+
+![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: human-animation](https://img.shields.io/badge/Task-human-animation-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ali-vilab/UniAnimate-DiT)
+
+> Builds high-fidelity human animation on top of a large open video backbone with lightweight LoRA tuning.
+
+[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2504.11289) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/ali-vilab/UniAnimate-DiT)
+
+![human-avatar](https://img.shields.io/badge/human-avatar-EA580C?style=flat-square)
+
 ## Compact Index
 
 <details>
@@ -101,7 +101,6 @@
 
 | Title | Artifact | Task | Venue | Links |
 |:--|:--|:--|:--|:--|
-| **UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer** | Video | human-animation | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.11289) / [Code](https://github.com/ali-vilab/UniAnimate-DiT) |
 | **X-Dyna: Expressive Dynamic Human Image Animation** | Video | human-animation | CVPR 2025 | [Paper](https://arxiv.org/abs/2501.10021) / [Code](https://github.com/bytedance/X-Dyna) |
 | **AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion** | 3D Object / Asset | human-avatar | ICCV 2025 | [Paper](https://arxiv.org/abs/2505.24877) |
 | **Animate Anyone 2: High-Fidelity Character Image Animation with Environment Affordance** | Video | human-animation | ICCV 2025 | [Paper](https://arxiv.org/abs/2502.06145) |
@@ -110,5 +109,6 @@
 | **EgoControl: Controllable Egocentric Video Generation via 3D Full-Body Poses** | Video | human-animation | arXiv 2025 | [Paper](https://arxiv.org/abs/2511.18173) |
 | **OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models** | Video | human-animation | ICCV 2025 | [Paper](https://arxiv.org/abs/2502.01061) / [Project](https://omnihuman-lab.github.io/) |
 | **StableAnimator: High-Quality Identity-Preserving Human Image Animation** | Video | human-animation | CVPR 2025 | [Paper](https://arxiv.org/abs/2411.17697) |
+| **UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer** | Video | human-animation | arXiv 2025 | [Paper](https://arxiv.org/abs/2504.11289) / [Code](https://github.com/ali-vilab/UniAnimate-DiT) |
 
 </details>

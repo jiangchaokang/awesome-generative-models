@@ -21,6 +21,7 @@ from catalog_common import (
 )
 
 CACHE_DIR = ROOT / "metadata" / "cache"
+PINNED_HOME_IDS = ["vectorworld"]
 
 def load_json(path: Path) -> dict:
     if not path.exists():
@@ -436,6 +437,9 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
     by_artifact: dict[str, list[dict]] = defaultdict(list)
     by_domain: Counter = Counter()
     by_org: Counter = Counter()
+    pinned_lookup = {paper["id"]: paper for paper in papers}
+    pinned_records = [pinned_lookup[i] for i in PINNED_HOME_IDS if i in pinned_lookup]
+    pinned_ids = set(PINNED_HOME_IDS)
 
     for paper in papers:
         by_artifact[paper["artifact"]].append(paper)
@@ -471,6 +475,14 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
         "",
         "---",
         "",
+    ]
+
+    if pinned_records:
+        lines.extend(["## 🚨 Pinned Spotlight", ""])
+        for rec in pinned_records:
+            lines.append(render_record_card(rec, repo_stats))
+
+    lines.extend([
         "## Why this repository is different",
         "",
         "- **Taxonomy does not mix axes.** Primary artifact decides the home page; domain / method / representation / conditioning / orgs are metadata.",
@@ -483,7 +495,7 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
         "| Directory | Focus | Count |",
         "|:--|:--|--:|",
         "| [00-surveys-and-foundations](00-surveys-and-foundations/README.md) | Surveys, policy, and taxonomy | — |",
-    ]
+    ])
 
     for artifact in ARTIFACT_ORDER:
         meta = ARTIFACT_META[artifact]
@@ -498,7 +510,10 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
     lines.extend(["## Featured Radar", ""])
     for artifact in ARTIFACT_ORDER:
         meta = ARTIFACT_META[artifact]
-        highlights = pick_highlights(by_artifact.get(artifact, []), repo_stats, limit=2)
+        highlights = [
+            r for r in pick_highlights(by_artifact.get(artifact, []), repo_stats, limit=4)
+            if r["id"] not in pinned_ids
+        ][:2]
         if not highlights:
             continue
         lines.extend([f"### {meta['emoji']} {meta['title']}", ""])

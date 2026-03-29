@@ -5,7 +5,7 @@
 Example:
     python3 scripts/generate_code_prompts.py /content/awesome-generative-models
 
-python scripts/validate_data.py --write-cache
+python scripts/validate_data.py --write-cache --workers 4
 python scripts/build.py
 
 工作流应该是：

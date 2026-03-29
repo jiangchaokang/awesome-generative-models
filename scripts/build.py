@@ -4,11 +4,12 @@ from __future__ import annotations
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import urlencode, urlparse
 
 from catalog_common import (
     ARTIFACT_META,
     ARTIFACT_ORDER,
+    ARTIFACT_TASK_ORDER,
     DOMAIN_IGNORE,
     ORG_BADGE_META,
     ROOT,
@@ -21,51 +22,123 @@ from catalog_common import (
 )
 
 CACHE_DIR = ROOT / "metadata" / "cache"
-PINNED_HOME_IDS = ["vectorworld"]
+
+ARTIFACT_COLORS = {
+    "image-2d": "2563EB",
+    "video": "7C3AED",
+    "3d-object-asset": "0D9488",
+    "3d-scene": "EA580C",
+    "4d-dynamic-scene-world": "B31B1B",
+}
+
+MODEL_PATTERNS = {
+    "image-2d": """Prompt / control / reference
+        ↓
+Text / multimodal encoder
+        ↓
+Latent generator (Diffusion / Flow / AR / VQ)
+        ↓
+Decoder / upsampler / reward correction
+        ↓
+Single 2D image""",
+    "video": """Text / image / pose / sketch / camera
+        ↓
+Condition encoders + video tokenizer / VAE
+        ↓
+Spatiotemporal generator (DiT / diffusion / flow)
+        ↓
+Temporal consistency / editing / motion control
+        ↓
+Video clip / surround-view sequence""",
+    "3d-object-asset": """Text / image / multiview / structure prior
+        ↓
+Asset encoder + 3D latent generator
+        ↓
+Geometry head (mesh / point / triplane / octree)
+        ↓
+Texture / material / articulation head
+        ↓
+Reusable 3D object / asset / avatar""",
+    "3d-scene": """Text / layout / references / room constraints
+        ↓
+Planner / layout / scene graph / object set
+        ↓
+Scene generator (3DGS / mesh / occupancy / latent scene)
+        ↓
+Renderer / consistency / editing loop
+        ↓
+Static multi-object 3D scene""",
+    "4d-dynamic-scene-world": """Observation / map / action / trajectory / prompt
+        ↓
+State encoder + memory / scene cache
+        ↓
+Dynamics rollout / world model / simulator
+        ↓
+Render heads (RGB / depth / occupancy / tokens)
+        ↓
+Interactive future world / closed-loop simulation""",
+}
+
+HOME_HIGHLIGHTS_PER_ARTIFACT = 1
+ARTIFACT_HIGHLIGHTS_PER_PAGE = 4
+TOPIC_INDEX_LIMIT = 20
+ORG_INDEX_LIMIT = 20
+
 
 def load_json(path: Path) -> dict:
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
 
+
 def write_text(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text.rstrip() + "\n", encoding="utf-8")
 
+
 def shields_url(
     label: str,
-    message: str | None = None,
+    message: str,
     color: str = "2563EB",
     logo: str | None = None,
     style: str = "flat-square",
+    label_color: str = "111827",
 ) -> str:
-    if message:
-        url = f"https://img.shields.io/badge/{quote(str(label))}-{quote(str(message))}-{color}?style={style}"
-    else:
-        url = f"https://img.shields.io/badge/{quote(str(label))}-{color}?style={style}"
+    params = {
+        "label": label,
+        "message": message,
+        "color": color,
+        "style": style,
+        "labelColor": label_color,
+    }
     if logo:
-        url += f"&logo={quote(logo)}"
-    return url
+        params["logo"] = logo
+    return "https://img.shields.io/static/v1?" + urlencode(params)
+
 
 def badge(
     label: str,
-    message: str | None = None,
+    message: str,
     color: str = "2563EB",
     logo: str | None = None,
     link: str = "",
     style: str = "flat-square",
+    label_color: str = "111827",
 ) -> str:
-    alt = f"{label}: {message}" if message else label
-    image = f"![{alt}]({shields_url(label, message, color, logo, style)})"
+    alt = f"{label}: {message}"
+    image = f"![{alt}]({shields_url(label, message, color, logo, style, label_color)})"
     return f"[{image}]({link})" if link else image
+
 
 def record_repo_stats(rec: dict, repo_stats: dict) -> dict:
     full_name = parse_github_repo(rec.get("repo", ""))
     return repo_stats.get(full_name, {}) if full_name else {}
 
+
 def record_stars(rec: dict, repo_stats: dict) -> int:
     stats = record_repo_stats(rec, repo_stats)
     return int(stats.get("stars", rec.get("stars", 0)) or 0)
+
 
 def sort_records(records: list[dict], repo_stats: dict) -> list[dict]:
     return sorted(
@@ -78,90 +151,133 @@ def sort_records(records: list[dict], repo_stats: dict) -> list[dict]:
         ),
     )
 
+
 def pick_highlights(records: list[dict], repo_stats: dict, limit: int) -> list[dict]:
     return sort_records(records, repo_stats)[:limit]
+
+
+def paper_badge_message(url: str) -> str:
+    domain = urlparse(url).netloc.lower()
+    if "arxiv.org" in domain:
+        return "arXiv"
+    if "openreview.net" in domain:
+        return "OpenReview"
+    if "openaccess.thecvf.com" in domain:
+        return "CVF"
+    if "proceedings.neurips.cc" in domain:
+        return "NeurIPS"
+    if "proceedings.mlr.press" in domain:
+        return "PMLR"
+    return "Link"
+
+
+def record_primary_link(rec: dict) -> str:
+    return rec.get("paper") or rec.get("homepage") or rec.get("repo") or ""
+
+
+def linked_title(rec: dict) -> str:
+    link = record_primary_link(rec)
+    if not link:
+        return rec["title"]
+    return f"[{rec['title']}]({link})"
+
 
 def venue_badge(rec: dict) -> str:
     head = (rec.get("venue", "").split() or ["Other"])[0].upper()
     color = VENUE_COLORS.get(head, "64748B")
-    return badge("Venue", rec.get("venue", "Unknown"), color, None, rec.get("venue_url", ""))
+    return badge("Venue", rec.get("venue", "Unknown"), color, link=rec.get("venue_url", ""))
+
 
 def task_badge(rec: dict) -> str:
-    return badge("Task", rec["task"], "0EA5E9")
+    return badge("Track", rec["task"], ARTIFACT_COLORS.get(rec["artifact"], "0EA5E9"))
 
-def open_source_badge(rec: dict) -> str:
+
+def availability_badge(rec: dict) -> str:
     if rec.get("open_source"):
-        return badge("Open Source", None, "16A34A", "opensourceinitiative", rec.get("repo", ""))
-    return badge("Closed Source", None, "6B7280")
+        return badge("Source", "Open", "16A34A", "opensourceinitiative")
+    return badge("Source", "Closed", "6B7280")
+
 
 def scope_badge(rec: dict) -> str:
     if rec.get("year", 0) < 2025 and rec.get("active_since", 0) >= 2025:
-        return badge("Scope", f"Active since {rec['active_since']}", "F59E0B")
+        return badge("Legacy", f"Active since {rec['active_since']}", "F59E0B")
     return ""
 
-def stars_badge(rec: dict, repo_stats: dict) -> str:
-    stars = record_stars(rec, repo_stats)
-    if stars <= 0:
-        return ""
-    return badge("GitHub", f"★ {compact_number(stars)}", "181717", "github", rec.get("repo", ""))
 
 def org_badges(rec: dict) -> list[str]:
     out: list[str] = []
-    for org in rec.get("orgs", [])[:4]:
+    for org in rec.get("orgs", [])[:3]:
         meta = ORG_BADGE_META.get(slugify(org), {"label": org, "color": "334155", "logo": None})
-        out.append(badge(meta["label"], None, meta["color"], meta.get("logo")))
+        out.append(badge("Org", meta["label"], meta["color"], meta.get("logo")))
     return out
+
+
+def append_tag(out: list[str], seen: set[str], label: str, message: str, color: str) -> None:
+    key = f"{label}:{slugify(message)}"
+    if not message or key in seen:
+        return
+    seen.add(key)
+    out.append(badge(label, message, color))
+
 
 def tag_badges(rec: dict) -> list[str]:
     out: list[str] = []
+    seen: set[str] = set()
 
-    for item in rec.get("method", [])[:3]:
-        out.append(badge(item, None, "7C3AED"))
+    for item in rec.get("method", [])[:2]:
+        append_tag(out, seen, "Method", item, "7C3AED")
 
-    for item in rec.get("representation", [])[:2]:
-        out.append(badge(item, None, "0D9488"))
+    for item in rec.get("representation", [])[:1]:
+        append_tag(out, seen, "Repr", item, "0D9488")
 
-    for item in rec.get("conditioning", [])[:2]:
-        out.append(badge(item, None, "475569"))
+    for item in rec.get("conditioning", [])[:1]:
+        append_tag(out, seen, "Cond", item, "475569")
 
-    for item in rec.get("domain", [])[:2]:
-        if item != "general":
-            out.append(badge(item, None, "EA580C"))
+    for item in rec.get("domain", [])[:1]:
+        if item != "general" and slugify(item) != slugify(rec["task"]):
+            append_tag(out, seen, "Domain", item, "EA580C")
 
     return out
+
 
 def link_badges(rec: dict, repo_stats: dict) -> str:
     parts: list[str] = []
 
     if rec.get("paper"):
-        if "arxiv.org" in rec["paper"].lower():
-            parts.append(badge("Paper", "arXiv", "B31B1B", "arxiv", rec["paper"]))
-        else:
-            parts.append(badge("Paper", None, "B31B1B", None, rec["paper"]))
+        logo = "arxiv" if "arxiv.org" in rec["paper"].lower() else None
+        parts.append(
+            badge(
+                "Paper",
+                paper_badge_message(rec["paper"]),
+                "B31B1B",
+                logo=logo,
+                link=rec["paper"],
+            )
+        )
 
     if rec.get("repo"):
         stars = record_stars(rec, repo_stats)
-        msg = f"GitHub ★ {compact_number(stars)}" if stars > 0 else "GitHub"
+        msg = "GitHub" if stars <= 0 else f"GitHub ★ {compact_number(stars)}"
         parts.append(badge("Code", msg, "181717", "github", rec["repo"]))
 
     if rec.get("homepage"):
-        parts.append(badge("Project", None, "0EA5E9", "googlechrome", rec["homepage"]))
+        parts.append(badge("Project", "Site", "0EA5E9", "googlechrome", rec["homepage"]))
 
     return " ".join(parts) if parts else "—"
+
 
 def render_record_card(rec: dict, repo_stats: dict) -> str:
     top_badges = [
         venue_badge(rec),
         task_badge(rec),
-        open_source_badge(rec),
+        availability_badge(rec),
         scope_badge(rec),
-        stars_badge(rec, repo_stats),
         *org_badges(rec),
     ]
     top_badges = [x for x in top_badges if x]
 
     lines = [
-        f"### {rec['title']}",
+        f"### {linked_title(rec)}",
         "",
         " ".join(top_badges),
         "",
@@ -180,6 +296,7 @@ def render_record_card(rec: dict, repo_stats: dict) -> str:
     lines.append("")
     return "\n".join(lines)
 
+
 def render_compact_index(records: list[dict], repo_stats: dict, include_artifact: bool = False) -> str:
     header = ["| Title |", " Artifact |" if include_artifact else "", " Task | Venue | Links |"]
     align = ["|:--|", ":--|" if include_artifact else "", ":--|:--|:--|"]
@@ -195,31 +312,72 @@ def render_compact_index(records: list[dict], repo_stats: dict, include_artifact
             links.append(f"[Project]({rec['homepage']})")
 
         artifact_text = f" {ARTIFACT_META[rec['artifact']]['title']} |" if include_artifact else ""
+        title_text = linked_title(rec)
         lines.append(
-            f"| **{rec['title']}** |{artifact_text} {rec['task']} | {rec['venue']} | "
+            f"| **{title_text}** |{artifact_text} {rec['task']} | {rec['venue']} | "
             f"{' / '.join(links) if links else '—'} |"
         )
 
     return "\n".join(lines)
 
+
+def render_artifact_navigation(by_artifact: dict[str, list[dict]]) -> str:
+    lines = [
+        "| Artifact | Focus | Quick links | Count |",
+        "|:--|:--|:--|--:|",
+    ]
+
+    for artifact in ARTIFACT_ORDER:
+        meta = ARTIFACT_META[artifact]
+        items = by_artifact.get(artifact, [])
+        present_tasks = {item["task"] for item in items}
+        task_links = [
+            f"[{task}]({meta['dir']}/{slugify(task)}.md)"
+            for task in ARTIFACT_TASK_ORDER[artifact]
+            if task in present_tasks
+        ]
+        lines.append(
+            f"| [{meta['emoji']} {meta['title']}]({meta['dir']}/README.md) | "
+            f"{meta['short']} | {' · '.join(task_links) if task_links else '—'} | {len(items)} |"
+        )
+
+    return "\n".join(lines)
+
+
+def render_model_patterns() -> str:
+    lines: list[str] = []
+    for artifact in ARTIFACT_ORDER:
+        meta = ARTIFACT_META[artifact]
+        lines.extend(
+            [
+                f"### [{meta['emoji']} {meta['title']}]({meta['dir']}/README.md)",
+                "",
+                "```text",
+                MODEL_PATTERNS[artifact].strip(),
+                "```",
+                "",
+            ]
+        )
+    return "\n".join(lines).rstrip()
+
+
 def build_foundations_page(papers: list[dict]) -> None:
     lines = [
         "# 📚 Surveys & Foundations",
         "",
-        "> Auto-generated from the catalog source data.",
+        "> Contract, surveys, and maintenance notes for the catalog.",
         "",
-        "## Why this repository exists",
+        "## Repository Contract",
         "",
-        "- **Strict taxonomy**: `primary_artifact` decides the main location; all other axes are metadata.",
-        "- **Exact links only**: public pages never expose guessed search-result URLs.",
-        "- **Human-reviewed inclusion**: the daily candidate inbox is only a review queue, not an auto-merge pipeline.",
-        "- **English-only summaries**: every accepted entry must have a concise 1–3 sentence English summary.",
-        "- **2025+ scope by default**: older entries require explicit `active_since` and `scope_note`.",
+        "- Source of truth lives in `data/*.jsonl`.",
+        "- Generated pages must be rebuilt via `python scripts/build.py`.",
+        "- Public links must be exact, never search-result placeholders.",
+        "- Inclusion is human-reviewed even when candidate harvesting is automatic.",
+        "- Primary artifact decides placement; other axes stay metadata.",
         "",
         "## Quick Links",
         "",
-        "- [Root README](../README.md)",
-        "- [Taxonomy](../docs/taxonomy.md)",
+        "- [Root README](../README.mdaxonomy.md)",
         "- [Candidate Inbox](../metadata/candidates/latest.md)",
         "- [Validation Report](../metadata/validation/latest.md)",
         "- [Contributing](../CONTRIBUTING.md)",
@@ -231,6 +389,7 @@ def build_foundations_page(papers: list[dict]) -> None:
         lines.append(f"- [{title}]({url})")
 
     write_text(ROOT / "00-surveys-and-foundations" / "README.md", "\n".join(lines))
+
 
 def build_artifact_pages(papers: list[dict], repo_stats: dict) -> None:
     by_artifact: dict[str, list[dict]] = defaultdict(list)
@@ -246,8 +405,8 @@ def build_artifact_pages(papers: list[dict], repo_stats: dict) -> None:
         for item in items:
             by_task[item["task"]].append(item)
 
-        task_order = sorted(by_task.keys(), key=lambda t: (-len(by_task[t]), t))
-        highlights = pick_highlights(items, repo_stats, limit=min(6, len(items)))
+        task_order = [task for task in ARTIFACT_TASK_ORDER[artifact] if task in by_task]
+        highlights = pick_highlights(items, repo_stats, limit=min(ARTIFACT_HIGHLIGHTS_PER_PAGE, len(items)))
 
         lines = [
             f"# {meta['emoji']} {meta['title']}",
@@ -258,20 +417,26 @@ def build_artifact_pages(papers: list[dict], repo_stats: dict) -> None:
             "",
             "[← Root](../README.md) · [Taxonomy](../docs/taxonomy.md) · [Candidate Inbox](../metadata/candidates/latest.md)",
             "",
+            "## Research Pattern",
+            "",
+            "```text",
+            MODEL_PATTERNS[artifact].strip(),
+            "```",
+            "",
             "## Quick Navigation",
             "",
-            " ".join([f"[`{task}`](#{slugify(task)})" for task in task_order]) if task_order else "_No tasks yet._",
+            " · ".join([f"[`{task}`]({slugify(task)}.md)" for task in task_order]) if task_order else "_No tasks yet._",
             "",
         ]
 
         if highlights:
-            lines.extend(["## Highlights", ""])
+            lines.extend(["## Selected Papers", ""])
             for rec in highlights:
                 lines.append(render_record_card(rec, repo_stats))
 
         lines.extend(["## By Task", ""])
         for task in task_order:
-            lines.extend([f"## {task}", "", f"**{len(by_task[task])} entries**", ""])
+            lines.extend([f"## [{task}]({slugify(task)}.md)", "", f"**{len(by_task[task])} entries**", ""])
             for rec in sort_records(by_task[task], repo_stats):
                 lines.append(render_record_card(rec, repo_stats))
 
@@ -319,6 +484,7 @@ def build_artifact_pages(papers: list[dict], repo_stats: dict) -> None:
                 ]
             )
             write_text(task_path, "\n".join(task_lines))
+
 
 def build_topic_pages(papers: list[dict], repo_stats: dict) -> None:
     out_dir = ROOT / "90-topics"
@@ -372,6 +538,7 @@ def build_topic_pages(papers: list[dict], repo_stats: dict) -> None:
         write_text(out_dir / f"{slugify(domain)}.md", "\n".join(lines))
 
     write_text(out_dir / "README.md", "\n".join(index_lines))
+
 
 def build_organization_pages(papers: list[dict], repo_stats: dict) -> None:
     out_dir = ROOT / "91-organizations"
@@ -433,13 +600,11 @@ def build_organization_pages(papers: list[dict], repo_stats: dict) -> None:
 
     write_text(out_dir / "README.md", "\n".join(index_lines))
 
+
 def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
     by_artifact: dict[str, list[dict]] = defaultdict(list)
     by_domain: Counter = Counter()
     by_org: Counter = Counter()
-    pinned_lookup = {paper["id"]: paper for paper in papers}
-    pinned_records = [pinned_lookup[i] for i in PINNED_HOME_IDS if i in pinned_lookup]
-    pinned_ids = set(PINNED_HOME_IDS)
 
     for paper in papers:
         by_artifact[paper["artifact"]].append(paper)
@@ -458,7 +623,7 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
         "",
         "# ✨ Awesome Generative Models",
         "",
-        "**A rigorously curated, English-only catalog of recent generative-model work**",
+        "**A high-precision, exact-link catalog of recent generative-model work**  ",
         "**for images, videos, 3D assets, 3D scenes, and 4D dynamic worlds.**",
         "",
         badge("Papers", str(len(papers)), "2563EB", "googlescholar", style="for-the-badge"),
@@ -467,67 +632,48 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
         badge("Links", "Exact Only", "B31B1B", "link", style="for-the-badge"),
         badge("Review", "Human Curated", "7C3AED", "github", style="for-the-badge"),
         "",
-        f"[{badge('License', 'MIT', '0F766E', None, style='flat-square') }](LICENSE)",
-        f"[{badge('Contributing', 'PRs Welcome', '2563EB', 'github', 'CONTRIBUTING.md', style='flat-square')}]",
-        f"[{badge('Daily Candidates', 'Inbox', 'EA580C', 'githubactions', 'metadata/candidates/latest.md', style='flat-square')}]",
+        badge("License", "MIT", "0F766E", link="LICENSE"),
+        badge("Contributing", "PRs Welcome", "2563EB", "github", "CONTRIBUTING.md"),
+        badge("Candidates", "Daily Inbox", "EA580C", "githubactions", "metadata/candidates/latest.md"),
         "",
         "</div>",
         "",
         "---",
         "",
+        "## Quick Navigation",
+        "",
+        render_artifact_navigation(by_artifact),
+        "",
+        "## Model Patterns at a Glance",
+        "",
+        render_model_patterns(),
+        "",
+        "## Selected Frontier Reads",
+        "",
+        "> Each title links to the canonical paper page when available; otherwise it links to the exact project or repo page.",
+        "",
     ]
 
-    if pinned_records:
-        lines.extend(["## 🚨 Pinned Spotlight", ""])
-        for rec in pinned_records:
-            lines.append(render_record_card(rec, repo_stats))
-
-    lines.extend([
-        "## Why this repository is different",
-        "",
-        "- **Taxonomy does not mix axes.** Primary artifact decides the home page; domain / method / representation / conditioning / orgs are metadata.",
-        "- **Public links are exact.** No search-result links are surfaced as if they were canonical paper or code URLs.",
-        "- **Daily harvesting is separate from final inclusion.** Candidates go into a review inbox; accepted entries are merged manually.",
-        "- **Pages are generated, not hand-edited.** The repo stays consistent as it grows.",
-        "",
-        "## Browse the Catalog",
-        "",
-        "| Directory | Focus | Count |",
-        "|:--|:--|--:|",
-        "| [00-surveys-and-foundations](00-surveys-and-foundations/README.md) | Surveys, policy, and taxonomy | — |",
-    ])
-
     for artifact in ARTIFACT_ORDER:
         meta = ARTIFACT_META[artifact]
-        lines.append(
-            f"| [{meta['dir']}]({meta['dir']}/README.md) | {meta['short']} | {len(by_artifact.get(artifact, []))} |"
-        )
-
-    lines.append(f"| [90-topics](90-topics/README.md) | Cross-cutting domain pages | {len(by_domain)} |")
-    lines.append(f"| [91-organizations](91-organizations/README.md) | Cross-cutting organization pages | {len(by_org)} |")
-    lines.append("")
-
-    lines.extend(["## Featured Radar", ""])
-    for artifact in ARTIFACT_ORDER:
-        meta = ARTIFACT_META[artifact]
-        highlights = [
-            r for r in pick_highlights(by_artifact.get(artifact, []), repo_stats, limit=4)
-            if r["id"] not in pinned_ids
-        ][:2]
+        highlights = pick_highlights(by_artifact.get(artifact, []), repo_stats, limit=HOME_HIGHLIGHTS_PER_ARTIFACT)
         if not highlights:
             continue
-        lines.extend([f"### {meta['emoji']} {meta['title']}", ""])
+        lines.extend([f"### [{meta['emoji']} {meta['title']}]({meta['dir']}/README.md)", ""])
         for rec in highlights:
             lines.append(render_record_card(rec, repo_stats))
 
     lines.extend(["## Topic Pages", "", "| Topic | Papers |", "|:--|--:|"])
-    for domain, count in by_domain.most_common():
-        lines.append(f"| [{domain}](90-topics/{slugify(domain)}.md) | {count} |")
+    if by_domain:
+        for domain, count in by_domain.most_common(TOPIC_INDEX_LIMIT):
+            lines.append(f"| [{domain}](90-topics/{slugify(domain)}.md) | {count} |")
+    else:
+        lines.append("| _No topic pages yet_ | 0 |")
     lines.append("")
 
     lines.extend(["## Organization Pages", "", "| Organization | Papers |", "|:--|--:|"])
     if by_org:
-        for org, count in by_org.most_common(20):
+        for org, count in by_org.most_common(ORG_INDEX_LIMIT):
             lines.append(f"| [{org}](91-organizations/{slugify(org)}.md) | {count} |")
     else:
         lines.append("| _No organization metadata yet_ | 0 |")
@@ -577,6 +723,7 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
 
     write_text(ROOT / "README.md", "\n".join(lines))
 
+
 def main() -> None:
     papers = load_records()
     repo_stats = load_json(CACHE_DIR / "repo_stats.json")
@@ -588,6 +735,7 @@ def main() -> None:
     build_root_readme(papers, repo_stats)
 
     print(f"[build] generated pages for {len(papers)} entries.")
+
 
 if __name__ == "__main__":
     main()

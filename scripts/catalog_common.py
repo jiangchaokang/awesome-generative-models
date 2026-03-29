@@ -58,15 +58,15 @@ ARTIFACT_META = {
     },
 }
 
-ALLOWED_TASKS = {
-    "image-2d": {
+ARTIFACT_TASK_ORDER = {
+    "image-2d": [
         "text-to-image",
         "controllable-generation",
         "model-efficiency",
         "alignment-safety",
         "personalization",
-    },
-    "video": {
+    ],
+    "video": [
         "text-to-video",
         "image-to-video",
         "video-editing",
@@ -74,16 +74,16 @@ ALLOWED_TASKS = {
         "long-video",
         "autonomous-driving-video",
         "surround-view-video",
-    },
-    "3d-object-asset": {
+    ],
+    "3d-object-asset": [
         "3d-shape-generation",
         "image-to-3d",
         "text-to-3d",
         "part-aware-generation",
         "articulated-asset",
         "human-avatar",
-    },
-    "3d-scene": {
+    ],
+    "3d-scene": [
         "general-scene-generation",
         "layout-to-scene",
         "agentic-scene-generation",
@@ -91,15 +91,20 @@ ALLOWED_TASKS = {
         "outdoor-urban",
         "single-image-to-scene",
         "scene-editing",
-    },
-    "4d-dynamic-scene-world": {
+    ],
+    "4d-dynamic-scene-world": [
         "autonomous-driving",
         "4d-generation",
         "world-models",
         "simulation",
         "game-worlds",
         "robotics-worlds",
-    },
+    ],
+}
+
+ALLOWED_TASKS = {
+    artifact: set(tasks)
+    for artifact, tasks in ARTIFACT_TASK_ORDER.items()
 }
 
 DOMAIN_VOCAB = {
@@ -195,17 +200,20 @@ WATCH_ORGS = [
     {"name": "NVLabs", "github": "NVlabs"},
     {"name": "Google Research", "github": "google-research"},
     {"name": "Google DeepMind", "github": "google-deepmind"},
-    {"name": "Waymo Research", "github": "waymo-research"},
+    {"name": "Waymo", "github": "waymo-research"},
     {"name": "Tencent", "github": "Tencent"},
     {"name": "Tencent Hunyuan", "github": "Tencent-Hunyuan"},
     {"name": "Tencent ARC", "github": "TencentARC"},
+    {"name": "Alibaba", "github": "QwenLM"},
     {"name": "Alibaba Wan", "github": "Wan-Video"},
     {"name": "Alibaba VILab", "github": "ali-vilab"},
     {"name": "ByteDance Seed", "github": "ByteDance-Seed"},
+    {"name": "Adobe Research", "github": "adobe-research"},
+    {"name": "Xiaomi", "github": "XiaomiMi"},
+    {"name": "Tesla", "github": "tesla"},
     {"name": "THUDM", "github": "THUDM"},
     {"name": "Black Forest Labs", "github": "black-forest-labs"},
     {"name": "Stability AI", "github": "Stability-AI"},
-    {"name": "Adobe Research", "github": "adobe-research"},
 ]
 
 VENUE_COLORS = {
@@ -303,6 +311,37 @@ def parse_github_repo(url: str) -> str:
     if len(parts) < 2:
         return ""
     return f"{parts[0]}/{parts[1]}"
+
+REPO_OWNER_TO_ORG = {
+    "nvidia": "NVIDIA",
+    "nvlabs": "NVLabs",
+    "google-research": "Google Research",
+    "google-deepmind": "Google DeepMind",
+    "waymo-research": "Waymo",
+    "tencent": "Tencent",
+    "tencent-hunyuan": "Tencent Hunyuan",
+    "tencentarc": "Tencent ARC",
+    "qwenlm": "Alibaba",
+    "wan-video": "Alibaba Wan",
+    "ali-vilab": "Alibaba VILab",
+    "bytedance-seed": "ByteDance Seed",
+    "adobe-research": "Adobe Research",
+    "xiaomimi": "Xiaomi",
+    "tesla": "Tesla",
+    "thudm": "THUDM",
+    "black-forest-labs": "Black Forest Labs",
+    "stability-ai": "Stability AI",
+}
+
+def repo_owner_from_url(url: str) -> str:
+    full_name = parse_github_repo(url)
+    if not full_name:
+        return ""
+    return full_name.split("/", 1)[0].strip()
+
+def suggested_org_from_repo(url: str) -> str:
+    owner = repo_owner_from_url(url).lower()
+    return REPO_OWNER_TO_ORG.get(owner, "")
 
 def arxiv_id_from_url(url: str) -> str:
     if not url:

@@ -1,19 +1,18 @@
 # 📚 Surveys & Foundations
 
-> Auto-generated from the catalog source data.
+> Contract, surveys, and maintenance notes for the catalog.
 
-## Why this repository exists
+## Repository Contract
 
-- **Strict taxonomy**: `primary_artifact` decides the main location; all other axes are metadata.
-- **Exact links only**: public pages never expose guessed search-result URLs.
-- **Human-reviewed inclusion**: the daily candidate inbox is only a review queue, not an auto-merge pipeline.
-- **English-only summaries**: every accepted entry must have a concise 1–3 sentence English summary.
-- **2025+ scope by default**: older entries require explicit `active_since` and `scope_note`.
+- Source of truth lives in `data/*.jsonl`.
+- Generated pages must be rebuilt via `python scripts/build.py`.
+- Public links must be exact, never search-result placeholders.
+- Inclusion is human-reviewed even when candidate harvesting is automatic.
+- Primary artifact decides placement; other axes stay metadata.
 
 ## Quick Links
 
-- [Root README](../README.md)
-- [Taxonomy](../docs/taxonomy.md)
+- [Root README](../README.mdaxonomy.md)
 - [Candidate Inbox](../metadata/candidates/latest.md)
 - [Validation Report](../metadata/validation/latest.md)
 - [Contributing](../CONTRIBUTING.md)

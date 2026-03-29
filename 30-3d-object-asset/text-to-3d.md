@@ -4,29 +4,29 @@
 
 [← Root](../README.md) · [← Category](README.md)
 
-### AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer
+### [AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer](https://arxiv.org/abs/2602.12100)
 
-![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/Advocate99/AssetFormer) [![GitHub: ★ 33](https://img.shields.io/badge/GitHub-%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: text-to-3d](https://img.shields.io/static/v1?label=Track&message=text-to-3d&color=0D9488&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
 
 > Targets modular assets directly with autoregressive generation over part-aware structures.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 33](https://img.shields.io/badge/Code-GitHub%20%E2%98%85%2033-181717?style=flat-square&logo=github)](https://github.com/Advocate99/AssetFormer)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub](https://img.shields.io/static/v1?label=Code&message=GitHub&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Advocate99/AssetFormer)
 
-### Text-Image Conditioned 3D Generation
+### [Text-Image Conditioned 3D Generation](https://arxiv.org/abs/2603.21295)
 
-![Venue: arXiv 2026](https://img.shields.io/badge/Venue-arXiv%202026-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: text-to-3d](https://img.shields.io/static/v1?label=Track&message=text-to-3d&color=0D9488&style=flat-square&labelColor=111827) ![Source: Closed](https://img.shields.io/static/v1?label=Source&message=Closed&color=6B7280&style=flat-square&labelColor=111827)
 
 > A joint text-and-image conditioned 3D generation framework aimed at stronger controllability over asset content.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2603.21295)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.21295)
 
-### ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models
+### [ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models](https://arxiv.org/abs/2511.22456)
 
-![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: text-to-3d](https://img.shields.io/badge/Task-text-to-3d-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/ZhenglinZhou/ITS3D)
+![Venue: arXiv 2025](https://img.shields.io/static/v1?label=Venue&message=arXiv+2025&color=B31B1B&style=flat-square&labelColor=111827) ![Track: text-to-3d](https://img.shields.io/static/v1?label=Track&message=text-to-3d&color=0D9488&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
 
 > Brings inference-time scaling into text-guided 3D diffusion to improve asset quality at test time.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2511.22456) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/ZhenglinZhou/ITS3D)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2511.22456) [![Code: GitHub](https://img.shields.io/static/v1?label=Code&message=GitHub&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/ZhenglinZhou/ITS3D)
 
 ## Compact Index
 
@@ -35,8 +35,8 @@
 
 | Title | Task | Venue | Links |
 |:--|:--|:--|:--|
-| **AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer** | text-to-3d | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.12100) / [Code](https://github.com/Advocate99/AssetFormer) |
-| **Text-Image Conditioned 3D Generation** | text-to-3d | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.21295) |
-| **ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models** | text-to-3d | arXiv 2025 | [Paper](https://arxiv.org/abs/2511.22456) / [Code](https://github.com/ZhenglinZhou/ITS3D) |
+| **[AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer](https://arxiv.org/abs/2602.12100)** | text-to-3d | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.12100) / [Code](https://github.com/Advocate99/AssetFormer) |
+| **[Text-Image Conditioned 3D Generation](https://arxiv.org/abs/2603.21295)** | text-to-3d | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.21295) |
+| **[ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models](https://arxiv.org/abs/2511.22456)** | text-to-3d | arXiv 2025 | [Paper](https://arxiv.org/abs/2511.22456) / [Code](https://github.com/ZhenglinZhou/ITS3D) |
 
 </details>

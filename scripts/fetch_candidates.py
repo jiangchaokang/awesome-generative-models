@@ -17,39 +17,42 @@ from catalog_common import ROOT, WATCH_ORGS, load_records, normalize_title, pars
 OUT_DIR = ROOT / "metadata" / "candidates"
 TIMEOUT = 20
 
+
 ARXIV_QUERIES = {
     "image-2d": [
-        "text-to-image generation",
-        "controllable image generation",
+        "text-to-image generation technical report",
+        "image generation foundation model",
         "image generation diffusion transformer",
-        "one-step generative model image",
         "image generation rectified flow",
+        "text rendering image generation",
     ],
     "video": [
-        "text-to-video generation",
+        "video foundation model",
+        "text-to-video generation technical report",
         "image-to-video generation",
         "video editing diffusion",
-        "human animation diffusion",
         "surround-view video generation",
     ],
     "3d-object-asset": [
-        "text-to-3D generation",
-        "image-to-3D generation",
         "3D asset generation",
-        "3D shape generation diffusion",
+        "image-to-3D generation",
+        "text-to-3D generation",
+        "part-aware 3D generation",
+        "controllable 3D asset generation",
     ],
     "3d-scene": [
         "3D scene generation",
-        "layout guided 3D scene",
+        "explorable 3D scene generation",
+        "single image to 3D scene",
         "indoor scene generation",
-        "outdoor scene generation 3D",
+        "gaussian splatting scene generation",
     ],
     "4d-dynamic-scene-world": [
-        "world model autonomous driving",
+        "world model technical report",
         "interactive world model",
-        "4D scene generation",
         "autonomous driving world model",
-        "generative simulation world model",
+        "explorable 3D world generation",
+        "simulation capable world model",
     ],
 }
 
@@ -60,6 +63,21 @@ KEYWORDS = {
     "3d-scene": ["3d scene", "layout", "indoor scene", "outdoor scene", "navigable", "scene generation"],
     "4d-dynamic-scene-world": ["world model", "autonomous driving", "simulation", "interactive world", "4d", "game world", "closed-loop"],
 }
+
+TOP_LAB_HINTS = [
+    "google", "deepmind", "nvidia", "nvlabs", "waymo",
+    "tencent", "hunyuan", "tencentarc",
+    "alibaba", "qwen", "wan", "vilab",
+    "bytedance", "seed", "adobe", "xiaomi", "tesla",
+    "mit", "berkeley", "tsinghua", "sjtu",
+]
+
+MODEL_FAMILY_HINTS = [
+    "qwen-image", "hunyuanimage", "seedream", "seedance",
+    "wan2.1", "wan2.2", "sana", "cosmos",
+    "hunyuanvideo", "hunyuan3d", "hunyuanworld",
+    "voyager", "worldplay", "flashworld", "vectorworld",
+]
 
 def write_json(path: Path, data: dict | list) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -229,14 +247,28 @@ def score_arxiv_candidate(item: dict, now: datetime) -> int:
     try:
         published_dt = datetime.fromisoformat(item["published"].replace("Z", "+00:00"))
         age_days = max(0, (now - published_dt).days)
-        score += max(0, 25 - age_days)
+        score += max(0, 30 - age_days)
     except Exception:
         pass
 
-    if any(k in text for k in ["code", "open-source", "opensource", "publicly available", "release", "weights"]):
+    if any(k in text for k in ["code", "open-source", "opensource", "release", "weights", "github"]):
         score += 18
-    if any(k in text for k in ["world model", "real-time", "closed-loop", "interactive", "foundation model"]):
+
+    if any(k in text for k in TOP_LAB_HINTS):
         score += 10
+
+    if any(k in text for k in MODEL_FAMILY_HINTS):
+        score += 12
+
+    if any(k in text for k in [
+        "world model", "interactive world", "closed-loop", "autonomous driving",
+        "3d scene", "3d asset", "video foundation model", "surround-view",
+    ]):
+        score += 10
+
+    if any(k in text for k in ["survey", "benchmark"]) and "generation" not in text and "world model" not in text:
+        score -= 6
+
     return score
 
 def score_github_candidate(item: dict, now: datetime) -> int:
@@ -246,14 +278,23 @@ def score_github_candidate(item: dict, now: datetime) -> int:
     try:
         updated_dt = datetime.fromisoformat(item["updated_at"].replace("Z", "+00:00"))
         age_days = max(0, (now - updated_dt).days)
-        score += max(0, 20 - age_days)
+        score += max(0, 24 - age_days)
     except Exception:
         pass
 
-    score += min(int(item.get("stargazers_count", 0) or 0) // 100, 20)
+    score += min(int(item.get("stargazers_count", 0) or 0) // 50, 25)
 
-    if any(k in text for k in ["world model", "video generation", "3d", "diffusion", "generative"]):
-        score += 8
+    if any(k in text for k in TOP_LAB_HINTS):
+        score += 10
+
+    if any(k in text for k in MODEL_FAMILY_HINTS):
+        score += 12
+
+    if any(k in text for k in [
+        "world-model", "video-generation", "image-to-video",
+        "scene-generation", "3d-generation", "autonomous-driving",
+    ]):
+        score += 10
 
     return score
 

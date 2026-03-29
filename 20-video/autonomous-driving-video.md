@@ -4,55 +4,55 @@
 
 [← Root](../README.md) · [← Category](README.md)
 
-### CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving
+### [CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving](https://arxiv.org/abs/2503.22231)
 
-![Venue: arXiv 2025](https://img.shields.io/badge/Venue-arXiv%202025-B31B1B?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+![Venue: arXiv 2025](https://img.shields.io/static/v1?label=Venue&message=arXiv+2025&color=B31B1B&style=flat-square&labelColor=111827) ![Track: autonomous-driving-video](https://img.shields.io/static/v1?label=Track&message=autonomous-driving-video&color=7C3AED&style=flat-square&labelColor=111827) ![Source: Closed](https://img.shields.io/static/v1?label=Source&message=Closed&color=6B7280&style=flat-square&labelColor=111827)
 
 > Improves 3D consistency in controllable driving video generation through spatially adaptive 3D conditions.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2503.22231) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://xiaomi-research.github.io/cogen/)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2503.22231) [![Project: Site](https://img.shields.io/static/v1?label=Project&message=Site&color=0EA5E9&style=flat-square&labelColor=111827&logo=googlechrome)](https://xiaomi-research.github.io/cogen/)
 
-![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+![Domain: autonomous-driving](https://img.shields.io/static/v1?label=Domain&message=autonomous-driving&color=EA580C&style=flat-square&labelColor=111827)
 
-### DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation
+### [DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation](https://arxiv.org/abs/2403.06845)
 
-![Venue: AAAI 2025](https://img.shields.io/badge/Venue-AAAI%202025-059669?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+![Venue: AAAI 2025](https://img.shields.io/static/v1?label=Venue&message=AAAI+2025&color=059669&style=flat-square&labelColor=111827) ![Track: autonomous-driving-video](https://img.shields.io/static/v1?label=Track&message=autonomous-driving-video&color=7C3AED&style=flat-square&labelColor=111827) ![Source: Closed](https://img.shields.io/static/v1?label=Source&message=Closed&color=6B7280&style=flat-square&labelColor=111827)
 
 > An LLM-enhanced driving video generator that converts user intent into trajectories, maps, and multi-view videos.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2403.06845)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2403.06845)
 
-![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+![Domain: autonomous-driving](https://img.shields.io/static/v1?label=Domain&message=autonomous-driving&color=EA580C&style=flat-square&labelColor=111827)
 
-### DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation
+### [DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation](https://arxiv.org/abs/2409.05463)
 
-![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+![Venue: ICCV 2025](https://img.shields.io/static/v1?label=Venue&message=ICCV+2025&color=2563EB&style=flat-square&labelColor=111827) ![Track: autonomous-driving-video](https://img.shields.io/static/v1?label=Track&message=autonomous-driving-video&color=7C3AED&style=flat-square&labelColor=111827) ![Source: Closed](https://img.shields.io/static/v1?label=Source&message=Closed&color=6B7280&style=flat-square&labelColor=111827)
 
 > A high-resolution multi-view driving video generator with strong spatial-temporal alignment under sparse 3D control.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2409.05463) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://metadrivescape.github.io/papers_project/drivescapev1/index.html)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2409.05463) [![Project: Site](https://img.shields.io/static/v1?label=Project&message=Site&color=0EA5E9&style=flat-square&labelColor=111827&logo=googlechrome)](https://metadrivescape.github.io/papers_project/drivescapev1/index.html)
 
-![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+![Domain: autonomous-driving](https://img.shields.io/static/v1?label=Domain&message=autonomous-driving&color=EA580C&style=flat-square&labelColor=111827)
 
-### MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control
+### [MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control](https://arxiv.org/abs/2411.13807)
 
-![Venue: ICCV 2025](https://img.shields.io/badge/Venue-ICCV%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) [![Open Source](https://img.shields.io/badge/Open%20Source-16A34A?style=flat-square&logo=opensourceinitiative)](https://github.com/flymin/MagicDrive-V2)
+![Venue: ICCV 2025](https://img.shields.io/static/v1?label=Venue&message=ICCV+2025&color=2563EB&style=flat-square&labelColor=111827) ![Track: autonomous-driving-video](https://img.shields.io/static/v1?label=Track&message=autonomous-driving-video&color=7C3AED&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
 
 > A high-resolution long-form multi-view driving video model with richer geometric and scenario control.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2411.13807) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github)](https://github.com/flymin/MagicDrive-V2) [![Project](https://img.shields.io/badge/Project-0EA5E9?style=flat-square&logo=googlechrome)](https://magicdrive-v2.github.io/)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2411.13807) [![Code: GitHub](https://img.shields.io/static/v1?label=Code&message=GitHub&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/flymin/MagicDrive-V2) [![Project: Site](https://img.shields.io/static/v1?label=Project&message=Site&color=0EA5E9&style=flat-square&labelColor=111827&logo=googlechrome)](https://magicdrive-v2.github.io/)
 
-![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+![Domain: autonomous-driving](https://img.shields.io/static/v1?label=Domain&message=autonomous-driving&color=EA580C&style=flat-square&labelColor=111827)
 
-### StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models
+### [StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models](https://arxiv.org/abs/2412.13188)
 
-![Venue: CVPR 2025](https://img.shields.io/badge/Venue-CVPR%202025-2563EB?style=flat-square) ![Task: autonomous-driving-video](https://img.shields.io/badge/Task-autonomous-driving-video-0EA5E9?style=flat-square) ![Closed Source](https://img.shields.io/badge/Closed%20Source-6B7280?style=flat-square)
+![Venue: CVPR 2025](https://img.shields.io/static/v1?label=Venue&message=CVPR+2025&color=2563EB&style=flat-square&labelColor=111827) ![Track: autonomous-driving-video](https://img.shields.io/static/v1?label=Track&message=autonomous-driving-video&color=7C3AED&style=flat-square&labelColor=111827) ![Source: Closed](https://img.shields.io/static/v1?label=Source&message=Closed&color=6B7280&style=flat-square&labelColor=111827)
 
 > A controllable street-view synthesis model driven by LiDAR renderings for precise view control.
 
-[![Paper: arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2412.13188)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2412.13188)
 
-![autonomous-driving](https://img.shields.io/badge/autonomous-driving-EA580C?style=flat-square)
+![Domain: autonomous-driving](https://img.shields.io/static/v1?label=Domain&message=autonomous-driving&color=EA580C&style=flat-square&labelColor=111827)
 
 ## Compact Index
 
@@ -61,10 +61,10 @@
 
 | Title | Task | Venue | Links |
 |:--|:--|:--|:--|
-| **CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving** | autonomous-driving-video | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.22231) / [Project](https://xiaomi-research.github.io/cogen/) |
-| **DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation** | autonomous-driving-video | AAAI 2025 | [Paper](https://arxiv.org/abs/2403.06845) |
-| **DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation** | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2409.05463) / [Project](https://metadrivescape.github.io/papers_project/drivescapev1/index.html) |
-| **MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control** | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2411.13807) / [Code](https://github.com/flymin/MagicDrive-V2) / [Project](https://magicdrive-v2.github.io/) |
-| **StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models** | autonomous-driving-video | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.13188) |
+| **[CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving](https://arxiv.org/abs/2503.22231)** | autonomous-driving-video | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.22231) / [Project](https://xiaomi-research.github.io/cogen/) |
+| **[DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation](https://arxiv.org/abs/2403.06845)** | autonomous-driving-video | AAAI 2025 | [Paper](https://arxiv.org/abs/2403.06845) |
+| **[DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation](https://arxiv.org/abs/2409.05463)** | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2409.05463) / [Project](https://metadrivescape.github.io/papers_project/drivescapev1/index.html) |
+| **[MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control](https://arxiv.org/abs/2411.13807)** | autonomous-driving-video | ICCV 2025 | [Paper](https://arxiv.org/abs/2411.13807) / [Code](https://github.com/flymin/MagicDrive-V2) / [Project](https://magicdrive-v2.github.io/) |
+| **[StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models](https://arxiv.org/abs/2412.13188)** | autonomous-driving-video | CVPR 2025 | [Paper](https://arxiv.org/abs/2412.13188) |
 
 </details>

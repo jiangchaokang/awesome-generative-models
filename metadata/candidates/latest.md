@@ -2,7 +2,7 @@
 
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 
-- Generated: `2026-03-29 03:54 UTC`
+- Generated: `2026-03-29 04:12 UTC`
 - Window: last **14** days
 - Raw files: `metadata/candidates/2026-03-29/`
 - Total new candidates: **118**
@@ -57,9 +57,9 @@
 | 53 | GitHub | 2026-03-28 | **CF-3DGS** | text-to-image | recent update in watched organization `NVLabs` | [Repo](https://github.com/NVlabs/CF-3DGS) |
 | 53 | GitHub | 2026-03-28 | **DiffusionNFT** | text-to-image | recent update in watched organization `NVLabs` | [Repo](https://github.com/NVlabs/DiffusionNFT) |
 | 52 | GitHub | 2026-03-28 | **Audio2Face-3D-SDK** | text-to-image | recent update in watched organization `NVIDIA` | [Repo](https://github.com/NVIDIA/Audio2Face-3D-SDK) |
+| 51 | GitHub | 2026-03-29 | **WeDLM** | text-to-image | recent update in watched organization `Tencent` | [Repo](https://github.com/Tencent/WeDLM) / [Home](https://wedlm.github.io) |
 | 50 | GitHub | 2026-03-26 | **loli_profiler** | text-to-image | recent update in watched organization `Tencent` | [Repo](https://github.com/Tencent/loli_profiler) |
 | 50 | GitHub | 2026-03-29 | **Stable-DiffCoder** | text-to-image | recent update in watched organization `ByteDance Seed` | [Repo](https://github.com/ByteDance-Seed/Stable-DiffCoder) / [Home](https://bytedance-seed.github.io/Stable-DiffCoder/) |
-| 50 | GitHub | 2026-03-27 | **WeDLM** | text-to-image | recent update in watched organization `Tencent` | [Repo](https://github.com/Tencent/WeDLM) / [Home](https://wedlm.github.io) |
 | 49 | GitHub | 2026-03-28 | **DiffiT** | text-to-image | recent update in watched organization `NVLabs` | [Repo](https://github.com/NVlabs/DiffiT) |
 | 48 | GitHub | 2026-03-26 | **Infusion** | text-to-image | recent update in watched organization `Alibaba VILab` | [Repo](https://github.com/ali-vilab/Infusion) |
 | 46 | GitHub | 2026-03-28 | **GraspGen** | text-to-image | recent update in watched organization `NVLabs` | [Repo](https://github.com/NVlabs/GraspGen) / [Home](https://graspgen.github.io/) |
@@ -127,7 +127,7 @@
 | 74 | GitHub | 2026-03-28 | **stable-virtual-camera** | image-to-video | recent update in watched organization `Stability AI` | [Repo](https://github.com/Stability-AI/stable-virtual-camera) / [Home](https://stable-virtual-camera.github.io) |
 | 70 | GitHub | 2026-03-28 | **rcm** | text-to-video | recent update in watched organization `NVLabs` | [Repo](https://github.com/NVlabs/rcm) / [Home](https://arxiv.org/abs/2510.08431) |
 | 68 | arXiv | 2026-03-18 | **The Unreasonable Effectiveness of Text Embedding Interpolation for Continuous Image Steering** | video-editing | recent paper candidate | [Paper](http://arxiv.org/abs/2603.17998v1) |
-| 65 | GitHub | 2026-03-28 | **HunyuanPortrait** | human-animation | recent update in watched organization `Tencent Hunyuan` | [Repo](https://github.com/Tencent-Hunyuan/HunyuanPortrait) |
+| 64 | GitHub | 2026-03-28 | **HunyuanPortrait** | human-animation | recent update in watched organization `Tencent Hunyuan` | [Repo](https://github.com/Tencent-Hunyuan/HunyuanPortrait) |
 | 61 | GitHub | 2026-03-27 | **Hunyuan-GameCraft-1.0** | text-to-video | recent update in watched organization `Tencent Hunyuan` | [Repo](https://github.com/Tencent-Hunyuan/Hunyuan-GameCraft-1.0) / [Home](https://hunyuan-gamecraft.github.io/) |
 | 61 | GitHub | 2026-03-28 | **Wan-Move** | text-to-video | recent update in watched organization `Alibaba VILab` | [Repo](https://github.com/ali-vilab/Wan-Move) / [Home](https://wan-move.github.io/) |
 | 60 | GitHub | 2026-03-28 | **LongLive** | long-video | recent update in watched organization `NVLabs` | [Repo](https://github.com/NVlabs/LongLive) / [Home](https://nvlabs.github.io/LongLive) |
@@ -218,7 +218,7 @@
 | Tencent Hunyuan | [Tencent-Hunyuan/HunyuanImage-2.1](https://github.com/Tencent-Hunyuan/HunyuanImage-2.1) | 672 | 2026-03-26 | recent update in watched organization `Tencent Hunyuan` |
 | NVIDIA | [NVIDIA/DreamDojo](https://github.com/NVIDIA/DreamDojo) | 662 | 2026-03-28 | recent update in watched organization `NVIDIA` |
 | Google DeepMind | [google-deepmind/torax](https://github.com/google-deepmind/torax) | 644 | 2026-03-27 | recent update in watched organization `Google DeepMind` |
-| Tencent | [Tencent/WeDLM](https://github.com/Tencent/WeDLM) | 636 | 2026-03-27 | recent update in watched organization `Tencent` |
+| Tencent | [Tencent/WeDLM](https://github.com/Tencent/WeDLM) | 637 | 2026-03-29 | recent update in watched organization `Tencent` |
 | Alibaba VILab | [ali-vilab/Wan-Move](https://github.com/ali-vilab/Wan-Move) | 600 | 2026-03-28 | recent update in watched organization `Alibaba VILab` |
 | Tencent ARC | [TencentARC/BrushEdit](https://github.com/TencentARC/BrushEdit) | 588 | 2026-03-23 | recent update in watched organization `Tencent ARC` |
 | NVLabs | [NVlabs/rcm](https://github.com/NVlabs/rcm) | 586 | 2026-03-28 | recent update in watched organization `NVLabs` |

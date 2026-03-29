@@ -308,20 +308,6 @@
   },
   {
     "source": "GitHub",
-    "artifact": "video",
-    "task": "human-animation",
-    "title": "HunyuanPortrait",
-    "paper": "",
-    "repo": "https://github.com/Tencent-Hunyuan/HunyuanPortrait",
-    "homepage": "",
-    "abstract": "[CVPR-2025] The official code of HunyuanPortrait: Implicit Condition Control for Enhanced Portrait Animation",
-    "published": "",
-    "updated_at": "2026-03-28T03:58:50Z",
-    "score": 65,
-    "why": "recent update in watched organization `Tencent Hunyuan`"
-  },
-  {
-    "source": "GitHub",
     "artifact": "image-2d",
     "task": "text-to-image",
     "title": "APIJSON",
@@ -389,6 +375,20 @@
     "updated_at": "2026-03-28T19:24:52Z",
     "score": 64,
     "why": "recent update in watched organization `Black Forest Labs`"
+  },
+  {
+    "source": "GitHub",
+    "artifact": "video",
+    "task": "human-animation",
+    "title": "HunyuanPortrait",
+    "paper": "",
+    "repo": "https://github.com/Tencent-Hunyuan/HunyuanPortrait",
+    "homepage": "",
+    "abstract": "[CVPR-2025] The official code of HunyuanPortrait: Implicit Condition Control for Enhanced Portrait Animation",
+    "published": "",
+    "updated_at": "2026-03-28T03:58:50Z",
+    "score": 64,
+    "why": "recent update in watched organization `Tencent Hunyuan`"
   },
   {
     "source": "GitHub",
@@ -912,6 +912,20 @@
     "source": "GitHub",
     "artifact": "image-2d",
     "task": "text-to-image",
+    "title": "WeDLM",
+    "paper": "",
+    "repo": "https://github.com/Tencent/WeDLM",
+    "homepage": "https://wedlm.github.io",
+    "abstract": "WeDLM: The fastest diffusion language model with standard causal attention and native KV cache compatibility, delivering real speedups over vLLM-optimized baselines.",
+    "published": "",
+    "updated_at": "2026-03-29T04:11:39Z",
+    "score": 51,
+    "why": "recent update in watched organization `Tencent`"
+  },
+  {
+    "source": "GitHub",
+    "artifact": "image-2d",
+    "task": "text-to-image",
     "title": "loli_profiler",
     "paper": "",
     "repo": "https://github.com/Tencent/loli_profiler",
@@ -949,20 +963,6 @@
     "updated_at": "2026-03-27T23:09:46Z",
     "score": 50,
     "why": "recent update in watched organization `Google DeepMind`"
-  },
-  {
-    "source": "GitHub",
-    "artifact": "image-2d",
-    "task": "text-to-image",
-    "title": "WeDLM",
-    "paper": "",
-    "repo": "https://github.com/Tencent/WeDLM",
-    "homepage": "https://wedlm.github.io",
-    "abstract": "WeDLM: The fastest diffusion language model with standard causal attention and native KV cache compatibility, delivering real speedups over vLLM-optimized baselines.",
-    "published": "",
-    "updated_at": "2026-03-27T19:04:08Z",
-    "score": 50,
-    "why": "recent update in watched organization `Tencent`"
   },
   {
     "source": "GitHub",

@@ -39,15 +39,15 @@ jobs:
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
 
-      # - name: Fetch candidate inbox
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: python scripts/fetch_candidates.py --days 14 --issue
-
-      - name: Validate data and refresh caches
+      - name: Fetch candidate inbox
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/validate_data.py --write-cache
+        run: python scripts/fetch_candidates.py --days 14 --issue
+
+      # - name: Validate data and refresh caches
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: python scripts/validate_data.py --write-cache
 
       - name: Build README and pages
         run: python scripts/build.py

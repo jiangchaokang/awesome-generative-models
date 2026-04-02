@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 from collections import Counter, defaultdict
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 
@@ -83,6 +84,10 @@ HOME_HIGHLIGHTS_PER_ARTIFACT = 1
 ARTIFACT_HIGHLIGHTS_PER_PAGE = 4
 TOPIC_INDEX_LIMIT = 20
 ORG_INDEX_LIMIT = 20
+
+CANDIDATE_REPORT_DATE_FORMAT = "%Y-%m-%d"
+RECENT_CANDIDATE_REPORT_LIMIT = 6
+RECENT_CANDIDATE_REPORT_COLUMNS = 3
 
 
 def load_json(path: Path) -> dict:
@@ -344,6 +349,70 @@ def render_artifact_navigation(by_artifact: dict[str, list[dict]]) -> str:
     return "\n".join(lines)
 
 
+def list_recent_candidate_reports(limit: int = RECENT_CANDIDATE_REPORT_LIMIT) -> list[dict[str, str]]:
+    candidates_dir = ROOT / "metadata" / "candidates"
+    reports: list[dict[str, str]] = []
+
+    if not candidates_dir.exists():
+        return reports
+
+    for child in candidates_dir.iterdir():
+        if not child.is_dir():
+            continue
+
+        try:
+            datetime.strptime(child.name, CANDIDATE_REPORT_DATE_FORMAT)
+        except ValueError:
+            continue
+
+        report_path = child / "report.md"
+        if not report_path.exists():
+            continue
+
+        reports.append(
+            {
+                "date": child.name,
+                "path": report_path.relative_to(ROOT).as_posix(),
+            }
+        )
+
+    reports.sort(key=lambda item: item["date"], reverse=True)
+    return reports[: max(0, int(limit))]
+
+
+def render_recent_candidate_reports_table(
+    limit: int = RECENT_CANDIDATE_REPORT_LIMIT,
+    columns: int = RECENT_CANDIDATE_REPORT_COLUMNS,
+) -> str:
+    limit = max(0, int(limit))
+    columns = max(1, int(columns))
+
+    reports = list_recent_candidate_reports(limit=limit)
+    cells = [f"[{item['date']}]({item['path']})" for item in reports]
+
+    total_slots = max(limit, len(cells))
+    if total_slots == 0:
+        total_slots = columns
+
+    remainder = total_slots % columns
+    if remainder:
+        total_slots += columns - remainder
+
+    while len(cells) < total_slots:
+        cells.append("—")
+
+    lines = [
+        "| " + " | ".join(["Report"] * columns) + " |",
+        "| " + " | ".join([":--"] * columns) + " |",
+    ]
+
+    for start in range(0, total_slots, columns):
+        row = cells[start : start + columns]
+        lines.append("| " + " | ".join(row) + " |")
+
+    return "\n".join(lines)
+
+
 def render_model_patterns() -> str:
     lines: list[str] = []
     for artifact in ARTIFACT_ORDER:
@@ -377,7 +446,7 @@ def build_foundations_page(papers: list[dict]) -> None:
         "",
         "## Quick Links",
         "",
-        "- [Root README](../README.mdaxonomy.md)",
+        "- [Root README](../README.md)",
         "- [Candidate Inbox](../metadata/candidates/latest.md)",
         "- [Validation Report](../metadata/validation/latest.md)",
         "- [Contributing](../CONTRIBUTING.md)",
@@ -643,6 +712,10 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
         "## Quick Navigation",
         "",
         render_artifact_navigation(by_artifact),
+        "",
+        "## Latest Daily Inbox Reports",
+        "",
+        render_recent_candidate_reports_table(),
         "",
         "## Model Patterns at a Glance",
         "",

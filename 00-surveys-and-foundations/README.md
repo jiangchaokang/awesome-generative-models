@@ -12,7 +12,7 @@
 
 ## Quick Links
 
-- [Root README](../README.mdaxonomy.md)
+- [Root README](../README.md)
 - [Candidate Inbox](../metadata/candidates/latest.md)
 - [Validation Report](../metadata/validation/latest.md)
 - [Contributing](../CONTRIBUTING.md)

@@ -31,6 +31,13 @@
 | [🏙️ 3D Scene](40-3d-scene/README.md) | Multi-object 3D scene generation, indoor/outdoor scenes, layout-conditioned scenes, and scene editing. | [general-scene-generation](40-3d-scene/general-scene-generation.md) · [layout-to-scene](40-3d-scene/layout-to-scene.md) · [agentic-scene-generation](40-3d-scene/agentic-scene-generation.md) · [indoor](40-3d-scene/indoor.md) · [outdoor-urban](40-3d-scene/outdoor-urban.md) · [single-image-to-scene](40-3d-scene/single-image-to-scene.md) · [scene-editing](40-3d-scene/scene-editing.md) | 36 |
 | [🌍 4D Dynamic Scene / World](50-4d-dynamic-scene-world/README.md) | Dynamic 3D/4D scenes, world models, simulation, autonomous driving, game worlds, and interactive world modeling. | [autonomous-driving](50-4d-dynamic-scene-world/autonomous-driving.md) · [4d-generation](50-4d-dynamic-scene-world/4d-generation.md) · [world-models](50-4d-dynamic-scene-world/world-models.md) · [simulation](50-4d-dynamic-scene-world/simulation.md) · [game-worlds](50-4d-dynamic-scene-world/game-worlds.md) · [robotics-worlds](50-4d-dynamic-scene-world/robotics-worlds.md) | 24 |
 
+## Latest Daily Inbox Reports
+
+| Report | Report | Report |
+| :-- | :-- | :-- |
+| [2026-04-02](metadata/candidates/2026-04-02/report.md) | [2026-04-01](metadata/candidates/2026-04-01/report.md) | [2026-03-31](metadata/candidates/2026-03-31/report.md) |
+| [2026-03-30](metadata/candidates/2026-03-30/report.md) | [2026-03-29](metadata/candidates/2026-03-29/report.md) | — |
+
 ## Model Patterns at a Glance
 
 ### [🖼️ Image 2D](10-image-2d/README.md)

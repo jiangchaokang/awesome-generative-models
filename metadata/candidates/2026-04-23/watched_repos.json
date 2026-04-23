@@ -1,0 +1,946 @@
+[
+  {
+    "watch_org": "NVIDIA",
+    "full_name": "NVIDIA/warp",
+    "html_url": "https://github.com/NVIDIA/warp",
+    "stargazers_count": 6548,
+    "updated_at": "2026-04-23T04:11:04Z",
+    "why": "recent update in watched organization `NVIDIA`"
+  },
+  {
+    "watch_org": "NVIDIA",
+    "full_name": "NVIDIA/asset-harvester",
+    "html_url": "https://github.com/NVIDIA/asset-harvester",
+    "stargazers_count": 139,
+    "updated_at": "2026-04-23T04:01:40Z",
+    "why": "recent update in watched organization `NVIDIA`"
+  },
+  {
+    "watch_org": "NVIDIA",
+    "full_name": "NVIDIA/MinkowskiEngine",
+    "html_url": "https://github.com/NVIDIA/MinkowskiEngine",
+    "stargazers_count": 2910,
+    "updated_at": "2026-04-23T01:07:04Z",
+    "why": "recent update in watched organization `NVIDIA`"
+  },
+  {
+    "watch_org": "NVIDIA",
+    "full_name": "NVIDIA/OSMO",
+    "html_url": "https://github.com/NVIDIA/OSMO",
+    "stargazers_count": 148,
+    "updated_at": "2026-04-22T23:59:36Z",
+    "why": "recent update in watched organization `NVIDIA`"
+  },
+  {
+    "watch_org": "NVIDIA",
+    "full_name": "NVIDIA/Audio2Face-3D-Training-Framework",
+    "html_url": "https://github.com/NVIDIA/Audio2Face-3D-Training-Framework",
+    "stargazers_count": 87,
+    "updated_at": "2026-04-22T19:04:43Z",
+    "why": "recent update in watched organization `NVIDIA`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/ProtoMotions",
+    "html_url": "https://github.com/NVlabs/ProtoMotions",
+    "stargazers_count": 1607,
+    "updated_at": "2026-04-23T04:00:16Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/PixelDiT",
+    "html_url": "https://github.com/NVlabs/PixelDiT",
+    "stargazers_count": 204,
+    "updated_at": "2026-04-23T03:43:34Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/DiffusionNFT",
+    "html_url": "https://github.com/NVlabs/DiffusionNFT",
+    "stargazers_count": 792,
+    "updated_at": "2026-04-23T03:33:49Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/alpasim",
+    "html_url": "https://github.com/NVlabs/alpasim",
+    "stargazers_count": 974,
+    "updated_at": "2026-04-23T03:17:43Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/sage",
+    "html_url": "https://github.com/NVlabs/sage",
+    "stargazers_count": 262,
+    "updated_at": "2026-04-23T03:09:38Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/GEM-X",
+    "html_url": "https://github.com/NVlabs/GEM-X",
+    "stargazers_count": 256,
+    "updated_at": "2026-04-23T03:07:45Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/LongLive",
+    "html_url": "https://github.com/NVlabs/LongLive",
+    "stargazers_count": 1176,
+    "updated_at": "2026-04-23T02:51:53Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/FastGen",
+    "html_url": "https://github.com/NVlabs/FastGen",
+    "stargazers_count": 712,
+    "updated_at": "2026-04-23T02:22:16Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/Fast-dLLM",
+    "html_url": "https://github.com/NVlabs/Fast-dLLM",
+    "stargazers_count": 938,
+    "updated_at": "2026-04-23T00:42:43Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/LongSplat",
+    "html_url": "https://github.com/NVlabs/LongSplat",
+    "stargazers_count": 767,
+    "updated_at": "2026-04-23T00:26:23Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/CARI4D",
+    "html_url": "https://github.com/NVlabs/CARI4D",
+    "stargazers_count": 174,
+    "updated_at": "2026-04-22T20:52:51Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/LSM",
+    "html_url": "https://github.com/NVlabs/LSM",
+    "stargazers_count": 230,
+    "updated_at": "2026-04-22T19:54:59Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/GaussianSTORM",
+    "html_url": "https://github.com/NVlabs/GaussianSTORM",
+    "stargazers_count": 349,
+    "updated_at": "2026-04-22T19:12:19Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/sionna",
+    "html_url": "https://github.com/NVlabs/sionna",
+    "stargazers_count": 1423,
+    "updated_at": "2026-04-22T19:05:23Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/WarpConvNet",
+    "html_url": "https://github.com/NVlabs/WarpConvNet",
+    "stargazers_count": 187,
+    "updated_at": "2026-04-22T16:34:57Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/PointWorld",
+    "html_url": "https://github.com/NVlabs/PointWorld",
+    "stargazers_count": 307,
+    "updated_at": "2026-04-22T13:19:39Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/VoxFormer",
+    "html_url": "https://github.com/NVlabs/VoxFormer",
+    "stargazers_count": 1187,
+    "updated_at": "2026-04-22T12:46:50Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/instant-ngp",
+    "html_url": "https://github.com/NVlabs/instant-ngp",
+    "stargazers_count": 17364,
+    "updated_at": "2026-04-22T12:37:00Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/rcm",
+    "html_url": "https://github.com/NVlabs/rcm",
+    "stargazers_count": 613,
+    "updated_at": "2026-04-22T12:01:01Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/ODISE",
+    "html_url": "https://github.com/NVlabs/ODISE",
+    "stargazers_count": 939,
+    "updated_at": "2026-04-22T09:45:19Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/GraspGen",
+    "html_url": "https://github.com/NVlabs/GraspGen",
+    "stargazers_count": 431,
+    "updated_at": "2026-04-22T04:53:16Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/sionna-rt",
+    "html_url": "https://github.com/NVlabs/sionna-rt",
+    "stargazers_count": 121,
+    "updated_at": "2026-04-21T20:21:56Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/DiffRL",
+    "html_url": "https://github.com/NVlabs/DiffRL",
+    "stargazers_count": 356,
+    "updated_at": "2026-04-21T20:15:48Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/edm",
+    "html_url": "https://github.com/NVlabs/edm",
+    "stargazers_count": 1947,
+    "updated_at": "2026-04-21T20:07:29Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/nvdiffrec",
+    "html_url": "https://github.com/NVlabs/nvdiffrec",
+    "stargazers_count": 2279,
+    "updated_at": "2026-04-21T19:59:37Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/blade",
+    "html_url": "https://github.com/NVlabs/blade",
+    "stargazers_count": 47,
+    "updated_at": "2026-04-21T17:12:56Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/CF-3DGS",
+    "html_url": "https://github.com/NVlabs/CF-3DGS",
+    "stargazers_count": 757,
+    "updated_at": "2026-04-21T16:58:54Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/neuralangelo",
+    "html_url": "https://github.com/NVlabs/neuralangelo",
+    "stargazers_count": 4586,
+    "updated_at": "2026-04-21T16:57:42Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "NVLabs",
+    "full_name": "NVlabs/FB-BEV",
+    "html_url": "https://github.com/NVlabs/FB-BEV",
+    "stargazers_count": 792,
+    "updated_at": "2026-04-21T14:04:51Z",
+    "why": "recent update in watched organization `NVLabs`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/m2svid",
+    "html_url": "https://github.com/google-research/m2svid",
+    "stargazers_count": 19,
+    "updated_at": "2026-04-22T04:34:24Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/diffusion-score-smoothing",
+    "html_url": "https://github.com/google-research/diffusion-score-smoothing",
+    "stargazers_count": 1,
+    "updated_at": "2026-04-21T23:43:17Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/pangea",
+    "html_url": "https://github.com/google-research/pangea",
+    "stargazers_count": 19,
+    "updated_at": "2026-04-21T09:41:58Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/language-table",
+    "html_url": "https://github.com/google-research/language-table",
+    "stargazers_count": 356,
+    "updated_at": "2026-04-21T08:48:58Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/keyboard_oracle",
+    "html_url": "https://github.com/google-research/keyboard_oracle",
+    "stargazers_count": 11,
+    "updated_at": "2026-04-21T07:14:23Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/Splat-SLAM",
+    "html_url": "https://github.com/google-research/Splat-SLAM",
+    "stargazers_count": 343,
+    "updated_at": "2026-04-20T08:20:44Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/robel-scenes",
+    "html_url": "https://github.com/google-research/robel-scenes",
+    "stargazers_count": 14,
+    "updated_at": "2026-04-19T15:44:11Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/recsim_ng",
+    "html_url": "https://github.com/google-research/recsim_ng",
+    "stargazers_count": 125,
+    "updated_at": "2026-04-19T15:42:46Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google Research",
+    "full_name": "google-research/recsim",
+    "html_url": "https://github.com/google-research/recsim",
+    "stargazers_count": 783,
+    "updated_at": "2026-04-19T15:42:30Z",
+    "why": "recent update in watched organization `Google Research`"
+  },
+  {
+    "watch_org": "Google DeepMind",
+    "full_name": "google-deepmind/concordia",
+    "html_url": "https://github.com/google-deepmind/concordia",
+    "stargazers_count": 1370,
+    "updated_at": "2026-04-23T02:23:04Z",
+    "why": "recent update in watched organization `Google DeepMind`"
+  },
+  {
+    "watch_org": "Google DeepMind",
+    "full_name": "google-deepmind/representations4d",
+    "html_url": "https://github.com/google-deepmind/representations4d",
+    "stargazers_count": 135,
+    "updated_at": "2026-04-22T19:33:48Z",
+    "why": "recent update in watched organization `Google DeepMind`"
+  },
+  {
+    "watch_org": "Google DeepMind",
+    "full_name": "google-deepmind/torax",
+    "html_url": "https://github.com/google-deepmind/torax",
+    "stargazers_count": 662,
+    "updated_at": "2026-04-22T17:52:56Z",
+    "why": "recent update in watched organization `Google DeepMind`"
+  },
+  {
+    "watch_org": "Google DeepMind",
+    "full_name": "google-deepmind/lab",
+    "html_url": "https://github.com/google-deepmind/lab",
+    "stargazers_count": 7351,
+    "updated_at": "2026-04-22T14:45:13Z",
+    "why": "recent update in watched organization `Google DeepMind`"
+  },
+  {
+    "watch_org": "Google DeepMind",
+    "full_name": "google-deepmind/dm_control",
+    "html_url": "https://github.com/google-deepmind/dm_control",
+    "stargazers_count": 4545,
+    "updated_at": "2026-04-22T09:33:11Z",
+    "why": "recent update in watched organization `Google DeepMind`"
+  },
+  {
+    "watch_org": "Google DeepMind",
+    "full_name": "google-deepmind/kinetics-i3d",
+    "html_url": "https://github.com/google-deepmind/kinetics-i3d",
+    "stargazers_count": 1834,
+    "updated_at": "2026-04-20T15:37:58Z",
+    "why": "recent update in watched organization `Google DeepMind`"
+  },
+  {
+    "watch_org": "Google DeepMind",
+    "full_name": "google-deepmind/3d-shapes",
+    "html_url": "https://github.com/google-deepmind/3d-shapes",
+    "stargazers_count": 159,
+    "updated_at": "2026-04-20T07:38:17Z",
+    "why": "recent update in watched organization `Google DeepMind`"
+  },
+  {
+    "watch_org": "Tencent",
+    "full_name": "Tencent/MedicalNet",
+    "html_url": "https://github.com/Tencent/MedicalNet",
+    "stargazers_count": 2208,
+    "updated_at": "2026-04-23T03:12:12Z",
+    "why": "recent update in watched organization `Tencent`"
+  },
+  {
+    "watch_org": "Tencent",
+    "full_name": "Tencent/AngelSlim",
+    "html_url": "https://github.com/Tencent/AngelSlim",
+    "stargazers_count": 572,
+    "updated_at": "2026-04-22T20:23:13Z",
+    "why": "recent update in watched organization `Tencent`"
+  },
+  {
+    "watch_org": "Tencent",
+    "full_name": "Tencent/xLua",
+    "html_url": "https://github.com/Tencent/xLua",
+    "stargazers_count": 10072,
+    "updated_at": "2026-04-22T16:18:19Z",
+    "why": "recent update in watched organization `Tencent`"
+  },
+  {
+    "watch_org": "Tencent",
+    "full_name": "Tencent/APIJSON",
+    "html_url": "https://github.com/Tencent/APIJSON",
+    "stargazers_count": 18398,
+    "updated_at": "2026-04-22T11:33:12Z",
+    "why": "recent update in watched organization `Tencent`"
+  },
+  {
+    "watch_org": "Tencent",
+    "full_name": "Tencent/WeDLM",
+    "html_url": "https://github.com/Tencent/WeDLM",
+    "stargazers_count": 642,
+    "updated_at": "2026-04-21T20:03:19Z",
+    "why": "recent update in watched organization `Tencent`"
+  },
+  {
+    "watch_org": "Tencent",
+    "full_name": "Tencent/MimicMotion",
+    "html_url": "https://github.com/Tencent/MimicMotion",
+    "stargazers_count": 2568,
+    "updated_at": "2026-04-21T03:30:44Z",
+    "why": "recent update in watched organization `Tencent`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HY-World-2.0",
+    "html_url": "https://github.com/Tencent-Hunyuan/HY-World-2.0",
+    "stargazers_count": 1558,
+    "updated_at": "2026-04-23T04:18:14Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/OmniWeaving",
+    "html_url": "https://github.com/Tencent-Hunyuan/OmniWeaving",
+    "stargazers_count": 589,
+    "updated_at": "2026-04-23T04:17:28Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HY-SOAR",
+    "html_url": "https://github.com/Tencent-Hunyuan/HY-SOAR",
+    "stargazers_count": 148,
+    "updated_at": "2026-04-23T03:49:02Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/bpt",
+    "html_url": "https://github.com/Tencent-Hunyuan/bpt",
+    "stargazers_count": 299,
+    "updated_at": "2026-04-23T03:08:19Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/Hunyuan3D-Part",
+    "html_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-Part",
+    "stargazers_count": 460,
+    "updated_at": "2026-04-22T16:14:45Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/SAGE-GRPO",
+    "html_url": "https://github.com/Tencent-Hunyuan/SAGE-GRPO",
+    "stargazers_count": 111,
+    "updated_at": "2026-04-22T15:00:08Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HunyuanVideo-Foley",
+    "html_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-Foley",
+    "stargazers_count": 1072,
+    "updated_at": "2026-04-22T14:50:05Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/Hunyuan-GameCraft-1.0",
+    "html_url": "https://github.com/Tencent-Hunyuan/Hunyuan-GameCraft-1.0",
+    "stargazers_count": 709,
+    "updated_at": "2026-04-22T12:15:47Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/MixGRPO",
+    "html_url": "https://github.com/Tencent-Hunyuan/MixGRPO",
+    "stargazers_count": 1132,
+    "updated_at": "2026-04-22T12:11:35Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HY-Motion-1.0",
+    "html_url": "https://github.com/Tencent-Hunyuan/HY-Motion-1.0",
+    "stargazers_count": 2296,
+    "updated_at": "2026-04-22T10:48:29Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HunyuanDiT",
+    "html_url": "https://github.com/Tencent-Hunyuan/HunyuanDiT",
+    "stargazers_count": 4295,
+    "updated_at": "2026-04-22T07:10:39Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HunyuanWorld-Mirror",
+    "html_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
+    "stargazers_count": 1100,
+    "updated_at": "2026-04-21T16:50:09Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/Hunyuan3D-Omni",
+    "html_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-Omni",
+    "stargazers_count": 566,
+    "updated_at": "2026-04-21T15:18:47Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/SRPO",
+    "html_url": "https://github.com/Tencent-Hunyuan/SRPO",
+    "stargazers_count": 1269,
+    "updated_at": "2026-04-21T13:53:06Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HunyuanImage-2.1",
+    "html_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-2.1",
+    "stargazers_count": 676,
+    "updated_at": "2026-04-21T13:06:53Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HunyuanVideo-Avatar",
+    "html_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-Avatar",
+    "stargazers_count": 2086,
+    "updated_at": "2026-04-21T10:16:02Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/Hunyuan3D-1",
+    "html_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-1",
+    "stargazers_count": 3474,
+    "updated_at": "2026-04-20T15:34:43Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HY3D-Bench",
+    "html_url": "https://github.com/Tencent-Hunyuan/HY3D-Bench",
+    "stargazers_count": 294,
+    "updated_at": "2026-04-20T10:03:33Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/DisCa",
+    "html_url": "https://github.com/Tencent-Hunyuan/DisCa",
+    "stargazers_count": 11,
+    "updated_at": "2026-04-17T07:17:49Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent Hunyuan",
+    "full_name": "Tencent-Hunyuan/HunyuanCustom",
+    "html_url": "https://github.com/Tencent-Hunyuan/HunyuanCustom",
+    "stargazers_count": 1216,
+    "updated_at": "2026-04-16T21:52:51Z",
+    "why": "recent update in watched organization `Tencent Hunyuan`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/BrushNet",
+    "html_url": "https://github.com/TencentARC/BrushNet",
+    "stargazers_count": 1727,
+    "updated_at": "2026-04-23T02:08:39Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/RollingForcing",
+    "html_url": "https://github.com/TencentARC/RollingForcing",
+    "stargazers_count": 374,
+    "updated_at": "2026-04-22T21:04:15Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/MotionCrafter",
+    "html_url": "https://github.com/TencentARC/MotionCrafter",
+    "stargazers_count": 155,
+    "updated_at": "2026-04-22T15:27:18Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/CubeComposer",
+    "html_url": "https://github.com/TencentARC/CubeComposer",
+    "stargazers_count": 110,
+    "updated_at": "2026-04-22T11:40:36Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/Track4World",
+    "html_url": "https://github.com/TencentARC/Track4World",
+    "stargazers_count": 214,
+    "updated_at": "2026-04-22T07:37:14Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/T2I-Adapter",
+    "html_url": "https://github.com/TencentARC/T2I-Adapter",
+    "stargazers_count": 3805,
+    "updated_at": "2026-04-22T07:15:22Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/ARC-Chapter",
+    "html_url": "https://github.com/TencentARC/ARC-Chapter",
+    "stargazers_count": 41,
+    "updated_at": "2026-04-21T02:36:40Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/GenCompositor",
+    "html_url": "https://github.com/TencentARC/GenCompositor",
+    "stargazers_count": 154,
+    "updated_at": "2026-04-20T16:45:53Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/BrushEdit",
+    "html_url": "https://github.com/TencentARC/BrushEdit",
+    "stargazers_count": 589,
+    "updated_at": "2026-04-19T15:55:26Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/GeometryCrafter",
+    "html_url": "https://github.com/TencentARC/GeometryCrafter",
+    "stargazers_count": 441,
+    "updated_at": "2026-04-19T14:30:48Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/VerseCrafter",
+    "html_url": "https://github.com/TencentARC/VerseCrafter",
+    "stargazers_count": 356,
+    "updated_at": "2026-04-19T09:23:01Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/DiTCtrl",
+    "html_url": "https://github.com/TencentARC/DiTCtrl",
+    "stargazers_count": 322,
+    "updated_at": "2026-04-18T12:04:55Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/StereoCrafter",
+    "html_url": "https://github.com/TencentARC/StereoCrafter",
+    "stargazers_count": 473,
+    "updated_at": "2026-04-17T23:21:14Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/Mix-of-Show",
+    "html_url": "https://github.com/TencentARC/Mix-of-Show",
+    "stargazers_count": 430,
+    "updated_at": "2026-04-15T14:52:41Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/ArcNerf",
+    "html_url": "https://github.com/TencentARC/ArcNerf",
+    "stargazers_count": 107,
+    "updated_at": "2026-04-13T05:37:47Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Tencent ARC",
+    "full_name": "TencentARC/FreeSplatter",
+    "html_url": "https://github.com/TencentARC/FreeSplatter",
+    "stargazers_count": 237,
+    "updated_at": "2026-04-12T18:47:18Z",
+    "why": "recent update in watched organization `Tencent ARC`"
+  },
+  {
+    "watch_org": "Alibaba Wan",
+    "full_name": "Wan-Video/diffusers",
+    "html_url": "https://github.com/Wan-Video/diffusers",
+    "stargazers_count": 56,
+    "updated_at": "2026-04-15T23:27:53Z",
+    "why": "recent update in watched organization `Alibaba Wan`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/videocomposer",
+    "html_url": "https://github.com/ali-vilab/videocomposer",
+    "stargazers_count": 955,
+    "updated_at": "2026-04-23T02:44:05Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/TeaCache",
+    "html_url": "https://github.com/ali-vilab/TeaCache",
+    "stargazers_count": 1310,
+    "updated_at": "2026-04-22T22:52:32Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/Wan-Move",
+    "html_url": "https://github.com/ali-vilab/Wan-Move",
+    "stargazers_count": 613,
+    "updated_at": "2026-04-22T14:01:45Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/In-Context-LoRA",
+    "html_url": "https://github.com/ali-vilab/In-Context-LoRA",
+    "stargazers_count": 2070,
+    "updated_at": "2026-04-22T11:39:10Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/dreamtalk",
+    "html_url": "https://github.com/ali-vilab/dreamtalk",
+    "stargazers_count": 1794,
+    "updated_at": "2026-04-21T17:39:58Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/ProMoE",
+    "html_url": "https://github.com/ali-vilab/ProMoE",
+    "stargazers_count": 41,
+    "updated_at": "2026-04-20T16:26:34Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/DiffDoctor",
+    "html_url": "https://github.com/ali-vilab/DiffDoctor",
+    "stargazers_count": 44,
+    "updated_at": "2026-04-19T05:56:42Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/Infusion",
+    "html_url": "https://github.com/ali-vilab/Infusion",
+    "stargazers_count": 553,
+    "updated_at": "2026-04-17T13:08:46Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/VGen",
+    "html_url": "https://github.com/ali-vilab/VGen",
+    "stargazers_count": 3156,
+    "updated_at": "2026-04-16T12:56:50Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/SCEdit",
+    "html_url": "https://github.com/ali-vilab/SCEdit",
+    "stargazers_count": 53,
+    "updated_at": "2026-04-14T14:42:01Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "Alibaba VILab",
+    "full_name": "ali-vilab/FreeScale",
+    "html_url": "https://github.com/ali-vilab/FreeScale",
+    "stargazers_count": 150,
+    "updated_at": "2026-04-09T13:36:01Z",
+    "why": "recent update in watched organization `Alibaba VILab`"
+  },
+  {
+    "watch_org": "ByteDance Seed",
+    "full_name": "ByteDance-Seed/SeedVR",
+    "html_url": "https://github.com/ByteDance-Seed/SeedVR",
+    "stargazers_count": 1154,
+    "updated_at": "2026-04-23T03:07:39Z",
+    "why": "recent update in watched organization `ByteDance Seed`"
+  },
+  {
+    "watch_org": "ByteDance Seed",
+    "full_name": "ByteDance-Seed/TraceAnything",
+    "html_url": "https://github.com/ByteDance-Seed/TraceAnything",
+    "stargazers_count": 525,
+    "updated_at": "2026-04-22T11:58:35Z",
+    "why": "recent update in watched organization `ByteDance Seed`"
+  },
+  {
+    "watch_org": "ByteDance Seed",
+    "full_name": "ByteDance-Seed/Stable-DiffCoder",
+    "html_url": "https://github.com/ByteDance-Seed/Stable-DiffCoder",
+    "stargazers_count": 83,
+    "updated_at": "2026-04-21T15:23:26Z",
+    "why": "recent update in watched organization `ByteDance Seed`"
+  },
+  {
+    "watch_org": "Black Forest Labs",
+    "full_name": "black-forest-labs/flux2",
+    "html_url": "https://github.com/black-forest-labs/flux2",
+    "stargazers_count": 2169,
+    "updated_at": "2026-04-23T02:54:01Z",
+    "why": "recent update in watched organization `Black Forest Labs`"
+  },
+  {
+    "watch_org": "Black Forest Labs",
+    "full_name": "black-forest-labs/skills",
+    "html_url": "https://github.com/black-forest-labs/skills",
+    "stargazers_count": 51,
+    "updated_at": "2026-04-21T16:15:46Z",
+    "why": "recent update in watched organization `Black Forest Labs`"
+  },
+  {
+    "watch_org": "Black Forest Labs",
+    "full_name": "black-forest-labs/flux-2-klein-api-demo",
+    "html_url": "https://github.com/black-forest-labs/flux-2-klein-api-demo",
+    "stargazers_count": 2,
+    "updated_at": "2026-04-21T09:46:10Z",
+    "why": "recent update in watched organization `Black Forest Labs`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/stable-virtual-camera",
+    "html_url": "https://github.com/Stability-AI/stable-virtual-camera",
+    "stargazers_count": 1590,
+    "updated_at": "2026-04-23T04:23:58Z",
+    "why": "recent update in watched organization `Stability AI`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/StableStudio",
+    "html_url": "https://github.com/Stability-AI/StableStudio",
+    "stargazers_count": 9041,
+    "updated_at": "2026-04-22T16:37:26Z",
+    "why": "recent update in watched organization `Stability AI`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/stability-ai-toolkit",
+    "html_url": "https://github.com/Stability-AI/stability-ai-toolkit",
+    "stargazers_count": 15,
+    "updated_at": "2026-04-22T16:10:28Z",
+    "why": "recent update in watched organization `Stability AI`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/stable-fast-3d",
+    "html_url": "https://github.com/Stability-AI/stable-fast-3d",
+    "stargazers_count": 1664,
+    "updated_at": "2026-04-22T12:40:38Z",
+    "why": "recent update in watched organization `Stability AI`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/ReLi3D",
+    "html_url": "https://github.com/Stability-AI/ReLi3D",
+    "stargazers_count": 55,
+    "updated_at": "2026-04-22T08:52:23Z",
+    "why": "recent update in watched organization `Stability AI`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/StableSwarmUI",
+    "html_url": "https://github.com/Stability-AI/StableSwarmUI",
+    "stargazers_count": 4926,
+    "updated_at": "2026-04-22T08:03:35Z",
+    "why": "recent update in watched organization `Stability AI`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/stable-point-aware-3d",
+    "html_url": "https://github.com/Stability-AI/stable-point-aware-3d",
+    "stargazers_count": 1023,
+    "updated_at": "2026-04-22T05:35:26Z",
+    "why": "recent update in watched organization `Stability AI`"
+  },
+  {
+    "watch_org": "Stability AI",
+    "full_name": "Stability-AI/stability-sdk",
+    "html_url": "https://github.com/Stability-AI/stability-sdk",
+    "stargazers_count": 2438,
+    "updated_at": "2026-04-16T08:03:28Z",
+    "why": "recent update in watched organization `Stability AI`"
+  }
+]

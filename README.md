@@ -35,8 +35,8 @@
 
 | Report | Report | Report |
 | :-- | :-- | :-- |
-| [2026-06-04](metadata/candidates/2026-06-04/report.md) | [2026-06-03](metadata/candidates/2026-06-03/report.md) | [2026-06-02](metadata/candidates/2026-06-02/report.md) |
-| [2026-06-01](metadata/candidates/2026-06-01/report.md) | [2026-05-31](metadata/candidates/2026-05-31/report.md) | [2026-05-30](metadata/candidates/2026-05-30/report.md) |
+| [2026-06-05](metadata/candidates/2026-06-05/report.md) | [2026-06-04](metadata/candidates/2026-06-04/report.md) | [2026-06-03](metadata/candidates/2026-06-03/report.md) |
+| [2026-06-02](metadata/candidates/2026-06-02/report.md) | [2026-06-01](metadata/candidates/2026-06-01/report.md) | [2026-05-31](metadata/candidates/2026-05-31/report.md) |
 
 ## Model Patterns at a Glance
 

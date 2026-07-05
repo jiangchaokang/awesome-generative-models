@@ -1,0 +1,63 @@
+name: daily-curation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - "data/**"
+      - "docs/**"
+      - "scripts/**"
+      - "metadata/**"
+      - ".github/workflows/daily.yml"
+  schedule:
+    - cron: "25 1 * * *" # Daily at 01:25 UTC
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: awesome-generative-models-daily
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Fetch candidate inbox
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_candidates.py --days 14 --issue
+
+      - name: Validate catalog data (fast, no network)
+        run: python scripts/validate_data.py --skip-network
+
+      - name: Build README and pages
+        run: python scripts/build.py
+
+      - name: Commit generated changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "build: refresh catalog $(date -u +%Y-%m-%d)"
+            git push
+          fi

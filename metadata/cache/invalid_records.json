@@ -1,0 +1,16 @@
+{
+  "records": [
+    {
+      "source_file": "image_2d.jsonl",
+      "lineno": 37
+    },
+    {
+      "source_file": "image_2d.jsonl",
+      "lineno": 53
+    },
+    {
+      "source_file": "video.jsonl",
+      "lineno": 10
+    }
+  ]
+}

@@ -1,17 +1,4 @@
 {
-  "10-image-2d/diffgraph (image_2d.jsonl:60)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.20470"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
   "50-4d-dynamic-scene-world/abot-physworld (world_4d.jsonl:31)": {
     "paper": {
       "ok": true,
@@ -21,19 +8,6 @@
     "paper_semantics": {
       "ok": true,
       "observed_title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "10-image-2d/dak-ucb (image_2d.jsonl:45)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.23140"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models",
       "score": 1.0,
       "source": "arXiv API"
     }
@@ -51,6 +25,19 @@
       "source": "arXiv API"
     }
   },
+  "10-image-2d/dak-ucb (image_2d.jsonl:45)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.23140"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
   "10-image-2d/agentic-flow-steering (image_2d.jsonl:14)": {
     "paper": {
       "ok": true,
@@ -60,6 +47,61 @@
     "paper_semantics": {
       "ok": true,
       "observed_title": "Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "10-image-2d/diffgraph (image_2d.jsonl:60)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.20470"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "50-4d-dynamic-scene-world/vectorworld (world_4d.jsonl:2)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.17652"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs",
+      "score": 1.0,
+      "source": "arXiv API"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/jiangchaokang/VectorWorld",
+      "full_name": "jiangchaokang/VectorWorld",
+      "stars": 31,
+      "pushed_at": "2026-06-23T10:34:22Z",
+      "archived": false,
+      "license": "",
+      "description": "VectorWorld's official open-source code, which is continuously being updated.",
+      "homepage": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.422
+    }
+  },
+  "30-3d-object-asset/dreampartgen (object_3d.jsonl:47)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.19216"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising",
       "score": 1.0,
       "source": "arXiv API"
     }
@@ -85,35 +127,6 @@
       "ok": true,
       "observed_title": "DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer",
       "score": 1.0
-    }
-  },
-  "50-4d-dynamic-scene-world/vectorworld (world_4d.jsonl:2)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.17652"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs",
-      "score": 1.0,
-      "source": "arXiv API"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/jiangchaokang/VectorWorld",
-      "full_name": "jiangchaokang/VectorWorld",
-      "stars": 28,
-      "pushed_at": "2026-06-23T10:34:22Z",
-      "archived": false,
-      "license": "",
-      "description": "VectorWorld's official open-source code, which is continuously being updated.",
-      "homepage": ""
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 0.422
     }
   },
   "30-3d-object-asset/assetformer (object_3d.jsonl:21)": {
@@ -145,32 +158,6 @@
       "score": 1.0
     }
   },
-  "20-video/faster-inference-flow-based-generative-models (video.jsonl:20)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.15279"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "30-3d-object-asset/dreampartgen (object_3d.jsonl:47)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.19216"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
   "10-image-2d/dtvi (image_2d.jsonl:24)": {
     "paper": {
       "ok": true,
@@ -184,6 +171,19 @@
       "source": "arXiv API"
     }
   },
+  "20-video/faster-inference-flow-based-generative-models (video.jsonl:20)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.15279"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
   "40-3d-scene/flowscene (scene_3d.jsonl:19)": {
     "paper": {
       "ok": true,
@@ -193,32 +193,6 @@
     "paper_semantics": {
       "ok": true,
       "observed_title": "FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "10-image-2d/drifting (image_2d.jsonl:41)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.04770"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "Generative Modeling via Drifting",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "20-video/foveated-diffusion (video.jsonl:22)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.23491"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation",
       "score": 1.0,
       "source": "arXiv API"
     }
@@ -240,8 +214,8 @@
       "status": 200,
       "final_url": "https://github.com/liulin815/DriveWorld-VLA",
       "full_name": "liulin815/DriveWorld-VLA",
-      "stars": 106,
-      "pushed_at": "2026-06-10T11:22:57Z",
+      "stars": 107,
+      "pushed_at": "2026-07-08T09:44:43Z",
       "archived": false,
       "license": "",
       "description": "Offical repository of DriveWorld-VLA",
@@ -250,6 +224,55 @@
     "repo_semantics": {
       "ok": true,
       "score": 0.382
+    }
+  },
+  "20-video/foveated-diffusion (video.jsonl:22)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.23491"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "10-image-2d/drifting (image_2d.jsonl:41)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.04770"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "Generative Modeling via Drifting",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "30-3d-object-asset/fuse3d (object_3d.jsonl:22)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2602.17040"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion",
+      "score": 1.0,
+      "source": "arXiv API"
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://jinnmnm.github.io/Fuse3d.github.io/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "observed_title": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion",
+      "score": 1.0
     }
   },
   "50-4d-dynamic-scene-world/dynflowdrive (world_4d.jsonl:13)": {
@@ -294,51 +317,15 @@
       "source": "arXiv API"
     }
   },
-  "30-3d-object-asset/fuse3d (object_3d.jsonl:22)": {
+  "10-image-2d/lade (image_2d.jsonl:65)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.17040"
+      "final_url": "https://arxiv.org/abs/2603.17965"
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion",
-      "score": 1.0,
-      "source": "arXiv API"
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://jinnmnm.github.io/Fuse3d.github.io/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion",
-      "score": 1.0
-    }
-  },
-  "20-video/minute-long-videos-dual-parallelisms (video.jsonl:55)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2505.21070"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "Minute-Long Videos with Dual Parallelisms",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "40-3d-scene/oneworld (scene_3d.jsonl:40)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.16099"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder",
+      "observed_title": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition",
       "score": 1.0,
       "source": "arXiv API"
     }
@@ -365,32 +352,6 @@
     "paper_semantics": {
       "ok": true,
       "observed_title": "MS-CustomNet: Controllable Multi-Subject Customization with Hierarchical Relational Semantics",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "20-video/lumosx (video.jsonl:21)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.20192"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "10-image-2d/lade (image_2d.jsonl:65)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.17965"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition",
       "score": 1.0,
       "source": "arXiv API"
     }
@@ -424,37 +385,17 @@
       "score": 0.415
     }
   },
-  "10-image-2d/relevance-feedback-t2i (image_2d.jsonl:15)": {
+  "20-video/lumosx (video.jsonl:21)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.14936"
+      "final_url": "https://arxiv.org/abs/2603.20192"
     },
     "paper_semantics": {
       "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "10-image-2d/rpiae (image_2d.jsonl:44)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.19206"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "10-image-2d/premier (image_2d.jsonl:30)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.20725"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
+      "observed_title": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation",
+      "score": 1.0,
+      "source": "arXiv API"
     }
   },
   "20-video/p-flow (video.jsonl:40)": {
@@ -465,7 +406,35 @@
     },
     "paper_semantics": {
       "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
+      "observed_title": "P-Flow: Prompting Visual Effects Generation",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "20-video/minute-long-videos-dual-parallelisms (video.jsonl:55)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2505.21070"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "Minute-Long Videos with Dual Parallelisms",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "40-3d-scene/oneworld (scene_3d.jsonl:40)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.16099"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder",
+      "score": 1.0,
+      "source": "arXiv API"
     }
   },
   "10-image-2d/personalq (image_2d.jsonl:28)": {
@@ -473,6 +442,19 @@
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2603.22943"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "PersonalQ: Select, Quantize, and Serve Personalized Diffusion Models for Efficient Inference",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "10-image-2d/premier (image_2d.jsonl:30)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.20725"
     },
     "paper_semantics": {
       "ok": true,
@@ -501,6 +483,52 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
+  "40-3d-scene/spatialgen (scene_3d.jsonl:18)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2509.14981"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "SPATIALGEN: Layout-guided 3D Indoor Scene Generation",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "10-image-2d/spatialreward (image_2d.jsonl:13)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.22228"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/rpiae (image_2d.jsonl:44)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.19206"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/relevance-feedback-t2i (image_2d.jsonl:15)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.14936"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
   "10-image-2d/sharp (image_2d.jsonl:61)": {
     "paper": {
       "ok": true,
@@ -523,28 +551,6 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "40-3d-scene/spatialgen (scene_3d.jsonl:18)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2509.14981"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "10-image-2d/spatialreward (image_2d.jsonl:13)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.22228"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
   "20-video/spectrally-guided-diffusion-noise-schedules (video.jsonl:19)": {
     "paper": {
       "ok": true,
@@ -556,33 +562,11 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "30-3d-object-asset/text-image-conditioned-3d-generation (object_3d.jsonl:23)": {
+  "50-4d-dynamic-scene-world/unidwm (world_4d.jsonl:10)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.21295"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "10-image-2d/tmpdiff (image_2d.jsonl:42)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.14062"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "20-video/vifeedit (video.jsonl:41)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.15478"
+      "final_url": "https://arxiv.org/abs/2602.01536"
     },
     "paper_semantics": {
       "ok": true,
@@ -600,11 +584,22 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "40-3d-scene/worldmesh (scene_3d.jsonl:39)": {
+  "20-video/vifeedit (video.jsonl:41)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2603.22972"
+      "final_url": "https://arxiv.org/abs/2603.15478"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "30-3d-object-asset/text-image-conditioned-3d-generation (object_3d.jsonl:23)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.21295"
     },
     "paper_semantics": {
       "ok": true,
@@ -622,11 +617,22 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "50-4d-dynamic-scene-world/unidwm (world_4d.jsonl:10)": {
+  "40-3d-scene/worldmesh (scene_3d.jsonl:39)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2602.01536"
+      "final_url": "https://arxiv.org/abs/2603.22972"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/tmpdiff (image_2d.jsonl:42)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.14062"
     },
     "paper_semantics": {
       "ok": true,
@@ -666,19 +672,6 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "50-4d-dynamic-scene-world/adaworld (world_4d.jsonl:17)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.18938"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "AdaWorld: Learning Adaptable World Models with Latent Actions",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
   "20-video/animate-anyone-2 (video.jsonl:47)": {
     "paper": {
       "ok": true,
@@ -701,11 +694,11 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "20-video/blobgen-vid (video.jsonl:9)": {
+  "50-4d-dynamic-scene-world/adaworld (world_4d.jsonl:17)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2501.07647"
+      "final_url": "https://arxiv.org/abs/2503.18938"
     },
     "paper_semantics": {
       "ok": true,
@@ -717,6 +710,17 @@
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2505.24877"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "20-video/blobgen-vid (video.jsonl:9)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2501.07647"
     },
     "paper_semantics": {
       "ok": true,
@@ -744,17 +748,6 @@
       "score": 1.0
     }
   },
-  "40-3d-scene/bolt3d (scene_3d.jsonl:33)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.14445"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
   "30-3d-object-asset/assembler (object_3d.jsonl:39)": {
     "paper": {
       "ok": true,
@@ -774,6 +767,17 @@
       "ok": true,
       "observed_title": "Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion",
       "score": 1.0
+    }
+  },
+  "40-3d-scene/bolt3d (scene_3d.jsonl:33)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.14445"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "40-3d-scene/causalstruct (scene_3d.jsonl:22)": {
@@ -796,27 +800,6 @@
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "20-video/anyi2v (video.jsonl:28)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2507.02857"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://henghuiding.com/AnyI2V/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "AnyI2V: Animating Any Conditional Image with Motion Control",
-      "score": 1.0
     }
   },
   "20-video/cogen (video.jsonl:62)": {
@@ -848,55 +831,9 @@
     },
     "paper_semantics": {
       "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "40-3d-scene/directlayout (scene_3d.jsonl:14)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2506.05341"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "20-video/consistid (video.jsonl:4)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2411.17440"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/PKU-YuanGroup/ConsisID",
-      "full_name": "PKU-YuanGroup/ConsisID",
-      "stars": 845,
-      "pushed_at": "2026-04-14T03:25:24Z",
-      "archived": false,
-      "license": "Apache-2.0",
-      "description": "[CVPR 2025 Highlight🔥] Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
-      "homepage": "https://pku-yuangroup.github.io/ConsisID/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://pku-yuangroup.github.io/ConsisID/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "ConsisID: Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
-      "score": 1.0
+      "observed_title": "Diffusion Models Are Real-Time Game Engines",
+      "score": 1.0,
+      "source": "arXiv API"
     }
   },
   "10-image-2d/d-ar (image_2d.jsonl:58)": {
@@ -926,6 +863,17 @@
       "score": 1.0
     }
   },
+  "40-3d-scene/directlayout (scene_3d.jsonl:14)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2506.05341"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
   "20-video/cogvideox (video.jsonl:16)": {
     "paper": {
       "ok": true,
@@ -941,7 +889,7 @@
       "status": 200,
       "final_url": "https://github.com/THUDM/CogVideo",
       "full_name": "zai-org/CogVideo",
-      "stars": 12849,
+      "stars": 12864,
       "pushed_at": "2025-11-04T11:19:04Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -951,6 +899,114 @@
     "repo_semantics": {
       "ok": true,
       "score": 0.5
+    }
+  },
+  "20-video/consistid (video.jsonl:4)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2411.17440"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/PKU-YuanGroup/ConsisID",
+      "full_name": "PKU-YuanGroup/ConsisID",
+      "stars": 847,
+      "pushed_at": "2026-04-14T03:25:24Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "[CVPR 2025 Highlight🔥] Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
+      "homepage": "https://pku-yuangroup.github.io/ConsisID/"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pku-yuangroup.github.io/ConsisID/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "observed_title": "ConsisID: Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
+      "score": 1.0
+    }
+  },
+  "20-video/anyi2v (video.jsonl:28)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2507.02857"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://henghuiding.com/AnyI2V/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "observed_title": "AnyI2V: Animating Any Conditional Image with Motion Control",
+      "score": 1.0
+    }
+  },
+  "10-image-2d/denoising-autoregressive-transformers (image_2d.jsonl:53)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DamDkNPVWcn"
+    },
+    "paper_semantics": {
+      "ok": false,
+      "observed_title": "Verifying your browser | OpenReview",
+      "score": 0.204,
+      "source": "HTML title",
+      "error": "paper title mismatch: expected `Denoising Autoregressive Transformers for Scalable Text-to-Image Generation` but resolved title is `Verifying your browser | OpenReview` (score=0.20)."
+    }
+  },
+  "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2501.03575"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/NVIDIA/Cosmos",
+      "full_name": "NVIDIA/cosmos",
+      "stars": 11008,
+      "pushed_at": "2026-07-10T06:37:22Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+      "homepage": "https://www.nvidia.com/en-us/ai/cosmos/"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.8
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nvidia.com/en-us/ai/cosmos/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "warning": "homepage title weakly matches record title: `NVIDIA Cosmos` (score=0.50); if this is a suite root / product root page, prefer leaving `homepage` empty."
     }
   },
   "40-3d-scene/disco-layout (scene_3d.jsonl:17)": {
@@ -986,18 +1042,15 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "10-image-2d/denoising-autoregressive-transformers (image_2d.jsonl:53)": {
+  "30-3d-object-asset/eagle (object_3d.jsonl:18)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DamDkNPVWcn"
+      "final_url": "https://arxiv.org/abs/2503.13479"
     },
     "paper_semantics": {
-      "ok": false,
-      "observed_title": "Verifying your browser | OpenReview",
-      "score": 0.204,
-      "source": "HTML title",
-      "error": "paper title mismatch: expected `Denoising Autoregressive Transformers for Scalable Text-to-Image Generation` but resolved title is `Verifying your browser | OpenReview` (score=0.20)."
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "20-video/dreamactor-m1 (video.jsonl:46)": {
@@ -1042,39 +1095,6 @@
       "score": 1.0
     }
   },
-  "20-video/egocontrol (video.jsonl:50)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2511.18173"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "30-3d-object-asset/eagle (object_3d.jsonl:18)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.13479"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "20-video/eidt-v (video.jsonl:5)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2504.06861"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
   "50-4d-dynamic-scene-world/dynamiccity (world_4d.jsonl:6)": {
     "paper": {
       "ok": true,
@@ -1094,6 +1114,28 @@
       "ok": true,
       "observed_title": "DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes",
       "score": 1.0
+    }
+  },
+  "20-video/egocontrol (video.jsonl:50)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2511.18173"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "20-video/eidt-v (video.jsonl:5)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2504.06861"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "40-3d-scene/flashworld (scene_3d.jsonl:29)": {
@@ -1129,6 +1171,28 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
+  "30-3d-object-asset/from-one-to-more (object_3d.jsonl:38)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2507.08772"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "30-3d-object-asset/fullpart (object_3d.jsonl:37)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2510.26140"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
   "50-4d-dynamic-scene-world/epona (world_4d.jsonl:5)": {
     "paper": {
       "ok": true,
@@ -1144,7 +1208,7 @@
       "status": 200,
       "final_url": "https://github.com/Kevin-thu/Epona",
       "full_name": "Kevin-thu/Epona",
-      "stars": 366,
+      "stars": 367,
       "pushed_at": "2025-07-22T06:35:46Z",
       "archived": false,
       "license": "MIT",
@@ -1156,50 +1220,6 @@
       "score": 1.0
     }
   },
-  "30-3d-object-asset/fullpart (object_3d.jsonl:37)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2510.26140"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "30-3d-object-asset/from-one-to-more (object_3d.jsonl:38)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2507.08772"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "50-4d-dynamic-scene-world/gamegen-x (world_4d.jsonl:25)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2411.00769"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "50-4d-dynamic-scene-world/gamefactory (world_4d.jsonl:27)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2501.08325"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
   "30-3d-object-asset/era3d (object_3d.jsonl:33)": {
     "paper": {
       "ok": true,
@@ -1208,7 +1228,9 @@
     },
     "paper_semantics": {
       "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
+      "observed_title": "Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention",
+      "score": 1.0,
+      "source": "arXiv API"
     },
     "repo": {
       "ok": true,
@@ -1225,6 +1247,28 @@
     "repo_semantics": {
       "ok": true,
       "score": 1.0
+    }
+  },
+  "50-4d-dynamic-scene-world/gamefactory (world_4d.jsonl:27)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2501.08325"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "50-4d-dynamic-scene-world/gamegen-x (world_4d.jsonl:25)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2411.00769"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "10-image-2d/flux (image_2d.jsonl:49)": {
@@ -1244,7 +1288,7 @@
       "status": 200,
       "final_url": "https://github.com/black-forest-labs/flux",
       "full_name": "black-forest-labs/flux",
-      "stars": 25695,
+      "stars": 25717,
       "pushed_at": "2025-07-31T13:58:55Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -1256,22 +1300,24 @@
       "score": 0.25
     }
   },
-  "50-4d-dynamic-scene-world/gem (world_4d.jsonl:9)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2412.11198"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
   "10-image-2d/generative-photography (image_2d.jsonl:5)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2412.02168"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis",
+      "score": 1.0,
+      "source": "arXiv API"
+    }
+  },
+  "50-4d-dynamic-scene-world/gem (world_4d.jsonl:9)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2412.11198"
     },
     "paper_semantics": {
       "ok": true,
@@ -1289,22 +1335,22 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "40-3d-scene/hs-openvocab-indoor-scene (scene_3d.jsonl:9)": {
+  "40-3d-scene/hlg (scene_3d.jsonl:15)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2502.10675"
+      "final_url": "https://arxiv.org/abs/2508.17832"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "40-3d-scene/hlg (scene_3d.jsonl:15)": {
+  "40-3d-scene/hs-openvocab-indoor-scene (scene_3d.jsonl:9)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2508.17832"
+      "final_url": "https://arxiv.org/abs/2502.10675"
     },
     "paper_semantics": {
       "ok": true,
@@ -1320,6 +1366,24 @@
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "30-3d-object-asset/hunyuan3d-2.1 (object_3d.jsonl:27)": {
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
+      "full_name": "Tencent-Hunyuan/Hunyuan3D-2.1",
+      "stars": 3683,
+      "pushed_at": "2025-10-17T10:10:07Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "description": "From Images to High-Fidelity 3D Assets with Production-Ready PBR Material",
+      "homepage": "https://3d.hunyuan.tencent.com/"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "20-video/h-edit (video.jsonl:38)": {
@@ -1364,7 +1428,7 @@
       "status": 200,
       "final_url": "https://github.com/LMD0311/HERMES",
       "full_name": "LMD0311/HERMES",
-      "stars": 256,
+      "stars": 258,
       "pushed_at": "2026-05-12T03:05:38Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -1391,7 +1455,7 @@
       "status": 200,
       "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
       "full_name": "Tencent-Hunyuan/Hunyuan3D-2",
-      "stars": 14092,
+      "stars": 14256,
       "pushed_at": "2025-10-28T09:58:12Z",
       "archived": false,
       "license": "NOASSERTION",
@@ -1403,18 +1467,18 @@
       "score": 0.75
     }
   },
-  "30-3d-object-asset/hunyuan3d-2.1 (object_3d.jsonl:27)": {
+  "20-video/hunyuanvideo-i2v (video.jsonl:12)": {
     "repo": {
       "ok": true,
       "status": 200,
-      "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
-      "full_name": "Tencent-Hunyuan/Hunyuan3D-2.1",
-      "stars": 3652,
-      "pushed_at": "2025-10-17T10:10:07Z",
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V",
+      "full_name": "Tencent-Hunyuan/HunyuanVideo-I2V",
+      "stars": 1831,
+      "pushed_at": "2026-04-07T06:13:09Z",
       "archived": false,
       "license": "NOASSERTION",
-      "description": "From Images to High-Fidelity 3D Assets with Production-Ready PBR Material",
-      "homepage": "https://3d.hunyuan.tencent.com/"
+      "description": "HunyuanVideo-I2V: A Customizable Image-to-Video Model based on HunyuanVideo",
+      "homepage": "https://video.hunyuan.tencent.com/"
     },
     "repo_semantics": {
       "ok": true,
@@ -1429,16 +1493,14 @@
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "HunyuanImage 3.0 Technical Report",
-      "score": 1.0,
-      "source": "arXiv API"
+      "warning": "unable to extract paper title for semantic verification."
     },
     "repo": {
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
       "full_name": "Tencent-Hunyuan/HunyuanImage-3.0",
-      "stars": 3168,
+      "stars": 3179,
       "pushed_at": "2026-06-23T13:12:44Z",
       "archived": false,
       "license": "NOASSERTION",
@@ -1448,35 +1510,6 @@
     "repo_semantics": {
       "ok": true,
       "score": 1.0
-    }
-  },
-  "20-video/hunyuanvideo-i2v (video.jsonl:12)": {
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V",
-      "full_name": "Tencent-Hunyuan/HunyuanVideo-I2V",
-      "stars": 1832,
-      "pushed_at": "2026-04-07T06:13:09Z",
-      "archived": false,
-      "license": "NOASSERTION",
-      "description": "HunyuanVideo-I2V: A Customizable Image-to-Video Model based on HunyuanVideo",
-      "homepage": "https://video.hunyuan.tencent.com/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
-    }
-  },
-  "10-image-2d/improved-meanflow (image_2d.jsonl:40)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2512.02012"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "20-video/hunyuanvideo-1.5 (video.jsonl:13)": {
@@ -1494,7 +1527,7 @@
       "status": 200,
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
       "full_name": "Tencent-Hunyuan/HunyuanVideo-1.5",
-      "stars": 4510,
+      "stars": 4517,
       "pushed_at": "2026-04-10T06:14:59Z",
       "archived": false,
       "license": "NOASSERTION",
@@ -1506,6 +1539,17 @@
       "score": 1.0
     }
   },
+  "10-image-2d/improved-meanflow (image_2d.jsonl:40)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2512.02012"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
   "20-video/hunyuanvideo (video.jsonl:11)": {
     "paper": {
       "ok": true,
@@ -1514,16 +1558,14 @@
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "HunyuanVideo: A Systematic Framework For Large Video Generative Models",
-      "score": 0.971,
-      "source": "arXiv API"
+      "warning": "unable to extract paper title for semantic verification."
     },
     "repo": {
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
       "full_name": "Tencent-Hunyuan/HunyuanVideo",
-      "stars": 12293,
+      "stars": 12333,
       "pushed_at": "2026-06-29T09:33:50Z",
       "archived": false,
       "license": "NOASSERTION",
@@ -1533,6 +1575,17 @@
     "repo_semantics": {
       "ok": true,
       "score": 1.0
+    }
+  },
+  "20-video/instancecap (video.jsonl:8)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2412.09283"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "50-4d-dynamic-scene-world/hunyuanworld-1.0 (world_4d.jsonl:12)": {
@@ -1550,7 +1603,7 @@
       "status": 200,
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0",
       "full_name": "Tencent-Hunyuan/HunyuanWorld-1.0",
-      "stars": 2868,
+      "stars": 2870,
       "pushed_at": "2026-04-15T17:27:25Z",
       "archived": false,
       "license": "NOASSERTION",
@@ -1560,17 +1613,6 @@
     "repo_semantics": {
       "ok": true,
       "score": 1.0
-    }
-  },
-  "20-video/instancecap (video.jsonl:8)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2412.09283"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "10-image-2d/improving-long-text-alignment (image_2d.jsonl:21)": {
@@ -1598,44 +1640,6 @@
     "repo_semantics": {
       "ok": true,
       "score": 1.0
-    }
-  },
-  "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2501.03575"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "Cosmos World Foundation Model Platform for Physical AI",
-      "score": 1.0,
-      "source": "arXiv API"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/NVIDIA/Cosmos",
-      "full_name": "NVIDIA/cosmos",
-      "stars": 10893,
-      "pushed_at": "2026-07-03T01:12:55Z",
-      "archived": false,
-      "license": "NOASSERTION",
-      "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
-      "homepage": "https://www.nvidia.com/en-us/ai/cosmos/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 0.8
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://www.nvidia.com/en-us/ai/cosmos/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "warning": "homepage title weakly matches record title: `NVIDIA Cosmos` (score=0.50); if this is a suite root / product root page, prefer leaving `homepage` empty."
     }
   },
   "10-image-2d/information-theoretic-t2i-alignment (image_2d.jsonl:22)": {
@@ -1676,44 +1680,6 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "30-3d-object-asset/lattice-3d (object_3d.jsonl:5)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2512.03052"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "30-3d-object-asset/infinite-mobility (object_3d.jsonl:44)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.13424"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Intern-Nexus/Infinite-Mobility",
-      "full_name": "InternRobotics/Infinite-Mobility",
-      "stars": 194,
-      "pushed_at": "2025-07-25T03:18:07Z",
-      "archived": false,
-      "license": "BSD-3-Clause",
-      "description": "",
-      "homepage": ""
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
-    }
-  },
   "30-3d-object-asset/instantmesh (object_3d.jsonl:31)": {
     "paper": {
       "ok": true,
@@ -1722,16 +1688,14 @@
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models",
-      "score": 1.0,
-      "source": "arXiv API"
+      "warning": "unable to extract paper title for semantic verification."
     },
     "repo": {
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/TencentARC/InstantMesh",
       "full_name": "TencentARC/InstantMesh",
-      "stars": 4445,
+      "stars": 4452,
       "pushed_at": "2025-01-03T09:09:13Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -1741,6 +1705,19 @@
     "repo_semantics": {
       "ok": true,
       "score": 1.0
+    }
+  },
+  "30-3d-object-asset/lattice-3d (object_3d.jsonl:5)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2512.03052"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "LATTICE: Democratize High-Fidelity 3D Generation at Scale",
+      "score": 1.0,
+      "source": "arXiv API"
     }
   },
   "30-3d-object-asset/its3d (object_3d.jsonl:36)": {
@@ -1770,6 +1747,33 @@
       "score": 1.0
     }
   },
+  "30-3d-object-asset/infinite-mobility (object_3d.jsonl:44)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.13424"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Intern-Nexus/Infinite-Mobility",
+      "full_name": "InternRobotics/Infinite-Mobility",
+      "stars": 194,
+      "pushed_at": "2025-07-25T03:18:07Z",
+      "archived": false,
+      "license": "BSD-3-Clause",
+      "description": "",
+      "homepage": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
+    }
+  },
   "40-3d-scene/latticeworld (scene_3d.jsonl:4)": {
     "paper": {
       "ok": true,
@@ -1790,44 +1794,6 @@
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2512.14614"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling",
-      "score": 0.8,
-      "source": "arXiv API"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
-      "full_name": "Tencent-Hunyuan/HY-WorldPlay",
-      "stars": 1541,
-      "pushed_at": "2026-06-10T07:10:23Z",
-      "archived": false,
-      "license": "NOASSERTION",
-      "description": "HY-World 1.5: A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency",
-      "homepage": "https://3d-models.hunyuan.tencent.com/world/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://3d-models.hunyuan.tencent.com/world/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "warning": "homepage title weakly matches record title: `腾讯混元3D` (score=0.02); if this is a suite root / product root page, prefer leaving `homepage` empty."
     }
   },
   "40-3d-scene/lt3sd (scene_3d.jsonl:23)": {
@@ -1884,64 +1850,42 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "30-3d-object-asset/meshart (object_3d.jsonl:40)": {
+  "10-image-2d/meissonic (image_2d.jsonl:51)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2412.11596"
+      "final_url": "https://arxiv.org/abs/2410.08261"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "40-3d-scene/mesatask (scene_3d.jsonl:16)": {
+  "50-4d-dynamic-scene-world/matrix-game (world_4d.jsonl:28)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2509.22281"
+      "final_url": "https://arxiv.org/abs/2506.18701"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://mesatask.github.io/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "warning": "homepage title weakly matches record title: `SOCIAL MEDIA TITLE TAG` (score=0.22); if this is a suite root / product root page, prefer leaving `homepage` empty."
-    }
-  },
-  "10-image-2d/meanflow (image_2d.jsonl:39)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2505.13447"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "Mean Flows for One-step Generative Modeling",
-      "score": 1.0,
-      "source": "arXiv API"
     },
     "repo": {
       "ok": true,
       "status": 200,
-      "final_url": "https://github.com/Gsunshine/meanflow",
-      "full_name": "Gsunshine/meanflow",
-      "stars": 596,
-      "pushed_at": "2026-03-13T05:29:12Z",
+      "final_url": "https://github.com/SkyworkAI/Matrix-Game",
+      "full_name": "SkyworkAI/Matrix-Game",
+      "stars": 2251,
+      "pushed_at": "2026-03-30T06:32:00Z",
       "archived": false,
       "license": "MIT",
-      "description": "JAX implementation of MeanFlow",
-      "homepage": "https://arxiv.org/abs/2505.13447"
+      "description": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
+      "homepage": "https://matrix-game-v3.github.io/"
     },
     "repo_semantics": {
       "ok": true,
-      "score": 0.463
+      "score": 0.8
     }
   },
   "20-video/magicdrive-v2 (video.jsonl:61)": {
@@ -1979,6 +1923,69 @@
       "ok": true
     }
   },
+  "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2512.14614"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
+      "full_name": "Tencent-Hunyuan/HY-WorldPlay",
+      "stars": 1543,
+      "pushed_at": "2026-06-10T07:10:23Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "description": "HY-World 1.5: A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency",
+      "homepage": "https://3d-models.hunyuan.tencent.com/world/"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://3d-models.hunyuan.tencent.com/world/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "warning": "homepage title weakly matches record title: `腾讯混元3D` (score=0.02); if this is a suite root / product root page, prefer leaving `homepage` empty."
+    }
+  },
+  "10-image-2d/meanflow (image_2d.jsonl:39)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2505.13447"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Gsunshine/meanflow",
+      "full_name": "Gsunshine/meanflow",
+      "stars": 598,
+      "pushed_at": "2026-03-13T05:29:12Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "JAX implementation of MeanFlow",
+      "homepage": "https://arxiv.org/abs/2505.13447"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.463
+    }
+  },
   "40-3d-scene/mess (scene_3d.jsonl:35)": {
     "paper": {
       "ok": true,
@@ -1990,42 +1997,35 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "50-4d-dynamic-scene-world/matrix-game (world_4d.jsonl:28)": {
+  "30-3d-object-asset/meshart (object_3d.jsonl:40)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2506.18701"
+      "final_url": "https://arxiv.org/abs/2412.11596"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/SkyworkAI/Matrix-Game",
-      "full_name": "SkyworkAI/Matrix-Game",
-      "stars": 2247,
-      "pushed_at": "2026-03-30T06:32:00Z",
-      "archived": false,
-      "license": "MIT",
-      "description": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
-      "homepage": "https://matrix-game-v3.github.io/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 0.8
     }
   },
-  "10-image-2d/meissonic (image_2d.jsonl:51)": {
+  "40-3d-scene/mesatask (scene_3d.jsonl:16)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2410.08261"
+      "final_url": "https://arxiv.org/abs/2509.22281"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://mesatask.github.io/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "warning": "homepage title weakly matches record title: `SOCIAL MEDIA TITLE TAG` (score=0.22); if this is a suite root / product root page, prefer leaving `homepage` empty."
     }
   },
   "20-video/motionstone (video.jsonl:25)": {
@@ -2044,6 +2044,17 @@
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2502.12456"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "40-3d-scene/nuiscene (scene_3d.jsonl:26)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.16375"
     },
     "paper_semantics": {
       "ok": true,
@@ -2079,19 +2090,6 @@
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation",
-      "score": 1.0,
-      "source": "arXiv API"
-    }
-  },
-  "40-3d-scene/nuiscene (scene_3d.jsonl:26)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.16375"
-    },
-    "paper_semantics": {
-      "ok": true,
       "warning": "unable to extract paper title for semantic verification."
     }
   },
@@ -2106,25 +2104,45 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "20-video/omnihuman-1 (video.jsonl:48)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2502.01061"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models",
-      "score": 1.0,
-      "source": "arXiv API"
-    },
+  "20-video/kling (video.jsonl:17)": {
     "homepage": {
       "ok": true,
       "status": 200,
-      "final_url": "https://omnihuman-lab.github.io/"
+      "final_url": "https://kling.ai/"
     },
     "homepage_semantics": {
-      "ok": true
+      "ok": true,
+      "observed_title": "Kling AI: Next-Gen AI Video & AI Image Generator",
+      "score": 0.621
+    }
+  },
+  "10-image-2d/one-prompt-one-story (image_2d.jsonl:54)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2501.13554"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt",
+      "score": 1.0,
+      "source": "arXiv API"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/byliutao/1Prompt1Story",
+      "full_name": "byliutao/1Prompt1Story",
+      "stars": 318,
+      "pushed_at": "2025-10-20T04:52:19Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "🔥ICLR 2025 (Spotlight) One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt",
+      "homepage": "https://byliutao.github.io/1Prompt1Story.github.io/"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "10-image-2d/noise-diffusion (image_2d.jsonl:20)": {
@@ -2181,15 +2199,23 @@
       "score": 1.0
     }
   },
-  "10-image-2d/one-way-ticket (image_2d.jsonl:33)": {
+  "20-video/omnihuman-1 (video.jsonl:48)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2505.21960"
+      "final_url": "https://arxiv.org/abs/2502.01061"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://omnihuman-lab.github.io/"
+    },
+    "homepage_semantics": {
+      "ok": true
     }
   },
   "10-image-2d/para (image_2d.jsonl:27)": {
@@ -2197,6 +2223,17 @@
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2406.05641"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/one-way-ticket (image_2d.jsonl:33)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2505.21960"
     },
     "paper_semantics": {
       "ok": true,
@@ -2214,6 +2251,17 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
+  "10-image-2d/progressive-compositionality (image_2d.jsonl:11)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2410.16719"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
   "10-image-2d/dual-space-concept-control (image_2d.jsonl:19)": {
     "paper": {
       "ok": true,
@@ -2225,42 +2273,25 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "10-image-2d/one-prompt-one-story (image_2d.jsonl:54)": {
+  "30-3d-object-asset/primitiveanything (object_3d.jsonl:41)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2501.13554"
+      "final_url": "https://arxiv.org/abs/2505.04622"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
     },
-    "repo": {
+    "homepage": {
       "ok": true,
       "status": 200,
-      "final_url": "https://github.com/byliutao/1Prompt1Story",
-      "full_name": "byliutao/1Prompt1Story",
-      "stars": 318,
-      "pushed_at": "2025-10-20T04:52:19Z",
-      "archived": false,
-      "license": "MIT",
-      "description": "🔥ICLR 2025 (Spotlight) One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt",
-      "homepage": "https://byliutao.github.io/1Prompt1Story.github.io/"
+      "final_url": "https://primitiveanything.github.io"
     },
-    "repo_semantics": {
+    "homepage_semantics": {
       "ok": true,
+      "observed_title": "PrimitiveAnything",
       "score": 1.0
-    }
-  },
-  "10-image-2d/progressive-compositionality (image_2d.jsonl:11)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2410.16719"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "10-image-2d/pixart-sigma (image_2d.jsonl:50)": {
@@ -2278,7 +2309,7 @@
       "status": 200,
       "final_url": "https://github.com/PixArt-alpha/PixArt-sigma",
       "full_name": "PixArt-alpha/PixArt-sigma",
-      "stars": 1928,
+      "stars": 1929,
       "pushed_at": "2024-10-31T01:20:19Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -2317,27 +2348,6 @@
       "score": 1.0
     }
   },
-  "30-3d-object-asset/primitiveanything (object_3d.jsonl:41)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2505.04622"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://primitiveanything.github.io"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "PrimitiveAnything",
-      "score": 1.0
-    }
-  },
   "40-3d-scene/prometheus (scene_3d.jsonl:25)": {
     "paper": {
       "ok": true,
@@ -2359,58 +2369,15 @@
       "score": 1.0
     }
   },
-  "10-image-2d/pt-t2iv (image_2d.jsonl:37)": {
+  "20-video/rapo (video.jsonl:2)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DlTrrnNdkOX"
-    },
-    "paper_semantics": {
-      "ok": false,
-      "observed_title": "Verifying your browser | OpenReview",
-      "score": 0.231,
-      "source": "HTML title",
-      "error": "paper title mismatch: expected `PT-T2I/V: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Image/Video-Task` but resolved title is `Verifying your browser | OpenReview` (score=0.23)."
-    }
-  },
-  "20-video/kling (video.jsonl:17)": {
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://kling.ai/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "warning": "homepage title weakly matches record title: `Kling AI: Next-Generation AI Creative Studio` (score=0.59); if this is a suite root / product root page, prefer leaving `homepage` empty."
-    }
-  },
-  "10-image-2d/qwen-image (image_2d.jsonl:62)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2508.02324"
+      "final_url": "https://arxiv.org/abs/2504.11739"
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "Qwen-Image Technical Report",
-      "score": 1.0,
-      "source": "arXiv API"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/QwenLM/Qwen-Image",
-      "full_name": "QwenLM/Qwen-Image",
-      "stars": 8086,
-      "pushed_at": "2026-02-10T07:37:37Z",
-      "archived": false,
-      "license": "Apache-2.0",
-      "description": "Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing.",
-      "homepage": ""
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "40-3d-scene/respace (scene_3d.jsonl:13)": {
@@ -2444,11 +2411,139 @@
       "warning": "homepage title weakly matches record title: `Pyramid Flow` (score=0.50); if this is a suite root / product root page, prefer leaving `homepage` empty."
     }
   },
-  "20-video/rapo (video.jsonl:2)": {
+  "30-3d-object-asset/rgb2point (object_3d.jsonl:20)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2504.11739"
+      "final_url": "https://arxiv.org/abs/2407.14979"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/pt-t2iv (image_2d.jsonl:37)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DlTrrnNdkOX"
+    },
+    "paper_semantics": {
+      "ok": false,
+      "observed_title": "Verifying your browser | OpenReview",
+      "score": 0.231,
+      "source": "HTML title",
+      "error": "paper title mismatch: expected `PT-T2I/V: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Image/Video-Task` but resolved title is `Verifying your browser | OpenReview` (score=0.23)."
+    }
+  },
+  "40-3d-scene/roomcraft (scene_3d.jsonl:12)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2506.22291"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/qwen-image (image_2d.jsonl:62)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2508.02324"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "observed_title": "Qwen-Image Technical Report",
+      "score": 1.0,
+      "source": "arXiv API"
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/QwenLM/Qwen-Image",
+      "full_name": "QwenLM/Qwen-Image",
+      "stars": 8105,
+      "pushed_at": "2026-02-10T07:37:37Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing.",
+      "homepage": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
+    }
+  },
+  "10-image-2d/scaling-down-text-encoders (image_2d.jsonl:35)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.19897"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/sana (image_2d.jsonl:56)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2410.10629"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nvlabs.github.io/Sana/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "observed_title": "SANA",
+      "score": 1.0
+    }
+  },
+  "40-3d-scene/scenepainter (scene_3d.jsonl:37)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2507.19058"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://xiac20.github.io/ScenePainter/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "warning": "homepage title weakly matches record title: `SOCIAL MEDIA TITLE TAG` (score=0.18); if this is a suite root / product root page, prefer leaving `homepage` empty."
+    }
+  },
+  "40-3d-scene/scenethesis (scene_3d.jsonl:6)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2505.02836"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "40-3d-scene/scenex (scene_3d.jsonl:2)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2403.15698"
     },
     "paper_semantics": {
       "ok": true,
@@ -2476,79 +2571,31 @@
       "score": 1.0
     }
   },
-  "40-3d-scene/roomcraft (scene_3d.jsonl:12)": {
+  "10-image-2d/sana-1.5 (image_2d.jsonl:48)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2506.22291"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "30-3d-object-asset/rgb2point (object_3d.jsonl:20)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2407.14979"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "10-image-2d/scaling-down-text-encoders (image_2d.jsonl:35)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.19897"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "40-3d-scene/scenethesis (scene_3d.jsonl:6)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2505.02836"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "40-3d-scene/scenepainter (scene_3d.jsonl:37)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2507.19058"
+      "final_url": "https://arxiv.org/abs/2501.18427"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
     },
-    "homepage": {
+    "repo": {
       "ok": true,
       "status": 200,
-      "final_url": "https://xiac20.github.io/ScenePainter/"
+      "final_url": "https://github.com/NVlabs/Sana",
+      "full_name": "NVlabs/Sana",
+      "stars": 8471,
+      "pushed_at": "2026-07-13T03:35:19Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer",
+      "homepage": "https://nvlabs.github.io/Sana/docs/"
     },
-    "homepage_semantics": {
+    "repo_semantics": {
       "ok": true,
-      "warning": "homepage title weakly matches record title: `SOCIAL MEDIA TITLE TAG` (score=0.18); if this is a suite root / product root page, prefer leaving `homepage` empty."
-    }
-  },
-  "40-3d-scene/scenex (scene_3d.jsonl:2)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2403.15698"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
+      "score": 0.599
     }
   },
   "40-3d-scene/sceneweaver (scene_3d.jsonl:5)": {
@@ -2569,54 +2616,6 @@
     "homepage_semantics": {
       "ok": true,
       "observed_title": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent",
-      "score": 1.0
-    }
-  },
-  "10-image-2d/sana-1.5 (image_2d.jsonl:48)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2501.18427"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/NVlabs/Sana",
-      "full_name": "NVlabs/Sana",
-      "stars": 8431,
-      "pushed_at": "2026-07-06T06:53:21Z",
-      "archived": false,
-      "license": "Apache-2.0",
-      "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer",
-      "homepage": "https://nvlabs.github.io/Sana/docs/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 0.599
-    }
-  },
-  "10-image-2d/sana (image_2d.jsonl:56)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2410.10629"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://nvlabs.github.io/Sana/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "SANA",
       "score": 1.0
     }
   },
@@ -2694,9 +2693,7 @@
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis",
-      "score": 1.0,
-      "source": "arXiv API"
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "30-3d-object-asset/squeeze3d (object_3d.jsonl:12)": {
@@ -2708,27 +2705,6 @@
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "20-video/seaweed-7b (video.jsonl:14)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2504.08685"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://seaweed.video/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "Seaweed",
-      "score": 1.0
     }
   },
   "20-video/stableanimator (video.jsonl:45)": {
@@ -2764,37 +2740,25 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "40-3d-scene/terra (scene_3d.jsonl:30)": {
+  "20-video/seaweed-7b (video.jsonl:14)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2510.14977"
+      "final_url": "https://arxiv.org/abs/2504.08685"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "10-image-2d/text-embedding-not-all-you-need (image_2d.jsonl:18)": {
-    "paper": {
+    },
+    "homepage": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2411.15236"
+      "final_url": "https://seaweed.video/"
     },
-    "paper_semantics": {
+    "homepage_semantics": {
       "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "10-image-2d/rectified-flow-priors-t2i (image_2d.jsonl:57)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2406.03293"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
+      "observed_title": "Seaweed",
+      "score": 1.0
     }
   },
   "30-3d-object-asset/sparc3d (object_3d.jsonl:8)": {
@@ -2812,7 +2776,7 @@
       "status": 200,
       "final_url": "https://github.com/lizhihao6/Sparc3D",
       "full_name": "lizhihao6/Sparc3D",
-      "stars": 1344,
+      "stars": 1347,
       "pushed_at": "2025-06-16T05:29:19Z",
       "archived": false,
       "license": "",
@@ -2849,7 +2813,7 @@
       "status": 200,
       "final_url": "https://github.com/stepfun-ai/Step-Video-T2V",
       "full_name": "stepfun-ai/Step-Video-T2V",
-      "stars": 3183,
+      "stars": 3182,
       "pushed_at": "2025-03-17T03:26:54Z",
       "archived": false,
       "license": "MIT",
@@ -2861,11 +2825,55 @@
       "score": 1.0
     }
   },
+  "40-3d-scene/terra (scene_3d.jsonl:30)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2510.14977"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/text-embedding-not-all-you-need (image_2d.jsonl:18)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2411.15236"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "10-image-2d/rectified-flow-priors-t2i (image_2d.jsonl:57)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2406.03293"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
   "10-image-2d/tiger (image_2d.jsonl:55)": {
     "paper": {
       "ok": true,
       "status": 200,
       "final_url": "https://arxiv.org/abs/2406.05814"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "20-video/transpixeler (video.jsonl:6)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2501.03006"
     },
     "paper_semantics": {
       "ok": true,
@@ -2891,17 +2899,6 @@
       "ok": true,
       "observed_title": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation",
       "score": 1.0
-    }
-  },
-  "20-video/transpixeler (video.jsonl:6)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2501.03006"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "40-3d-scene/trellisworld (scene_3d.jsonl:31)": {
@@ -2964,25 +2961,15 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "20-video/seedance (video.jsonl:15)": {
+  "30-3d-object-asset/ultrashape (object_3d.jsonl:4)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2506.18538"
+      "final_url": "https://arxiv.org/abs/2512.21185"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://seed.bytedance.com/en/seedance"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "Seedance",
-      "score": 1.0
     }
   },
   "30-3d-object-asset/triposr (object_3d.jsonl:30)": {
@@ -2993,14 +2980,16 @@
     },
     "paper_semantics": {
       "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
+      "observed_title": "TripoSR: Fast 3D Object Reconstruction from a Single Image",
+      "score": 1.0,
+      "source": "arXiv API"
     },
     "repo": {
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/VAST-AI-Research/TripoSR",
       "full_name": "VAST-AI-Research/TripoSR",
-      "stars": 6690,
+      "stars": 6718,
       "pushed_at": "2026-06-04T07:11:09Z",
       "archived": false,
       "license": "MIT",
@@ -3012,26 +3001,6 @@
       "score": 1.0
     }
   },
-  "10-image-2d/seedream-3.0 (image_2d.jsonl:64)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2504.11346"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://seed.bytedance.com/en/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "warning": "homepage title weakly matches record title: `Seed News - ByteDance Seed Team` (score=0.24); if this is a suite root / product root page, prefer leaving `homepage` empty."
-    }
-  },
   "30-3d-object-asset/trellis (object_3d.jsonl:2)": {
     "paper": {
       "ok": true,
@@ -3040,16 +3009,14 @@
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "Structured 3D Latents for Scalable and Versatile 3D Generation",
-      "score": 1.0,
-      "source": "arXiv API"
+      "warning": "unable to extract paper title for semantic verification."
     },
     "repo": {
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/microsoft/TRELLIS",
       "full_name": "microsoft/TRELLIS",
-      "stars": 13098,
+      "stars": 13159,
       "pushed_at": "2026-06-26T07:27:56Z",
       "archived": false,
       "license": "MIT",
@@ -3071,11 +3038,11 @@
       "score": 1.0
     }
   },
-  "30-3d-object-asset/ultrashape (object_3d.jsonl:4)": {
+  "30-3d-object-asset/unilat3d (object_3d.jsonl:6)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2512.21185"
+      "final_url": "https://arxiv.org/abs/2509.25079"
     },
     "paper_semantics": {
       "ok": true,
@@ -3093,17 +3060,6 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "30-3d-object-asset/unilat3d (object_3d.jsonl:6)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2509.25079"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
   "40-3d-scene/uniugg (scene_3d.jsonl:28)": {
     "paper": {
       "ok": true,
@@ -3115,11 +3071,11 @@
       "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "20-video/videomage (video.jsonl:36)": {
+  "20-video/videodirector (video.jsonl:35)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.21781"
+      "final_url": "https://arxiv.org/abs/2411.17592"
     },
     "paper_semantics": {
       "ok": true,
@@ -3153,28 +3109,6 @@
       "score": 1.0
     }
   },
-  "20-video/videodirector (video.jsonl:35)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2411.17592"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
-  "40-3d-scene/videorfsplat (scene_3d.jsonl:27)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.15855"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    }
-  },
   "30-3d-object-asset/unique3d (object_3d.jsonl:32)": {
     "paper": {
       "ok": true,
@@ -3192,7 +3126,7 @@
       "status": 200,
       "final_url": "https://github.com/AiuniAI/Unique3D",
       "full_name": "AiuniAI/Unique3D",
-      "stars": 3566,
+      "stars": 3568,
       "pushed_at": "2025-07-17T21:29:05Z",
       "archived": false,
       "license": "MIT",
@@ -3201,45 +3135,6 @@
     },
     "repo_semantics": {
       "ok": true,
-      "score": 1.0
-    }
-  },
-  "20-video/bytheway (video.jsonl:3)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Bu_ByTheWay_Boost_Your_Text-to-Video_Generation_Model_to_Higher_Quality_in_CVPR_2025_paper.html"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "observed_title": "ByTheWay: Boost Your Text-to-Video Generation Model to Higher Quality in a Training-free Way",
-      "score": 1.0,
-      "source": "HTML title"
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Bujiazi/ByTheWay",
-      "full_name": "Bujiazi/ByTheWay",
-      "stars": 48,
-      "pushed_at": "2025-10-10T11:33:06Z",
-      "archived": false,
-      "license": "",
-      "description": "[CVPR 2025] Official implementation of ByTheWay: Boost Your Text-to-Video Generation Model to Higher Quality in a Training-free Way",
-      "homepage": "https://bujiazi.github.io/bytheway.github.io/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
-    },
-    "homepage": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://bujiazi.github.io/bytheway.github.io/"
-    },
-    "homepage_semantics": {
-      "ok": true,
-      "observed_title": "ByTheWay",
       "score": 1.0
     }
   },
@@ -3258,7 +3153,7 @@
       "status": 200,
       "final_url": "https://github.com/Tencent-Hunyuan/FlashVDM",
       "full_name": "Tencent-Hunyuan/FlashVDM",
-      "stars": 331,
+      "stars": 332,
       "pushed_at": "2026-03-13T02:55:53Z",
       "archived": false,
       "license": "NOASSERTION",
@@ -3268,6 +3163,28 @@
     "repo_semantics": {
       "ok": true,
       "score": 1.0
+    }
+  },
+  "40-3d-scene/videorfsplat (scene_3d.jsonl:27)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.15855"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    }
+  },
+  "20-video/videomage (video.jsonl:36)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.21781"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
   "20-video/vace (video.jsonl:39)": {
@@ -3285,7 +3202,7 @@
       "status": 200,
       "final_url": "https://github.com/ali-vilab/VACE",
       "full_name": "ali-vilab/VACE",
-      "stars": 3846,
+      "stars": 3857,
       "pushed_at": "2025-10-17T05:46:57Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -3304,6 +3221,147 @@
     "homepage_semantics": {
       "ok": true,
       "observed_title": "VACE",
+      "score": 1.0
+    }
+  },
+  "50-4d-dynamic-scene-world/hunyuanworld-voyager (world_4d.jsonl:11)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2506.04225"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
+      "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
+      "stars": 1573,
+      "pushed_at": "2026-04-15T17:30:08Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "description": "Voyager is an interactive RGBD video generation model conditioned on camera input, and supports real-time 3D reconstruction.",
+      "homepage": "https://3d-models.hunyuan.tencent.com/world/"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "warning": "repo title/description weakly matches record title (score=0.32); verify repo exactness manually."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://3d-models.hunyuan.tencent.com/world/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "warning": "homepage title weakly matches record title: `腾讯混元3D` (score=0.04); if this is a suite root / product root page, prefer leaving `homepage` empty."
+    }
+  },
+  "20-video/wan2.1 (video.jsonl:10)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2503.20314"
+    },
+    "paper_semantics": {
+      "ok": false,
+      "observed_title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+      "score": 0.586,
+      "source": "arXiv API",
+      "error": "paper title mismatch: expected `Wan 2.1: Open-Source Video Foundation Model` but resolved title is `Wan: Open and Advanced Large-Scale Video Generative Models` (score=0.59)."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Wan-Video/Wan2.1",
+      "full_name": "Wan-Video/Wan2.1",
+      "stars": 16546,
+      "pushed_at": "2026-03-05T09:38:07Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "Wan: Open and Advanced Large-Scale Video Generative Models",
+      "homepage": "https://wan.video"
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.604
+    }
+  },
+  "50-4d-dynamic-scene-world/waymax (world_4d.jsonl:22)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2310.08710"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/waymo-research/waymax",
+      "full_name": "waymo-research/waymax",
+      "stars": 1083,
+      "pushed_at": "2025-10-23T04:29:20Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "description": "A JAX-based simulator for autonomous driving research.",
+      "homepage": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
+    }
+  },
+  "50-4d-dynamic-scene-world/world4drive (world_4d.jsonl:4)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2507.00603"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "repo": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ucaszyp/World4Drive",
+      "full_name": "ucaszyp/World4Drive",
+      "stars": 100,
+      "pushed_at": "2025-12-31T15:00:36Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "[ICCV 2025]",
+      "homepage": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.333
+    }
+  },
+  "20-video/seedance (video.jsonl:15)": {
+    "paper": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2506.18538"
+    },
+    "paper_semantics": {
+      "ok": true,
+      "warning": "unable to extract paper title for semantic verification."
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://seed.bytedance.com/en/seedance"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "observed_title": "Seedance",
       "score": 1.0
     }
   },
@@ -3348,97 +3406,24 @@
       "score": 1.0
     }
   },
-  "20-video/wan2.1 (video.jsonl:10)": {
+  "10-image-2d/seedream-3.0 (image_2d.jsonl:64)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2503.20314"
-    },
-    "paper_semantics": {
-      "ok": false,
-      "observed_title": "Wan: Open and Advanced Large-Scale Video Generative Models",
-      "score": 0.586,
-      "source": "arXiv API",
-      "error": "paper title mismatch: expected `Wan 2.1: Open-Source Video Foundation Model` but resolved title is `Wan: Open and Advanced Large-Scale Video Generative Models` (score=0.59)."
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Wan-Video/Wan2.1",
-      "full_name": "Wan-Video/Wan2.1",
-      "stars": 16464,
-      "pushed_at": "2026-03-05T09:38:07Z",
-      "archived": false,
-      "license": "Apache-2.0",
-      "description": "Wan: Open and Advanced Large-Scale Video Generative Models",
-      "homepage": "https://wan.video"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 0.604
-    }
-  },
-  "50-4d-dynamic-scene-world/waymax (world_4d.jsonl:22)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2310.08710"
+      "final_url": "https://arxiv.org/abs/2504.11346"
     },
     "paper_semantics": {
       "ok": true,
       "warning": "unable to extract paper title for semantic verification."
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/waymo-research/waymax",
-      "full_name": "waymo-research/waymax",
-      "stars": 1082,
-      "pushed_at": "2025-10-23T04:29:20Z",
-      "archived": false,
-      "license": "NOASSERTION",
-      "description": "A JAX-based simulator for autonomous driving research.",
-      "homepage": ""
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
-    }
-  },
-  "50-4d-dynamic-scene-world/hunyuanworld-voyager (world_4d.jsonl:11)": {
-    "paper": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://arxiv.org/abs/2506.04225"
-    },
-    "paper_semantics": {
-      "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
-    },
-    "repo": {
-      "ok": true,
-      "status": 200,
-      "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
-      "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
-      "stars": 1571,
-      "pushed_at": "2026-04-15T17:30:08Z",
-      "archived": false,
-      "license": "NOASSERTION",
-      "description": "Voyager is an interactive RGBD video generation model conditioned on camera input, and supports real-time 3D reconstruction.",
-      "homepage": "https://3d-models.hunyuan.tencent.com/world/"
-    },
-    "repo_semantics": {
-      "ok": true,
-      "warning": "repo title/description weakly matches record title (score=0.32); verify repo exactness manually."
     },
     "homepage": {
       "ok": true,
       "status": 200,
-      "final_url": "https://3d-models.hunyuan.tencent.com/world/"
+      "final_url": "https://seed.bytedance.com/en/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83"
     },
     "homepage_semantics": {
       "ok": true,
-      "warning": "homepage title weakly matches record title: `腾讯混元3D` (score=0.04); if this is a suite root / product root page, prefer leaving `homepage` empty."
+      "warning": "homepage title weakly matches record title: `Seed News - ByteDance Seed Team` (score=0.24); if this is a suite root / product root page, prefer leaving `homepage` empty."
     }
   },
   "50-4d-dynamic-scene-world/worldmem (world_4d.jsonl:18)": {
@@ -3449,36 +3434,46 @@
     },
     "paper_semantics": {
       "ok": true,
-      "observed_title": "WorldMem: Long-term Consistent World Simulation with Memory",
-      "score": 1.0,
-      "source": "arXiv API"
+      "warning": "unable to extract paper title for semantic verification."
     }
   },
-  "50-4d-dynamic-scene-world/world4drive (world_4d.jsonl:4)": {
+  "20-video/bytheway (video.jsonl:3)": {
     "paper": {
       "ok": true,
       "status": 200,
-      "final_url": "https://arxiv.org/abs/2507.00603"
+      "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Bu_ByTheWay_Boost_Your_Text-to-Video_Generation_Model_to_Higher_Quality_in_CVPR_2025_paper.html"
     },
     "paper_semantics": {
       "ok": true,
-      "warning": "unable to extract paper title for semantic verification."
+      "observed_title": "ByTheWay: Boost Your Text-to-Video Generation Model to Higher Quality in a Training-free Way",
+      "score": 1.0,
+      "source": "HTML title"
     },
     "repo": {
       "ok": true,
       "status": 200,
-      "final_url": "https://github.com/ucaszyp/World4Drive",
-      "full_name": "ucaszyp/World4Drive",
-      "stars": 99,
-      "pushed_at": "2025-12-31T15:00:36Z",
+      "final_url": "https://github.com/Bujiazi/ByTheWay",
+      "full_name": "Bujiazi/ByTheWay",
+      "stars": 48,
+      "pushed_at": "2025-10-10T11:33:06Z",
       "archived": false,
-      "license": "Apache-2.0",
-      "description": "[ICCV 2025]",
-      "homepage": ""
+      "license": "",
+      "description": "[CVPR 2025] Official implementation of ByTheWay: Boost Your Text-to-Video Generation Model to Higher Quality in a Training-free Way",
+      "homepage": "https://bujiazi.github.io/bytheway.github.io/"
     },
     "repo_semantics": {
       "ok": true,
-      "score": 0.333
+      "score": 1.0
+    },
+    "homepage": {
+      "ok": true,
+      "status": 200,
+      "final_url": "https://bujiazi.github.io/bytheway.github.io/"
+    },
+    "homepage_semantics": {
+      "ok": true,
+      "observed_title": "ByTheWay",
+      "score": 1.0
     }
   },
   "20-video/x-dyna (video.jsonl:44)": {
@@ -3525,7 +3520,7 @@
       "status": 200,
       "final_url": "https://github.com/KovenYu/WonderWorld",
       "full_name": "KovenYu/WonderWorld",
-      "stars": 735,
+      "stars": 736,
       "pushed_at": "2025-04-14T04:52:47Z",
       "archived": false,
       "license": "",

@@ -1,6 +1,6 @@
 {
   "jiangchaokang/VectorWorld": {
-    "stars": 28,
+    "stars": 31,
     "pushed_at": "2026-06-23T10:34:22Z",
     "archived": false,
     "license": ""
@@ -12,8 +12,8 @@
     "license": ""
   },
   "liulin815/DriveWorld-VLA": {
-    "stars": 106,
-    "pushed_at": "2026-06-10T11:22:57Z",
+    "stars": 107,
+    "pushed_at": "2026-07-08T09:44:43Z",
     "archived": false,
     "license": ""
   },
@@ -29,12 +29,6 @@
     "archived": false,
     "license": "NOASSERTION"
   },
-  "PKU-YuanGroup/ConsisID": {
-    "stars": 845,
-    "pushed_at": "2026-04-14T03:25:24Z",
-    "archived": false,
-    "license": "Apache-2.0"
-  },
   "showlab/D-AR": {
     "stars": 138,
     "pushed_at": "2026-01-29T14:31:40Z",
@@ -42,13 +36,25 @@
     "license": "MIT"
   },
   "zai-org/CogVideo": {
-    "stars": 12849,
+    "stars": 12864,
     "pushed_at": "2025-11-04T11:19:04Z",
     "archived": false,
     "license": "Apache-2.0"
   },
+  "PKU-YuanGroup/ConsisID": {
+    "stars": 847,
+    "pushed_at": "2026-04-14T03:25:24Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "NVIDIA/cosmos": {
+    "stars": 11008,
+    "pushed_at": "2026-07-10T06:37:22Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
   "Kevin-thu/Epona": {
-    "stars": 366,
+    "stars": 367,
     "pushed_at": "2025-07-22T06:35:46Z",
     "archived": false,
     "license": "MIT"
@@ -60,10 +66,16 @@
     "license": "AGPL-3.0"
   },
   "black-forest-labs/flux": {
-    "stars": 25695,
+    "stars": 25717,
     "pushed_at": "2025-07-31T13:58:55Z",
     "archived": false,
     "license": "Apache-2.0"
+  },
+  "Tencent-Hunyuan/Hunyuan3D-2.1": {
+    "stars": 3683,
+    "pushed_at": "2025-10-17T10:10:07Z",
+    "archived": false,
+    "license": "NOASSERTION"
   },
   "nktoan/h-edit": {
     "stars": 77,
@@ -72,49 +84,43 @@
     "license": "Apache-2.0"
   },
   "LMD0311/HERMES": {
-    "stars": 256,
+    "stars": 258,
     "pushed_at": "2026-05-12T03:05:38Z",
     "archived": false,
     "license": "Apache-2.0"
   },
   "Tencent-Hunyuan/Hunyuan3D-2": {
-    "stars": 14092,
+    "stars": 14256,
     "pushed_at": "2025-10-28T09:58:12Z",
     "archived": false,
     "license": "NOASSERTION"
   },
-  "Tencent-Hunyuan/Hunyuan3D-2.1": {
-    "stars": 3652,
-    "pushed_at": "2025-10-17T10:10:07Z",
-    "archived": false,
-    "license": "NOASSERTION"
-  },
-  "Tencent-Hunyuan/HunyuanImage-3.0": {
-    "stars": 3168,
-    "pushed_at": "2026-06-23T13:12:44Z",
-    "archived": false,
-    "license": "NOASSERTION"
-  },
   "Tencent-Hunyuan/HunyuanVideo-I2V": {
-    "stars": 1832,
+    "stars": 1831,
     "pushed_at": "2026-04-07T06:13:09Z",
     "archived": false,
     "license": "NOASSERTION"
   },
+  "Tencent-Hunyuan/HunyuanImage-3.0": {
+    "stars": 3179,
+    "pushed_at": "2026-06-23T13:12:44Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
   "Tencent-Hunyuan/HunyuanVideo-1.5": {
-    "stars": 4510,
+    "stars": 4517,
     "pushed_at": "2026-04-10T06:14:59Z",
     "archived": false,
     "license": "NOASSERTION"
   },
   "Tencent-Hunyuan/HunyuanVideo": {
-    "stars": 12293,
+    "stars": 12333,
     "pushed_at": "2026-06-29T09:33:50Z",
     "archived": false,
     "license": "NOASSERTION"
   },
   "Tencent-Hunyuan/HunyuanWorld-1.0": {
-    "stars": 2868,
+    "stars": 2870,
     "pushed_at": "2026-04-15T17:27:25Z",
     "archived": false,
     "license": "NOASSERTION"
@@ -125,26 +131,14 @@
     "archived": false,
     "license": "Apache-2.0"
   },
-  "NVIDIA/cosmos": {
-    "stars": 10893,
-    "pushed_at": "2026-07-03T01:12:55Z",
-    "archived": false,
-    "license": "NOASSERTION"
-  },
   "Chao0511/mitune": {
     "stars": 6,
     "pushed_at": "2025-03-23T14:38:36Z",
     "archived": false,
     "license": "MIT"
   },
-  "InternRobotics/Infinite-Mobility": {
-    "stars": 194,
-    "pushed_at": "2025-07-25T03:18:07Z",
-    "archived": false,
-    "license": "BSD-3-Clause"
-  },
   "TencentARC/InstantMesh": {
-    "stars": 4445,
+    "stars": 4452,
     "pushed_at": "2025-01-03T09:09:13Z",
     "archived": false,
     "license": "Apache-2.0"
@@ -155,15 +149,15 @@
     "archived": false,
     "license": "Apache-2.0"
   },
-  "Tencent-Hunyuan/HY-WorldPlay": {
-    "stars": 1541,
-    "pushed_at": "2026-06-10T07:10:23Z",
+  "InternRobotics/Infinite-Mobility": {
+    "stars": 194,
+    "pushed_at": "2025-07-25T03:18:07Z",
     "archived": false,
-    "license": "NOASSERTION"
+    "license": "BSD-3-Clause"
   },
-  "Gsunshine/meanflow": {
-    "stars": 596,
-    "pushed_at": "2026-03-13T05:29:12Z",
+  "SkyworkAI/Matrix-Game": {
+    "stars": 2251,
+    "pushed_at": "2026-03-30T06:32:00Z",
     "archived": false,
     "license": "MIT"
   },
@@ -173,9 +167,21 @@
     "archived": false,
     "license": "AGPL-3.0"
   },
-  "SkyworkAI/Matrix-Game": {
-    "stars": 2247,
-    "pushed_at": "2026-03-30T06:32:00Z",
+  "Tencent-Hunyuan/HY-WorldPlay": {
+    "stars": 1543,
+    "pushed_at": "2026-06-10T07:10:23Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "Gsunshine/meanflow": {
+    "stars": 598,
+    "pushed_at": "2026-03-13T05:29:12Z",
+    "archived": false,
+    "license": "MIT"
+  },
+  "byliutao/1Prompt1Story": {
+    "stars": 318,
+    "pushed_at": "2025-10-20T04:52:19Z",
     "archived": false,
     "license": "MIT"
   },
@@ -191,14 +197,8 @@
     "archived": false,
     "license": ""
   },
-  "byliutao/1Prompt1Story": {
-    "stars": 318,
-    "pushed_at": "2025-10-20T04:52:19Z",
-    "archived": false,
-    "license": "MIT"
-  },
   "PixArt-alpha/PixArt-sigma": {
-    "stars": 1928,
+    "stars": 1929,
     "pushed_at": "2024-10-31T01:20:19Z",
     "archived": false,
     "license": "Apache-2.0"
@@ -210,25 +210,25 @@
     "license": ""
   },
   "QwenLM/Qwen-Image": {
-    "stars": 8086,
+    "stars": 8105,
     "pushed_at": "2026-02-10T07:37:37Z",
     "archived": false,
     "license": "Apache-2.0"
   },
   "NVlabs/Sana": {
-    "stars": 8431,
-    "pushed_at": "2026-07-06T06:53:21Z",
+    "stars": 8471,
+    "pushed_at": "2026-07-13T03:35:19Z",
     "archived": false,
     "license": "Apache-2.0"
   },
   "lizhihao6/Sparc3D": {
-    "stars": 1344,
+    "stars": 1347,
     "pushed_at": "2025-06-16T05:29:19Z",
     "archived": false,
     "license": ""
   },
   "stepfun-ai/Step-Video-T2V": {
-    "stars": 3183,
+    "stars": 3182,
     "pushed_at": "2025-03-17T03:26:54Z",
     "archived": false,
     "license": "MIT"
@@ -240,13 +240,13 @@
     "license": ""
   },
   "VAST-AI-Research/TripoSR": {
-    "stars": 6690,
+    "stars": 6718,
     "pushed_at": "2026-06-04T07:11:09Z",
     "archived": false,
     "license": "MIT"
   },
   "microsoft/TRELLIS": {
-    "stars": 13098,
+    "stars": 13159,
     "pushed_at": "2026-06-26T07:27:56Z",
     "archived": false,
     "license": "MIT"
@@ -258,52 +258,52 @@
     "license": ""
   },
   "AiuniAI/Unique3D": {
-    "stars": 3566,
+    "stars": 3568,
     "pushed_at": "2025-07-17T21:29:05Z",
     "archived": false,
     "license": "MIT"
+  },
+  "Tencent-Hunyuan/FlashVDM": {
+    "stars": 332,
+    "pushed_at": "2026-03-13T02:55:53Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "ali-vilab/VACE": {
+    "stars": 3857,
+    "pushed_at": "2025-10-17T05:46:57Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "Tencent-Hunyuan/HunyuanWorld-Voyager": {
+    "stars": 1573,
+    "pushed_at": "2026-04-15T17:30:08Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "Wan-Video/Wan2.1": {
+    "stars": 16546,
+    "pushed_at": "2026-03-05T09:38:07Z",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "waymo-research/waymax": {
+    "stars": 1083,
+    "pushed_at": "2025-10-23T04:29:20Z",
+    "archived": false,
+    "license": "NOASSERTION"
+  },
+  "ucaszyp/World4Drive": {
+    "stars": 100,
+    "pushed_at": "2025-12-31T15:00:36Z",
+    "archived": false,
+    "license": "Apache-2.0"
   },
   "Bujiazi/ByTheWay": {
     "stars": 48,
     "pushed_at": "2025-10-10T11:33:06Z",
     "archived": false,
     "license": ""
-  },
-  "Tencent-Hunyuan/FlashVDM": {
-    "stars": 331,
-    "pushed_at": "2026-03-13T02:55:53Z",
-    "archived": false,
-    "license": "NOASSERTION"
-  },
-  "ali-vilab/VACE": {
-    "stars": 3846,
-    "pushed_at": "2025-10-17T05:46:57Z",
-    "archived": false,
-    "license": "Apache-2.0"
-  },
-  "Wan-Video/Wan2.1": {
-    "stars": 16464,
-    "pushed_at": "2026-03-05T09:38:07Z",
-    "archived": false,
-    "license": "Apache-2.0"
-  },
-  "waymo-research/waymax": {
-    "stars": 1082,
-    "pushed_at": "2025-10-23T04:29:20Z",
-    "archived": false,
-    "license": "NOASSERTION"
-  },
-  "Tencent-Hunyuan/HunyuanWorld-Voyager": {
-    "stars": 1571,
-    "pushed_at": "2026-04-15T17:30:08Z",
-    "archived": false,
-    "license": "NOASSERTION"
-  },
-  "ucaszyp/World4Drive": {
-    "stars": 99,
-    "pushed_at": "2025-12-31T15:00:36Z",
-    "archived": false,
-    "license": "Apache-2.0"
   },
   "bytedance/X-Dyna": {
     "stars": 269,
@@ -312,7 +312,7 @@
     "license": "Apache-2.0"
   },
   "KovenYu/WonderWorld": {
-    "stars": 735,
+    "stars": 736,
     "pushed_at": "2025-04-14T04:52:47Z",
     "archived": false,
     "license": ""

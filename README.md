@@ -7,7 +7,7 @@
 **A high-precision, exact-link catalog of recent generative-model research**  
 **for images, video, 3D assets, 3D scenes, and 4D dynamic worlds.**
 
-![Papers: 207](https://img.shields.io/static/v1?label=Papers&message=207&color=2563EB&style=for-the-badge&labelColor=111827&logo=googlescholar) ![Open Source: 52](https://img.shields.io/static/v1?label=Open+Source&message=52&color=16A34A&style=for-the-badge&labelColor=111827&logo=opensourceinitiative) ![Scope: 2025-01+](https://img.shields.io/static/v1?label=Scope&message=2025-01%2B&color=0EA5E9&style=for-the-badge&labelColor=111827) ![Updated: 2026-08-03](https://img.shields.io/static/v1?label=Updated&message=2026-08-03&color=F59E0B&style=for-the-badge&labelColor=111827&logo=githubactions)
+![Papers: 207](https://img.shields.io/static/v1?label=Papers&message=207&color=2563EB&style=for-the-badge&labelColor=111827&logo=googlescholar) ![Open Source: 52](https://img.shields.io/static/v1?label=Open+Source&message=52&color=16A34A&style=for-the-badge&labelColor=111827&logo=opensourceinitiative) ![Scope: 2025-01+](https://img.shields.io/static/v1?label=Scope&message=2025-01%2B&color=0EA5E9&style=for-the-badge&labelColor=111827) ![Updated: 2026-08-04](https://img.shields.io/static/v1?label=Updated&message=2026-08-04&color=F59E0B&style=for-the-badge&labelColor=111827&logo=githubactions)
 
 [![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=0F766E&style=flat-square&labelColor=111827)](LICENSE) [![Contributing: PRs Welcome](https://img.shields.io/static/v1?label=Contributing&message=PRs+Welcome&color=2563EB&style=flat-square&labelColor=111827&logo=github)](CONTRIBUTING.md) [![Candidates: Daily Inbox](https://img.shields.io/static/v1?label=Candidates&message=Daily+Inbox&color=EA580C&style=flat-square&labelColor=111827&logo=githubactions)](metadata/candidates/latest.md) [![Validation: Report](https://img.shields.io/static/v1?label=Validation&message=Report&color=7C3AED&style=flat-square&labelColor=111827&logo=checkmarx)](metadata/validation/latest.md)
 
@@ -123,8 +123,8 @@
 
 | Report | Report | Report |
 | :-- | :-- | :-- |
-| [2026-08-03](metadata/candidates/2026-08-03/report.md) | [2026-08-02](metadata/candidates/2026-08-02/report.md) | [2026-08-01](metadata/candidates/2026-08-01/report.md) |
-| [2026-07-31](metadata/candidates/2026-07-31/report.md) | [2026-07-30](metadata/candidates/2026-07-30/report.md) | [2026-07-29](metadata/candidates/2026-07-29/report.md) |
+| [2026-08-04](metadata/candidates/2026-08-04/report.md) | [2026-08-03](metadata/candidates/2026-08-03/report.md) | [2026-08-02](metadata/candidates/2026-08-02/report.md) |
+| [2026-08-01](metadata/candidates/2026-08-01/report.md) | [2026-07-31](metadata/candidates/2026-07-31/report.md) | [2026-07-30](metadata/candidates/2026-07-30/report.md) |
 
 ## ⚙️ Curation Pipeline
 

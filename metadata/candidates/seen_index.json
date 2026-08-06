@@ -347,6 +347,7 @@
     "tencentarc/versecrafter": "2026-06-05",
     "tencentarc/vtlayout": "2026-07-01",
     "wan-video/diffusers": "2026-06-05",
-    "nvlabs/g2lf": "2026-07-24"
+    "nvlabs/g2lf": "2026-07-24",
+    "nvidia/warp-simdata": "2026-08-06"
   }
 }

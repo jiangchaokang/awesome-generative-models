@@ -3,11 +3,11 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-07-10 05:11 UTC`
+- Generated: `2026-08-10 03:19 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-07-10/`
-- New candidates today: **3**
+- Raw files: `metadata/candidates/2026-08-10/`
+- New candidates today: **2**
 - New watched-org repositories today: **0**
 
 ## Review Checklist
@@ -17,18 +17,17 @@
 - Is the summary worth writing for the public catalog?
 - Does it belong in the main catalog or only in the watchlist?
 
-## image-2d
+## 3d-object-asset
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 77 | arXiv | 2026-07-08 | **Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence** | alignment-safety | recent paper candidate | [Paper](http://arxiv.org/abs/2607.07675v1) |
-| 44 | arXiv | 2026-07-09 | **Understanding and Mitigating the Video-Action Generalization Gap via Temporal Ratio** | text-to-image | recent paper candidate | [Paper](http://arxiv.org/abs/2607.08127v1) |
+| 48 | arXiv | 2026-08-07 | **CANIS: Generation-Assisted 3D Canonicalization via an Image-Semantic Bridge** | part-aware-generation | recent paper candidate | [Paper](http://arxiv.org/abs/2608.07256v1) |
 
 ## 4d-dynamic-scene-world
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 59 | arXiv | 2026-07-08 | **EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI** | simulation | recent paper candidate | [Paper](http://arxiv.org/abs/2607.07459v1) |
+| 58 | arXiv | 2026-08-07 | **Scenix: Sparse-View 3D Scene Reconstruction via Executable Scene Programs** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2608.07012v1) |
 
 ## New Repositories in Watched Organizations
 

@@ -33,7 +33,7 @@ Reusable 3D object / asset / avatar
 
 > Targets modular assets directly with autoregressive generation over part-aware structures.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 37](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+37&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Advocate99/AssetFormer)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 39](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+39&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Advocate99/AssetFormer)
 
 #### 🌟 [DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising](https://arxiv.org/abs/2603.19216)
 
@@ -60,7 +60,7 @@ Reusable 3D object / asset / avatar
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
 | ⚪ **[SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents](https://arxiv.org/abs/2603.23973)** | arXiv 2026 | Extends structured 3D latents from geometry toward material-property prediction for… | [📄 arXiv](https://arxiv.org/abs/2603.23973) |
-| 🟢 **[Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202)** | arXiv 2025 | A strong open 3D asset system combining large-scale shape generation and texture… | [📄 arXiv](https://arxiv.org/abs/2501.12202) · [💻 Code ★14.4k](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |
+| 🟢 **[Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202)** | arXiv 2025 | A strong open 3D asset system combining large-scale shape generation and texture… | [📄 arXiv](https://arxiv.org/abs/2501.12202) · [💻 Code ★14.5k](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |
 | 🟢 **[TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation](https://arxiv.org/abs/2412.01506)** | CVPR 2025 | A large-scale unified latent representation for text- and image-conditioned 3D asset… | [📄 arXiv](https://arxiv.org/abs/2412.01506) · [💻 Code ★13.4k](https://github.com/microsoft/TRELLIS) · [🌐 Project](https://microsoft.github.io/TRELLIS/) |
 | 🟢 **[Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling](https://arxiv.org/abs/2505.14521)** | NeurIPS 2025 | A sparse deformable marching-cubes representation plus sparse-conv VAE for near-lossless… | [📄 arXiv](https://arxiv.org/abs/2505.14521) · [💻 Code ★1.4k](https://github.com/lizhihao6/Sparc3D) · [🌐 Project](https://lizhihao6.github.io/Sparc3D) |
 | 🟢 **[Unleashing Vecset Diffusion Model for Fast Shape Generation](https://arxiv.org/abs/2503.16302)** | ICCV 2025 | FlashVDM introduces progressive flow distillation and engineering optimizations to cut… | [📄 arXiv](https://arxiv.org/abs/2503.16302) · [💻 Code ★333](https://github.com/Tencent-Hunyuan/FlashVDM) |
@@ -95,7 +95,7 @@ Reusable 3D object / asset / avatar
 
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
-| 🟢 **[AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer](https://arxiv.org/abs/2602.12100)** | arXiv 2026 | Targets modular assets directly with autoregressive generation over part-aware structures. | [📄 arXiv](https://arxiv.org/abs/2602.12100) · [💻 Code ★37](https://github.com/Advocate99/AssetFormer) |
+| 🟢 **[AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer](https://arxiv.org/abs/2602.12100)** | arXiv 2026 | Targets modular assets directly with autoregressive generation over part-aware structures. | [📄 arXiv](https://arxiv.org/abs/2602.12100) · [💻 Code ★39](https://github.com/Advocate99/AssetFormer) |
 | ⚪ **[Text-Image Conditioned 3D Generation](https://arxiv.org/abs/2603.21295)** | arXiv 2026 | A joint text-and-image conditioned 3D generation framework aimed at stronger… | [📄 arXiv](https://arxiv.org/abs/2603.21295) |
 | 🟢 **[ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models](https://arxiv.org/abs/2511.22456)** | arXiv 2025 | Brings inference-time scaling into text-guided 3D diffusion to improve asset quality at… | [📄 arXiv](https://arxiv.org/abs/2511.22456) · [💻 Code ★11](https://github.com/ZhenglinZhou/ITS3D) |
 

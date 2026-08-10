@@ -10,7 +10,7 @@
 
 > A strong open 3D asset system combining large-scale shape generation and texture synthesis for production-quality assets.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2501.12202) [![Code: GitHub ★ 14.4k](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+14.4k&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2501.12202) [![Code: GitHub ★ 14.5k](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+14.5k&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
 
 ## Full List
 
@@ -18,7 +18,7 @@
 
 | Title | Artifact | Venue | What it does | Links |
 |:--|:--|:--|:--|:--|
-| 🟢 **[Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202)** | 🧊 3D Object / Asset | arXiv 2025 | A strong open 3D asset system combining large-scale shape generation and texture…<br>`3d-shape-generation` | [📄 arXiv](https://arxiv.org/abs/2501.12202) · [💻 Code ★14.4k](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |
+| 🟢 **[Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202)** | 🧊 3D Object / Asset | arXiv 2025 | A strong open 3D asset system combining large-scale shape generation and texture…<br>`3d-shape-generation` | [📄 arXiv](https://arxiv.org/abs/2501.12202) · [💻 Code ★14.5k](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) |
 | 🟢 **[HunyuanVideo: A Systematic Framework for Large Video Generation Models](https://arxiv.org/abs/2412.03603)** | 🎬 Video | arXiv 2024 · since 2025 | A major open video backbone that remained highly active and widely reused throughout 2025.<br>`text-to-video` | [📄 arXiv](https://arxiv.org/abs/2412.03603) · [💻 Code ★12.4k](https://github.com/Tencent-Hunyuan/HunyuanVideo) |
 | 🟢 **[HunyuanVideo 1.5 Technical Report](https://arxiv.org/abs/2511.18870)** | 🎬 Video | arXiv 2025 | HunyuanVideo 1.5 is Tencent Hunyuan’s lighter video generation release spanning…<br>`text-to-video` | [📄 arXiv](https://arxiv.org/abs/2511.18870) · [💻 Code ★4.6k](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5) |
 | 🟢 **[Hunyuan3D 2.1: From Images to High-Fidelity 3D Assets with Production-Ready PBR Material](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1)** | 🧊 3D Object / Asset | Technical Report 2025 | Hunyuan3D 2.1 upgrades the Hunyuan 3D asset stack with production-ready PBR material…<br>`image-to-3d` | [💻 Code ★3.8k](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) |

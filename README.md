@@ -59,7 +59,7 @@
 
 > Targets modular assets directly with autoregressive generation over part-aware structures.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 37](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+37&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Advocate99/AssetFormer)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 39](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+39&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Advocate99/AssetFormer)
 
 **🏙️ 3D Scene** · [see all →](40-3d-scene/README.md)
 
@@ -79,7 +79,7 @@
 
 > VectorWorld is a streaming autonomous-driving world model that incrementally generates ego-centric lane-agent vector-graph tiles during rollout. It uses a motion-aware VAE and one-step masked completion on vector graphs to achieve stable, real-time long-horizon simulation. The work is valuable because it targets policy-compatible closed-loop generation instead of offline video-only realism.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.17652) [![Code: GitHub ★ 34](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+34&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/jiangchaokang/VectorWorld)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.17652) [![Code: GitHub ★ 35](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+35&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/jiangchaokang/VectorWorld)
 
 `vae` `diffusion` `flow` `world-model`
 

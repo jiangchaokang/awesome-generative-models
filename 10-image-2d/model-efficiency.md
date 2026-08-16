@@ -1,6 +1,6 @@
 # 🖼️ Image 2D / model-efficiency
 
-**13 entries** · [← Root](../README.md) · [← Image 2D](README.md)
+**14 entries** · [← Root](../README.md) · [← Image 2D](README.md)
 
 ## 🌟 Spotlight
 
@@ -20,6 +20,7 @@
 |:--|:--|:--|:--|
 | 🟢 **[iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)** | arXiv 2026 | A simple quantization improvement that makes FSQ stronger for high-quality image… | [📄 arXiv](https://arxiv.org/abs/2601.17124) · [💻 Code ★104](https://github.com/Tencent-Hunyuan/iFSQ) |
 | ⚪ **[DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models](https://arxiv.org/abs/2603.23140)** | arXiv 2026 | A routing strategy that allocates prompts across model choices to balance quality… | [📄 arXiv](https://arxiv.org/abs/2603.23140) |
+| 🟢 **[Distributional Matching for Vector Quantization](https://vq-research.github.io/Wasserstein-VQ/assets/Distributional_Matching_Vector_Quantization.pdf)** | Preprint 2026 | Wasserstein VQ aligns encoder-feature and code-vector distributions with a closed-form…<br>`vae` `token` `latent` | [📄 Link](https://vq-research.github.io/Wasserstein-VQ/assets/Distributional_Matching_Vector_Quantization.pdf) · [💻 Code](https://github.com/VQ-Research/Wasserstein-VQ) · [🌐 Project](https://vq-research.github.io/Wasserstein-VQ/) |
 | ⚪ **[Generative Modeling via Drifting](https://arxiv.org/abs/2602.04770)** | arXiv 2026 | Introduces drifting as a native one-step generative paradigm with strong ImageNet… | [📄 arXiv](https://arxiv.org/abs/2602.04770) |
 | ⚪ **[RPiAE: A Representation-Pivoted Autoencoder Enhancing Both Image Generation and Editing](https://arxiv.org/abs/2603.19206)** | arXiv 2026 | A representation-centered autoencoder design that improves both latent generation quality… | [📄 arXiv](https://arxiv.org/abs/2603.19206) |
 | ⚪ **[TMPDiff: Temporal Mixed-Precision for Diffusion Models](https://arxiv.org/abs/2603.14062)** | arXiv 2026 | A mixed-precision inference strategy that adapts numerical precision over denoising time… | [📄 arXiv](https://arxiv.org/abs/2603.14062) |

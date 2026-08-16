@@ -7,7 +7,7 @@
 **A high-precision, exact-link catalog of recent generative-model research**  
 **for images, video, 3D assets, 3D scenes, and 4D dynamic worlds.**
 
-![Papers: 207](https://img.shields.io/static/v1?label=Papers&message=207&color=2563EB&style=for-the-badge&labelColor=111827&logo=googlescholar) ![Open Source: 52](https://img.shields.io/static/v1?label=Open+Source&message=52&color=16A34A&style=for-the-badge&labelColor=111827&logo=opensourceinitiative) ![Scope: 2025-01+](https://img.shields.io/static/v1?label=Scope&message=2025-01%2B&color=0EA5E9&style=for-the-badge&labelColor=111827) ![Updated: 2026-08-16](https://img.shields.io/static/v1?label=Updated&message=2026-08-16&color=F59E0B&style=for-the-badge&labelColor=111827&logo=githubactions)
+![Papers: 208](https://img.shields.io/static/v1?label=Papers&message=208&color=2563EB&style=for-the-badge&labelColor=111827&logo=googlescholar) ![Open Source: 53](https://img.shields.io/static/v1?label=Open+Source&message=53&color=16A34A&style=for-the-badge&labelColor=111827&logo=opensourceinitiative) ![Scope: 2025-01+](https://img.shields.io/static/v1?label=Scope&message=2025-01%2B&color=0EA5E9&style=for-the-badge&labelColor=111827) ![Updated: 2026-08-16](https://img.shields.io/static/v1?label=Updated&message=2026-08-16&color=F59E0B&style=for-the-badge&labelColor=111827&logo=githubactions)
 
 [![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=0F766E&style=flat-square&labelColor=111827)](LICENSE) [![Contributing: PRs Welcome](https://img.shields.io/static/v1?label=Contributing&message=PRs+Welcome&color=2563EB&style=flat-square&labelColor=111827&logo=github)](CONTRIBUTING.md) [![Candidates: Daily Inbox](https://img.shields.io/static/v1?label=Candidates&message=Daily+Inbox&color=EA580C&style=flat-square&labelColor=111827&logo=githubactions)](metadata/candidates/latest.md) [![Validation: Report](https://img.shields.io/static/v1?label=Validation&message=Report&color=7C3AED&style=flat-square&labelColor=111827&logo=checkmarx)](metadata/validation/latest.md)
 
@@ -21,7 +21,7 @@
 
 | Artifact | Focus | Explore by task | Papers |
 |:--|:--|:--|:--|
-| [🖼️ Image 2D](10-image-2d/README.md) | Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference. | [text-to-image](10-image-2d/text-to-image.md) · [controllable-generation](10-image-2d/controllable-generation.md) · [model-efficiency](10-image-2d/model-efficiency.md) · [alignment-safety](10-image-2d/alignment-safety.md) · [personalization](10-image-2d/personalization.md) | `██████████████` 56 |
+| [🖼️ Image 2D](10-image-2d/README.md) | Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference. | [text-to-image](10-image-2d/text-to-image.md) · [controllable-generation](10-image-2d/controllable-generation.md) · [model-efficiency](10-image-2d/model-efficiency.md) · [alignment-safety](10-image-2d/alignment-safety.md) · [personalization](10-image-2d/personalization.md) | `██████████████` 57 |
 | [🎬 Video](20-video/README.md) | Final output is a video: text-to-video, image-to-video, editing, human animation, long video, and surround-view video. | [text-to-video](20-video/text-to-video.md) · [image-to-video](20-video/image-to-video.md) · [video-editing](20-video/video-editing.md) · [human-animation](20-video/human-animation.md) · [long-video](20-video/long-video.md) · [autonomous-driving-video](20-video/autonomous-driving-video.md) | `█████████████░` 51 |
 | [🧊 3D Object / Asset](30-3d-object-asset/README.md) | Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation. | [3d-shape-generation](30-3d-object-asset/3d-shape-generation.md) · [image-to-3d](30-3d-object-asset/image-to-3d.md) · [text-to-3d](30-3d-object-asset/text-to-3d.md) · [part-aware-generation](30-3d-object-asset/part-aware-generation.md) · [articulated-asset](30-3d-object-asset/articulated-asset.md) · [human-avatar](30-3d-object-asset/human-avatar.md) | `██████████░░░░` 40 |
 | [🏙️ 3D Scene](40-3d-scene/README.md) | Multi-object 3D scene generation, indoor/outdoor scenes, layout-conditioned scenes, and scene editing. | [general-scene-generation](40-3d-scene/general-scene-generation.md) · [layout-to-scene](40-3d-scene/layout-to-scene.md) · [agentic-scene-generation](40-3d-scene/agentic-scene-generation.md) · [indoor](40-3d-scene/indoor.md) · [outdoor-urban](40-3d-scene/outdoor-urban.md) · [single-image-to-scene](40-3d-scene/single-image-to-scene.md) · [scene-editing](40-3d-scene/scene-editing.md) | `█████████░░░░░` 36 |
@@ -114,6 +114,9 @@
 |:--|:--|
 | [Tencent Hunyuan](91-organizations/tencent-hunyuan.md) | `██████████████` 9 |
 | [Independent](91-organizations/independent.md) | `██░░░░░░░░░░░░` 1 |
+| [University of Toronto](91-organizations/university-of-toronto.md) | `██░░░░░░░░░░░░` 1 |
+| [HKUST](91-organizations/hkust.md) | `██░░░░░░░░░░░░` 1 |
+| [Boston College](91-organizations/boston-college.md) | `██░░░░░░░░░░░░` 1 |
 | [Alibaba](91-organizations/alibaba.md) | `██░░░░░░░░░░░░` 1 |
 | [ByteDance Seed](91-organizations/bytedance-seed.md) | `██░░░░░░░░░░░░` 1 |
 

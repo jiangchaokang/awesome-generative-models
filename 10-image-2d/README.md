@@ -2,7 +2,7 @@
 
 > Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference.
 
-**56 curated papers** · [← Root](../README.md) · [Taxonomy](../docs/taxonomy.md) · [Candidate Inbox](../metadata/candidates/latest.md)
+**57 curated papers** · [← Root](../README.md) · [Taxonomy](../docs/taxonomy.md) · [Candidate Inbox](../metadata/candidates/latest.md)
 
 <details>
 <summary><b>📐 How this pipeline works</b></summary>
@@ -23,7 +23,7 @@ Single 2D image
 
 ## Tasks in this category
 
-[text-to-image](text-to-image.md) <sub>(18)</sub> · [controllable-generation](controllable-generation.md) <sub>(14)</sub> · [model-efficiency](model-efficiency.md) <sub>(13)</sub> · [alignment-safety](alignment-safety.md) <sub>(7)</sub> · [personalization](personalization.md) <sub>(4)</sub>
+[text-to-image](text-to-image.md) <sub>(18)</sub> · [controllable-generation](controllable-generation.md) <sub>(14)</sub> · [model-efficiency](model-efficiency.md) <sub>(14)</sub> · [alignment-safety](alignment-safety.md) <sub>(7)</sub> · [personalization](personalization.md) <sub>(4)</sub>
 
 ## 🌟 Spotlight
 
@@ -97,12 +97,13 @@ Single 2D image
 | ⚪ **[SILMM: Self-Improving Large Multimodal Models for Compositional Text-to-Image Generation](https://arxiv.org/abs/2412.05818)** | CVPR 2025 | Uses scalable self-feedback and preference optimization to improve compositional… | [📄 arXiv](https://arxiv.org/abs/2412.05818) |
 | ⚪ **[Type-R: Automatically Retouching Typos for Text-to-Image Generation](https://arxiv.org/abs/2411.18159)** | CVPR 2025 | A post-generation correction pipeline that detects, removes, and re-renders text regions… | [📄 arXiv](https://arxiv.org/abs/2411.18159) |
 
-### [model-efficiency](model-efficiency.md) · 13
+### [model-efficiency](model-efficiency.md) · 14
 
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
 | 🟢 **[iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)** | arXiv 2026 | A simple quantization improvement that makes FSQ stronger for high-quality image… | [📄 arXiv](https://arxiv.org/abs/2601.17124) · [💻 Code ★104](https://github.com/Tencent-Hunyuan/iFSQ) |
 | ⚪ **[DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models](https://arxiv.org/abs/2603.23140)** | arXiv 2026 | A routing strategy that allocates prompts across model choices to balance quality… | [📄 arXiv](https://arxiv.org/abs/2603.23140) |
+| 🟢 **[Distributional Matching for Vector Quantization](https://vq-research.github.io/Wasserstein-VQ/assets/Distributional_Matching_Vector_Quantization.pdf)** | Preprint 2026 | Wasserstein VQ aligns encoder-feature and code-vector distributions with a closed-form…<br>`vae` `token` `latent` | [📄 Link](https://vq-research.github.io/Wasserstein-VQ/assets/Distributional_Matching_Vector_Quantization.pdf) · [💻 Code](https://github.com/VQ-Research/Wasserstein-VQ) · [🌐 Project](https://vq-research.github.io/Wasserstein-VQ/) |
 | ⚪ **[Generative Modeling via Drifting](https://arxiv.org/abs/2602.04770)** | arXiv 2026 | Introduces drifting as a native one-step generative paradigm with strong ImageNet… | [📄 arXiv](https://arxiv.org/abs/2602.04770) |
 | ⚪ **[RPiAE: A Representation-Pivoted Autoencoder Enhancing Both Image Generation and Editing](https://arxiv.org/abs/2603.19206)** | arXiv 2026 | A representation-centered autoencoder design that improves both latent generation quality… | [📄 arXiv](https://arxiv.org/abs/2603.19206) |
 | ⚪ **[TMPDiff: Temporal Mixed-Precision for Diffusion Models](https://arxiv.org/abs/2603.14062)** | arXiv 2026 | A mixed-precision inference strategy that adapts numerical precision over denoising time… | [📄 arXiv](https://arxiv.org/abs/2603.14062) |

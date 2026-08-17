@@ -3,10 +3,10 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-07-17 04:29 UTC`
+- Generated: `2026-08-17 02:35 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-07-17/`
+- Raw files: `metadata/candidates/2026-08-17/`
 - New candidates today: **1**
 - New watched-org repositories today: **0**
 
@@ -17,11 +17,11 @@
 - Is the summary worth writing for the public catalog?
 - Does it belong in the main catalog or only in the watchlist?
 
-## video
+## 4d-dynamic-scene-world
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 60 | arXiv | 2026-07-16 | **MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators** | human-animation | recent paper candidate | [Paper](http://arxiv.org/abs/2607.15273v1) |
+| 58 | arXiv | 2026-08-14 | **ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models** | game-worlds | recent paper candidate | [Paper](http://arxiv.org/abs/2608.14022v1) |
 
 ## New Repositories in Watched Organizations
 

@@ -1,58 +1,10 @@
 {
   "version": 1,
-  "generated_at": "2026-08-10 04:39:47 UTC",
+  "generated_at": "2026-08-17 03:51:50 UTC",
   "ttl_hours": 24.0,
   "entries": {
-    "probe::https://arxiv.org/abs/2602.24096": {
-      "ts": 1786336762.1416008,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2602.24096"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.23376": {
-      "ts": 1786336762.1428711,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.23376"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.23140": {
-      "ts": 1786336762.1442955,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.23140"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.24570": {
-      "ts": 1786336762.1456728,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.24570"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.18627": {
-      "ts": 1786336762.1517909,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.18627"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.20470": {
-      "ts": 1786336762.15293,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.20470"
-      }
-    },
     "probe::https://arxiv.org/abs/2602.12100": {
-      "ts": 1786336762.1638248,
+      "ts": 1786938685.3576658,
       "value": {
         "ok": true,
         "status": 200,
@@ -60,47 +12,135 @@
       }
     },
     "probe::https://arxiv.org/abs/2603.17652": {
-      "ts": 1786336762.2210977,
+      "ts": 1786938685.3598504,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.17652"
       }
     },
-    "arxiv-title::2603.18627": {
-      "ts": 1786336762.4948456,
-      "value": "Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation"
+    "probe::https://arxiv.org/abs/2603.23140": {
+      "ts": 1786938685.3608878,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.23140"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.24570": {
+      "ts": 1786938685.3618572,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.24570"
+      }
+    },
+    "probe::https://arxiv.org/abs/2602.24096": {
+      "ts": 1786938685.3633375,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2602.24096"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.18627": {
+      "ts": 1786938685.3646004,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.18627"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.23376": {
+      "ts": 1786938685.3658874,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.23376"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.20470": {
+      "ts": 1786938685.3670862,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.20470"
+      }
     },
     "arxiv-title::2603.23376": {
-      "ts": 1786336762.532161,
+      "ts": 1786938685.8314161,
       "value": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment"
     },
-    "arxiv-title::2603.17652": {
-      "ts": 1786336762.5337532,
-      "value": "VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs"
+    "arxiv-title::2602.12100": {
+      "ts": 1786938685.834417,
+      "value": "AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer"
     },
     "arxiv-title::2603.20470": {
-      "ts": 1786336762.5687995,
+      "ts": 1786938685.8377883,
       "value": "DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation"
     },
+    "arxiv-title::2603.18627": {
+      "ts": 1786938685.8553421,
+      "value": "Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation"
+    },
     "arxiv-title::2602.24096": {
-      "ts": 1786336762.577667,
+      "ts": 1786938685.8659585,
       "value": "DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer"
     },
+    "arxiv-title::2603.17652": {
+      "ts": 1786938685.8739123,
+      "value": "VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs"
+    },
     "arxiv-title::2603.23140": {
-      "ts": 1786336762.5818,
+      "ts": 1786938685.8859632,
       "value": "DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models"
     },
     "arxiv-title::2603.24570": {
-      "ts": 1786336762.5952296,
+      "ts": 1786938685.9039702,
       "value": "Anti-I2V: Safeguarding your photos from malicious image-to-video generation"
     },
-    "arxiv-title::2602.12100": {
-      "ts": 1786336762.5970242,
-      "value": "AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer"
+    "probe::https://arxiv.org/abs/2603.19675": {
+      "ts": 1786938685.9477663,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.19675"
+      }
+    },
+    "probe::https://arxiv.org/abs/2602.06521": {
+      "ts": 1786938685.948927,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2602.06521"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.19216": {
+      "ts": 1786938685.9550896,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.19216"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.22041": {
+      "ts": 1786938685.9587517,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.22041"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.15279": {
+      "ts": 1786938685.9659667,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.15279"
+      }
     },
     "page::https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/": {
-      "ts": 1786336762.6728399,
+      "ts": 1786938686.0155213,
       "value": {
         "ok": true,
         "status": 200,
@@ -109,71 +149,16 @@
         "content_type": "text/html"
       }
     },
-    "probe::https://arxiv.org/abs/2603.19675": {
-      "ts": 1786336762.7385907,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.19675"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.19216": {
-      "ts": 1786336762.7400043,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.19216"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.15279": {
-      "ts": 1786336762.741473,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.15279"
-      }
-    },
-    "probe::https://arxiv.org/abs/2602.06521": {
-      "ts": 1786336762.7437956,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2602.06521"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.22041": {
-      "ts": 1786336762.7462955,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.22041"
-      }
-    },
     "probe::https://arxiv.org/abs/2603.19598": {
-      "ts": 1786336762.7474487,
+      "ts": 1786938686.1066062,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.19598"
       }
     },
-    "github-meta::jiangchaokang/VectorWorld": {
-      "ts": 1786336762.7838466,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/jiangchaokang/VectorWorld",
-        "full_name": "jiangchaokang/VectorWorld",
-        "stars": 35,
-        "pushed_at": "2026-06-23T10:34:22Z",
-        "archived": false,
-        "license": "",
-        "description": "VectorWorld's official open-source code, which is continuously being updated.",
-        "homepage": ""
-      }
-    },
     "github-meta::Advocate99/AssetFormer": {
-      "ts": 1786336762.8535178,
+      "ts": 1786938686.11321,
       "value": {
         "ok": true,
         "status": 200,
@@ -187,8 +172,63 @@
         "homepage": ""
       }
     },
+    "arxiv-title::2603.19216": {
+      "ts": 1786938686.1411238,
+      "value": "DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising"
+    },
+    "arxiv-title::2603.22041": {
+      "ts": 1786938686.1468017,
+      "value": "DTVI: Dual-Stage Textual and Visual Intervention for Safe Text-to-Image Generation"
+    },
+    "arxiv-title::2603.19675": {
+      "ts": 1786938686.148336,
+      "value": "DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving"
+    },
+    "arxiv-title::2603.15279": {
+      "ts": 1786938686.1662037,
+      "value": "Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling"
+    },
+    "github-meta::jiangchaokang/VectorWorld": {
+      "ts": 1786938686.1914206,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/jiangchaokang/VectorWorld",
+        "full_name": "jiangchaokang/VectorWorld",
+        "stars": 35,
+        "pushed_at": "2026-06-23T10:34:22Z",
+        "archived": false,
+        "license": "",
+        "description": "VectorWorld's official open-source code, which is continuously being updated.",
+        "homepage": ""
+      }
+    },
+    "arxiv-title::2602.06521": {
+      "ts": 1786938686.1973703,
+      "value": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving"
+    },
+    "arxiv-title::2603.19598": {
+      "ts": 1786938686.3033972,
+      "value": "FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow"
+    },
+    "probe::https://arxiv.org/abs/2601.17124": {
+      "ts": 1786938686.3157442,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2601.17124"
+      }
+    },
+    "probe::https://arxiv.org/abs/2602.04770": {
+      "ts": 1786938686.317085,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2602.04770"
+      }
+    },
     "probe::https://arxiv.org/abs/2602.17040": {
-      "ts": 1786336762.9166877,
+      "ts": 1786938686.318985,
       "value": {
         "ok": true,
         "status": 200,
@@ -196,87 +236,35 @@
       }
     },
     "probe::https://arxiv.org/abs/2603.23491": {
-      "ts": 1786336762.9226186,
+      "ts": 1786938686.319956,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.23491"
       }
     },
-    "arxiv-title::2603.15279": {
-      "ts": 1786336762.9531326,
-      "value": "Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling"
-    },
-    "arxiv-title::2603.19675": {
-      "ts": 1786336762.9822664,
-      "value": "DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving"
-    },
-    "arxiv-title::2603.19216": {
-      "ts": 1786336762.9964743,
-      "value": "DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising"
-    },
-    "arxiv-title::2602.06521": {
-      "ts": 1786336762.9994056,
-      "value": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving"
-    },
-    "arxiv-title::2603.22041": {
-      "ts": 1786336763.0068667,
-      "value": "DTVI: Dual-Stage Textual and Visual Intervention for Safe Text-to-Image Generation"
-    },
-    "arxiv-title::2603.19598": {
-      "ts": 1786336763.01489,
-      "value": "FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow"
-    },
-    "arxiv-title::2602.17040": {
-      "ts": 1786336763.1222057,
-      "value": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion"
-    },
-    "arxiv-title::2603.23491": {
-      "ts": 1786336763.1272552,
-      "value": "Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation"
-    },
-    "probe::https://arxiv.org/abs/2602.04770": {
-      "ts": 1786336763.1856298,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2602.04770"
-      }
-    },
-    "probe::https://arxiv.org/abs/2601.17124": {
-      "ts": 1786336763.1933665,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2601.17124"
-      }
-    },
     "probe::https://arxiv.org/abs/2601.19785": {
-      "ts": 1786336763.1949906,
+      "ts": 1786938686.3278987,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2601.19785"
       }
     },
-    "probe::https://arxiv.org/abs/2603.24086": {
-      "ts": 1786336763.1962042,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.24086"
-      }
-    },
     "probe::https://arxiv.org/abs/2603.17965": {
-      "ts": 1786336763.1978092,
+      "ts": 1786938686.3457062,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.17965"
       }
     },
+    "arxiv-title::2602.04770": {
+      "ts": 1786938686.4047673,
+      "value": "Generative Modeling via Drifting"
+    },
     "github-meta::xiaolul2/DynFlowDrive": {
-      "ts": 1786336763.220785,
+      "ts": 1786938686.4271672,
       "value": {
         "ok": true,
         "status": 200,
@@ -290,14 +278,22 @@
         "homepage": ""
       }
     },
+    "probe::https://arxiv.org/abs/2603.24086": {
+      "ts": 1786938686.4407873,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.24086"
+      }
+    },
     "github-meta::liulin815/DriveWorld-VLA": {
-      "ts": 1786336763.2459586,
+      "ts": 1786938686.4852629,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/liulin815/DriveWorld-VLA",
         "full_name": "liulin815/DriveWorld-VLA",
-        "stars": 116,
+        "stars": 120,
         "pushed_at": "2026-07-08T09:44:43Z",
         "archived": false,
         "license": "",
@@ -305,8 +301,28 @@
         "homepage": ""
       }
     },
+    "arxiv-title::2602.17040": {
+      "ts": 1786938686.528943,
+      "value": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion"
+    },
+    "arxiv-title::2601.19785": {
+      "ts": 1786938686.5397668,
+      "value": "GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance"
+    },
+    "arxiv-title::2601.17124": {
+      "ts": 1786938686.5453663,
+      "value": "iFSQ: Improving FSQ for Image Generation with 1 Line of Code"
+    },
+    "arxiv-title::2603.23491": {
+      "ts": 1786938686.5471363,
+      "value": "Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation"
+    },
+    "arxiv-title::2603.17965": {
+      "ts": 1786938686.5829954,
+      "value": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition"
+    },
     "page::https://jinnmnm.github.io/Fuse3d.github.io/": {
-      "ts": 1786336763.2694297,
+      "ts": 1786938686.6114202,
       "value": {
         "ok": true,
         "status": 200,
@@ -315,84 +331,68 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2505.21070": {
-      "ts": 1786336763.3201308,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.21070"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.20192": {
-      "ts": 1786336763.3246953,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.20192"
-      }
-    },
-    "arxiv-title::2601.17124": {
-      "ts": 1786336763.4186823,
-      "value": "iFSQ: Improving FSQ for Image Generation with 1 Line of Code"
-    },
-    "arxiv-title::2601.19785": {
-      "ts": 1786336763.4242666,
-      "value": "GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance"
-    },
-    "probe::https://arxiv.org/abs/2603.21136": {
-      "ts": 1786336763.4440467,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.21136"
-      }
-    },
-    "arxiv-title::2602.04770": {
-      "ts": 1786336763.4471138,
-      "value": "Generative Modeling via Drifting"
-    },
     "arxiv-title::2603.24086": {
-      "ts": 1786336763.4576855,
+      "ts": 1786938686.6191866,
       "value": "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation"
     },
-    "arxiv-title::2603.17965": {
-      "ts": 1786336763.4643118,
-      "value": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition"
-    },
-    "arxiv-title::2505.21070": {
-      "ts": 1786336763.515052,
-      "value": "Minute-Long Videos with Dual Parallelisms"
-    },
-    "arxiv-title::2603.20192": {
-      "ts": 1786336763.5190172,
-      "value": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation"
-    },
-    "probe::https://arxiv.org/abs/2603.16099": {
-      "ts": 1786336763.592037,
+    "probe::https://arxiv.org/abs/2603.20725": {
+      "ts": 1786938686.727944,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.16099"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.22943": {
-      "ts": 1786336763.5935192,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.22943"
+        "final_url": "https://arxiv.org/abs/2603.20725"
       }
     },
     "probe::https://arxiv.org/abs/2603.22091": {
-      "ts": 1786336763.5983899,
+      "ts": 1786938686.72964,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.22091"
       }
     },
+    "probe::https://arxiv.org/abs/2603.20192": {
+      "ts": 1786938686.7304754,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.20192"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.16099": {
+      "ts": 1786938686.7319355,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.16099"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.21136": {
+      "ts": 1786938686.7337415,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.21136"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.22943": {
+      "ts": 1786938686.7351427,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.22943"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.21070": {
+      "ts": 1786938686.7379503,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.21070"
+      }
+    },
     "probe::https://arxiv.org/abs/2603.14936": {
-      "ts": 1786336763.6012878,
+      "ts": 1786938686.8867335,
       "value": {
         "ok": true,
         "status": 200,
@@ -400,33 +400,37 @@
       }
     },
     "probe::https://arxiv.org/abs/2603.19206": {
-      "ts": 1786336763.6055574,
+      "ts": 1786938686.8895206,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.19206"
       }
     },
-    "probe::https://arxiv.org/abs/2603.20725": {
-      "ts": 1786336763.618628,
+    "probe::https://arxiv.org/abs/2603.16711": {
+      "ts": 1786938686.9175196,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.20725"
+        "final_url": "https://arxiv.org/abs/2603.16711"
       }
     },
-    "arxiv-title::2603.21136": {
-      "ts": 1786336763.6490757,
-      "value": "MS-CustomNet: Controllable Multi-Subject Customization with Hierarchical Relational Semantics"
+    "probe::https://arxiv.org/abs/2603.24965": {
+      "ts": 1786938686.933632,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.24965"
+      }
     },
     "github-meta::Tencent-Hunyuan/iFSQ": {
-      "ts": 1786336763.6637626,
+      "ts": 1786938686.945294,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/Tencent-Hunyuan/iFSQ",
         "full_name": "Tencent-Hunyuan/iFSQ",
-        "stars": 104,
+        "stars": 105,
         "pushed_at": "2026-01-27T14:25:02Z",
         "archived": false,
         "license": "NOASSERTION",
@@ -434,234 +438,168 @@
         "homepage": ""
       }
     },
-    "probe::https://arxiv.org/abs/2603.16711": {
-      "ts": 1786336763.738026,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.16711"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.14062": {
-      "ts": 1786336763.9626193,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.14062"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.22228": {
-      "ts": 1786336763.963963,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.22228"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.21295": {
-      "ts": 1786336763.9661222,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.21295"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.19222": {
-      "ts": 1786336763.967354,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.19222"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.21783": {
-      "ts": 1786336763.9683802,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.21783"
-      }
-    },
     "probe::https://arxiv.org/abs/2603.23973": {
-      "ts": 1786336763.969825,
+      "ts": 1786938686.9507492,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.23973"
       }
     },
+    "probe::https://arxiv.org/abs/2603.21783": {
+      "ts": 1786938686.9714983,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.21783"
+      }
+    },
     "probe::https://arxiv.org/abs/2509.14981": {
-      "ts": 1786336763.9706972,
+      "ts": 1786938686.9834814,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2509.14981"
       }
     },
-    "probe::https://arxiv.org/abs/2603.24965": {
-      "ts": 1786336763.9724457,
+    "probe::https://arxiv.org/abs/2603.14062": {
+      "ts": 1786938687.1826603,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.24965"
-      }
-    },
-    "probe::https://arxiv.org/abs/2602.01536": {
-      "ts": 1786336764.1284044,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2602.01536"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.23500": {
-      "ts": 1786336764.20642,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.23500"
-      }
-    },
-    "probe::https://arxiv.org/abs/2603.15478": {
-      "ts": 1786336764.2103453,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.15478"
+        "final_url": "https://arxiv.org/abs/2603.14062"
       }
     },
     "probe::https://arxiv.org/abs/2603.19360": {
-      "ts": 1786336764.2126718,
+      "ts": 1786938687.1864903,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2603.19360"
       }
     },
-    "probe::https://arxiv.org/abs/2603.22972": {
-      "ts": 1786336764.2648325,
+    "probe::https://arxiv.org/abs/2603.22228": {
+      "ts": 1786938687.1883054,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2603.22972"
+        "final_url": "https://arxiv.org/abs/2603.22228"
       }
     },
-    "probe::https://arxiv.org/abs/2503.08594": {
-      "ts": 1786336764.2672553,
+    "probe::https://arxiv.org/abs/2603.15478": {
+      "ts": 1786938687.189676,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.08594"
+        "final_url": "https://arxiv.org/abs/2603.15478"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.21295": {
+      "ts": 1786938687.1905766,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.21295"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.23500": {
+      "ts": 1786938687.192764,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.23500"
+      }
+    },
+    "probe::https://arxiv.org/abs/2602.01536": {
+      "ts": 1786938687.1940773,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2602.01536"
+      }
+    },
+    "probe::https://arxiv.org/abs/2603.19222": {
+      "ts": 1786938687.1953743,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2603.19222"
       }
     },
     "probe::https://arxiv.org/abs/2310.12945": {
-      "ts": 1786336764.2695742,
+      "ts": 1786938687.3834999,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2310.12945"
       }
     },
-    "probe::https://arxiv.org/abs/2410.01699": {
-      "ts": 1786336764.2762265,
+    "probe::https://arxiv.org/abs/2503.08594": {
+      "ts": 1786938687.3939745,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2410.01699"
-      }
-    },
-    "probe::https://arxiv.org/abs/2505.24877": {
-      "ts": 1786336764.3194666,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.24877"
-      }
-    },
-    "probe::https://arxiv.org/abs/2506.17074": {
-      "ts": 1786336764.5334125,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.17074"
-      }
-    },
-    "probe::https://arxiv.org/abs/2501.07647": {
-      "ts": 1786336764.5347886,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.07647"
-      }
-    },
-    "probe::https://arxiv.org/abs/2503.14445": {
-      "ts": 1786336764.5362425,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.14445"
-      }
-    },
-    "probe::https://arxiv.org/abs/2502.02590": {
-      "ts": 1786336764.5378344,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2502.02590"
+        "final_url": "https://arxiv.org/abs/2503.08594"
       }
     },
     "probe::https://arxiv.org/abs/2410.10306": {
-      "ts": 1786336764.5392509,
+      "ts": 1786938687.4488845,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2410.10306"
       }
     },
-    "probe::https://arxiv.org/abs/2503.18938": {
-      "ts": 1786336764.5408194,
+    "probe::https://arxiv.org/abs/2603.22972": {
+      "ts": 1786938687.45024,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.18938"
+        "final_url": "https://arxiv.org/abs/2603.22972"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.24877": {
+      "ts": 1786938687.4517846,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.24877"
       }
     },
     "probe::https://arxiv.org/abs/2502.06145": {
-      "ts": 1786336764.5417235,
+      "ts": 1786938687.452952,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2502.06145"
       }
     },
-    "probe::https://arxiv.org/abs/2507.02857": {
-      "ts": 1786336764.5431511,
+    "probe::https://arxiv.org/abs/2503.18938": {
+      "ts": 1786938687.4540713,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2507.02857"
+        "final_url": "https://arxiv.org/abs/2503.18938"
       }
     },
-    "probe::https://arxiv.org/abs/2509.15249": {
-      "ts": 1786336764.7409978,
+    "probe::https://arxiv.org/abs/2410.01699": {
+      "ts": 1786938687.4550202,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2509.15249"
+        "final_url": "https://arxiv.org/abs/2410.01699"
       }
     },
-    "page::https://assembler3d.github.io": {
-      "ts": 1786336764.749326,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://assembler3d.github.io",
-        "title": "Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion",
-        "content_type": "text/html; charset=utf-8"
-      }
+    "arxiv-title::2310.12945": {
+      "ts": 1786938687.4561005,
+      "value": "3D-GPT: Procedural 3D Modeling with Large Language Models"
+    },
+    "arxiv-title::2503.18938": {
+      "ts": 1786938687.5646193,
+      "value": "AdaWorld: Learning Adaptable World Models with Latent Actions"
     },
     "page::https://openaccess.thecvf.com/content/CVPR2025/html/Bu_ByTheWay_Boost_Your_Text-to-Video_Generation_Model_to_Higher_Quality_in_CVPR_2025_paper.html": {
-      "ts": 1786336764.7519388,
+      "ts": 1786938687.6878963,
       "value": {
         "ok": true,
         "status": 200,
@@ -670,74 +608,64 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2408.06072": {
-      "ts": 1786336764.7835393,
+    "probe::https://arxiv.org/abs/2502.02590": {
+      "ts": 1786938687.7261417,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2408.06072"
+        "final_url": "https://arxiv.org/abs/2502.02590"
       }
     },
-    "probe::https://arxiv.org/abs/2504.06752": {
-      "ts": 1786336764.7854044,
+    "probe::https://arxiv.org/abs/2503.14445": {
+      "ts": 1786938687.727424,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2504.06752"
+        "final_url": "https://arxiv.org/abs/2503.14445"
+      }
+    },
+    "probe::https://arxiv.org/abs/2509.15249": {
+      "ts": 1786938687.728781,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2509.15249"
       }
     },
     "probe::https://arxiv.org/abs/2503.22231": {
-      "ts": 1786336764.789172,
+      "ts": 1786938687.7302692,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2503.22231"
       }
     },
-    "probe::https://arxiv.org/abs/2411.17440": {
-      "ts": 1786336764.8106337,
+    "probe::https://arxiv.org/abs/2506.17074": {
+      "ts": 1786938687.7312717,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.17440"
+        "final_url": "https://arxiv.org/abs/2506.17074"
       }
     },
-    "page::https://articulate-anymesh.github.io": {
-      "ts": 1786336764.8439972,
+    "probe::https://arxiv.org/abs/2507.02857": {
+      "ts": 1786938687.7328074,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://articulate-anymesh.github.io",
-        "title": "Articulate AnyMesh",
-        "content_type": "text/html; charset=utf-8"
+        "final_url": "https://arxiv.org/abs/2507.02857"
       }
     },
-    "arxiv-title::2408.06072": {
-      "ts": 1786336764.8750157,
-      "value": "CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer"
-    },
-    "probe::https://arxiv.org/abs/2501.03575": {
-      "ts": 1786336764.892437,
+    "probe::https://arxiv.org/abs/2501.07647": {
+      "ts": 1786938687.735668,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.03575"
+        "final_url": "https://arxiv.org/abs/2501.07647"
       }
-    },
-    "probe::https://arxiv.org/abs/2505.23660": {
-      "ts": 1786336764.9390666,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.23660"
-      }
-    },
-    "arxiv-title::2501.03575": {
-      "ts": 1786336764.9781382,
-      "value": "Cosmos World Foundation Model Platform for Physical AI"
     },
     "github-meta::Bujiazi/ByTheWay": {
-      "ts": 1786336765.0197303,
+      "ts": 1786938687.909144,
       "value": {
         "ok": true,
         "status": 200,
@@ -752,7 +680,7 @@
       }
     },
     "page::https://xiaomi-research.github.io/cogen/": {
-      "ts": 1786336765.0692294,
+      "ts": 1786938687.9196455,
       "value": {
         "ok": true,
         "status": 200,
@@ -761,41 +689,68 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "page::https://henghuiding.com/AnyI2V/": {
-      "ts": 1786336765.0932317,
+    "page::https://assembler3d.github.io": {
+      "ts": 1786938687.9564376,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://henghuiding.com/AnyI2V/",
-        "title": "AnyI2V: Animating Any Conditional Image with Motion Control",
+        "final_url": "https://assembler3d.github.io",
+        "title": "Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion",
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2408.14837": {
-      "ts": 1786336765.110344,
+    "page::https://articulate-anymesh.github.io": {
+      "ts": 1786938687.9649057,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2408.14837"
+        "final_url": "https://articulate-anymesh.github.io",
+        "title": "Articulate AnyMesh",
+        "content_type": "text/html; charset=utf-8"
       }
     },
-    "github-meta::PKU-YuanGroup/ConsisID": {
-      "ts": 1786336765.1714716,
+    "probe::https://arxiv.org/abs/2504.06752": {
+      "ts": 1786938688.1145215,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/PKU-YuanGroup/ConsisID",
-        "full_name": "PKU-YuanGroup/ConsisID",
-        "stars": 852,
-        "pushed_at": "2026-04-14T03:25:24Z",
-        "archived": false,
-        "license": "Apache-2.0",
-        "description": "[CVPR 2025 Highlight🔥] Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
-        "homepage": "https://pku-yuangroup.github.io/ConsisID/"
+        "final_url": "https://arxiv.org/abs/2504.06752"
+      }
+    },
+    "probe::https://arxiv.org/abs/2408.06072": {
+      "ts": 1786938688.1161094,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2408.06072"
+      }
+    },
+    "probe::https://arxiv.org/abs/2501.03575": {
+      "ts": 1786938688.1179628,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2501.03575"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.23660": {
+      "ts": 1786938688.1194873,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.23660"
+      }
+    },
+    "probe::https://arxiv.org/abs/2411.17440": {
+      "ts": 1786938688.1209857,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.17440"
       }
     },
     "page::https://bujiazi.github.io/bytheway.github.io/": {
-      "ts": 1786336765.1905158,
+      "ts": 1786938688.1246367,
       "value": {
         "ok": true,
         "status": 200,
@@ -804,8 +759,34 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
+    "arxiv-title::2501.03575": {
+      "ts": 1786938688.2013378,
+      "value": "Cosmos World Foundation Model Platform for Physical AI"
+    },
+    "probe::https://arxiv.org/abs/2408.14837": {
+      "ts": 1786938688.2089405,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2408.14837"
+      }
+    },
+    "arxiv-title::2505.23660": {
+      "ts": 1786938688.228605,
+      "value": "D-AR: Diffusion via Autoregressive Models"
+    },
+    "page::https://henghuiding.com/AnyI2V/": {
+      "ts": 1786938688.2711809,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://henghuiding.com/AnyI2V/",
+        "title": "AnyI2V: Animating Any Conditional Image with Motion Control",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
     "page::https://openreview.net/forum?id=amDkNPVWcn": {
-      "ts": 1786336765.1949704,
+      "ts": 1786938688.2793686,
       "value": {
         "ok": true,
         "status": 200,
@@ -814,65 +795,87 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "github-meta::NVIDIA/Cosmos": {
-      "ts": 1786336765.220692,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/NVIDIA/Cosmos",
-        "full_name": "NVIDIA/cosmos",
-        "stars": 11425,
-        "pushed_at": "2026-08-07T02:30:37Z",
-        "archived": false,
-        "license": "NOASSERTION",
-        "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
-        "homepage": "https://www.nvidia.com/en-us/ai/cosmos/"
-      }
-    },
-    "probe::https://arxiv.org/abs/2504.01724": {
-      "ts": 1786336765.282933,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2504.01724"
-      }
+    "arxiv-title::2408.14837": {
+      "ts": 1786938688.2956672,
+      "value": "Diffusion Models Are Real-Time Game Engines"
     },
     "probe::https://arxiv.org/abs/2506.05341": {
-      "ts": 1786336765.2840602,
+      "ts": 1786938688.3293788,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2506.05341"
       }
     },
-    "probe::https://arxiv.org/abs/2403.06845": {
-      "ts": 1786336765.2856631,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2403.06845"
-      }
-    },
-    "page::https://pku-yuangroup.github.io/ConsisID/": {
-      "ts": 1786336765.3188117,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://pku-yuangroup.github.io/ConsisID/",
-        "title": "ConsisID: Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
     "probe::https://arxiv.org/abs/2510.02178": {
-      "ts": 1786336765.3200953,
+      "ts": 1786938688.334565,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2510.02178"
       }
     },
+    "probe::https://arxiv.org/abs/2504.01724": {
+      "ts": 1786938688.3427598,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2504.01724"
+      }
+    },
+    "probe::https://arxiv.org/abs/2403.06845": {
+      "ts": 1786938688.3626688,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2403.06845"
+      }
+    },
+    "arxiv-title::2510.02178": {
+      "ts": 1786938688.4008055,
+      "value": "DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis"
+    },
+    "probe::https://arxiv.org/abs/2409.05463": {
+      "ts": 1786938688.4354405,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2409.05463"
+      }
+    },
+    "probe::https://arxiv.org/abs/2411.11252": {
+      "ts": 1786938688.4595113,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.11252"
+      }
+    },
+    "github-meta::NVIDIA/Cosmos": {
+      "ts": 1786938688.4746623,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/NVIDIA/Cosmos",
+        "full_name": "NVIDIA/cosmos",
+        "stars": 11530,
+        "pushed_at": "2026-08-16T02:30:50Z",
+        "archived": false,
+        "license": "NOASSERTION",
+        "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+        "homepage": "https://www.nvidia.com/en-us/ai/cosmos/"
+      }
+    },
+    "probe::https://arxiv.org/abs/2410.18084": {
+      "ts": 1786938688.5072496,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2410.18084"
+      }
+    },
     "github-meta::showlab/D-AR": {
-      "ts": 1786336765.3227453,
+      "ts": 1786938688.51225,
       "value": {
         "ok": true,
         "status": 200,
@@ -886,89 +889,23 @@
         "homepage": ""
       }
     },
-    "github-meta::THUDM/CogVideo": {
-      "ts": 1786336765.3247108,
+    "github-meta::PKU-YuanGroup/ConsisID": {
+      "ts": 1786938688.5201387,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/THUDM/CogVideo",
-        "full_name": "zai-org/CogVideo",
-        "stars": 12945,
-        "pushed_at": "2025-11-04T11:19:04Z",
+        "final_url": "https://github.com/PKU-YuanGroup/ConsisID",
+        "full_name": "PKU-YuanGroup/ConsisID",
+        "stars": 853,
+        "pushed_at": "2026-04-14T03:25:24Z",
         "archived": false,
         "license": "Apache-2.0",
-        "description": "text and image to video generation: CogVideoX (2024) and CogVideo (ICLR 2023)",
-        "homepage": ""
-      }
-    },
-    "page::https://www.nvidia.com/en-us/ai/cosmos/": {
-      "ts": 1786336765.9519858,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://www.nvidia.com/en-us/ai/cosmos/",
-        "title": "NVIDIA Cosmos",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
-    "probe::https://arxiv.org/abs/2411.11252": {
-      "ts": 1786336765.9640994,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.11252"
-      }
-    },
-    "probe::https://arxiv.org/abs/2409.05463": {
-      "ts": 1786336765.965878,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2409.05463"
-      }
-    },
-    "probe::https://arxiv.org/abs/2410.18084": {
-      "ts": 1786336765.9697146,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2410.18084"
-      }
-    },
-    "probe::https://arxiv.org/abs/2503.13479": {
-      "ts": 1786336766.0039308,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.13479"
-      }
-    },
-    "probe::https://arxiv.org/abs/2511.18173": {
-      "ts": 1786336766.0786817,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2511.18173"
-      }
-    },
-    "probe::https://arxiv.org/abs/2506.24113": {
-      "ts": 1786336766.0996077,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.24113"
-      }
-    },
-    "probe::https://arxiv.org/abs/2504.06861": {
-      "ts": 1786336766.1019042,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2504.06861"
+        "description": "[CVPR 2025 Highlight🔥] Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
+        "homepage": "https://pku-yuangroup.github.io/ConsisID/"
       }
     },
     "page::https://grisoon.github.io/DreamActor-M1/": {
-      "ts": 1786336766.172802,
+      "ts": 1786938688.5755208,
       "value": {
         "ok": true,
         "status": 200,
@@ -977,16 +914,85 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2405.11616": {
-      "ts": 1786336766.1767204,
+    "probe::https://arxiv.org/abs/2503.13479": {
+      "ts": 1786938688.5916736,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2405.11616"
+        "final_url": "https://arxiv.org/abs/2503.13479"
+      }
+    },
+    "probe::https://arxiv.org/abs/2511.18173": {
+      "ts": 1786938689.2084346,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2511.18173"
+      }
+    },
+    "page::https://www.nvidia.com/en-us/ai/cosmos/": {
+      "ts": 1786938689.2099361,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://www.nvidia.com/en-us/ai/cosmos/",
+        "title": "NVIDIA Cosmos",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    "github-meta::THUDM/CogVideo": {
+      "ts": 1786938689.246694,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/THUDM/CogVideo",
+        "full_name": "zai-org/CogVideo",
+        "stars": 12956,
+        "pushed_at": "2025-11-04T11:19:04Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "description": "text and image to video generation: CogVideoX (2024) and CogVideo (ICLR 2023)",
+        "homepage": ""
+      }
+    },
+    "page::https://pku-yuangroup.github.io/ConsisID/": {
+      "ts": 1786938689.253984,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://pku-yuangroup.github.io/ConsisID/",
+        "title": "ConsisID: Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    "probe::https://arxiv.org/abs/2504.06861": {
+      "ts": 1786938689.265223,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2504.06861"
+      }
+    },
+    "probe::https://arxiv.org/abs/2506.24113": {
+      "ts": 1786938689.268251,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2506.24113"
+      }
+    },
+    "page::https://metadrivescape.github.io/papers_project/drivescapev1/index.html": {
+      "ts": 1786938689.3306673,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://metadrivescape.github.io/papers_project/drivescapev1/index.html",
+        "title": "DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation",
+        "content_type": "text/html; charset=utf-8"
       }
     },
     "page::https://dynamic-city.github.io/": {
-      "ts": 1786336766.2169828,
+      "ts": 1786938689.3505738,
       "value": {
         "ok": true,
         "status": 200,
@@ -996,49 +1002,15 @@
       }
     },
     "probe::https://arxiv.org/abs/2510.13678": {
-      "ts": 1786336766.222458,
+      "ts": 1786938689.355849,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2510.13678"
       }
     },
-    "probe::https://arxiv.org/abs/2410.13863": {
-      "ts": 1786336766.2243028,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2410.13863"
-      }
-    },
-    "page::https://metadrivescape.github.io/papers_project/drivescapev1/index.html": {
-      "ts": 1786336766.245401,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://metadrivescape.github.io/papers_project/drivescapev1/index.html",
-        "title": "DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
-    "probe::https://arxiv.org/abs/2510.26140": {
-      "ts": 1786336766.380609,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2510.26140"
-      }
-    },
-    "probe::https://arxiv.org/abs/2501.06481": {
-      "ts": 1786336766.3829446,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.06481"
-      }
-    },
     "probe::https://arxiv.org/abs/2403.03206": {
-      "ts": 1786336766.3843157,
+      "ts": 1786938689.5158255,
       "value": {
         "ok": true,
         "status": 200,
@@ -1046,41 +1018,61 @@
       }
     },
     "probe::https://arxiv.org/abs/2507.08772": {
-      "ts": 1786336766.385514,
+      "ts": 1786938689.516934,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2507.08772"
       }
     },
-    "arxiv-title::2403.03206": {
-      "ts": 1786336766.4787776,
-      "value": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis"
-    },
-    "probe::https://arxiv.org/abs/2411.00769": {
-      "ts": 1786336766.5028055,
+    "probe::https://arxiv.org/abs/2501.06481": {
+      "ts": 1786938689.5185025,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.00769"
+        "final_url": "https://arxiv.org/abs/2501.06481"
       }
     },
     "probe::https://arxiv.org/abs/2501.08325": {
-      "ts": 1786336766.5055647,
+      "ts": 1786938689.519639,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2501.08325"
       }
     },
+    "probe::https://arxiv.org/abs/2410.13863": {
+      "ts": 1786938689.5211496,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2410.13863"
+      }
+    },
+    "probe::https://arxiv.org/abs/2510.26140": {
+      "ts": 1786938689.522398,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2510.26140"
+      }
+    },
+    "probe::https://arxiv.org/abs/2405.11616": {
+      "ts": 1786938689.530888,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2405.11616"
+      }
+    },
     "github-meta::Kevin-thu/Epona": {
-      "ts": 1786336766.5381188,
+      "ts": 1786938689.6221306,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/Kevin-thu/Epona",
         "full_name": "Kevin-thu/Epona",
-        "stars": 377,
+        "stars": 380,
         "pushed_at": "2025-07-22T06:35:46Z",
         "archived": false,
         "license": "MIT",
@@ -1088,8 +1080,91 @@
         "homepage": "https://kevin-thu.github.io/Epona/"
       }
     },
+    "arxiv-title::2403.03206": {
+      "ts": 1786938689.6277785,
+      "value": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis"
+    },
+    "probe::https://arxiv.org/abs/2411.00769": {
+      "ts": 1786938689.6742942,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.00769"
+      }
+    },
+    "github-meta::black-forest-labs/flux": {
+      "ts": 1786938689.8638952,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/black-forest-labs/flux",
+        "full_name": "black-forest-labs/flux",
+        "stars": 25894,
+        "pushed_at": "2025-07-31T13:58:55Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "description": "Official inference repo for FLUX.1 models",
+        "homepage": ""
+      }
+    },
+    "probe::https://arxiv.org/abs/2503.18476": {
+      "ts": 1786938689.91086,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.18476"
+      }
+    },
+    "probe::https://arxiv.org/abs/2503.02187": {
+      "ts": 1786938689.9122472,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.02187"
+      }
+    },
+    "probe::https://arxiv.org/abs/2412.11198": {
+      "ts": 1786938689.9133909,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.11198"
+      }
+    },
+    "probe::https://arxiv.org/abs/2412.02168": {
+      "ts": 1786938689.9147866,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.02168"
+      }
+    },
+    "probe::https://arxiv.org/abs/2508.17832": {
+      "ts": 1786938689.9161406,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2508.17832"
+      }
+    },
+    "probe::https://arxiv.org/abs/2501.14729": {
+      "ts": 1786938689.9327457,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2501.14729"
+      }
+    },
+    "probe::https://arxiv.org/abs/2502.10675": {
+      "ts": 1786938689.9342523,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2502.10675"
+      }
+    },
     "github-meta::pengHTYX/Era3D": {
-      "ts": 1786336766.540315,
+      "ts": 1786938689.9459095,
       "value": {
         "ok": true,
         "status": 200,
@@ -1103,103 +1178,32 @@
         "homepage": ""
       }
     },
-    "probe::https://arxiv.org/abs/2503.18476": {
-      "ts": 1786336766.6003914,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.18476"
-      }
-    },
-    "probe::https://arxiv.org/abs/2501.14729": {
-      "ts": 1786336766.6018765,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.14729"
-      }
-    },
-    "probe::https://arxiv.org/abs/2412.11198": {
-      "ts": 1786336766.6038997,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.11198"
-      }
-    },
-    "probe::https://arxiv.org/abs/2503.02187": {
-      "ts": 1786336766.6049912,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.02187"
-      }
-    },
-    "probe::https://arxiv.org/abs/2412.02168": {
-      "ts": 1786336766.606327,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.02168"
-      }
-    },
-    "github-meta::black-forest-labs/flux": {
-      "ts": 1786336766.7094176,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/black-forest-labs/flux",
-        "full_name": "black-forest-labs/flux",
-        "stars": 25885,
-        "pushed_at": "2025-07-31T13:58:55Z",
-        "archived": false,
-        "license": "Apache-2.0",
-        "description": "Official inference repo for FLUX.1 models",
-        "homepage": ""
-      }
-    },
-    "probe::https://arxiv.org/abs/2502.10675": {
-      "ts": 1786336766.7159796,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2502.10675"
-      }
-    },
-    "probe::https://arxiv.org/abs/2508.17832": {
-      "ts": 1786336766.7323008,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2508.17832"
-      }
-    },
-    "arxiv-title::2412.02168": {
-      "ts": 1786336766.734316,
-      "value": "Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis"
-    },
     "probe::https://arxiv.org/abs/2501.12202": {
-      "ts": 1786336766.748661,
+      "ts": 1786938690.0363362,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2501.12202"
       }
     },
-    "arxiv-title::2501.12202": {
-      "ts": 1786336766.8545823,
-      "value": "Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation"
+    "arxiv-title::2502.10675": {
+      "ts": 1786938690.0480473,
+      "value": "Hierarchically-Structured Open-Vocabulary Indoor Scene Synthesis with Pre-trained Large Language Model"
     },
     "probe::https://arxiv.org/abs/2506.16504": {
-      "ts": 1786336766.95787,
+      "ts": 1786938690.0732145,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2506.16504"
       }
     },
+    "arxiv-title::2501.12202": {
+      "ts": 1786938690.128872,
+      "value": "Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation"
+    },
     "probe::https://arxiv.org/abs/2509.23951": {
-      "ts": 1786336766.9592237,
+      "ts": 1786938690.153237,
       "value": {
         "ok": true,
         "status": 200,
@@ -1207,21 +1211,29 @@
       }
     },
     "probe::https://arxiv.org/abs/2511.18870": {
-      "ts": 1786336766.9604368,
+      "ts": 1786938690.1548398,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2511.18870"
       }
     },
+    "probe::https://arxiv.org/abs/2412.03603": {
+      "ts": 1786938690.2217767,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.03603"
+      }
+    },
     "github-meta::Tencent-Hunyuan/Hunyuan3D-2.1": {
-      "ts": 1786336767.0230427,
+      "ts": 1786938690.2858937,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
         "full_name": "Tencent-Hunyuan/Hunyuan3D-2.1",
-        "stars": 3814,
+        "stars": 3855,
         "pushed_at": "2025-10-17T10:10:07Z",
         "archived": false,
         "license": "NOASSERTION",
@@ -1229,8 +1241,16 @@
         "homepage": "https://3d.hunyuan.tencent.com/"
       }
     },
+    "probe::https://arxiv.org/abs/2507.21809": {
+      "ts": 1786938690.3266478,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2507.21809"
+      }
+    },
     "github-meta::nktoan/h-edit": {
-      "ts": 1786336767.0398169,
+      "ts": 1786938690.3455331,
       "value": {
         "ok": true,
         "status": 200,
@@ -1244,66 +1264,8 @@
         "homepage": "https://arxiv.org/abs/2503.02187"
       }
     },
-    "github-meta::LMD0311/HERMES": {
-      "ts": 1786336767.0417883,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/LMD0311/HERMES",
-        "full_name": "LMD0311/HERMES",
-        "stars": 259,
-        "pushed_at": "2026-05-12T03:05:38Z",
-        "archived": false,
-        "license": "Apache-2.0",
-        "description": "[ICCV 2025] HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation",
-        "homepage": "https://arxiv.org/abs/2501.14729"
-      }
-    },
-    "arxiv-title::2509.23951": {
-      "ts": 1786336767.047349,
-      "value": "HunyuanImage 3.0 Technical Report"
-    },
-    "github-meta::Tencent-Hunyuan/Hunyuan3D-2": {
-      "ts": 1786336767.0904305,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
-        "full_name": "Tencent-Hunyuan/Hunyuan3D-2",
-        "stars": 14451,
-        "pushed_at": "2025-10-28T09:58:12Z",
-        "archived": false,
-        "license": "NOASSERTION",
-        "description": "High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models.",
-        "homepage": "https://3d.hunyuan.tencent.com/"
-      }
-    },
-    "probe::https://arxiv.org/abs/2412.03603": {
-      "ts": 1786336767.1147926,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.03603"
-      }
-    },
-    "probe::https://arxiv.org/abs/2507.21809": {
-      "ts": 1786336767.1166325,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2507.21809"
-      }
-    },
-    "probe::https://arxiv.org/abs/2512.14614": {
-      "ts": 1786336767.1198878,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2512.14614"
-      }
-    },
     "github-meta::Tencent-Hunyuan/HunyuanVideo-I2V": {
-      "ts": 1786336767.1287177,
+      "ts": 1786938690.3473272,
       "value": {
         "ok": true,
         "status": 200,
@@ -1317,16 +1279,54 @@
         "homepage": "https://video.hunyuan.tencent.com/"
       }
     },
+    "github-meta::LMD0311/HERMES": {
+      "ts": 1786938690.359507,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/LMD0311/HERMES",
+        "full_name": "LMD0311/HERMES",
+        "stars": 260,
+        "pushed_at": "2026-05-12T03:05:38Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "description": "[ICCV 2025] HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation",
+        "homepage": "https://arxiv.org/abs/2501.14729"
+      }
+    },
+    "github-meta::Tencent-Hunyuan/Hunyuan3D-2": {
+      "ts": 1786938690.380554,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+        "full_name": "Tencent-Hunyuan/Hunyuan3D-2",
+        "stars": 14503,
+        "pushed_at": "2025-10-28T09:58:12Z",
+        "archived": false,
+        "license": "NOASSERTION",
+        "description": "High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models.",
+        "homepage": "https://3d.hunyuan.tencent.com/"
+      }
+    },
     "probe::https://arxiv.org/abs/2512.02012": {
-      "ts": 1786336767.1581407,
+      "ts": 1786938690.3981657,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2512.02012"
       }
     },
+    "probe::https://arxiv.org/abs/2512.14614": {
+      "ts": 1786938690.4082978,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2512.14614"
+      }
+    },
     "probe::https://arxiv.org/abs/2410.11817": {
-      "ts": 1786336767.1657925,
+      "ts": 1786938690.4213345,
       "value": {
         "ok": true,
         "status": 200,
@@ -1334,48 +1334,21 @@
       }
     },
     "probe::https://arxiv.org/abs/2503.13424": {
-      "ts": 1786336767.1910589,
+      "ts": 1786938690.4299526,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2503.13424"
       }
     },
-    "arxiv-title::2512.14614": {
-      "ts": 1786336767.2129292,
-      "value": "WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling"
-    },
-    "probe::https://arxiv.org/abs/2405.20759": {
-      "ts": 1786336767.3090577,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2405.20759"
-      }
-    },
-    "github-meta::Tencent-Hunyuan/HunyuanImage-3.0": {
-      "ts": 1786336767.3189554,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
-        "full_name": "Tencent-Hunyuan/HunyuanImage-3.0",
-        "stars": 3223,
-        "pushed_at": "2026-06-23T13:12:44Z",
-        "archived": false,
-        "license": "NOASSERTION",
-        "description": "HunyuanImage-3.0: A Powerful Native Multimodal Model for Image Generation",
-        "homepage": "https://hunyuan.tencent.com/image"
-      }
-    },
     "github-meta::Tencent-Hunyuan/HunyuanVideo-1.5": {
-      "ts": 1786336767.331071,
+      "ts": 1786938690.4503608,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
         "full_name": "Tencent-Hunyuan/HunyuanVideo-1.5",
-        "stars": 4555,
+        "stars": 4523,
         "pushed_at": "2026-04-10T06:14:59Z",
         "archived": false,
         "license": "NOASSERTION",
@@ -1383,45 +1356,33 @@
         "homepage": "https://hunyuan.tencent.com/video/zh?tabIndex=0"
       }
     },
-    "probe::https://arxiv.org/abs/2412.09283": {
-      "ts": 1786336767.3791015,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.09283"
-      }
+    "arxiv-title::2512.14614": {
+      "ts": 1786938690.4772694,
+      "value": "WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling"
     },
-    "probe::https://arxiv.org/abs/2404.07191": {
-      "ts": 1786336767.3805752,
+    "github-meta::Tencent-Hunyuan/HunyuanImage-3.0": {
+      "ts": 1786938690.4809837,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2404.07191"
-      }
-    },
-    "github-meta::Tencent-Hunyuan/HunyuanWorld-1.0": {
-      "ts": 1786336767.4713655,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0",
-        "full_name": "Tencent-Hunyuan/HunyuanWorld-1.0",
-        "stars": 2902,
-        "pushed_at": "2026-04-15T17:27:25Z",
+        "final_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
+        "full_name": "Tencent-Hunyuan/HunyuanImage-3.0",
+        "stars": 3235,
+        "pushed_at": "2026-06-23T13:12:44Z",
         "archived": false,
         "license": "NOASSERTION",
-        "description": "Generating Immersive, Explorable, and Interactive 3D Worlds from Words or Pixels with Hunyuan3D World Model",
-        "homepage": "https://3d.hunyuan.tencent.com/sceneTo3D"
+        "description": "HunyuanImage-3.0: A Powerful Native Multimodal Model for Image Generation",
+        "homepage": "https://hunyuan.tencent.com/image"
       }
     },
     "github-meta::Tencent-Hunyuan/HunyuanVideo": {
-      "ts": 1786336767.4956274,
+      "ts": 1786938690.5435946,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
         "full_name": "Tencent-Hunyuan/HunyuanVideo",
-        "stars": 12418,
+        "stars": 12432,
         "pushed_at": "2026-06-29T09:33:50Z",
         "archived": false,
         "license": "NOASSERTION",
@@ -1429,23 +1390,55 @@
         "homepage": "https://aivideo.hunyuan.tencent.com"
       }
     },
-    "github-meta::Tencent-Hunyuan/HY-WorldPlay": {
-      "ts": 1786336767.5010235,
+    "probe::https://arxiv.org/abs/2511.22456": {
+      "ts": 1786938690.6010144,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
-        "full_name": "Tencent-Hunyuan/HY-WorldPlay",
-        "stars": 1570,
-        "pushed_at": "2026-06-10T07:10:23Z",
+        "final_url": "https://arxiv.org/abs/2511.22456"
+      }
+    },
+    "probe::https://arxiv.org/abs/2404.07191": {
+      "ts": 1786938690.6022081,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2404.07191"
+      }
+    },
+    "probe::https://arxiv.org/abs/2412.09283": {
+      "ts": 1786938690.6105645,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.09283"
+      }
+    },
+    "probe::https://arxiv.org/abs/2405.20759": {
+      "ts": 1786938690.612103,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2405.20759"
+      }
+    },
+    "github-meta::Tencent-Hunyuan/HunyuanWorld-1.0": {
+      "ts": 1786938690.6539714,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0",
+        "full_name": "Tencent-Hunyuan/HunyuanWorld-1.0",
+        "stars": 2910,
+        "pushed_at": "2026-04-15T17:27:25Z",
         "archived": false,
         "license": "NOASSERTION",
-        "description": "HY-World 1.5: A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency",
-        "homepage": "https://3d-models.hunyuan.tencent.com/world/"
+        "description": "Generating Immersive, Explorable, and Interactive 3D Worlds from Words or Pixels with Hunyuan3D World Model",
+        "homepage": "https://3d.hunyuan.tencent.com/sceneTo3D"
       }
     },
     "github-meta::luping-liu/LongAlign": {
-      "ts": 1786336767.5178945,
+      "ts": 1786938690.7744157,
       "value": {
         "ok": true,
         "status": 200,
@@ -1459,159 +1452,55 @@
         "homepage": "https://arxiv.org/abs/2410.11817"
       }
     },
-    "github-meta::Chao0511/mitune": {
-      "ts": 1786336767.6509073,
+    "github-meta::Tencent-Hunyuan/HY-WorldPlay": {
+      "ts": 1786938690.7778888,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/Chao0511/mitune",
-        "full_name": "Chao0511/mitune",
-        "stars": 6,
-        "pushed_at": "2025-03-23T14:38:36Z",
+        "final_url": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
+        "full_name": "Tencent-Hunyuan/HY-WorldPlay",
+        "stars": 1575,
+        "pushed_at": "2026-06-10T07:10:23Z",
         "archived": false,
-        "license": "MIT",
-        "description": "The official implementation of ICLR 2025 paper Information Theoretic Text-to-Image Alignment",
-        "homepage": ""
-      }
-    },
-    "probe::https://arxiv.org/abs/2511.22456": {
-      "ts": 1786336767.6564548,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2511.22456"
-      }
-    },
-    "probe::https://arxiv.org/abs/2512.03052": {
-      "ts": 1786336767.657769,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2512.03052"
+        "license": "NOASSERTION",
+        "description": "HY-World 1.5: A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency",
+        "homepage": "https://3d-models.hunyuan.tencent.com/world/"
       }
     },
     "probe::https://arxiv.org/abs/2410.01295": {
-      "ts": 1786336767.6592388,
+      "ts": 1786938690.78535,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2410.01295"
       }
     },
+    "probe::https://arxiv.org/abs/2512.03052": {
+      "ts": 1786938690.819214,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2512.03052"
+      }
+    },
     "probe::https://arxiv.org/abs/2509.05263": {
-      "ts": 1786336767.6866114,
+      "ts": 1786938690.9059541,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2509.05263"
       }
     },
-    "github-meta::TencentARC/InstantMesh": {
-      "ts": 1786336767.7668483,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/TencentARC/InstantMesh",
-        "full_name": "TencentARC/InstantMesh",
-        "stars": 4494,
-        "pushed_at": "2025-01-03T09:09:13Z",
-        "archived": false,
-        "license": "Apache-2.0",
-        "description": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models",
-        "homepage": ""
-      }
-    },
-    "github-meta::Intern-Nexus/Infinite-Mobility": {
-      "ts": 1786336767.7722619,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/Intern-Nexus/Infinite-Mobility",
-        "full_name": "InternRobotics/Infinite-Mobility",
-        "stars": 195,
-        "pushed_at": "2025-07-25T03:18:07Z",
-        "archived": false,
-        "license": "BSD-3-Clause",
-        "description": "",
-        "homepage": ""
-      }
-    },
-    "probe::https://arxiv.org/abs/2411.13807": {
-      "ts": 1786336767.8333886,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.13807"
-      }
-    },
-    "probe::https://arxiv.org/abs/2409.08215": {
-      "ts": 1786336767.8368423,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2409.08215"
-      }
-    },
-    "probe::https://arxiv.org/abs/2412.09856": {
-      "ts": 1786336767.8475494,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.09856"
-      }
-    },
     "probe::https://arxiv.org/abs/2412.02193": {
-      "ts": 1786336767.8525586,
+      "ts": 1786938690.9271297,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2412.02193"
       }
     },
-    "probe::https://arxiv.org/abs/2406.10210": {
-      "ts": 1786336767.8551292,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2406.10210"
-      }
-    },
-    "probe::https://arxiv.org/abs/2506.18701": {
-      "ts": 1786336767.9976187,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.18701"
-      }
-    },
-    "probe::https://arxiv.org/abs/2505.02648": {
-      "ts": 1786336768.0290868,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.02648"
-      }
-    },
-    "page::https://lineargen.github.io/": {
-      "ts": 1786336768.0407465,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://lineargen.github.io/",
-        "title": "LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
-    "probe::https://arxiv.org/abs/2505.13447": {
-      "ts": 1786336768.0454767,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.13447"
-      }
-    },
     "github-meta::ZhenglinZhou/ITS3D": {
-      "ts": 1786336768.0585704,
+      "ts": 1786938690.9441392,
       "value": {
         "ok": true,
         "status": 200,
@@ -1625,42 +1514,184 @@
         "homepage": ""
       }
     },
+    "github-meta::Chao0511/mitune": {
+      "ts": 1786938690.9566987,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/Chao0511/mitune",
+        "full_name": "Chao0511/mitune",
+        "stars": 6,
+        "pushed_at": "2025-03-23T14:38:36Z",
+        "archived": false,
+        "license": "MIT",
+        "description": "The official implementation of ICLR 2025 paper Information Theoretic Text-to-Image Alignment",
+        "homepage": ""
+      }
+    },
+    "github-meta::TencentARC/InstantMesh": {
+      "ts": 1786938690.9625492,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/TencentARC/InstantMesh",
+        "full_name": "TencentARC/InstantMesh",
+        "stars": 4498,
+        "pushed_at": "2025-01-03T09:09:13Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "description": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models",
+        "homepage": ""
+      }
+    },
+    "arxiv-title::2412.02193": {
+      "ts": 1786938690.9736643,
+      "value": "LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models"
+    },
+    "github-meta::Intern-Nexus/Infinite-Mobility": {
+      "ts": 1786938690.9827206,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/Intern-Nexus/Infinite-Mobility",
+        "full_name": "InternRobotics/Infinite-Mobility",
+        "stars": 196,
+        "pushed_at": "2025-07-25T03:18:07Z",
+        "archived": false,
+        "license": "BSD-3-Clause",
+        "description": "",
+        "homepage": ""
+      }
+    },
+    "probe::https://arxiv.org/abs/2412.09856": {
+      "ts": 1786938690.9997208,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.09856"
+      }
+    },
+    "probe::https://arxiv.org/abs/2409.08215": {
+      "ts": 1786938691.0165377,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2409.08215"
+      }
+    },
+    "probe::https://arxiv.org/abs/2506.18701": {
+      "ts": 1786938691.0336647,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2506.18701"
+      }
+    },
+    "probe::https://arxiv.org/abs/2411.13807": {
+      "ts": 1786938691.045512,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.13807"
+      }
+    },
+    "probe::https://arxiv.org/abs/2406.10210": {
+      "ts": 1786938691.0618262,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2406.10210"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.02648": {
+      "ts": 1786938691.0674222,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.02648"
+      }
+    },
+    "arxiv-title::2506.18701": {
+      "ts": 1786938691.106113,
+      "value": "Matrix-Game: Interactive World Foundation Model"
+    },
+    "probe::https://arxiv.org/abs/2505.13447": {
+      "ts": 1786938691.1573176,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.13447"
+      }
+    },
     "probe::https://arxiv.org/abs/2410.08261": {
-      "ts": 1786336768.0818186,
+      "ts": 1786938691.2207685,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2410.08261"
       }
     },
+    "arxiv-title::2505.13447": {
+      "ts": 1786938691.2242346,
+      "value": "Mean Flows for One-step Generative Modeling"
+    },
     "probe::https://arxiv.org/abs/2509.22281": {
-      "ts": 1786336768.1062548,
+      "ts": 1786938691.22858,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2509.22281"
       }
     },
-    "arxiv-title::2505.13447": {
-      "ts": 1786336768.1279662,
-      "value": "Mean Flows for One-step Generative Modeling"
+    "page::https://lineargen.github.io/": {
+      "ts": 1786938691.268869,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://lineargen.github.io/",
+        "title": "LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity",
+        "content_type": "text/html; charset=utf-8"
+      }
     },
     "probe::https://arxiv.org/abs/2412.11596": {
-      "ts": 1786336768.1805584,
+      "ts": 1786938691.3070457,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2412.11596"
       }
     },
+    "probe::https://arxiv.org/abs/2508.15169": {
+      "ts": 1786938691.3502815,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2508.15169"
+      }
+    },
+    "github-meta::SkyworkAI/Matrix-Game": {
+      "ts": 1786938691.3647356,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/SkyworkAI/Matrix-Game",
+        "full_name": "SkyworkAI/Matrix-Game",
+        "stars": 2302,
+        "pushed_at": "2026-03-30T06:32:00Z",
+        "archived": false,
+        "license": "MIT",
+        "description": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
+        "homepage": "https://matrix-game-v3.github.io/"
+      }
+    },
     "github-meta::flymin/MagicDrive-V2": {
-      "ts": 1786336768.2013705,
+      "ts": 1786938691.386545,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/flymin/MagicDrive-V2",
         "full_name": "flymin/MagicDrive-V2",
-        "stars": 720,
+        "stars": 722,
         "pushed_at": "2025-06-26T01:36:37Z",
         "archived": false,
         "license": "AGPL-3.0",
@@ -1668,26 +1699,8 @@
         "homepage": "https://gaoruiyuan.com/magicdrive-v2/"
       }
     },
-    "probe::https://arxiv.org/abs/2508.15169": {
-      "ts": 1786336768.2186232,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2508.15169"
-      }
-    },
-    "page::https://magicdrive-v2.github.io/": {
-      "ts": 1786336768.2975612,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://magicdrive-v2.github.io/",
-        "title": "",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
     "page::https://mesatask.github.io/": {
-      "ts": 1786336768.297993,
+      "ts": 1786938691.4255931,
       "value": {
         "ok": true,
         "status": 200,
@@ -1696,39 +1709,22 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "page::https://3d-models.hunyuan.tencent.com/world/": {
-      "ts": 1786336768.3008118,
+    "probe::https://arxiv.org/abs/2505.20287": {
+      "ts": 1786938691.4375305,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://3d-models.hunyuan.tencent.com/world/",
-        "title": "腾讯混元3D",
-        "content_type": "text/html"
-      }
-    },
-    "github-meta::SkyworkAI/Matrix-Game": {
-      "ts": 1786336768.3241496,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/SkyworkAI/Matrix-Game",
-        "full_name": "SkyworkAI/Matrix-Game",
-        "stars": 2294,
-        "pushed_at": "2026-03-30T06:32:00Z",
-        "archived": false,
-        "license": "MIT",
-        "description": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
-        "homepage": "https://matrix-game-v3.github.io/"
+        "final_url": "https://arxiv.org/abs/2505.20287"
       }
     },
     "github-meta::Gsunshine/meanflow": {
-      "ts": 1786336768.3375528,
+      "ts": 1786938691.4504917,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/Gsunshine/meanflow",
         "full_name": "Gsunshine/meanflow",
-        "stars": 603,
+        "stars": 605,
         "pushed_at": "2026-03-13T05:29:12Z",
         "archived": false,
         "license": "MIT",
@@ -1736,24 +1732,26 @@
         "homepage": "https://arxiv.org/abs/2505.13447"
       }
     },
-    "probe::https://arxiv.org/abs/2505.20287": {
-      "ts": 1786336768.359872,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.20287"
-      }
-    },
     "probe::https://arxiv.org/abs/2412.05848": {
-      "ts": 1786336768.3643305,
+      "ts": 1786938691.4575493,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2412.05848"
       }
     },
+    "page::https://magicdrive-v2.github.io/": {
+      "ts": 1786938691.4657006,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://magicdrive-v2.github.io/",
+        "title": "",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
     "probe::https://arxiv.org/abs/2411.16503": {
-      "ts": 1786336768.3690755,
+      "ts": 1786938691.4925756,
       "value": {
         "ok": true,
         "status": 200,
@@ -1761,7 +1759,7 @@
       }
     },
     "probe::https://arxiv.org/abs/2502.12456": {
-      "ts": 1786336768.375409,
+      "ts": 1786938691.5019894,
       "value": {
         "ok": true,
         "status": 200,
@@ -1769,23 +1767,15 @@
       }
     },
     "probe::https://arxiv.org/abs/2503.16375": {
-      "ts": 1786336768.3987215,
+      "ts": 1786938691.520998,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2503.16375"
       }
     },
-    "probe::https://arxiv.org/abs/2502.01061": {
-      "ts": 1786336768.5556257,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2502.01061"
-      }
-    },
     "probe::https://arxiv.org/abs/2408.14732": {
-      "ts": 1786336768.5572495,
+      "ts": 1786938691.5491235,
       "value": {
         "ok": true,
         "status": 200,
@@ -1793,23 +1783,15 @@
       }
     },
     "probe::https://arxiv.org/abs/2504.09975": {
-      "ts": 1786336768.558525,
+      "ts": 1786938691.6157603,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2504.09975"
       }
     },
-    "probe::https://arxiv.org/abs/2507.06165": {
-      "ts": 1786336768.5619085,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2507.06165"
-      }
-    },
     "page::https://zhw-zhang.github.io/MotionPro-page/": {
-      "ts": 1786336768.5839431,
+      "ts": 1786938691.6529365,
       "value": {
         "ok": true,
         "status": 200,
@@ -1818,12 +1800,76 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "arxiv-title::2502.01061": {
-      "ts": 1786336768.6493468,
-      "value": "OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models"
+    "probe::https://arxiv.org/abs/2502.01061": {
+      "ts": 1786938691.657026,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2502.01061"
+      }
+    },
+    "page::https://3d-models.hunyuan.tencent.com/world/": {
+      "ts": 1786938691.664342,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://3d-models.hunyuan.tencent.com/world/",
+        "title": "腾讯混元3D",
+        "content_type": "text/html"
+      }
+    },
+    "probe::https://arxiv.org/abs/2507.06165": {
+      "ts": 1786938691.667076,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2507.06165"
+      }
+    },
+    "probe::https://arxiv.org/abs/2501.13554": {
+      "ts": 1786938691.7120287,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2501.13554"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.21960": {
+      "ts": 1786938691.7315395,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.21960"
+      }
+    },
+    "probe::https://arxiv.org/abs/2406.05641": {
+      "ts": 1786938691.7586396,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2406.05641"
+      }
+    },
+    "probe::https://arxiv.org/abs/2506.05573": {
+      "ts": 1786938691.8226764,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2506.05573"
+      }
+    },
+    "page::https://omnihuman-lab.github.io/": {
+      "ts": 1786938691.8396716,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://omnihuman-lab.github.io/",
+        "title": "",
+        "content_type": "text/html; charset=utf-8"
+      }
     },
     "github-meta::Bomingmiao/NoiseDiffusion": {
-      "ts": 1786336768.7148976,
+      "ts": 1786938691.8420842,
       "value": {
         "ok": true,
         "status": 200,
@@ -1837,70 +1883,52 @@
         "homepage": ""
       }
     },
-    "probe::https://arxiv.org/abs/2505.21960": {
-      "ts": 1786336768.7446277,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.21960"
-      }
-    },
-    "probe::https://arxiv.org/abs/2501.13554": {
-      "ts": 1786336768.7464702,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.13554"
-      }
-    },
-    "probe::https://arxiv.org/abs/2406.05641": {
-      "ts": 1786336768.759206,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2406.05641"
-      }
-    },
-    "page::https://omnihuman-lab.github.io/": {
-      "ts": 1786336768.7685847,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://omnihuman-lab.github.io/",
-        "title": "",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
-    "probe::https://arxiv.org/abs/2506.05573": {
-      "ts": 1786336768.7803452,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.05573"
-      }
-    },
     "probe::https://arxiv.org/abs/2412.00596": {
-      "ts": 1786336768.7844708,
+      "ts": 1786938691.8655658,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2412.00596"
       }
     },
+    "arxiv-title::2506.05573": {
+      "ts": 1786938691.8865862,
+      "value": "PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers"
+    },
+    "probe::https://arxiv.org/abs/2503.18324": {
+      "ts": 1786938691.9050343,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.18324"
+      }
+    },
     "probe::https://arxiv.org/abs/2403.04692": {
-      "ts": 1786336768.8310325,
+      "ts": 1786938691.9066782,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2403.04692"
       }
     },
-    "arxiv-title::2506.05573": {
-      "ts": 1786336768.871077,
-      "value": "PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers"
+    "probe::https://arxiv.org/abs/2501.12910": {
+      "ts": 1786938691.9218884,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2501.12910"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.04622": {
+      "ts": 1786938691.9367714,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.04622"
+      }
     },
     "github-meta::octree-nn/octfusion": {
-      "ts": 1786336768.9332714,
+      "ts": 1786938692.0018845,
       "value": {
         "ok": true,
         "status": 200,
@@ -1914,46 +1942,14 @@
         "homepage": ""
       }
     },
-    "probe::https://arxiv.org/abs/2503.18324": {
-      "ts": 1786336768.9359465,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.18324"
-      }
-    },
-    "probe::https://arxiv.org/abs/2505.04622": {
-      "ts": 1786336768.9446697,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.04622"
-      }
-    },
-    "probe::https://arxiv.org/abs/2501.12910": {
-      "ts": 1786336768.9467933,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.12910"
-      }
-    },
-    "probe::https://arxiv.org/abs/2410.16719": {
-      "ts": 1786336768.998351,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2410.16719"
-      }
-    },
     "github-meta::byliutao/1Prompt1Story": {
-      "ts": 1786336769.0759063,
+      "ts": 1786938692.0141125,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/byliutao/1Prompt1Story",
         "full_name": "byliutao/1Prompt1Story",
-        "stars": 320,
+        "stars": 321,
         "pushed_at": "2025-10-20T04:52:19Z",
         "archived": false,
         "license": "MIT",
@@ -1961,24 +1957,24 @@
         "homepage": "https://byliutao.github.io/1Prompt1Story.github.io/"
       }
     },
+    "probe::https://arxiv.org/abs/2410.16719": {
+      "ts": 1786938692.0544105,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2410.16719"
+      }
+    },
     "probe::https://arxiv.org/abs/2412.21117": {
-      "ts": 1786336769.0936315,
+      "ts": 1786938692.0569844,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2412.21117"
       }
     },
-    "probe::https://arxiv.org/abs/2410.05954": {
-      "ts": 1786336769.1317213,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2410.05954"
-      }
-    },
     "page::https://primitiveanything.github.io": {
-      "ts": 1786336769.145248,
+      "ts": 1786938692.1233394,
       "value": {
         "ok": true,
         "status": 200,
@@ -1987,8 +1983,16 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
+    "probe::https://arxiv.org/abs/2410.05954": {
+      "ts": 1786938692.1542618,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2410.05954"
+      }
+    },
     "probe::https://arxiv.org/abs/2508.02324": {
-      "ts": 1786336769.1851187,
+      "ts": 1786938692.199077,
       "value": {
         "ok": true,
         "status": 200,
@@ -1996,7 +2000,7 @@
       }
     },
     "github-meta::pittisl/PhyT2V": {
-      "ts": 1786336769.1974049,
+      "ts": 1786938692.2279449,
       "value": {
         "ok": true,
         "status": 200,
@@ -2010,41 +2014,8 @@
         "homepage": ""
       }
     },
-    "github-meta::PixArt-alpha/PixArt-sigma": {
-      "ts": 1786336769.2152162,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/PixArt-alpha/PixArt-sigma",
-        "full_name": "PixArt-alpha/PixArt-sigma",
-        "stars": 1935,
-        "pushed_at": "2024-10-31T01:20:19Z",
-        "archived": false,
-        "license": "Apache-2.0",
-        "description": "PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation",
-        "homepage": "https://pixart-alpha.github.io/PixArt-sigma-project/"
-      }
-    },
-    "probe::https://arxiv.org/abs/2504.11739": {
-      "ts": 1786336769.2605662,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2504.11739"
-      }
-    },
-    "page::https://openreview.net/forum?id=lTrrnNdkOX": {
-      "ts": 1786336769.2766347,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DlTrrnNdkOX",
-        "title": "Verifying your browser | OpenReview",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
     "page::https://klingai.com/": {
-      "ts": 1786336769.9068305,
+      "ts": 1786938692.8306427,
       "value": {
         "ok": true,
         "status": 200,
@@ -2053,16 +2024,8 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2506.02459": {
-      "ts": 1786336769.9087908,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.02459"
-      }
-    },
     "page::https://freemty.github.io/project-prometheus/": {
-      "ts": 1786336769.9157748,
+      "ts": 1786938692.8454936,
       "value": {
         "ok": true,
         "status": 200,
@@ -2071,8 +2034,31 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
+    "github-meta::PixArt-alpha/PixArt-sigma": {
+      "ts": 1786938692.8499122,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/PixArt-alpha/PixArt-sigma",
+        "full_name": "PixArt-alpha/PixArt-sigma",
+        "stars": 1937,
+        "pushed_at": "2024-10-31T01:20:19Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "description": "PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation",
+        "homepage": "https://pixart-alpha.github.io/PixArt-sigma-project/"
+      }
+    },
+    "probe::https://arxiv.org/abs/2504.11739": {
+      "ts": 1786938692.8583984,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2504.11739"
+      }
+    },
     "page::https://pyramid-flow.github.io/": {
-      "ts": 1786336770.0231318,
+      "ts": 1786938692.9016402,
       "value": {
         "ok": true,
         "status": 200,
@@ -2081,16 +2067,24 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2410.10629": {
-      "ts": 1786336770.0545666,
+    "probe::https://arxiv.org/abs/2506.02459": {
+      "ts": 1786938692.9083564,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2410.10629"
+        "final_url": "https://arxiv.org/abs/2506.02459"
+      }
+    },
+    "probe::https://arxiv.org/abs/2506.22291": {
+      "ts": 1786938692.9322202,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2506.22291"
       }
     },
     "probe::https://arxiv.org/abs/2407.14979": {
-      "ts": 1786336770.056103,
+      "ts": 1786938692.933228,
       "value": {
         "ok": true,
         "status": 200,
@@ -2098,23 +2092,33 @@
       }
     },
     "probe::https://arxiv.org/abs/2501.18427": {
-      "ts": 1786336770.0576868,
+      "ts": 1786938692.9562783,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2501.18427"
       }
     },
-    "probe::https://arxiv.org/abs/2506.22291": {
-      "ts": 1786336770.0658584,
+    "page::https://openreview.net/forum?id=lTrrnNdkOX": {
+      "ts": 1786938692.9996712,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.22291"
+        "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DlTrrnNdkOX",
+        "title": "Verifying your browser | OpenReview",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    "probe::https://arxiv.org/abs/2410.10629": {
+      "ts": 1786938693.0118332,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2410.10629"
       }
     },
     "probe::https://arxiv.org/abs/2503.19897": {
-      "ts": 1786336770.070646,
+      "ts": 1786938693.0442991,
       "value": {
         "ok": true,
         "status": 200,
@@ -2122,21 +2126,29 @@
       }
     },
     "probe::https://arxiv.org/abs/2507.19058": {
-      "ts": 1786336770.0740314,
+      "ts": 1786938693.0593102,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2507.19058"
       }
     },
+    "probe::https://arxiv.org/abs/2505.02836": {
+      "ts": 1786938693.0787919,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.02836"
+      }
+    },
     "github-meta::QwenLM/Qwen-Image": {
-      "ts": 1786336770.1870613,
+      "ts": 1786938693.0809643,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/QwenLM/Qwen-Image",
         "full_name": "QwenLM/Qwen-Image",
-        "stars": 8222,
+        "stars": 8245,
         "pushed_at": "2026-02-10T07:37:37Z",
         "archived": false,
         "license": "Apache-2.0",
@@ -2144,16 +2156,8 @@
         "homepage": ""
       }
     },
-    "probe::https://arxiv.org/abs/2505.02836": {
-      "ts": 1786336770.1969564,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.02836"
-      }
-    },
     "probe::https://arxiv.org/abs/2509.20414": {
-      "ts": 1786336770.237263,
+      "ts": 1786938693.1054387,
       "value": {
         "ok": true,
         "status": 200,
@@ -2161,7 +2165,7 @@
       }
     },
     "probe::https://arxiv.org/abs/2403.15698": {
-      "ts": 1786336770.259693,
+      "ts": 1786938693.1673186,
       "value": {
         "ok": true,
         "status": 200,
@@ -2169,7 +2173,7 @@
       }
     },
     "probe::https://arxiv.org/abs/2504.08685": {
-      "ts": 1786336770.2793198,
+      "ts": 1786938693.2140615,
       "value": {
         "ok": true,
         "status": 200,
@@ -2177,33 +2181,15 @@
       }
     },
     "probe::https://arxiv.org/abs/2506.18538": {
-      "ts": 1786336770.3601298,
+      "ts": 1786938693.2450256,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2506.18538"
       }
     },
-    "page::https://xiac20.github.io/ScenePainter/": {
-      "ts": 1786336770.4102309,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://xiac20.github.io/ScenePainter/",
-        "title": "SOCIAL MEDIA TITLE TAG",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
-    "probe::https://arxiv.org/abs/2504.11346": {
-      "ts": 1786336770.422167,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2504.11346"
-      }
-    },
     "page::https://nvlabs.github.io/Sana/": {
-      "ts": 1786336770.4582007,
+      "ts": 1786938693.2948084,
       "value": {
         "ok": true,
         "status": 200,
@@ -2213,112 +2199,22 @@
       }
     },
     "github-meta::NVlabs/Sana": {
-      "ts": 1786336770.460239,
+      "ts": 1786938693.3141334,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/NVlabs/Sana",
         "full_name": "NVlabs/Sana",
-        "stars": 8728,
-        "pushed_at": "2026-08-09T21:24:14Z",
+        "stars": 8772,
+        "pushed_at": "2026-08-17T03:30:09Z",
         "archived": false,
         "license": "Apache-2.0",
         "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer",
         "homepage": "https://nvlabs.github.io/Sana/docs/"
       }
     },
-    "probe::https://arxiv.org/abs/2411.04989": {
-      "ts": 1786336770.4879165,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.04989"
-      }
-    },
-    "page::https://scene-weaver.github.io/": {
-      "ts": 1786336770.4924452,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://scene-weaver.github.io/",
-        "title": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent",
-        "content_type": "text/html; charset=utf-8"
-      }
-    },
-    "probe::https://arxiv.org/abs/2412.05818": {
-      "ts": 1786336770.5165808,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.05818"
-      }
-    },
-    "probe::https://arxiv.org/abs/2412.02912": {
-      "ts": 1786336770.520726,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.02912"
-      }
-    },
-    "probe::https://arxiv.org/abs/2503.23284": {
-      "ts": 1786336770.5394125,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.23284"
-      }
-    },
-    "probe::https://arxiv.org/abs/2412.09619": {
-      "ts": 1786336770.63984,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2412.09619"
-      }
-    },
-    "probe::https://arxiv.org/abs/2505.14521": {
-      "ts": 1786336770.6757402,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.14521"
-      }
-    },
-    "probe::https://arxiv.org/abs/2503.21732": {
-      "ts": 1786336770.7000387,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.21732"
-      }
-    },
-    "probe::https://arxiv.org/abs/2411.16443": {
-      "ts": 1786336770.701222,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.16443"
-      }
-    },
-    "probe::https://arxiv.org/abs/2506.07932": {
-      "ts": 1786336770.779139,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.07932"
-      }
-    },
-    "probe::https://arxiv.org/abs/2411.17697": {
-      "ts": 1786336770.8306859,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.17697"
-      }
-    },
     "page::https://graphics.unizar.es/projects/PreciseCam2024": {
-      "ts": 1786336770.848355,
+      "ts": 1786938693.3156292,
       "value": {
         "ok": true,
         "status": 200,
@@ -2327,16 +2223,138 @@
         "content_type": "text/html"
       }
     },
+    "page::https://scene-weaver.github.io/": {
+      "ts": 1786938693.3158243,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://scene-weaver.github.io/",
+        "title": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    "probe::https://arxiv.org/abs/2504.11346": {
+      "ts": 1786938693.3226407,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2504.11346"
+      }
+    },
+    "probe::https://arxiv.org/abs/2411.04989": {
+      "ts": 1786938693.3520896,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.04989"
+      }
+    },
+    "page::https://xiac20.github.io/ScenePainter/": {
+      "ts": 1786938693.5385337,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://xiac20.github.io/ScenePainter/",
+        "title": "SOCIAL MEDIA TITLE TAG",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    "probe::https://arxiv.org/abs/2412.05818": {
+      "ts": 1786938693.6409993,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.05818"
+      }
+    },
+    "probe::https://arxiv.org/abs/2412.09619": {
+      "ts": 1786938693.6425045,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.09619"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.14521": {
+      "ts": 1786938693.6435587,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.14521"
+      }
+    },
+    "probe::https://arxiv.org/abs/2412.02912": {
+      "ts": 1786938693.646768,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2412.02912"
+      }
+    },
+    "probe::https://arxiv.org/abs/2503.23284": {
+      "ts": 1786938693.6485534,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.23284"
+      }
+    },
+    "probe::https://arxiv.org/abs/2503.21732": {
+      "ts": 1786938693.7893703,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.21732"
+      }
+    },
+    "page::https://seaweed.video/": {
+      "ts": 1786938693.8478694,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://seaweed.video/",
+        "title": "Seaweed",
+        "content_type": "text/html"
+      }
+    },
+    "probe::https://arxiv.org/abs/2411.17697": {
+      "ts": 1786938693.8670104,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.17697"
+      }
+    },
+    "probe::https://arxiv.org/abs/2411.16443": {
+      "ts": 1786938693.8682463,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.16443"
+      }
+    },
+    "probe::https://arxiv.org/abs/2506.07932": {
+      "ts": 1786938693.880496,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2506.07932"
+      }
+    },
     "probe::https://arxiv.org/abs/2502.10248": {
-      "ts": 1786336770.8515368,
+      "ts": 1786938693.893691,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2502.10248"
       }
     },
+    "arxiv-title::2503.21732": {
+      "ts": 1786938693.919258,
+      "value": "SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling"
+    },
     "probe::https://arxiv.org/abs/2412.13188": {
-      "ts": 1786336770.8917093,
+      "ts": 1786938693.9655242,
       "value": {
         "ok": true,
         "status": 200,
@@ -2344,7 +2362,7 @@
       }
     },
     "probe::https://arxiv.org/abs/2503.16420": {
-      "ts": 1786336770.942979,
+      "ts": 1786938694.01129,
       "value": {
         "ok": true,
         "status": 200,
@@ -2352,15 +2370,23 @@
       }
     },
     "probe::https://arxiv.org/abs/2510.14977": {
-      "ts": 1786336770.9609144,
+      "ts": 1786938694.0204828,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2510.14977"
       }
     },
+    "probe::https://arxiv.org/abs/2411.15236": {
+      "ts": 1786938694.0382166,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2411.15236"
+      }
+    },
     "github-meta::lizhihao6/Sparc3D": {
-      "ts": 1786336770.9953043,
+      "ts": 1786938694.0551605,
       "value": {
         "ok": true,
         "status": 200,
@@ -2374,26 +2400,8 @@
         "homepage": "https://lizhihao6.github.io/Sparc3D/"
       }
     },
-    "page::https://seaweed.video/": {
-      "ts": 1786336771.0644925,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://seaweed.video/",
-        "title": "Seaweed",
-        "content_type": "text/html"
-      }
-    },
-    "probe::https://arxiv.org/abs/2411.15236": {
-      "ts": 1786336771.0835931,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.15236"
-      }
-    },
     "probe::https://arxiv.org/abs/2406.03293": {
-      "ts": 1786336771.1070266,
+      "ts": 1786938694.104339,
       "value": {
         "ok": true,
         "status": 200,
@@ -2401,15 +2409,46 @@
       }
     },
     "probe::https://arxiv.org/abs/2501.03059": {
-      "ts": 1786336771.1244378,
+      "ts": 1786938694.1241233,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2501.03059"
       }
     },
+    "probe::https://arxiv.org/abs/2406.05814": {
+      "ts": 1786938694.163681,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2406.05814"
+      }
+    },
+    "probe::https://arxiv.org/abs/2505.09140": {
+      "ts": 1786938694.1757262,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2505.09140"
+      }
+    },
+    "github-meta::stepfun-ai/Step-Video-T2V": {
+      "ts": 1786938694.2138622,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/stepfun-ai/Step-Video-T2V",
+        "full_name": "stepfun-ai/Step-Video-T2V",
+        "stars": 3184,
+        "pushed_at": "2025-03-17T03:26:54Z",
+        "archived": false,
+        "license": "MIT",
+        "description": "",
+        "homepage": ""
+      }
+    },
     "page::https://lizhihao6.github.io/Sparc3D": {
-      "ts": 1786336771.1729789,
+      "ts": 1786938694.2550628,
       "value": {
         "ok": true,
         "status": 200,
@@ -2418,71 +2457,40 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2406.05814": {
-      "ts": 1786336771.1827033,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2406.05814"
-      }
-    },
-    "probe::https://arxiv.org/abs/2505.09140": {
-      "ts": 1786336771.2136712,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2505.09140"
-      }
-    },
-    "github-meta::stepfun-ai/Step-Video-T2V": {
-      "ts": 1786336771.221177,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/stepfun-ai/Step-Video-T2V",
-        "full_name": "stepfun-ai/Step-Video-T2V",
-        "stars": 3186,
-        "pushed_at": "2025-03-17T03:26:54Z",
-        "archived": false,
-        "license": "MIT",
-        "description": "",
-        "homepage": ""
-      }
-    },
-    "probe::https://arxiv.org/abs/2510.23880": {
-      "ts": 1786336771.2913785,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2510.23880"
-      }
-    },
-    "probe::https://arxiv.org/abs/2501.03006": {
-      "ts": 1786336771.2928507,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.03006"
-      }
-    },
     "probe::https://arxiv.org/abs/2412.01506": {
-      "ts": 1786336771.2945638,
+      "ts": 1786938694.2745116,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2412.01506"
       }
     },
+    "probe::https://arxiv.org/abs/2501.03006": {
+      "ts": 1786938694.2776256,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2501.03006"
+      }
+    },
     "probe::https://arxiv.org/abs/2403.02151": {
-      "ts": 1786336771.3139312,
+      "ts": 1786938694.3076017,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2403.02151"
       }
     },
+    "probe::https://arxiv.org/abs/2510.23880": {
+      "ts": 1786938694.3097472,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2510.23880"
+      }
+    },
     "page::https://guyyariv.github.io/TTM/": {
-      "ts": 1786336771.36021,
+      "ts": 1786938694.3688264,
       "value": {
         "ok": true,
         "status": 200,
@@ -2492,7 +2500,7 @@
       }
     },
     "probe::https://arxiv.org/abs/2411.18159": {
-      "ts": 1786336771.4143596,
+      "ts": 1786938694.4277065,
       "value": {
         "ok": true,
         "status": 200,
@@ -2500,7 +2508,7 @@
       }
     },
     "probe::https://arxiv.org/abs/2507.17745": {
-      "ts": 1786336771.4441252,
+      "ts": 1786938694.4295473,
       "value": {
         "ok": true,
         "status": 200,
@@ -2508,23 +2516,15 @@
       }
     },
     "probe::https://arxiv.org/abs/2512.21185": {
-      "ts": 1786336771.4578304,
+      "ts": 1786938694.4744902,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2512.21185"
       }
     },
-    "probe::https://arxiv.org/abs/2504.11289": {
-      "ts": 1786336771.5540037,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2504.11289"
-      }
-    },
     "github-meta::Zechao-Guan/TopoDiT-3D": {
-      "ts": 1786336771.6079116,
+      "ts": 1786938694.5360606,
       "value": {
         "ok": true,
         "status": 200,
@@ -2539,52 +2539,45 @@
       }
     },
     "probe::https://arxiv.org/abs/2509.25079": {
-      "ts": 1786336771.6096144,
+      "ts": 1786938694.602883,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2509.25079"
       }
     },
-    "probe::https://arxiv.org/abs/2405.20343": {
-      "ts": 1786336771.6195717,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2405.20343"
-      }
-    },
     "probe::https://arxiv.org/abs/2412.05435": {
-      "ts": 1786336771.6420474,
+      "ts": 1786938694.6054933,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2412.05435"
       }
     },
-    "github-meta::microsoft/TRELLIS": {
-      "ts": 1786336771.7034152,
+    "probe::https://arxiv.org/abs/2405.20343": {
+      "ts": 1786938694.6064475,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/microsoft/TRELLIS",
-        "full_name": "microsoft/TRELLIS",
-        "stars": 13413,
-        "pushed_at": "2026-06-26T07:27:56Z",
-        "archived": false,
-        "license": "MIT",
-        "description": "Official repo for paper \"Structured 3D Latents for Scalable and Versatile 3D Generation\" (CVPR'25 Spotlight).",
-        "homepage": "https://trellis3d.github.io"
+        "final_url": "https://arxiv.org/abs/2405.20343"
+      }
+    },
+    "probe::https://arxiv.org/abs/2504.11289": {
+      "ts": 1786938694.6127572,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2504.11289"
       }
     },
     "github-meta::VAST-AI-Research/TripoSR": {
-      "ts": 1786336771.7204177,
+      "ts": 1786938694.6430662,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/VAST-AI-Research/TripoSR",
         "full_name": "VAST-AI-Research/TripoSR",
-        "stars": 6822,
+        "stars": 6853,
         "pushed_at": "2026-06-04T07:11:09Z",
         "archived": false,
         "license": "MIT",
@@ -2592,16 +2585,41 @@
         "homepage": ""
       }
     },
+    "github-meta::microsoft/TRELLIS": {
+      "ts": 1786938694.6651561,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/microsoft/TRELLIS",
+        "full_name": "microsoft/TRELLIS",
+        "stars": 13451,
+        "pushed_at": "2026-06-26T07:27:56Z",
+        "archived": false,
+        "license": "MIT",
+        "description": "Official repo for paper \"Structured 3D Latents for Scalable and Versatile 3D Generation\" (CVPR'25 Spotlight).",
+        "homepage": "https://trellis3d.github.io"
+      }
+    },
     "probe::https://arxiv.org/abs/2508.11952": {
-      "ts": 1786336771.7646182,
+      "ts": 1786938694.6973372,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2508.11952"
       }
     },
+    "page::https://microsoft.github.io/TRELLIS/": {
+      "ts": 1786938694.735047,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://microsoft.github.io/TRELLIS/",
+        "title": "TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
     "probe::https://arxiv.org/abs/2503.16302": {
-      "ts": 1786336771.7831843,
+      "ts": 1786938694.7573369,
       "value": {
         "ok": true,
         "status": 200,
@@ -2609,30 +2627,51 @@
       }
     },
     "probe::https://arxiv.org/abs/2503.07598": {
-      "ts": 1786336771.7893915,
+      "ts": 1786938694.7857046,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://arxiv.org/abs/2503.07598"
       }
     },
-    "github-meta::AiuniAI/Unique3D": {
-      "ts": 1786336778.3598452,
+    "probe::https://arxiv.org/abs/2411.17592": {
+      "ts": 1786938694.79064,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/AiuniAI/Unique3D",
-        "full_name": "AiuniAI/Unique3D",
-        "stars": 3578,
-        "pushed_at": "2025-07-17T21:29:05Z",
-        "archived": false,
-        "license": "MIT",
-        "description": "[NeurIPS 2024] Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image",
-        "homepage": "https://wukailu.github.io/Unique3D/"
+        "final_url": "https://arxiv.org/abs/2411.17592"
+      }
+    },
+    "probe::https://arxiv.org/abs/2503.21781": {
+      "ts": 1786938694.8289049,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.21781"
+      }
+    },
+    "arxiv-title::2503.07598": {
+      "ts": 1786938694.8587081,
+      "value": "VACE: All-in-One Video Creation and Editing"
+    },
+    "probe::https://arxiv.org/abs/2503.15855": {
+      "ts": 1786938694.9192135,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.15855"
+      }
+    },
+    "probe::https://arxiv.org/abs/2506.04225": {
+      "ts": 1786938694.9296074,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2506.04225"
       }
     },
     "github-meta::ali-vilab/UniAnimate-DiT": {
-      "ts": 1786336778.3617773,
+      "ts": 1786938694.987417,
       "value": {
         "ok": true,
         "status": 200,
@@ -2646,28 +2685,111 @@
         "homepage": ""
       }
     },
-    "page::https://seed.bytedance.com/en/seedance": {
-      "ts": 1786336778.3632014,
+    "github-meta::AiuniAI/Unique3D": {
+      "ts": 1786938694.9959219,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://seed.bytedance.com/en/seedance",
-        "title": "Seedance",
-        "content_type": "text/html; charset=utf-8"
+        "final_url": "https://github.com/AiuniAI/Unique3D",
+        "full_name": "AiuniAI/Unique3D",
+        "stars": 3580,
+        "pushed_at": "2025-07-17T21:29:05Z",
+        "archived": false,
+        "license": "MIT",
+        "description": "[NeurIPS 2024] Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image",
+        "homepage": "https://wukailu.github.io/Unique3D/"
       }
     },
-    "page::https://microsoft.github.io/TRELLIS/": {
-      "ts": 1786336778.3861122,
+    "probe::https://arxiv.org/abs/2310.08710": {
+      "ts": 1786938695.0438645,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://microsoft.github.io/TRELLIS/",
-        "title": "TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation",
-        "content_type": "text/html; charset=utf-8"
+        "final_url": "https://arxiv.org/abs/2310.08710"
+      }
+    },
+    "probe::https://arxiv.org/abs/2503.20314": {
+      "ts": 1786938695.044862,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2503.20314"
+      }
+    },
+    "probe::https://arxiv.org/abs/2506.20590": {
+      "ts": 1786938695.054531,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2506.20590"
+      }
+    },
+    "github-meta::Tencent-Hunyuan/FlashVDM": {
+      "ts": 1786938695.0700645,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/Tencent-Hunyuan/FlashVDM",
+        "full_name": "Tencent-Hunyuan/FlashVDM",
+        "stars": 334,
+        "pushed_at": "2026-03-13T02:55:53Z",
+        "archived": false,
+        "license": "NOASSERTION",
+        "description": "Unleashing Vecset Diffusion Model for Fast Shape Generation / within 1 Second (ICCV'25 Highlight)",
+        "homepage": ""
+      }
+    },
+    "arxiv-title::2503.20314": {
+      "ts": 1786938695.1047919,
+      "value": "Wan: Open and Advanced Large-Scale Video Generative Models"
+    },
+    "github-meta::ali-vilab/VACE": {
+      "ts": 1786938695.1239598,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/ali-vilab/VACE",
+        "full_name": "ali-vilab/VACE",
+        "stars": 3921,
+        "pushed_at": "2025-10-17T05:46:57Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "description": "[ICCV 2025] Official implementations for paper: VACE: All-in-One Video Creation and Editing",
+        "homepage": "https://ali-vilab.github.io/VACE-Page/"
+      }
+    },
+    "github-meta::Wan-Video/Wan2.1": {
+      "ts": 1786938699.0856695,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/Wan-Video/Wan2.1",
+        "full_name": "Wan-Video/Wan2.1",
+        "stars": 16838,
+        "pushed_at": "2026-03-05T09:38:07Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "description": "Wan: Open and Advanced Large-Scale Video Generative Models",
+        "homepage": "https://wan.video"
+      }
+    },
+    "github-meta::Tencent-Hunyuan/HunyuanWorld-Voyager": {
+      "ts": 1786938700.3468177,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
+        "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
+        "stars": 1583,
+        "pushed_at": "2026-04-15T17:30:08Z",
+        "archived": false,
+        "license": "NOASSERTION",
+        "description": "Voyager is an interactive RGBD video generation model conditioned on camera input, and supports real-time 3D reconstruction.",
+        "homepage": "https://3d-models.hunyuan.tencent.com/world/"
       }
     },
     "page::https://seed.bytedance.com/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83": {
-      "ts": 1786336786.2938607,
+      "ts": 1786938703.007287,
       "value": {
         "ok": true,
         "status": 200,
@@ -2676,99 +2798,23 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "probe::https://arxiv.org/abs/2503.15855": {
-      "ts": 1786336786.3031733,
+    "github-meta::waymo-research/waymax": {
+      "ts": 1786938703.0112185,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.15855"
-      }
-    },
-    "probe::https://arxiv.org/abs/2503.21781": {
-      "ts": 1786336786.3048372,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.21781"
-      }
-    },
-    "probe::https://arxiv.org/abs/2411.17592": {
-      "ts": 1786336786.3067381,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2411.17592"
-      }
-    },
-    "probe::https://arxiv.org/abs/2506.04225": {
-      "ts": 1786336786.3081686,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.04225"
-      }
-    },
-    "probe::https://arxiv.org/abs/2310.08710": {
-      "ts": 1786336786.3409398,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2310.08710"
-      }
-    },
-    "probe::https://arxiv.org/abs/2503.20314": {
-      "ts": 1786336786.348789,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2503.20314"
-      }
-    },
-    "arxiv-title::2503.20314": {
-      "ts": 1786336786.4482687,
-      "value": "Wan: Open and Advanced Large-Scale Video Generative Models"
-    },
-    "probe::https://arxiv.org/abs/2506.20590": {
-      "ts": 1786336786.4761055,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2506.20590"
-      }
-    },
-    "github-meta::Tencent-Hunyuan/FlashVDM": {
-      "ts": 1786336786.4863942,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/Tencent-Hunyuan/FlashVDM",
-        "full_name": "Tencent-Hunyuan/FlashVDM",
-        "stars": 333,
-        "pushed_at": "2026-03-13T02:55:53Z",
+        "final_url": "https://github.com/waymo-research/waymax",
+        "full_name": "waymo-research/waymax",
+        "stars": 1094,
+        "pushed_at": "2025-10-23T04:29:20Z",
         "archived": false,
         "license": "NOASSERTION",
-        "description": "Unleashing Vecset Diffusion Model for Fast Shape Generation / within 1 Second (ICCV'25 Highlight)",
+        "description": "A JAX-based simulator for autonomous driving research.",
         "homepage": ""
       }
     },
-    "probe::https://arxiv.org/abs/2512.09164": {
-      "ts": 1786336786.5079727,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2512.09164"
-      }
-    },
-    "probe::https://arxiv.org/abs/2507.00603": {
-      "ts": 1786336786.5551956,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2507.00603"
-      }
-    },
     "page::https://openaccess.thecvf.com/content/CVPR2025/html/Yu_WonderWorld_Interactive_3D_Scene_Generation_from_a_Single_Image_CVPR_2025_paper.html": {
-      "ts": 1786336786.5675433,
+      "ts": 1786938703.0432434,
       "value": {
         "ok": true,
         "status": 200,
@@ -2777,23 +2823,8 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "github-meta::ali-vilab/VACE": {
-      "ts": 1786336786.6116216,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://github.com/ali-vilab/VACE",
-        "full_name": "ali-vilab/VACE",
-        "stars": 3908,
-        "pushed_at": "2025-10-17T05:46:57Z",
-        "archived": false,
-        "license": "Apache-2.0",
-        "description": "[ICCV 2025] Official implementations for paper: VACE: All-in-One Video Creation and Editing",
-        "homepage": "https://ali-vilab.github.io/VACE-Page/"
-      }
-    },
     "page::https://wonder-free.github.io/": {
-      "ts": 1786336786.676442,
+      "ts": 1786938703.0437634,
       "value": {
         "ok": true,
         "status": 200,
@@ -2802,63 +2833,60 @@
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "github-meta::Wan-Video/Wan2.1": {
-      "ts": 1786336786.6799412,
+    "page::https://seed.bytedance.com/en/seedance": {
+      "ts": 1786938709.360005,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/Wan-Video/Wan2.1",
-        "full_name": "Wan-Video/Wan2.1",
-        "stars": 16783,
-        "pushed_at": "2026-03-05T09:38:07Z",
-        "archived": false,
-        "license": "Apache-2.0",
-        "description": "Wan: Open and Advanced Large-Scale Video Generative Models",
-        "homepage": "https://wan.video"
-      }
-    },
-    "page::https://wonderzoom.github.io/": {
-      "ts": 1786336786.8591638,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://wonderzoom.github.io/",
-        "title": "WonderZoom",
+        "final_url": "https://seed.bytedance.com/en/seedance",
+        "title": "Seedance",
         "content_type": "text/html; charset=utf-8"
       }
     },
-    "github-meta::Tencent-Hunyuan/HunyuanWorld-Voyager": {
-      "ts": 1786336786.860849,
+    "probe::https://arxiv.org/abs/2512.09164": {
+      "ts": 1786938709.363344,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
-        "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
-        "stars": 1580,
-        "pushed_at": "2026-04-15T17:30:08Z",
-        "archived": false,
-        "license": "NOASSERTION",
-        "description": "Voyager is an interactive RGBD video generation model conditioned on camera input, and supports real-time 3D reconstruction.",
-        "homepage": "https://3d-models.hunyuan.tencent.com/world/"
+        "final_url": "https://arxiv.org/abs/2512.09164"
       }
     },
-    "github-meta::waymo-research/waymax": {
-      "ts": 1786336786.8628325,
+    "probe::https://arxiv.org/abs/2507.00603": {
+      "ts": 1786938709.364567,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://github.com/waymo-research/waymax",
-        "full_name": "waymo-research/waymax",
-        "stars": 1093,
-        "pushed_at": "2025-10-23T04:29:20Z",
-        "archived": false,
-        "license": "NOASSERTION",
-        "description": "A JAX-based simulator for autonomous driving research.",
-        "homepage": ""
+        "final_url": "https://arxiv.org/abs/2507.00603"
+      }
+    },
+    "probe::https://arxiv.org/abs/2504.12369": {
+      "ts": 1786938709.3659449,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2504.12369"
+      }
+    },
+    "page::https://ali-vilab.github.io/VACE-Page/": {
+      "ts": 1786938709.4098685,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://ali-vilab.github.io/VACE-Page/",
+        "title": "VACE",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    "probe::https://arxiv.org/abs/2501.10021": {
+      "ts": 1786938709.4106832,
+      "value": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://arxiv.org/abs/2501.10021"
       }
     },
     "github-meta::KovenYu/WonderWorld": {
-      "ts": 1786336786.864171,
+      "ts": 1786938709.512742,
       "value": {
         "ok": true,
         "status": 200,
@@ -2872,40 +2900,24 @@
         "homepage": ""
       }
     },
-    "probe::https://arxiv.org/abs/2504.12369": {
-      "ts": 1786336786.869914,
+    "page::https://wonderzoom.github.io/": {
+      "ts": 1786938709.7383304,
       "value": {
         "ok": true,
         "status": 200,
-        "final_url": "https://arxiv.org/abs/2504.12369"
-      }
-    },
-    "probe::https://arxiv.org/abs/2501.10021": {
-      "ts": 1786336786.8715017,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://arxiv.org/abs/2501.10021"
-      }
-    },
-    "page::https://ali-vilab.github.io/VACE-Page/": {
-      "ts": 1786336786.958085,
-      "value": {
-        "ok": true,
-        "status": 200,
-        "final_url": "https://ali-vilab.github.io/VACE-Page/",
-        "title": "VACE",
+        "final_url": "https://wonderzoom.github.io/",
+        "title": "WonderZoom",
         "content_type": "text/html; charset=utf-8"
       }
     },
     "github-meta::ucaszyp/World4Drive": {
-      "ts": 1786336787.0374098,
+      "ts": 1786938709.740298,
       "value": {
         "ok": true,
         "status": 200,
         "final_url": "https://github.com/ucaszyp/World4Drive",
         "full_name": "ucaszyp/World4Drive",
-        "stars": 103,
+        "stars": 104,
         "pushed_at": "2025-12-31T15:00:36Z",
         "archived": false,
         "license": "Apache-2.0",
@@ -2914,7 +2926,7 @@
       }
     },
     "github-meta::bytedance/X-Dyna": {
-      "ts": 1786336787.2626207,
+      "ts": 1786938709.785681,
       "value": {
         "ok": true,
         "status": 200,
@@ -2929,7 +2941,7 @@
       }
     },
     "page::https://kovenyu.com/WonderWorld/": {
-      "ts": 1786336787.33967,
+      "ts": 1786938710.1010778,
       "value": {
         "ok": true,
         "status": 200,

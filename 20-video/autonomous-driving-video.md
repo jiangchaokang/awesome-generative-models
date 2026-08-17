@@ -10,7 +10,7 @@
 
 > A high-resolution long-form multi-view driving video model with richer geometric and scenario control.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2411.13807) [![Code: GitHub ★ 720](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+720&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/flymin/MagicDrive-V2) [![Project: Site](https://img.shields.io/static/v1?label=Project&message=Site&color=0EA5E9&style=flat-square&labelColor=111827&logo=googlechrome)](https://magicdrive-v2.github.io/)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2411.13807) [![Code: GitHub ★ 722](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+722&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/flymin/MagicDrive-V2) [![Project: Site](https://img.shields.io/static/v1?label=Project&message=Site&color=0EA5E9&style=flat-square&labelColor=111827&logo=googlechrome)](https://magicdrive-v2.github.io/)
 
 `autonomous-driving`
 
@@ -20,7 +20,7 @@
 
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
-| 🟢 **[MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control](https://arxiv.org/abs/2411.13807)** | ICCV 2025 | A high-resolution long-form multi-view driving video model with richer geometric and…<br>`autonomous-driving` | [📄 arXiv](https://arxiv.org/abs/2411.13807) · [💻 Code ★720](https://github.com/flymin/MagicDrive-V2) · [🌐 Project](https://magicdrive-v2.github.io/) |
+| 🟢 **[MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control](https://arxiv.org/abs/2411.13807)** | ICCV 2025 | A high-resolution long-form multi-view driving video model with richer geometric and…<br>`autonomous-driving` | [📄 arXiv](https://arxiv.org/abs/2411.13807) · [💻 Code ★722](https://github.com/flymin/MagicDrive-V2) · [🌐 Project](https://magicdrive-v2.github.io/) |
 | ⚪ **[CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving](https://arxiv.org/abs/2503.22231)** | arXiv 2025 | Improves 3D consistency in controllable driving video generation through spatially…<br>`autonomous-driving` | [📄 arXiv](https://arxiv.org/abs/2503.22231) · [🌐 Project](https://xiaomi-research.github.io/cogen/) |
 | ⚪ **[DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation](https://arxiv.org/abs/2403.06845)** | AAAI 2025 | An LLM-enhanced driving video generator that converts user intent into trajectories…<br>`autonomous-driving` | [📄 arXiv](https://arxiv.org/abs/2403.06845) |
 | ⚪ **[DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation](https://arxiv.org/abs/2409.05463)** | ICCV 2025 | A high-resolution multi-view driving video generator with strong spatial-temporal…<br>`autonomous-driving` | [📄 arXiv](https://arxiv.org/abs/2409.05463) · [🌐 Project](https://metadrivescape.github.io/papers_project/drivescapev1/index.html) |

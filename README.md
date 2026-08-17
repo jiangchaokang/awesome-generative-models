@@ -39,7 +39,7 @@
 
 > A simple quantization improvement that makes FSQ stronger for high-quality image generation with minimal code changes.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 104](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+104&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 105](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+105&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
 
 **🎬 Video** · [see all →](20-video/README.md)
 

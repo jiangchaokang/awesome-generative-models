@@ -10,7 +10,7 @@
 
 > A simple quantization improvement that makes FSQ stronger for high-quality image generation with minimal code changes.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 105](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+105&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 106](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+106&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
 
 ## Full List
 
@@ -18,7 +18,7 @@
 
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
-| 🟢 **[iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)** | arXiv 2026 | A simple quantization improvement that makes FSQ stronger for high-quality image… | [📄 arXiv](https://arxiv.org/abs/2601.17124) · [💻 Code ★105](https://github.com/Tencent-Hunyuan/iFSQ) |
+| 🟢 **[iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)** | arXiv 2026 | A simple quantization improvement that makes FSQ stronger for high-quality image… | [📄 arXiv](https://arxiv.org/abs/2601.17124) · [💻 Code ★106](https://github.com/Tencent-Hunyuan/iFSQ) |
 | ⚪ **[DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models](https://arxiv.org/abs/2603.23140)** | arXiv 2026 | A routing strategy that allocates prompts across model choices to balance quality… | [📄 arXiv](https://arxiv.org/abs/2603.23140) |
 | ⚪ **[Generative Modeling via Drifting](https://arxiv.org/abs/2602.04770)** | arXiv 2026 | Introduces drifting as a native one-step generative paradigm with strong ImageNet… | [📄 arXiv](https://arxiv.org/abs/2602.04770) |
 | ⚪ **[RPiAE: A Representation-Pivoted Autoencoder Enhancing Both Image Generation and Editing](https://arxiv.org/abs/2603.19206)** | arXiv 2026 | A representation-centered autoencoder design that improves both latent generation quality… | [📄 arXiv](https://arxiv.org/abs/2603.19206) |

@@ -33,7 +33,7 @@ Single 2D image
 
 > A simple quantization improvement that makes FSQ stronger for high-quality image generation with minimal code changes.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 105](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+105&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 106](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+106&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
 
 #### 🌟 [Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation](https://arxiv.org/abs/2603.18627)
 
@@ -65,7 +65,7 @@ Single 2D image
 | ⚪ **[UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation](https://arxiv.org/abs/2603.23500)** | arXiv 2026 | A policy-optimization view of reasoning-driven visual generation for stronger prompt… | [📄 arXiv](https://arxiv.org/abs/2603.23500) |
 | 🟢 **[FLUX.1: Scalable Rectified Flow Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2403.03206)** | arXiv 2024 · since 2025 | A highly influential rectified-flow image generator that remained one of the dominant… | [📄 arXiv](https://arxiv.org/abs/2403.03206) · [💻 Code ★25.9k](https://github.com/black-forest-labs/flux) |
 | 🟢 **[SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer](https://arxiv.org/abs/2501.18427)** | arXiv 2025 | A stronger SANA release focused on efficient scaling of both training-time and… | [📄 arXiv](https://arxiv.org/abs/2501.18427) · [💻 Code ★8.8k](https://github.com/NVlabs/Sana) |
-| 🟢 **[Qwen-Image Technical Report](https://arxiv.org/abs/2508.02324)** | arXiv 2025 | Qwen-Image is an open image-generation foundation model built for strong text rendering… | [📄 arXiv](https://arxiv.org/abs/2508.02324) · [💻 Code ★8.2k](https://github.com/QwenLM/Qwen-Image) |
+| 🟢 **[Qwen-Image Technical Report](https://arxiv.org/abs/2508.02324)** | arXiv 2025 | Qwen-Image is an open image-generation foundation model built for strong text rendering… | [📄 arXiv](https://arxiv.org/abs/2508.02324) · [💻 Code ★8.3k](https://github.com/QwenLM/Qwen-Image) |
 | 🟢 **[HunyuanImage 3.0 Technical Report](https://arxiv.org/abs/2509.23951)** | arXiv 2025 | HunyuanImage 3.0 is Tencent Hunyuan’s large native multimodal image model focused on… | [📄 arXiv](https://arxiv.org/abs/2509.23951) · [💻 Code ★3.2k](https://github.com/Tencent-Hunyuan/HunyuanImage-3.0) |
 | 🟢 **[PixArt-Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation](https://arxiv.org/abs/2403.04692)** | ECCV 2024 · since 2025 | An important open DiT baseline that continued to matter in 2025 as a widely reused… | [📄 arXiv](https://arxiv.org/abs/2403.04692) · [💻 Code ★1.9k](https://github.com/PixArt-alpha/PixArt-sigma) |
 | 🟢 **[One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt](https://arxiv.org/abs/2501.13554)** | ICLR 2025 | A training-free method for identity-consistent image sequences by concatenating story… | [📄 arXiv](https://arxiv.org/abs/2501.13554) · [💻 Code ★321](https://github.com/byliutao/1Prompt1Story) |
@@ -101,7 +101,7 @@ Single 2D image
 
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
-| 🟢 **[iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)** | arXiv 2026 | A simple quantization improvement that makes FSQ stronger for high-quality image… | [📄 arXiv](https://arxiv.org/abs/2601.17124) · [💻 Code ★105](https://github.com/Tencent-Hunyuan/iFSQ) |
+| 🟢 **[iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)** | arXiv 2026 | A simple quantization improvement that makes FSQ stronger for high-quality image… | [📄 arXiv](https://arxiv.org/abs/2601.17124) · [💻 Code ★106](https://github.com/Tencent-Hunyuan/iFSQ) |
 | ⚪ **[DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models](https://arxiv.org/abs/2603.23140)** | arXiv 2026 | A routing strategy that allocates prompts across model choices to balance quality… | [📄 arXiv](https://arxiv.org/abs/2603.23140) |
 | ⚪ **[Generative Modeling via Drifting](https://arxiv.org/abs/2602.04770)** | arXiv 2026 | Introduces drifting as a native one-step generative paradigm with strong ImageNet… | [📄 arXiv](https://arxiv.org/abs/2602.04770) |
 | ⚪ **[RPiAE: A Representation-Pivoted Autoencoder Enhancing Both Image Generation and Editing](https://arxiv.org/abs/2603.19206)** | arXiv 2026 | A representation-centered autoencoder design that improves both latent generation quality… | [📄 arXiv](https://arxiv.org/abs/2603.19206) |

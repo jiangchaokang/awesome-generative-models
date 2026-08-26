@@ -1,15 +1,1 @@
-[
-  {
-    "source": "arXiv",
-    "artifact": "3d-object-asset",
-    "task": "image-to-3d",
-    "title": "Luce: Relightable Gaussians for 3D Asset Generation",
-    "paper": "http://arxiv.org/abs/2608.23943v1",
-    "repo": "",
-    "homepage": "",
-    "abstract": "High-fidelity image-to-3D generation requires a 3D representation that captures both geometry and appearance. To support relighting and integration into standard rendering pipelines, the representation should include physically based rendering (PBR) modalities such as albedo, metallic-roughness, and surface normals. We propose Luce, a 3D representation that unifies geometry and PBR materials within a voxelized multimodal Gaussian cloud, using dedicated Gaussian primitives for each modality. A variational autoencoder compresses this representation into a unified material-aware latent space. A rectified-flow transformer generates this latent from a single image, conditioned on multi-layer features from a pretrained image encoder that preserve both semantic context and fine spatial detail. The latent then decodes into relightable PBR Gaussians and an optional textured mesh with a tangent-space normal map. On Toys4K, Luce achieves state-of-the-art single-image-to-3D generation, improving FID by 28% over the strongest baseline. We further introduce a benchmark of AI-generated images, on which Luce improves the CLIP image-alignment score over the best baseline (0.8519 vs. 0.8299). Luce generates relightable, geometrically accurate, and materially faithful assets that preserve fine details such as text, logos, and inscriptions.",
-    "published": "2026-08-25T01:03:55Z",
-    "score": 59,
-    "why": "recent paper candidate"
-  }
-]
+[]

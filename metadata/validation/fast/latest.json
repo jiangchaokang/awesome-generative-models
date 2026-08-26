@@ -1,0 +1,103 @@
+{
+  "blocking_errors": 0,
+  "commit": "local",
+  "findings": [
+    {
+      "code": "metadata.organization",
+      "location": "10-image-2d/flux (image_2d.jsonl:49)",
+      "message": "Repository owner suggests organization `Black Forest Labs`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "10-image-2d/ifsq (image_2d.jsonl:38)",
+      "message": "Repository owner suggests organization `Tencent Hunyuan`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "10-image-2d/sana-1.5 (image_2d.jsonl:48)",
+      "message": "Repository owner suggests organization `NVLabs`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/cogvideox (video.jsonl:16)",
+      "message": "Repository owner suggests organization `THUDM`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.missing_paper",
+      "location": "20-video/hunyuanvideo-i2v (video.jsonl:12)",
+      "message": "Missing `paper` link.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.missing_paper",
+      "location": "20-video/kling (video.jsonl:17)",
+      "message": "Missing `paper` link.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/unianimate-dit (video.jsonl:51)",
+      "message": "Repository owner suggests organization `Alibaba VILab`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/vace (video.jsonl:39)",
+      "message": "Repository owner suggests organization `Alibaba VILab`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/wan2.1 (video.jsonl:10)",
+      "message": "Repository owner suggests organization `Alibaba Wan`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.missing_paper",
+      "location": "30-3d-object-asset/hunyuan3d-2.1 (object_3d.jsonl:27)",
+      "message": "Missing `paper` link.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "30-3d-object-asset/instantmesh (object_3d.jsonl:31)",
+      "message": "Repository owner suggests organization `Tencent ARC`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)",
+      "message": "Repository owner suggests organization `Tencent Hunyuan`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)",
+      "message": "Repository owner suggests organization `NVIDIA`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "50-4d-dynamic-scene-world/waymax (world_4d.jsonl:22)",
+      "message": "Repository owner suggests organization `Waymo`.",
+      "severity": "warning"
+    },
+    {
+      "code": "date.precision",
+      "location": "catalog",
+      "message": "207 records do not have `published_at`; day-level freshness cannot be guaranteed until they are backfilled.",
+      "severity": "warning"
+    }
+  ],
+  "generated_at": "2026-08-26 09:29:46 UTC",
+  "mode": "fast",
+  "notices": 0,
+  "records_checked": 207,
+  "status": "pass",
+  "version": 2,
+  "warnings": 15
+}

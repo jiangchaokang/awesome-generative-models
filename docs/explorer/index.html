@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Search and filter recent generative-model research.">
+  <title>Awesome Generative Models Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Research catalog</p>
+      <h1>Awesome Generative Models</h1>
+      <p class="hero-copy">
+        Search recent work across image, video, 3D assets,
+        3D scenes, and interactive 4D worlds.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/jiangchaokang/awesome-generative-models">
+          GitHub repository
+        </a>
+        <a href="https://github.com/jiangchaokang/awesome-generative-models/blob/main/CONTRIBUTING.md">
+          Contribute
+        </a>
+      </div>
+      <p id="catalog-status" class="catalog-status" aria-live="polite"></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Catalog filters">
+      <label class="search-field">
+        <span>Search</span>
+        <input id="query"
+               type="search"
+               placeholder="Title, summary, organization, method…"
+               autocomplete="off">
+      </label>
+
+      <label>
+        <span>Artifact</span>
+        <select id="artifact">
+          <option value="">All artifacts</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Task</span>
+        <select id="task">
+          <option value="">All tasks</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Domain</span>
+        <select id="domain">
+          <option value="">All domains</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Method</span>
+        <select id="method">
+          <option value="">All methods</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Organization</span>
+        <select id="organization">
+          <option value="">All organizations</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Sort</span>
+        <select id="sort">
+          <option value="newest">Newest first</option>
+          <option value="featured">Featured first</option>
+          <option value="stars">Most GitHub stars</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </label>
+
+      <label class="checkbox-field">
+        <input id="open-source" type="checkbox">
+        <span>Open source only</span>
+      </label>
+
+      <button id="reset" type="button">Reset filters</button>
+    </section>
+
+    <section class="results-header">
+      <h2 id="result-count">Loading catalog…</h2>
+    </section>
+
+    <section id="results"
+             class="result-grid"
+             aria-live="polite"
+             aria-busy="true"></section>
+
+    <div class="load-more-wrap">
+      <button id="load-more" type="button" hidden>Load more</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      Exact links are validated automatically, but final catalog inclusion
+      remains human-reviewed.
+    </p>
+  </footer>
+</body>
+</html>

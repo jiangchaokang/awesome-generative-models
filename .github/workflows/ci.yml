@@ -1,0 +1,73 @@
+name: catalog-ci
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "tests/**"
+      - "README.md"
+      - "00-surveys-and-foundations/**"
+      - "10-image-2d/**"
+      - "20-video/**"
+      - "30-3d-object-asset/**"
+      - "40-3d-scene/**"
+      - "50-4d-dynamic-scene-world/**"
+      - "90-topics/**"
+      - "91-organizations/**"
+      - ".github/workflows/**"
+
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catalog-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Compile Python
+        run: python -m compileall -q scripts tests
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Validate catalog data
+        run: |
+          python scripts/validate_data.py \
+            --mode fast \
+            --report-root "${RUNNER_TEMP}/catalog-validation"
+
+      - name: Rebuild generated catalog
+        run: python scripts/build.py
+
+      - name: Check internal Markdown links
+        run: python scripts/check_internal_links.py
+
+      - name: Check whitespace errors
+        run: git diff --check

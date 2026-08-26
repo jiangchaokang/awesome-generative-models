@@ -1,6 +1,24 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# OS
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

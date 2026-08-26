@@ -1,0 +1,4393 @@
+{
+  "entries": {
+    "v2:arxiv-title:2310.08710": {
+      "persist": true,
+      "timestamp": 1787736602.9977148,
+      "value": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research"
+    },
+    "v2:arxiv-title:2310.12945": {
+      "persist": true,
+      "timestamp": 1787736602.9977722,
+      "value": "3D-GPT: Procedural 3D Modeling with Large Language Models"
+    },
+    "v2:arxiv-title:2403.02151": {
+      "persist": true,
+      "timestamp": 1787736602.9978795,
+      "value": "TripoSR: Fast 3D Object Reconstruction from a Single Image"
+    },
+    "v2:arxiv-title:2403.03206": {
+      "persist": true,
+      "timestamp": 1787736602.9980485,
+      "value": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis"
+    },
+    "v2:arxiv-title:2403.04692": {
+      "persist": true,
+      "timestamp": 1787736602.9978933,
+      "value": "PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2403.06845": {
+      "persist": true,
+      "timestamp": 1787736602.9976456,
+      "value": "DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation"
+    },
+    "v2:arxiv-title:2403.15698": {
+      "persist": true,
+      "timestamp": 1787736602.997979,
+      "value": "SceneX: Procedural Controllable Large-scale Scene Generation"
+    },
+    "v2:arxiv-title:2404.07191": {
+      "persist": true,
+      "timestamp": 1787736602.997704,
+      "value": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models"
+    },
+    "v2:arxiv-title:2405.11616": {
+      "persist": true,
+      "timestamp": 1787736602.9979577,
+      "value": "Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention"
+    },
+    "v2:arxiv-title:2405.20343": {
+      "persist": true,
+      "timestamp": 1787736602.997725,
+      "value": "Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image"
+    },
+    "v2:arxiv-title:2405.20759": {
+      "persist": true,
+      "timestamp": 1787736602.9979968,
+      "value": "Information Theoretic Text-to-Image Alignment"
+    },
+    "v2:arxiv-title:2406.03293": {
+      "persist": true,
+      "timestamp": 1787736602.9978282,
+      "value": "Text-to-Image Rectified Flow as Plug-and-Play Priors"
+    },
+    "v2:arxiv-title:2406.05641": {
+      "persist": true,
+      "timestamp": 1787736602.997681,
+      "value": "PaRa: Personalizing Text-to-Image Diffusion via Parameter Rank Reduction"
+    },
+    "v2:arxiv-title:2406.05814": {
+      "persist": true,
+      "timestamp": 1787736602.99782,
+      "value": "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
+    },
+    "v2:arxiv-title:2406.10210": {
+      "persist": true,
+      "timestamp": 1787736602.9979887,
+      "value": "Make It Count: Text-to-Image Generation with an Accurate Number of Objects"
+    },
+    "v2:arxiv-title:2407.14979": {
+      "persist": true,
+      "timestamp": 1787736602.9979389,
+      "value": "RGB2Point: 3D Point Cloud Generation from Single RGB Images"
+    },
+    "v2:arxiv-title:2408.06072": {
+      "persist": true,
+      "timestamp": 1787736602.9978375,
+      "value": "CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer"
+    },
+    "v2:arxiv-title:2408.14732": {
+      "persist": true,
+      "timestamp": 1787736602.9978693,
+      "value": "OctFusion: Octree-based Diffusion Models for 3D Shape Generation"
+    },
+    "v2:arxiv-title:2408.14837": {
+      "persist": true,
+      "timestamp": 1787736602.9979296,
+      "value": "Diffusion Models Are Real-Time Game Engines"
+    },
+    "v2:arxiv-title:2409.05463": {
+      "persist": true,
+      "timestamp": 1787736602.9979699,
+      "value": "DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation"
+    },
+    "v2:arxiv-title:2409.08215": {
+      "persist": true,
+      "timestamp": 1787736602.9979208,
+      "value": "LT3SD: Latent Trees for 3D Scene Diffusion"
+    },
+    "v2:arxiv-title:2410.01295": {
+      "persist": true,
+      "timestamp": 1787736602.997782,
+      "value": "LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion"
+    },
+    "v2:arxiv-title:2410.01699": {
+      "persist": true,
+      "timestamp": 1787736602.997847,
+      "value": "Accelerating Auto-regressive Text-to-Image Generation with Training-free Speculative Jacobi Decoding"
+    },
+    "v2:arxiv-title:2410.05954": {
+      "persist": true,
+      "timestamp": 1787736602.997753,
+      "value": "Pyramidal Flow Matching for Efficient Video Generative Modeling"
+    },
+    "v2:arxiv-title:2410.08261": {
+      "persist": true,
+      "timestamp": 1787736602.9977632,
+      "value": "Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis"
+    },
+    "v2:arxiv-title:2410.10306": {
+      "persist": true,
+      "timestamp": 1787736602.9977915,
+      "value": "Animate-X: Universal Character Image Animation with Enhanced Motion Representation"
+    },
+    "v2:arxiv-title:2410.10629": {
+      "persist": true,
+      "timestamp": 1787736602.997801,
+      "value": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers"
+    },
+    "v2:arxiv-title:2410.11817": {
+      "persist": true,
+      "timestamp": 1787736602.9978595,
+      "value": "Improving Long-Text Alignment for Text-to-Image Diffusion Models"
+    },
+    "v2:arxiv-title:2410.13863": {
+      "persist": true,
+      "timestamp": 1787736602.9979484,
+      "value": "Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens"
+    },
+    "v2:arxiv-title:2410.16719": {
+      "persist": true,
+      "timestamp": 1787736602.9979117,
+      "value": "Progressive Compositionality in Text-to-Image Generative Models"
+    },
+    "v2:arxiv-title:2410.18084": {
+      "persist": true,
+      "timestamp": 1787736602.9980063,
+      "value": "DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes"
+    },
+    "v2:arxiv-title:2411.00769": {
+      "persist": true,
+      "timestamp": 1787736602.9976678,
+      "value": "GameGen-X: Interactive Open-world Game Video Generation"
+    },
+    "v2:arxiv-title:2411.04989": {
+      "persist": true,
+      "timestamp": 1787736602.9977436,
+      "value": "SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation"
+    },
+    "v2:arxiv-title:2411.11252": {
+      "persist": true,
+      "timestamp": 1787736602.9977345,
+      "value": "DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation"
+    },
+    "v2:arxiv-title:2411.13807": {
+      "persist": true,
+      "timestamp": 1787736602.9976923,
+      "value": "MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control"
+    },
+    "v2:arxiv-title:2411.15236": {
+      "persist": true,
+      "timestamp": 1787736602.998039,
+      "value": "Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps"
+    },
+    "v2:arxiv-title:2411.16443": {
+      "persist": true,
+      "timestamp": 1787736602.9980164,
+      "value": "SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis"
+    },
+    "v2:arxiv-title:2411.16503": {
+      "persist": true,
+      "timestamp": 1787736602.9978101,
+      "value": "Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis"
+    },
+    "v2:arxiv-title:2411.17440": {
+      "persist": true,
+      "timestamp": 1787736602.9980254,
+      "value": "Identity-Preserving Text-to-Video Generation by Frequency Decomposition"
+    },
+    "v2:arxiv-title:2411.17592": {
+      "persist": true,
+      "timestamp": 1787736602.9979029,
+      "value": "VideoDirector: Precise Video Editing via Text-to-Video Models"
+    },
+    "v2:arxiv-title:2411.17697": {
+      "persist": true,
+      "timestamp": 1787736606.3484788,
+      "value": "StableAnimator: High-Quality Identity-Preserving Human Image Animation"
+    },
+    "v2:arxiv-title:2411.18159": {
+      "persist": true,
+      "timestamp": 1787736606.3488238,
+      "value": "Type-R: Automatically Retouching Typos for Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2412.00596": {
+      "persist": true,
+      "timestamp": 1787736606.3485653,
+      "value": "PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation"
+    },
+    "v2:arxiv-title:2412.01506": {
+      "persist": true,
+      "timestamp": 1787736606.3484418,
+      "value": "Structured 3D Latents for Scalable and Versatile 3D Generation"
+    },
+    "v2:arxiv-title:2412.02168": {
+      "persist": true,
+      "timestamp": 1787736606.3484976,
+      "value": "Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis"
+    },
+    "v2:arxiv-title:2412.02193": {
+      "persist": true,
+      "timestamp": 1787736606.3488047,
+      "value": "LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models"
+    },
+    "v2:arxiv-title:2412.02912": {
+      "persist": true,
+      "timestamp": 1787736606.3486485,
+      "value": "ShapeWords: Guiding Text-to-Image Synthesis with 3D Shape-Aware Prompts"
+    },
+    "v2:arxiv-title:2412.03603": {
+      "persist": true,
+      "timestamp": 1787736606.3487957,
+      "value": "HunyuanVideo: A Systematic Framework For Large Video Generative Models"
+    },
+    "v2:arxiv-title:2412.05435": {
+      "persist": true,
+      "timestamp": 1787736606.3488326,
+      "value": "UniScene: Unified Occupancy-centric Driving Scene Generation"
+    },
+    "v2:arxiv-title:2412.05818": {
+      "persist": true,
+      "timestamp": 1787736606.3486888,
+      "value": "SILMM: Self-Improving Large Multimodal Models for Compositional Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2412.05848": {
+      "persist": true,
+      "timestamp": 1787736606.3485274,
+      "value": "MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation"
+    },
+    "v2:arxiv-title:2412.09283": {
+      "persist": true,
+      "timestamp": 1787736606.3485372,
+      "value": "InstanceCap: Improving Text-to-Video Generation via Instance-aware Structured Caption"
+    },
+    "v2:arxiv-title:2412.09619": {
+      "persist": true,
+      "timestamp": 1787736606.348815,
+      "value": "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training"
+    },
+    "v2:arxiv-title:2412.09856": {
+      "persist": true,
+      "timestamp": 1787736606.348748,
+      "value": "LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity"
+    },
+    "v2:arxiv-title:2412.11198": {
+      "persist": true,
+      "timestamp": 1787736606.3487678,
+      "value": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control"
+    },
+    "v2:arxiv-title:2412.11596": {
+      "persist": true,
+      "timestamp": 1787736606.3484228,
+      "value": "MeshArt: Generating Articulated Meshes with Structure-Guided Transformers"
+    },
+    "v2:arxiv-title:2412.13188": {
+      "persist": true,
+      "timestamp": 1787736606.3484325,
+      "value": "StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models"
+    },
+    "v2:arxiv-title:2412.21117": {
+      "persist": true,
+      "timestamp": 1787736606.3485467,
+      "value": "Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation"
+    },
+    "v2:arxiv-title:2501.03006": {
+      "persist": true,
+      "timestamp": 1787736606.3487568,
+      "value": "TransPixeler: Advancing Text-to-Video Generation with Transparency"
+    },
+    "v2:arxiv-title:2501.03059": {
+      "persist": true,
+      "timestamp": 1787736606.3484116,
+      "value": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation"
+    },
+    "v2:arxiv-title:2501.03575": {
+      "persist": true,
+      "timestamp": 1787736606.3487768,
+      "value": "Cosmos World Foundation Model Platform for Physical AI"
+    },
+    "v2:arxiv-title:2501.06481": {
+      "persist": true,
+      "timestamp": 1787736606.3486795,
+      "value": "Focus-N-Fix: Region-Aware Fine-Tuning for Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2501.07647": {
+      "persist": true,
+      "timestamp": 1787736606.3484879,
+      "value": "BlobGEN-Vid: Compositional Text-to-Video Generation with Blob Video Representations"
+    },
+    "v2:arxiv-title:2501.08325": {
+      "persist": true,
+      "timestamp": 1787736606.348629,
+      "value": "GameFactory: Creating New Games with Generative Interactive Videos"
+    },
+    "v2:arxiv-title:2501.10021": {
+      "persist": true,
+      "timestamp": 1787736606.3484697,
+      "value": "X-Dyna: Expressive Dynamic Human Image Animation"
+    },
+    "v2:arxiv-title:2501.12202": {
+      "persist": true,
+      "timestamp": 1787736606.3487082,
+      "value": "Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation"
+    },
+    "v2:arxiv-title:2501.12910": {
+      "persist": true,
+      "timestamp": 1787736606.348556,
+      "value": "PreciseCam: Precise Camera Control for Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2501.13554": {
+      "persist": true,
+      "timestamp": 1787736606.348738,
+      "value": "One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt"
+    },
+    "v2:arxiv-title:2501.14729": {
+      "persist": true,
+      "timestamp": 1787736606.3486702,
+      "value": "HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation"
+    },
+    "v2:arxiv-title:2501.18427": {
+      "persist": true,
+      "timestamp": 1787736606.3487284,
+      "value": "SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer"
+    },
+    "v2:arxiv-title:2502.01061": {
+      "persist": true,
+      "timestamp": 1787736606.3484516,
+      "value": "OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models"
+    },
+    "v2:arxiv-title:2502.02590": {
+      "persist": true,
+      "timestamp": 1787736606.348659,
+      "value": "Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling"
+    },
+    "v2:arxiv-title:2502.06145": {
+      "persist": true,
+      "timestamp": 1787736606.3485174,
+      "value": "Animate Anyone 2: High-Fidelity Character Image Animation with Environment Affordance"
+    },
+    "v2:arxiv-title:2502.10248": {
+      "persist": true,
+      "timestamp": 1787736606.3487182,
+      "value": "Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model"
+    },
+    "v2:arxiv-title:2502.10675": {
+      "persist": true,
+      "timestamp": 1787736606.3485076,
+      "value": "Hierarchically-Structured Open-Vocabulary Indoor Scene Synthesis with Pre-trained Large Language Model"
+    },
+    "v2:arxiv-title:2502.12456": {
+      "persist": true,
+      "timestamp": 1787736606.3484004,
+      "value": "Not-So-Optimal Transport Flows for 3D Point Cloud Generation"
+    },
+    "v2:arxiv-title:2503.02187": {
+      "persist": true,
+      "timestamp": 1787736606.3486984,
+      "value": "h-Edit: Effective and Flexible Diffusion-Based Editing via Doob's h-Transform"
+    },
+    "v2:arxiv-title:2503.07598": {
+      "persist": true,
+      "timestamp": 1787736606.3483849,
+      "value": "VACE: All-in-One Video Creation and Editing"
+    },
+    "v2:arxiv-title:2503.08594": {
+      "persist": true,
+      "timestamp": 1787736606.3484616,
+      "value": "PointNSP: Autoregressive 3D Point Cloud Generation with Next-Scale Level-of-Detail Prediction"
+    },
+    "v2:arxiv-title:2503.13424": {
+      "persist": true,
+      "timestamp": 1787736606.3487864,
+      "value": "Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation"
+    },
+    "v2:arxiv-title:2503.13479": {
+      "persist": true,
+      "timestamp": 1787736606.9003613,
+      "value": "EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention"
+    },
+    "v2:arxiv-title:2503.14445": {
+      "persist": true,
+      "timestamp": 1787736606.9004357,
+      "value": "Bolt3D: Generating 3D Scenes in Seconds"
+    },
+    "v2:arxiv-title:2503.15855": {
+      "persist": true,
+      "timestamp": 1787736606.9003808,
+      "value": "VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling"
+    },
+    "v2:arxiv-title:2503.16302": {
+      "persist": true,
+      "timestamp": 1787736606.9002783,
+      "value": "Unleashing Vecset Diffusion Model for Fast Shape Generation"
+    },
+    "v2:arxiv-title:2503.16375": {
+      "persist": true,
+      "timestamp": 1787736606.9004445,
+      "value": "NuiScene: Exploring Efficient Generation of Unbounded Outdoor Scenes"
+    },
+    "v2:arxiv-title:2503.16420": {
+      "persist": true,
+      "timestamp": 1787736606.9003234,
+      "value": "SynCity: Training-Free Generation of 3D Worlds"
+    },
+    "v2:arxiv-title:2503.18324": {
+      "persist": true,
+      "timestamp": 1787736606.9004734,
+      "value": "Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control"
+    },
+    "v2:arxiv-title:2503.18476": {
+      "persist": true,
+      "timestamp": 1787736606.9001966,
+      "value": "Global-Local Tree Search in VLMs for 3D Indoor Scene Generation"
+    },
+    "v2:arxiv-title:2503.18938": {
+      "persist": true,
+      "timestamp": 1787736606.900332,
+      "value": "AdaWorld: Learning Adaptable World Models with Latent Actions"
+    },
+    "v2:arxiv-title:2503.19897": {
+      "persist": true,
+      "timestamp": 1787736606.900107,
+      "value": "Scaling Down Text Encoders of Text-to-Image Diffusion Models"
+    },
+    "v2:arxiv-title:2503.20314": {
+      "persist": true,
+      "timestamp": 1787736606.9004824,
+      "value": "Wan: Open and Advanced Large-Scale Video Generative Models"
+    },
+    "v2:arxiv-title:2503.21732": {
+      "persist": true,
+      "timestamp": 1787736606.9001338,
+      "value": "SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling"
+    },
+    "v2:arxiv-title:2503.21781": {
+      "persist": true,
+      "timestamp": 1787736606.9001224,
+      "value": "VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models"
+    },
+    "v2:arxiv-title:2503.22231": {
+      "persist": true,
+      "timestamp": 1787736606.9004095,
+      "value": "CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving"
+    },
+    "v2:arxiv-title:2503.23284": {
+      "persist": true,
+      "timestamp": 1787736606.9004178,
+      "value": "SketchVideo: Sketch-based Video Generation and Editing"
+    },
+    "v2:arxiv-title:2504.01724": {
+      "persist": true,
+      "timestamp": 1787736606.9003415,
+      "value": "DreamActor-M1: Holistic, Expressive and Robust Human Image Animation with Hybrid Guidance"
+    },
+    "v2:arxiv-title:2504.06752": {
+      "persist": true,
+      "timestamp": 1787736606.9002063,
+      "value": "Compass Control: Multi Object Orientation Control for Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2504.06861": {
+      "persist": true,
+      "timestamp": 1787736606.9001448,
+      "value": "EIDT-V: Exploiting Intersections in Diffusion Trajectories for Model-Agnostic, Zero-Shot, Training-Free Text-to-Video Generation"
+    },
+    "v2:arxiv-title:2504.08685": {
+      "persist": true,
+      "timestamp": 1787736606.9002507,
+      "value": "Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model"
+    },
+    "v2:arxiv-title:2504.09975": {
+      "persist": true,
+      "timestamp": 1787736606.9001546,
+      "value": "OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation"
+    },
+    "v2:arxiv-title:2504.11289": {
+      "persist": true,
+      "timestamp": 1787736606.9002693,
+      "value": "UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer"
+    },
+    "v2:arxiv-title:2504.11346": {
+      "persist": true,
+      "timestamp": 1787736606.9002142,
+      "value": "Seedream 3.0 Technical Report"
+    },
+    "v2:arxiv-title:2504.11739": {
+      "persist": true,
+      "timestamp": 1787736606.9001784,
+      "value": "The Devil is in the Prompts: Retrieval-Augmented Prompt Optimization for Text-to-Video Generation"
+    },
+    "v2:arxiv-title:2504.12369": {
+      "persist": true,
+      "timestamp": 1787736606.9003055,
+      "value": "WorldMem: Long-term Consistent World Simulation with Memory"
+    },
+    "v2:arxiv-title:2505.02648": {
+      "persist": true,
+      "timestamp": 1787736606.9003904,
+      "value": "MCCD: Multi-Agent Collaboration-based Compositional Diffusion for Complex Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2505.02836": {
+      "persist": true,
+      "timestamp": 1787736606.9004,
+      "value": "Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation"
+    },
+    "v2:arxiv-title:2505.04622": {
+      "persist": true,
+      "timestamp": 1787736606.9003513,
+      "value": "PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer"
+    },
+    "v2:arxiv-title:2505.09140": {
+      "persist": true,
+      "timestamp": 1787736606.9001665,
+      "value": "TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation"
+    },
+    "v2:arxiv-title:2505.13447": {
+      "persist": true,
+      "timestamp": 1787736606.9002867,
+      "value": "Mean Flows for One-step Generative Modeling"
+    },
+    "v2:arxiv-title:2505.14521": {
+      "persist": true,
+      "timestamp": 1787736606.9004273,
+      "value": "Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling"
+    },
+    "v2:arxiv-title:2505.20287": {
+      "persist": true,
+      "timestamp": 1787736606.9002333,
+      "value": "MotionPro: A Precise Motion Controller for Image-to-Video Generation"
+    },
+    "v2:arxiv-title:2505.21070": {
+      "persist": true,
+      "timestamp": 1787736606.9002414,
+      "value": "Minute-Long Videos with Dual Parallelisms"
+    },
+    "v2:arxiv-title:2505.21960": {
+      "persist": true,
+      "timestamp": 1787736606.9002237,
+      "value": "One-Way Ticket:Time-Independent Unified Encoder for Distilling Text-to-Image Diffusion Models"
+    },
+    "v2:arxiv-title:2505.23660": {
+      "persist": true,
+      "timestamp": 1787736606.9001868,
+      "value": "D-AR: Diffusion via Autoregressive Models"
+    },
+    "v2:arxiv-title:2505.24877": {
+      "persist": true,
+      "timestamp": 1787736606.9004538,
+      "value": "AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion"
+    },
+    "v2:arxiv-title:2506.02459": {
+      "persist": true,
+      "timestamp": 1787736606.9003704,
+      "value": "ReSpace: Text-Driven Autoregressive 3D Indoor Scene Synthesis and Editing"
+    },
+    "v2:arxiv-title:2506.04225": {
+      "persist": true,
+      "timestamp": 1787736606.9004638,
+      "value": "Voyager: Long-Range and World-Consistent Video Diffusion for Explorable 3D Scene Generation"
+    },
+    "v2:arxiv-title:2506.05341": {
+      "persist": true,
+      "timestamp": 1787736606.9002967,
+      "value": "Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via Spatial Reasoning"
+    },
+    "v2:arxiv-title:2506.05573": {
+      "persist": true,
+      "timestamp": 1787736606.9003148,
+      "value": "PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers"
+    },
+    "v2:arxiv-title:2506.07932": {
+      "persist": true,
+      "timestamp": 1787736606.9002602,
+      "value": "Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor"
+    },
+    "v2:arxiv-title:2506.16504": {
+      "persist": true,
+      "timestamp": 1787736608.43898,
+      "value": "Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details"
+    },
+    "v2:arxiv-title:2506.17074": {
+      "persist": true,
+      "timestamp": 1787736608.4391916,
+      "value": "Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion"
+    },
+    "v2:arxiv-title:2506.18538": {
+      "persist": true,
+      "timestamp": 1787736608.4388852,
+      "value": "A Question Bank to Assess AI Inclusivity: Mapping out the Journey from Diversity Errors to Inclusion Excellence"
+    },
+    "v2:arxiv-title:2506.18701": {
+      "persist": true,
+      "timestamp": 1787736608.4388723,
+      "value": "Matrix-Game: Interactive World Foundation Model"
+    },
+    "v2:arxiv-title:2506.20590": {
+      "persist": true,
+      "timestamp": 1787736608.4391148,
+      "value": "WonderFree: Enhancing Novel View Quality and Cross-View Consistency for 3D Scene Exploration"
+    },
+    "v2:arxiv-title:2506.22291": {
+      "persist": true,
+      "timestamp": 1787736608.4391048,
+      "value": "RoomCraft: Controllable and Complete 3D Indoor Scene Generation"
+    },
+    "v2:arxiv-title:2506.24113": {
+      "persist": true,
+      "timestamp": 1787736608.4389234,
+      "value": "Epona: Autoregressive Diffusion World Model for Autonomous Driving"
+    },
+    "v2:arxiv-title:2507.00603": {
+      "persist": true,
+      "timestamp": 1787736608.4391823,
+      "value": "World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model"
+    },
+    "v2:arxiv-title:2507.02857": {
+      "persist": true,
+      "timestamp": 1787736608.4391725,
+      "value": "AnyI2V: Animating Any Conditional Image with Motion Control"
+    },
+    "v2:arxiv-title:2507.06165": {
+      "persist": true,
+      "timestamp": 1787736608.4391344,
+      "value": "OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion"
+    },
+    "v2:arxiv-title:2507.08772": {
+      "persist": true,
+      "timestamp": 1787736608.4389896,
+      "value": "From One to More: Contextual Part Latents for 3D Generation"
+    },
+    "v2:arxiv-title:2507.17745": {
+      "persist": true,
+      "timestamp": 1787736608.438914,
+      "value": "Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention"
+    },
+    "v2:arxiv-title:2507.19058": {
+      "persist": true,
+      "timestamp": 1787736608.4391248,
+      "value": "ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment"
+    },
+    "v2:arxiv-title:2507.21809": {
+      "persist": true,
+      "timestamp": 1787736608.4391448,
+      "value": "HunyuanWorld 1.0: Generating Immersive, Explorable, and Interactive 3D Worlds from Words or Pixels"
+    },
+    "v2:arxiv-title:2508.02324": {
+      "persist": true,
+      "timestamp": 1787736608.4388938,
+      "value": "Qwen-Image Technical Report"
+    },
+    "v2:arxiv-title:2508.11952": {
+      "persist": true,
+      "timestamp": 1787736608.4389703,
+      "value": "UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding"
+    },
+    "v2:arxiv-title:2508.15169": {
+      "persist": true,
+      "timestamp": 1787736608.4390182,
+      "value": "MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion"
+    },
+    "v2:arxiv-title:2508.17832": {
+      "persist": true,
+      "timestamp": 1787736608.439076,
+      "value": "HLG: Comprehensive 3D Room Construction via Hierarchical Layout Generation"
+    },
+    "v2:arxiv-title:2509.05263": {
+      "persist": true,
+      "timestamp": 1787736608.4389336,
+      "value": "LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation"
+    },
+    "v2:arxiv-title:2509.14981": {
+      "persist": true,
+      "timestamp": 1787736608.439095,
+      "value": "SPATIALGEN: Layout-guided 3D Indoor Scene Generation"
+    },
+    "v2:arxiv-title:2509.15249": {
+      "persist": true,
+      "timestamp": 1787736608.4389524,
+      "value": "Causal Reasoning Elicits Controllable 3D Scene Generation"
+    },
+    "v2:arxiv-title:2509.20414": {
+      "persist": true,
+      "timestamp": 1787736608.4388459,
+      "value": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent"
+    },
+    "v2:arxiv-title:2509.22281": {
+      "persist": true,
+      "timestamp": 1787736608.4391544,
+      "value": "MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial Reasoning"
+    },
+    "v2:arxiv-title:2509.23951": {
+      "persist": true,
+      "timestamp": 1787736608.4390457,
+      "value": "HunyuanImage 3.0 Technical Report"
+    },
+    "v2:arxiv-title:2509.25079": {
+      "persist": true,
+      "timestamp": 1787736608.4390085,
+      "value": "UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation"
+    },
+    "v2:arxiv-title:2510.02178": {
+      "persist": true,
+      "timestamp": 1787736608.4390664,
+      "value": "DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis"
+    },
+    "v2:arxiv-title:2510.13678": {
+      "persist": true,
+      "timestamp": 1787736608.4388618,
+      "value": "FlashWorld: High-quality 3D Scene Generation within Seconds"
+    },
+    "v2:arxiv-title:2510.14977": {
+      "persist": true,
+      "timestamp": 1787736608.4389987,
+      "value": "Terra: Explorable Native 3D World Model with Point Latents"
+    },
+    "v2:arxiv-title:2510.23880": {
+      "persist": true,
+      "timestamp": 1787736608.4392087,
+      "value": "TRELLISWorld: Training-Free World Generation from Object Generators"
+    },
+    "v2:arxiv-title:2510.26140": {
+      "persist": true,
+      "timestamp": 1787736608.4391634,
+      "value": "FullPart: Generating each 3D Part at Full Resolution"
+    },
+    "v2:arxiv-title:2511.18173": {
+      "persist": true,
+      "timestamp": 1787736608.4389431,
+      "value": "EgoControl: Controllable Egocentric Video Generation via 3D Full-Body Poses"
+    },
+    "v2:arxiv-title:2511.18870": {
+      "persist": true,
+      "timestamp": 1787736608.4389608,
+      "value": "HunyuanVideo 1.5 Technical Report"
+    },
+    "v2:arxiv-title:2511.22456": {
+      "persist": true,
+      "timestamp": 1787736608.439055,
+      "value": "ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models"
+    },
+    "v2:arxiv-title:2512.02012": {
+      "persist": true,
+      "timestamp": 1787736608.4390283,
+      "value": "Improved Mean Flows: On the Challenges of Fastforward Generative Models"
+    },
+    "v2:arxiv-title:2512.03052": {
+      "persist": true,
+      "timestamp": 1787736608.4390373,
+      "value": "LATTICE: Democratize High-Fidelity 3D Generation at Scale"
+    },
+    "v2:arxiv-title:2512.09164": {
+      "persist": true,
+      "timestamp": 1787736608.4391997,
+      "value": "WonderZoom: Multi-Scale 3D World Generation"
+    },
+    "v2:arxiv-title:2512.14614": {
+      "persist": true,
+      "timestamp": 1787736608.438904,
+      "value": "WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling"
+    },
+    "v2:arxiv-title:2512.21185": {
+      "persist": true,
+      "timestamp": 1787736608.4392278,
+      "value": "UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement"
+    },
+    "v2:arxiv-title:2601.17124": {
+      "persist": true,
+      "timestamp": 1787736608.4392183,
+      "value": "iFSQ: Improving FSQ for Image Generation with 1 Line of Code"
+    },
+    "v2:arxiv-title:2601.19785": {
+      "persist": true,
+      "timestamp": 1787736608.4390857,
+      "value": "GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance"
+    },
+    "v2:arxiv-title:2602.01536": {
+      "persist": true,
+      "timestamp": 1787736610.8644514,
+      "value": "UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning"
+    },
+    "v2:arxiv-title:2602.04770": {
+      "persist": true,
+      "timestamp": 1787736610.864629,
+      "value": "Generative Modeling via Drifting"
+    },
+    "v2:arxiv-title:2602.06521": {
+      "persist": true,
+      "timestamp": 1787736610.8645363,
+      "value": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving"
+    },
+    "v2:arxiv-title:2602.12100": {
+      "persist": true,
+      "timestamp": 1787736610.8642476,
+      "value": "AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer"
+    },
+    "v2:arxiv-title:2602.17040": {
+      "persist": true,
+      "timestamp": 1787736610.8645077,
+      "value": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion"
+    },
+    "v2:arxiv-title:2602.24096": {
+      "persist": true,
+      "timestamp": 1787736610.8644798,
+      "value": "DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer"
+    },
+    "v2:arxiv-title:2603.14062": {
+      "persist": true,
+      "timestamp": 1787736610.8644416,
+      "value": "TMPDiff: Temporal Mixed-Precision for Diffusion Models"
+    },
+    "v2:arxiv-title:2603.14936": {
+      "persist": true,
+      "timestamp": 1787736610.8642647,
+      "value": "Bridging the Intention-Expression Gap: Aligning Multi-Dimensional Preferences via Hierarchical Relevance Feedback in Text-to-Image Diffusion"
+    },
+    "v2:arxiv-title:2603.15279": {
+      "persist": true,
+      "timestamp": 1787736610.864433,
+      "value": "Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling"
+    },
+    "v2:arxiv-title:2603.15478": {
+      "persist": true,
+      "timestamp": 1787736610.8644238,
+      "value": "ViFeEdit: A Video-Free Tuner of Your Video Diffusion Transformer"
+    },
+    "v2:arxiv-title:2603.16099": {
+      "persist": true,
+      "timestamp": 1787736610.8644142,
+      "value": "OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder"
+    },
+    "v2:arxiv-title:2603.16711": {
+      "persist": true,
+      "timestamp": 1787736610.8645647,
+      "value": "Search2Motion: Training-Free Object-Level Motion Control via Attention-Consensus Search"
+    },
+    "v2:arxiv-title:2603.17652": {
+      "persist": true,
+      "timestamp": 1787736610.8645558,
+      "value": "VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs"
+    },
+    "v2:arxiv-title:2603.17965": {
+      "persist": true,
+      "timestamp": 1787736610.8645737,
+      "value": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition"
+    },
+    "v2:arxiv-title:2603.18627": {
+      "persist": true,
+      "timestamp": 1787736610.8643868,
+      "value": "Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2603.19206": {
+      "persist": true,
+      "timestamp": 1787736610.86447,
+      "value": "RPiAE: A Representation-Pivoted Autoencoder Enhancing Both Image Generation and Editing"
+    },
+    "v2:arxiv-title:2603.19216": {
+      "persist": true,
+      "timestamp": 1787736610.8645267,
+      "value": "DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising"
+    },
+    "v2:arxiv-title:2603.19222": {
+      "persist": true,
+      "timestamp": 1787736610.864395,
+      "value": "Spectrally-Guided Diffusion Noise Schedules"
+    },
+    "v2:arxiv-title:2603.19360": {
+      "persist": true,
+      "timestamp": 1787736610.864306,
+      "value": "Warm-Start Flow Matching for Guaranteed Fast Text/Image Generation"
+    },
+    "v2:arxiv-title:2603.19598": {
+      "persist": true,
+      "timestamp": 1787736610.8643444,
+      "value": "FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow"
+    },
+    "v2:arxiv-title:2603.19675": {
+      "persist": true,
+      "timestamp": 1787736610.8646379,
+      "value": "DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving"
+    },
+    "v2:arxiv-title:2603.20192": {
+      "persist": true,
+      "timestamp": 1787736610.8643157,
+      "value": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation"
+    },
+    "v2:arxiv-title:2603.20470": {
+      "persist": true,
+      "timestamp": 1787736610.8645463,
+      "value": "DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2603.20725": {
+      "persist": true,
+      "timestamp": 1787736610.8646476,
+      "value": "Premier: Personalized Preference Modulation with Learnable User Embedding in Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2603.21136": {
+      "persist": true,
+      "timestamp": 1787736610.864489,
+      "value": "MS-CustomNet: Controllable Multi-Subject Customization with Hierarchical Relational Semantics"
+    },
+    "v2:arxiv-title:2603.21295": {
+      "persist": true,
+      "timestamp": 1787736610.864602,
+      "value": "Text-Image Conditioned 3D Generation"
+    },
+    "v2:arxiv-title:2603.21783": {
+      "persist": true,
+      "timestamp": 1787736610.864405,
+      "value": "SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis"
+    },
+    "v2:arxiv-title:2603.22041": {
+      "persist": true,
+      "timestamp": 1787736610.8644605,
+      "value": "DTVI: Dual-Stage Textual and Visual Intervention for Safe Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2603.22091": {
+      "persist": true,
+      "timestamp": 1787736610.8643548,
+      "value": "P-Flow: Prompting Visual Effects Generation"
+    },
+    "v2:arxiv-title:2603.22228": {
+      "persist": true,
+      "timestamp": 1787736610.8642964,
+      "value": "SpatialReward: Verifiable Spatial Reward Modeling for Fine-Grained Spatial Consistency in Text-to-Image Generation"
+    },
+    "v2:arxiv-title:2603.22943": {
+      "persist": true,
+      "timestamp": 1787736610.8646123,
+      "value": "PersonalQ: Select, Quantize, and Serve Personalized Diffusion Models for Efficient Inference"
+    },
+    "v2:arxiv-title:2603.22972": {
+      "persist": true,
+      "timestamp": 1787736610.8645172,
+      "value": "WorldMesh: Generating Navigable Multi-Room 3D Scenes via Mesh-Conditioned Image Diffusion"
+    },
+    "v2:arxiv-title:2603.23140": {
+      "persist": true,
+      "timestamp": 1787736610.8642857,
+      "value": "DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models"
+    },
+    "v2:arxiv-title:2603.23376": {
+      "persist": true,
+      "timestamp": 1787736610.8643768,
+      "value": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment"
+    },
+    "v2:arxiv-title:2603.23491": {
+      "persist": true,
+      "timestamp": 1787736610.8643248,
+      "value": "Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation"
+    },
+    "v2:arxiv-title:2603.23500": {
+      "persist": true,
+      "timestamp": 1787736610.8642757,
+      "value": "UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation"
+    },
+    "v2:arxiv-title:2603.23973": {
+      "persist": true,
+      "timestamp": 1787736610.864367,
+      "value": "SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents"
+    },
+    "v2:arxiv-title:2603.24086": {
+      "persist": true,
+      "timestamp": 1787736610.8644986,
+      "value": "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation"
+    },
+    "v2:arxiv-title:2603.24570": {
+      "persist": true,
+      "timestamp": 1787736610.8643346,
+      "value": "Anti-I2V: Safeguarding your photos from malicious image-to-video generation"
+    },
+    "v2:arxiv-title:2603.24965": {
+      "persist": true,
+      "timestamp": 1787736610.8646212,
+      "value": "Self-Corrected Image Generation with Explainable Latent Rewards"
+    },
+    "v2:github:advocate99/assetformer": {
+      "persist": true,
+      "timestamp": 1787736611.4850748,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "[ICLR'2026] AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer",
+          "full_name": "Advocate99/AssetFormer",
+          "homepage": "",
+          "license": "",
+          "pushed_at": "2026-02-13T02:39:10Z",
+          "stars": 39
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Advocate99/AssetFormer",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:black-forest-labs/flux": {
+      "persist": true,
+      "timestamp": 1787736615.6871302,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "Official inference repo for FLUX.1 models",
+          "full_name": "black-forest-labs/flux",
+          "homepage": "",
+          "license": "Apache-2.0",
+          "pushed_at": "2025-07-31T13:58:55Z",
+          "stars": 25911
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/black-forest-labs/flux",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:bujiazi/bytheway": {
+      "persist": true,
+      "timestamp": 1787736614.6629403,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "[CVPR 2025] Official implementation of ByTheWay: Boost Your Text-to-Video Generation Model to Higher Quality in a Training-free Way",
+          "full_name": "Bujiazi/ByTheWay",
+          "homepage": "https://bujiazi.github.io/bytheway.github.io/",
+          "license": "",
+          "pushed_at": "2025-10-10T11:33:06Z",
+          "stars": 48
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Bujiazi/ByTheWay",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:jiangchaokang/vectorworld": {
+      "persist": true,
+      "timestamp": 1787736611.460227,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "VectorWorld's official open-source code, which is continuously being updated.",
+          "full_name": "jiangchaokang/VectorWorld",
+          "homepage": "",
+          "license": "",
+          "pushed_at": "2026-06-23T10:34:22Z",
+          "stars": 35
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/jiangchaokang/VectorWorld",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:kevin-thu/epona": {
+      "persist": true,
+      "timestamp": 1787736615.4433618,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "Official Code for Epona: Autoregressive Diffusion World Model for Autonomous Driving (ICCV 2025)",
+          "full_name": "Kevin-thu/Epona",
+          "homepage": "https://kevin-thu.github.io/Epona/",
+          "license": "MIT",
+          "pushed_at": "2025-07-22T06:35:46Z",
+          "stars": 384
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Kevin-thu/Epona",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:liulin815/driveworld-vla": {
+      "persist": true,
+      "timestamp": 1787736611.747486,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "Offical repository of DriveWorld-VLA",
+          "full_name": "liulin815/DriveWorld-VLA",
+          "homepage": "",
+          "license": "",
+          "pushed_at": "2026-07-08T09:44:43Z",
+          "stars": 122
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/liulin815/DriveWorld-VLA",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:lmd0311/hermes": {
+      "persist": true,
+      "timestamp": 1787736616.120259,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "[ICCV 2025] HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation",
+          "full_name": "LMD0311/HERMES",
+          "homepage": "https://arxiv.org/abs/2501.14729",
+          "license": "Apache-2.0",
+          "pushed_at": "2026-05-12T03:05:38Z",
+          "stars": 260
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/LMD0311/HERMES",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:nktoan/h-edit": {
+      "persist": true,
+      "timestamp": 1787736616.318748,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "[CVPR 2025] h-Edit: Effective and Flexible Diffusion-Based Editing via Doob’s h-Transform",
+          "full_name": "nktoan/h-edit",
+          "homepage": "https://arxiv.org/abs/2503.02187",
+          "license": "Apache-2.0",
+          "pushed_at": "2025-06-11T11:08:09Z",
+          "stars": 79
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/nktoan/h-edit",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:nvidia/cosmos": {
+      "persist": true,
+      "timestamp": 1787736613.9794102,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+          "full_name": "NVIDIA/cosmos",
+          "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
+          "license": "NOASSERTION",
+          "pushed_at": "2026-08-25T12:46:29Z",
+          "stars": 11631
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/NVIDIA/Cosmos",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:penghtyx/era3d": {
+      "persist": true,
+      "timestamp": 1787736615.7211246,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "",
+          "full_name": "pengHTYX/Era3D",
+          "homepage": "",
+          "license": "AGPL-3.0",
+          "pushed_at": "2024-12-09T05:41:15Z",
+          "stars": 645
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/pengHTYX/Era3D",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:pku-yuangroup/consisid": {
+      "persist": true,
+      "timestamp": 1787736613.8522441,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "[CVPR 2025 Highlight🔥] Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
+          "full_name": "PKU-YuanGroup/ConsisID",
+          "homepage": "https://pku-yuangroup.github.io/ConsisID/",
+          "license": "Apache-2.0",
+          "pushed_at": "2026-04-14T03:25:24Z",
+          "stars": 855
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/PKU-YuanGroup/ConsisID",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:showlab/d-ar": {
+      "persist": true,
+      "timestamp": 1787736614.6634777,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "the official repo for \"D-AR: Diffusion via Autoregressive Models\"",
+          "full_name": "showlab/D-AR",
+          "homepage": "",
+          "license": "MIT",
+          "pushed_at": "2026-01-29T14:31:40Z",
+          "stars": 138
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/showlab/D-AR",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/hunyuan3d-2": {
+      "persist": true,
+      "timestamp": 1787736616.2842982,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models.",
+          "full_name": "Tencent-Hunyuan/Hunyuan3D-2",
+          "homepage": "https://3d.hunyuan.tencent.com/",
+          "license": "NOASSERTION",
+          "pushed_at": "2025-10-28T09:58:12Z",
+          "stars": 14623
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/hunyuan3d-2.1": {
+      "persist": true,
+      "timestamp": 1787736616.2968552,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "From Images to High-Fidelity 3D Assets with Production-Ready PBR Material",
+          "full_name": "Tencent-Hunyuan/Hunyuan3D-2.1",
+          "homepage": "https://3d.hunyuan.tencent.com/",
+          "license": "NOASSERTION",
+          "pushed_at": "2025-10-17T10:10:07Z",
+          "stars": 3913
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/hunyuanimage-3.0": {
+      "persist": true,
+      "timestamp": 1787736616.471779,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "HunyuanImage-3.0: A Powerful Native Multimodal Model for Image Generation",
+          "full_name": "Tencent-Hunyuan/HunyuanImage-3.0",
+          "homepage": "https://hunyuan.tencent.com/image",
+          "license": "NOASSERTION",
+          "pushed_at": "2026-06-23T13:12:44Z",
+          "stars": 3253
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/hunyuanvideo": {
+      "persist": true,
+      "timestamp": 1787736616.68627,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "HunyuanVideo: A Systematic Framework For Large Video Generation Model",
+          "full_name": "Tencent-Hunyuan/HunyuanVideo",
+          "homepage": "https://aivideo.hunyuan.tencent.com",
+          "license": "NOASSERTION",
+          "pushed_at": "2026-06-29T09:33:50Z",
+          "stars": 12472
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/hunyuanvideo-1.5": {
+      "persist": true,
+      "timestamp": 1787736616.728113,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "HunyuanVideo-1.5: A leading lightweight video generation model",
+          "full_name": "Tencent-Hunyuan/HunyuanVideo-1.5",
+          "homepage": "https://hunyuan.tencent.com/video/zh?tabIndex=0",
+          "license": "NOASSERTION",
+          "pushed_at": "2026-04-10T06:14:59Z",
+          "stars": 4534
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/hunyuanvideo-i2v": {
+      "persist": true,
+      "timestamp": 1787736616.4606526,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "HunyuanVideo-I2V: A Customizable Image-to-Video Model based on HunyuanVideo",
+          "full_name": "Tencent-Hunyuan/HunyuanVideo-I2V",
+          "homepage": "https://video.hunyuan.tencent.com/",
+          "license": "NOASSERTION",
+          "pushed_at": "2026-04-07T06:13:09Z",
+          "stars": 1839
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/hy-worldplay": {
+      "persist": true,
+      "timestamp": 1787736616.9443414,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "HY-World 1.5: A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency",
+          "full_name": "Tencent-Hunyuan/HY-WorldPlay",
+          "homepage": "https://3d-models.hunyuan.tencent.com/world/",
+          "license": "NOASSERTION",
+          "pushed_at": "2026-06-10T07:10:23Z",
+          "stars": 1586
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:tencent-hunyuan/ifsq": {
+      "persist": true,
+      "timestamp": 1787736612.1286259,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "iFSQ & LlamaGen-REPA",
+          "full_name": "Tencent-Hunyuan/iFSQ",
+          "homepage": "",
+          "license": "NOASSERTION",
+          "pushed_at": "2026-01-27T14:25:02Z",
+          "stars": 106
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/Tencent-Hunyuan/iFSQ",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:thudm/cogvideo": {
+      "persist": true,
+      "timestamp": 1787736614.0690758,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "text and image to video generation: CogVideoX (2024) and CogVideo (ICLR 2023)",
+          "full_name": "zai-org/CogVideo",
+          "homepage": "",
+          "license": "Apache-2.0",
+          "pushed_at": "2025-11-04T11:19:04Z",
+          "stars": 12977
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/THUDM/CogVideo",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:github:xiaolul2/dynflowdrive": {
+      "persist": true,
+      "timestamp": 1787736611.751609,
+      "value": {
+        "meta": {
+          "archived": false,
+          "description": "Code implementation of DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving",
+          "full_name": "xiaolul2/DynFlowDrive",
+          "homepage": "",
+          "license": "",
+          "pushed_at": "2026-03-23T06:06:02Z",
+          "stars": 24
+        },
+        "probe": {
+          "content_type": "",
+          "final_url": "https://github.com/xiaolul2/DynFlowDrive",
+          "reason": "",
+          "state": "ok",
+          "status": 200,
+          "title": ""
+        }
+      }
+    },
+    "v2:http:https://3d-models.hunyuan.tencent.com/world/": {
+      "persist": true,
+      "timestamp": 1787736618.1640098,
+      "value": {
+        "content_type": "text/html",
+        "final_url": "https://3d-models.hunyuan.tencent.com/world/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "腾讯混元3D"
+      }
+    },
+    "v2:http:https://ali-vilab.github.io/VACE-Page/": {
+      "persist": true,
+      "timestamp": 1787736622.6071763,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://ali-vilab.github.io/VACE-Page/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "VACE"
+      }
+    },
+    "v2:http:https://articulate-anymesh.github.io": {
+      "persist": true,
+      "timestamp": 1787736613.581026,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://articulate-anymesh.github.io",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Articulate AnyMesh"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2310.08710": {
+      "persist": true,
+      "timestamp": 1787736622.6871138,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2310.08710",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2310.12945": {
+      "persist": true,
+      "timestamp": 1787736612.923949,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2310.12945",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "3D-GPT: Procedural 3D Modeling with Large Language Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2403.02151": {
+      "persist": true,
+      "timestamp": 1787736621.7674642,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2403.02151",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "TripoSR: Fast 3D Object Reconstruction from a Single Image"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2403.03206": {
+      "persist": true,
+      "timestamp": 1787736615.360921,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2403.03206",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2403.04692": {
+      "persist": true,
+      "timestamp": 1787736618.8565664,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2403.04692",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PixArt-\\Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2403.06845": {
+      "persist": true,
+      "timestamp": 1787736614.882348,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2403.06845",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2403.15698": {
+      "persist": true,
+      "timestamp": 1787736619.8471377,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2403.15698",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SceneX: Procedural Controllable Large-scale Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2404.07191": {
+      "persist": true,
+      "timestamp": 1787736616.7367885,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2404.07191",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2405.11616": {
+      "persist": true,
+      "timestamp": 1787736615.392438,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2405.11616",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2405.20343": {
+      "persist": true,
+      "timestamp": 1787736622.0331676,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2405.20343",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2405.20759": {
+      "persist": true,
+      "timestamp": 1787736616.7547615,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2405.20759",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Information Theoretic Text-to-Image Alignment"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2406.03293": {
+      "persist": true,
+      "timestamp": 1787736621.7066174,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2406.03293",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Text-to-Image Rectified Flow as Plug-and-Play Priors"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2406.05641": {
+      "persist": true,
+      "timestamp": 1787736618.8050063,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2406.05641",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PaRa: Personalizing Text-to-Image Diffusion via Parameter Rank Reduction"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2406.05814": {
+      "persist": true,
+      "timestamp": 1787736621.6251106,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2406.05814",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2406.10210": {
+      "persist": true,
+      "timestamp": 1787736617.3087437,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2406.10210",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Make It Count: Text-to-Image Generation with an Accurate Number of Objects"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2407.14979": {
+      "persist": true,
+      "timestamp": 1787736619.4480956,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2407.14979",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "RGB2Point: 3D Point Cloud Generation from Single RGB Images"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2408.06072": {
+      "persist": true,
+      "timestamp": 1787736613.477685,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2408.06072",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2408.14732": {
+      "persist": true,
+      "timestamp": 1787736618.4364786,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2408.14732",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "OctFusion: Octree-based Diffusion Models for 3D Shape Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2408.14837": {
+      "persist": true,
+      "timestamp": 1787736614.0068064,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2408.14837",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Diffusion Models Are Real-Time Game Engines"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2409.05463": {
+      "persist": true,
+      "timestamp": 1787736614.9410493,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2409.05463",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2409.08215": {
+      "persist": true,
+      "timestamp": 1787736617.1350083,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2409.08215",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LT3SD: Latent Trees for 3D Scene Diffusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.01295": {
+      "persist": true,
+      "timestamp": 1787736617.0008624,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.01295",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.01699": {
+      "persist": true,
+      "timestamp": 1787736613.1337466,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.01699",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Accelerating Auto-regressive Text-to-Image Generation with Training-free Speculative Jacobi Decoding"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.05954": {
+      "persist": true,
+      "timestamp": 1787736619.1009803,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.05954",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Pyramidal Flow Matching for Efficient Video Generative Modeling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.08261": {
+      "persist": true,
+      "timestamp": 1787736617.4999256,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.08261",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.10306": {
+      "persist": true,
+      "timestamp": 1787736613.1547563,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.10306",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Animate-X: Universal Character Image Animation with Enhanced Motion Representation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.10629": {
+      "persist": true,
+      "timestamp": 1787736619.6716733,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.10629",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.11817": {
+      "persist": true,
+      "timestamp": 1787736616.674168,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.11817",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Improving Long-Text Alignment for Text-to-Image Diffusion Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.13863": {
+      "persist": true,
+      "timestamp": 1787736615.5418284,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.13863",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.16719": {
+      "persist": true,
+      "timestamp": 1787736619.014176,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.16719",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Progressive Compositionality in Text-to-Image Generative Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2410.18084": {
+      "persist": true,
+      "timestamp": 1787736614.970249,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2410.18084",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.00769": {
+      "persist": true,
+      "timestamp": 1787736615.8257625,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.00769",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "GameGen-X: Interactive Open-world Game Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.04989": {
+      "persist": true,
+      "timestamp": 1787736620.184555,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.04989",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.11252": {
+      "persist": true,
+      "timestamp": 1787736615.1093738,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.11252",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.13807": {
+      "persist": true,
+      "timestamp": 1787736617.2832217,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.13807",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.15236": {
+      "persist": true,
+      "timestamp": 1787736621.3802211,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.15236",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.16443": {
+      "persist": true,
+      "timestamp": 1787736620.7488384,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.16443",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.16503": {
+      "persist": true,
+      "timestamp": 1787736618.5168972,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.16503",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.17440": {
+      "persist": true,
+      "timestamp": 1787736613.5140495,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.17440",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Identity-Preserving Text-to-Video Generation by Frequency Decomposition"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.17592": {
+      "persist": true,
+      "timestamp": 1787736622.1692789,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.17592",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "VideoDirector: Precise Video Editing via Text-to-Video Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.17697": {
+      "persist": true,
+      "timestamp": 1787736621.029676,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.17697",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "StableAnimator: High-Quality Identity-Preserving Human Image Animation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2411.18159": {
+      "persist": true,
+      "timestamp": 1787736621.7826924,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2411.18159",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Type-R: Automatically Retouching Typos for Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.00596": {
+      "persist": true,
+      "timestamp": 1787736618.6472697,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.00596",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.01506": {
+      "persist": true,
+      "timestamp": 1787736621.5799437,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.01506",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Structured 3D Latents for Scalable and Versatile 3D Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.02168": {
+      "persist": true,
+      "timestamp": 1787736615.9492748,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.02168",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.02193": {
+      "persist": true,
+      "timestamp": 1787736617.2870579,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.02193",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.02912": {
+      "persist": true,
+      "timestamp": 1787736620.4831285,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.02912",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ShapeWords: Guiding Text-to-Image Synthesis with 3D Shape-Aware Prompts"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.03603": {
+      "persist": true,
+      "timestamp": 1787736616.355737,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.03603",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "HunyuanVideo: A Systematic Framework For Large Video Generative Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.05435": {
+      "persist": true,
+      "timestamp": 1787736622.1155024,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.05435",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "UniScene: Unified Occupancy-centric Driving Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.05818": {
+      "persist": true,
+      "timestamp": 1787736620.4497895,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.05818",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SILMM: Self-Improving Large Multimodal Models for Compositional Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.05848": {
+      "persist": true,
+      "timestamp": 1787736618.1554697,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.05848",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.09283": {
+      "persist": true,
+      "timestamp": 1787736616.8652928,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.09283",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "InstanceCap: Improving Text-to-Video Generation via Instance-aware Structured Caption"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.09619": {
+      "persist": true,
+      "timestamp": 1787736620.3827045,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.09619",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.09856": {
+      "persist": true,
+      "timestamp": 1787736617.1022384,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.09856",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.11198": {
+      "persist": true,
+      "timestamp": 1787736615.8893929,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.11198",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.11596": {
+      "persist": true,
+      "timestamp": 1787736618.1518981,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.11596",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MeshArt: Generating Articulated Meshes with Structure-Guided Transformers"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.13188": {
+      "persist": true,
+      "timestamp": 1787736621.507762,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.13188",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2412.21117": {
+      "persist": true,
+      "timestamp": 1787736619.099706,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2412.21117",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.03006": {
+      "persist": true,
+      "timestamp": 1787736621.790477,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.03006",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "TransPixeler: Advancing Text-to-Video Generation with Transparency"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.03059": {
+      "persist": true,
+      "timestamp": 1787736621.660438,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.03059",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.03575": {
+      "persist": true,
+      "timestamp": 1787736613.6575289,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.03575",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Cosmos World Foundation Model Platform for Physical AI"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.06481": {
+      "persist": true,
+      "timestamp": 1787736615.6024175,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.06481",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Focus-N-Fix: Region-Aware Fine-Tuning for Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.07647": {
+      "persist": true,
+      "timestamp": 1787736613.4431946,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.07647",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "BlobGEN-Vid: Compositional Text-to-Video Generation with Blob Video Representations"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.08325": {
+      "persist": true,
+      "timestamp": 1787736615.737688,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.08325",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "GameFactory: Creating New Games with Generative Interactive Videos"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.10021": {
+      "persist": true,
+      "timestamp": 1787736622.9743981,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.10021",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "X-Dyna: Expressive Dynamic Human Image Animation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.12202": {
+      "persist": true,
+      "timestamp": 1787736615.9658022,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.12202",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.12910": {
+      "persist": true,
+      "timestamp": 1787736618.981708,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.12910",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PreciseCam: Precise Camera Control for Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.13554": {
+      "persist": true,
+      "timestamp": 1787736618.7210276,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.13554",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.14729": {
+      "persist": true,
+      "timestamp": 1787736615.8102114,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.14729",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2501.18427": {
+      "persist": true,
+      "timestamp": 1787736619.5902584,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2501.18427",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2502.01061": {
+      "persist": true,
+      "timestamp": 1787736618.2352312,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2502.01061",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2502.02590": {
+      "persist": true,
+      "timestamp": 1787736613.2092109,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2502.02590",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2502.06145": {
+      "persist": true,
+      "timestamp": 1787736613.1173978,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2502.06145",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Animate Anyone 2: High-Fidelity Character Image Animation with Environment Affordance"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2502.10248": {
+      "persist": true,
+      "timestamp": 1787736621.219542,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2502.10248",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2502.10675": {
+      "persist": true,
+      "timestamp": 1787736616.0231748,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2502.10675",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Hierarchically-Structured Open-Vocabulary Indoor Scene Synthesis with Pre-trained Large Language Model"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2502.12456": {
+      "persist": true,
+      "timestamp": 1787736618.5726504,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2502.12456",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Not-So-Optimal Transport Flows for 3D Point Cloud Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.02187": {
+      "persist": true,
+      "timestamp": 1787736616.0027668,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.02187",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "h-Edit: Effective and Flexible Diffusion-Based Editing via Doob's h-Transform"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.07598": {
+      "persist": true,
+      "timestamp": 1787736622.1448777,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.07598",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "VACE: All-in-One Video Creation and Editing"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.08594": {
+      "persist": true,
+      "timestamp": 1787736613.1276968,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.08594",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PointNSP: Autoregressive 3D Point Cloud Generation with Next-Scale Level-of-Detail Prediction"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.13424": {
+      "persist": true,
+      "timestamp": 1787736616.5346565,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.13424",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.13479": {
+      "persist": true,
+      "timestamp": 1787736615.0774934,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.13479",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.14445": {
+      "persist": true,
+      "timestamp": 1787736613.405613,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.14445",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Bolt3D: Generating 3D Scenes in Seconds"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.15855": {
+      "persist": true,
+      "timestamp": 1787736622.4662652,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.15855",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.16302": {
+      "persist": true,
+      "timestamp": 1787736622.3516912,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.16302",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Unleashing Vecset Diffusion Model for Fast Shape Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.16375": {
+      "persist": true,
+      "timestamp": 1787736618.425348,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.16375",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "NuiScene: Exploring Efficient Generation of Unbounded Outdoor Scenes"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.16420": {
+      "persist": true,
+      "timestamp": 1787736621.097732,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.16420",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SynCity: Training-Free Generation of 3D Worlds"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.18324": {
+      "persist": true,
+      "timestamp": 1787736618.9462466,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.18324",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.18476": {
+      "persist": true,
+      "timestamp": 1787736616.0796058,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.18476",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Global-Local Tree Search in VLMs for 3D Indoor Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.18938": {
+      "persist": true,
+      "timestamp": 1787736613.1075115,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.18938",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "AdaWorld: Learning Adaptable World Models with Latent Actions"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.19897": {
+      "persist": true,
+      "timestamp": 1787736619.7321453,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.19897",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Scaling Down Text Encoders of Text-to-Image Diffusion Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.20314": {
+      "persist": true,
+      "timestamp": 1787736622.4348094,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.20314",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Wan: Open and Advanced Large-Scale Video Generative Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.21732": {
+      "persist": true,
+      "timestamp": 1787736620.7448833,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.21732",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.21781": {
+      "persist": true,
+      "timestamp": 1787736622.4010963,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.21781",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.22231": {
+      "persist": true,
+      "timestamp": 1787736613.4380047,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.22231",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2503.23284": {
+      "persist": true,
+      "timestamp": 1787736620.4696524,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2503.23284",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SketchVideo: Sketch-based Video Generation and Editing"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.01724": {
+      "persist": true,
+      "timestamp": 1787736614.676659,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.01724",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DreamActor-M1: Holistic, Expressive and Robust Human Image Animation with Hybrid Guidance"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.06752": {
+      "persist": true,
+      "timestamp": 1787736613.6965256,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.06752",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Compass Control: Multi Object Orientation Control for Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.06861": {
+      "persist": true,
+      "timestamp": 1787736615.3173044,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.06861",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "EIDT-V: Exploiting Intersections in Diffusion Trajectories for Model-Agnostic, Zero-Shot, Training-Free Text-to-Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.08685": {
+      "persist": true,
+      "timestamp": 1787736619.9797392,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.08685",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.09975": {
+      "persist": true,
+      "timestamp": 1787736618.4376938,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.09975",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.11289": {
+      "persist": true,
+      "timestamp": 1787736622.0732203,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.11289",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.11346": {
+      "persist": true,
+      "timestamp": 1787736620.136468,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.11346",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Seedream 3.0 Technical Report"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.11739": {
+      "persist": true,
+      "timestamp": 1787736619.2299738,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.11739",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "The Devil is in the Prompts: Retrieval-Augmented Prompt Optimization for Text-to-Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2504.12369": {
+      "persist": true,
+      "timestamp": 1787736622.690542,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2504.12369",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WorldMem: Long-term Consistent World Simulation with Memory"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.02648": {
+      "persist": true,
+      "timestamp": 1787736617.4188838,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.02648",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MCCD: Multi-Agent Collaboration-based Compositional Diffusion for Complex Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.02836": {
+      "persist": true,
+      "timestamp": 1787736619.5649893,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.02836",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.04622": {
+      "persist": true,
+      "timestamp": 1787736619.014772,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.04622",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.09140": {
+      "persist": true,
+      "timestamp": 1787736621.673974,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.09140",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.13447": {
+      "persist": true,
+      "timestamp": 1787736617.2070804,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.13447",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Mean Flows for One-step Generative Modeling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.14521": {
+      "persist": true,
+      "timestamp": 1787736620.6753917,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.14521",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.20287": {
+      "persist": true,
+      "timestamp": 1787736618.1541035,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.20287",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MotionPro: A Precise Motion Controller for Image-to-Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.21070": {
+      "persist": true,
+      "timestamp": 1787736612.0118136,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.21070",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Minute-Long Videos with Dual Parallelisms"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.21960": {
+      "persist": true,
+      "timestamp": 1787736618.7286491,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.21960",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "One-Way Ticket:Time-Independent Unified Encoder for Distilling Text-to-Image Diffusion Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.23660": {
+      "persist": true,
+      "timestamp": 1787736613.9952242,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.23660",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "D-AR: Diffusion via Autoregressive Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2505.24877": {
+      "persist": true,
+      "timestamp": 1787736613.0519662,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2505.24877",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.02459": {
+      "persist": true,
+      "timestamp": 1787736619.2946072,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.02459",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ReSpace: Text-Driven Autoregressive 3D Indoor Scene Synthesis and Editing"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.04225": {
+      "persist": true,
+      "timestamp": 1787736622.6080923,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.04225",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Voyager: Long-Range and World-Consistent Video Diffusion for Explorable 3D Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.05341": {
+      "persist": true,
+      "timestamp": 1787736614.114348,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.05341",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via Spatial Reasoning"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.05573": {
+      "persist": true,
+      "timestamp": 1787736618.815496,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.05573",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.07932": {
+      "persist": true,
+      "timestamp": 1787736620.8134167,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.07932",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.16504": {
+      "persist": true,
+      "timestamp": 1787736616.3178377,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.16504",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.17074": {
+      "persist": true,
+      "timestamp": 1787736613.3406627,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.17074",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.18538": {
+      "persist": true,
+      "timestamp": 1787736620.0141199,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.18538",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "A Question Bank to Assess AI Inclusivity: Mapping out the Journey from Diversity Errors to Inclusion Excellence"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.18701": {
+      "persist": true,
+      "timestamp": 1787736617.1223154,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.18701",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Matrix-Game: Interactive World Foundation Model"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.20590": {
+      "persist": true,
+      "timestamp": 1787736622.7338889,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.20590",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WonderFree: Enhancing Novel View Quality and Cross-View Consistency for 3D Scene Exploration"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.22291": {
+      "persist": true,
+      "timestamp": 1787736619.5138505,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.22291",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "RoomCraft: Controllable and Complete 3D Indoor Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2506.24113": {
+      "persist": true,
+      "timestamp": 1787736615.147433,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2506.24113",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Epona: Autoregressive Diffusion World Model for Autonomous Driving"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2507.00603": {
+      "persist": true,
+      "timestamp": 1787736622.683097,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2507.00603",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2507.02857": {
+      "persist": true,
+      "timestamp": 1787736613.1614175,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2507.02857",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "AnyI2V: Animating Any Conditional Image with Motion Control"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2507.06165": {
+      "persist": true,
+      "timestamp": 1787736618.7081494,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2507.06165",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2507.08772": {
+      "persist": true,
+      "timestamp": 1787736615.6595562,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2507.08772",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "From One to More: Contextual Part Latents for 3D Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2507.17745": {
+      "persist": true,
+      "timestamp": 1787736622.063348,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2507.17745",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2507.19058": {
+      "persist": true,
+      "timestamp": 1787736619.7424471,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2507.19058",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2507.21809": {
+      "persist": true,
+      "timestamp": 1787736616.6391172,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2507.21809",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "HunyuanWorld 1.0: Generating Immersive, Explorable, and Interactive 3D Worlds from Words or Pixels"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2508.02324": {
+      "persist": true,
+      "timestamp": 1787736619.1551309,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2508.02324",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Qwen-Image Technical Report"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2508.11952": {
+      "persist": true,
+      "timestamp": 1787736622.507155,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2508.11952",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2508.15169": {
+      "persist": true,
+      "timestamp": 1787736618.1550245,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2508.15169",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2508.17832": {
+      "persist": true,
+      "timestamp": 1787736616.11036,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2508.17832",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "HLG: Comprehensive 3D Room Construction via Hierarchical Layout Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2509.05263": {
+      "persist": true,
+      "timestamp": 1787736617.0505607,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2509.05263",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2509.14981": {
+      "persist": true,
+      "timestamp": 1787736612.4230464,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2509.14981",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SPATIALGEN: Layout-guided 3D Indoor Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2509.15249": {
+      "persist": true,
+      "timestamp": 1787736613.4139066,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2509.15249",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Causal Reasoning Elicits Controllable 3D Scene Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2509.20414": {
+      "persist": true,
+      "timestamp": 1787736619.7968159,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2509.20414",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2509.22281": {
+      "persist": true,
+      "timestamp": 1787736617.569319,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2509.22281",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial Reasoning"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2509.23951": {
+      "persist": true,
+      "timestamp": 1787736616.1440904,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2509.23951",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "HunyuanImage 3.0 Technical Report"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2509.25079": {
+      "persist": true,
+      "timestamp": 1787736622.3183005,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2509.25079",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2510.02178": {
+      "persist": true,
+      "timestamp": 1787736614.6761715,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2510.02178",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2510.13678": {
+      "persist": true,
+      "timestamp": 1787736615.4553864,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2510.13678",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "FlashWorld: High-quality 3D Scene Generation within Seconds"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2510.14977": {
+      "persist": true,
+      "timestamp": 1787736621.3131099,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2510.14977",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Terra: Explorable Native 3D World Model with Point Latents"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2510.23880": {
+      "persist": true,
+      "timestamp": 1787736621.9076421,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2510.23880",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "TRELLISWorld: Training-Free World Generation from Object Generators"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2510.26140": {
+      "persist": true,
+      "timestamp": 1787736615.7341475,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2510.26140",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "FullPart: Generating each 3D Part at Full Resolution"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2511.18173": {
+      "persist": true,
+      "timestamp": 1787736615.1628692,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2511.18173",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "EgoControl: Controllable Egocentric Video Generation via 3D Full-Body Poses"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2511.18870": {
+      "persist": true,
+      "timestamp": 1787736616.4050603,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2511.18870",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "HunyuanVideo 1.5 Technical Report"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2511.22456": {
+      "persist": true,
+      "timestamp": 1787736617.0167246,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2511.22456",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2512.02012": {
+      "persist": true,
+      "timestamp": 1787736616.3889818,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2512.02012",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Improved Mean Flows: On the Challenges of Fastforward Generative Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2512.03052": {
+      "persist": true,
+      "timestamp": 1787736616.8188505,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2512.03052",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LATTICE: Democratize High-Fidelity 3D Generation at Scale"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2512.09164": {
+      "persist": true,
+      "timestamp": 1787736622.7947884,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2512.09164",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WonderZoom: Multi-Scale 3D World Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2512.14614": {
+      "persist": true,
+      "timestamp": 1787736616.6070235,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2512.14614",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2512.21185": {
+      "persist": true,
+      "timestamp": 1787736622.064975,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2512.21185",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2601.17124": {
+      "persist": true,
+      "timestamp": 1787736611.7973547,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2601.17124",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "iFSQ: Improving FSQ for Image Generation with 1 Line of Code"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2601.19785": {
+      "persist": true,
+      "timestamp": 1787736611.7833197,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2601.19785",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2602.01536": {
+      "persist": true,
+      "timestamp": 1787736612.8282762,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2602.01536",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2602.04770": {
+      "persist": true,
+      "timestamp": 1787736611.5655372,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2602.04770",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Generative Modeling via Drifting"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2602.06521": {
+      "persist": true,
+      "timestamp": 1787736611.4440687,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2602.06521",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2602.12100": {
+      "persist": true,
+      "timestamp": 1787736611.1576498,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2602.12100",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2602.17040": {
+      "persist": true,
+      "timestamp": 1787736611.7807608,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2602.17040",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2602.24096": {
+      "persist": true,
+      "timestamp": 1787736611.1571693,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2602.24096",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.14062": {
+      "persist": true,
+      "timestamp": 1787736612.6426954,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.14062",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "TMPDiff: Temporal Mixed-Precision for Diffusion Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.14936": {
+      "persist": true,
+      "timestamp": 1787736612.487513,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.14936",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Bridging the Intention-Expression Gap: Aligning Multi-Dimensional Preferences via Hierarchical Relevance Feedback in Text-to-Image Diffusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.15279": {
+      "persist": true,
+      "timestamp": 1787736611.440337,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.15279",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.15478": {
+      "persist": true,
+      "timestamp": 1787736612.7716978,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.15478",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ViFeEdit: A Video-Free Tuner of Your Video Diffusion Transformer"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.16099": {
+      "persist": true,
+      "timestamp": 1787736612.034663,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.16099",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.16711": {
+      "persist": true,
+      "timestamp": 1787736612.3067343,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.16711",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Search2Motion: Training-Free Object-Level Motion Control via Attention-Consensus Search"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.17652": {
+      "persist": true,
+      "timestamp": 1787736611.1548445,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.17652",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.17965": {
+      "persist": true,
+      "timestamp": 1787736611.8549726,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.17965",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.18627": {
+      "persist": true,
+      "timestamp": 1787736611.1566143,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.18627",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.19206": {
+      "persist": true,
+      "timestamp": 1787736612.3148553,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.19206",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "RPiAE: A Representation-Pivoted Autoencoder Enhancing Both Image Generation and Editing"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.19216": {
+      "persist": true,
+      "timestamp": 1787736611.4394329,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.19216",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.19222": {
+      "persist": true,
+      "timestamp": 1787736612.581253,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.19222",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Spectrally-Guided Diffusion Noise Schedules"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.19360": {
+      "persist": true,
+      "timestamp": 1787736612.7788374,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.19360",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Warm-Start Flow Matching for Guaranteed Fast Text/Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.19598": {
+      "persist": true,
+      "timestamp": 1787736611.7239506,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.19598",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.19675": {
+      "persist": true,
+      "timestamp": 1787736611.440979,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.19675",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.20192": {
+      "persist": true,
+      "timestamp": 1787736611.9840972,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.20192",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.20470": {
+      "persist": true,
+      "timestamp": 1787736611.626788,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.20470",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.20725": {
+      "persist": true,
+      "timestamp": 1787736612.3972914,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.20725",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Premier: Personalized Preference Modulation with Learnable User Embedding in Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.21136": {
+      "persist": true,
+      "timestamp": 1787736612.0307271,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.21136",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MS-CustomNet: Controllable Multi-Subject Customization with Hierarchical Relational Semantics"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.21295": {
+      "persist": true,
+      "timestamp": 1787736612.5987473,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.21295",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Text-Image Conditioned 3D Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.21783": {
+      "persist": true,
+      "timestamp": 1787736612.8734412,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.21783",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.22041": {
+      "persist": true,
+      "timestamp": 1787736611.4868112,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.22041",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DTVI: Dual-Stage Textual and Visual Intervention for Safe Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.22091": {
+      "persist": true,
+      "timestamp": 1787736612.075436,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.22091",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "P-Flow: Prompting Visual Effects Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.22228": {
+      "persist": true,
+      "timestamp": 1787736612.4963682,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.22228",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SpatialReward: Verifiable Spatial Reward Modeling for Fine-Grained Spatial Consistency in Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.22943": {
+      "persist": true,
+      "timestamp": 1787736612.1408849,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.22943",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PersonalQ: Select, Quantize, and Serve Personalized Diffusion Models for Efficient Inference"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.22972": {
+      "persist": true,
+      "timestamp": 1787736612.8653517,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.22972",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WorldMesh: Generating Navigable Multi-Room 3D Scenes via Mesh-Conditioned Image Diffusion"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.23140": {
+      "persist": true,
+      "timestamp": 1787736611.155351,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.23140",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.23376": {
+      "persist": true,
+      "timestamp": 1787736611.152981,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.23376",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.23491": {
+      "persist": true,
+      "timestamp": 1787736611.515851,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.23491",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.23500": {
+      "persist": true,
+      "timestamp": 1787736612.7092128,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.23500",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.23973": {
+      "persist": true,
+      "timestamp": 1787736612.211032,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.23973",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.24086": {
+      "persist": true,
+      "timestamp": 1787736611.6978269,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.24086",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.24570": {
+      "persist": true,
+      "timestamp": 1787736611.158374,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.24570",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Anti-I2V: Safeguarding your photos from malicious image-to-video generation"
+      }
+    },
+    "v2:http:https://arxiv.org/abs/2603.24965": {
+      "persist": true,
+      "timestamp": 1787736612.3604875,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://arxiv.org/abs/2603.24965",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Self-Corrected Image Generation with Explainable Latent Rewards"
+      }
+    },
+    "v2:http:https://assembler3d.github.io": {
+      "persist": true,
+      "timestamp": 1787736613.6782472,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://assembler3d.github.io",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion"
+      }
+    },
+    "v2:http:https://bujiazi.github.io/bytheway.github.io/": {
+      "persist": true,
+      "timestamp": 1787736615.0354612,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://bujiazi.github.io/bytheway.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ByTheWay"
+      }
+    },
+    "v2:http:https://dynamic-city.github.io/": {
+      "persist": true,
+      "timestamp": 1787736615.3691595,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://dynamic-city.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes"
+      }
+    },
+    "v2:http:https://freemty.github.io/project-prometheus/": {
+      "persist": true,
+      "timestamp": 1787736619.4906895,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://freemty.github.io/project-prometheus/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation"
+      }
+    },
+    "v2:http:https://graphics.unizar.es/projects/PreciseCam2024": {
+      "persist": true,
+      "timestamp": 1787736619.894728,
+      "value": {
+        "content_type": "text/html",
+        "final_url": "http://graphics.unizar.es/projects/PreciseCam2024/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PreciseCam: Precise Camera Control for Text-to-Image Generation"
+      }
+    },
+    "v2:http:https://grisoon.github.io/DreamActor-M1/": {
+      "persist": true,
+      "timestamp": 1787736615.251058,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://grisoon.github.io/DreamActor-M1/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DreamActor-M1: Holistic, Expressive and Robust Human Image Animation with Hybrid Guidance"
+      }
+    },
+    "v2:http:https://guyyariv.github.io/TTM/": {
+      "persist": true,
+      "timestamp": 1787736622.072746,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://guyyariv.github.io/TTM/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation"
+      }
+    },
+    "v2:http:https://henghuiding.com/AnyI2V/": {
+      "persist": true,
+      "timestamp": 1787736613.7249045,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://henghuiding.com/AnyI2V/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "AnyI2V: Animating Any Conditional Image with Motion Control"
+      }
+    },
+    "v2:http:https://jinnmnm.github.io/Fuse3d.github.io/": {
+      "persist": true,
+      "timestamp": 1787736612.1403797,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://jinnmnm.github.io/Fuse3d.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion"
+      }
+    },
+    "v2:http:https://klingai.com/": {
+      "persist": true,
+      "timestamp": 1787736618.1509304,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://kling.ai/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Kling AI: Next-Gen AI Video & Image Generator"
+      }
+    },
+    "v2:http:https://kovenyu.com/WonderWorld/": {
+      "persist": true,
+      "timestamp": 1787736636.3440232,
+      "value": {
+        "content_type": "text/html; charset=UTF-8",
+        "final_url": "https://kovenyu.com/wonderworld/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WonderWorld"
+      }
+    },
+    "v2:http:https://lineargen.github.io/": {
+      "persist": true,
+      "timestamp": 1787736617.4830523,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://lineargen.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity"
+      }
+    },
+    "v2:http:https://lizhihao6.github.io/Sparc3D": {
+      "persist": true,
+      "timestamp": 1787736621.3415377,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://lizhihao6.github.io/Sparc3D/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling"
+      }
+    },
+    "v2:http:https://magicdrive-v2.github.io/": {
+      "persist": true,
+      "timestamp": 1787736617.6288154,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://magicdrive-v2.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": ""
+      }
+    },
+    "v2:http:https://mesatask.github.io/": {
+      "persist": true,
+      "timestamp": 1787736618.8036783,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://mesatask.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SOCIAL MEDIA TITLE TAG"
+      }
+    },
+    "v2:http:https://metadrivescape.github.io/papers_project/drivescapev1/index.html": {
+      "persist": true,
+      "timestamp": 1787736615.288802,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://metadrivescape.github.io/papers_project/drivescapev1/index.html",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation"
+      }
+    },
+    "v2:http:https://microsoft.github.io/TRELLIS/": {
+      "persist": true,
+      "timestamp": 1787736621.9587157,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://microsoft.github.io/TRELLIS/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation"
+      }
+    },
+    "v2:http:https://nvlabs.github.io/Sana/": {
+      "persist": true,
+      "timestamp": 1787736620.30877,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://nvlabs.github.io/Sana/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SANA"
+      }
+    },
+    "v2:http:https://omnihuman-lab.github.io/": {
+      "persist": true,
+      "timestamp": 1787736618.572125,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://omnihuman-lab.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": ""
+      }
+    },
+    "v2:http:https://openaccess.thecvf.com/content/CVPR2025/html/Bu_ByTheWay_Boost_Your_Text-to-Video_Generation_Model_to_Higher_Quality_in_CVPR_2025_paper.html": {
+      "persist": true,
+      "timestamp": 1787736614.0974483,
+      "value": {
+        "content_type": "text/html; charset=UTF-8",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Bu_ByTheWay_Boost_Your_Text-to-Video_Generation_Model_to_Higher_Quality_in_CVPR_2025_paper.html",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ByTheWay: Boost Your Text-to-Video Generation Model to Higher Quality in a Training-free Way"
+      }
+    },
+    "v2:http:https://openaccess.thecvf.com/content/CVPR2025/html/Yu_WonderWorld_Interactive_3D_Scene_Generation_from_a_Single_Image_CVPR_2025_paper.html": {
+      "persist": true,
+      "timestamp": 1787736623.4523022,
+      "value": {
+        "content_type": "text/html; charset=UTF-8",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_WonderWorld_Interactive_3D_Scene_Generation_from_a_Single_Image_CVPR_2025_paper.html",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WonderWorld: Interactive 3D Scene Generation from a Single Image"
+      }
+    },
+    "v2:http:https://openreview.net/forum?id=amDkNPVWcn": {
+      "persist": true,
+      "timestamp": 1787736616.5824883,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DamDkNPVWcn",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Verifying your browser | OpenReview"
+      }
+    },
+    "v2:http:https://openreview.net/forum?id=lTrrnNdkOX": {
+      "persist": true,
+      "timestamp": 1787736620.7642903,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DlTrrnNdkOX",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Verifying your browser | OpenReview"
+      }
+    },
+    "v2:http:https://pku-yuangroup.github.io/ConsisID/": {
+      "persist": true,
+      "timestamp": 1787736614.6751916,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://pku-yuangroup.github.io/ConsisID/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "ConsisID: Identity-Preserving Text-to-Video Generation by Frequency Decomposition"
+      }
+    },
+    "v2:http:https://primitiveanything.github.io": {
+      "persist": true,
+      "timestamp": 1787736619.39042,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://primitiveanything.github.io",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "PrimitiveAnything"
+      }
+    },
+    "v2:http:https://pyramid-flow.github.io/": {
+      "persist": true,
+      "timestamp": 1787736619.4586437,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://pyramid-flow.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Pyramid Flow"
+      }
+    },
+    "v2:http:https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/": {
+      "persist": true,
+      "timestamp": 1787736611.3678973,
+      "value": {
+        "content_type": "text/html",
+        "final_url": "https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer"
+      }
+    },
+    "v2:http:https://scene-weaver.github.io/": {
+      "persist": true,
+      "timestamp": 1787736620.1652105,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://scene-weaver.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent"
+      }
+    },
+    "v2:http:https://seaweed.video/": {
+      "persist": true,
+      "timestamp": 1787736621.5045178,
+      "value": {
+        "content_type": "text/html",
+        "final_url": "https://seaweed.video/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Seaweed"
+      }
+    },
+    "v2:http:https://seed.bytedance.com/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83": {
+      "persist": true,
+      "timestamp": 1787736636.314851,
+      "value": {
+        "content_type": "text/html; charset=UTF-8",
+        "final_url": "https://seed.bytedance.com/en/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Seed News - ByteDance Seed Team"
+      }
+    },
+    "v2:http:https://seed.bytedance.com/en/seedance": {
+      "persist": true,
+      "timestamp": 1787736629.5123308,
+      "value": {
+        "content_type": "text/html; charset=UTF-8",
+        "final_url": "https://seed.bytedance.com/en/seedance",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "Seedance"
+      }
+    },
+    "v2:http:https://wonder-free.github.io/": {
+      "persist": true,
+      "timestamp": 1787736623.1364918,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://wonder-free.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WonderFree: Generating Interactive 3D World in 0.72 Seconds"
+      }
+    },
+    "v2:http:https://wonderzoom.github.io/": {
+      "persist": true,
+      "timestamp": 1787736623.8238287,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://wonderzoom.github.io/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "WonderZoom"
+      }
+    },
+    "v2:http:https://www.nvidia.com/en-us/ai/cosmos/": {
+      "persist": true,
+      "timestamp": 1787736614.636971,
+      "value": {
+        "content_type": "text/html; charset=UTF-8",
+        "final_url": "https://www.nvidia.com/en-us/ai/cosmos/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "NVIDIA Cosmos"
+      }
+    },
+    "v2:http:https://xiac20.github.io/ScenePainter/": {
+      "persist": true,
+      "timestamp": 1787736620.1516995,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://xiac20.github.io/ScenePainter/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "SOCIAL MEDIA TITLE TAG"
+      }
+    },
+    "v2:http:https://xiaomi-research.github.io/cogen/": {
+      "persist": true,
+      "timestamp": 1787736613.8244982,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://xiaomi-research.github.io/cogen/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "CoGen: 3D Consistent Video Generation"
+      }
+    },
+    "v2:http:https://zhw-zhang.github.io/MotionPro-page/": {
+      "persist": true,
+      "timestamp": 1787736618.5043318,
+      "value": {
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://zhw-zhang.github.io/MotionPro-page/",
+        "reason": "",
+        "state": "ok",
+        "status": 200,
+        "title": "MotionPro: A Precise Motion Controller for Image-to-Video Generation"
+      }
+    }
+  },
+  "generated_at": "2026-08-26 09:30:36 UTC",
+  "ttl_hours": 24.0,
+  "version": 2
+}

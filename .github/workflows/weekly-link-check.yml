@@ -1,69 +1,98 @@
 name: weekly-link-check
 
-# Deep validation is intentionally split out of daily-curation.yml: verifying
-# every paper/repo/homepage link and refreshing GitHub star counts requires
-# live network calls that are slow and occasionally flaky (rate limits,
-# transient 5xx). Running it weekly keeps the daily pipeline fast and robust
-# while still catching dead links and stale stats regularly.
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: "0 3 * * 1" # Weekly on Monday at 03:00 UTC
+    - cron: "15 3 * * 1"
 
 permissions:
   contents: write
 
 concurrency:
-  group: awesome-generative-models-weekly-link-check
+  group: awesome-generative-models-writer
   cancel-in-progress: false
 
 jobs:
-  link-check:
+  deep-validation:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
-      - name: Upgrade pip
-        run: python -m pip install --upgrade pip
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
 
-      - name: Validate links and refresh repo-stats cache
+      - name: Build searchable explorer
+        run: python scripts/build_explorer.py
+
+      - name: Run deep validation
         id: validate
-        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/validate_data.py --write-cache
+        shell: bash
+        run: |
+          set +e
 
-      - name: Build README and pages
+          python scripts/validate_data.py \
+            --mode deep \
+            --write-cache \
+            --timeout 25 \
+            --retries 2 \
+            --workers 8
+
+          validation_status=$?
+
+          set -e
+
+          echo "status=${validation_status}" >> "$GITHUB_OUTPUT"
+
+          # 本步骤故意返回成功，让报告和缓存可以先被提交。
+          exit 0
+
+      - name: Rebuild pages with refreshed repository stats
         run: python scripts/build.py
 
-      - name: Commit refreshed cache and pages
+      - name: Check internal links
+        run: python scripts/check_internal_links.py
+
+      - name: Commit validation report and refreshed stats
+        shell: bash
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add -A
+
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No deep-validation changes to commit."
           else
-            git commit -m "chore: weekly link check and repo-stats refresh $(date -u +%Y-%m-%d)"
+            git commit -m \
+              "chore: weekly validation $(date -u +%Y-%m-%d)"
             git push
           fi
 
-      # The validate step is allowed to fail without skipping the commit
-      # above, so that a broken link found this week doesn't also block the
-      # (still valid) refreshed stats for every other entry from shipping.
-      # This step turns the job red for visibility once that commit is safe.
-      - name: Surface broken links, if any
-        if: steps.validate.outcome == 'failure'
+      - name: Fail only on confirmed blocking errors
+        if: steps.validate.outputs.status != '0'
+        shell: bash
         run: |
-          echo "::error::Broken links or semantic mismatches were found -- see metadata/validation/latest.md (just committed)."
+          errors="${{ steps.validate.outputs.blocking_errors }}"
+          report="${{ steps.validate.outputs.report }}"
+
+          echo "::error title=Deep catalog validation failed::${errors:-unknown} confirmed blocking issue(s). Report: ${report:-metadata/validation/deep/latest.md}"
           exit 1

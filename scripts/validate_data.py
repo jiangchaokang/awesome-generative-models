@@ -2,23 +2,23 @@
 from __future__ import annotations
 
 import argparse
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import difflib
 import json
 import os
 import re
-import shutil
+import socket
 import sys
 import threading
 import time
-from collections import defaultdict
-from copy import deepcopy
-from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import asdict, dataclass
+from datetime import date, datetime, timedelta, timezone
 from html import unescape
+from http.client import IncompleteRead, RemoteDisconnected
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlencode, urlparse
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
 
@@ -31,6 +31,7 @@ from catalog_common import (
     METHOD_VOCAB,
     REPRESENTATION_VOCAB,
     ROOT,
+    SCOPE_START_DATE,
     arxiv_id_from_url,
     arxiv_year_from_url,
     has_cjk,
@@ -39,42 +40,191 @@ from catalog_common import (
     normalize_whitespace,
     parse_github_repo,
     sentence_count,
-    slugify,
     suggested_org_from_repo,
 )
 
 CACHE_DIR = ROOT / "metadata" / "cache"
-VALIDATION_DIR = ROOT / "metadata" / "validation"
-BACKUP_ROOT = VALIDATION_DIR / "backups"
-NETWORK_CACHE_FILE = CACHE_DIR / "network_cache.json"
+VALIDATION_ROOT = ROOT / "metadata" / "validation"
+NETWORK_CACHE_FILE = CACHE_DIR / "network_cache_v2.json"
 
-SEARCH_URL_TOKENS = [
+DEFAULT_WORKERS = min(8, max(2, os.cpu_count() or 2))
+MAX_RESPONSE_BYTES = 200_000
+
+SEARCH_URL_TOKENS = (
     "scholar.google.com",
     "github.com/search",
     "google.com/search",
     "bing.com/search",
-]
+)
 
-SOFT_FAIL_DOMAINS = {
-    "openreview.net",
-    "proceedings.iclr.cc",
-    "openaccess.thecvf.com",
-    "www.openaccess.thecvf.com",
+CHALLENGE_TITLE_TOKENS = (
+    "verifying your browser",
+    "just a moment",
+    "attention required",
+    "access denied",
+    "captcha",
+    "cloudflare",
+    "checking your browser",
+)
+
+GENERIC_TITLE_TOKENS = (
+    "social media title tag",
+    "untitled document",
+)
+
+TRANSIENT_HTTP_CODES = {408, 425, 429, 500, 502, 503, 504}
+UNKNOWN_HTTP_CODES = {401, 403, 407, 409, 423, 451}
+BROKEN_HTTP_CODES = {404, 410}
+
+SEVERITY_ORDER = {
+    "error": 0,
+    "warning": 1,
+    "notice": 2,
 }
 
-GITHUB_API_SOFT_CODES = {401, 403, 404, 429}
 
-DEFAULT_MAX_WORKERS = min(8, max(4, (os.cpu_count() or 4) * 2))
-PAGE_FETCH_MAX_BYTES = 200_000
+@dataclass(frozen=True)
+class Finding:
+    severity: str
+    code: str
+    location: str
+    message: str
+
+    def markdown(self) -> str:
+        return f"- `{self.code}` — {self.location}: {self.message}"
 
 
-def location(rec: dict) -> str:
-    meta = ARTIFACT_META[rec["artifact"]]
-    return f'{meta["dir"]}/{rec["id"]} ({rec["_source_file"]}:{rec["_lineno"]})'
+@dataclass
+class Probe:
+    state: str
+    status: int = 0
+    final_url: str = ""
+    title: str = ""
+    content_type: str = ""
+    reason: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
 
 
-def record_key(rec: dict) -> tuple[str, int]:
-    return rec["_source_file"], int(rec["_lineno"])
+class TtlCache:
+    def __init__(self, path: Path | None, ttl_hours: float) -> None:
+        self.path = path
+        self.ttl_seconds = max(0.0, ttl_hours) * 3600.0
+        self.entries: dict[str, dict[str, Any]] = {}
+        self.lock = threading.Lock()
+
+        if not path or not path.exists():
+            return
+
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            self.entries = payload.get("entries", {})
+        except (OSError, json.JSONDecodeError, TypeError):
+            self.entries = {}
+
+    def get(self, key: str) -> Any | None:
+        with self.lock:
+            item = self.entries.get(key)
+            if not item:
+                return None
+
+            timestamp = float(item.get("timestamp", item.get("ts", 0)) or 0)
+            if (
+                self.ttl_seconds
+                and timestamp
+                and time.time() - timestamp > self.ttl_seconds
+            ):
+                self.entries.pop(key, None)
+                return None
+
+            return item.get("value")
+
+    def set(self, key: str, value: Any, persist: bool = True) -> None:
+        with self.lock:
+            self.entries[key] = {
+                "timestamp": time.time(),
+                "value": value,
+                "persist": bool(persist),
+            }
+
+    def save(self) -> None:
+        if not self.path:
+            return
+
+        with self.lock:
+            entries = {
+                key: {
+                    "timestamp": item.get("timestamp", item.get("ts", time.time())),
+                    "value": item.get("value"),
+                    "persist": True,
+                }
+                for key, item in self.entries.items()
+                if item.get("persist", True)
+            }
+
+        write_json(
+            self.path,
+            {
+                "version": 2,
+                "generated_at": utc_now(),
+                "ttl_hours": self.ttl_seconds / 3600.0,
+                "entries": entries,
+            },
+        )
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+
+
+def atomic_write_text(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f".{path.name}.tmp")
+    temporary.write_text(text, encoding="utf-8")
+    temporary.replace(path)
+
+
+def write_json(path: Path, payload: Any) -> None:
+    atomic_write_text(
+        path,
+        json.dumps(payload, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+    )
+
+
+def record_location(record: dict[str, Any]) -> str:
+    directory = ARTIFACT_META[record["artifact"]]["dir"]
+    return (
+        f"{directory}/{record['id']} "
+        f"({record['_source_file']}:{record['_lineno']})"
+    )
+
+
+def record_key(record: dict[str, Any]) -> tuple[str, int]:
+    return record["_source_file"], int(record["_lineno"])
+
+
+def finding(
+    severity: str,
+    code: str,
+    location: str,
+    message: str,
+) -> Finding:
+    return Finding(
+        severity=severity,
+        code=code,
+        location=location,
+        message=normalize_whitespace(message),
+    )
+
+
+def is_valid_http_url(url: str) -> bool:
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+
+    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
 
 
 def is_search_placeholder(url: str) -> bool:
@@ -82,878 +232,750 @@ def is_search_placeholder(url: str) -> bool:
     return any(token in lowered for token in SEARCH_URL_TOKENS)
 
 
-def write_json(path: Path, data: dict | list) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+def canonical_arxiv_id(url: str) -> str:
+    return arxiv_id_from_url(url).lower()
 
 
-def make_request(url: str, accept: str = "application/json,text/html,*/*") -> Request:
-    return Request(
-        url,
-        headers={
-            "User-Agent": "awesome-generative-models/4.0",
-            "Accept": accept,
-            "Cache-Control": "no-cache",
-        },
-    )
+def openreview_forum_id(url: str) -> str:
+    parsed = urlparse(url)
+    if parsed.netloc.lower() not in {"openreview.net", "www.openreview.net"}:
+        return ""
+
+    return (parse_qs(parsed.query).get("id") or [""])[0].strip()
 
 
-class NetworkCache:
-    def __init__(self, path: Path | None, ttl_hours: float = 24.0) -> None:
-        self.path = path
-        self.ttl_seconds = max(0.0, float(ttl_hours)) * 3600.0
-        self._entries: dict[str, dict[str, Any]] = {}
-        self._lock = threading.Lock()
-        self._key_locks: dict[str, threading.Lock] = {}
+def canonical_paper_key(url: str) -> str:
+    arxiv_id = canonical_arxiv_id(url)
+    if arxiv_id:
+        return f"arxiv:{arxiv_id}"
 
-        if self.path and self.path.exists():
-            try:
-                payload = json.loads(self.path.read_text(encoding="utf-8"))
-                raw_entries = payload.get("entries", {})
-                now = time.time()
-                for key, item in raw_entries.items():
-                    ts = float(item.get("ts", 0) or 0)
-                    value = item.get("value")
-                    if value is None:
-                        continue
-                    if self.ttl_seconds and ts and now - ts > self.ttl_seconds:
-                        continue
-                    self._entries[key] = {
-                        "ts": ts or now,
-                        "value": value,
-                        "persist": True,
-                    }
-            except Exception:
-                self._entries = {}
+    forum_id = openreview_forum_id(url)
+    if forum_id:
+        return f"openreview:{forum_id.lower()}"
 
-    def _is_expired_locked(self, item: dict[str, Any]) -> bool:
-        if not self.ttl_seconds:
-            return False
-        ts = float(item.get("ts", 0) or 0)
-        return bool(ts and time.time() - ts > self.ttl_seconds)
-
-    def _key_lock(self, key: str) -> threading.Lock:
-        with self._lock:
-            lock = self._key_locks.get(key)
-            if lock is None:
-                lock = threading.Lock()
-                self._key_locks[key] = lock
-            return lock
-
-    def get(self, key: str) -> Any | None:
-        with self._lock:
-            item = self._entries.get(key)
-            if item is None:
-                return None
-            if self._is_expired_locked(item):
-                self._entries.pop(key, None)
-                return None
-            return deepcopy(item["value"])
-
-    def set(self, key: str, value: Any, persist: bool = True) -> None:
-        with self._lock:
-            self._entries[key] = {
-                "ts": time.time(),
-                "value": deepcopy(value),
-                "persist": bool(persist),
-            }
-
-    def get_or_compute(
-        self,
-        key: str,
-        compute: Callable[[], Any],
-        persist_if: Callable[[Any], bool] | None = None,
-    ) -> Any:
-        cached = self.get(key)
-        if cached is not None:
-            return cached
-
-        key_lock = self._key_lock(key)
-        with key_lock:
-            cached = self.get(key)
-            if cached is not None:
-                return cached
-
-            value = compute()
-            persist = True if persist_if is None else bool(persist_if(value))
-            self.set(key, value, persist=persist)
-            return deepcopy(value)
-
-    def save(self) -> None:
-        if not self.path:
-            return
-
-        payload = {
-            "version": 1,
-            "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
-            "ttl_hours": 0 if not self.ttl_seconds else self.ttl_seconds / 3600.0,
-            "entries": {},
-        }
-
-        now = time.time()
-        with self._lock:
-            for key, item in self._entries.items():
-                ts = float(item.get("ts", 0) or 0)
-                if self.ttl_seconds and ts and now - ts > self.ttl_seconds:
-                    continue
-                if not item.get("persist", True):
-                    continue
-                payload["entries"][key] = {
-                    "ts": ts,
-                    "value": item.get("value"),
-                }
-
-        write_json(self.path, payload)
+    return url.rstrip("/")
 
 
-def format_duration(seconds: float) -> str:
-    total = max(0, int(seconds))
-    minutes, secs = divmod(total, 60)
-    hours, minutes = divmod(minutes, 60)
-    if hours:
-        return f"{hours:d}:{minutes:02d}:{secs:02d}"
-    return f"{minutes:02d}:{secs:02d}"
+def canonical_repo_key(url: str) -> str:
+    full_name = parse_github_repo(url)
+    if full_name:
+        return f"github:{full_name.lower()}"
+
+    return url.rstrip("/")
 
 
-class ProgressBar:
-    def __init__(self, total: int, label: str = "progress") -> None:
-        self.total = max(0, int(total))
-        self.label = label
-        self.current = 0
-        self.started_at = time.monotonic()
-        self.last_render_at = 0.0
-        self.last_width = 0
+def request_for(
+    url: str,
+    *,
+    accept: str = "text/html,*/*",
+    token: str = "",
+) -> Request:
+    headers = {
+        "User-Agent": "awesome-generative-models/5.0",
+        "Accept": accept,
+        "Accept-Encoding": "identity",
+        "Cache-Control": "no-cache",
+    }
 
-        if self.total > 0:
-            self._render(force=True)
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
 
-    def update(self, step: int = 1) -> None:
-        self.current += step
-        self._render(force=False)
+    return Request(url, headers=headers)
 
-    def _render(self, force: bool) -> None:
-        if self.total <= 0:
-            return
 
-        now = time.monotonic()
-        if not force and self.current < self.total and now - self.last_render_at < 0.1:
-            return
+def read_limited(response: Any, limit: int = MAX_RESPONSE_BYTES) -> bytes:
+    chunks: list[bytes] = []
+    remaining = limit
 
-        elapsed = now - self.started_at
-        progress = min(1.0, self.current / self.total) if self.total else 1.0
-        width = 28
-        filled = int(width * progress)
-        bar = "#" * filled + "." * (width - filled)
+    while remaining > 0:
+        try:
+            chunk = response.read(min(65_536, remaining))
+        except IncompleteRead as exc:
+            chunk = exc.partial or b""
+            if chunk:
+                chunks.append(chunk[:remaining])
+            break
 
-        rate = self.current / elapsed if elapsed > 0 else 0.0
-        remaining = self.total - self.current
-        eta = remaining / rate if rate > 0 else 0.0
+        if not chunk:
+            break
 
-        line = (
-            f"\r[{self.label}] [{bar}] "
-            f"{self.current}/{self.total} "
-            f"{progress * 100:5.1f}% "
-            f"elapsed {format_duration(elapsed)} "
-            f"eta {format_duration(eta)}"
+        chunks.append(chunk)
+        remaining -= len(chunk)
+
+    return b"".join(chunks)
+
+
+def clean_html_text(value: str) -> str:
+    value = re.sub(r"<[^>]+>", " ", value or "")
+    return normalize_whitespace(unescape(value))
+
+
+def extract_meta_content(html: str, keys: tuple[str, ...]) -> str:
+    for key in keys:
+        escaped = re.escape(key)
+        patterns = (
+            rf'<meta[^>]+name=["\']{escaped}["\'][^>]+content=["\'](.*?)["\']',
+            rf'<meta[^>]+property=["\']{escaped}["\'][^>]+content=["\'](.*?)["\']',
+            rf'<meta[^>]+content=["\'](.*?)["\'][^>]+name=["\']{escaped}["\']',
+            rf'<meta[^>]+content=["\'](.*?)["\'][^>]+property=["\']{escaped}["\']',
         )
 
-        pad = max(0, self.last_width - len(line))
-        sys.stderr.write(line + (" " * pad))
-        sys.stderr.flush()
-        self.last_width = len(line)
-        self.last_render_at = now
-
-    def close(self) -> None:
-        if self.total <= 0:
-            return
-        self._render(force=True)
-        sys.stderr.write("\n")
-        sys.stderr.flush()
-
-
-COMMON_TITLE_STOPWORDS = {
-    "the", "a", "an", "for", "of", "with", "via", "to", "and", "in",
-    "on", "from", "by", "using", "towards", "toward", "into", "based",
-    "system", "framework", "technical", "report", "model", "models",
-}
-
-
-def fetch_text(url: str, accept: str = "text/html,*/*", timeout: int = 20, max_bytes: int = 400_000) -> str:
-    with urlopen(make_request(url, accept=accept), timeout=timeout) as response:
-        return response.read(max_bytes).decode("utf-8", errors="ignore")
-
-
-def clean_html_text(text: str) -> str:
-    text = re.sub(r"<[^>]+>", " ", text or "")
-    return normalize_whitespace(unescape(text))
-
-
-def extract_html_meta_content(html: str, keys: list[str]) -> str:
-    for key in keys:
-        patterns = [
-            re.compile(rf'<meta[^>]+name=["\']{re.escape(key)}["\'][^>]+content=["\'](.*?)["\']', re.I | re.S),
-            re.compile(rf'<meta[^>]+property=["\']{re.escape(key)}["\'][^>]+content=["\'](.*?)["\']', re.I | re.S),
-            re.compile(rf'<meta[^>]+content=["\'](.*?)["\'][^>]+name=["\']{re.escape(key)}["\']', re.I | re.S),
-            re.compile(rf'<meta[^>]+content=["\'](.*?)["\'][^>]+property=["\']{re.escape(key)}["\']', re.I | re.S),
-        ]
         for pattern in patterns:
-            match = pattern.search(html or "")
+            match = re.search(pattern, html, re.IGNORECASE | re.DOTALL)
             if match:
                 return clean_html_text(match.group(1))
+
     return ""
 
 
 def extract_html_title(html: str) -> str:
-    meta_title = extract_html_meta_content(
+    meta_title = extract_meta_content(
         html,
-        ["citation_title", "og:title", "twitter:title"],
+        ("citation_title", "og:title", "twitter:title"),
     )
     if meta_title:
         return meta_title
 
-    match = re.search(r"<title[^>]*>(.*?)</title>", html or "", re.I | re.S)
-    if match:
-        return clean_html_text(match.group(1))
-    return ""
+    match = re.search(
+        r"<title[^>]*>(.*?)</title>",
+        html or "",
+        re.IGNORECASE | re.DOTALL,
+    )
+    return clean_html_text(match.group(1)) if match else ""
 
 
-def persist_ok_result(value: Any) -> bool:
-    return isinstance(value, dict) and bool(value.get("ok"))
+def is_unreliable_title(title: str) -> bool:
+    lowered = normalize_whitespace(title).lower()
+    if not lowered:
+        return True
 
-
-def page_meta_to_probe(page_meta: dict) -> dict:
-    probe = {
-        "ok": bool(page_meta.get("ok")),
-        "status": int(page_meta.get("status", 0) or 0),
-        "final_url": page_meta.get("final_url", ""),
-    }
-    if page_meta.get("warning"):
-        probe["warning"] = page_meta["warning"]
-    if page_meta.get("error"):
-        probe["error"] = page_meta["error"]
-    return probe
-
-
-def fetch_page_meta(
-    url: str,
-    timeout: int = 20,
-    max_bytes: int = PAGE_FETCH_MAX_BYTES,
-    retries: int = 1,
-    cache: NetworkCache | None = None,
-) -> dict:
-    cache_key = f"page::{url}"
-
-    def _compute() -> dict:
-        domain = urlparse(url).netloc.lower()
-        last_soft_warning: dict | None = None
-
-        for _ in range(retries + 1):
-            try:
-                with urlopen(make_request(url, accept="text/html,*/*"), timeout=timeout) as response:
-                    status = int(getattr(response, "status", 200) or 200)
-                    final_url = response.geturl()
-                    content_type = (response.headers.get("Content-Type", "") or "").lower()
-
-                    binary_like = any(
-                        token in content_type
-                        for token in (
-                            "application/pdf",
-                            "application/zip",
-                            "application/octet-stream",
-                            "image/",
-                            "video/",
-                            "audio/",
-                        )
-                    )
-
-                    body = response.read(256 if binary_like else max_bytes)
-                    title = ""
-                    if not binary_like:
-                        title = extract_html_title(body.decode("utf-8", errors="ignore"))
-
-                    return {
-                        "ok": True,
-                        "status": status,
-                        "final_url": final_url,
-                        "title": title,
-                        "content_type": content_type,
-                    }
-            except HTTPError as exc:
-                if exc.code in {403, 429}:
-                    return {
-                        "ok": True,
-                        "status": exc.code,
-                        "final_url": getattr(exc, "url", url),
-                        "title": "",
-                        "content_type": "",
-                        "warning": f"HTTP {exc.code}: blocked by the remote host, but the URL may still be valid.",
-                    }
-                if exc.code in {500, 502, 503, 504} and domain in SOFT_FAIL_DOMAINS:
-                    last_soft_warning = {
-                        "ok": True,
-                        "status": exc.code,
-                        "final_url": url,
-                        "title": "",
-                        "content_type": "",
-                        "warning": f"HTTP {exc.code}: transient upstream failure on {domain}; treating as soft warning.",
-                    }
-                    continue
-                return {
-                    "ok": False,
-                    "status": exc.code,
-                    "final_url": url,
-                    "title": "",
-                    "content_type": "",
-                    "error": f"HTTP {exc.code}",
-                }
-            except URLError as exc:
-                return {
-                    "ok": False,
-                    "status": 0,
-                    "final_url": url,
-                    "title": "",
-                    "content_type": "",
-                    "error": str(exc.reason),
-                }
-            except Exception as exc:
-                return {
-                    "ok": False,
-                    "status": 0,
-                    "final_url": url,
-                    "title": "",
-                    "content_type": "",
-                    "error": str(exc),
-                }
-
-        if last_soft_warning:
-            return last_soft_warning
-        return {
-            "ok": False,
-            "status": 0,
-            "final_url": url,
-            "title": "",
-            "content_type": "",
-            "error": "Unknown network error",
-        }
-
-    if cache is None:
-        return _compute()
-    return cache.get_or_compute(cache_key, _compute, persist_if=persist_ok_result)
-
-
-def fetch_arxiv_title(url: str, timeout: int = 20, cache: NetworkCache | None = None) -> str:
-    arxiv_id = arxiv_id_from_url(url)
-    if not arxiv_id:
-        return ""
-
-    def _compute() -> str:
-        api_url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}"
-        try:
-            xml_data = fetch_text(
-                api_url,
-                accept="application/atom+xml,text/xml,*/*",
-                timeout=timeout,
-                max_bytes=120_000,
-            )
-            root = ET.fromstring(xml_data)
-            ns = {"a": "http://www.w3.org/2005/Atom"}
-            title = root.findtext("a:entry/a:title", "", ns) or ""
-            return normalize_whitespace(title)
-        except Exception:
-            return ""
-
-    if cache is None:
-        return _compute()
-    return cache.get_or_compute(
-        f"arxiv-title::{arxiv_id}",
-        _compute,
-        persist_if=lambda value: bool(value),
+    return any(
+        token in lowered
+        for token in CHALLENGE_TITLE_TOKENS + GENERIC_TITLE_TOKENS
     )
 
 
-def informative_tokens(text: str) -> set[str]:
+def classify_http_status(status: int) -> str:
+    if 200 <= status < 400:
+        return "ok"
+    if status in BROKEN_HTTP_CODES:
+        return "broken"
+    return "unknown"
+
+
+def probe_http(
+    url: str,
+    *,
+    timeout: int,
+    retries: int,
+    cache: TtlCache,
+) -> Probe:
+    cache_key = f"v2:http:{url}"
+    cached = cache.get(cache_key)
+    if isinstance(cached, dict):
+        return Probe(**cached)
+
+    if not is_valid_http_url(url):
+        return Probe(
+            state="broken",
+            final_url=url,
+            reason="URL is not an absolute HTTP(S) URL.",
+        )
+
+    last_probe = Probe(
+        state="unknown",
+        final_url=url,
+        reason="Unknown network failure.",
+    )
+
+    for attempt in range(retries + 1):
+        try:
+            with urlopen(request_for(url), timeout=timeout) as response:
+                status = int(getattr(response, "status", 200) or 200)
+                body = read_limited(response)
+                content_type = response.headers.get("Content-Type", "") or ""
+                html = body.decode("utf-8", errors="ignore")
+
+                probe = Probe(
+                    state=classify_http_status(status),
+                    status=status,
+                    final_url=response.geturl(),
+                    title=extract_html_title(html),
+                    content_type=content_type,
+                )
+                cache.set(cache_key, probe.to_dict(), persist=probe.state == "ok")
+                return probe
+
+        except HTTPError as exc:
+            status = int(exc.code or 0)
+            body = b""
+
+            try:
+                body = read_limited(exc)
+            except Exception:
+                body = b""
+
+            html = body.decode("utf-8", errors="ignore")
+            state = classify_http_status(status)
+
+            last_probe = Probe(
+                state=state,
+                status=status,
+                final_url=getattr(exc, "url", url),
+                title=extract_html_title(html),
+                reason=f"HTTP {status}",
+            )
+
+            if status in TRANSIENT_HTTP_CODES and attempt < retries:
+                time.sleep(min(2**attempt, 3))
+                continue
+
+            cache.set(
+                cache_key,
+                last_probe.to_dict(),
+                persist=state == "ok",
+            )
+            return last_probe
+
+        except (
+            URLError,
+            TimeoutError,
+            socket.timeout,
+            RemoteDisconnected,
+            ConnectionResetError,
+            IncompleteRead,
+        ) as exc:
+            reason = getattr(exc, "reason", exc)
+            last_probe = Probe(
+                state="unknown",
+                final_url=url,
+                reason=str(reason),
+            )
+
+            if attempt < retries:
+                time.sleep(min(2**attempt, 3))
+                continue
+
+        except Exception as exc:
+            last_probe = Probe(
+                state="unknown",
+                final_url=url,
+                reason=str(exc),
+            )
+            break
+
+    cache.set(cache_key, last_probe.to_dict(), persist=False)
+    return last_probe
+
+
+TITLE_STOPWORDS = {
+    "the",
+    "a",
+    "an",
+    "for",
+    "of",
+    "with",
+    "via",
+    "to",
+    "and",
+    "in",
+    "on",
+    "from",
+    "by",
+    "using",
+    "towards",
+    "toward",
+    "into",
+    "based",
+    "model",
+    "models",
+    "framework",
+    "system",
+}
+
+
+def title_tokens(value: str) -> set[str]:
     return {
         token
-        for token in normalize_title(text).split()
-        if len(token) >= 4 and token not in COMMON_TITLE_STOPWORDS
+        for token in normalize_title(value).split()
+        if len(token) >= 4 and token not in TITLE_STOPWORDS
     }
 
 
 def title_match_score(expected: str, observed: str) -> float:
-    exp = normalize_title(expected)
-    obs = normalize_title(observed)
-    if not exp or not obs:
+    expected_normalized = normalize_title(expected)
+    observed_normalized = normalize_title(observed)
+
+    if not expected_normalized or not observed_normalized:
         return 0.0
-    if exp == obs:
+
+    if expected_normalized == observed_normalized:
         return 1.0
 
-    ratio = difflib.SequenceMatcher(None, exp, obs).ratio()
+    ratio = difflib.SequenceMatcher(
+        None,
+        expected_normalized,
+        observed_normalized,
+    ).ratio()
 
-    exp_tokens = informative_tokens(expected)
-    obs_tokens = informative_tokens(observed)
+    expected_tokens = title_tokens(expected)
+    observed_tokens = title_tokens(observed)
+
     overlap = 0.0
-    if exp_tokens and obs_tokens:
-        overlap = len(exp_tokens & obs_tokens) / max(1, min(len(exp_tokens), len(obs_tokens)))
+    if expected_tokens and observed_tokens:
+        overlap = len(expected_tokens & observed_tokens) / max(
+            1,
+            min(len(expected_tokens), len(observed_tokens)),
+        )
 
-    if (exp in obs or obs in exp) and min(len(exp), len(obs)) >= 24:
-        ratio = max(ratio, 0.90)
+    if (
+        expected_normalized in observed_normalized
+        or observed_normalized in expected_normalized
+    ):
+        ratio = max(ratio, 0.9)
 
     return max(ratio, overlap)
 
 
 def title_matches(expected: str, observed: str) -> tuple[bool, float]:
     score = title_match_score(expected, observed)
-    exp = normalize_title(expected)
-    obs = normalize_title(observed)
+    expected_tokens = title_tokens(expected)
+    observed_tokens = title_tokens(observed)
 
-    if exp == obs:
-        return True, 1.0
-
-    if score >= 0.88:
-        return True, score
-
-    exp_tokens = informative_tokens(expected)
-    obs_tokens = informative_tokens(observed)
-    if exp_tokens and obs_tokens:
-        overlap = len(exp_tokens & obs_tokens) / max(1, min(len(exp_tokens), len(obs_tokens)))
-        if overlap >= 0.80 and score >= 0.55:
-            return True, max(score, overlap)
-
-    return False, score
-
-
-def verify_paper_title_match(
-    rec: dict,
-    timeout: int,
-    cache: NetworkCache | None = None,
-    page_meta: dict | None = None,
-) -> dict:
-    url = rec.get("paper", "")
-    observed_title = ""
-    source = ""
-
-    if arxiv_id_from_url(url):
-        observed_title = fetch_arxiv_title(url, timeout=timeout, cache=cache)
-        source = "arXiv API"
-    else:
-        try:
-            meta = page_meta if page_meta is not None else fetch_page_meta(url, timeout=timeout, cache=cache)
-            if not meta["ok"]:
-                return {
-                    "ok": True,
-                    "warning": f"unable to extract paper title for semantic verification ({meta.get('error', 'fetch failed')}).",
-                }
-            observed_title = meta.get("title", "")
-            source = "HTML title"
-        except Exception as exc:
-            return {
-                "ok": True,
-                "warning": f"unable to extract paper title for semantic verification ({exc}).",
-            }
-
-    if not observed_title:
-        return {
-            "ok": True,
-            "warning": "unable to extract paper title for semantic verification.",
-        }
-
-    matched, score = title_matches(rec["title"], observed_title)
-    result = {
-        "ok": matched,
-        "observed_title": observed_title,
-        "score": round(score, 3),
-        "source": source,
-    }
-    if not matched:
-        result["error"] = (
-            f"paper title mismatch: expected `{rec['title']}` but resolved title is "
-            f"`{observed_title}` (score={score:.2f})."
+    overlap = 0.0
+    if expected_tokens and observed_tokens:
+        overlap = len(expected_tokens & observed_tokens) / max(
+            1,
+            min(len(expected_tokens), len(observed_tokens)),
         )
-    return result
+
+    matched = score >= 0.82 or overlap >= 0.80
+    return matched, max(score, overlap)
 
 
-def verify_homepage_title_match(
-    rec: dict,
+def fetch_arxiv_titles(
+    arxiv_ids: set[str],
+    *,
     timeout: int,
-    cache: NetworkCache | None = None,
-    page_meta: dict | None = None,
-) -> dict:
-    try:
-        meta = page_meta if page_meta is not None else fetch_page_meta(rec.get("homepage", ""), timeout=timeout, cache=cache)
-    except Exception as exc:
-        return {
-            "ok": True,
-            "warning": f"unable to extract homepage title for semantic verification ({exc}).",
-        }
+    cache: TtlCache,
+) -> tuple[dict[str, str], bool]:
+    titles: dict[str, str] = {}
+    unresolved: list[str] = []
 
-    if not meta["ok"]:
-        return {
-            "ok": True,
-            "warning": f"unable to extract homepage title for semantic verification ({meta.get('error', 'fetch failed')}).",
-        }
+    for arxiv_id in sorted(arxiv_ids):
+        cached = cache.get(f"v2:arxiv-title:{arxiv_id}")
+        if isinstance(cached, str) and cached:
+            titles[arxiv_id] = cached
+        else:
+            unresolved.append(arxiv_id)
 
-    observed_title = meta.get("title", "")
-    if not observed_title:
-        return {"ok": True}
+    failed = False
 
-    matched, score = title_matches(rec["title"], observed_title)
-    if matched or score >= 0.60:
-        return {
-            "ok": True,
-            "observed_title": observed_title,
-            "score": round(score, 3),
-        }
+    for offset in range(0, len(unresolved), 40):
+        chunk = unresolved[offset : offset + 40]
+        query = urlencode(
+            {
+                "id_list": ",".join(chunk),
+                "max_results": len(chunk),
+            }
+        )
+        url = f"https://export.arxiv.org/api/query?{query}"
 
-    return {
-        "ok": True,
-        "warning": (
-            f"homepage title weakly matches record title: `{observed_title}` "
-            f"(score={score:.2f}); if this is a suite root / product root page, "
-            f"prefer leaving `homepage` empty."
-        ),
-    }
-
-
-def verify_repo_semantics(rec: dict, repo_probe: dict) -> dict:
-    full_name = repo_probe.get("full_name", "")
-    if not full_name:
-        return {"ok": True}
-
-    repo_name = full_name.split("/", 1)[-1]
-    description = normalize_whitespace(repo_probe.get("description", ""))
-    haystack = normalize_whitespace(f"{repo_name} {description}")
-    if not haystack:
-        return {"ok": True}
-
-    score = title_match_score(rec["title"], haystack)
-    if slugify(repo_name) in slugify(rec["title"]) or score >= 0.45:
-        return {"ok": True, "score": round(score, 3)}
-
-    return {
-        "ok": True,
-        "warning": (
-            f"repo title/description weakly matches record title (score={score:.2f}); "
-            f"verify repo exactness manually."
-        ),
-    }
-
-
-def http_probe(
-    url: str,
-    timeout: int = 20,
-    retries: int = 1,
-    cache: NetworkCache | None = None,
-) -> dict:
-    cache_key = f"probe::{url}"
-
-    def _compute() -> dict:
-        domain = urlparse(url).netloc.lower()
-        last_soft_warning: dict | None = None
-
-        for _ in range(retries + 1):
-            try:
-                with urlopen(make_request(url), timeout=timeout) as response:
-                    response.read(256)
-                    return {
-                        "ok": True,
-                        "status": int(getattr(response, "status", 200) or 200),
-                        "final_url": response.geturl(),
-                    }
-            except HTTPError as exc:
-                if exc.code in {403, 429}:
-                    return {
-                        "ok": True,
-                        "status": exc.code,
-                        "final_url": getattr(exc, "url", url),
-                        "warning": f"HTTP {exc.code}: blocked by the remote host, but the URL may still be valid.",
-                    }
-                if exc.code in {500, 502, 503, 504} and domain in SOFT_FAIL_DOMAINS:
-                    last_soft_warning = {
-                        "ok": True,
-                        "status": exc.code,
-                        "final_url": url,
-                        "warning": f"HTTP {exc.code}: transient upstream failure on {domain}; treating as soft warning.",
-                    }
-                    continue
-                return {"ok": False, "status": exc.code, "final_url": url, "error": f"HTTP {exc.code}"}
-            except URLError as exc:
-                return {"ok": False, "status": 0, "final_url": url, "error": str(exc.reason)}
-            except Exception as exc:
-                return {"ok": False, "status": 0, "final_url": url, "error": str(exc)}
-
-        if last_soft_warning:
-            return last_soft_warning
-        return {"ok": False, "status": 0, "final_url": url, "error": "Unknown network error"}
-
-    if cache is None:
-        return _compute()
-    return cache.get_or_compute(cache_key, _compute, persist_if=persist_ok_result)
-
-
-def parse_star_count(html: str) -> int:
-    patterns = [
-        re.compile(r'([\d,]+)\s+stars', re.I),
-        re.compile(r'"stargazerCount":\s*([0-9]+)', re.I),
-    ]
-    for pattern in patterns:
-        match = pattern.search(html)
-        if match:
-            try:
-                return int(match.group(1).replace(",", ""))
-            except Exception:
-                pass
-    return 0
-
-
-def github_repo_html_meta(url: str, timeout: int = 20, cache: NetworkCache | None = None) -> dict:
-    full_name = parse_github_repo(url)
-    if not full_name:
-        return {
-            "ok": False,
-            "status": 0,
-            "final_url": url,
-            "error": "Repo URL is not a canonical GitHub repository URL.",
-        }
-
-    cache_key = f"github-html::{full_name}"
-
-    def _compute() -> dict:
         try:
-            with urlopen(make_request(url, accept="text/html,*/*"), timeout=timeout) as response:
-                html = response.read(PAGE_FETCH_MAX_BYTES).decode("utf-8", errors="ignore")
-                final_url = response.geturl()
-                final_full_name = parse_github_repo(final_url) or full_name
-                archived = "This repository was archived by the owner" in html
-                description = extract_html_meta_content(html, ["og:description", "description"])
-                return {
-                    "ok": True,
-                    "status": int(getattr(response, "status", 200) or 200),
-                    "final_url": final_url,
-                    "full_name": final_full_name,
-                    "stars": parse_star_count(html),
-                    "pushed_at": "",
-                    "archived": archived,
-                    "license": "",
-                    "description": description,
-                    "homepage": "",
-                }
-        except HTTPError as exc:
-            if exc.code in {403, 429}:
-                return {
-                    "ok": True,
-                    "status": exc.code,
-                    "final_url": getattr(exc, "url", url),
-                    "full_name": full_name,
-                    "stars": 0,
-                    "pushed_at": "",
-                    "archived": False,
-                    "license": "",
-                    "description": "",
-                    "homepage": "",
-                    "warning": f"GitHub HTML probe HTTP {exc.code}; repo may still be valid.",
-                }
-            return {
-                "ok": False,
-                "status": exc.code,
-                "final_url": url,
-                "full_name": full_name,
-                "error": f"GitHub HTML HTTP {exc.code}",
-            }
-        except URLError as exc:
-            return {
-                "ok": False,
-                "status": 0,
-                "final_url": url,
-                "full_name": full_name,
-                "error": str(exc.reason),
-            }
-        except Exception as exc:
-            return {
-                "ok": False,
-                "status": 0,
-                "final_url": url,
-                "full_name": full_name,
-                "error": str(exc),
-            }
+            with urlopen(
+                request_for(
+                    url,
+                    accept="application/atom+xml,text/xml,*/*",
+                ),
+                timeout=timeout,
+            ) as response:
+                xml_data = read_limited(response, 1_000_000)
 
-    if cache is None:
-        return _compute()
-    return cache.get_or_compute(cache_key, _compute, persist_if=persist_ok_result)
+            root = ET.fromstring(xml_data)
+            namespace = {"atom": "http://www.w3.org/2005/Atom"}
+
+            for entry in root.findall("atom:entry", namespace):
+                entry_id = entry.findtext("atom:id", "", namespace)
+                title = normalize_whitespace(
+                    entry.findtext("atom:title", "", namespace)
+                )
+
+                match = re.search(
+                    r"/abs/([0-9]{4}\.[0-9]{4,5})(?:v\d+)?",
+                    entry_id,
+                )
+                if not match or not title:
+                    continue
+
+                arxiv_id = match.group(1)
+                titles[arxiv_id] = title
+                cache.set(
+                    f"v2:arxiv-title:{arxiv_id}",
+                    title,
+                    persist=True,
+                )
+
+        except Exception:
+            failed = True
+
+    return titles, failed
+
+
+def extract_openreview_title(payload: dict[str, Any]) -> str:
+    notes = payload.get("notes") or []
+    if not notes:
+        return ""
+
+    content = notes[0].get("content") or {}
+    title = content.get("title", "")
+
+    if isinstance(title, dict):
+        title = title.get("value", "")
+
+    return normalize_whitespace(str(title or ""))
+
+
+def fetch_openreview_title(
+    forum_id: str,
+    *,
+    timeout: int,
+    cache: TtlCache,
+) -> str:
+    cache_key = f"v2:openreview-title:{forum_id}"
+    cached = cache.get(cache_key)
+    if isinstance(cached, str) and cached:
+        return cached
+
+    endpoints = (
+        "https://api2.openreview.net/notes",
+        "https://api.openreview.net/notes",
+    )
+
+    for endpoint in endpoints:
+        for parameter in ("id", "forum"):
+            url = f"{endpoint}?{urlencode({parameter: forum_id, 'limit': 1})}"
+
+            try:
+                with urlopen(
+                    request_for(url, accept="application/json"),
+                    timeout=timeout,
+                ) as response:
+                    payload = json.loads(read_limited(response, 500_000))
+
+                title = extract_openreview_title(payload)
+                if title:
+                    cache.set(cache_key, title, persist=True)
+                    return title
+
+            except Exception:
+                continue
+
+    return ""
 
 
 def github_repo_meta(
     url: str,
+    *,
     token: str,
-    timeout: int = 20,
-    cache: NetworkCache | None = None,
-) -> dict:
+    timeout: int,
+    cache: TtlCache,
+) -> tuple[Probe, dict[str, Any]]:
     full_name = parse_github_repo(url)
     if not full_name:
-        return {
-            "ok": False,
-            "status": 0,
-            "final_url": url,
-            "error": "Repo URL is not a canonical GitHub repository URL.",
-        }
-
-    cache_key = f"github-meta::{full_name}"
-
-    def _compute() -> dict:
-        api_url = f"https://api.github.com/repos/{full_name}"
-        headers = {
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "awesome-generative-models/4.0",
-        }
-        if token:
-            headers["Authorization"] = f"Bearer {token}"
-
-        request = Request(api_url, headers=headers)
-
-        try:
-            with urlopen(request, timeout=timeout) as response:
-                data = json.loads(response.read().decode("utf-8"))
-                return {
-                    "ok": True,
-                    "status": int(getattr(response, "status", 200) or 200),
-                    "final_url": url,
-                    "full_name": data.get("full_name", full_name),
-                    "stars": int(data.get("stargazers_count", 0) or 0),
-                    "pushed_at": data.get("pushed_at", ""),
-                    "archived": bool(data.get("archived", False)),
-                    "license": (data.get("license") or {}).get("spdx_id", ""),
-                    "description": normalize_whitespace(data.get("description", "") or ""),
-                    "homepage": normalize_whitespace(data.get("homepage", "") or ""),
-                }
-        except HTTPError as exc:
-            if exc.code in GITHUB_API_SOFT_CODES:
-                fallback = github_repo_html_meta(url, timeout=timeout, cache=cache)
-                if fallback["ok"]:
-                    fallback["warning"] = f"GitHub API HTTP {exc.code}; validated via HTML fallback."
-                    return fallback
-            return {
-                "ok": False,
-                "status": exc.code,
-                "final_url": url,
-                "full_name": full_name,
-                "error": f"GitHub API HTTP {exc.code}",
-            }
-        except URLError:
-            fallback = github_repo_html_meta(url, timeout=timeout, cache=cache)
-            if fallback["ok"]:
-                fallback["warning"] = "GitHub API unreachable; validated via HTML fallback."
-                return fallback
-            return {
-                "ok": False,
-                "status": 0,
-                "final_url": url,
-                "full_name": full_name,
-                "error": "GitHub API unreachable and HTML fallback failed",
-            }
-        except Exception as exc:
-            fallback = github_repo_html_meta(url, timeout=timeout, cache=cache)
-            if fallback["ok"]:
-                fallback["warning"] = f"GitHub API exception ({exc}); validated via HTML fallback."
-                return fallback
-            return {
-                "ok": False,
-                "status": 0,
-                "final_url": url,
-                "full_name": full_name,
-                "error": str(exc),
-            }
-
-    if cache is None:
-        return _compute()
-    return cache.get_or_compute(cache_key, _compute, persist_if=persist_ok_result)
-
-
-def validate_record_schema(rec: dict) -> tuple[list[str], list[str]]:
-    errors: list[str] = []
-    warnings: list[str] = []
-
-    for field in ("id", "title", "venue", "task", "summary"):
-        if not rec.get(field):
-            errors.append(f"{location(rec)}: missing required field `{field}`.")
-
-    if rec.get("task") and rec["task"] not in ALLOWED_TASKS[rec["artifact"]]:
-        allowed = ", ".join(sorted(ALLOWED_TASKS[rec["artifact"]]))
-        errors.append(
-            f"{location(rec)}: task `{rec['task']}` is not allowed for `{rec['artifact']}`. Allowed: {allowed}."
+        return (
+            Probe(
+                state="broken",
+                final_url=url,
+                reason="Not a canonical GitHub repository URL.",
+            ),
+            {},
         )
 
-    unknown_domains = [x for x in rec["domain"] if x not in DOMAIN_VOCAB]
-    unknown_repr = [x for x in rec["representation"] if x not in REPRESENTATION_VOCAB]
-    unknown_methods = [x for x in rec["method"] if x not in METHOD_VOCAB]
-    unknown_cond = [x for x in rec["conditioning"] if x not in CONDITIONING_VOCAB]
+    cache_key = f"v2:github:{full_name.lower()}"
+    cached = cache.get(cache_key)
+    if isinstance(cached, dict):
+        probe_data = cached.get("probe") or {}
+        return Probe(**probe_data), cached.get("meta") or {}
 
-    if unknown_domains:
-        errors.append(f"{location(rec)}: unknown domain tags: {unknown_domains}.")
-    if unknown_repr:
-        errors.append(f"{location(rec)}: unknown representation tags: {unknown_repr}.")
-    if unknown_methods:
-        errors.append(f"{location(rec)}: unknown method tags: {unknown_methods}.")
-    if unknown_cond:
-        errors.append(f"{location(rec)}: unknown conditioning tags: {unknown_cond}.")
+    api_url = f"https://api.github.com/repos/{full_name}"
 
-    for text_field in ("title", "venue", "summary", "task", "scope_note"):
-        if has_cjk(rec.get(text_field, "")):
-            errors.append(f"{location(rec)}: `{text_field}` must be English-only.")
+    try:
+        request = request_for(
+            api_url,
+            accept="application/vnd.github+json",
+            token=token,
+        )
+        request.add_header("X-GitHub-Api-Version", "2022-11-28")
 
-    for tag_field in ("domain", "representation", "method", "conditioning", "orgs"):
-        joined = " ".join(rec.get(tag_field, []))
-        if has_cjk(joined):
-            errors.append(f"{location(rec)}: `{tag_field}` must be English-only.")
+        with urlopen(request, timeout=timeout) as response:
+            payload = json.loads(read_limited(response, 1_000_000))
+            status = int(getattr(response, "status", 200) or 200)
 
-    summary_sentences = sentence_count(rec.get("summary", ""))
-    if summary_sentences < 1 or summary_sentences > 3:
-        errors.append(f"{location(rec)}: `summary` must contain 1–3 English sentences; found {summary_sentences}.")
+        meta = {
+            "full_name": payload.get("full_name", full_name),
+            "stars": int(payload.get("stargazers_count", 0) or 0),
+            "pushed_at": payload.get("pushed_at", ""),
+            "archived": bool(payload.get("archived", False)),
+            "license": (payload.get("license") or {}).get("spdx_id", ""),
+            "description": normalize_whitespace(
+                payload.get("description", "") or ""
+            ),
+            "homepage": normalize_whitespace(payload.get("homepage", "") or ""),
+        }
+        probe = Probe(
+            state="ok",
+            status=status,
+            final_url=url,
+        )
 
-    if rec["year"] and rec["year"] < 2025:
-        if rec.get("active_since", 0) < 2025:
-            errors.append(f"{location(rec)}: pre-2025 entry must have `active_since >= 2025`.")
-        if not rec.get("scope_note"):
-            errors.append(f"{location(rec)}: pre-2025 entry must have a non-empty `scope_note`.")
+        cache.set(
+            cache_key,
+            {
+                "probe": probe.to_dict(),
+                "meta": meta,
+            },
+            persist=True,
+        )
+        return probe, meta
 
-    if rec.get("open_source") and not rec.get("repo"):
-        errors.append(f"{location(rec)}: `open_source: true` requires an exact `repo` URL.")
+    except HTTPError as exc:
+        status = int(exc.code or 0)
+        return (
+            Probe(
+                state=classify_http_status(status),
+                status=status,
+                final_url=url,
+                reason=f"GitHub API HTTP {status}",
+            ),
+            {},
+        )
 
-    if not any([rec.get("paper"), rec.get("repo"), rec.get("homepage")]):
-        errors.append(f"{location(rec)}: at least one exact link among `paper`, `repo`, or `homepage` is required.")
+    except Exception as exc:
+        return (
+            Probe(
+                state="unknown",
+                final_url=url,
+                reason=f"GitHub API unavailable: {exc}",
+            ),
+            {},
+        )
 
-    for link_field in ("paper", "repo", "homepage"):
-        url = rec.get(link_field, "")
-        if url and is_search_placeholder(url):
-            errors.append(f"{location(rec)}: `{link_field}` cannot be a search-result URL: {url}")
 
-    if rec.get("paper") and "arxiv.org" in rec["paper"].lower() and "arxiv" in rec["venue"].lower():
-        arxiv_year = arxiv_year_from_url(rec["paper"])
-        if arxiv_year and rec["year"] and arxiv_year != rec["year"]:
-            errors.append(
-                f"{location(rec)}: venue year `{rec['year']}` does not match arXiv paper year `{arxiv_year}`."
+def validate_schema(
+    record: dict[str, Any],
+) -> tuple[list[Finding], bool]:
+    findings: list[Finding] = []
+    invalid = False
+    location = record_location(record)
+
+    def add_error(code: str, message: str) -> None:
+        nonlocal invalid
+        invalid = True
+        findings.append(finding("error", code, location, message))
+
+    def add_warning(code: str, message: str) -> None:
+        findings.append(finding("warning", code, location, message))
+
+    for field_name in ("id", "title", "venue", "task", "summary"):
+        if not record.get(field_name):
+            add_error("schema.required", f"Missing required field `{field_name}`.")
+
+    record_id = record.get("id", "")
+    if record_id and not re.fullmatch(r"[a-z0-9][a-z0-9._-]*", record_id):
+        add_error(
+            "schema.id",
+            "`id` must contain only lowercase letters, digits, dots, underscores "
+            "or hyphens.",
+        )
+
+    task = record.get("task", "")
+    if task and task not in ALLOWED_TASKS[record["artifact"]]:
+        allowed = ", ".join(sorted(ALLOWED_TASKS[record["artifact"]]))
+        add_error(
+            "schema.task",
+            f"Task `{task}` is invalid for `{record['artifact']}`. "
+            f"Allowed values: {allowed}.",
+        )
+
+    vocabulary_checks = (
+        ("domain", DOMAIN_VOCAB),
+        ("representation", REPRESENTATION_VOCAB),
+        ("method", METHOD_VOCAB),
+        ("conditioning", CONDITIONING_VOCAB),
+    )
+
+    for field_name, vocabulary in vocabulary_checks:
+        unknown = [
+            value
+            for value in record.get(field_name, [])
+            if value not in vocabulary
+        ]
+        if unknown:
+            add_error(
+                "schema.vocabulary",
+                f"Unknown `{field_name}` values: {unknown}.",
             )
 
-    if not rec.get("paper"):
-        warnings.append(f"{location(rec)}: missing `paper` link.")
+    for field_name in ("title", "venue", "summary", "task", "scope_note"):
+        if has_cjk(record.get(field_name, "")):
+            add_error(
+                "schema.language",
+                f"`{field_name}` must be English-only.",
+            )
 
-    if rec.get("featured") and not rec.get("orgs"):
-        warnings.append(f"{location(rec)}: featured entries should include `orgs`.")
+    for field_name in (
+        "domain",
+        "representation",
+        "method",
+        "conditioning",
+        "orgs",
+    ):
+        if has_cjk(" ".join(record.get(field_name, []))):
+            add_error(
+                "schema.language",
+                f"`{field_name}` must be English-only.",
+            )
 
-    if rec.get("open_source") and rec.get("repo") and not parse_github_repo(rec["repo"]):
-        warnings.append(f"{location(rec)}: open-source repo is not a canonical GitHub repo URL; verify manually.")
+    summary_sentences = sentence_count(record.get("summary", ""))
+    if summary_sentences < 1 or summary_sentences > 3:
+        add_error(
+            "schema.summary",
+            "`summary` must contain 1–3 English sentences; "
+            f"found {summary_sentences}.",
+        )
 
-    if rec.get("homepage") and rec.get("repo"):
-        if rec["homepage"].rstrip("/") == rec["repo"].rstrip("/"):
-            warnings.append(f"{location(rec)}: `homepage` duplicates `repo`; keep only `repo` unless a separate project page exists.")
+    published_at = normalize_whitespace(str(record.get("published_at", "")))
+    if published_at:
+        try:
+            published_date = date.fromisoformat(published_at)
+        except ValueError:
+            add_error(
+                "date.invalid",
+                "`published_at` must use ISO format YYYY-MM-DD.",
+            )
+        else:
+            if published_date < SCOPE_START_DATE:
+                add_error(
+                    "date.out_of_scope",
+                    f"`published_at` {published_at} is before "
+                    f"{SCOPE_START_DATE.isoformat()}.",
+                )
 
-    suggested_org = suggested_org_from_repo(rec.get("repo", ""))
-    if suggested_org and suggested_org not in rec.get("orgs", []):
-        warnings.append(f"{location(rec)}: repo owner strongly suggests org `{suggested_org}`; consider adding it to `orgs`.")
+            if published_date > date.today() + timedelta(days=1):
+                add_error(
+                    "date.future",
+                    f"`published_at` {published_at} is in the future.",
+                )
 
-    return errors, warnings
+    year = int(record.get("year", 0) or 0)
+    active_since = int(record.get("active_since", 0) or 0)
+
+    if not published_at and year and year < SCOPE_START_DATE.year:
+        if active_since < SCOPE_START_DATE.year:
+            add_error(
+                "date.legacy_scope",
+                "Pre-2025 entries require `active_since >= 2025`.",
+            )
+        if not record.get("scope_note"):
+            add_error(
+                "date.scope_note",
+                "Pre-2025 entries require a non-empty `scope_note`.",
+            )
+
+    if (
+        record.get("paper")
+        and "arxiv.org" in record["paper"].lower()
+        and "arxiv" in record.get("venue", "").lower()
+    ):
+        paper_year = arxiv_year_from_url(record["paper"])
+        if paper_year and year and paper_year != year:
+            add_error(
+                "date.arxiv_year",
+                f"Venue year `{year}` does not match arXiv year `{paper_year}`.",
+            )
+
+    if record.get("open_source") and not record.get("repo"):
+        add_error(
+            "link.open_source",
+            "`open_source: true` requires an exact `repo` URL.",
+        )
+
+    if not any(
+        record.get(field_name)
+        for field_name in ("paper", "repo", "homepage")
+    ):
+        add_error(
+            "link.required",
+            "At least one exact `paper`, `repo`, or `homepage` URL is required.",
+        )
+
+    for field_name in ("paper", "repo", "homepage"):
+        url = record.get(field_name, "")
+        if not url:
+            continue
+
+        if not is_valid_http_url(url):
+            add_error(
+                "link.url",
+                f"`{field_name}` is not an absolute HTTP(S) URL: {url}",
+            )
+
+        if is_search_placeholder(url):
+            add_error(
+                "link.search_placeholder",
+                f"`{field_name}` cannot be a search-result URL: {url}",
+            )
+
+    repo_url = record.get("repo", "")
+    if repo_url and urlparse(repo_url).netloc.lower() in {
+        "github.com",
+        "www.github.com",
+    }:
+        path_parts = [
+            part
+            for part in urlparse(repo_url).path.strip("/").split("/")
+            if part
+        ]
+        if len(path_parts) != 2:
+            add_error(
+                "link.github_repo",
+                "`repo` must point to the repository root, not a file, branch, "
+                "release, issue, or search page.",
+            )
+
+    if not record.get("paper"):
+        add_warning("metadata.missing_paper", "Missing `paper` link.")
+
+    if record.get("featured") and not record.get("orgs"):
+        add_warning(
+            "metadata.featured_org",
+            "Featured entries should include at least one organization.",
+        )
+
+    if (
+        record.get("homepage")
+        and record.get("repo")
+        and record["homepage"].rstrip("/") == record["repo"].rstrip("/")
+    ):
+        add_warning(
+            "metadata.duplicate_homepage",
+            "`homepage` duplicates `repo`; keep only the exact repository URL.",
+        )
+
+    suggested_org = suggested_org_from_repo(record.get("repo", ""))
+    if suggested_org and suggested_org not in record.get("orgs", []):
+        add_warning(
+            "metadata.organization",
+            f"Repository owner suggests organization `{suggested_org}`.",
+        )
+
+    return findings, invalid
 
 
-def validate_duplicates(records: list[dict]) -> tuple[list[str], set[tuple[str, int]]]:
-    errors: list[str] = []
+def validate_duplicates(
+    records: list[dict[str, Any]],
+) -> tuple[list[Finding], set[tuple[str, int]]]:
+    findings: list[Finding] = []
     invalid_keys: set[tuple[str, int]] = set()
 
     seen_ids: dict[str, str] = {}
@@ -961,416 +983,823 @@ def validate_duplicates(records: list[dict]) -> tuple[list[str], set[tuple[str, 
     seen_papers: dict[str, str] = {}
     seen_repos: dict[str, str] = {}
 
-    for rec in records:
-        rloc = location(rec)
-        rkey = record_key(rec)
+    for record in records:
+        location = record_location(record)
+        key = record_key(record)
 
-        rid = rec["id"]
-        if rid in seen_ids:
-            errors.append(f"{rloc}: duplicate id with {seen_ids[rid]}.")
-            invalid_keys.add(rkey)
-        else:
-            seen_ids[rid] = rloc
+        checks = (
+            (
+                seen_ids,
+                record["id"],
+                "duplicate.id",
+                "Duplicate ID",
+            ),
+            (
+                seen_titles,
+                normalize_title(record["title"]),
+                "duplicate.title",
+                "Duplicate normalized title",
+            ),
+        )
 
-        title_key = normalize_title(rec["title"])
-        if title_key in seen_titles:
-            errors.append(f"{rloc}: duplicate normalized title with {seen_titles[title_key]}.")
-            invalid_keys.add(rkey)
-        else:
-            seen_titles[title_key] = rloc
+        for seen, value, code, label in checks:
+            if not value:
+                continue
 
-        if rec.get("paper"):
-            paper_key = rec["paper"].rstrip("/")
+            if value in seen:
+                findings.append(
+                    finding(
+                        "error",
+                        code,
+                        location,
+                        f"{label}; first seen at {seen[value]}.",
+                    )
+                )
+                invalid_keys.add(key)
+            else:
+                seen[value] = location
+
+        if record.get("paper"):
+            paper_key = canonical_paper_key(record["paper"])
             if paper_key in seen_papers:
-                errors.append(f"{rloc}: duplicate paper URL with {seen_papers[paper_key]}.")
-                invalid_keys.add(rkey)
+                findings.append(
+                    finding(
+                        "error",
+                        "duplicate.paper",
+                        location,
+                        f"Duplicate paper URL; first seen at "
+                        f"{seen_papers[paper_key]}.",
+                    )
+                )
+                invalid_keys.add(key)
             else:
-                seen_papers[paper_key] = rloc
+                seen_papers[paper_key] = location
 
-        if rec.get("repo"):
-            repo_key = parse_github_repo(rec["repo"]) or rec["repo"].rstrip("/")
+        if record.get("repo"):
+            repo_key = canonical_repo_key(record["repo"])
             if repo_key in seen_repos:
-                errors.append(f"{rloc}: duplicate repo URL with {seen_repos[repo_key]}.")
-                invalid_keys.add(rkey)
+                findings.append(
+                    finding(
+                        "error",
+                        "duplicate.repo",
+                        location,
+                        f"Duplicate repository URL; first seen at "
+                        f"{seen_repos[repo_key]}.",
+                    )
+                )
+                invalid_keys.add(key)
             else:
-                seen_repos[repo_key] = rloc
+                seen_repos[repo_key] = location
 
-    return errors, invalid_keys
+    return findings, invalid_keys
 
 
-def verify_record_links(
-    rec: dict,
+def state_finding(
+    record: dict[str, Any],
+    field_name: str,
+    probe: Probe,
+    *,
+    authoritative_evidence: bool = False,
+) -> Finding | None:
+    location = record_location(record)
+
+    if probe.state == "broken":
+        return finding(
+            "error",
+            f"network.{field_name}.broken",
+            location,
+            f"`{field_name}` URL is confirmed broken: "
+            f"{probe.reason or f'HTTP {probe.status}'}.",
+        )
+
+    if probe.state == "unknown":
+        severity = "notice" if authoritative_evidence else "warning"
+        return finding(
+            severity,
+            f"network.{field_name}.unknown",
+            location,
+            f"`{field_name}` could not be conclusively verified: "
+            f"{probe.reason or f'HTTP {probe.status}'}.",
+        )
+
+    return None
+
+
+def validate_record_network(
+    record: dict[str, Any],
+    *,
     token: str,
     timeout: int,
-    cache: NetworkCache | None = None,
-) -> tuple[list[str], list[str], dict[str, dict], dict, bool]:
-    errors: list[str] = []
-    warnings: list[str] = []
-    repo_stats_item: dict[str, dict] = {}
-    report_item: dict[str, dict] = {}
-    invalid = False
+    retries: int,
+    cache: TtlCache,
+    arxiv_titles: dict[str, str],
+) -> tuple[list[Finding], dict[str, Any], dict[str, Any]]:
+    findings: list[Finding] = []
+    report: dict[str, Any] = {}
+    repo_stats: dict[str, Any] = {}
+    location = record_location(record)
 
-    rloc = location(rec)
+    paper_url = record.get("paper", "")
+    if paper_url and is_valid_http_url(paper_url):
+        arxiv_id = canonical_arxiv_id(paper_url)
+        forum_id = openreview_forum_id(paper_url)
 
-    if rec.get("paper"):
-        paper_page_meta: dict | None = None
+        authoritative_title = ""
+        authoritative_source = ""
 
-        if arxiv_id_from_url(rec["paper"]):
-            paper_probe = http_probe(rec["paper"], timeout=timeout, retries=1, cache=cache)
-        else:
-            paper_page_meta = fetch_page_meta(rec["paper"], timeout=timeout, retries=1, cache=cache)
-            paper_probe = page_meta_to_probe(paper_page_meta)
-
-        report_item["paper"] = paper_probe
-        if not paper_probe["ok"]:
-            errors.append(f"{rloc}: paper URL failed validation: {paper_probe['error']}")
-            invalid = True
-        else:
-            if paper_probe.get("warning"):
-                warnings.append(f"{rloc}: paper URL warning: {paper_probe['warning']}")
-
-            paper_sem = verify_paper_title_match(
-                rec,
+        if arxiv_id:
+            authoritative_title = arxiv_titles.get(arxiv_id, "")
+            authoritative_source = "arXiv API"
+        elif forum_id:
+            authoritative_title = fetch_openreview_title(
+                forum_id,
                 timeout=timeout,
                 cache=cache,
-                page_meta=paper_page_meta,
             )
-            report_item["paper_semantics"] = paper_sem
-            if not paper_sem["ok"]:
-                errors.append(f"{rloc}: {paper_sem['error']}")
-                invalid = True
-            elif paper_sem.get("warning"):
-                warnings.append(f"{rloc}: paper semantic warning: {paper_sem['warning']}")
+            authoritative_source = "OpenReview API"
 
-    if rec.get("repo"):
-        if parse_github_repo(rec["repo"]):
-            repo_probe = github_repo_meta(rec["repo"], token=token, timeout=timeout, cache=cache)
-        else:
-            repo_probe = http_probe(rec["repo"], timeout=timeout, retries=1, cache=cache)
+        paper_probe = probe_http(
+            paper_url,
+            timeout=timeout,
+            retries=retries,
+            cache=cache,
+        )
+        report["paper"] = paper_probe.to_dict()
 
-        report_item["repo"] = repo_probe
-        if not repo_probe["ok"]:
-            errors.append(f"{rloc}: repo URL failed validation: {repo_probe['error']}")
-            invalid = True
-        else:
-            if repo_probe.get("warning"):
-                warnings.append(f"{rloc}: repo URL warning: {repo_probe['warning']}")
-            if repo_probe.get("full_name"):
-                repo_stats_item[repo_probe["full_name"]] = {
-                    "stars": int(repo_probe.get("stars", 0) or 0),
-                    "pushed_at": repo_probe.get("pushed_at", ""),
-                    "archived": bool(repo_probe.get("archived", False)),
-                    "license": repo_probe.get("license", ""),
+        state_issue = state_finding(
+            record,
+            "paper",
+            paper_probe,
+            authoritative_evidence=bool(authoritative_title),
+        )
+        if state_issue:
+            findings.append(state_issue)
+
+        observed_title = authoritative_title or paper_probe.title
+        title_source = authoritative_source or "HTML metadata"
+
+        semantic_report = {
+            "source": title_source,
+            "observed_title": observed_title,
+        }
+
+        if observed_title and not is_unreliable_title(observed_title):
+            matched, score = title_matches(record["title"], observed_title)
+            semantic_report.update(
+                {
+                    "ok": matched,
+                    "score": round(score, 3),
                 }
-                if repo_probe.get("archived"):
-                    warnings.append(f"{rloc}: repository is archived.")
+            )
 
-            repo_sem = verify_repo_semantics(rec, repo_probe)
-            report_item["repo_semantics"] = repo_sem
-            if repo_sem.get("warning"):
-                warnings.append(f"{rloc}: repo semantic warning: {repo_sem['warning']}")
+            if not matched and authoritative_source:
+                findings.append(
+                    finding(
+                        "error",
+                        "semantic.paper_mismatch",
+                        location,
+                        f"Paper title mismatch. Expected `{record['title']}`; "
+                        f"{authoritative_source} returned `{observed_title}` "
+                        f"(score={score:.2f}).",
+                    )
+                )
+            elif not matched and score < 0.35:
+                findings.append(
+                    finding(
+                        "warning",
+                        "semantic.paper_weak_match",
+                        location,
+                        f"HTML title weakly matches the catalog title: "
+                        f"`{observed_title}` (score={score:.2f}).",
+                    )
+                )
 
-    if rec.get("homepage"):
-        home_page_meta = fetch_page_meta(rec["homepage"], timeout=timeout, retries=1, cache=cache)
-        home_probe = page_meta_to_probe(home_page_meta)
-
-        report_item["homepage"] = home_probe
-        if not home_probe["ok"]:
-            errors.append(f"{rloc}: homepage URL failed validation: {home_probe['error']}")
-            invalid = True
+        elif paper_probe.title and is_unreliable_title(paper_probe.title):
+            semantic_report.update(
+                {
+                    "ok": None,
+                    "reason": "Bot challenge or generic page title.",
+                }
+            )
+            findings.append(
+                finding(
+                    "warning",
+                    "semantic.paper_unverified",
+                    location,
+                    "Paper title could not be verified because the remote site "
+                    "returned a bot-challenge or generic page.",
+                )
+            )
         else:
-            if home_probe.get("warning"):
-                warnings.append(f"{rloc}: homepage URL warning: {home_probe['warning']}")
+            semantic_report.update(
+                {
+                    "ok": None,
+                    "reason": "No reliable title metadata was available.",
+                }
+            )
 
-            home_sem = verify_homepage_title_match(
-                rec,
+        report["paper_semantics"] = semantic_report
+
+    repo_url = record.get("repo", "")
+    if repo_url and is_valid_http_url(repo_url):
+        if parse_github_repo(repo_url):
+            repo_probe, meta = github_repo_meta(
+                repo_url,
+                token=token,
                 timeout=timeout,
                 cache=cache,
-                page_meta=home_page_meta,
             )
-            report_item["homepage_semantics"] = home_sem
-            if home_sem.get("warning"):
-                warnings.append(f"{rloc}: homepage semantic warning: {home_sem['warning']}")
-
-    return errors, warnings, repo_stats_item, report_item, invalid
-
-
-def verify_links(
-    records: list[dict],
-    token: str,
-    timeout: int,
-    skip_network: bool,
-    workers: int,
-    cache: NetworkCache | None = None,
-) -> tuple[list[str], list[str], dict, dict, set[tuple[str, int]]]:
-    errors: list[str] = []
-    warnings: list[str] = []
-    repo_stats: dict[str, dict] = {}
-    link_report: dict[str, dict] = {}
-    invalid_keys: set[tuple[str, int]] = set()
-
-    if skip_network:
-        return errors, warnings, repo_stats, link_report, invalid_keys
-
-    link_records = [
-        rec for rec in records
-        if any([rec.get("paper"), rec.get("repo"), rec.get("homepage")])
-    ]
-    if not link_records:
-        return errors, warnings, repo_stats, link_report, invalid_keys
-
-    max_workers = max(1, min(int(workers or 1), len(link_records)))
-    progress = ProgressBar(total=len(link_records), label="verify-links")
-
-    try:
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            future_map = {
-                executor.submit(verify_record_links, rec, token, timeout, cache): rec
-                for rec in link_records
+            report["repo"] = {
+                **repo_probe.to_dict(),
+                **meta,
             }
 
-            for future in as_completed(future_map):
-                rec = future_map[future]
-                rloc = location(rec)
-                rkey = record_key(rec)
+            state_issue = state_finding(record, "repo", repo_probe)
+            if state_issue:
+                findings.append(state_issue)
 
-                try:
-                    rec_errors, rec_warnings, rec_repo_stats, rec_report, rec_invalid = future.result()
-                except Exception as exc:
-                    rec_errors = [f"{rloc}: unexpected link validation exception: {exc}"]
-                    rec_warnings = []
-                    rec_repo_stats = {}
-                    rec_report = {"internal_error": {"ok": False, "error": str(exc)}}
-                    rec_invalid = True
+            if repo_probe.state == "ok" and meta:
+                full_name = meta.get("full_name", "")
+                if full_name:
+                    repo_stats[full_name] = {
+                        "stars": int(meta.get("stars", 0) or 0),
+                        "pushed_at": meta.get("pushed_at", ""),
+                        "archived": bool(meta.get("archived", False)),
+                        "license": meta.get("license", ""),
+                    }
 
-                errors.extend(rec_errors)
-                warnings.extend(rec_warnings)
-                repo_stats.update(rec_repo_stats)
-                link_report[rloc] = rec_report
-                if rec_invalid:
-                    invalid_keys.add(rkey)
+                if meta.get("archived"):
+                    findings.append(
+                        finding(
+                            "warning",
+                            "repository.archived",
+                            location,
+                            "Repository is archived.",
+                        )
+                    )
 
-                progress.update()
-    finally:
-        progress.close()
+                repo_text = normalize_whitespace(
+                    f"{full_name} {meta.get('description', '')}"
+                )
+                score = title_match_score(record["title"], repo_text)
+                report["repo_semantics"] = {
+                    "ok": score >= 0.20,
+                    "score": round(score, 3),
+                }
 
-    errors.sort()
-    warnings.sort()
-    return errors, warnings, repo_stats, link_report, invalid_keys
+                if score < 0.20:
+                    findings.append(
+                        finding(
+                            "notice",
+                            "semantic.repo_weak_match",
+                            location,
+                            f"Repository name/description weakly matches the "
+                            f"catalog title (score={score:.2f}).",
+                        )
+                    )
+        else:
+            repo_probe = probe_http(
+                repo_url,
+                timeout=timeout,
+                retries=retries,
+                cache=cache,
+            )
+            report["repo"] = repo_probe.to_dict()
+
+            state_issue = state_finding(record, "repo", repo_probe)
+            if state_issue:
+                findings.append(state_issue)
+
+    homepage_url = record.get("homepage", "")
+    if homepage_url and is_valid_http_url(homepage_url):
+        homepage_probe = probe_http(
+            homepage_url,
+            timeout=timeout,
+            retries=retries,
+            cache=cache,
+        )
+        report["homepage"] = homepage_probe.to_dict()
+
+        state_issue = state_finding(record, "homepage", homepage_probe)
+        if state_issue:
+            findings.append(state_issue)
+
+        if homepage_probe.title and not is_unreliable_title(homepage_probe.title):
+            matched, score = title_matches(
+                record["title"],
+                homepage_probe.title,
+            )
+            report["homepage_semantics"] = {
+                "ok": matched,
+                "observed_title": homepage_probe.title,
+                "score": round(score, 3),
+            }
+
+            if not matched and score < 0.25:
+                findings.append(
+                    finding(
+                        "notice",
+                        "semantic.homepage_weak_match",
+                        location,
+                        f"Homepage title weakly matches the catalog title: "
+                        f"`{homepage_probe.title}` (score={score:.2f}).",
+                    )
+                )
+
+    return findings, report, repo_stats
 
 
-def run_validation_pass(
-    records: list[dict],
+def validate_network(
+    records: list[dict[str, Any]],
+    *,
     token: str,
     timeout: int,
-    skip_network: bool,
+    retries: int,
     workers: int,
-    cache: NetworkCache | None = None,
-) -> tuple[list[str], list[str], dict, dict, set[tuple[str, int]]]:
-    errors: list[str] = []
-    warnings: list[str] = []
-    invalid_keys: set[tuple[str, int]] = set()
+    cache: TtlCache,
+) -> tuple[list[Finding], dict[str, Any], dict[str, Any]]:
+    findings: list[Finding] = []
+    link_report: dict[str, Any] = {}
+    repo_stats: dict[str, Any] = {}
 
-    for rec in records:
-        rec_errors, rec_warnings = validate_record_schema(rec)
-        errors.extend(rec_errors)
-        warnings.extend(rec_warnings)
-        if rec_errors:
-            invalid_keys.add(record_key(rec))
-
-    dup_errors, dup_invalid = validate_duplicates(records)
-    errors.extend(dup_errors)
-    invalid_keys |= dup_invalid
-
-    link_errors, link_warnings, repo_stats, link_report, link_invalid = verify_links(
-        records=records,
-        token=token,
+    arxiv_ids = {
+        canonical_arxiv_id(record.get("paper", ""))
+        for record in records
+        if canonical_arxiv_id(record.get("paper", ""))
+    }
+    arxiv_titles, arxiv_failed = fetch_arxiv_titles(
+        arxiv_ids,
         timeout=timeout,
-        skip_network=skip_network,
-        workers=workers,
         cache=cache,
     )
-    errors.extend(link_errors)
-    warnings.extend(link_warnings)
-    invalid_keys |= link_invalid
 
-    errors.sort()
-    warnings.sort()
-    return errors, warnings, repo_stats, link_report, invalid_keys
+    missing_arxiv_titles = arxiv_ids - set(arxiv_titles)
+    if arxiv_failed and missing_arxiv_titles:
+        findings.append(
+            finding(
+                "warning",
+                "source.arxiv_api",
+                "catalog",
+                f"arXiv API was partially unavailable; "
+                f"{len(missing_arxiv_titles)} title checks were skipped.",
+            )
+        )
+
+    link_records = [
+        record
+        for record in records
+        if any(
+            record.get(field_name)
+            for field_name in ("paper", "repo", "homepage")
+        )
+    ]
+
+    max_workers = max(1, min(workers, len(link_records) or 1))
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_map = {
+            executor.submit(
+                validate_record_network,
+                record,
+                token=token,
+                timeout=timeout,
+                retries=retries,
+                cache=cache,
+                arxiv_titles=arxiv_titles,
+            ): record
+            for record in link_records
+        }
+
+        completed = 0
+
+        for future in as_completed(future_map):
+            record = future_map[future]
+            location = record_location(record)
+
+            try:
+                record_findings, record_report, record_stats = future.result()
+            except Exception as exc:
+                record_findings = [
+                    finding(
+                        "warning",
+                        "network.internal_exception",
+                        location,
+                        f"Unexpected network-validation exception: {exc}",
+                    )
+                ]
+                record_report = {
+                    "internal_error": {
+                        "state": "unknown",
+                        "reason": str(exc),
+                    }
+                }
+                record_stats = {}
+
+            findings.extend(record_findings)
+            link_report[location] = record_report
+            repo_stats.update(record_stats)
+
+            completed += 1
+            if completed % 25 == 0 or completed == len(link_records):
+                print(
+                    f"[validate] network progress: "
+                    f"{completed}/{len(link_records)}",
+                    file=sys.stderr,
+                )
+
+    return findings, link_report, repo_stats
 
 
-def render_report(records: list[dict], errors: list[str], warnings: list[str], repo_stats: dict) -> str:
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+def sort_findings(findings: list[Finding]) -> list[Finding]:
+    return sorted(
+        findings,
+        key=lambda item: (
+            SEVERITY_ORDER[item.severity],
+            item.location.lower(),
+            item.code,
+            item.message.lower(),
+        ),
+    )
+
+
+def render_report(
+    *,
+    mode: str,
+    records_count: int,
+    findings: list[Finding],
+    repo_stats: dict[str, Any],
+) -> str:
+    grouped = {
+        severity: [
+            item for item in findings if item.severity == severity
+        ]
+        for severity in ("error", "warning", "notice")
+    }
+
+    status = "FAIL" if grouped["error"] else "PASS"
+    commit = os.environ.get("GITHUB_SHA", "")[:12] or "local"
+
     lines = [
-        "# Validation Report",
+        f"# Validation Report — {mode.title()}",
         "",
-        f"- Generated: `{now}`",
-        f"- Records checked: **{len(records)}**",
-        f"- Blocking errors: **{len(errors)}**",
-        f"- Warnings: **{len(warnings)}**",
+        f"- Status: **{status}**",
+        f"- Generated: `{utc_now()}`",
+        f"- Commit: `{commit}`",
+        f"- Records checked: **{records_count}**",
+        f"- Blocking errors: **{len(grouped['error'])}**",
+        f"- Warnings: **{len(grouped['warning'])}**",
+        f"- Notices: **{len(grouped['notice'])}**",
         "",
         "## Blocking Errors",
         "",
     ]
-    if errors:
-        lines.extend([f"- {item}" for item in errors])
+
+    if grouped["error"]:
+        lines.extend(item.markdown() for item in grouped["error"])
     else:
         lines.append("- None.")
+
     lines.extend(["", "## Warnings", ""])
-    if warnings:
-        lines.extend([f"- {item}" for item in warnings])
+    if grouped["warning"]:
+        lines.extend(item.markdown() for item in grouped["warning"])
     else:
         lines.append("- None.")
-    lines.extend(["", "## Refreshed GitHub Repo Stats", ""])
-    if repo_stats:
-        lines.extend(["| Repo | Stars | Last Push | Archived | License |", "|:--|--:|:--|:--:|:--|"])
-        for full_name, stats in sorted(
-            repo_stats.items(),
-            key=lambda item: (-int(item[1].get("stars", 0)), item[0].lower()),
-        ):
-            lines.append(
-                f"| `{full_name}` | {int(stats.get('stars', 0))} | {stats.get('pushed_at', '')[:10]} | "
-                f"{'Yes' if stats.get('archived') else 'No'} | {stats.get('license', '') or '—'} |"
-            )
+
+    lines.extend(
+        [
+            "",
+            "<details>",
+            f"<summary>Notices ({len(grouped['notice'])})</summary>",
+            "",
+        ]
+    )
+    if grouped["notice"]:
+        lines.extend(item.markdown() for item in grouped["notice"])
     else:
-        lines.append("- No GitHub repo stats were refreshed.")
-    lines.append("")
+        lines.append("- None.")
+    lines.extend(["", "</details>", ""])
+
+    if mode == "deep":
+        lines.extend(["## Refreshed GitHub Repository Stats", ""])
+
+        if repo_stats:
+            lines.extend(
+                [
+                    "| Repository | Stars | Last push | Archived | License |",
+                    "|:--|--:|:--|:--:|:--|",
+                ]
+            )
+
+            for full_name, stats in sorted(
+                repo_stats.items(),
+                key=lambda item: (
+                    -int(item[1].get("stars", 0)),
+                    item[0].lower(),
+                ),
+            ):
+                lines.append(
+                    f"| `{full_name}` | "
+                    f"{int(stats.get('stars', 0))} | "
+                    f"{str(stats.get('pushed_at', ''))[:10] or '—'} | "
+                    f"{'Yes' if stats.get('archived') else 'No'} | "
+                    f"{stats.get('license') or '—'} |"
+                )
+        else:
+            lines.append("- No repository statistics were refreshed.")
+
+        lines.append("")
+
     return "\n".join(lines)
 
 
-def prompt_yes_no(question: str) -> bool:
-    try:
-        answer = input(question).strip().lower()
-    except EOFError:
-        return False
-    return answer in {"y", "yes"}
+def write_report_index(report_root: Path) -> None:
+    rows: list[str] = []
 
-
-def prune_invalid_records(invalid_keys: set[tuple[str, int]]) -> tuple[Path, dict[str, int]]:
-    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-    backup_dir = BACKUP_ROOT / timestamp / "data"
-    backup_dir.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copytree(ROOT / "data", backup_dir, dirs_exist_ok=True)
-
-    removed_counts: dict[str, int] = defaultdict(int)
-
-    for file_name in FILE_ARTIFACT:
-        path = ROOT / "data" / file_name
-        if not path.exists():
+    for mode in ("fast", "deep"):
+        summary_path = report_root / mode / "latest.json"
+        if not summary_path.exists():
+            rows.append(f"| {mode.title()} | Never run | — | — |")
             continue
 
-        kept_lines: list[str] = []
-        with path.open("r", encoding="utf-8") as handle:
-            for lineno, line in enumerate(handle, start=1):
-                raw = line.strip()
-                if not raw or raw.startswith("#"):
-                    kept_lines.append(line.rstrip("\n"))
-                    continue
+        try:
+            payload = json.loads(summary_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            rows.append(f"| {mode.title()} | Invalid report | — | — |")
+            continue
 
-                if (file_name, lineno) in invalid_keys:
-                    removed_counts[file_name] += 1
-                    continue
+        rows.append(
+            f"| [{mode.title()}]({mode}/latest.md) | "
+            f"{payload.get('generated_at', '—')} | "
+            f"{payload.get('blocking_errors', 0)} | "
+            f"{payload.get('warnings', 0)} |"
+        )
 
-                kept_lines.append(line.rstrip("\n"))
+    content = "\n".join(
+        [
+            "# Validation Reports",
+            "",
+            "> Fast validation checks deterministic catalog correctness.",
+            "> Deep validation checks live links, semantic identity, and "
+            "repository statistics.",
+            "",
+            "| Report | Generated | Blocking errors | Warnings |",
+            "|:--|:--|--:|--:|",
+            *rows,
+            "",
+        ]
+    )
 
-        path.write_text("\n".join(kept_lines).rstrip() + "\n", encoding="utf-8")
-
-    return backup_dir, dict(removed_counts)
+    atomic_write_text(report_root / "latest.md", content)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Validate catalog data and exact links.")
-    parser.add_argument("--skip-network", action="store_true", help="Skip URL / GitHub API verification.")
-    parser.add_argument("--write-cache", action="store_true", help="Read/write reusable network cache and write validation artifacts.")
-    parser.add_argument("--timeout", type=int, default=20, help="Network timeout in seconds.")
-    parser.add_argument("--workers", type=int, default=DEFAULT_MAX_WORKERS, help="Concurrent worker count for network validation.")
-    parser.add_argument("--cache-ttl-hours", type=float, default=24.0, help="TTL for reusable network cache when --write-cache is enabled.")
-    parser.add_argument("--interactive-clean", action="store_true", help="Prompt to prune invalid rows after reporting errors.")
-    parser.add_argument("--prune-invalid", action="store_true", help="Prune invalid rows without prompting, then re-run validation.")
+def append_github_summary(
+    mode: str,
+    findings: list[Finding],
+    report_path: Path,
+) -> None:
+    summary_file = os.environ.get("GITHUB_STEP_SUMMARY", "")
+    if not summary_file:
+        return
+
+    errors = [item for item in findings if item.severity == "error"]
+    warnings = [item for item in findings if item.severity == "warning"]
+
+    lines = [
+        f"## Catalog validation: {mode}",
+        "",
+        f"- Blocking errors: **{len(errors)}**",
+        f"- Warnings: **{len(warnings)}**",
+        f"- Report: `{report_path}`",
+        "",
+    ]
+
+    if errors:
+        lines.extend(item.markdown() for item in errors[:20])
+
+    with open(summary_file, "a", encoding="utf-8") as handle:
+        handle.write("\n".join(lines) + "\n")
+
+
+def write_github_outputs(
+    findings: list[Finding],
+    report_path: Path,
+) -> None:
+    output_file = os.environ.get("GITHUB_OUTPUT", "")
+    if not output_file:
+        return
+
+    errors = sum(item.severity == "error" for item in findings)
+    warnings = sum(item.severity == "warning" for item in findings)
+
+    with open(output_file, "a", encoding="utf-8") as handle:
+        handle.write(f"blocking_errors={errors}\n")
+        handle.write(f"warnings={warnings}\n")
+        handle.write(f"report={report_path.as_posix()}\n")
+
+
+def merged_repo_stats(
+    records: list[dict[str, Any]],
+    refreshed: dict[str, Any],
+) -> dict[str, Any]:
+    existing_path = CACHE_DIR / "repo_stats.json"
+    existing: dict[str, Any] = {}
+
+    if existing_path.exists():
+        try:
+            existing = json.loads(existing_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            existing = {}
+
+    current_repos = {
+        full_name
+        for record in records
+        if (full_name := parse_github_repo(record.get("repo", "")))
+    }
+
+    merged: dict[str, Any] = {}
+    for full_name in current_repos:
+        if full_name in refreshed:
+            merged[full_name] = refreshed[full_name]
+        elif full_name in existing:
+            merged[full_name] = existing[full_name]
+
+    return merged
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Validate catalog data and exact links."
+    )
+    parser.add_argument(
+        "--mode",
+        choices=("fast", "deep"),
+        help="fast = deterministic checks; deep = deterministic + network.",
+    )
+    parser.add_argument(
+        "--skip-network",
+        action="store_true",
+        help="Backward-compatible alias for --mode fast.",
+    )
+    parser.add_argument(
+        "--write-cache",
+        action="store_true",
+        help="Persist deep network cache and repository statistics.",
+    )
+    parser.add_argument("--timeout", type=int, default=20)
+    parser.add_argument("--retries", type=int, default=2)
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
+    parser.add_argument("--cache-ttl-hours", type=float, default=24.0)
+    parser.add_argument(
+        "--report-root",
+        type=Path,
+        default=VALIDATION_ROOT,
+        help="Alternative report directory, useful in CI.",
+    )
     args = parser.parse_args()
 
-    token = os.environ.get("GH_TOKEN", "").strip()
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    VALIDATION_DIR.mkdir(parents=True, exist_ok=True)
+    mode = args.mode
+    if args.skip_network:
+        mode = "fast"
+    elif not mode:
+        mode = "deep" if args.write_cache else "deep"
 
-    network_cache = NetworkCache(
-        path=NETWORK_CACHE_FILE if args.write_cache else None,
+    report_root = args.report_root.resolve()
+    default_report_root = VALIDATION_ROOT.resolve()
+    writes_repository_artifacts = report_root == default_report_root
+
+    cache = TtlCache(
+        NETWORK_CACHE_FILE
+        if mode == "deep" and args.write_cache and writes_repository_artifacts
+        else None,
         ttl_hours=args.cache_ttl_hours,
     )
 
-    def persist(
-        records: list[dict],
-        errors: list[str],
-        warnings: list[str],
-        repo_stats: dict,
-        link_report: dict,
-        invalid_keys: set[tuple[str, int]],
-    ) -> None:
-        report = render_report(records, errors, warnings, repo_stats)
-        (VALIDATION_DIR / "latest.md").write_text(report.rstrip() + "\n", encoding="utf-8")
-        if args.write_cache:
-            write_json(CACHE_DIR / "repo_stats.json", repo_stats)
+    try:
+        records = load_records()
+    except Exception as exc:
+        print(f"[validate] unable to load catalog data: {exc}", file=sys.stderr)
+        return 1
+
+    findings: list[Finding] = []
+    deterministic_invalid: set[tuple[str, int]] = set()
+
+    for record in records:
+        record_findings, invalid = validate_schema(record)
+        findings.extend(record_findings)
+        if invalid:
+            deterministic_invalid.add(record_key(record))
+
+    duplicate_findings, duplicate_invalid = validate_duplicates(records)
+    findings.extend(duplicate_findings)
+    deterministic_invalid |= duplicate_invalid
+
+    missing_exact_dates = sum(
+        not normalize_whitespace(str(record.get("published_at", "")))
+        for record in records
+    )
+    if missing_exact_dates:
+        findings.append(
+            finding(
+                "warning",
+                "date.precision",
+                "catalog",
+                f"{missing_exact_dates} records do not have `published_at`; "
+                "day-level freshness cannot be guaranteed until they are "
+                "backfilled.",
+            )
+        )
+
+    link_report: dict[str, Any] = {}
+    refreshed_repo_stats: dict[str, Any] = {}
+
+    if mode == "deep":
+        network_findings, link_report, refreshed_repo_stats = validate_network(
+            records,
+            token=os.environ.get("GH_TOKEN", "").strip(),
+            timeout=max(1, args.timeout),
+            retries=max(0, args.retries),
+            workers=max(1, args.workers),
+            cache=cache,
+        )
+        findings.extend(network_findings)
+
+    findings = sort_findings(findings)
+
+    report_markdown = render_report(
+        mode=mode,
+        records_count=len(records),
+        findings=findings,
+        repo_stats=refreshed_repo_stats,
+    )
+
+    mode_directory = report_root / mode
+    report_path = mode_directory / "latest.md"
+    json_path = mode_directory / "latest.json"
+
+    atomic_write_text(report_path, report_markdown.rstrip() + "\n")
+
+    errors = [item for item in findings if item.severity == "error"]
+    warnings = [item for item in findings if item.severity == "warning"]
+    notices = [item for item in findings if item.severity == "notice"]
+
+    write_json(
+        json_path,
+        {
+            "version": 2,
+            "mode": mode,
+            "status": "fail" if errors else "pass",
+            "generated_at": utc_now(),
+            "commit": os.environ.get("GITHUB_SHA", "") or "local",
+            "records_checked": len(records),
+            "blocking_errors": len(errors),
+            "warnings": len(warnings),
+            "notices": len(notices),
+            "findings": [asdict(item) for item in findings],
+        },
+    )
+
+    if writes_repository_artifacts:
+        write_report_index(report_root)
+
+        # Only deterministic data problems go into invalid_records.json.
+        # Temporary network problems must never silently remove catalog rows.
+        write_json(
+            CACHE_DIR / "invalid_records.json",
+            {
+                "version": 2,
+                "reason": "deterministic-validation-only",
+                "records": [
+                    {
+                        "source_file": source_file,
+                        "lineno": line_number,
+                    }
+                    for source_file, line_number in sorted(
+                        deterministic_invalid
+                    )
+                ],
+            },
+        )
+
+        if mode == "deep" and args.write_cache:
             write_json(CACHE_DIR / "link_report.json", link_report)
             write_json(
-                CACHE_DIR / "invalid_records.json",
-                {
-                    "records": [
-                        {"source_file": sf, "lineno": ln}
-                        for sf, ln in sorted(invalid_keys)
-                    ]
-                },
+                CACHE_DIR / "repo_stats.json",
+                merged_repo_stats(records, refreshed_repo_stats),
             )
-            network_cache.save()
+            cache.save()
 
-    records = load_records()
-    errors, warnings, repo_stats, link_report, invalid_keys = run_validation_pass(
-        records=records,
-        token=token,
-        timeout=args.timeout,
-        skip_network=args.skip_network,
-        workers=args.workers,
-        cache=network_cache,
+    append_github_summary(mode, findings, report_path)
+    write_github_outputs(findings, report_path)
+
+    print(
+        f"[validate] mode={mode} records={len(records)} "
+        f"errors={len(errors)} warnings={len(warnings)} "
+        f"notices={len(notices)}"
     )
-    persist(records, errors, warnings, repo_stats, link_report, invalid_keys)
+    print(f"[validate] report={report_path}")
 
-    print(f"[validate] records={len(records)} errors={len(errors)} warnings={len(warnings)}")
-    if errors:
-        print("\n[validate] blocking errors:")
-        for item in errors:
-            print(f"  - {item}")
-    if warnings:
-        print("\n[validate] warnings:")
-        for item in warnings:
-            print(f"  - {item}")
-
-    should_prune = False
-    if errors and args.prune_invalid:
-        should_prune = True
-    elif errors and args.interactive_clean and sys.stdin.isatty():
-        should_prune = prompt_yes_no("\nPrune invalid rows now? [y/N]: ")
-
-    if should_prune and invalid_keys:
-        backup_dir, removed = prune_invalid_records(invalid_keys)
-        print(f"\n[validate] pruned invalid rows. Backup written to: {backup_dir}")
-        for file_name, count in sorted(removed.items()):
-            print(f"  - {file_name}: removed {count}")
-
-        records = load_records()
-        errors, warnings, repo_stats, link_report, invalid_keys = run_validation_pass(
-            records=records,
-            token=token,
-            timeout=args.timeout,
-            skip_network=args.skip_network,
-            workers=args.workers,
-            cache=network_cache,
-        )
-        persist(records, errors, warnings, repo_stats, link_report, invalid_keys)
-        print(f"\n[validate] after prune -> records={len(records)} errors={len(errors)} warnings={len(warnings)}")
-
-    if errors:
-        print("[validate] blocking errors found. See metadata/validation/latest.md", file=sys.stderr)
-        sys.exit(1)
+    return 1 if errors else 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

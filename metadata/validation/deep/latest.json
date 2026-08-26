@@ -1,0 +1,349 @@
+{
+  "blocking_errors": 5,
+  "commit": "local",
+  "findings": [
+    {
+      "code": "semantic.paper_mismatch",
+      "location": "10-image-2d/relevance-feedback-t2i (image_2d.jsonl:15)",
+      "message": "Paper title mismatch. Expected `Relevance Feedback in Text-to-Image Diffusion: A Training-Free And Model-Agnostic Interactive Framework`; arXiv API returned `Bridging the Intention-Expression Gap: Aligning Multi-Dimensional Preferences via Hierarchical Relevance Feedback in Text-to-Image Diffusion` (score=0.56).",
+      "severity": "error"
+    },
+    {
+      "code": "semantic.paper_mismatch",
+      "location": "20-video/seedance (video.jsonl:15)",
+      "message": "Paper title mismatch. Expected `Seedance 1.0: Exploring the Boundaries of Video Generation Models`; arXiv API returned `A Question Bank to Assess AI Inclusivity: Mapping out the Journey from Diversity Errors to Inclusion Excellence` (score=0.38).",
+      "severity": "error"
+    },
+    {
+      "code": "semantic.paper_mismatch",
+      "location": "20-video/step-video (video.jsonl:18)",
+      "message": "Paper title mismatch. Expected `Step-Video-T2V: A State-of-the-Art Text-to-Video Model`; arXiv API returned `Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model` (score=0.55).",
+      "severity": "error"
+    },
+    {
+      "code": "semantic.paper_mismatch",
+      "location": "20-video/wan2.1 (video.jsonl:10)",
+      "message": "Paper title mismatch. Expected `Wan 2.1: Open-Source Video Foundation Model`; arXiv API returned `Wan: Open and Advanced Large-Scale Video Generative Models` (score=0.59).",
+      "severity": "error"
+    },
+    {
+      "code": "semantic.paper_mismatch",
+      "location": "40-3d-scene/respace (scene_3d.jsonl:13)",
+      "message": "Paper title mismatch. Expected `ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment`; arXiv API returned `ReSpace: Text-Driven Autoregressive 3D Indoor Scene Synthesis and Editing` (score=0.75).",
+      "severity": "error"
+    },
+    {
+      "code": "semantic.paper_unverified",
+      "location": "10-image-2d/denoising-autoregressive-transformers (image_2d.jsonl:53)",
+      "message": "Paper title could not be verified because the remote site returned a bot-challenge or generic page.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "10-image-2d/flux (image_2d.jsonl:49)",
+      "message": "Repository owner suggests organization `Black Forest Labs`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "10-image-2d/ifsq (image_2d.jsonl:38)",
+      "message": "Repository owner suggests organization `Tencent Hunyuan`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/improving-long-text-alignment (image_2d.jsonl:21)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/information-theoretic-t2i-alignment (image_2d.jsonl:22)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/meanflow (image_2d.jsonl:39)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/noise-diffusion (image_2d.jsonl:20)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/one-prompt-one-story (image_2d.jsonl:54)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/pixart-sigma (image_2d.jsonl:50)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "semantic.paper_unverified",
+      "location": "10-image-2d/pt-t2iv (image_2d.jsonl:37)",
+      "message": "Paper title could not be verified because the remote site returned a bot-challenge or generic page.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/qwen-image (image_2d.jsonl:62)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "10-image-2d/sana-1.5 (image_2d.jsonl:48)",
+      "message": "Repository owner suggests organization `NVLabs`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "10-image-2d/sana-1.5 (image_2d.jsonl:48)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/cogvideox (video.jsonl:16)",
+      "message": "Repository owner suggests organization `THUDM`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.missing_paper",
+      "location": "20-video/hunyuanvideo-i2v (video.jsonl:12)",
+      "message": "Missing `paper` link.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.missing_paper",
+      "location": "20-video/kling (video.jsonl:17)",
+      "message": "Missing `paper` link.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "20-video/magicdrive-v2 (video.jsonl:61)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "20-video/phyt2v (video.jsonl:7)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "20-video/step-video (video.jsonl:18)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/unianimate-dit (video.jsonl:51)",
+      "message": "Repository owner suggests organization `Alibaba VILab`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "20-video/unianimate-dit (video.jsonl:51)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/vace (video.jsonl:39)",
+      "message": "Repository owner suggests organization `Alibaba VILab`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "20-video/vace (video.jsonl:39)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "20-video/wan2.1 (video.jsonl:10)",
+      "message": "Repository owner suggests organization `Alibaba Wan`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "20-video/wan2.1 (video.jsonl:10)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "20-video/x-dyna (video.jsonl:44)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/flashvdm (object_3d.jsonl:28)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.missing_paper",
+      "location": "30-3d-object-asset/hunyuan3d-2.1 (object_3d.jsonl:27)",
+      "message": "Missing `paper` link.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/infinite-mobility (object_3d.jsonl:44)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "30-3d-object-asset/instantmesh (object_3d.jsonl:31)",
+      "message": "Repository owner suggests organization `Tencent ARC`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/instantmesh (object_3d.jsonl:31)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/its3d (object_3d.jsonl:36)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/octfusion (object_3d.jsonl:11)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/sparc3d (object_3d.jsonl:8)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/topodit-3d (object_3d.jsonl:16)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/trellis (object_3d.jsonl:2)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/triposr (object_3d.jsonl:30)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/unique3d (object_3d.jsonl:32)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "40-3d-scene/wonderworld (scene_3d.jsonl:32)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "50-4d-dynamic-scene-world/hunyuanworld-1.0 (world_4d.jsonl:12)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "50-4d-dynamic-scene-world/hunyuanworld-voyager (world_4d.jsonl:11)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)",
+      "message": "Repository owner suggests organization `Tencent Hunyuan`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "50-4d-dynamic-scene-world/matrix-game (world_4d.jsonl:28)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)",
+      "message": "Repository owner suggests organization `NVIDIA`.",
+      "severity": "warning"
+    },
+    {
+      "code": "metadata.organization",
+      "location": "50-4d-dynamic-scene-world/waymax (world_4d.jsonl:22)",
+      "message": "Repository owner suggests organization `Waymo`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "50-4d-dynamic-scene-world/waymax (world_4d.jsonl:22)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "50-4d-dynamic-scene-world/world4drive (world_4d.jsonl:4)",
+      "message": "`repo` could not be conclusively verified: GitHub API HTTP 403.",
+      "severity": "warning"
+    },
+    {
+      "code": "date.precision",
+      "location": "catalog",
+      "message": "207 records do not have `published_at`; day-level freshness cannot be guaranteed until they are backfilled.",
+      "severity": "warning"
+    },
+    {
+      "code": "semantic.repo_weak_match",
+      "location": "10-image-2d/flux (image_2d.jsonl:49)",
+      "message": "Repository name/description weakly matches the catalog title (score=0.14).",
+      "severity": "notice"
+    },
+    {
+      "code": "semantic.homepage_weak_match",
+      "location": "10-image-2d/seedream-3.0 (image_2d.jsonl:64)",
+      "message": "Homepage title weakly matches the catalog title: `Seed News - ByteDance Seed Team` (score=0.24).",
+      "severity": "notice"
+    },
+    {
+      "code": "semantic.homepage_weak_match",
+      "location": "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)",
+      "message": "Homepage title weakly matches the catalog title: `腾讯混元3D` (score=0.02).",
+      "severity": "notice"
+    }
+  ],
+  "generated_at": "2026-08-26 09:30:36 UTC",
+  "mode": "deep",
+  "notices": 3,
+  "records_checked": 207,
+  "status": "fail",
+  "version": 2,
+  "warnings": 48
+}

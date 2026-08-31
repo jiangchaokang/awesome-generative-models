@@ -3,10 +3,10 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-07-31 04:46 UTC`
+- Generated: `2026-08-31 07:05 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-07-31/`
+- Raw files: `metadata/candidates/2026-08-31/`
 - New candidates today: **2**
 - New watched-org repositories today: **0**
 
@@ -21,8 +21,8 @@
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 60 | arXiv | 2026-07-30 | **PhiZero: A World Model Built Around Physical Language** | simulation | recent paper candidate | [Paper](http://arxiv.org/abs/2607.28624v1) |
-| 60 | arXiv | 2026-07-30 | **ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2607.28362v1) |
+| 76 | arXiv | 2026-08-28 | **Cyc3D: Evaluating Cyclic Structural Stability and Asset Usability in Image-to-3D Generation** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2608.28080v1) |
+| 76 | arXiv | 2026-08-28 | **Enhancing 3GPP Urban Channel Models For Terrestrial-to-Non-Terrestrial Communication** | simulation | recent paper candidate | [Paper](http://arxiv.org/abs/2608.28331v1) |
 
 ## New Repositories in Watched Organizations
 

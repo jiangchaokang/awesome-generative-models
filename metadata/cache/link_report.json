@@ -203,7 +203,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-07-31T13:58:55Z",
       "reason": "",
-      "stars": 25911,
+      "stars": 25933,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -270,7 +270,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-23T13:12:44Z",
       "reason": "",
-      "stars": 3253,
+      "stars": 3255,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -347,12 +347,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "The official PyTorch implementation for Improving Long-Text Alignment for Text-to-Image Diffusion Models (LongAlign)",
       "final_url": "https://github.com/luping-liu/LongAlign",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "luping-liu/LongAlign",
+      "homepage": "https://arxiv.org/abs/2410.11817",
+      "license": "Apache-2.0",
+      "pushed_at": "2025-04-23T03:08:46Z",
+      "reason": "",
+      "stars": 83,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "10-image-2d/information-theoretic-t2i-alignment (image_2d.jsonl:22)": {
@@ -371,12 +382,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "The official implementation of ICLR 2025 paper Information Theoretic Text-to-Image Alignment",
       "final_url": "https://github.com/Chao0511/mitune",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Chao0511/mitune",
+      "homepage": "",
+      "license": "MIT",
+      "pushed_at": "2025-03-23T14:38:36Z",
+      "reason": "",
+      "stars": 6,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "10-image-2d/lade (image_2d.jsonl:65)": {
@@ -459,12 +481,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "JAX implementation of MeanFlow",
       "final_url": "https://github.com/Gsunshine/meanflow",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Gsunshine/meanflow",
+      "homepage": "https://arxiv.org/abs/2505.13447",
+      "license": "MIT",
+      "pushed_at": "2026-03-13T05:29:12Z",
+      "reason": "",
+      "stars": 606,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.413
     }
   },
   "10-image-2d/meissonic (image_2d.jsonl:51)": {
@@ -515,12 +548,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "[CVPR 2025] Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis",
       "final_url": "https://github.com/Bomingmiao/NoiseDiffusion",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Bomingmiao/NoiseDiffusion",
+      "homepage": "",
+      "license": "MIT",
+      "pushed_at": "2025-11-08T18:51:53Z",
+      "reason": "",
+      "stars": 15,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "10-image-2d/one-prompt-one-story (image_2d.jsonl:54)": {
@@ -539,12 +583,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "🔥ICLR 2025 (Spotlight) One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt",
       "final_url": "https://github.com/byliutao/1Prompt1Story",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "byliutao/1Prompt1Story",
+      "homepage": "https://byliutao.github.io/1Prompt1Story.github.io/",
+      "license": "MIT",
+      "pushed_at": "2025-10-20T04:52:19Z",
+      "reason": "",
+      "stars": 321,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "10-image-2d/one-way-ticket (image_2d.jsonl:33)": {
@@ -611,12 +666,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation",
       "final_url": "https://github.com/PixArt-alpha/PixArt-sigma",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "PixArt-alpha/PixArt-sigma",
+      "homepage": "https://pixart-alpha.github.io/PixArt-sigma-project/",
+      "license": "Apache-2.0",
+      "pushed_at": "2024-10-31T01:20:19Z",
+      "reason": "",
+      "stars": 1940,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "10-image-2d/precisecam (image_2d.jsonl:2)": {
@@ -712,12 +778,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing.",
       "final_url": "https://github.com/QwenLM/Qwen-Image",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "QwenLM/Qwen-Image",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-02-10T07:37:37Z",
+      "reason": "",
+      "stars": 8280,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.5
     }
   },
   "10-image-2d/rectified-flow-priors-t2i (image_2d.jsonl:57)": {
@@ -813,12 +890,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer",
       "final_url": "https://github.com/NVlabs/Sana",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "NVlabs/Sana",
+      "homepage": "https://nvlabs.github.io/Sana/docs/",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-08-27T09:12:35Z",
+      "reason": "",
+      "stars": 8905,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.577
     }
   },
   "10-image-2d/scaling-down-text-encoders (image_2d.jsonl:35)": {
@@ -1269,7 +1357,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-11-04T11:19:04Z",
       "reason": "",
-      "stars": 12977,
+      "stars": 12988,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1317,7 +1405,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-04-14T03:25:24Z",
       "reason": "",
-      "stars": 855,
+      "stars": 854,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1525,7 +1613,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-29T09:33:50Z",
       "reason": "",
-      "stars": 12472,
+      "stars": 12491,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1560,7 +1648,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-10T06:14:59Z",
       "reason": "",
-      "stars": 4534,
+      "stars": 4538,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1581,7 +1669,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-07T06:13:09Z",
       "reason": "",
-      "stars": 1839,
+      "stars": 1840,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1691,12 +1779,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "[ICCV 2025] Official implementation of the paper “MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control”",
       "final_url": "https://github.com/flymin/MagicDrive-V2",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "flymin/MagicDrive-V2",
+      "homepage": "https://gaoruiyuan.com/magicdrive-v2/",
+      "license": "AGPL-3.0",
+      "pushed_at": "2025-06-26T01:36:37Z",
+      "reason": "",
+      "stars": 728,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "20-video/minute-long-videos-dual-parallelisms (video.jsonl:55)": {
@@ -1816,12 +1915,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "official code repo of CVPR 2025 paper PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation",
       "final_url": "https://github.com/pittisl/PhyT2V",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "pittisl/PhyT2V",
+      "homepage": "",
+      "license": "",
+      "pushed_at": "2025-07-31T03:37:04Z",
+      "reason": "",
+      "stars": 68,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "20-video/pyramidal-flow-matching (video.jsonl:30)": {
@@ -2023,12 +2133,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "",
       "final_url": "https://github.com/stepfun-ai/Step-Video-T2V",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "stepfun-ai/Step-Video-T2V",
+      "homepage": "",
+      "license": "MIT",
+      "pushed_at": "2025-03-17T03:26:54Z",
+      "reason": "",
+      "stars": 3188,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.667
     }
   },
   "20-video/streetcrafter (video.jsonl:59)": {
@@ -2108,12 +2229,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer",
       "final_url": "https://github.com/ali-vilab/UniAnimate-DiT",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "ali-vilab/UniAnimate-DiT",
+      "homepage": "",
+      "license": "",
+      "pushed_at": "2025-04-27T08:11:49Z",
+      "reason": "",
+      "stars": 851,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "20-video/vace (video.jsonl:39)": {
@@ -2145,12 +2277,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "[ICCV 2025] Official implementations for paper: VACE: All-in-One Video Creation and Editing",
       "final_url": "https://github.com/ali-vilab/VACE",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "ali-vilab/VACE",
+      "homepage": "https://ali-vilab.github.io/VACE-Page/",
+      "license": "Apache-2.0",
+      "pushed_at": "2025-10-17T05:46:57Z",
+      "reason": "",
+      "stars": 3935,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "20-video/videodirector (video.jsonl:35)": {
@@ -2217,12 +2360,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Wan: Open and Advanced Large-Scale Video Generative Models",
       "final_url": "https://github.com/Wan-Video/Wan2.1",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Wan-Video/Wan2.1",
+      "homepage": "https://wan.video",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-03-05T09:38:07Z",
+      "reason": "",
+      "stars": 16919,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.569
     }
   },
   "20-video/x-dyna (video.jsonl:44)": {
@@ -2241,12 +2395,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "[CVPR 2025 Highlight] X-Dyna: Expressive Dynamic Human Image Animation",
       "final_url": "https://github.com/bytedance/X-Dyna",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "bytedance/X-Dyna",
+      "homepage": "https://x-dyna.github.io/xdyna.github.io/",
+      "license": "Apache-2.0",
+      "pushed_at": "2025-01-30T01:40:29Z",
+      "reason": "",
+      "stars": 268,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/adahuman (object_3d.jsonl:46)": {
@@ -2441,12 +2606,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Unleashing Vecset Diffusion Model for Fast Shape Generation / within 1 Second (ICCV'25 Highlight)",
       "final_url": "https://github.com/Tencent-Hunyuan/FlashVDM",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Tencent-Hunyuan/FlashVDM",
+      "homepage": "",
+      "license": "NOASSERTION",
+      "pushed_at": "2026-03-13T02:55:53Z",
+      "reason": "",
+      "stars": 334,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/from-one-to-more (object_3d.jsonl:38)": {
@@ -2535,7 +2711,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-28T09:58:12Z",
       "reason": "",
-      "stars": 14623,
+      "stars": 14712,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2556,7 +2732,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-17T10:10:07Z",
       "reason": "",
-      "stars": 3913,
+      "stars": 3946,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2598,12 +2774,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "",
       "final_url": "https://github.com/Intern-Nexus/Infinite-Mobility",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "InternRobotics/Infinite-Mobility",
+      "homepage": "",
+      "license": "BSD-3-Clause",
+      "pushed_at": "2025-07-25T03:18:07Z",
+      "reason": "",
+      "stars": 196,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.667
     }
   },
   "30-3d-object-asset/instantmesh (object_3d.jsonl:31)": {
@@ -2622,12 +2809,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models",
       "final_url": "https://github.com/TencentARC/InstantMesh",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "TencentARC/InstantMesh",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "pushed_at": "2025-01-03T09:09:13Z",
+      "reason": "",
+      "stars": 4513,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/its3d (object_3d.jsonl:36)": {
@@ -2646,12 +2844,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models",
       "final_url": "https://github.com/ZhenglinZhou/ITS3D",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "ZhenglinZhou/ITS3D",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-30T17:43:28Z",
+      "reason": "",
+      "stars": 11,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/lagem (object_3d.jsonl:3)": {
@@ -2734,12 +2943,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "OctFusion: Octree-based Diffusion Models for 3D Shape Generation [SGP 2025]",
       "final_url": "https://github.com/octree-nn/octfusion",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "octree-nn/octfusion",
+      "homepage": "",
+      "license": "",
+      "pushed_at": "2025-07-02T13:28:30Z",
+      "reason": "",
+      "stars": 231,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/octgpt (object_3d.jsonl:9)": {
@@ -2896,12 +3116,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Official repo for paper \"Sparse Representation and Construction for High-Resolution 3D Shapes Modeling\".",
       "final_url": "https://github.com/lizhihao6/Sparc3D",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "lizhihao6/Sparc3D",
+      "homepage": "https://lizhihao6.github.io/Sparc3D/",
+      "license": "",
+      "pushed_at": "2025-06-16T05:29:19Z",
+      "reason": "",
+      "stars": 1352,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/sparseflex (object_3d.jsonl:10)": {
@@ -2968,12 +3199,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "",
       "final_url": "https://github.com/Zechao-Guan/TopoDiT-3D",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Zechao-Guan/TopoDiT-3D",
+      "homepage": "",
+      "license": "",
+      "pushed_at": "2025-05-13T06:39:50Z",
+      "reason": "",
+      "stars": 15,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.333
     }
   },
   "30-3d-object-asset/trellis (object_3d.jsonl:2)": {
@@ -3005,12 +3247,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Official repo for paper \"Structured 3D Latents for Scalable and Versatile 3D Generation\" (CVPR'25 Spotlight).",
       "final_url": "https://github.com/microsoft/TRELLIS",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "microsoft/TRELLIS",
+      "homepage": "https://trellis3d.github.io",
+      "license": "MIT",
+      "pushed_at": "2026-06-26T07:27:56Z",
+      "reason": "",
+      "stars": 13542,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/triposr (object_3d.jsonl:30)": {
@@ -3029,12 +3282,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "TripoSR: Fast 3D Object Reconstruction from a Single Image",
       "final_url": "https://github.com/VAST-AI-Research/TripoSR",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "VAST-AI-Research/TripoSR",
+      "homepage": "",
+      "license": "MIT",
+      "pushed_at": "2026-06-04T07:11:09Z",
+      "reason": "",
+      "stars": 6907,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "30-3d-object-asset/ultra3d (object_3d.jsonl:7)": {
@@ -3101,12 +3365,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "[NeurIPS 2024] Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image",
       "final_url": "https://github.com/AiuniAI/Unique3D",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "AiuniAI/Unique3D",
+      "homepage": "https://wukailu.github.io/Unique3D/",
+      "license": "MIT",
+      "pushed_at": "2025-07-17T21:29:05Z",
+      "reason": "",
+      "stars": 3579,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "40-3d-scene/3d-gpt (scene_3d.jsonl:3)": {
@@ -3721,12 +3996,23 @@
       "source": "HTML metadata"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Code release for https://kovenyu.com/WonderWorld/",
       "final_url": "https://github.com/KovenYu/WonderWorld",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "KovenYu/WonderWorld",
+      "homepage": "",
+      "license": "",
+      "pushed_at": "2025-04-14T04:52:47Z",
+      "reason": "",
+      "stars": 741,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.357
     }
   },
   "40-3d-scene/wonderzoom (scene_3d.jsonl:36)": {
@@ -3860,7 +4146,7 @@
       "license": "",
       "pushed_at": "2026-07-08T09:44:43Z",
       "reason": "",
-      "stars": 122,
+      "stars": 123,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3975,7 +4261,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-22T06:35:46Z",
       "reason": "",
-      "stars": 384,
+      "stars": 385,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4074,7 +4360,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-05-12T03:05:38Z",
       "reason": "",
-      "stars": 260,
+      "stars": 261,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4100,12 +4386,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Generating Immersive, Explorable, and Interactive 3D Worlds from Words or Pixels with Hunyuan3D World Model",
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Tencent-Hunyuan/HunyuanWorld-1.0",
+      "homepage": "https://3d.hunyuan.tencent.com/sceneTo3D",
+      "license": "NOASSERTION",
+      "pushed_at": "2026-04-15T17:27:25Z",
+      "reason": "",
+      "stars": 2924,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "50-4d-dynamic-scene-world/hunyuanworld-voyager (world_4d.jsonl:11)": {
@@ -4137,12 +4434,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Voyager is an interactive RGBD video generation model conditioned on camera input, and supports real-time 3D reconstruction.",
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
+      "homepage": "https://3d-models.hunyuan.tencent.com/world/",
+      "license": "NOASSERTION",
+      "pushed_at": "2026-04-15T17:30:08Z",
+      "reason": "",
+      "stars": 1590,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.3
     }
   },
   "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)": {
@@ -4183,7 +4491,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-10T07:10:23Z",
       "reason": "",
-      "stars": 1586,
+      "stars": 1589,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4209,12 +4517,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
       "final_url": "https://github.com/SkyworkAI/Matrix-Game",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "SkyworkAI/Matrix-Game",
+      "homepage": "https://matrix-game-v3.github.io/",
+      "license": "MIT",
+      "pushed_at": "2026-03-30T06:32:00Z",
+      "reason": "",
+      "stars": 2319,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.8
     }
   },
   "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)": {
@@ -4255,7 +4574,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-08-25T12:46:29Z",
       "reason": "",
-      "stars": 11631,
+      "stars": 11678,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4322,7 +4641,7 @@
       "license": "",
       "pushed_at": "2026-06-23T10:34:22Z",
       "reason": "",
-      "stars": 35,
+      "stars": 36,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4348,12 +4667,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "A JAX-based simulator for autonomous driving research.",
       "final_url": "https://github.com/waymo-research/waymax",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "waymo-research/waymax",
+      "homepage": "",
+      "license": "NOASSERTION",
+      "pushed_at": "2025-10-23T04:29:20Z",
+      "reason": "",
+      "stars": 1097,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.833
     }
   },
   "50-4d-dynamic-scene-world/world4drive (world_4d.jsonl:4)": {
@@ -4372,12 +4702,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "[ICCV 2025]",
       "final_url": "https://github.com/ucaszyp/World4Drive",
-      "reason": "GitHub API HTTP 403",
-      "state": "unknown",
-      "status": 403,
+      "full_name": "ucaszyp/World4Drive",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "pushed_at": "2025-12-31T15:00:36Z",
+      "reason": "",
+      "stars": 105,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.254
     }
   },
   "50-4d-dynamic-scene-world/worldmem (world_4d.jsonl:18)": {

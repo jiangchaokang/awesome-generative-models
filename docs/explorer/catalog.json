@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-31 09:47 UTC",
+  "generated_at": "2026-09-01 06:16 UTC",
   "records": [
     {
       "id": "driveworld-vla",
@@ -24,7 +24,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 122
+      "stars": 123
     },
     {
       "id": "ifsq",
@@ -1056,7 +1056,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 16883
+      "stars": 16919
     },
     {
       "id": "hunyuan3d-2",
@@ -1082,7 +1082,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 14623
+      "stars": 14712
     },
     {
       "id": "trellis",
@@ -1106,7 +1106,7 @@
       "homepage": "https://microsoft.github.io/TRELLIS/",
       "open_source": true,
       "featured": false,
-      "stars": 13488
+      "stars": 13542
     },
     {
       "id": "sana-1.5",
@@ -1130,7 +1130,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 8807
+      "stars": 8905
     },
     {
       "id": "qwen-image",
@@ -1156,7 +1156,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 8256
+      "stars": 8280
     },
     {
       "id": "hunyuanvideo-1.5",
@@ -1182,31 +1182,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 4534
-    },
-    {
-      "id": "vace",
-      "title": "VACE: All-in-One Video Creation and Editing",
-      "summary": "A unified diffusion-transformer framework for reference-to-video, V2V editing, and masked editing in one model.",
-      "artifact": "video",
-      "artifact_title": "Video",
-      "task": "video-editing",
-      "venue": "ICCV 2025",
-      "year": 2025,
-      "published_at": "",
-      "domain": [
-        "general"
-      ],
-      "representation": [],
-      "method": [],
-      "conditioning": [],
-      "orgs": [],
-      "paper": "https://arxiv.org/abs/2503.07598",
-      "repo": "https://github.com/ali-vilab/VACE",
-      "homepage": "https://ali-vilab.github.io/VACE-Page/",
-      "open_source": true,
-      "featured": false,
-      "stars": 3929
+      "stars": 4538
     },
     {
       "id": "hunyuan3d-2.1",
@@ -1232,7 +1208,31 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3913
+      "stars": 3946
+    },
+    {
+      "id": "vace",
+      "title": "VACE: All-in-One Video Creation and Editing",
+      "summary": "A unified diffusion-transformer framework for reference-to-video, V2V editing, and masked editing in one model.",
+      "artifact": "video",
+      "artifact_title": "Video",
+      "task": "video-editing",
+      "venue": "ICCV 2025",
+      "year": 2025,
+      "published_at": "",
+      "domain": [
+        "general"
+      ],
+      "representation": [],
+      "method": [],
+      "conditioning": [],
+      "orgs": [],
+      "paper": "https://arxiv.org/abs/2503.07598",
+      "repo": "https://github.com/ali-vilab/VACE",
+      "homepage": "https://ali-vilab.github.io/VACE-Page/",
+      "open_source": true,
+      "featured": false,
+      "stars": 3935
     },
     {
       "id": "hunyuanimage-3.0",
@@ -1258,7 +1258,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3253
+      "stars": 3255
     },
     {
       "id": "step-video",
@@ -1282,7 +1282,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3186
+      "stars": 3188
     },
     {
       "id": "hunyuanworld-1.0",
@@ -1308,7 +1308,7 @@
       "homepage": "",
       "open_source": false,
       "featured": false,
-      "stars": 2916
+      "stars": 2924
     },
     {
       "id": "matrix-game",
@@ -1332,7 +1332,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 2311
+      "stars": 2319
     },
     {
       "id": "hunyuanvideo-i2v",
@@ -1358,7 +1358,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 1839
+      "stars": 1840
     },
     {
       "id": "hunyuanworld-voyager",
@@ -1384,7 +1384,7 @@
       "homepage": "https://3d-models.hunyuan.tencent.com/world/",
       "open_source": true,
       "featured": false,
-      "stars": 1589
+      "stars": 1590
     },
     {
       "id": "hy-worldplay",
@@ -1408,7 +1408,7 @@
       "homepage": "https://3d-models.hunyuan.tencent.com/world/",
       "open_source": true,
       "featured": false,
-      "stars": 1586
+      "stars": 1589
     },
     {
       "id": "sparc3d",
@@ -1432,7 +1432,7 @@
       "homepage": "https://lizhihao6.github.io/Sparc3D",
       "open_source": true,
       "featured": false,
-      "stars": 1353
+      "stars": 1352
     },
     {
       "id": "consistid",
@@ -1456,7 +1456,7 @@
       "homepage": "https://pku-yuangroup.github.io/ConsisID/",
       "open_source": true,
       "featured": false,
-      "stars": 855
+      "stars": 854
     },
     {
       "id": "unianimate-dit",
@@ -1480,7 +1480,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 853
+      "stars": 851
     },
     {
       "id": "wonderworld",
@@ -1528,7 +1528,7 @@
       "homepage": "https://magicdrive-v2.github.io/",
       "open_source": true,
       "featured": false,
-      "stars": 724
+      "stars": 728
     },
     {
       "id": "meanflow",
@@ -1552,7 +1552,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 605
+      "stars": 606
     },
     {
       "id": "epona",
@@ -1576,7 +1576,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 384
+      "stars": 385
     },
     {
       "id": "flashvdm",
@@ -1674,7 +1674,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 260
+      "stars": 261
     },
     {
       "id": "octfusion",
@@ -1845,30 +1845,6 @@
       "stars": 48
     },
     {
-      "id": "noise-diffusion",
-      "title": "Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis",
-      "summary": "Optimizes the initial noisy latent with LVLM guidance to improve prompt-image semantic fidelity across diffusion models.",
-      "artifact": "image-2d",
-      "artifact_title": "Image 2D",
-      "task": "alignment-safety",
-      "venue": "CVPR 2025",
-      "year": 2025,
-      "published_at": "",
-      "domain": [
-        "general"
-      ],
-      "representation": [],
-      "method": [],
-      "conditioning": [],
-      "orgs": [],
-      "paper": "https://arxiv.org/abs/2411.16503",
-      "repo": "https://github.com/Bomingmiao/NoiseDiffusion",
-      "homepage": "",
-      "open_source": true,
-      "featured": false,
-      "stars": 16
-    },
-    {
       "id": "topodit-3d",
       "title": "TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation",
       "summary": "Injects persistent-homology topology cues into diffusion transformers for better point-cloud generation.",
@@ -1887,6 +1863,30 @@
       "orgs": [],
       "paper": "https://arxiv.org/abs/2505.09140",
       "repo": "https://github.com/Zechao-Guan/TopoDiT-3D",
+      "homepage": "",
+      "open_source": true,
+      "featured": false,
+      "stars": 15
+    },
+    {
+      "id": "noise-diffusion",
+      "title": "Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis",
+      "summary": "Optimizes the initial noisy latent with LVLM guidance to improve prompt-image semantic fidelity across diffusion models.",
+      "artifact": "image-2d",
+      "artifact_title": "Image 2D",
+      "task": "alignment-safety",
+      "venue": "CVPR 2025",
+      "year": 2025,
+      "published_at": "",
+      "domain": [
+        "general"
+      ],
+      "representation": [],
+      "method": [],
+      "conditioning": [],
+      "orgs": [],
+      "paper": "https://arxiv.org/abs/2411.16503",
+      "repo": "https://github.com/Bomingmiao/NoiseDiffusion",
       "homepage": "",
       "open_source": true,
       "featured": false,
@@ -4748,7 +4748,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 25911
+      "stars": 25933
     },
     {
       "id": "hunyuanvideo",
@@ -4774,7 +4774,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 12472
+      "stars": 12491
     },
     {
       "id": "triposr",
@@ -4798,7 +4798,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 6877
+      "stars": 6907
     },
     {
       "id": "instantmesh",
@@ -4822,7 +4822,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 4502
+      "stars": 4513
     },
     {
       "id": "unique3d",
@@ -4846,7 +4846,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3580
+      "stars": 3579
     },
     {
       "id": "pixart-sigma",
@@ -4870,7 +4870,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 1938
+      "stars": 1940
     },
     {
       "id": "waymax",
@@ -4894,7 +4894,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 1094
+      "stars": 1097
     },
     {
       "id": "era3d",
@@ -5001,7 +5001,7 @@
       "homepage": "",
       "open_source": true,
       "featured": true,
-      "stars": 35
+      "stars": 36
     }
   ]
 }

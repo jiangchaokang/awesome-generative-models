@@ -1,6 +1,6 @@
 {
   "blocking_errors": 5,
-  "commit": "294bf74e54cccf9e6a8bdc2c95b6d2dc9833f5b7",
+  "commit": "b9c9221af5097e20ae90fd4e8cbb83ba642d3952",
   "findings": [
     {
       "code": "semantic.paper_mismatch",
@@ -153,7 +153,7 @@
       "severity": "notice"
     }
   ],
-  "generated_at": "2026-08-31 09:47:50 UTC",
+  "generated_at": "2026-09-07 08:21:32 UTC",
   "mode": "deep",
   "notices": 3,
   "records_checked": 207,

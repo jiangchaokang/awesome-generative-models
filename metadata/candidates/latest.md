@@ -3,11 +3,11 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-09-07 06:10 UTC`
+- Generated: `2026-09-08 06:02 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-09-07/`
-- New candidates today: **1**
+- Raw files: `metadata/candidates/2026-09-08/`
+- New candidates today: **0**
 - New watched-org repositories today: **0**
 
 ## Review Checklist
@@ -16,12 +16,6 @@
 - Is the link exact and canonical?
 - Is the summary worth writing for the public catalog?
 - Does it belong in the main catalog or only in the watchlist?
-
-## video
-
-| Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
-|--:|:--|:--|:--|:--|:--|:--|
-| 47 | arXiv | 2026-09-04 | **ReaDiT Guidance: Control for Image and Video Generation using Diffusion Transformer Features** | text-to-video | recent paper candidate | [Paper](http://arxiv.org/abs/2609.04649v1) |
 
 ## New Repositories in Watched Organizations
 

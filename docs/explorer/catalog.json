@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-07 08:21 UTC",
+  "generated_at": "2026-09-08 06:02 UTC",
   "records": [
     {
       "id": "driveworld-vla",
@@ -24,7 +24,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 123
+      "stars": 124
     },
     {
       "id": "ifsq",
@@ -72,7 +72,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 39
+      "stars": 40
     },
     {
       "id": "dynflowdrive",
@@ -1056,7 +1056,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 16919
+      "stars": 16944
     },
     {
       "id": "hunyuan3d-2",
@@ -1082,7 +1082,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 14712
+      "stars": 14756
     },
     {
       "id": "trellis",
@@ -1106,7 +1106,7 @@
       "homepage": "https://microsoft.github.io/TRELLIS/",
       "open_source": true,
       "featured": false,
-      "stars": 13542
+      "stars": 13586
     },
     {
       "id": "sana-1.5",
@@ -1130,7 +1130,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 8905
+      "stars": 8952
     },
     {
       "id": "qwen-image",
@@ -1156,7 +1156,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 8280
+      "stars": 8294
     },
     {
       "id": "hunyuanvideo-1.5",
@@ -1182,7 +1182,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 4538
+      "stars": 4547
     },
     {
       "id": "hunyuan3d-2.1",
@@ -1208,7 +1208,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3946
+      "stars": 3984
     },
     {
       "id": "vace",
@@ -1232,7 +1232,7 @@
       "homepage": "https://ali-vilab.github.io/VACE-Page/",
       "open_source": true,
       "featured": false,
-      "stars": 3935
+      "stars": 3936
     },
     {
       "id": "hunyuanimage-3.0",
@@ -1282,7 +1282,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3188
+      "stars": 3184
     },
     {
       "id": "hunyuanworld-1.0",
@@ -1308,7 +1308,7 @@
       "homepage": "",
       "open_source": false,
       "featured": false,
-      "stars": 2924
+      "stars": 2930
     },
     {
       "id": "matrix-game",
@@ -1332,7 +1332,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 2319
+      "stars": 2325
     },
     {
       "id": "hunyuanvideo-i2v",
@@ -1361,6 +1361,30 @@
       "stars": 1840
     },
     {
+      "id": "hy-worldplay",
+      "title": "HY-World 1.5 (WorldPlay): A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency",
+      "summary": "A real-time interactive world model focused on streaming generation, low latency, and long-horizon geometric consistency.",
+      "artifact": "4d-dynamic-scene-world",
+      "artifact_title": "4D Dynamic Scene / World",
+      "task": "world-models",
+      "venue": "arXiv 2025",
+      "year": 2025,
+      "published_at": "",
+      "domain": [
+        "gameplay"
+      ],
+      "representation": [],
+      "method": [],
+      "conditioning": [],
+      "orgs": [],
+      "paper": "https://arxiv.org/abs/2512.14614",
+      "repo": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
+      "homepage": "https://3d-models.hunyuan.tencent.com/world/",
+      "open_source": true,
+      "featured": false,
+      "stars": 1600
+    },
+    {
       "id": "hunyuanworld-voyager",
       "title": "Voyager: Long-Range and World-Consistent Video Diffusion for Explorable 3D Scene Generation",
       "summary": "Voyager is a long-range RGB-D video diffusion model for explorable 3D scene generation with camera control and native 3D reconstruction support.",
@@ -1384,31 +1408,7 @@
       "homepage": "https://3d-models.hunyuan.tencent.com/world/",
       "open_source": true,
       "featured": false,
-      "stars": 1590
-    },
-    {
-      "id": "hy-worldplay",
-      "title": "HY-World 1.5 (WorldPlay): A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency",
-      "summary": "A real-time interactive world model focused on streaming generation, low latency, and long-horizon geometric consistency.",
-      "artifact": "4d-dynamic-scene-world",
-      "artifact_title": "4D Dynamic Scene / World",
-      "task": "world-models",
-      "venue": "arXiv 2025",
-      "year": 2025,
-      "published_at": "",
-      "domain": [
-        "gameplay"
-      ],
-      "representation": [],
-      "method": [],
-      "conditioning": [],
-      "orgs": [],
-      "paper": "https://arxiv.org/abs/2512.14614",
-      "repo": "https://github.com/Tencent-Hunyuan/HY-WorldPlay",
-      "homepage": "https://3d-models.hunyuan.tencent.com/world/",
-      "open_source": true,
-      "featured": false,
-      "stars": 1589
+      "stars": 1595
     },
     {
       "id": "sparc3d",
@@ -1432,7 +1432,7 @@
       "homepage": "https://lizhihao6.github.io/Sparc3D",
       "open_source": true,
       "featured": false,
-      "stars": 1352
+      "stars": 1353
     },
     {
       "id": "consistid",
@@ -1456,7 +1456,7 @@
       "homepage": "https://pku-yuangroup.github.io/ConsisID/",
       "open_source": true,
       "featured": false,
-      "stars": 854
+      "stars": 856
     },
     {
       "id": "unianimate-dit",
@@ -1480,7 +1480,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 851
+      "stars": 850
     },
     {
       "id": "wonderworld",
@@ -1528,7 +1528,7 @@
       "homepage": "https://magicdrive-v2.github.io/",
       "open_source": true,
       "featured": false,
-      "stars": 728
+      "stars": 729
     },
     {
       "id": "meanflow",
@@ -1552,7 +1552,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 606
+      "stars": 608
     },
     {
       "id": "epona",
@@ -1576,7 +1576,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 385
+      "stars": 387
     },
     {
       "id": "flashvdm",
@@ -1602,7 +1602,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 334
+      "stars": 335
     },
     {
       "id": "one-prompt-one-story",
@@ -1674,7 +1674,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 261
+      "stars": 262
     },
     {
       "id": "octfusion",
@@ -1746,7 +1746,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 105
+      "stars": 106
     },
     {
       "id": "improving-long-text-alignment",
@@ -1818,7 +1818,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 68
+      "stars": 67
     },
     {
       "id": "bytheway",
@@ -4748,7 +4748,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 25933
+      "stars": 25943
     },
     {
       "id": "hunyuanvideo",
@@ -4774,7 +4774,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 12491
+      "stars": 12499
     },
     {
       "id": "triposr",
@@ -4798,7 +4798,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 6907
+      "stars": 6933
     },
     {
       "id": "instantmesh",
@@ -4822,7 +4822,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 4513
+      "stars": 4520
     },
     {
       "id": "unique3d",
@@ -4846,7 +4846,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3579
+      "stars": 3580
     },
     {
       "id": "pixart-sigma",
@@ -4870,7 +4870,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 1940
+      "stars": 1939
     },
     {
       "id": "waymax",
@@ -4894,7 +4894,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 1097
+      "stars": 1098
     },
     {
       "id": "era3d",
@@ -4918,7 +4918,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 645
+      "stars": 646
     },
     {
       "id": "rgb2point",

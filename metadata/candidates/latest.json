@@ -1,15 +1,1 @@
-[
-  {
-    "source": "arXiv",
-    "artifact": "video",
-    "task": "text-to-video",
-    "title": "ReaDiT Guidance: Control for Image and Video Generation using Diffusion Transformer Features",
-    "paper": "http://arxiv.org/abs/2609.04649v1",
-    "repo": "",
-    "homepage": "",
-    "abstract": "We present DiT Readout (ReaDiT) Guidance, a lightweight framework for controlling generation with Diffusion Transformer (DiT) models via their internal feature representations. ReaDiT Guidance uses features from a single DiT block to steer the generative process according to spatial targets - like depth, pose, or edge maps - provided at test time. Furthermore, since modern text-to-video models are largely built on DiT backbones, ReaDiT Guidance naturally extends to video generation, enabling camera and motion control. Experimental results demonstrate that our approach achieves competitive or improved results compared to existing feature-based and off-the-shelf adapter-based approaches while requiring fewer parameters.",
-    "published": "2026-09-04T02:30:18Z",
-    "score": 47,
-    "why": "recent paper candidate"
-  }
-]
+[]

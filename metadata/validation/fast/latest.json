@@ -1,6 +1,6 @@
 {
   "blocking_errors": 0,
-  "commit": "9d117dce1336234d232093ef9b7fd1b5f2cfc08c",
+  "commit": "af4b4e1460545ce223ce228ad44719f92e39526d",
   "findings": [
     {
       "code": "metadata.organization",
@@ -93,7 +93,7 @@
       "severity": "warning"
     }
   ],
-  "generated_at": "2026-09-08 06:02:18 UTC",
+  "generated_at": "2026-09-09 06:04:50 UTC",
   "mode": "fast",
   "notices": 0,
   "records_checked": 207,

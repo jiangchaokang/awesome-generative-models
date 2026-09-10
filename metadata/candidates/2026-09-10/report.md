@@ -3,11 +3,11 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-08-10 03:19 UTC`
+- Generated: `2026-09-10 06:04 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-08-10/`
-- New candidates today: **2**
+- Raw files: `metadata/candidates/2026-09-10/`
+- New candidates today: **3**
 - New watched-org repositories today: **0**
 
 ## Review Checklist
@@ -21,13 +21,19 @@
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 48 | arXiv | 2026-08-07 | **CANIS: Generation-Assisted 3D Canonicalization via an Image-Semantic Bridge** | part-aware-generation | recent paper candidate | [Paper](http://arxiv.org/abs/2608.07256v1) |
+| 50 | arXiv | 2026-09-09 | **Guiding Image-to-3D Generation with Test-Time Partial Observations** | part-aware-generation | recent paper candidate | [Paper](http://arxiv.org/abs/2609.10531v1) |
 
 ## 4d-dynamic-scene-world
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 58 | arXiv | 2026-08-07 | **Scenix: Sparse-View 3D Scene Reconstruction via Executable Scene Programs** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2608.07012v1) |
+| 59 | arXiv | 2026-09-09 | **Arti-JEPA: Adapting Video World Model to Real-Time MRI of the Vocal Tract for Speech-Production Analysis** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2609.09757v1) |
+
+## video
+
+| Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
+|--:|:--|:--|:--|:--|:--|:--|
+| 41 | arXiv | 2026-08-31 | **AgenticGen: Reward-Guided Agentic Video Generation for Advertising** | human-animation | recent paper candidate | [Paper](http://arxiv.org/abs/2609.09187v1) |
 
 ## New Repositories in Watched Organizations
 

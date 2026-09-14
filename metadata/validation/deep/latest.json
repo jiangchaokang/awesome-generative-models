@@ -1,6 +1,6 @@
 {
   "blocking_errors": 5,
-  "commit": "b9c9221af5097e20ae90fd4e8cbb83ba642d3952",
+  "commit": "0672250dab7e62ba18d3bee7f2a952fb4d5caecc",
   "findings": [
     {
       "code": "semantic.paper_mismatch",
@@ -135,6 +135,12 @@
       "severity": "warning"
     },
     {
+      "code": "source.arxiv_api",
+      "location": "catalog",
+      "message": "arXiv API was partially unavailable; 200 title checks were skipped.",
+      "severity": "warning"
+    },
+    {
       "code": "semantic.repo_weak_match",
       "location": "10-image-2d/flux (image_2d.jsonl:49)",
       "message": "Repository name/description weakly matches the catalog title (score=0.14).",
@@ -153,11 +159,11 @@
       "severity": "notice"
     }
   ],
-  "generated_at": "2026-09-07 08:21:32 UTC",
+  "generated_at": "2026-09-14 08:59:24 UTC",
   "mode": "deep",
   "notices": 3,
   "records_checked": 207,
   "status": "fail",
   "version": 2,
-  "warnings": 17
+  "warnings": 18
 }

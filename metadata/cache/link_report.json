@@ -203,7 +203,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-07-31T13:58:55Z",
       "reason": "",
-      "stars": 25943,
+      "stars": 25957,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -270,7 +270,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-23T13:12:44Z",
       "reason": "",
-      "stars": 3255,
+      "stars": 3259,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -490,7 +490,7 @@
       "license": "MIT",
       "pushed_at": "2026-03-13T05:29:12Z",
       "reason": "",
-      "stars": 608,
+      "stars": 609,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -660,7 +660,7 @@
       "title": "PixArt-\\Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation"
     },
     "paper_semantics": {
-      "observed_title": "PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation",
+      "observed_title": "PixArt-\\Sigma: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation",
       "ok": true,
       "score": 1.0,
       "source": "arXiv API"
@@ -675,7 +675,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2024-10-31T01:20:19Z",
       "reason": "",
-      "stars": 1939,
+      "stars": 1940,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -787,7 +787,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-02-10T07:37:37Z",
       "reason": "",
-      "stars": 8294,
+      "stars": 8309,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -897,9 +897,9 @@
       "full_name": "NVlabs/Sana",
       "homepage": "https://nvlabs.github.io/Sana/docs/",
       "license": "Apache-2.0",
-      "pushed_at": "2026-09-07T08:00:14Z",
+      "pushed_at": "2026-09-11T11:46:32Z",
       "reason": "",
-      "stars": 8952,
+      "stars": 9075,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1357,7 +1357,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-11-04T11:19:04Z",
       "reason": "",
-      "stars": 13003,
+      "stars": 13012,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1405,7 +1405,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-04-14T03:25:24Z",
       "reason": "",
-      "stars": 856,
+      "stars": 857,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1578,7 +1578,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-06-11T11:08:09Z",
       "reason": "",
-      "stars": 79,
+      "stars": 81,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1613,7 +1613,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-29T09:33:50Z",
       "reason": "",
-      "stars": 12499,
+      "stars": 12524,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1648,7 +1648,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-10T06:14:59Z",
       "reason": "",
-      "stars": 4547,
+      "stars": 4551,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2142,7 +2142,7 @@
       "license": "MIT",
       "pushed_at": "2025-03-17T03:26:54Z",
       "reason": "",
-      "stars": 3184,
+      "stars": 3185,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2238,7 +2238,7 @@
       "license": "",
       "pushed_at": "2025-04-27T08:11:49Z",
       "reason": "",
-      "stars": 850,
+      "stars": 851,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2286,7 +2286,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-10-17T05:46:57Z",
       "reason": "",
-      "stars": 3936,
+      "stars": 3946,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2369,7 +2369,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-03-05T09:38:07Z",
       "reason": "",
-      "stars": 16944,
+      "stars": 16973,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2711,7 +2711,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-28T09:58:12Z",
       "reason": "",
-      "stars": 14756,
+      "stars": 14842,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2732,7 +2732,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-17T10:10:07Z",
       "reason": "",
-      "stars": 3984,
+      "stars": 4020,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2818,7 +2818,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-01-03T09:09:13Z",
       "reason": "",
-      "stars": 4520,
+      "stars": 4521,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3125,7 +3125,7 @@
       "license": "",
       "pushed_at": "2025-06-16T05:29:19Z",
       "reason": "",
-      "stars": 1353,
+      "stars": 1358,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3256,7 +3256,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-26T07:27:56Z",
       "reason": "",
-      "stars": 13586,
+      "stars": 13637,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3291,7 +3291,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-04T07:11:09Z",
       "reason": "",
-      "stars": 6933,
+      "stars": 6952,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3374,7 +3374,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-17T21:29:05Z",
       "reason": "",
-      "stars": 3580,
+      "stars": 3585,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4146,7 +4146,7 @@
       "license": "",
       "pushed_at": "2026-07-08T09:44:43Z",
       "reason": "",
-      "stars": 124,
+      "stars": 126,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4226,7 +4226,7 @@
       "license": "",
       "pushed_at": "2026-03-23T06:06:02Z",
       "reason": "",
-      "stars": 24,
+      "stars": 25,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4261,7 +4261,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-22T06:35:46Z",
       "reason": "",
-      "stars": 387,
+      "stars": 389,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4360,7 +4360,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-05-12T03:05:38Z",
       "reason": "",
-      "stars": 262,
+      "stars": 263,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4491,7 +4491,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-10T07:10:23Z",
       "reason": "",
-      "stars": 1600,
+      "stars": 1602,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4526,7 +4526,7 @@
       "license": "MIT",
       "pushed_at": "2026-03-30T06:32:00Z",
       "reason": "",
-      "stars": 2325,
+      "stars": 2331,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4572,9 +4572,9 @@
       "full_name": "NVIDIA/cosmos",
       "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
       "license": "NOASSERTION",
-      "pushed_at": "2026-09-04T21:00:57Z",
+      "pushed_at": "2026-09-12T01:30:23Z",
       "reason": "",
-      "stars": 11753,
+      "stars": 11814,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4676,7 +4676,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-23T04:29:20Z",
       "reason": "",
-      "stars": 1098,
+      "stars": 1099,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4711,7 +4711,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-12-31T15:00:36Z",
       "reason": "",
-      "stars": 106,
+      "stars": 108,
       "state": "ok",
       "status": 200,
       "title": ""

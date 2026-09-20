@@ -3,10 +3,10 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-09-19 05:59 UTC`
+- Generated: `2026-09-20 06:24 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-09-19/`
+- Raw files: `metadata/candidates/2026-09-20/`
 - New candidates today: **0**
 - New watched-org repositories today: **0**
 

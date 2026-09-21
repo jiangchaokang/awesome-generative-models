@@ -203,7 +203,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-07-31T13:58:55Z",
       "reason": "",
-      "stars": 25957,
+      "stars": 25973,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -270,7 +270,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-23T13:12:44Z",
       "reason": "",
-      "stars": 3259,
+      "stars": 3268,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -490,7 +490,7 @@
       "license": "MIT",
       "pushed_at": "2026-03-13T05:29:12Z",
       "reason": "",
-      "stars": 609,
+      "stars": 613,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -675,7 +675,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2024-10-31T01:20:19Z",
       "reason": "",
-      "stars": 1940,
+      "stars": 1941,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -787,7 +787,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-02-10T07:37:37Z",
       "reason": "",
-      "stars": 8309,
+      "stars": 8349,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -897,9 +897,9 @@
       "full_name": "NVlabs/Sana",
       "homepage": "https://nvlabs.github.io/Sana/docs/",
       "license": "Apache-2.0",
-      "pushed_at": "2026-09-11T11:46:32Z",
+      "pushed_at": "2026-09-21T07:49:38Z",
       "reason": "",
-      "stars": 9075,
+      "stars": 9124,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1357,7 +1357,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-11-04T11:19:04Z",
       "reason": "",
-      "stars": 13012,
+      "stars": 13032,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1613,7 +1613,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-29T09:33:50Z",
       "reason": "",
-      "stars": 12524,
+      "stars": 12550,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1648,7 +1648,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-10T06:14:59Z",
       "reason": "",
-      "stars": 4551,
+      "stars": 4555,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1669,7 +1669,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-07T06:13:09Z",
       "reason": "",
-      "stars": 1840,
+      "stars": 1843,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1788,7 +1788,7 @@
       "license": "AGPL-3.0",
       "pushed_at": "2025-06-26T01:36:37Z",
       "reason": "",
-      "stars": 729,
+      "stars": 728,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2142,7 +2142,7 @@
       "license": "MIT",
       "pushed_at": "2025-03-17T03:26:54Z",
       "reason": "",
-      "stars": 3185,
+      "stars": 3186,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2229,23 +2229,12 @@
       "source": "arXiv API"
     },
     "repo": {
-      "archived": false,
       "content_type": "",
-      "description": "UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer",
       "final_url": "https://github.com/ali-vilab/UniAnimate-DiT",
-      "full_name": "ali-vilab/UniAnimate-DiT",
-      "homepage": "",
-      "license": "",
-      "pushed_at": "2025-04-27T08:11:49Z",
-      "reason": "",
-      "stars": 851,
-      "state": "ok",
-      "status": 200,
+      "reason": "GitHub API unavailable: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>",
+      "state": "unknown",
+      "status": 0,
       "title": ""
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 1.0
     }
   },
   "20-video/vace (video.jsonl:39)": {
@@ -2286,7 +2275,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-10-17T05:46:57Z",
       "reason": "",
-      "stars": 3946,
+      "stars": 3952,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2369,7 +2358,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-03-05T09:38:07Z",
       "reason": "",
-      "stars": 16973,
+      "stars": 17015,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2513,7 +2502,7 @@
       "license": "",
       "pushed_at": "2026-02-13T02:39:10Z",
       "reason": "",
-      "stars": 40,
+      "stars": 41,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2580,7 +2569,7 @@
       "license": "AGPL-3.0",
       "pushed_at": "2024-12-09T05:41:15Z",
       "reason": "",
-      "stars": 646,
+      "stars": 645,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2711,7 +2700,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-28T09:58:12Z",
       "reason": "",
-      "stars": 14842,
+      "stars": 14924,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2732,7 +2721,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-17T10:10:07Z",
       "reason": "",
-      "stars": 4020,
+      "stars": 4049,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2818,7 +2807,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-01-03T09:09:13Z",
       "reason": "",
-      "stars": 4521,
+      "stars": 4534,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3125,7 +3114,7 @@
       "license": "",
       "pushed_at": "2025-06-16T05:29:19Z",
       "reason": "",
-      "stars": 1358,
+      "stars": 1359,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3256,7 +3245,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-26T07:27:56Z",
       "reason": "",
-      "stars": 13637,
+      "stars": 13684,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3291,7 +3280,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-04T07:11:09Z",
       "reason": "",
-      "stars": 6952,
+      "stars": 6967,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3374,7 +3363,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-17T21:29:05Z",
       "reason": "",
-      "stars": 3585,
+      "stars": 3590,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4005,7 +3994,7 @@
       "license": "",
       "pushed_at": "2025-04-14T04:52:47Z",
       "reason": "",
-      "stars": 741,
+      "stars": 743,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4146,7 +4135,7 @@
       "license": "",
       "pushed_at": "2026-07-08T09:44:43Z",
       "reason": "",
-      "stars": 126,
+      "stars": 127,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4261,7 +4250,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-22T06:35:46Z",
       "reason": "",
-      "stars": 389,
+      "stars": 388,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4360,7 +4349,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-05-12T03:05:38Z",
       "reason": "",
-      "stars": 263,
+      "stars": 264,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4395,7 +4384,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-15T17:27:25Z",
       "reason": "",
-      "stars": 2930,
+      "stars": 2936,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4443,7 +4432,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-15T17:30:08Z",
       "reason": "",
-      "stars": 1595,
+      "stars": 1597,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4491,7 +4480,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-10T07:10:23Z",
       "reason": "",
-      "stars": 1602,
+      "stars": 1604,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4526,7 +4515,7 @@
       "license": "MIT",
       "pushed_at": "2026-03-30T06:32:00Z",
       "reason": "",
-      "stars": 2331,
+      "stars": 2336,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4572,9 +4561,9 @@
       "full_name": "NVIDIA/cosmos",
       "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
       "license": "NOASSERTION",
-      "pushed_at": "2026-09-12T01:30:23Z",
+      "pushed_at": "2026-09-21T08:37:57Z",
       "reason": "",
-      "stars": 11814,
+      "stars": 11874,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4676,7 +4665,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-23T04:29:20Z",
       "reason": "",
-      "stars": 1099,
+      "stars": 1102,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4711,7 +4700,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-12-31T15:00:36Z",
       "reason": "",
-      "stars": 108,
+      "stars": 109,
       "state": "ok",
       "status": 200,
       "title": ""

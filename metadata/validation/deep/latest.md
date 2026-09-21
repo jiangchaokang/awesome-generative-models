@@ -1,11 +1,11 @@
 # Validation Report — Deep
 
 - Status: **FAIL**
-- Generated: `2026-09-14 08:59:24 UTC`
-- Commit: `0672250dab7e`
+- Generated: `2026-09-21 08:59:53 UTC`
+- Commit: `382f068cbe1c`
 - Records checked: **207**
 - Blocking errors: **5**
-- Warnings: **18**
+- Warnings: **19**
 - Notices: **3**
 
 ## Blocking Errors
@@ -27,6 +27,7 @@
 - `metadata.missing_paper` — 20-video/hunyuanvideo-i2v (video.jsonl:12): Missing `paper` link.
 - `metadata.missing_paper` — 20-video/kling (video.jsonl:17): Missing `paper` link.
 - `metadata.organization` — 20-video/unianimate-dit (video.jsonl:51): Repository owner suggests organization `Alibaba VILab`.
+- `network.repo.unknown` — 20-video/unianimate-dit (video.jsonl:51): `repo` could not be conclusively verified: GitHub API unavailable: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>.
 - `metadata.organization` — 20-video/vace (video.jsonl:39): Repository owner suggests organization `Alibaba VILab`.
 - `metadata.organization` — 20-video/wan2.1 (video.jsonl:10): Repository owner suggests organization `Alibaba Wan`.
 - `metadata.missing_paper` — 30-3d-object-asset/hunyuan3d-2.1 (object_3d.jsonl:27): Missing `paper` link.
@@ -50,53 +51,52 @@
 
 | Repository | Stars | Last push | Archived | License |
 |:--|--:|:--|:--:|:--|
-| `black-forest-labs/flux` | 25957 | 2025-07-31 | No | Apache-2.0 |
-| `Wan-Video/Wan2.1` | 16973 | 2026-03-05 | No | Apache-2.0 |
-| `Tencent-Hunyuan/Hunyuan3D-2` | 14842 | 2025-10-28 | No | NOASSERTION |
-| `microsoft/TRELLIS` | 13637 | 2026-06-26 | No | MIT |
-| `zai-org/CogVideo` | 13012 | 2025-11-04 | No | Apache-2.0 |
-| `Tencent-Hunyuan/HunyuanVideo` | 12524 | 2026-06-29 | No | NOASSERTION |
-| `NVIDIA/cosmos` | 11814 | 2026-09-12 | No | NOASSERTION |
-| `NVlabs/Sana` | 9075 | 2026-09-11 | No | Apache-2.0 |
-| `QwenLM/Qwen-Image` | 8309 | 2026-02-10 | No | Apache-2.0 |
-| `VAST-AI-Research/TripoSR` | 6952 | 2026-06-04 | No | MIT |
-| `Tencent-Hunyuan/HunyuanVideo-1.5` | 4551 | 2026-04-10 | No | NOASSERTION |
-| `TencentARC/InstantMesh` | 4521 | 2025-01-03 | No | Apache-2.0 |
-| `Tencent-Hunyuan/Hunyuan3D-2.1` | 4020 | 2025-10-17 | No | NOASSERTION |
-| `ali-vilab/VACE` | 3946 | 2025-10-17 | No | Apache-2.0 |
-| `AiuniAI/Unique3D` | 3585 | 2025-07-17 | No | MIT |
-| `Tencent-Hunyuan/HunyuanImage-3.0` | 3259 | 2026-06-23 | No | NOASSERTION |
-| `stepfun-ai/Step-Video-T2V` | 3185 | 2025-03-17 | No | MIT |
-| `Tencent-Hunyuan/HunyuanWorld-1.0` | 2930 | 2026-04-15 | No | NOASSERTION |
-| `SkyworkAI/Matrix-Game` | 2331 | 2026-03-30 | No | MIT |
-| `PixArt-alpha/PixArt-sigma` | 1940 | 2024-10-31 | No | Apache-2.0 |
-| `Tencent-Hunyuan/HunyuanVideo-I2V` | 1840 | 2026-04-07 | No | NOASSERTION |
-| `Tencent-Hunyuan/HY-WorldPlay` | 1602 | 2026-06-10 | No | NOASSERTION |
-| `Tencent-Hunyuan/HunyuanWorld-Voyager` | 1595 | 2026-04-15 | No | NOASSERTION |
-| `lizhihao6/Sparc3D` | 1358 | 2025-06-16 | No | — |
-| `waymo-research/waymax` | 1099 | 2025-10-23 | No | NOASSERTION |
+| `black-forest-labs/flux` | 25973 | 2025-07-31 | No | Apache-2.0 |
+| `Wan-Video/Wan2.1` | 17015 | 2026-03-05 | No | Apache-2.0 |
+| `Tencent-Hunyuan/Hunyuan3D-2` | 14924 | 2025-10-28 | No | NOASSERTION |
+| `microsoft/TRELLIS` | 13684 | 2026-06-26 | No | MIT |
+| `zai-org/CogVideo` | 13032 | 2025-11-04 | No | Apache-2.0 |
+| `Tencent-Hunyuan/HunyuanVideo` | 12550 | 2026-06-29 | No | NOASSERTION |
+| `NVIDIA/cosmos` | 11874 | 2026-09-21 | No | NOASSERTION |
+| `NVlabs/Sana` | 9124 | 2026-09-21 | No | Apache-2.0 |
+| `QwenLM/Qwen-Image` | 8349 | 2026-02-10 | No | Apache-2.0 |
+| `VAST-AI-Research/TripoSR` | 6967 | 2026-06-04 | No | MIT |
+| `Tencent-Hunyuan/HunyuanVideo-1.5` | 4555 | 2026-04-10 | No | NOASSERTION |
+| `TencentARC/InstantMesh` | 4534 | 2025-01-03 | No | Apache-2.0 |
+| `Tencent-Hunyuan/Hunyuan3D-2.1` | 4049 | 2025-10-17 | No | NOASSERTION |
+| `ali-vilab/VACE` | 3952 | 2025-10-17 | No | Apache-2.0 |
+| `AiuniAI/Unique3D` | 3590 | 2025-07-17 | No | MIT |
+| `Tencent-Hunyuan/HunyuanImage-3.0` | 3268 | 2026-06-23 | No | NOASSERTION |
+| `stepfun-ai/Step-Video-T2V` | 3186 | 2025-03-17 | No | MIT |
+| `Tencent-Hunyuan/HunyuanWorld-1.0` | 2936 | 2026-04-15 | No | NOASSERTION |
+| `SkyworkAI/Matrix-Game` | 2336 | 2026-03-30 | No | MIT |
+| `PixArt-alpha/PixArt-sigma` | 1941 | 2024-10-31 | No | Apache-2.0 |
+| `Tencent-Hunyuan/HunyuanVideo-I2V` | 1843 | 2026-04-07 | No | NOASSERTION |
+| `Tencent-Hunyuan/HY-WorldPlay` | 1604 | 2026-06-10 | No | NOASSERTION |
+| `Tencent-Hunyuan/HunyuanWorld-Voyager` | 1597 | 2026-04-15 | No | NOASSERTION |
+| `lizhihao6/Sparc3D` | 1359 | 2025-06-16 | No | — |
+| `waymo-research/waymax` | 1102 | 2025-10-23 | No | NOASSERTION |
 | `PKU-YuanGroup/ConsisID` | 857 | 2026-04-14 | No | Apache-2.0 |
-| `ali-vilab/UniAnimate-DiT` | 851 | 2025-04-27 | No | — |
-| `KovenYu/WonderWorld` | 741 | 2025-04-14 | No | — |
-| `flymin/MagicDrive-V2` | 729 | 2025-06-26 | No | AGPL-3.0 |
-| `pengHTYX/Era3D` | 646 | 2024-12-09 | No | AGPL-3.0 |
-| `Gsunshine/meanflow` | 609 | 2026-03-13 | No | MIT |
-| `Kevin-thu/Epona` | 389 | 2025-07-22 | No | MIT |
+| `KovenYu/WonderWorld` | 743 | 2025-04-14 | No | — |
+| `flymin/MagicDrive-V2` | 728 | 2025-06-26 | No | AGPL-3.0 |
+| `pengHTYX/Era3D` | 645 | 2024-12-09 | No | AGPL-3.0 |
+| `Gsunshine/meanflow` | 613 | 2026-03-13 | No | MIT |
+| `Kevin-thu/Epona` | 388 | 2025-07-22 | No | MIT |
 | `Tencent-Hunyuan/FlashVDM` | 335 | 2026-03-13 | No | NOASSERTION |
 | `byliutao/1Prompt1Story` | 321 | 2025-10-20 | No | MIT |
 | `bytedance/X-Dyna` | 268 | 2025-01-30 | No | Apache-2.0 |
-| `LMD0311/HERMES` | 263 | 2026-05-12 | No | Apache-2.0 |
+| `LMD0311/HERMES` | 264 | 2026-05-12 | No | Apache-2.0 |
 | `octree-nn/octfusion` | 231 | 2025-07-02 | No | — |
 | `InternRobotics/Infinite-Mobility` | 196 | 2025-07-25 | No | BSD-3-Clause |
 | `showlab/D-AR` | 138 | 2026-01-29 | No | MIT |
-| `liulin815/DriveWorld-VLA` | 126 | 2026-07-08 | No | — |
-| `ucaszyp/World4Drive` | 108 | 2025-12-31 | No | Apache-2.0 |
+| `liulin815/DriveWorld-VLA` | 127 | 2026-07-08 | No | — |
+| `ucaszyp/World4Drive` | 109 | 2025-12-31 | No | Apache-2.0 |
 | `Tencent-Hunyuan/iFSQ` | 106 | 2026-01-27 | No | NOASSERTION |
 | `luping-liu/LongAlign` | 83 | 2025-04-23 | No | Apache-2.0 |
 | `nktoan/h-edit` | 81 | 2025-06-11 | No | Apache-2.0 |
 | `pittisl/PhyT2V` | 67 | 2025-07-31 | No | — |
 | `Bujiazi/ByTheWay` | 48 | 2025-10-10 | No | — |
-| `Advocate99/AssetFormer` | 40 | 2026-02-13 | No | — |
+| `Advocate99/AssetFormer` | 41 | 2026-02-13 | No | — |
 | `jiangchaokang/VectorWorld` | 36 | 2026-06-23 | No | — |
 | `xiaolul2/DynFlowDrive` | 25 | 2026-03-23 | No | — |
 | `Bomingmiao/NoiseDiffusion` | 15 | 2025-11-08 | No | MIT |

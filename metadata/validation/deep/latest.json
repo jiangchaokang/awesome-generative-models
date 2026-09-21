@@ -1,6 +1,6 @@
 {
   "blocking_errors": 5,
-  "commit": "0672250dab7e62ba18d3bee7f2a952fb4d5caecc",
+  "commit": "382f068cbe1c270296d2999fd134e31724479a00",
   "findings": [
     {
       "code": "semantic.paper_mismatch",
@@ -87,6 +87,12 @@
       "severity": "warning"
     },
     {
+      "code": "network.repo.unknown",
+      "location": "20-video/unianimate-dit (video.jsonl:51)",
+      "message": "`repo` could not be conclusively verified: GitHub API unavailable: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>.",
+      "severity": "warning"
+    },
+    {
       "code": "metadata.organization",
       "location": "20-video/vace (video.jsonl:39)",
       "message": "Repository owner suggests organization `Alibaba VILab`.",
@@ -159,11 +165,11 @@
       "severity": "notice"
     }
   ],
-  "generated_at": "2026-09-14 08:59:24 UTC",
+  "generated_at": "2026-09-21 08:59:53 UTC",
   "mode": "deep",
   "notices": 3,
   "records_checked": 207,
   "status": "fail",
   "version": 2,
-  "warnings": 18
+  "warnings": 19
 }

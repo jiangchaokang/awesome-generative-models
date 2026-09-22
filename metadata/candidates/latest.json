@@ -1,17 +1,1 @@
-[
-  {
-    "source": "GitHub",
-    "artifact": "image-2d",
-    "task": "text-to-image",
-    "title": "Qwen-Image-2.1",
-    "paper": "",
-    "repo": "https://github.com/QwenLM/Qwen-Image-2.1",
-    "homepage": "",
-    "abstract": "Qwen's most powerful open-source image generation model",
-    "published": "",
-    "created_at": "2026-09-14T04:12:17Z",
-    "updated_at": "2026-09-21T06:29:48Z",
-    "score": 79,
-    "why": "new repository in watched organization `Alibaba`"
-  }
-]
+[]

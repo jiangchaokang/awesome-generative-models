@@ -1,17 +1,1 @@
-[
-  {
-    "source": "GitHub",
-    "artifact": "4d-dynamic-scene-world",
-    "task": "world-models",
-    "title": "WorldCrafter",
-    "paper": "",
-    "repo": "https://github.com/TencentARC/WorldCrafter",
-    "homepage": "https://drexubery.github.io/WorldCrafter/",
-    "abstract": "[Arxiv 2026] WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
-    "published": "",
-    "created_at": "2026-09-14T09:03:58Z",
-    "updated_at": "2026-09-24T22:39:40Z",
-    "score": 57,
-    "why": "new repository in watched organization `Tencent ARC`"
-  }
-]
+[]

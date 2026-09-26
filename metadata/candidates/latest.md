@@ -3,12 +3,12 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-09-25 06:11 UTC`
+- Generated: `2026-09-26 06:11 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-09-25/`
-- New candidates today: **1**
-- New watched-org repositories today: **1**
+- Raw files: `metadata/candidates/2026-09-26/`
+- New candidates today: **0**
+- New watched-org repositories today: **0**
 
 ## ⚠️ Fetch Errors
 
@@ -27,14 +27,6 @@ Some sources could not be reached this run; today's report may be incomplete for
 - Is the summary worth writing for the public catalog?
 - Does it belong in the main catalog or only in the watchlist?
 
-## 4d-dynamic-scene-world
-
-| Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
-|--:|:--|:--|:--|:--|:--|:--|
-| 57 | GitHub | 2026-09-14 | **WorldCrafter** | world-models | new repository in watched organization `Tencent ARC` | [Repo](https://github.com/TencentARC/WorldCrafter) / [Home](https://drexubery.github.io/WorldCrafter/) |
-
 ## New Repositories in Watched Organizations
 
-| Organization | Repo | Stars | Created | Why it may matter |
-|:--|:--|--:|:--|:--|
-| Tencent ARC | [TencentARC/WorldCrafter](https://github.com/TencentARC/WorldCrafter) | 346 | 2026-09-14 | new repository in watched organization `Tencent ARC` |
+- No new watched-org repositories were found.

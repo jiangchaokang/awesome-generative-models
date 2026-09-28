@@ -203,7 +203,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-07-31T13:58:55Z",
       "reason": "",
-      "stars": 25973,
+      "stars": 25987,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -270,7 +270,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-23T13:12:44Z",
       "reason": "",
-      "stars": 3268,
+      "stars": 3279,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -592,7 +592,7 @@
       "license": "MIT",
       "pushed_at": "2025-10-20T04:52:19Z",
       "reason": "",
-      "stars": 321,
+      "stars": 322,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -675,7 +675,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2024-10-31T01:20:19Z",
       "reason": "",
-      "stars": 1941,
+      "stars": 1940,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -787,7 +787,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-02-10T07:37:37Z",
       "reason": "",
-      "stars": 8349,
+      "stars": 8380,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -897,9 +897,9 @@
       "full_name": "NVlabs/Sana",
       "homepage": "https://nvlabs.github.io/Sana/docs/",
       "license": "Apache-2.0",
-      "pushed_at": "2026-09-21T07:49:38Z",
+      "pushed_at": "2026-09-27T06:57:06Z",
       "reason": "",
-      "stars": 9124,
+      "stars": 9158,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1357,7 +1357,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-11-04T11:19:04Z",
       "reason": "",
-      "stars": 13032,
+      "stars": 13047,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1405,7 +1405,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-04-14T03:25:24Z",
       "reason": "",
-      "stars": 857,
+      "stars": 861,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1613,7 +1613,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-29T09:33:50Z",
       "reason": "",
-      "stars": 12550,
+      "stars": 12571,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1648,7 +1648,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-10T06:14:59Z",
       "reason": "",
-      "stars": 4555,
+      "stars": 4560,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1669,7 +1669,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-07T06:13:09Z",
       "reason": "",
-      "stars": 1843,
+      "stars": 1844,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1788,7 +1788,7 @@
       "license": "AGPL-3.0",
       "pushed_at": "2025-06-26T01:36:37Z",
       "reason": "",
-      "stars": 728,
+      "stars": 727,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2142,7 +2142,7 @@
       "license": "MIT",
       "pushed_at": "2025-03-17T03:26:54Z",
       "reason": "",
-      "stars": 3186,
+      "stars": 3185,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2229,12 +2229,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer",
       "final_url": "https://github.com/ali-vilab/UniAnimate-DiT",
-      "reason": "GitHub API unavailable: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>",
-      "state": "unknown",
-      "status": 0,
+      "full_name": "ali-vilab/UniAnimate-DiT",
+      "homepage": "",
+      "license": "",
+      "pushed_at": "2025-04-27T08:11:49Z",
+      "reason": "",
+      "stars": 854,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "20-video/vace (video.jsonl:39)": {
@@ -2275,7 +2286,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-10-17T05:46:57Z",
       "reason": "",
-      "stars": 3952,
+      "stars": 3955,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2358,7 +2369,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-03-05T09:38:07Z",
       "reason": "",
-      "stars": 17015,
+      "stars": 17054,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2700,7 +2711,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-28T09:58:12Z",
       "reason": "",
-      "stars": 14924,
+      "stars": 14980,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2721,7 +2732,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-17T10:10:07Z",
       "reason": "",
-      "stars": 4049,
+      "stars": 4087,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2807,7 +2818,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-01-03T09:09:13Z",
       "reason": "",
-      "stars": 4534,
+      "stars": 4541,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2941,7 +2952,7 @@
       "license": "",
       "pushed_at": "2025-07-02T13:28:30Z",
       "reason": "",
-      "stars": 231,
+      "stars": 232,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3114,7 +3125,7 @@
       "license": "",
       "pushed_at": "2025-06-16T05:29:19Z",
       "reason": "",
-      "stars": 1359,
+      "stars": 1358,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3245,7 +3256,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-26T07:27:56Z",
       "reason": "",
-      "stars": 13684,
+      "stars": 13715,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3280,7 +3291,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-04T07:11:09Z",
       "reason": "",
-      "stars": 6967,
+      "stars": 6989,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3363,7 +3374,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-17T21:29:05Z",
       "reason": "",
-      "stars": 3590,
+      "stars": 3592,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3994,7 +4005,7 @@
       "license": "",
       "pushed_at": "2025-04-14T04:52:47Z",
       "reason": "",
-      "stars": 743,
+      "stars": 745,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4215,7 +4226,7 @@
       "license": "",
       "pushed_at": "2026-03-23T06:06:02Z",
       "reason": "",
-      "stars": 25,
+      "stars": 26,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4432,7 +4443,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-15T17:30:08Z",
       "reason": "",
-      "stars": 1597,
+      "stars": 1599,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4480,7 +4491,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-10T07:10:23Z",
       "reason": "",
-      "stars": 1604,
+      "stars": 1606,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4515,7 +4526,7 @@
       "license": "MIT",
       "pushed_at": "2026-03-30T06:32:00Z",
       "reason": "",
-      "stars": 2336,
+      "stars": 2343,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4561,9 +4572,9 @@
       "full_name": "NVIDIA/cosmos",
       "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
       "license": "NOASSERTION",
-      "pushed_at": "2026-09-21T08:37:57Z",
+      "pushed_at": "2026-09-23T17:14:38Z",
       "reason": "",
-      "stars": 11874,
+      "stars": 11919,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4665,7 +4676,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-23T04:29:20Z",
       "reason": "",
-      "stars": 1102,
+      "stars": 1106,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4700,7 +4711,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-12-31T15:00:36Z",
       "reason": "",
-      "stars": 109,
+      "stars": 111,
       "state": "ok",
       "status": 200,
       "title": ""

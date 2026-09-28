@@ -6,4 +6,4 @@
 | Report | Generated | Blocking errors | Warnings |
 |:--|:--|--:|--:|
 | [Fast](fast/latest.md) | 2026-09-28 07:02:34 UTC | 0 | 15 |
-| [Deep](deep/latest.md) | 2026-09-21 08:59:53 UTC | 5 | 19 |
+| [Deep](deep/latest.md) | 2026-09-28 09:50:24 UTC | 5 | 18 |

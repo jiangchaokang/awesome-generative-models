@@ -1,6 +1,6 @@
 {
-  "blocking_errors": 5,
-  "commit": "29c69cadea733c3ea02ae93aa4aa99d40d0ca1de",
+  "blocking_errors": 6,
+  "commit": "46ebb5a5118f9aa5297047d790c8997bbc7fa245",
   "findings": [
     {
       "code": "semantic.paper_mismatch",
@@ -24,6 +24,12 @@
       "code": "semantic.paper_mismatch",
       "location": "20-video/wan2.1 (video.jsonl:10)",
       "message": "Paper title mismatch. Expected `Wan 2.1: Open-Source Video Foundation Model`; arXiv API returned `Wan: Open and Advanced Large-Scale Video Generative Models` (score=0.59).",
+      "severity": "error"
+    },
+    {
+      "code": "semantic.paper_mismatch",
+      "location": "30-3d-object-asset/squeeze3d (object_3d.jsonl:12)",
+      "message": "Paper title mismatch. Expected `Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor`; arXiv API returned `Squeeze3D: Extreme Neural Compression with Latent Space Bridging` (score=0.51).",
       "severity": "error"
     },
     {
@@ -135,12 +141,6 @@
       "severity": "warning"
     },
     {
-      "code": "source.arxiv_api",
-      "location": "catalog",
-      "message": "arXiv API was partially unavailable; 200 title checks were skipped.",
-      "severity": "warning"
-    },
-    {
       "code": "semantic.repo_weak_match",
       "location": "10-image-2d/flux (image_2d.jsonl:49)",
       "message": "Repository name/description weakly matches the catalog title (score=0.14).",
@@ -159,11 +159,11 @@
       "severity": "notice"
     }
   ],
-  "generated_at": "2026-09-28 09:50:24 UTC",
+  "generated_at": "2026-10-05 10:30:23 UTC",
   "mode": "deep",
   "notices": 3,
   "records_checked": 207,
   "status": "fail",
   "version": 2,
-  "warnings": 18
+  "warnings": 17
 }

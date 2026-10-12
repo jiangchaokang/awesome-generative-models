@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "image-to-video",
+    "title": "Images Talk Back: Guiding MMDiTs by Suppressing Image-to-Text Feedback",
+    "paper": "http://arxiv.org/abs/2610.13941v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Multimodal diffusion transformers (MMDiTs) allow the evolving image to update internal text representations through joint attention. These representations then guide subsequent image updates, raising a question: does this feedback help correct deviations from the prompt, or preserve them? We find that image-to-text (I2T) feedback can preserve the objects and attributes already represented in the evolving image, including errors. Transplanting I2T messages can rescue failures or disrupt successes. At matched intervention strengths, suppressing the influence of I2T feedback improves generation, whereas opposite controls degrade it. These findings motivate Semantic Feedback Guidance (SFG), which suppresses the influence of I2T feedback by guiding away from an auxiliary branch that strengthens this feedback and weakens text-to-image conditioning. The in-place variant, iSFG, directly suppresses I2T feedback and strengthens text-to-image conditioning, requiring no extra model evaluations. Temporal interventions motivate running the SFG branch during the first 20% of image sampling steps, requiring about $1.2\\times$ the base NFE without classifier-free guidance (CFG). Experiments across three image-generation backbones show gains in alignment and preference-model scores. On FLUX, adding SFG to CFG raises GenEval from $0.6661$ to $0.7479$; on SD3.5M, iSFG adds $+1.33$ HPSv2.1 over CFG at zero extra NFE. The control also transfers to text-to-video and image-to-video generation, improving VBench scores. Code is available at https://github.com/yyc1215lll-creator/SFG.",
+    "published": "2026-10-09T17:58:15Z",
+    "score": 66,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models",
+    "paper": "http://arxiv.org/abs/2610.12572v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Online reinforcement learning (RL) fine-tunes diffusion models with black-box rewards, but reverse-process methods such as Flow-GRPO are limited in efficiency by poor credit assignment, while forward-process methods such as DiffusionNFT are efficient yet unstable without carefully tuned exponential-moving-average (EMA) off-policy training. We show that NFT-style objectives contain a hidden forward--reverse consistency force that joint positive--negative training cancels only partially, and that EMA stabilizes training through restoration rather than off-policy rollouts. We introduce DiffusionART (Diffusion Reinforcement with Aggregation-First Reward Tilting), which aggregates each prompt's rewards into a shared reward-improving direction for reverse-process states, removing the consistency force by construction, and adds a trust-region-masked second update for drift-adaptive restoration without EMA tuning. It requires no differentiable reward model, remains effective with fewer samples per prompt, and supports pairwise reward models (DiffusionART-Pairwise). Across image and video generation, DiffusionART trains efficiently and stably without per-task tuning. In particular, on HunyuanVideo-13B with equally weighted visual and motion quality rewards, DiffusionART reaches the late-stage mean reward levels of DiffusionNFT and Flow-GRPO-Fast with 12.02 and 11.72 times fewer GPU hours, respectively, while achieving 28.8% and 53.0% higher mean training rewards.",
+    "published": "2026-10-08T18:01:44Z",
+    "score": 59,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
+    "paper": "http://arxiv.org/abs/2610.13947v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "In this paper, we study physically grounded articulated 3D asset generation---moving the goal from reproducing how objects look to capturing how they move and function. Inspired by the literature on procedural and agentic generation, we present Artisan, a system that extends the latest method Articraft by introducing a multi-agent pipeline with physical simulation feedback, enabling comprehensive attributes beyond geometry, appearance, and physically plausible articulation, such as collision-free motion, stability under gravity, and accurate mass and material properties. Furthermore, we construct a unified benchmark spanning four key aspects: spatial fidelity, physical plausibility, downstream task performance, and overall quality. The benchmark encompasses 100 reference assets from ArtVIP and LightWheel, 50 stability prompts, and 50 ABO objects with reference masses, with protocols evaluating various metrics. Through extensive evaluation of more than 10 representative models, Artisan achieves competitive spatial fidelity while attaining the lowest collision rates and highest stability rates among the evaluated methods. Together, our system and benchmark establish insights for advancing 3D generation towards physically plausible, functionally usable assets.",
+    "published": "2026-10-09T17:59:41Z",
+    "score": 58,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "human-animation",
+    "title": "LETHE: Defending against Unauthorized Image-to-Video Generation via Value Diversity Collapse",
+    "paper": "http://arxiv.org/abs/2610.13333v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Image-to-video (I2V) diffusion models can animate a single reference image into high-quality, subject-consistent videos, posing threats of misuse as anyone can turn personal photos into fabricated videos without consent. A promising solution is to proactively add an adversarial perturbation to the image before release, such that videos generated from it would be unfaithful or visually corrupted. However, due to an insufficient understanding of what governs how subsequent frames read the reference image in modern I2V models, existing protections struggle to offer strong protection under common perturbation budgets. In this paper, we approach the problem by exploring this underlying reading mechanism. Through a convex geometric analysis, we theoretically identify the spread of the reference value vectors as a key factor governing this reading process, and empirically find that even a mild contraction of this spread can severely degrade the generated video, making it an efficient lever for protection. Guided by this insight, we propose LETHE, a novel protection method that directly disrupts this reading process. LETHE pairs two complementary objectives, where a value collapse objective drives the reference value vectors toward uniformity, while an attention attraction objective draws subsequent frames toward these collapsed tokens to amplify corruption. We further construct two human-centric I2V protection benchmarks and conduct extensive experiments with multiple modern I2V models, which demonstrate the state-of-the-art protection performance and versatility of LETHE.",
+    "published": "2026-10-09T10:08:39Z",
+    "score": 48,
+    "why": "recent paper candidate"
+  }
+]

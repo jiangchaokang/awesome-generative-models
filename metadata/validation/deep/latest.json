@@ -1,6 +1,6 @@
 {
   "blocking_errors": 6,
-  "commit": "46ebb5a5118f9aa5297047d790c8997bbc7fa245",
+  "commit": "facaa364423f8fe5c669a7ab9572689d211cf303",
   "findings": [
     {
       "code": "semantic.paper_mismatch",
@@ -93,6 +93,12 @@
       "severity": "warning"
     },
     {
+      "code": "network.repo.unknown",
+      "location": "20-video/unianimate-dit (video.jsonl:51)",
+      "message": "`repo` could not be conclusively verified: GitHub API unavailable: Remote end closed connection without response.",
+      "severity": "warning"
+    },
+    {
       "code": "metadata.organization",
       "location": "20-video/vace (video.jsonl:39)",
       "message": "Repository owner suggests organization `Alibaba VILab`.",
@@ -114,6 +120,12 @@
       "code": "metadata.organization",
       "location": "30-3d-object-asset/instantmesh (object_3d.jsonl:31)",
       "message": "Repository owner suggests organization `Tencent ARC`.",
+      "severity": "warning"
+    },
+    {
+      "code": "network.repo.unknown",
+      "location": "30-3d-object-asset/unique3d (object_3d.jsonl:32)",
+      "message": "`repo` could not be conclusively verified: GitHub API unavailable: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>.",
       "severity": "warning"
     },
     {
@@ -159,11 +171,11 @@
       "severity": "notice"
     }
   ],
-  "generated_at": "2026-10-05 10:30:23 UTC",
+  "generated_at": "2026-10-12 10:54:17 UTC",
   "mode": "deep",
   "notices": 3,
   "records_checked": 207,
   "status": "fail",
   "version": 2,
-  "warnings": 17
+  "warnings": 19
 }

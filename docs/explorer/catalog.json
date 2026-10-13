@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-12 10:53 UTC",
+  "generated_at": "2026-10-13 07:49 UTC",
   "records": [
     {
       "id": "driveworld-vla",
@@ -48,7 +48,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 106
+      "stars": 107
     },
     {
       "id": "assetformer",
@@ -1056,7 +1056,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 17099
+      "stars": 17158
     },
     {
       "id": "hunyuan3d-2",
@@ -1082,7 +1082,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 15023
+      "stars": 15088
     },
     {
       "id": "trellis",
@@ -1106,7 +1106,7 @@
       "homepage": "https://microsoft.github.io/TRELLIS/",
       "open_source": true,
       "featured": false,
-      "stars": 13762
+      "stars": 13913
     },
     {
       "id": "sana-1.5",
@@ -1130,7 +1130,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 9206
+      "stars": 9261
     },
     {
       "id": "qwen-image",
@@ -1156,7 +1156,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 8383
+      "stars": 8396
     },
     {
       "id": "hunyuanvideo-1.5",
@@ -1182,7 +1182,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 4571
+      "stars": 4575
     },
     {
       "id": "hunyuan3d-2.1",
@@ -1208,7 +1208,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 4123
+      "stars": 4165
     },
     {
       "id": "vace",
@@ -1232,7 +1232,7 @@
       "homepage": "https://ali-vilab.github.io/VACE-Page/",
       "open_source": true,
       "featured": false,
-      "stars": 3958
+      "stars": 3969
     },
     {
       "id": "hunyuanimage-3.0",
@@ -1258,7 +1258,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3280
+      "stars": 3288
     },
     {
       "id": "step-video",
@@ -1282,7 +1282,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 3184
+      "stars": 3186
     },
     {
       "id": "hunyuanworld-1.0",
@@ -1308,7 +1308,7 @@
       "homepage": "",
       "open_source": false,
       "featured": false,
-      "stars": 2940
+      "stars": 2944
     },
     {
       "id": "matrix-game",
@@ -1332,7 +1332,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 2343
+      "stars": 2349
     },
     {
       "id": "hunyuanvideo-i2v",
@@ -1358,7 +1358,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 1845
+      "stars": 1848
     },
     {
       "id": "hy-worldplay",
@@ -1382,7 +1382,7 @@
       "homepage": "https://3d-models.hunyuan.tencent.com/world/",
       "open_source": true,
       "featured": false,
-      "stars": 1607
+      "stars": 1612
     },
     {
       "id": "hunyuanworld-voyager",
@@ -1408,7 +1408,7 @@
       "homepage": "https://3d-models.hunyuan.tencent.com/world/",
       "open_source": true,
       "featured": false,
-      "stars": 1600
+      "stars": 1601
     },
     {
       "id": "sparc3d",
@@ -1432,7 +1432,7 @@
       "homepage": "https://lizhihao6.github.io/Sparc3D",
       "open_source": true,
       "featured": false,
-      "stars": 1358
+      "stars": 1359
     },
     {
       "id": "consistid",
@@ -1456,7 +1456,7 @@
       "homepage": "https://pku-yuangroup.github.io/ConsisID/",
       "open_source": true,
       "featured": false,
-      "stars": 861
+      "stars": 863
     },
     {
       "id": "unianimate-dit",
@@ -1528,7 +1528,7 @@
       "homepage": "https://magicdrive-v2.github.io/",
       "open_source": true,
       "featured": false,
-      "stars": 727
+      "stars": 724
     },
     {
       "id": "meanflow",
@@ -1552,7 +1552,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 614
+      "stars": 620
     },
     {
       "id": "epona",
@@ -1576,7 +1576,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 390
+      "stars": 391
     },
     {
       "id": "flashvdm",
@@ -1698,7 +1698,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 232
+      "stars": 231
     },
     {
       "id": "d-ar",
@@ -1746,7 +1746,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 112
+      "stars": 113
     },
     {
       "id": "improving-long-text-alignment",
@@ -4748,7 +4748,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 26008
+      "stars": 26006
     },
     {
       "id": "hunyuanvideo",
@@ -4774,7 +4774,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 12588
+      "stars": 12615
     },
     {
       "id": "triposr",
@@ -4798,7 +4798,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 7014
+      "stars": 7055
     },
     {
       "id": "instantmesh",
@@ -4822,7 +4822,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 4552
+      "stars": 4560
     },
     {
       "id": "unique3d",
@@ -4894,7 +4894,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 1108
+      "stars": 1109
     },
     {
       "id": "era3d",
@@ -4918,7 +4918,7 @@
       "homepage": "",
       "open_source": true,
       "featured": false,
-      "stars": 645
+      "stars": 646
     },
     {
       "id": "rgb2point",

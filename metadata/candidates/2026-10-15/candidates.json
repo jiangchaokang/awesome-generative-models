@@ -1,0 +1,41 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "3d-scene",
+    "task": "layout-to-scene",
+    "title": "Kandinsky S2V 1.0: Audio-Driven Avatar Video Generation",
+    "paper": "http://arxiv.org/abs/2610.19290v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "We present Kandinsky S2V 1.0, an open family of speech-to-video models for controllable audio-driven human animation, comprising Kandinsky S2V 1.0 Lite (2B parameters) and Kandinsky S2V 1.0 Pro (21B parameters). From a single reference image, a speech waveform, and a text prompt, the models generate long-form 25 FPS video in which lip motion, expression, pose, and gesture follow the speech. The architecture draws text and audio conditioning from one Qwen2.5-Omni model and adds a reference-aware three-scale visual memory. Training starts from the Kandinsky 5.0 Video foundation models [1] and combines mixed reference-memory layouts with an area-adaptive face loss. The training corpus contains 1.17M single-speaker clips selected by active-speaker detection, with captions generated directly in English and Russian. A side-by-side human evaluation against the strongest open-source baseline and two proprietary commercial models shows that Kandinsky S2V 1.0 Pro performs comparably to or better than these models on average and is also preferred for lip synchronization. On common speech to video benchmarks, Kandinsky S2V 1.0 Lite and Kandinsky S2V 1.0 Pro rank among the top performing models according to mean rank over five reported metrics. Beyond the base models, we provide π-Flow distilled variants of both Kandinsky S2V 1.0 Lite and Kandinsky S2V 1.0 Pro. The distilled Kandinsky S2V 1.0 Pro model generates video in 16 sampling steps without classifier-free guidance, achieving a 5.4 times end-to-end speedup over the base model, while matching or exceeding it on nearly all reported benchmark metrics. To accelerate open research and deployment in speech-to-video generation, we release the code, model checkpoints, and diffusers integration under the MIT license.",
+    "published": "2026-10-13T23:11:39Z",
+    "score": 77,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "image-2d",
+    "task": "controllable-generation",
+    "title": "Atomic-WAM: Execution-Grounded Atomic-Motion Reasoning for World Action Models",
+    "paper": "http://arxiv.org/abs/2610.20157v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "World Action Models (WAMs) typically adapt video foundation models to robotic control through joint video and action prediction. However, task-level instructions may leave the next physical interaction underspecified, requiring semantic grounding and state-dependent motion selection. To this end, we introduce Atomic-WAM, an understand-then-execute framework that connects task reasoning to action generation through atomic-motion descriptions. Specifically, a vision-language reasoner describes the next local motion from the task instruction and visual context, guiding a WAM to predict future video and an action chunk. Furthermore, an automatic annotation pipeline curates temporally aligned, contact-enriched supervision from multi-view DROID demonstrations. To make atomic-motion predictions executable by the WAM, we post-train the reasoner with Execution-Grounded GRPO (EG-GRPO). With the WAM fixed, EG-GRPO adapts the reasoner through rewards for motion appropriateness and execution success. Finally, Atomic-WAM achieves 39.6% task success under default instructions and 31.6% under vague instructions in a real-to-sim evaluation on RoboLab. Project page: https://ssj9596.github.io/Atomic-WAM-project",
+    "published": "2026-10-14T13:13:35Z",
+    "score": 50,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "image-2d",
+    "task": "text-to-image",
+    "title": "Reducing the Gap Between Spatial and Space-Filling Curve Neighbors in 3D Point Cloud Segmentation",
+    "paper": "http://arxiv.org/abs/2610.19530v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "As a lightweight and highly accurate method for nearest-neighbor search in 3D point clouds, approaches based on space-filling curves (SFC) have been proposed. However, due to the inherent properties of SFC, a gap arises between proximity relationships along the SFC and those in the original Euclidean space. In this study, we propose a loss function that reduces the influence of this gap. Specifically, we compute the distances between adjacent points along the SFC and train the model to optimize feature similarity between pairs of points that are distant from each other in the original 3D space. We incorporate the proposed method into a high-performing 3D point cloud segmentation model and evaluate its effectiveness on three datasets. The results demonstrate that the proposed method outperforms conventional methods on both indoor and outdoor point cloud datasets.",
+    "published": "2026-10-14T03:46:39Z",
+    "score": 49,
+    "why": "recent paper candidate"
+  }
+]

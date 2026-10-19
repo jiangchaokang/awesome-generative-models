@@ -1,0 +1,41 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "3d-scene",
+    "task": "layout-to-scene",
+    "title": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation",
+    "paper": "http://arxiv.org/abs/2610.23121v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Generating complete, coherent, and usable 3D indoor scenes from natural language requires strong \\textbf{design intelligence}: the ability to design high-quality scenes and critique their quality. However, existing approaches either rely on general-purpose models lacking domain-specific design experience or learn from static scenes. In this work, we introduce \\textbf{Scene-Designer}, an agentic framework that learns design intelligence through complementary design and critique experiences. We construct two datasets: \\textbf{Scene-OTA-35K}, which provides Observation--Thought--Action supervision for learning scene design and efficient error correction, and \\textbf{Scene-OTC-15K}, which provides Observation--Thought--Critic supervision for learning scene quality critique across physical validity, functional correctness, and layout coherence. Based on these experiences, we propose \\textbf{Scene-GRPO}, a Critic-guided GRPO framework that improves design decisions and reduces unnecessary trial-and-error corrections. Extensive experiments demonstrate that Scene-Designer achieves superior performance in physical validity, functional correctness, and layout coherence, while the learned Scene-Critic significantly outperforms general-purpose models in scene critique. Moreover, test-time Critic guidance further improves scene generation, showing that the Critic can provide useful guidance beyond training. Additional analysis suggests a trend of mutual enhancement between scene design and critique abilities.",
+    "published": "2026-10-16T08:28:14Z",
+    "score": 58,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "3d-scene",
+    "task": "layout-to-scene",
+    "title": "TriFold: Folding irregular 3D Gaussians into structured latents for 3D Scene Generation",
+    "paper": "http://arxiv.org/abs/2610.23050v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Recent progress in 3D generation has motivated growing interest in compact generative representations of complex 3D scenes. For native 3D Gaussian scenes, however, learning such representations remains challenging due to widely varying primitive counts, nonuniform spatial density, and differences in geometry and appearance even among spatially neighboring primitives. In this work, we introduce TriFold, a native 3D Gaussian VAE that encodes Gaussian scenes into a fixed-layout triplane latent and jointly reconstructs their geometry and appearance. The key insight is to impose structural regularity on the latent space while preserving the spatial adaptivity of the underlying Gaussians. During encoding, we use cell-wise learned queries to aggregate projected Gaussians into multiple slots per cell, reducing the information loss caused by single-feature pooling. During decoding, occupancy prediction identifies active regions, where query-based set prediction and candidate selection reconstruct local Gaussian sets with spatially varying primitive counts. Building on this representation, we train a latent flow-matching model for conditional scene-level 3DGS generation, enabling point-cloud-conditioned synthesis and single-image-conditioned amodal generation. Experiments demonstrate that TriFold achieves high-fidelity reconstruction and generation from a single image that provides only a partial observation of the scene, validating its effectiveness for native 3D Gaussian representation learning. https://fantasy-amap.github.io/TriFold",
+    "published": "2026-10-16T07:28:37Z",
+    "score": 58,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "image-to-video",
+    "title": "I2V-DETACH: Source Grounding Detachment for Unauthorized Image-to-Video Generation",
+    "paper": "http://arxiv.org/abs/2610.23287v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Recent diffusion models have advanced image-conditioned video generation, but their accessibility raises risks of unauthorized manipulation. Image immunization has emerged as a promising defense for Image-to-Video (I2V) protection, yet existing methods often rely on degrading visual quality or temporal coherence. In this work, we revisit I2V immunization as reducing source-content preservation, shifting the focus from output degradation to weakening source-conditioned content propagation. To this end, we propose I2V-DETACH, an image immunization method that prevents unauthorized I2V generation through source grounding detachment. I2V models preserve source content by propagating source-image cues into video latents during denoising. Accordingly, I2V-DETACH disrupts this process in two complementary ways: it suppresses source-video grounding to reduce source cue propagation, and strengthens intra-video interactions to shift denoising toward video-side dynamics with reduced reliance on the source image. To obtain informative optimization signals, we initialize auxiliary video latents with source-oriented states that remain within the source-conditioned generation regime while deviating from source-preserving trajectories. Extensive experiments across diverse diffusion architectures show that I2V-DETACH substantially reduces source-content preservation, improves over prior immunization methods, and exhibits strong black-box transferability.",
+    "published": "2026-10-16T10:55:41Z",
+    "score": 48,
+    "why": "recent paper candidate"
+  }
+]

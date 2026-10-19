@@ -203,7 +203,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-07-31T13:58:55Z",
       "reason": "",
-      "stars": 26006,
+      "stars": 26025,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -270,7 +270,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-23T13:12:44Z",
       "reason": "",
-      "stars": 3288,
+      "stars": 3289,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -490,7 +490,7 @@
       "license": "MIT",
       "pushed_at": "2026-03-13T05:29:12Z",
       "reason": "",
-      "stars": 620,
+      "stars": 622,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -675,7 +675,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2024-10-31T01:20:19Z",
       "reason": "",
-      "stars": 1939,
+      "stars": 1941,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -787,7 +787,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-02-10T07:37:37Z",
       "reason": "",
-      "stars": 8396,
+      "stars": 8411,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -897,9 +897,9 @@
       "full_name": "NVlabs/Sana",
       "homepage": "https://nvlabs.github.io/Sana/docs/",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-12T08:34:17Z",
+      "pushed_at": "2026-10-19T03:28:45Z",
       "reason": "",
-      "stars": 9261,
+      "stars": 9398,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1357,7 +1357,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-11-04T11:19:04Z",
       "reason": "",
-      "stars": 13069,
+      "stars": 13086,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1613,7 +1613,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-10-08T08:57:37Z",
       "reason": "",
-      "stars": 12615,
+      "stars": 12634,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1648,7 +1648,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-10T06:14:59Z",
       "reason": "",
-      "stars": 4575,
+      "stars": 4570,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1669,7 +1669,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-07T06:13:09Z",
       "reason": "",
-      "stars": 1848,
+      "stars": 1849,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2142,7 +2142,7 @@
       "license": "MIT",
       "pushed_at": "2025-03-17T03:26:54Z",
       "reason": "",
-      "stars": 3186,
+      "stars": 3187,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2229,12 +2229,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer",
       "final_url": "https://github.com/ali-vilab/UniAnimate-DiT",
-      "reason": "GitHub API unavailable: Remote end closed connection without response",
-      "state": "unknown",
-      "status": 0,
+      "full_name": "ali-vilab/UniAnimate-DiT",
+      "homepage": "",
+      "license": "",
+      "pushed_at": "2025-04-27T08:11:49Z",
+      "reason": "",
+      "stars": 854,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "20-video/vace (video.jsonl:39)": {
@@ -2275,7 +2286,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-10-17T05:46:57Z",
       "reason": "",
-      "stars": 3969,
+      "stars": 3983,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2358,7 +2369,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-03-05T09:38:07Z",
       "reason": "",
-      "stars": 17158,
+      "stars": 17241,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2569,7 +2580,7 @@
       "license": "AGPL-3.0",
       "pushed_at": "2024-12-09T05:41:15Z",
       "reason": "",
-      "stars": 646,
+      "stars": 647,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2604,7 +2615,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-03-13T02:55:53Z",
       "reason": "",
-      "stars": 335,
+      "stars": 336,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2700,7 +2711,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-28T09:58:12Z",
       "reason": "",
-      "stars": 15088,
+      "stars": 15158,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2721,7 +2732,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-17T10:10:07Z",
       "reason": "",
-      "stars": 4165,
+      "stars": 4232,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2807,7 +2818,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-01-03T09:09:13Z",
       "reason": "",
-      "stars": 4560,
+      "stars": 4574,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2941,7 +2952,7 @@
       "license": "",
       "pushed_at": "2025-07-02T13:28:30Z",
       "reason": "",
-      "stars": 231,
+      "stars": 232,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3245,7 +3256,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-26T07:27:56Z",
       "reason": "",
-      "stars": 13913,
+      "stars": 14009,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3280,7 +3291,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-04T07:11:09Z",
       "reason": "",
-      "stars": 7055,
+      "stars": 7103,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3354,12 +3365,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "[NeurIPS 2024] Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image",
       "final_url": "https://github.com/AiuniAI/Unique3D",
-      "reason": "GitHub API unavailable: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>",
-      "state": "unknown",
-      "status": 0,
+      "full_name": "AiuniAI/Unique3D",
+      "homepage": "https://wukailu.github.io/Unique3D/",
+      "license": "MIT",
+      "pushed_at": "2025-07-17T21:29:05Z",
+      "reason": "",
+      "stars": 3596,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 1.0
     }
   },
   "40-3d-scene/3d-gpt (scene_3d.jsonl:3)": {
@@ -4373,7 +4395,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-15T17:27:25Z",
       "reason": "",
-      "stars": 2944,
+      "stars": 2952,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4412,23 +4434,12 @@
       "source": "arXiv API"
     },
     "repo": {
-      "archived": false,
       "content_type": "",
-      "description": "Voyager is an interactive RGBD video generation model conditioned on camera input, and supports real-time 3D reconstruction.",
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
-      "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
-      "homepage": "https://3d-models.hunyuan.tencent.com/world/",
-      "license": "NOASSERTION",
-      "pushed_at": "2026-04-15T17:30:08Z",
-      "reason": "",
-      "stars": 1601,
-      "state": "ok",
-      "status": 200,
+      "reason": "GitHub API unavailable: <urlopen error EOF occurred in violation of protocol (_ssl.c:2437)>",
+      "state": "unknown",
+      "status": 0,
       "title": ""
-    },
-    "repo_semantics": {
-      "ok": true,
-      "score": 0.3
     }
   },
   "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)": {
@@ -4469,7 +4480,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-10T07:10:23Z",
       "reason": "",
-      "stars": 1612,
+      "stars": 1618,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4497,21 +4508,21 @@
     "repo": {
       "archived": false,
       "content_type": "",
-      "description": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
+      "description": "Matrix-Game 4.0: Streaming Neural Rendering for Playable Games",
       "final_url": "https://github.com/SkyworkAI/Matrix-Game",
       "full_name": "SkyworkAI/Matrix-Game",
-      "homepage": "https://matrix-game-v3.github.io/",
+      "homepage": "https://matrix-game-v4-0.github.io/page/",
       "license": "MIT",
-      "pushed_at": "2026-09-29T12:49:47Z",
+      "pushed_at": "2026-10-16T12:12:45Z",
       "reason": "",
-      "stars": 2349,
+      "stars": 2618,
       "state": "ok",
       "status": 200,
       "title": ""
     },
     "repo_semantics": {
       "ok": true,
-      "score": 0.8
+      "score": 0.4
     }
   },
   "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)": {
@@ -4550,9 +4561,9 @@
       "full_name": "NVIDIA/cosmos",
       "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
       "license": "NOASSERTION",
-      "pushed_at": "2026-10-08T22:56:21Z",
+      "pushed_at": "2026-10-16T16:20:04Z",
       "reason": "",
-      "stars": 12014,
+      "stars": 12064,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4654,7 +4665,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-23T04:29:20Z",
       "reason": "",
-      "stars": 1109,
+      "stars": 1110,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4689,7 +4700,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-12-31T15:00:36Z",
       "reason": "",
-      "stars": 113,
+      "stars": 115,
       "state": "ok",
       "status": 200,
       "title": ""

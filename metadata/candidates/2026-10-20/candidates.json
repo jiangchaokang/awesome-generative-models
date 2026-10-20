@@ -1,0 +1,80 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "world-models",
+    "title": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
+    "paper": "http://arxiv.org/abs/2610.25959v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Building embodied agents that can perceive, reason, and act across diverse 3D worlds is a central research direction toward artificial general intelligence. Yet most existing work remains confined to specific tasks in a single scene and transfers poorly to new environments, leaving general embodied agents for open-world settings under-explored. We refer to such agents as Embodied World Agents (EWAs), whose defining property is the ability to understand diverse visual environments and execute general actions in open-world conditions. To advance EWA research, we study open-world embodied navigation-planning and release EmbodiedWorld-200K, a large-scale dataset of over 200K samples spanning diverse scenes. Each example is equipped with multi-level annotations, ranging from low-level camera-motion trajectories to high-level semantic instructions. The dataset also provides unified evaluation splits and task-specific metrics, supporting offline pretraining and fair evaluation of EWAs. Beyond offline supervision, a defining characteristic of an EWA is its interaction with the environment; training solely on offline data is therefore insufficient, especially for generalizing to scenes not covered in the training distribution. Building dedicated real interactive environments, however, is often prohibitively expensive. To address this, we propose a novel training scheme that employs a video world model as a low-cost environment proxy and performs interactive reinforcement-learning (RL) post-training of the EWA within it. Empirically, pretraining on EmbodiedWorld-200K substantially improves the open-world embodied planning ability of the EWA, and further RL post-training inside a world model yields clear gains on out-of-distribution scenes. The dataset, baseline checkpoints, and training and evaluation code are available at https://xiaokunfeng.github.io/EmbodiedWorld-200K/.",
+    "published": "2026-10-19T07:52:01Z",
+    "score": 78,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "SpecKCast: Spectral Kalman Forecasting for Diffusion Acceleration",
+    "paper": "http://arxiv.org/abs/2610.26837v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Diffusion Transformers (DiTs) achieve high-fidelity image and video generation, but they suffer from substantial inference costs due to repeated transformer evaluations across many denoising steps. Feature caching reduces this cost by reusing features across denoising steps. Recent forecasting methods extend this idea by extrapolating features to skipped steps instead of reusing them. However, existing forecasting methods extrapolate the features they predict uniformly, even though the spatial-frequency components of these features change most at different stages of denoising. They also overlook that denoising progresses nonuniformly, so equal step intervals can correspond to very different amounts of change. These mismatches amplify forecast errors as more steps are skipped, limiting the achievable acceleration. We propose SpecKCast, a training-free method that forecasts the model output in the frequency domain. SpecKCast applies a 2D discrete cosine transform (DCT) to the output and tracks each coefficient with a lightweight Kalman filter along a band-specific time coordinate derived from the noise schedule. The filter tracks each coefficient's value and rate of change, and the transformer is evaluated only when the filter's forecast uncertainty exceeds a threshold. Experiments on FLUX.1-dev, Qwen-Image, Wan2.1-14B, and HunyuanVideo show that SpecKCast achieves a better trade-off between acceleration and fidelity than existing caching and forecasting methods, reaching up to 6x speedup with less than 0.05 GiB of additional memory.",
+    "published": "2026-10-19T17:58:04Z",
+    "score": 72,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "robotics-worlds",
+    "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
+    "paper": "http://arxiv.org/abs/2610.26711v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Recent video generation models produce visually compelling outputs, yet their physical plausibility remains poorly measured. Physical plausibility asks whether generated objects obey geometry, kinematics, dynamics, and conservation laws. Existing benchmarks rely on coarse visual-language model judgments or target embodied world models rather than video generation itself. We introduce PVBench, a physical video benchmark that quantitatively measures the plausibility of generated videos across 46 dimensions organized into seven domains, spanning: i) instruction and semantic fidelity, ii) behavioral and causal consistency, iii) perceptual and temporal quality, iv) geometric and spatial consistency, v) material properties and field states, vi) kinematic and spatiotemporal persistence, vii) and mechanical plausibility with conservation laws. PVBench comprises 600 carefully crafted prompts, of which 30% involve physical embodied agents such as robot arms, humanoids, quadrupeds, and multi-agent systems. For challenging physically tractable dimensions, it pairs each with specialized vision models that derive verifiable, physically grounded measurements, such as object-level 6D pose, metric scale, surface normals, kinematics, and numerical conservation-law residuals. It thus avoids relying solely on subjective scoring, while supporting both text-to-video and image-to-video generation. Finally, we validate the agreement between automatic metrics and human judgments through human evaluation. Meanwhile, we evaluate mainstream open-source and closed-source models and present several insights. By releasing the benchmark, prompts, and calibration protocol, we aim to foster physically grounded video generation.",
+    "published": "2026-10-19T16:44:45Z",
+    "score": 68,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "TamedFlow: Trajectory-Aware Distillation\\\\for Teacher-Assisted Diffusion Sampling",
+    "paper": "http://arxiv.org/abs/2610.26025v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Diffusion Transformers (DiTs) deliver high-fidelity image and video generation, but inference requires many sequential model evaluations. Two acceleration strategies are increasingly important: model compression makes each evaluation cheaper, while adaptive inference avoids selected teacher computation through reuse, forecasting, or speculative execution. Their combination, however, is brittle: directly applying the evaluated adaptive methods to a compressed student can degrade quality, an observed failure mode we call the \\textbf{Combination Gap}. We link this gap to a mismatch between pointwise distillation and short-horizon execution: a student trained at teacher states need not remain reliable when its own predictions are chained. We propose \\textbf{TamedFlow}, which trains a compressed DiT for this deployed role through cross-architecture feature alignment, a near-identity Velocity Alignment Head, and randomized rollout supervision. At inference, a lightweight Learnable Trajectory Estimator routes completed drafts: accepted drafts bypass the teacher, while rejected drafts roll back and receive one teacher rescue step. Distilling DiT-XL/2 into DiT-B/2, TamedFlow reaches FID $2.58$ at $2.25\\times$ measured speedup over DDIM-50 on ImageNet $256\\times256$. Ablations support trajectory supervision, and routing controls favor LTE over random decisions at nearly matched latency. Evaluations on ImageNet $512\\times512$, MS-COCO, and Latte/FaceForensics extend the empirical scope.",
+    "published": "2026-10-19T08:48:14Z",
+    "score": 50,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "PoSTCache: From Forecasting to Postdictive Smoothing for Revisable Diffusion Caching",
+    "paper": "http://arxiv.org/abs/2610.25664v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Diffusion and flow matching models achieve impressive visual generation quality but remain computationally expensive due to iterative sampling. Caching-based acceleration provides a practical training-free solution by reusing or predicting intermediate features. However, existing methods largely enforce a forward-only information flow: approximations produced for skipped model evaluations are immediately committed to the sampling trajectory and cannot benefit from feedback generated by later full-computation steps. We propose \\textbf{PoSTCache} (\\emph{Postdictive Smoothing Trajectory Cache}), a training-free and plug-and-play framework that reformulates diffusion caching as revisable trajectory inference. PoSTCache first uses an existing caching strategy to construct forward proposals for skipped steps. At a later full-computation step, the discrepancy between the refreshed prediction and its forward proposal yields a correction signal, which PoSTCache propagates backward to refine and reintegrate the preceding predictions. Viewing full-computation steps as sources of corrective feedback also changes how they should be selected. We therefore introduce the Posterior Variance Reduction (PVR) strategy, which estimates cross-timestep dependencies from offline denoising trajectories and selects anchors according to their expected reduction in surrogate trajectory uncertainty rather than local approximation error alone. Experiments on representative image and video generation models show that PoSTCache consistently improves the quality--efficiency trade-off over representative caching methods.",
+    "published": "2026-10-19T02:11:29Z",
+    "score": 49,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "image-to-video",
+    "title": "CorrFlow: Self-Correcting Flow Matching",
+    "paper": "http://arxiv.org/abs/2610.24750v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Flow-matching models generate samples through iterative velocity predictions, but typically do not revisit these predictions using the intermediate representations that produced them. We introduce CorrFlow, a self-correcting flow-matching framework that reuses this information through a lightweight refiner. Under rectified-flow interpolation, the error of the one-step clean prediction equals the realized velocity residual scaled by the noise level. Motivated by this identity, the refiner learns to predict residual corrections from the base model's clean prediction, conditioning, noise level and hidden states from the same forward pass. The correction is added to the base velocity before each sampling update, so subsequent predictions are made from the corrected state. This requires no additional base-model evaluations and only one lightweight refiner evaluation per step. Our theoretical analyses establish conditions under which feature reuse outperforms raw-input affine predictors and refiner training achieves greater residual-risk reduction than continued base-model training under a matched training compute budget. Experiments on class-conditional image generation, text-to-video generation and image-to-video generation show consistent improvements over the corresponding base models, including gains in visual quality and physical consistency. Project Page: https://fogradio.github.io/corrflow-project",
+    "published": "2026-10-17T15:35:25Z",
+    "score": 48,
+    "why": "recent paper candidate"
+  }
+]

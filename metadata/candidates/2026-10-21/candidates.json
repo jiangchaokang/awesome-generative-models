@@ -1,0 +1,28 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "Copyright Leakage Detection in AI Generated Videos",
+    "paper": "http://arxiv.org/abs/2610.28524v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Video generation models can create realistic-looking video footage from images and text prompts. Some of the recent advances have raised concerns about the reproduction of copyrighted visual content. However, copyright leakage detection in generated videos remains largely unexplored. In this paper, we introduce a new benchmark data set for copyright leakage detection, comprising 50 copyrighted concepts, each with 5 images. For each concept, we have 5 videos created using the image+prompt video generation model and the prompt-only video generation model. Following that, we develop an AI toolset based on a contrastive retrieval framework that formulates copyright leakage detection as a video-to-image retrieval problem by matching aggregated video frame embeddings against a database of copyrighted image embeddings. Our method uses a single similarity threshold and retrieves the most similar copyrighted reference as supporting evidence. We conducted experiments showing strong retrieval and detection performance, achieving 99.6\\% detection accuracy with only a single false negative. These results show the effectiveness of the retrieval-based method for scalable and explainable copyright leakage detection in AI-generated videos. Data can be accessed publicly from https://zenodo.org/records/21386117 and the source code for this project is publicly available at https://github.com/Shaif95/video-cp-Leakage.",
+    "published": "2026-10-20T16:59:22Z",
+    "score": 68,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "world-models",
+    "title": "MoDDiT: Simple Token Routing in Diffusion Transformers",
+    "paper": "http://arxiv.org/abs/2610.28086v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Real-time video generation, interactive world models, and on-device image synthesis are almost a reality. Diffusion Transformers (DiT) achieve excellent sample quality, shifting the bottleneck to the throughput of the models themselves. Natural images are inherently sparse, as large portions of an image are often background, contribute little to the scene content, and are easy to denoise. DiTs fail to exploit this sparsity, as they process image tokens statically and uniformly. We propose MoDDiT, a simple architecture modification that learns to route tokens through both MLP and self-attention operations. By routing tokens through both blocks independently, MoDDiT allows for dynamic compute allocation in MLPs that varies across tokens, images, and denoising timesteps. Using MoDDiT to train image generation models from scratch significantly reduces computational costs of training and inference, processing as few as 12.5% of the tokens. By increasing sparsity and model depth, MoDDiT reduces costs and improves generation performance over unrouted baselines. The learned allocation is interpretable, revealing how computation varies with visual content and noise level. We also use MoDDiT to train video generation models, where allocation correlates with motion, and to distill a dense bidirectional video model into a sparse autoregressive student.",
+    "published": "2026-10-20T12:05:49Z",
+    "score": 60,
+    "why": "recent paper candidate"
+  }
+]

@@ -3,12 +3,12 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-10-21 06:07 UTC`
+- Generated: `2026-10-22 06:10 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-10-21/`
+- Raw files: `metadata/candidates/2026-10-22/`
 - New candidates today: **2**
-- New watched-org repositories today: **0**
+- New watched-org repositories today: **1**
 
 ## Review Checklist
 
@@ -21,14 +21,16 @@
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 60 | arXiv | 2026-10-20 | **MoDDiT: Simple Token Routing in Diffusion Transformers** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2610.28086v1) |
+| 60 | arXiv | 2026-10-21 | **Rethinking Video Autoencoders for Interactive World Models** | robotics-worlds | recent paper candidate | [Paper](http://arxiv.org/abs/2610.30129v1) |
 
 ## video
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 68 | arXiv | 2026-10-20 | **Copyright Leakage Detection in AI Generated Videos** | text-to-video | recent paper candidate | [Paper](http://arxiv.org/abs/2610.28524v1) |
+| 61 | GitHub | 2026-10-21 | **Looking-Ahead** | text-to-video | new repository in watched organization `Tencent ARC` | [Repo](https://github.com/TencentARC/Looking-Ahead) / [Home](https://hellorpg.github.io/looking-ahead/) |
 
 ## New Repositories in Watched Organizations
 
-- No new watched-org repositories were found.
+| Organization | Repo | Stars | Created | Why it may matter |
+|:--|:--|--:|:--|:--|
+| Tencent ARC | [TencentARC/Looking-Ahead](https://github.com/TencentARC/Looking-Ahead) | 25 | 2026-10-21 | new repository in watched organization `Tencent ARC` |

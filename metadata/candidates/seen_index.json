@@ -262,7 +262,8 @@
     "2610.24750": "2026-10-20",
     "2610.25959": "2026-10-20",
     "2610.28524": "2026-10-21",
-    "2610.28086": "2026-10-21"
+    "2610.28086": "2026-10-21",
+    "2610.30129": "2026-10-22"
   },
   "github": {
     "adobe-research/custom-diffusion": "2026-06-05",
@@ -500,6 +501,7 @@
     "tencentarc/worldcrafter": "2026-09-25",
     "xiaomi/bsworld": "2026-10-13",
     "tencentarc/multics": "2026-10-16",
-    "black-forest-labs/flux-3-image-klein": "2026-10-16"
+    "black-forest-labs/flux-3-image-klein": "2026-10-16",
+    "tencentarc/looking-ahead": "2026-10-22"
   }
 }

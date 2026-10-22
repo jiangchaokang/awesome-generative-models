@@ -1,0 +1,30 @@
+[
+  {
+    "source": "GitHub",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "Looking-Ahead",
+    "paper": "",
+    "repo": "https://github.com/TencentARC/Looking-Ahead",
+    "homepage": "https://hellorpg.github.io/looking-ahead/",
+    "abstract": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
+    "published": "",
+    "created_at": "2026-10-21T11:20:59Z",
+    "updated_at": "2026-10-22T05:42:30Z",
+    "score": 61,
+    "why": "new repository in watched organization `Tencent ARC`"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "robotics-worlds",
+    "title": "Rethinking Video Autoencoders for Interactive World Models",
+    "paper": "http://arxiv.org/abs/2610.30129v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Video world models predict future frames from past frames and actions. They serve as simulators in which agents train, plan or are evaluated, and that humans can control interactively. They generate in the latent space of a video autoencoder, whose compression sets their cost per frame and how long each action waits to take effect. Yet world models often reuse the autoencoders of text-to-video generators, built for offline generation with no agent waiting and, without their training data and code, not retrainable at another compression. We therefore ask how, where and how much a world model should compress. We build CADRE, an open family of causal diffusion representation autoencoders spanning multiple spatio-temporal compressions. Its members differ only in a small bottleneck on frozen features and share a diffusion decoder self-distilled to one or a few steps. We train the same world model on each autoencoder in two domains, manipulation and navigation, with two environments each. CADRE forms most of the latency-quality frontier, especially with a moving camera. Our study also leads to four findings. At strong compression, a diffusion decoder is sharper than perceptual regression. In robot manipulation, temporal compression is more effective in the autoencoder than in the world model. Manipulation and navigation call for opposite compressions: temporal compression costs little when the camera is still, and spatial compression when it moves. Surprisingly, with a still camera, coarser spatial tokens hurt motion far more than image quality. Code, models and a live demo are at https://kyutai.org/blog/2026-10-21-cadre",
+    "published": "2026-10-21T17:58:11Z",
+    "score": 60,
+    "why": "recent paper candidate"
+  }
+]

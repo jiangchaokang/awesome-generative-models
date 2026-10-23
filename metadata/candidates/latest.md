@@ -3,12 +3,12 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-10-22 06:10 UTC`
+- Generated: `2026-10-23 06:05 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-10-22/`
+- Raw files: `metadata/candidates/2026-10-23/`
 - New candidates today: **2**
-- New watched-org repositories today: **1**
+- New watched-org repositories today: **0**
 
 ## Review Checklist
 
@@ -17,20 +17,18 @@
 - Is the summary worth writing for the public catalog?
 - Does it belong in the main catalog or only in the watchlist?
 
+## 3d-object-asset
+
+| Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
+|--:|:--|:--|:--|:--|:--|:--|
+| 68 | arXiv | 2026-10-22 | **Gate3DGen: A Pre-processing Model that Selectively Purifies Real-World Images for 3D Generation** | 3d-shape-generation | recent paper candidate | [Paper](http://arxiv.org/abs/2610.31649v1) |
+
 ## 4d-dynamic-scene-world
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 60 | arXiv | 2026-10-21 | **Rethinking Video Autoencoders for Interactive World Models** | robotics-worlds | recent paper candidate | [Paper](http://arxiv.org/abs/2610.30129v1) |
-
-## video
-
-| Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
-|--:|:--|:--|:--|:--|:--|:--|
-| 61 | GitHub | 2026-10-21 | **Looking-Ahead** | text-to-video | new repository in watched organization `Tencent ARC` | [Repo](https://github.com/TencentARC/Looking-Ahead) / [Home](https://hellorpg.github.io/looking-ahead/) |
+| 50 | arXiv | 2026-10-22 | **Reading, Writing, Sharing, and Interacting with the World through Video** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2610.31668v1) |
 
 ## New Repositories in Watched Organizations
 
-| Organization | Repo | Stars | Created | Why it may matter |
-|:--|:--|--:|:--|:--|
-| Tencent ARC | [TencentARC/Looking-Ahead](https://github.com/TencentARC/Looking-Ahead) | 25 | 2026-10-21 | new repository in watched organization `Tencent ARC` |
+- No new watched-org repositories were found.

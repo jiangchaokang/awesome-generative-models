@@ -1,30 +1,28 @@
 [
   {
-    "source": "GitHub",
-    "artifact": "video",
-    "task": "text-to-video",
-    "title": "Looking-Ahead",
-    "paper": "",
-    "repo": "https://github.com/TencentARC/Looking-Ahead",
-    "homepage": "https://hellorpg.github.io/looking-ahead/",
-    "abstract": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
-    "published": "",
-    "created_at": "2026-10-21T11:20:59Z",
-    "updated_at": "2026-10-22T05:42:30Z",
-    "score": 61,
-    "why": "new repository in watched organization `Tencent ARC`"
+    "source": "arXiv",
+    "artifact": "3d-object-asset",
+    "task": "3d-shape-generation",
+    "title": "Gate3DGen: A Pre-processing Model that Selectively Purifies Real-World Images for 3D Generation",
+    "paper": "http://arxiv.org/abs/2610.31649v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Single-image 3D generation has achieved high fidelity on curated benchmarks, yet degrades sharply on real-world images with uneven illumination, blur, and occlusions. Purifying such inputs requires deciding when to intervene and preserving the visual cues needed for 3D generation, while leaving clean inputs unchanged. We introduce Gate3DGen, a selective pre-processing model that gates image inputs to existing 3D generators without retraining them. A degradation-aware router bypasses inputs classified as clean and extracts features to guide purification of the remaining inputs. Conditioned on these features, a 3D-oriented one-step purifier purifies degraded inputs with spatial losses that encourage preservation of object identity, contours, and textural cues. To provide paired supervision, we construct a synthetic data engine that renders clean views of 3D assets and synthesises composite degradations. On the synthetic benchmark, the purifier improves image fidelity and downstream 3D geometry in only 2.3s on average, reducing TRELLIS.2 mesh distance by 61.5% relative to degraded inputs. VLM evaluation and human preferences on real photographs further support identity preservation and degradation correction. More demos and code are available at https://supra-3d.github.io/gate3dgen.",
+    "published": "2026-10-22T17:57:02Z",
+    "score": 68,
+    "why": "recent paper candidate"
   },
   {
     "source": "arXiv",
     "artifact": "4d-dynamic-scene-world",
-    "task": "robotics-worlds",
-    "title": "Rethinking Video Autoencoders for Interactive World Models",
-    "paper": "http://arxiv.org/abs/2610.30129v1",
+    "task": "world-models",
+    "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
+    "paper": "http://arxiv.org/abs/2610.31668v1",
     "repo": "",
     "homepage": "",
-    "abstract": "Video world models predict future frames from past frames and actions. They serve as simulators in which agents train, plan or are evaluated, and that humans can control interactively. They generate in the latent space of a video autoencoder, whose compression sets their cost per frame and how long each action waits to take effect. Yet world models often reuse the autoencoders of text-to-video generators, built for offline generation with no agent waiting and, without their training data and code, not retrainable at another compression. We therefore ask how, where and how much a world model should compress. We build CADRE, an open family of causal diffusion representation autoencoders spanning multiple spatio-temporal compressions. Its members differ only in a small bottleneck on frozen features and share a diffusion decoder self-distilled to one or a few steps. We train the same world model on each autoencoder in two domains, manipulation and navigation, with two environments each. CADRE forms most of the latency-quality frontier, especially with a moving camera. Our study also leads to four findings. At strong compression, a diffusion decoder is sharper than perceptual regression. In robot manipulation, temporal compression is more effective in the autoencoder than in the world model. Manipulation and navigation call for opposite compressions: temporal compression costs little when the camera is still, and spatial compression when it moves. Surprisingly, with a still camera, coarser spatial tokens hurt motion far more than image quality. Code, models and a live demo are at https://kyutai.org/blog/2026-10-21-cadre",
-    "published": "2026-10-21T17:58:11Z",
-    "score": 60,
+    "abstract": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
+    "published": "2026-10-22T17:59:50Z",
+    "score": 50,
     "why": "recent paper candidate"
   }
 ]

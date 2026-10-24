@@ -1,28 +1,17 @@
 [
   {
-    "source": "arXiv",
-    "artifact": "3d-object-asset",
-    "task": "3d-shape-generation",
-    "title": "Gate3DGen: A Pre-processing Model that Selectively Purifies Real-World Images for 3D Generation",
-    "paper": "http://arxiv.org/abs/2610.31649v1",
-    "repo": "",
-    "homepage": "",
-    "abstract": "Single-image 3D generation has achieved high fidelity on curated benchmarks, yet degrades sharply on real-world images with uneven illumination, blur, and occlusions. Purifying such inputs requires deciding when to intervene and preserving the visual cues needed for 3D generation, while leaving clean inputs unchanged. We introduce Gate3DGen, a selective pre-processing model that gates image inputs to existing 3D generators without retraining them. A degradation-aware router bypasses inputs classified as clean and extracts features to guide purification of the remaining inputs. Conditioned on these features, a 3D-oriented one-step purifier purifies degraded inputs with spatial losses that encourage preservation of object identity, contours, and textural cues. To provide paired supervision, we construct a synthetic data engine that renders clean views of 3D assets and synthesises composite degradations. On the synthetic benchmark, the purifier improves image fidelity and downstream 3D geometry in only 2.3s on average, reducing TRELLIS.2 mesh distance by 61.5% relative to degraded inputs. VLM evaluation and human preferences on real photographs further support identity preservation and degradation correction. More demos and code are available at https://supra-3d.github.io/gate3dgen.",
-    "published": "2026-10-22T17:57:02Z",
-    "score": 68,
-    "why": "recent paper candidate"
-  },
-  {
-    "source": "arXiv",
+    "source": "GitHub",
     "artifact": "4d-dynamic-scene-world",
     "task": "world-models",
-    "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
-    "paper": "http://arxiv.org/abs/2610.31668v1",
-    "repo": "",
+    "title": "Hy-Nomas",
+    "paper": "",
+    "repo": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
     "homepage": "",
-    "abstract": "Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict. Despite their different objectives, both concern the relationship between video observations and an evolving world. This survey adopts world modeling as a unifying lens for examining these developments. Viewing an observed video as a partial, lossy, and temporally ordered projection of a latent temporal world, we organize the literature around four complementary operations: reading infers world properties from observed video; writing synthesizes video from specified or learned world conditions; sharing integrates understanding and generation through common modeling mechanisms; and interacting predicts and updates world states under actions and evolving observations. This perspective distinguishes temporal coherence in observed or generated sequences from consistency in the underlying world state. Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.",
-    "published": "2026-10-22T17:59:50Z",
-    "score": 50,
-    "why": "recent paper candidate"
+    "abstract": "Hy-Nomas: Towards Free-form Interactive World Generation",
+    "published": "",
+    "created_at": "2026-10-21T03:04:54Z",
+    "updated_at": "2026-10-24T05:42:57Z",
+    "score": 49,
+    "why": "new repository in watched organization `Tencent Hunyuan`"
   }
 ]

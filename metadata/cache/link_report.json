@@ -203,7 +203,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-07-31T13:58:55Z",
       "reason": "",
-      "stars": 26025,
+      "stars": 26040,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -270,7 +270,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-23T13:12:44Z",
       "reason": "",
-      "stars": 3289,
+      "stars": 3294,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -675,7 +675,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2024-10-31T01:20:19Z",
       "reason": "",
-      "stars": 1941,
+      "stars": 1942,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -787,7 +787,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-02-10T07:37:37Z",
       "reason": "",
-      "stars": 8411,
+      "stars": 8428,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -897,9 +897,9 @@
       "full_name": "NVlabs/Sana",
       "homepage": "https://nvlabs.github.io/Sana/docs/",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-19T03:28:45Z",
+      "pushed_at": "2026-10-23T16:06:06Z",
       "reason": "",
-      "stars": 9398,
+      "stars": 9654,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1357,7 +1357,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-11-04T11:19:04Z",
       "reason": "",
-      "stars": 13086,
+      "stars": 13109,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1613,7 +1613,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-10-08T08:57:37Z",
       "reason": "",
-      "stars": 12634,
+      "stars": 12668,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1648,7 +1648,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-10T06:14:59Z",
       "reason": "",
-      "stars": 4570,
+      "stars": 4579,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1788,7 +1788,7 @@
       "license": "AGPL-3.0",
       "pushed_at": "2025-06-26T01:36:37Z",
       "reason": "",
-      "stars": 724,
+      "stars": 725,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2142,7 +2142,7 @@
       "license": "MIT",
       "pushed_at": "2025-03-17T03:26:54Z",
       "reason": "",
-      "stars": 3187,
+      "stars": 3188,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2238,7 +2238,7 @@
       "license": "",
       "pushed_at": "2025-04-27T08:11:49Z",
       "reason": "",
-      "stars": 854,
+      "stars": 855,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2286,7 +2286,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-10-17T05:46:57Z",
       "reason": "",
-      "stars": 3983,
+      "stars": 3993,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2369,7 +2369,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-03-05T09:38:07Z",
       "reason": "",
-      "stars": 17241,
+      "stars": 17302,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2615,7 +2615,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-03-13T02:55:53Z",
       "reason": "",
-      "stars": 336,
+      "stars": 338,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2711,7 +2711,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-28T09:58:12Z",
       "reason": "",
-      "stars": 15158,
+      "stars": 15202,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2732,7 +2732,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-17T10:10:07Z",
       "reason": "",
-      "stars": 4232,
+      "stars": 4280,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2818,7 +2818,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-01-03T09:09:13Z",
       "reason": "",
-      "stars": 4574,
+      "stars": 4578,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2853,7 +2853,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-07-30T17:43:28Z",
       "reason": "",
-      "stars": 11,
+      "stars": 12,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3125,7 +3125,7 @@
       "license": "",
       "pushed_at": "2025-06-16T05:29:19Z",
       "reason": "",
-      "stars": 1359,
+      "stars": 1360,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3256,7 +3256,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-26T07:27:56Z",
       "reason": "",
-      "stars": 14009,
+      "stars": 14111,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3291,7 +3291,7 @@
       "license": "MIT",
       "pushed_at": "2026-06-04T07:11:09Z",
       "reason": "",
-      "stars": 7103,
+      "stars": 7222,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3374,7 +3374,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-17T21:29:05Z",
       "reason": "",
-      "stars": 3596,
+      "stars": 3597,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4261,7 +4261,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-22T06:35:46Z",
       "reason": "",
-      "stars": 391,
+      "stars": 392,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4395,7 +4395,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-15T17:27:25Z",
       "reason": "",
-      "stars": 2952,
+      "stars": 2957,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4434,12 +4434,23 @@
       "source": "arXiv API"
     },
     "repo": {
+      "archived": false,
       "content_type": "",
+      "description": "Voyager is an interactive RGBD video generation model conditioned on camera input, and supports real-time 3D reconstruction.",
       "final_url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager",
-      "reason": "GitHub API unavailable: <urlopen error EOF occurred in violation of protocol (_ssl.c:2437)>",
-      "state": "unknown",
-      "status": 0,
+      "full_name": "Tencent-Hunyuan/HunyuanWorld-Voyager",
+      "homepage": "https://3d-models.hunyuan.tencent.com/world/",
+      "license": "NOASSERTION",
+      "pushed_at": "2026-04-15T17:30:08Z",
+      "reason": "",
+      "stars": 1606,
+      "state": "ok",
+      "status": 200,
       "title": ""
+    },
+    "repo_semantics": {
+      "ok": true,
+      "score": 0.3
     }
   },
   "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)": {
@@ -4480,7 +4491,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-10T07:10:23Z",
       "reason": "",
-      "stars": 1618,
+      "stars": 1621,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4513,9 +4524,9 @@
       "full_name": "SkyworkAI/Matrix-Game",
       "homepage": "https://matrix-game-v4-0.github.io/page/",
       "license": "MIT",
-      "pushed_at": "2026-10-16T12:12:45Z",
+      "pushed_at": "2026-10-26T08:00:48Z",
       "reason": "",
-      "stars": 2618,
+      "stars": 2770,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4532,12 +4543,12 @@
       "reason": "",
       "state": "ok",
       "status": 200,
-      "title": "NVIDIA Cosmos"
+      "title": "NVIDIA Cosmos: Open Platform for Physical AI"
     },
     "homepage_semantics": {
-      "observed_title": "NVIDIA Cosmos",
+      "observed_title": "NVIDIA Cosmos: Open Platform for Physical AI",
       "ok": false,
-      "score": 0.5
+      "score": 0.701
     },
     "paper": {
       "content_type": "text/html; charset=utf-8",
@@ -4561,9 +4572,9 @@
       "full_name": "NVIDIA/cosmos",
       "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
       "license": "NOASSERTION",
-      "pushed_at": "2026-10-16T16:20:04Z",
+      "pushed_at": "2026-10-21T22:46:16Z",
       "reason": "",
-      "stars": 12064,
+      "stars": 12147,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4665,7 +4676,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-23T04:29:20Z",
       "reason": "",
-      "stars": 1110,
+      "stars": 1111,
       "state": "ok",
       "status": 200,
       "title": ""

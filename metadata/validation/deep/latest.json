@@ -1,6 +1,6 @@
 {
   "blocking_errors": 6,
-  "commit": "4c54803fb75311a46618d7b240898058c8269fe3",
+  "commit": "1c6f7182e7b8bbcba321bc92b6ff01b964ff3035",
   "findings": [
     {
       "code": "semantic.paper_mismatch",
@@ -117,12 +117,6 @@
       "severity": "warning"
     },
     {
-      "code": "network.repo.unknown",
-      "location": "50-4d-dynamic-scene-world/hunyuanworld-voyager (world_4d.jsonl:11)",
-      "message": "`repo` could not be conclusively verified: GitHub API unavailable: <urlopen error EOF occurred in violation of protocol (_ssl.c:2437)>.",
-      "severity": "warning"
-    },
-    {
       "code": "metadata.organization",
       "location": "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)",
       "message": "Repository owner suggests organization `Tencent Hunyuan`.",
@@ -165,11 +159,11 @@
       "severity": "notice"
     }
   ],
-  "generated_at": "2026-10-19 08:55:59 UTC",
+  "generated_at": "2026-10-26 08:58:37 UTC",
   "mode": "deep",
   "notices": 3,
   "records_checked": 207,
   "status": "fail",
   "version": 2,
-  "warnings": 18
+  "warnings": 17
 }

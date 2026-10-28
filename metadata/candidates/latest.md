@@ -3,12 +3,12 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-10-27 06:24 UTC`
+- Generated: `2026-10-28 06:54 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-10-27/`
+- Raw files: `metadata/candidates/2026-10-28/`
 - New candidates today: **6**
-- New watched-org repositories today: **1**
+- New watched-org repositories today: **0**
 
 ## Review Checklist
 
@@ -21,20 +21,23 @@
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 76 | arXiv | 2026-10-24 | **WMEval: Evaluating Interactive World Models Grounded on Physical Simulations** | simulation | recent paper candidate | [Paper](http://arxiv.org/abs/2610.33894v1) |
-| 70 | arXiv | 2026-10-24 | **Mix Forcing: Causal Pre-Training via Mixture Attention for Interactive World Models** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2610.33589v1) |
-| 60 | arXiv | 2026-10-26 | **WorldPager: Zero-Stall Tiered Memory for Long-Horizon World Models on a Single Consumer GPU** | game-worlds | recent paper candidate | [Paper](http://arxiv.org/abs/2610.35529v1) |
-| 57 | arXiv | 2026-10-23 | **World-in-Context: Interactive Video World Modeling with In-Context Conditioning** | world-models | recent paper candidate | [Paper](http://arxiv.org/abs/2610.33169v1) |
-| 46 | arXiv | 2026-10-22 | **WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations** | simulation | recent paper candidate | [Paper](http://arxiv.org/abs/2610.31834v1) |
+| 60 | arXiv | 2026-10-27 | **GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling** | game-worlds | recent paper candidate | [Paper](http://arxiv.org/abs/2610.37257v1) |
+| 60 | arXiv | 2026-10-27 | **ScIntBench: Physical Interaction Plausibility in 3D Scene Generation** | simulation | recent paper candidate | [Paper](http://arxiv.org/abs/2610.37326v1) |
+| 49 | arXiv | 2026-10-26 | **E0.5: From Reconstructive to Future-Predictive 3D Foundations for Robotic World-Action Modeling** | robotics-worlds | recent paper candidate | [Paper](http://arxiv.org/abs/2610.36011v1) |
 
 ## image-2d
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 46 | GitHub | 2026-10-22 | **Nemotron-Labs-Diffusion-Uni** | text-to-image | new repository in watched organization `NVLabs` | [Repo](https://github.com/NVlabs/Nemotron-Labs-Diffusion-Uni) |
+| 49 | arXiv | 2026-10-27 | **FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation** | text-to-image | recent paper candidate | [Paper](http://arxiv.org/abs/2610.36545v1) |
+| 49 | arXiv | 2026-10-26 | **Learning and Reasoning with Geometry: How Generation Helps Spatial Understanding** | controllable-generation | recent paper candidate | [Paper](http://arxiv.org/abs/2610.36022v1) |
+
+## video
+
+| Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
+|--:|:--|:--|:--|:--|:--|:--|
+| 67 | arXiv | 2026-10-26 | **VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation** | human-animation | recent paper candidate | [Paper](http://arxiv.org/abs/2610.35864v2) |
 
 ## New Repositories in Watched Organizations
 
-| Organization | Repo | Stars | Created | Why it may matter |
-|:--|:--|--:|:--|:--|
-| NVLabs | [NVlabs/Nemotron-Labs-Diffusion-Uni](https://github.com/NVlabs/Nemotron-Labs-Diffusion-Uni) | 1 | 2026-10-22 | new repository in watched organization `NVLabs` |
+- No new watched-org repositories were found.

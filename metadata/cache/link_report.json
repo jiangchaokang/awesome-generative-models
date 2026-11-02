@@ -56,7 +56,7 @@
       "license": "MIT",
       "pushed_at": "2026-01-29T14:31:40Z",
       "reason": "",
-      "stars": 138,
+      "stars": 137,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -203,7 +203,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-07-31T13:58:55Z",
       "reason": "",
-      "stars": 26040,
+      "stars": 26044,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -270,7 +270,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-23T13:12:44Z",
       "reason": "",
-      "stars": 3294,
+      "stars": 3298,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -305,7 +305,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-01-27T14:25:02Z",
       "reason": "",
-      "stars": 107,
+      "stars": 108,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -490,7 +490,7 @@
       "license": "MIT",
       "pushed_at": "2026-03-13T05:29:12Z",
       "reason": "",
-      "stars": 622,
+      "stars": 623,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -675,7 +675,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2024-10-31T01:20:19Z",
       "reason": "",
-      "stars": 1942,
+      "stars": 1943,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -787,7 +787,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-02-10T07:37:37Z",
       "reason": "",
-      "stars": 8428,
+      "stars": 8444,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -897,9 +897,9 @@
       "full_name": "NVlabs/Sana",
       "homepage": "https://nvlabs.github.io/Sana/docs/",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-23T16:06:06Z",
+      "pushed_at": "2026-10-30T07:01:25Z",
       "reason": "",
-      "stars": 9654,
+      "stars": 9753,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1357,7 +1357,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-11-04T11:19:04Z",
       "reason": "",
-      "stars": 13109,
+      "stars": 13172,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1613,7 +1613,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-10-08T08:57:37Z",
       "reason": "",
-      "stars": 12668,
+      "stars": 12710,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1648,7 +1648,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-10T06:14:59Z",
       "reason": "",
-      "stars": 4579,
+      "stars": 4591,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -1669,7 +1669,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-07T06:13:09Z",
       "reason": "",
-      "stars": 1849,
+      "stars": 1851,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2142,7 +2142,7 @@
       "license": "MIT",
       "pushed_at": "2025-03-17T03:26:54Z",
       "reason": "",
-      "stars": 3188,
+      "stars": 3189,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2286,7 +2286,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-10-17T05:46:57Z",
       "reason": "",
-      "stars": 3993,
+      "stars": 4039,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2369,7 +2369,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-03-05T09:38:07Z",
       "reason": "",
-      "stars": 17302,
+      "stars": 17359,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2615,7 +2615,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-03-13T02:55:53Z",
       "reason": "",
-      "stars": 338,
+      "stars": 339,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2711,7 +2711,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-28T09:58:12Z",
       "reason": "",
-      "stars": 15202,
+      "stars": 15300,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2732,7 +2732,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-17T10:10:07Z",
       "reason": "",
-      "stars": 4280,
+      "stars": 4335,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2818,7 +2818,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-01-03T09:09:13Z",
       "reason": "",
-      "stars": 4578,
+      "stars": 4586,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -2952,7 +2952,7 @@
       "license": "",
       "pushed_at": "2025-07-02T13:28:30Z",
       "reason": "",
-      "stars": 232,
+      "stars": 233,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3125,7 +3125,7 @@
       "license": "",
       "pushed_at": "2025-06-16T05:29:19Z",
       "reason": "",
-      "stars": 1360,
+      "stars": 1363,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3254,9 +3254,9 @@
       "full_name": "microsoft/TRELLIS",
       "homepage": "https://trellis3d.github.io",
       "license": "MIT",
-      "pushed_at": "2026-06-26T07:27:56Z",
+      "pushed_at": "2026-10-27T05:03:08Z",
       "reason": "",
-      "stars": 14111,
+      "stars": 14172,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -3287,11 +3287,11 @@
       "description": "TripoSR: Fast 3D Object Reconstruction from a Single Image",
       "final_url": "https://github.com/VAST-AI-Research/TripoSR",
       "full_name": "VAST-AI-Research/TripoSR",
-      "homepage": "",
+      "homepage": "https://www.tripo3d.ai/research/triposr",
       "license": "MIT",
       "pushed_at": "2026-06-04T07:11:09Z",
       "reason": "",
-      "stars": 7222,
+      "stars": 7277,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4261,7 +4261,7 @@
       "license": "MIT",
       "pushed_at": "2025-07-22T06:35:46Z",
       "reason": "",
-      "stars": 392,
+      "stars": 393,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4360,7 +4360,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-05-12T03:05:38Z",
       "reason": "",
-      "stars": 264,
+      "stars": 265,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4443,7 +4443,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-04-15T17:30:08Z",
       "reason": "",
-      "stars": 1606,
+      "stars": 1603,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4491,7 +4491,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-06-10T07:10:23Z",
       "reason": "",
-      "stars": 1621,
+      "stars": 1624,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4524,9 +4524,9 @@
       "full_name": "SkyworkAI/Matrix-Game",
       "homepage": "https://matrix-game-v4-0.github.io/page/",
       "license": "MIT",
-      "pushed_at": "2026-10-26T08:00:48Z",
+      "pushed_at": "2026-10-29T02:26:29Z",
       "reason": "",
-      "stars": 2770,
+      "stars": 2826,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4572,9 +4572,9 @@
       "full_name": "NVIDIA/cosmos",
       "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
       "license": "NOASSERTION",
-      "pushed_at": "2026-10-21T22:46:16Z",
+      "pushed_at": "2026-10-30T04:58:28Z",
       "reason": "",
-      "stars": 12147,
+      "stars": 12228,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4641,7 +4641,7 @@
       "license": "",
       "pushed_at": "2026-06-23T10:34:22Z",
       "reason": "",
-      "stars": 36,
+      "stars": 38,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4676,7 +4676,7 @@
       "license": "NOASSERTION",
       "pushed_at": "2025-10-23T04:29:20Z",
       "reason": "",
-      "stars": 1111,
+      "stars": 1113,
       "state": "ok",
       "status": 200,
       "title": ""
@@ -4711,7 +4711,7 @@
       "license": "Apache-2.0",
       "pushed_at": "2025-12-31T15:00:36Z",
       "reason": "",
-      "stars": 115,
+      "stars": 114,
       "state": "ok",
       "status": 200,
       "title": ""

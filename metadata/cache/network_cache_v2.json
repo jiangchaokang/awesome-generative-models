@@ -2,1007 +2,1007 @@
   "entries": {
     "v2:arxiv-title:2310.08710": {
       "persist": true,
-      "timestamp": 1793005076.1231868,
+      "timestamp": 1793617935.8413076,
       "value": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research"
     },
     "v2:arxiv-title:2310.12945": {
       "persist": true,
-      "timestamp": 1793005076.1232178,
+      "timestamp": 1793617935.8413568,
       "value": "3D-GPT: Procedural 3D Modeling with Large Language Models"
     },
     "v2:arxiv-title:2403.02151": {
       "persist": true,
-      "timestamp": 1793005076.1232715,
+      "timestamp": 1793617935.841444,
       "value": "TripoSR: Fast 3D Object Reconstruction from a Single Image"
     },
     "v2:arxiv-title:2403.03206": {
       "persist": true,
-      "timestamp": 1793005076.123353,
+      "timestamp": 1793617935.8415732,
       "value": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis"
     },
     "v2:arxiv-title:2403.04692": {
       "persist": true,
-      "timestamp": 1793005076.1232812,
+      "timestamp": 1793617935.8414562,
       "value": "PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation"
     },
     "v2:arxiv-title:2403.06845": {
       "persist": true,
-      "timestamp": 1793005076.1231458,
+      "timestamp": 1793617935.8412478,
       "value": "DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation"
     },
     "v2:arxiv-title:2403.15698": {
       "persist": true,
-      "timestamp": 1793005076.1233206,
+      "timestamp": 1793617935.8415217,
       "value": "SceneX: Procedural Controllable Large-scale Scene Generation"
     },
     "v2:arxiv-title:2404.07191": {
       "persist": true,
-      "timestamp": 1793005076.1231813,
+      "timestamp": 1793617935.841299,
       "value": "InstantMesh: Efficient 3D Mesh Generation from a Single Image with Sparse-view Large Reconstruction Models"
     },
     "v2:arxiv-title:2405.11616": {
       "persist": true,
-      "timestamp": 1793005076.1233118,
+      "timestamp": 1793617935.8415043,
       "value": "Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention"
     },
     "v2:arxiv-title:2405.20343": {
       "persist": true,
-      "timestamp": 1793005076.1231923,
+      "timestamp": 1793617935.8413157,
       "value": "Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image"
     },
     "v2:arxiv-title:2405.20759": {
       "persist": true,
-      "timestamp": 1793005076.123329,
+      "timestamp": 1793617935.8415346,
       "value": "Information Theoretic Text-to-Image Alignment"
     },
     "v2:arxiv-title:2406.03293": {
       "persist": true,
-      "timestamp": 1793005076.1232414,
+      "timestamp": 1793617935.8413975,
       "value": "Text-to-Image Rectified Flow as Plug-and-Play Priors"
     },
     "v2:arxiv-title:2406.05641": {
       "persist": true,
-      "timestamp": 1793005076.1231678,
+      "timestamp": 1793617935.8412793,
       "value": "PaRa: Personalizing Text-to-Image Diffusion via Parameter Rank Reduction"
     },
     "v2:arxiv-title:2406.05814": {
       "persist": true,
-      "timestamp": 1793005076.1232371,
+      "timestamp": 1793617935.8413875,
       "value": "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
     },
     "v2:arxiv-title:2406.10210": {
       "persist": true,
-      "timestamp": 1793005076.123325,
+      "timestamp": 1793617935.8415287,
       "value": "Make It Count: Text-to-Image Generation with an Accurate Number of Objects"
     },
     "v2:arxiv-title:2407.14979": {
       "persist": true,
-      "timestamp": 1793005076.123303,
+      "timestamp": 1793617935.8414896,
       "value": "RGB2Point: 3D Point Cloud Generation from Single RGB Images"
     },
     "v2:arxiv-title:2408.06072": {
       "persist": true,
-      "timestamp": 1793005076.1232486,
+      "timestamp": 1793617935.8414044,
       "value": "CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer"
     },
     "v2:arxiv-title:2408.14732": {
       "persist": true,
-      "timestamp": 1793005076.1232622,
+      "timestamp": 1793617935.841428,
       "value": "OctFusion: Octree-based Diffusion Models for 3D Shape Generation"
     },
     "v2:arxiv-title:2408.14837": {
       "persist": true,
-      "timestamp": 1793005076.1232984,
+      "timestamp": 1793617935.8414826,
       "value": "Diffusion Models Are Real-Time Game Engines"
     },
     "v2:arxiv-title:2409.05463": {
       "persist": true,
-      "timestamp": 1793005076.1233163,
+      "timestamp": 1793617935.8415115,
       "value": "DriveScape: Towards High-Resolution Controllable Multi-View Driving Video Generation"
     },
     "v2:arxiv-title:2409.08215": {
       "persist": true,
-      "timestamp": 1793005076.1232944,
+      "timestamp": 1793617935.8414767,
       "value": "LT3SD: Latent Trees for 3D Scene Diffusion"
     },
     "v2:arxiv-title:2410.01295": {
       "persist": true,
-      "timestamp": 1793005076.1232226,
+      "timestamp": 1793617935.8413641,
       "value": "LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion"
     },
     "v2:arxiv-title:2410.01699": {
       "persist": true,
-      "timestamp": 1793005076.1232536,
+      "timestamp": 1793617935.8414142,
       "value": "Accelerating Auto-regressive Text-to-Image Generation with Training-free Speculative Jacobi Decoding"
     },
     "v2:arxiv-title:2410.05954": {
       "persist": true,
-      "timestamp": 1793005076.123208,
+      "timestamp": 1793617935.841341,
       "value": "Pyramidal Flow Matching for Efficient Video Generative Modeling"
     },
     "v2:arxiv-title:2410.08261": {
       "persist": true,
-      "timestamp": 1793005076.123213,
+      "timestamp": 1793617935.8413491,
       "value": "Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis"
     },
     "v2:arxiv-title:2410.10306": {
       "persist": true,
-      "timestamp": 1793005076.1232274,
+      "timestamp": 1793617935.841372,
       "value": "Animate-X: Universal Character Image Animation with Enhanced Motion Representation"
     },
     "v2:arxiv-title:2410.10629": {
       "persist": true,
-      "timestamp": 1793005076.1232324,
+      "timestamp": 1793617935.84138,
       "value": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers"
     },
     "v2:arxiv-title:2410.11817": {
       "persist": true,
-      "timestamp": 1793005076.1232576,
+      "timestamp": 1793617935.8414214,
       "value": "Improving Long-Text Alignment for Text-to-Image Diffusion Models"
     },
     "v2:arxiv-title:2410.13863": {
       "persist": true,
-      "timestamp": 1793005076.1233077,
+      "timestamp": 1793617935.8414972,
       "value": "Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens"
     },
     "v2:arxiv-title:2410.16719": {
       "persist": true,
-      "timestamp": 1793005076.1232898,
+      "timestamp": 1793617935.8414702,
       "value": "Progressive Compositionality in Text-to-Image Generative Models"
     },
     "v2:arxiv-title:2410.18084": {
       "persist": true,
-      "timestamp": 1793005076.1233332,
+      "timestamp": 1793617935.8415413,
       "value": "DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes"
     },
     "v2:arxiv-title:2411.00769": {
       "persist": true,
-      "timestamp": 1793005076.1231606,
+      "timestamp": 1793617935.8412685,
       "value": "GameGen-X: Interactive Open-world Game Video Generation"
     },
     "v2:arxiv-title:2411.04989": {
       "persist": true,
-      "timestamp": 1793005076.123203,
+      "timestamp": 1793617935.8413334,
       "value": "SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation"
     },
     "v2:arxiv-title:2411.11252": {
       "persist": true,
-      "timestamp": 1793005076.123198,
+      "timestamp": 1793617935.8413246,
       "value": "DrivingSphere: Building a High-fidelity 4D World for Closed-loop Simulation"
     },
     "v2:arxiv-title:2411.13807": {
       "persist": true,
-      "timestamp": 1793005076.123175,
+      "timestamp": 1793617935.8412895,
       "value": "MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control"
     },
     "v2:arxiv-title:2411.15236": {
       "persist": true,
-      "timestamp": 1793005076.1233475,
+      "timestamp": 1793617935.8415656,
       "value": "Text Embedding is Not All You Need: Attention Control for Text-to-Image Semantic Alignment with Text Self-Attention Maps"
     },
     "v2:arxiv-title:2411.16443": {
       "persist": true,
-      "timestamp": 1793005076.1233375,
+      "timestamp": 1793617935.8415484,
       "value": "SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis"
     },
     "v2:arxiv-title:2411.16503": {
       "persist": true,
-      "timestamp": 1793005076.1232672,
+      "timestamp": 1793617935.8414366,
       "value": "Noise Diffusion for Enhancing Semantic Faithfulness in Text-to-Image Synthesis"
     },
     "v2:arxiv-title:2411.17440": {
       "persist": true,
-      "timestamp": 1793005076.1233418,
+      "timestamp": 1793617935.8415549,
       "value": "Identity-Preserving Text-to-Video Generation by Frequency Decomposition"
     },
     "v2:arxiv-title:2411.17592": {
       "persist": true,
-      "timestamp": 1793005076.1232855,
+      "timestamp": 1793617935.8414636,
       "value": "VideoDirector: Precise Video Editing via Text-to-Video Models"
     },
     "v2:arxiv-title:2411.17697": {
       "persist": true,
-      "timestamp": 1793005076.5073013,
+      "timestamp": 1793617936.0622475,
       "value": "StableAnimator: High-Quality Identity-Preserving Human Image Animation"
     },
     "v2:arxiv-title:2411.18159": {
       "persist": true,
-      "timestamp": 1793005076.5074315,
+      "timestamp": 1793617936.0626233,
       "value": "Type-R: Automatically Retouching Typos for Text-to-Image Generation"
     },
     "v2:arxiv-title:2412.00596": {
       "persist": true,
-      "timestamp": 1793005076.5073423,
+      "timestamp": 1793617936.0623648,
       "value": "PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation"
     },
     "v2:arxiv-title:2412.01506": {
       "persist": true,
-      "timestamp": 1793005076.507289,
+      "timestamp": 1793617936.0622103,
       "value": "Structured 3D Latents for Scalable and Versatile 3D Generation"
     },
     "v2:arxiv-title:2412.02168": {
       "persist": true,
-      "timestamp": 1793005076.5073109,
+      "timestamp": 1793617936.0622733,
       "value": "Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis"
     },
     "v2:arxiv-title:2412.02193": {
       "persist": true,
-      "timestamp": 1793005076.5074224,
+      "timestamp": 1793617936.062597,
       "value": "LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models"
     },
     "v2:arxiv-title:2412.02912": {
       "persist": true,
-      "timestamp": 1793005076.5073507,
+      "timestamp": 1793617936.062389,
       "value": "ShapeWords: Guiding Text-to-Image Synthesis with 3D Shape-Aware Prompts"
     },
     "v2:arxiv-title:2412.03603": {
       "persist": true,
-      "timestamp": 1793005076.5074182,
+      "timestamp": 1793617936.0625849,
       "value": "HunyuanVideo: A Systematic Framework For Large Video Generative Models"
     },
     "v2:arxiv-title:2412.05435": {
       "persist": true,
-      "timestamp": 1793005076.5074353,
+      "timestamp": 1793617936.0626354,
       "value": "UniScene: Unified Occupancy-centric Driving Scene Generation"
     },
     "v2:arxiv-title:2412.05818": {
       "persist": true,
-      "timestamp": 1793005076.5073686,
+      "timestamp": 1793617936.0624416,
       "value": "SILMM: Self-Improving Large Multimodal Models for Compositional Text-to-Image Generation"
     },
     "v2:arxiv-title:2412.05848": {
       "persist": true,
-      "timestamp": 1793005076.5073254,
+      "timestamp": 1793617936.0623147,
       "value": "MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation"
     },
     "v2:arxiv-title:2412.09283": {
       "persist": true,
-      "timestamp": 1793005076.5073295,
+      "timestamp": 1793617936.0623274,
       "value": "InstanceCap: Improving Text-to-Video Generation via Instance-aware Structured Caption"
     },
     "v2:arxiv-title:2412.09619": {
       "persist": true,
-      "timestamp": 1793005076.5074272,
+      "timestamp": 1793617936.0626113,
       "value": "SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training"
     },
     "v2:arxiv-title:2412.09856": {
       "persist": true,
-      "timestamp": 1793005076.5073955,
+      "timestamp": 1793617936.0625207,
       "value": "LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity"
     },
     "v2:arxiv-title:2412.11198": {
       "persist": true,
-      "timestamp": 1793005076.5074048,
+      "timestamp": 1793617936.0625477,
       "value": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control"
     },
     "v2:arxiv-title:2412.11596": {
       "persist": true,
-      "timestamp": 1793005076.5072799,
+      "timestamp": 1793617936.0621848,
       "value": "MeshArt: Generating Articulated Meshes with Structure-Guided Transformers"
     },
     "v2:arxiv-title:2412.13188": {
       "persist": true,
-      "timestamp": 1793005076.5072844,
+      "timestamp": 1793617936.0621974,
       "value": "StreetCrafter: Street View Synthesis with Controllable Video Diffusion Models"
     },
     "v2:arxiv-title:2412.21117": {
       "persist": true,
-      "timestamp": 1793005076.507334,
+      "timestamp": 1793617936.0623395,
       "value": "Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation"
     },
     "v2:arxiv-title:2501.03006": {
       "persist": true,
-      "timestamp": 1793005076.5073998,
+      "timestamp": 1793617936.0625327,
       "value": "TransPixeler: Advancing Text-to-Video Generation with Transparency"
     },
     "v2:arxiv-title:2501.03059": {
       "persist": true,
-      "timestamp": 1793005076.5072758,
+      "timestamp": 1793617936.0621724,
       "value": "Through-The-Mask: Mask-based Motion Trajectories for Image-to-Video Generation"
     },
     "v2:arxiv-title:2501.03575": {
       "persist": true,
-      "timestamp": 1793005076.507409,
+      "timestamp": 1793617936.062559,
       "value": "Cosmos World Foundation Model Platform for Physical AI"
     },
     "v2:arxiv-title:2501.06481": {
       "persist": true,
-      "timestamp": 1793005076.5073638,
+      "timestamp": 1793617936.0624287,
       "value": "Focus-N-Fix: Region-Aware Fine-Tuning for Text-to-Image Generation"
     },
     "v2:arxiv-title:2501.07647": {
       "persist": true,
-      "timestamp": 1793005076.5073066,
+      "timestamp": 1793617936.0622604,
       "value": "BlobGEN-Vid: Compositional Text-to-Video Generation with Blob Video Representations"
     },
     "v2:arxiv-title:2501.08325": {
       "persist": true,
-      "timestamp": 1793005076.5073464,
+      "timestamp": 1793617936.062377,
       "value": "GameFactory: Creating New Games with Generative Interactive Videos"
     },
     "v2:arxiv-title:2501.10021": {
       "persist": true,
-      "timestamp": 1793005076.5072973,
+      "timestamp": 1793617936.0622349,
       "value": "X-Dyna: Expressive Dynamic Human Image Animation"
     },
     "v2:arxiv-title:2501.12202": {
       "persist": true,
-      "timestamp": 1793005076.5073774,
+      "timestamp": 1793617936.0624673,
       "value": "Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation"
     },
     "v2:arxiv-title:2501.12910": {
       "persist": true,
-      "timestamp": 1793005076.5073383,
+      "timestamp": 1793617936.0623517,
       "value": "PreciseCam: Precise Camera Control for Text-to-Image Generation"
     },
     "v2:arxiv-title:2501.13554": {
       "persist": true,
-      "timestamp": 1793005076.507391,
+      "timestamp": 1793617936.0625079,
       "value": "One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt"
     },
     "v2:arxiv-title:2501.14729": {
       "persist": true,
-      "timestamp": 1793005076.5073597,
+      "timestamp": 1793617936.0624163,
       "value": "HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation"
     },
     "v2:arxiv-title:2501.18427": {
       "persist": true,
-      "timestamp": 1793005076.5073864,
+      "timestamp": 1793617936.062494,
       "value": "SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer"
     },
     "v2:arxiv-title:2502.01061": {
       "persist": true,
-      "timestamp": 1793005076.5072935,
+      "timestamp": 1793617936.0622237,
       "value": "OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models"
     },
     "v2:arxiv-title:2502.02590": {
       "persist": true,
-      "timestamp": 1793005076.5073552,
+      "timestamp": 1793617936.062402,
       "value": "Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling"
     },
     "v2:arxiv-title:2502.06145": {
       "persist": true,
-      "timestamp": 1793005076.507321,
+      "timestamp": 1793617936.0623007,
       "value": "Animate Anyone 2: High-Fidelity Character Image Animation with Environment Affordance"
     },
     "v2:arxiv-title:2502.10248": {
       "persist": true,
-      "timestamp": 1793005076.5073817,
+      "timestamp": 1793617936.0624804,
       "value": "Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model"
     },
     "v2:arxiv-title:2502.10675": {
       "persist": true,
-      "timestamp": 1793005076.5073156,
+      "timestamp": 1793617936.0622857,
       "value": "Hierarchically-Structured Open-Vocabulary Indoor Scene Synthesis with Pre-trained Large Language Model"
     },
     "v2:arxiv-title:2502.12456": {
       "persist": true,
-      "timestamp": 1793005076.5072706,
+      "timestamp": 1793617936.0621595,
       "value": "Not-So-Optimal Transport Flows for 3D Point Cloud Generation"
     },
     "v2:arxiv-title:2503.02187": {
       "persist": true,
-      "timestamp": 1793005076.5073729,
+      "timestamp": 1793617936.0624537,
       "value": "h-Edit: Effective and Flexible Diffusion-Based Editing via Doob's h-Transform"
     },
     "v2:arxiv-title:2503.07598": {
       "persist": true,
-      "timestamp": 1793005076.5072563,
+      "timestamp": 1793617936.0621233,
       "value": "VACE: All-in-One Video Creation and Editing"
     },
     "v2:arxiv-title:2503.08594": {
       "persist": true,
-      "timestamp": 1793005076.5072653,
+      "timestamp": 1793617936.0621438,
       "value": "PointNSP: Autoregressive 3D Point Cloud Generation with Next-Scale Level-of-Detail Prediction"
     },
     "v2:arxiv-title:2503.13424": {
       "persist": true,
-      "timestamp": 1793005076.5074139,
+      "timestamp": 1793617936.0625725,
       "value": "Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation"
     },
     "v2:arxiv-title:2503.13479": {
       "persist": true,
-      "timestamp": 1793005076.8339043,
+      "timestamp": 1793617936.2429092,
       "value": "EAGLE: Contextual Point Cloud Generation via Adaptive Continuous Normalizing Flow with Self-Attention"
     },
     "v2:arxiv-title:2503.14445": {
       "persist": true,
-      "timestamp": 1793005076.833933,
+      "timestamp": 1793617936.2429519,
       "value": "Bolt3D: Generating 3D Scenes in Seconds"
     },
     "v2:arxiv-title:2503.15855": {
       "persist": true,
-      "timestamp": 1793005076.8339417,
+      "timestamp": 1793617936.242965,
       "value": "VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling"
     },
     "v2:arxiv-title:2503.16302": {
       "persist": true,
-      "timestamp": 1793005076.833867,
+      "timestamp": 1793617936.2428503,
       "value": "Unleashing Vecset Diffusion Model for Fast Shape Generation"
     },
     "v2:arxiv-title:2503.16375": {
       "persist": true,
-      "timestamp": 1793005076.833937,
+      "timestamp": 1793617936.2429578,
       "value": "NuiScene: Exploring Efficient Generation of Unbounded Outdoor Scenes"
     },
     "v2:arxiv-title:2503.16420": {
       "persist": true,
-      "timestamp": 1793005076.8338873,
+      "timestamp": 1793617936.242882,
       "value": "SynCity: Training-Free Generation of 3D Worlds"
     },
     "v2:arxiv-title:2503.18324": {
       "persist": true,
-      "timestamp": 1793005076.8339543,
+      "timestamp": 1793617936.2429836,
       "value": "Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control"
     },
     "v2:arxiv-title:2503.18476": {
       "persist": true,
-      "timestamp": 1793005076.8338292,
+      "timestamp": 1793617936.2427816,
       "value": "Global-Local Tree Search in VLMs for 3D Indoor Scene Generation"
     },
     "v2:arxiv-title:2503.18938": {
       "persist": true,
-      "timestamp": 1793005076.8338914,
+      "timestamp": 1793617936.242888,
       "value": "AdaWorld: Learning Adaptable World Models with Latent Actions"
     },
     "v2:arxiv-title:2503.19897": {
       "persist": true,
-      "timestamp": 1793005076.8337882,
+      "timestamp": 1793617936.2427194,
       "value": "Scaling Down Text Encoders of Text-to-Image Diffusion Models"
     },
     "v2:arxiv-title:2503.20314": {
       "persist": true,
-      "timestamp": 1793005076.8339581,
+      "timestamp": 1793617936.2429893,
       "value": "Wan: Open and Advanced Large-Scale Video Generative Models"
     },
     "v2:arxiv-title:2503.21732": {
       "persist": true,
-      "timestamp": 1793005076.8338,
+      "timestamp": 1793617936.242738,
       "value": "SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling"
     },
     "v2:arxiv-title:2503.21781": {
       "persist": true,
-      "timestamp": 1793005076.8337955,
+      "timestamp": 1793617936.2427313,
       "value": "VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models"
     },
     "v2:arxiv-title:2503.22231": {
       "persist": true,
-      "timestamp": 1793005076.8339214,
+      "timestamp": 1793617936.242935,
       "value": "CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving"
     },
     "v2:arxiv-title:2503.23284": {
       "persist": true,
-      "timestamp": 1793005076.8339255,
+      "timestamp": 1793617936.2429404,
       "value": "SketchVideo: Sketch-based Video Generation and Editing"
     },
     "v2:arxiv-title:2504.01724": {
       "persist": true,
-      "timestamp": 1793005076.8338957,
+      "timestamp": 1793617936.2428951,
       "value": "DreamActor-M1: Holistic, Expressive and Robust Human Image Animation with Hybrid Guidance"
     },
     "v2:arxiv-title:2504.06752": {
       "persist": true,
-      "timestamp": 1793005076.8338337,
+      "timestamp": 1793617936.2427883,
       "value": "Compass Control: Multi Object Orientation Control for Text-to-Image Generation"
     },
     "v2:arxiv-title:2504.06861": {
       "persist": true,
-      "timestamp": 1793005076.8338056,
+      "timestamp": 1793617936.2427459,
       "value": "EIDT-V: Exploiting Intersections in Diffusion Trajectories for Model-Agnostic, Zero-Shot, Training-Free Text-to-Video Generation"
     },
     "v2:arxiv-title:2504.08685": {
       "persist": true,
-      "timestamp": 1793005076.8338542,
+      "timestamp": 1793617936.2428184,
       "value": "Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model"
     },
     "v2:arxiv-title:2504.09975": {
       "persist": true,
-      "timestamp": 1793005076.8338094,
+      "timestamp": 1793617936.2427528,
       "value": "OctGPT: Octree-based Multiscale Autoregressive Models for 3D Shape Generation"
     },
     "v2:arxiv-title:2504.11289": {
       "persist": true,
-      "timestamp": 1793005076.8338625,
+      "timestamp": 1793617936.2428317,
       "value": "UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer"
     },
     "v2:arxiv-title:2504.11346": {
       "persist": true,
-      "timestamp": 1793005076.833837,
+      "timestamp": 1793617936.2427938,
       "value": "Seedream 3.0 Technical Report"
     },
     "v2:arxiv-title:2504.11739": {
       "persist": true,
-      "timestamp": 1793005076.8338206,
+      "timestamp": 1793617936.242769,
       "value": "The Devil is in the Prompts: Retrieval-Augmented Prompt Optimization for Text-to-Video Generation"
     },
     "v2:arxiv-title:2504.12369": {
       "persist": true,
-      "timestamp": 1793005076.833879,
+      "timestamp": 1793617936.2428699,
       "value": "WorldMem: Long-term Consistent World Simulation with Memory"
     },
     "v2:arxiv-title:2505.02648": {
       "persist": true,
-      "timestamp": 1793005076.833913,
+      "timestamp": 1793617936.2429223,
       "value": "MCCD: Multi-Agent Collaboration-based Compositional Diffusion for Complex Text-to-Image Generation"
     },
     "v2:arxiv-title:2505.02836": {
       "persist": true,
-      "timestamp": 1793005076.8339171,
+      "timestamp": 1793617936.2429283,
       "value": "Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation"
     },
     "v2:arxiv-title:2505.04622": {
       "persist": true,
-      "timestamp": 1793005076.8339002,
+      "timestamp": 1793617936.2429025,
       "value": "PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with Auto-Regressive Transformer"
     },
     "v2:arxiv-title:2505.09140": {
       "persist": true,
-      "timestamp": 1793005076.833816,
+      "timestamp": 1793617936.2427616,
       "value": "TopoDiT-3D: Topology-Aware Diffusion Transformer with Bottleneck Structure for 3D Point Cloud Generation"
     },
     "v2:arxiv-title:2505.13447": {
       "persist": true,
-      "timestamp": 1793005076.8338706,
+      "timestamp": 1793617936.242857,
       "value": "Mean Flows for One-step Generative Modeling"
     },
     "v2:arxiv-title:2505.14521": {
       "persist": true,
-      "timestamp": 1793005076.8339295,
+      "timestamp": 1793617936.2429469,
       "value": "Sparc3D: Sparse Representation and Construction for High-Resolution 3D Shapes Modeling"
     },
     "v2:arxiv-title:2505.20287": {
       "persist": true,
-      "timestamp": 1793005076.833846,
+      "timestamp": 1793617936.2428067,
       "value": "MotionPro: A Precise Motion Controller for Image-to-Video Generation"
     },
     "v2:arxiv-title:2505.21070": {
       "persist": true,
-      "timestamp": 1793005076.83385,
+      "timestamp": 1793617936.2428122,
       "value": "Minute-Long Videos with Dual Parallelisms"
     },
     "v2:arxiv-title:2505.21960": {
       "persist": true,
-      "timestamp": 1793005076.8338413,
+      "timestamp": 1793617936.2428005,
       "value": "One-Way Ticket:Time-Independent Unified Encoder for Distilling Text-to-Image Diffusion Models"
     },
     "v2:arxiv-title:2505.23660": {
       "persist": true,
-      "timestamp": 1793005076.833825,
+      "timestamp": 1793617936.242775,
       "value": "D-AR: Diffusion via Autoregressive Models"
     },
     "v2:arxiv-title:2505.24877": {
       "persist": true,
-      "timestamp": 1793005076.8339455,
+      "timestamp": 1793617936.2429714,
       "value": "AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion"
     },
     "v2:arxiv-title:2506.02459": {
       "persist": true,
-      "timestamp": 1793005076.8339086,
+      "timestamp": 1793617936.2429152,
       "value": "ReSpace: Text-Driven Autoregressive 3D Indoor Scene Synthesis and Editing"
     },
     "v2:arxiv-title:2506.04225": {
       "persist": true,
-      "timestamp": 1793005076.83395,
+      "timestamp": 1793617936.2429776,
       "value": "Voyager: Long-Range and World-Consistent Video Diffusion for Explorable 3D Scene Generation"
     },
     "v2:arxiv-title:2506.05341": {
       "persist": true,
-      "timestamp": 1793005076.8338752,
+      "timestamp": 1793617936.242864,
       "value": "Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via Spatial Reasoning"
     },
     "v2:arxiv-title:2506.05573": {
       "persist": true,
-      "timestamp": 1793005076.8338838,
+      "timestamp": 1793617936.2428758,
       "value": "PartCrafter: Structured 3D Mesh Generation via Compositional Latent Diffusion Transformers"
     },
     "v2:arxiv-title:2506.07932": {
       "persist": true,
-      "timestamp": 1793005076.8338583,
+      "timestamp": 1793617936.242824,
       "value": "Squeeze3D: Extreme Neural Compression with Latent Space Bridging"
     },
     "v2:arxiv-title:2506.16504": {
       "persist": true,
-      "timestamp": 1793005077.0918064,
+      "timestamp": 1793617936.4218225,
       "value": "Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate Details"
     },
     "v2:arxiv-title:2506.17074": {
       "persist": true,
-      "timestamp": 1793005077.0919037,
+      "timestamp": 1793617936.4219933,
       "value": "Assembler: Scalable 3D Part Assembly via Anchor Point Diffusion"
     },
     "v2:arxiv-title:2506.18538": {
       "persist": true,
-      "timestamp": 1793005077.0917673,
+      "timestamp": 1793617936.4217603,
       "value": "A Question Bank to Assess AI Inclusivity: Mapping out the Journey from Diversity Errors to Inclusion Excellence"
     },
     "v2:arxiv-title:2506.18701": {
       "persist": true,
-      "timestamp": 1793005077.0917616,
+      "timestamp": 1793617936.4217515,
       "value": "Matrix-Game: Interactive World Foundation Model"
     },
     "v2:arxiv-title:2506.20590": {
       "persist": true,
-      "timestamp": 1793005077.0918689,
+      "timestamp": 1793617936.4219368,
       "value": "WonderFree: Enhancing Novel View Quality and Cross-View Consistency for 3D Scene Exploration"
     },
     "v2:arxiv-title:2506.22291": {
       "persist": true,
-      "timestamp": 1793005077.091864,
+      "timestamp": 1793617936.421929,
       "value": "RoomCraft: Controllable and Complete 3D Indoor Scene Generation"
     },
     "v2:arxiv-title:2506.24113": {
       "persist": true,
-      "timestamp": 1793005077.0917807,
+      "timestamp": 1793617936.4217799,
       "value": "Epona: Autoregressive Diffusion World Model for Autonomous Driving"
     },
     "v2:arxiv-title:2507.00603": {
       "persist": true,
-      "timestamp": 1793005077.0918999,
+      "timestamp": 1793617936.4219866,
       "value": "World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model"
     },
     "v2:arxiv-title:2507.02857": {
       "persist": true,
-      "timestamp": 1793005077.0918956,
+      "timestamp": 1793617936.4219792,
       "value": "AnyI2V: Animating Any Conditional Image with Motion Control"
     },
     "v2:arxiv-title:2507.06165": {
       "persist": true,
-      "timestamp": 1793005077.0918782,
+      "timestamp": 1793617936.4219513,
       "value": "OmniPart: Part-Aware 3D Generation with Semantic Decoupling and Structural Cohesion"
     },
     "v2:arxiv-title:2507.08772": {
       "persist": true,
-      "timestamp": 1793005077.0918107,
+      "timestamp": 1793617936.4218295,
       "value": "From One to More: Contextual Part Latents for 3D Generation"
     },
     "v2:arxiv-title:2507.17745": {
       "persist": true,
-      "timestamp": 1793005077.0917757,
+      "timestamp": 1793617936.4217727,
       "value": "Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention"
     },
     "v2:arxiv-title:2507.19058": {
       "persist": true,
-      "timestamp": 1793005077.091874,
+      "timestamp": 1793617936.4219444,
       "value": "ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment"
     },
     "v2:arxiv-title:2507.21809": {
       "persist": true,
-      "timestamp": 1793005077.091883,
+      "timestamp": 1793617936.4219587,
       "value": "HunyuanWorld 1.0: Generating Immersive, Explorable, and Interactive 3D Worlds from Words or Pixels"
     },
     "v2:arxiv-title:2508.02324": {
       "persist": true,
-      "timestamp": 1793005077.0917714,
+      "timestamp": 1793617936.4217658,
       "value": "Qwen-Image Technical Report"
     },
     "v2:arxiv-title:2508.11952": {
       "persist": true,
-      "timestamp": 1793005077.091802,
+      "timestamp": 1793617936.4218156,
       "value": "UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding"
     },
     "v2:arxiv-title:2508.15169": {
       "persist": true,
-      "timestamp": 1793005077.091824,
+      "timestamp": 1793617936.421866,
       "value": "MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion"
     },
     "v2:arxiv-title:2508.17832": {
       "persist": true,
-      "timestamp": 1793005077.0918512,
+      "timestamp": 1793617936.4219084,
       "value": "HLG: Comprehensive 3D Room Construction via Hierarchical Layout Generation"
     },
     "v2:arxiv-title:2509.05263": {
       "persist": true,
-      "timestamp": 1793005077.0917852,
+      "timestamp": 1793617936.4217885,
       "value": "LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation"
     },
     "v2:arxiv-title:2509.14981": {
       "persist": true,
-      "timestamp": 1793005077.09186,
+      "timestamp": 1793617936.4219222,
       "value": "SPATIALGEN: Layout-guided 3D Indoor Scene Generation"
     },
     "v2:arxiv-title:2509.15249": {
       "persist": true,
-      "timestamp": 1793005077.091794,
+      "timestamp": 1793617936.421802,
       "value": "Causal Reasoning Elicits Controllable 3D Scene Generation"
     },
     "v2:arxiv-title:2509.20414": {
       "persist": true,
-      "timestamp": 1793005077.0917442,
+      "timestamp": 1793617936.421722,
       "value": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent"
     },
     "v2:arxiv-title:2509.22281": {
       "persist": true,
-      "timestamp": 1793005077.0918875,
+      "timestamp": 1793617936.4219658,
       "value": "MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial Reasoning"
     },
     "v2:arxiv-title:2509.23951": {
       "persist": true,
-      "timestamp": 1793005077.0918372,
+      "timestamp": 1793617936.4218862,
       "value": "HunyuanImage 3.0 Technical Report"
     },
     "v2:arxiv-title:2509.25079": {
       "persist": true,
-      "timestamp": 1793005077.0918198,
+      "timestamp": 1793617936.4218585,
       "value": "UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation"
     },
     "v2:arxiv-title:2510.02178": {
       "persist": true,
-      "timestamp": 1793005077.091847,
+      "timestamp": 1793617936.4219015,
       "value": "DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis"
     },
     "v2:arxiv-title:2510.13678": {
       "persist": true,
-      "timestamp": 1793005077.0917513,
+      "timestamp": 1793617936.4217343,
       "value": "FlashWorld: High-quality 3D Scene Generation within Seconds"
     },
     "v2:arxiv-title:2510.14977": {
       "persist": true,
-      "timestamp": 1793005077.0918152,
+      "timestamp": 1793617936.4218364,
       "value": "Terra: Explorable Native 3D World Model with Point Latents"
     },
     "v2:arxiv-title:2510.23880": {
       "persist": true,
-      "timestamp": 1793005077.0919123,
+      "timestamp": 1793617936.4220057,
       "value": "TRELLISWorld: Training-Free World Generation from Object Generators"
     },
     "v2:arxiv-title:2510.26140": {
       "persist": true,
-      "timestamp": 1793005077.0918915,
+      "timestamp": 1793617936.4219725,
       "value": "FullPart: Generating each 3D Part at Full Resolution"
     },
     "v2:arxiv-title:2511.18173": {
       "persist": true,
-      "timestamp": 1793005077.0917895,
+      "timestamp": 1793617936.4217954,
       "value": "EgoControl: Controllable Egocentric Video Generation via 3D Full-Body Poses"
     },
     "v2:arxiv-title:2511.18870": {
       "persist": true,
-      "timestamp": 1793005077.0917976,
+      "timestamp": 1793617936.4218085,
       "value": "HunyuanVideo 1.5 Technical Report"
     },
     "v2:arxiv-title:2511.22456": {
       "persist": true,
-      "timestamp": 1793005077.0918415,
+      "timestamp": 1793617936.421893,
       "value": "ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models"
     },
     "v2:arxiv-title:2512.02012": {
       "persist": true,
-      "timestamp": 1793005077.0918288,
+      "timestamp": 1793617936.4218733,
       "value": "Improved Mean Flows: On the Challenges of Fastforward Generative Models"
     },
     "v2:arxiv-title:2512.03052": {
       "persist": true,
-      "timestamp": 1793005077.091833,
+      "timestamp": 1793617936.42188,
       "value": "LATTICE: Democratize High-Fidelity 3D Generation at Scale"
     },
     "v2:arxiv-title:2512.09164": {
       "persist": true,
-      "timestamp": 1793005077.0919077,
+      "timestamp": 1793617936.4219992,
       "value": "WonderZoom: Multi-Scale 3D World Generation"
     },
     "v2:arxiv-title:2512.14614": {
       "persist": true,
-      "timestamp": 1793005077.091757,
+      "timestamp": 1793617936.4217439,
       "value": "WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling"
     },
     "v2:arxiv-title:2512.21185": {
       "persist": true,
-      "timestamp": 1793005077.091921,
+      "timestamp": 1793617936.4220195,
       "value": "UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement"
     },
     "v2:arxiv-title:2601.17124": {
       "persist": true,
-      "timestamp": 1793005077.0919166,
+      "timestamp": 1793617936.4220123,
       "value": "iFSQ: Improving FSQ for Image Generation with 1 Line of Code"
     },
     "v2:arxiv-title:2601.19785": {
       "persist": true,
-      "timestamp": 1793005077.0918562,
+      "timestamp": 1793617936.421916,
       "value": "GeoDiff3D: Self-Supervised 3D Scene Generation with Geometry-Constrained 2D Diffusion Guidance"
     },
     "v2:arxiv-title:2602.01536": {
       "persist": true,
-      "timestamp": 1793005077.3334212,
+      "timestamp": 1793617936.6421535,
       "value": "UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning"
     },
     "v2:arxiv-title:2602.04770": {
       "persist": true,
-      "timestamp": 1793005077.3335283,
+      "timestamp": 1793617936.6422894,
       "value": "Generative Modeling via Drifting"
     },
     "v2:arxiv-title:2602.06521": {
       "persist": true,
-      "timestamp": 1793005077.333488,
+      "timestamp": 1793617936.6422222,
       "value": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving"
     },
     "v2:arxiv-title:2602.12100": {
       "persist": true,
-      "timestamp": 1793005077.3331165,
+      "timestamp": 1793617936.6420555,
       "value": "AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer"
     },
     "v2:arxiv-title:2602.17040": {
       "persist": true,
-      "timestamp": 1793005077.3334768,
+      "timestamp": 1793617936.6422062,
       "value": "Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion"
     },
     "v2:arxiv-title:2602.24096": {
       "persist": true,
-      "timestamp": 1793005077.3334632,
+      "timestamp": 1793617936.6421845,
       "value": "DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer"
     },
     "v2:arxiv-title:2603.14062": {
       "persist": true,
-      "timestamp": 1793005077.3334153,
+      "timestamp": 1793617936.6421459,
       "value": "TMPDiff: Temporal Mixed-Precision for Diffusion Models"
     },
     "v2:arxiv-title:2603.14936": {
       "persist": true,
-      "timestamp": 1793005077.332985,
+      "timestamp": 1793617936.641998,
       "value": "Bridging the Intention-Expression Gap: Aligning Multi-Dimensional Preferences via Hierarchical Relevance Feedback in Text-to-Image Diffusion"
     },
     "v2:arxiv-title:2603.15279": {
       "persist": true,
-      "timestamp": 1793005077.3334537,
+      "timestamp": 1793617936.6421683,
       "value": "Faster Inference of Flow-Based Generative Models via Improved Data-Noise Coupling"
     },
     "v2:arxiv-title:2603.15478": {
       "persist": true,
-      "timestamp": 1793005077.3334098,
+      "timestamp": 1793617936.6421394,
       "value": "ViFeEdit: A Video-Free Tuner of Your Video Diffusion Transformer"
     },
     "v2:arxiv-title:2603.16099": {
       "persist": true,
-      "timestamp": 1793005077.333404,
+      "timestamp": 1793617936.6421323,
       "value": "OneWorld: Taming Scene Generation with 3D Unified Representation Autoencoder"
     },
     "v2:arxiv-title:2603.16711": {
       "persist": true,
-      "timestamp": 1793005077.333508,
+      "timestamp": 1793617936.642254,
       "value": "Search2Motion: Training-Free Object-Level Motion Control via Attention-Consensus Search"
     },
     "v2:arxiv-title:2603.17652": {
       "persist": true,
-      "timestamp": 1793005077.333497,
+      "timestamp": 1793617936.6422462,
       "value": "VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs"
     },
     "v2:arxiv-title:2603.17965": {
       "persist": true,
-      "timestamp": 1793005077.3335123,
+      "timestamp": 1793617936.6422622,
       "value": "LaDe: Unified Multi-Layered Graphic Media Generation and Decomposition"
     },
     "v2:arxiv-title:2603.18627": {
       "persist": true,
-      "timestamp": 1793005077.3333132,
+      "timestamp": 1793617936.6421108,
       "value": "Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation"
     },
     "v2:arxiv-title:2603.19206": {
       "persist": true,
-      "timestamp": 1793005077.3334582,
+      "timestamp": 1793617936.6421762,
       "value": "RPiAE: A Representation-Pivoted Autoencoder Enhancing Both Image Generation and Editing"
     },
     "v2:arxiv-title:2603.19216": {
       "persist": true,
-      "timestamp": 1793005077.3334832,
+      "timestamp": 1793617936.6422143,
       "value": "DreamPartGen: Semantically Grounded Part-Level 3D Generation via Collaborative Latent Denoising"
     },
     "v2:arxiv-title:2603.19222": {
       "persist": true,
-      "timestamp": 1793005077.333317,
+      "timestamp": 1793617936.6421168,
       "value": "Spectrally-Guided Diffusion Noise Schedules"
     },
     "v2:arxiv-title:2603.19360": {
       "persist": true,
-      "timestamp": 1793005077.3331072,
+      "timestamp": 1793617936.6420388,
       "value": "Warm-Start Flow Matching for Guaranteed Fast Text/Image Generation"
     },
     "v2:arxiv-title:2603.19598": {
       "persist": true,
-      "timestamp": 1793005077.333293,
+      "timestamp": 1793617936.642078,
       "value": "FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow"
     },
     "v2:arxiv-title:2603.19675": {
       "persist": true,
-      "timestamp": 1793005077.3335323,
+      "timestamp": 1793617936.6422966,
       "value": "DynFlowDrive: Flow-Based Dynamic World Modeling for Autonomous Driving"
     },
     "v2:arxiv-title:2603.20192": {
       "persist": true,
-      "timestamp": 1793005077.333112,
+      "timestamp": 1793617936.6420474,
       "value": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation"
     },
     "v2:arxiv-title:2603.20470": {
       "persist": true,
-      "timestamp": 1793005077.3334928,
+      "timestamp": 1793617936.6422312,
       "value": "DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation"
     },
     "v2:arxiv-title:2603.20725": {
       "persist": true,
-      "timestamp": 1793005077.3335373,
+      "timestamp": 1793617936.6423042,
       "value": "Premier: Personalized Preference Modulation with Learnable User Embedding in Text-to-Image Generation"
     },
     "v2:arxiv-title:2603.21136": {
       "persist": true,
-      "timestamp": 1793005077.3334677,
+      "timestamp": 1793617936.642192,
       "value": "MS-CustomNet: Controllable Multi-Subject Customization with Hierarchical Relational Semantics"
     },
     "v2:arxiv-title:2603.21295": {
       "persist": true,
-      "timestamp": 1793005077.333516,
+      "timestamp": 1793617936.6422687,
       "value": "Text-Image Conditioned 3D Generation"
     },
     "v2:arxiv-title:2603.21783": {
       "persist": true,
-      "timestamp": 1793005077.333398,
+      "timestamp": 1793617936.642125,
       "value": "SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis"
     },
     "v2:arxiv-title:2603.22041": {
       "persist": true,
-      "timestamp": 1793005077.3334274,
+      "timestamp": 1793617936.6421604,
       "value": "DTVI: Dual-Stage Textual and Visual Intervention for Safe Text-to-Image Generation"
     },
     "v2:arxiv-title:2603.22091": {
       "persist": true,
-      "timestamp": 1793005077.333299,
+      "timestamp": 1793617936.6420875,
       "value": "P-Flow: Prompting Visual Effects Generation"
     },
     "v2:arxiv-title:2603.22228": {
       "persist": true,
-      "timestamp": 1793005077.3330388,
+      "timestamp": 1793617936.642031,
       "value": "SpatialReward: Verifiable Spatial Reward Modeling for Fine-Grained Spatial Consistency in Text-to-Image Generation"
     },
     "v2:arxiv-title:2603.22943": {
       "persist": true,
-      "timestamp": 1793005077.3335204,
+      "timestamp": 1793617936.642276,
       "value": "PersonalQ: Select, Quantize, and Serve Personalized Diffusion Models for Efficient Inference"
     },
     "v2:arxiv-title:2603.22972": {
       "persist": true,
-      "timestamp": 1793005077.3335416,
+      "timestamp": 1793617936.6423113,
       "value": "WorldMesh: Generating Navigable Multi-Room 3D Scenes via Mesh-Conditioned Image Diffusion"
     },
     "v2:arxiv-title:2603.23140": {
       "persist": true,
-      "timestamp": 1793005077.333032,
+      "timestamp": 1793617936.6420217,
       "value": "DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models"
     },
     "v2:arxiv-title:2603.23376": {
       "persist": true,
-      "timestamp": 1793005077.3333087,
+      "timestamp": 1793617936.6421025,
       "value": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment"
     },
     "v2:arxiv-title:2603.23491": {
       "persist": true,
-      "timestamp": 1793005077.3331208,
+      "timestamp": 1793617936.642063,
       "value": "Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation"
     },
     "v2:arxiv-title:2603.23500": {
       "persist": true,
-      "timestamp": 1793005077.3329923,
+      "timestamp": 1793617936.6420124,
       "value": "UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation"
     },
     "v2:arxiv-title:2603.23973": {
       "persist": true,
-      "timestamp": 1793005077.3333037,
+      "timestamp": 1793617936.6420949,
       "value": "SLAT-Phys: Fast Material Property Field Prediction from Structured 3D Latents"
     },
     "v2:arxiv-title:2603.24086": {
       "persist": true,
-      "timestamp": 1793005077.3334723,
+      "timestamp": 1793617936.6421993,
       "value": "LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation"
     },
     "v2:arxiv-title:2603.24570": {
       "persist": true,
-      "timestamp": 1793005077.333125,
+      "timestamp": 1793617936.6420703,
       "value": "Anti-I2V: Safeguarding your photos from malicious image-to-video generation"
     },
     "v2:arxiv-title:2603.24965": {
       "persist": true,
-      "timestamp": 1793005077.3335245,
+      "timestamp": 1793617936.6422834,
       "value": "Self-Corrected Image Generation with Explainable Latent Rewards"
     },
     "v2:github:advocate99/assetformer": {
       "persist": true,
-      "timestamp": 1793005077.850456,
+      "timestamp": 1793617937.156185,
       "value": {
         "meta": {
           "archived": false,
@@ -1025,7 +1025,7 @@
     },
     "v2:github:aiuniai/unique3d": {
       "persist": true,
-      "timestamp": 1793005113.512116,
+      "timestamp": 1793617941.255939,
       "value": {
         "meta": {
           "archived": false,
@@ -1048,7 +1048,7 @@
     },
     "v2:github:ali-vilab/unianimate-dit": {
       "persist": true,
-      "timestamp": 1793005113.507854,
+      "timestamp": 1793617941.2266204,
       "value": {
         "meta": {
           "archived": false,
@@ -1071,7 +1071,7 @@
     },
     "v2:github:ali-vilab/vace": {
       "persist": true,
-      "timestamp": 1793005113.5104938,
+      "timestamp": 1793617941.3557875,
       "value": {
         "meta": {
           "archived": false,
@@ -1080,7 +1080,7 @@
           "homepage": "https://ali-vilab.github.io/VACE-Page/",
           "license": "Apache-2.0",
           "pushed_at": "2025-10-17T05:46:57Z",
-          "stars": 3993
+          "stars": 4039
         },
         "probe": {
           "content_type": "",
@@ -1094,7 +1094,7 @@
     },
     "v2:github:black-forest-labs/flux": {
       "persist": true,
-      "timestamp": 1793005079.79221,
+      "timestamp": 1793617938.6914582,
       "value": {
         "meta": {
           "archived": false,
@@ -1103,7 +1103,7 @@
           "homepage": "",
           "license": "Apache-2.0",
           "pushed_at": "2025-07-31T13:58:55Z",
-          "stars": 26040
+          "stars": 26044
         },
         "probe": {
           "content_type": "",
@@ -1117,7 +1117,7 @@
     },
     "v2:github:bomingmiao/noisediffusion": {
       "persist": true,
-      "timestamp": 1793005081.4793856,
+      "timestamp": 1793617939.8766208,
       "value": {
         "meta": {
           "archived": false,
@@ -1140,7 +1140,7 @@
     },
     "v2:github:bujiazi/bytheway": {
       "persist": true,
-      "timestamp": 1793005078.8448796,
+      "timestamp": 1793617937.7338338,
       "value": {
         "meta": {
           "archived": false,
@@ -1163,7 +1163,7 @@
     },
     "v2:github:byliutao/1prompt1story": {
       "persist": true,
-      "timestamp": 1793005081.4928892,
+      "timestamp": 1793617940.254537,
       "value": {
         "meta": {
           "archived": false,
@@ -1186,7 +1186,7 @@
     },
     "v2:github:bytedance/x-dyna": {
       "persist": true,
-      "timestamp": 1793005114.2898378,
+      "timestamp": 1793617941.8817334,
       "value": {
         "meta": {
           "archived": false,
@@ -1209,7 +1209,7 @@
     },
     "v2:github:chao0511/mitune": {
       "persist": true,
-      "timestamp": 1793005080.5824027,
+      "timestamp": 1793617939.4720705,
       "value": {
         "meta": {
           "archived": false,
@@ -1232,7 +1232,7 @@
     },
     "v2:github:flymin/magicdrive-v2": {
       "persist": true,
-      "timestamp": 1793005081.0062087,
+      "timestamp": 1793617939.664673,
       "value": {
         "meta": {
           "archived": false,
@@ -1255,7 +1255,7 @@
     },
     "v2:github:gsunshine/meanflow": {
       "persist": true,
-      "timestamp": 1793005081.0256283,
+      "timestamp": 1793617939.6829867,
       "value": {
         "meta": {
           "archived": false,
@@ -1264,7 +1264,7 @@
           "homepage": "https://arxiv.org/abs/2505.13447",
           "license": "MIT",
           "pushed_at": "2026-03-13T05:29:12Z",
-          "stars": 622
+          "stars": 623
         },
         "probe": {
           "content_type": "",
@@ -1278,7 +1278,7 @@
     },
     "v2:github:intern-nexus/infinite-mobility": {
       "persist": true,
-      "timestamp": 1793005080.849874,
+      "timestamp": 1793617939.561328,
       "value": {
         "meta": {
           "archived": false,
@@ -1301,7 +1301,7 @@
     },
     "v2:github:jiangchaokang/vectorworld": {
       "persist": true,
-      "timestamp": 1793005077.7948055,
+      "timestamp": 1793617937.1355443,
       "value": {
         "meta": {
           "archived": false,
@@ -1310,7 +1310,7 @@
           "homepage": "",
           "license": "",
           "pushed_at": "2026-06-23T10:34:22Z",
-          "stars": 36
+          "stars": 38
         },
         "probe": {
           "content_type": "",
@@ -1324,7 +1324,7 @@
     },
     "v2:github:kevin-thu/epona": {
       "persist": true,
-      "timestamp": 1793005079.5355434,
+      "timestamp": 1793617938.688526,
       "value": {
         "meta": {
           "archived": false,
@@ -1333,7 +1333,7 @@
           "homepage": "https://kevin-thu.github.io/Epona/",
           "license": "MIT",
           "pushed_at": "2025-07-22T06:35:46Z",
-          "stars": 392
+          "stars": 393
         },
         "probe": {
           "content_type": "",
@@ -1347,7 +1347,7 @@
     },
     "v2:github:kovenyu/wonderworld": {
       "persist": true,
-      "timestamp": 1793005114.0517259,
+      "timestamp": 1793617941.7240224,
       "value": {
         "meta": {
           "archived": false,
@@ -1370,7 +1370,7 @@
     },
     "v2:github:liulin815/driveworld-vla": {
       "persist": true,
-      "timestamp": 1793005078.0096347,
+      "timestamp": 1793617937.215951,
       "value": {
         "meta": {
           "archived": false,
@@ -1393,7 +1393,7 @@
     },
     "v2:github:lizhihao6/sparc3d": {
       "persist": true,
-      "timestamp": 1793005082.7252455,
+      "timestamp": 1793617940.8618183,
       "value": {
         "meta": {
           "archived": false,
@@ -1402,7 +1402,7 @@
           "homepage": "https://lizhihao6.github.io/Sparc3D/",
           "license": "",
           "pushed_at": "2025-06-16T05:29:19Z",
-          "stars": 1360
+          "stars": 1363
         },
         "probe": {
           "content_type": "",
@@ -1416,7 +1416,7 @@
     },
     "v2:github:lmd0311/hermes": {
       "persist": true,
-      "timestamp": 1793005079.810187,
+      "timestamp": 1793617938.9842637,
       "value": {
         "meta": {
           "archived": false,
@@ -1425,7 +1425,7 @@
           "homepage": "https://arxiv.org/abs/2501.14729",
           "license": "Apache-2.0",
           "pushed_at": "2026-05-12T03:05:38Z",
-          "stars": 264
+          "stars": 265
         },
         "probe": {
           "content_type": "",
@@ -1439,7 +1439,7 @@
     },
     "v2:github:luping-liu/longalign": {
       "persist": true,
-      "timestamp": 1793005080.547952,
+      "timestamp": 1793617939.3329592,
       "value": {
         "meta": {
           "archived": false,
@@ -1462,7 +1462,7 @@
     },
     "v2:github:microsoft/trellis": {
       "persist": true,
-      "timestamp": 1793005083.2403095,
+      "timestamp": 1793617941.1374786,
       "value": {
         "meta": {
           "archived": false,
@@ -1470,8 +1470,8 @@
           "full_name": "microsoft/TRELLIS",
           "homepage": "https://trellis3d.github.io",
           "license": "MIT",
-          "pushed_at": "2026-06-26T07:27:56Z",
-          "stars": 14111
+          "pushed_at": "2026-10-27T05:03:08Z",
+          "stars": 14172
         },
         "probe": {
           "content_type": "",
@@ -1485,7 +1485,7 @@
     },
     "v2:github:nktoan/h-edit": {
       "persist": true,
-      "timestamp": 1793005080.0993779,
+      "timestamp": 1793617938.9687269,
       "value": {
         "meta": {
           "archived": false,
@@ -1508,7 +1508,7 @@
     },
     "v2:github:nvidia/cosmos": {
       "persist": true,
-      "timestamp": 1793005078.9905825,
+      "timestamp": 1793617937.8146775,
       "value": {
         "meta": {
           "archived": false,
@@ -1516,8 +1516,8 @@
           "full_name": "NVIDIA/cosmos",
           "homepage": "https://www.nvidia.com/en-us/ai/cosmos/",
           "license": "NOASSERTION",
-          "pushed_at": "2026-10-21T22:46:16Z",
-          "stars": 12147
+          "pushed_at": "2026-10-30T04:58:28Z",
+          "stars": 12228
         },
         "probe": {
           "content_type": "",
@@ -1531,7 +1531,7 @@
     },
     "v2:github:nvlabs/sana": {
       "persist": true,
-      "timestamp": 1793005082.239216,
+      "timestamp": 1793617940.567485,
       "value": {
         "meta": {
           "archived": false,
@@ -1539,8 +1539,8 @@
           "full_name": "NVlabs/Sana",
           "homepage": "https://nvlabs.github.io/Sana/docs/",
           "license": "Apache-2.0",
-          "pushed_at": "2026-10-23T16:06:06Z",
-          "stars": 9654
+          "pushed_at": "2026-10-30T07:01:25Z",
+          "stars": 9753
         },
         "probe": {
           "content_type": "",
@@ -1554,7 +1554,7 @@
     },
     "v2:github:octree-nn/octfusion": {
       "persist": true,
-      "timestamp": 1793005081.413875,
+      "timestamp": 1793617940.2523744,
       "value": {
         "meta": {
           "archived": false,
@@ -1563,7 +1563,7 @@
           "homepage": "",
           "license": "",
           "pushed_at": "2025-07-02T13:28:30Z",
-          "stars": 232
+          "stars": 233
         },
         "probe": {
           "content_type": "",
@@ -1577,7 +1577,7 @@
     },
     "v2:github:penghtyx/era3d": {
       "persist": true,
-      "timestamp": 1793005079.7954817,
+      "timestamp": 1793617938.6145554,
       "value": {
         "meta": {
           "archived": false,
@@ -1600,7 +1600,7 @@
     },
     "v2:github:pittisl/phyt2v": {
       "persist": true,
-      "timestamp": 1793005081.6352434,
+      "timestamp": 1793617940.2508776,
       "value": {
         "meta": {
           "archived": false,
@@ -1623,7 +1623,7 @@
     },
     "v2:github:pixart-alpha/pixart-sigma": {
       "persist": true,
-      "timestamp": 1793005081.688068,
+      "timestamp": 1793617940.256546,
       "value": {
         "meta": {
           "archived": false,
@@ -1632,7 +1632,7 @@
           "homepage": "https://pixart-alpha.github.io/PixArt-sigma-project/",
           "license": "Apache-2.0",
           "pushed_at": "2024-10-31T01:20:19Z",
-          "stars": 1942
+          "stars": 1943
         },
         "probe": {
           "content_type": "",
@@ -1646,7 +1646,7 @@
     },
     "v2:github:pku-yuangroup/consisid": {
       "persist": true,
-      "timestamp": 1793005078.8877356,
+      "timestamp": 1793617937.8336618,
       "value": {
         "meta": {
           "archived": false,
@@ -1669,7 +1669,7 @@
     },
     "v2:github:qwenlm/qwen-image": {
       "persist": true,
-      "timestamp": 1793005082.0089364,
+      "timestamp": 1793617940.572712,
       "value": {
         "meta": {
           "archived": false,
@@ -1678,7 +1678,7 @@
           "homepage": "",
           "license": "Apache-2.0",
           "pushed_at": "2026-02-10T07:37:37Z",
-          "stars": 8428
+          "stars": 8444
         },
         "probe": {
           "content_type": "",
@@ -1692,7 +1692,7 @@
     },
     "v2:github:showlab/d-ar": {
       "persist": true,
-      "timestamp": 1793005079.0154977,
+      "timestamp": 1793617937.8610804,
       "value": {
         "meta": {
           "archived": false,
@@ -1701,7 +1701,7 @@
           "homepage": "",
           "license": "MIT",
           "pushed_at": "2026-01-29T14:31:40Z",
-          "stars": 138
+          "stars": 137
         },
         "probe": {
           "content_type": "",
@@ -1715,7 +1715,7 @@
     },
     "v2:github:skyworkai/matrix-game": {
       "persist": true,
-      "timestamp": 1793005081.077092,
+      "timestamp": 1793617939.6886137,
       "value": {
         "meta": {
           "archived": false,
@@ -1723,8 +1723,8 @@
           "full_name": "SkyworkAI/Matrix-Game",
           "homepage": "https://matrix-game-v4-0.github.io/page/",
           "license": "MIT",
-          "pushed_at": "2026-10-26T08:00:48Z",
-          "stars": 2770
+          "pushed_at": "2026-10-29T02:26:29Z",
+          "stars": 2826
         },
         "probe": {
           "content_type": "",
@@ -1738,7 +1738,7 @@
     },
     "v2:github:stepfun-ai/step-video-t2v": {
       "persist": true,
-      "timestamp": 1793005082.9084768,
+      "timestamp": 1793617940.9651577,
       "value": {
         "meta": {
           "archived": false,
@@ -1747,7 +1747,7 @@
           "homepage": "",
           "license": "MIT",
           "pushed_at": "2025-03-17T03:26:54Z",
-          "stars": 3188
+          "stars": 3189
         },
         "probe": {
           "content_type": "",
@@ -1761,7 +1761,7 @@
     },
     "v2:github:tencent-hunyuan/flashvdm": {
       "persist": true,
-      "timestamp": 1793005113.508972,
+      "timestamp": 1793617941.3108628,
       "value": {
         "meta": {
           "archived": false,
@@ -1770,7 +1770,7 @@
           "homepage": "",
           "license": "NOASSERTION",
           "pushed_at": "2026-03-13T02:55:53Z",
-          "stars": 338
+          "stars": 339
         },
         "probe": {
           "content_type": "",
@@ -1784,7 +1784,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuan3d-2": {
       "persist": true,
-      "timestamp": 1793005080.26115,
+      "timestamp": 1793617939.0209188,
       "value": {
         "meta": {
           "archived": false,
@@ -1793,7 +1793,7 @@
           "homepage": "https://3d.hunyuan.tencent.com/",
           "license": "NOASSERTION",
           "pushed_at": "2025-10-28T09:58:12Z",
-          "stars": 15202
+          "stars": 15300
         },
         "probe": {
           "content_type": "",
@@ -1807,7 +1807,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuan3d-2.1": {
       "persist": true,
-      "timestamp": 1793005080.1257126,
+      "timestamp": 1793617939.0567484,
       "value": {
         "meta": {
           "archived": false,
@@ -1816,7 +1816,7 @@
           "homepage": "https://3d.hunyuan.tencent.com/",
           "license": "NOASSERTION",
           "pushed_at": "2025-10-17T10:10:07Z",
-          "stars": 4280
+          "stars": 4335
         },
         "probe": {
           "content_type": "",
@@ -1830,7 +1830,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuanimage-3.0": {
       "persist": true,
-      "timestamp": 1793005080.2131832,
+      "timestamp": 1793617939.0501215,
       "value": {
         "meta": {
           "archived": false,
@@ -1839,7 +1839,7 @@
           "homepage": "https://hunyuan.tencent.com/image",
           "license": "NOASSERTION",
           "pushed_at": "2026-06-23T13:12:44Z",
-          "stars": 3294
+          "stars": 3298
         },
         "probe": {
           "content_type": "",
@@ -1853,7 +1853,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuanvideo": {
       "persist": true,
-      "timestamp": 1793005080.2672663,
+      "timestamp": 1793617939.0437205,
       "value": {
         "meta": {
           "archived": false,
@@ -1862,7 +1862,7 @@
           "homepage": "https://aivideo.hunyuan.tencent.com",
           "license": "NOASSERTION",
           "pushed_at": "2026-10-08T08:57:37Z",
-          "stars": 12668
+          "stars": 12710
         },
         "probe": {
           "content_type": "",
@@ -1876,7 +1876,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuanvideo-1.5": {
       "persist": true,
-      "timestamp": 1793005080.207241,
+      "timestamp": 1793617939.0695589,
       "value": {
         "meta": {
           "archived": false,
@@ -1885,7 +1885,7 @@
           "homepage": "https://hunyuan.tencent.com/video/zh?tabIndex=0",
           "license": "NOASSERTION",
           "pushed_at": "2026-04-10T06:14:59Z",
-          "stars": 4579
+          "stars": 4591
         },
         "probe": {
           "content_type": "",
@@ -1899,7 +1899,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuanvideo-i2v": {
       "persist": true,
-      "timestamp": 1793005080.104741,
+      "timestamp": 1793617938.9855268,
       "value": {
         "meta": {
           "archived": false,
@@ -1908,7 +1908,7 @@
           "homepage": "https://video.hunyuan.tencent.com/",
           "license": "NOASSERTION",
           "pushed_at": "2026-04-07T06:13:09Z",
-          "stars": 1849
+          "stars": 1851
         },
         "probe": {
           "content_type": "",
@@ -1922,7 +1922,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuanworld-1.0": {
       "persist": true,
-      "timestamp": 1793005080.338654,
+      "timestamp": 1793617939.3833098,
       "value": {
         "meta": {
           "archived": false,
@@ -1945,7 +1945,7 @@
     },
     "v2:github:tencent-hunyuan/hunyuanworld-voyager": {
       "persist": true,
-      "timestamp": 1793005113.8891172,
+      "timestamp": 1793617941.5765295,
       "value": {
         "meta": {
           "archived": false,
@@ -1954,7 +1954,7 @@
           "homepage": "https://3d-models.hunyuan.tencent.com/world/",
           "license": "NOASSERTION",
           "pushed_at": "2026-04-15T17:30:08Z",
-          "stars": 1606
+          "stars": 1603
         },
         "probe": {
           "content_type": "",
@@ -1968,7 +1968,7 @@
     },
     "v2:github:tencent-hunyuan/hy-worldplay": {
       "persist": true,
-      "timestamp": 1793005080.4696262,
+      "timestamp": 1793617939.349827,
       "value": {
         "meta": {
           "archived": false,
@@ -1977,7 +1977,7 @@
           "homepage": "https://3d-models.hunyuan.tencent.com/world/",
           "license": "NOASSERTION",
           "pushed_at": "2026-06-10T07:10:23Z",
-          "stars": 1621
+          "stars": 1624
         },
         "probe": {
           "content_type": "",
@@ -1991,7 +1991,7 @@
     },
     "v2:github:tencent-hunyuan/ifsq": {
       "persist": true,
-      "timestamp": 1793005078.1443968,
+      "timestamp": 1793617937.2749374,
       "value": {
         "meta": {
           "archived": false,
@@ -2000,7 +2000,7 @@
           "homepage": "",
           "license": "NOASSERTION",
           "pushed_at": "2026-01-27T14:25:02Z",
-          "stars": 107
+          "stars": 108
         },
         "probe": {
           "content_type": "",
@@ -2014,7 +2014,7 @@
     },
     "v2:github:tencentarc/instantmesh": {
       "persist": true,
-      "timestamp": 1793005080.6821141,
+      "timestamp": 1793617939.3605793,
       "value": {
         "meta": {
           "archived": false,
@@ -2023,7 +2023,7 @@
           "homepage": "",
           "license": "Apache-2.0",
           "pushed_at": "2025-01-03T09:09:13Z",
-          "stars": 4578
+          "stars": 4586
         },
         "probe": {
           "content_type": "",
@@ -2037,7 +2037,7 @@
     },
     "v2:github:thudm/cogvideo": {
       "persist": true,
-      "timestamp": 1793005079.1304116,
+      "timestamp": 1793617938.385292,
       "value": {
         "meta": {
           "archived": false,
@@ -2046,7 +2046,7 @@
           "homepage": "",
           "license": "Apache-2.0",
           "pushed_at": "2025-11-04T11:19:04Z",
-          "stars": 13109
+          "stars": 13172
         },
         "probe": {
           "content_type": "",
@@ -2060,7 +2060,7 @@
     },
     "v2:github:ucaszyp/world4drive": {
       "persist": true,
-      "timestamp": 1793005114.065399,
+      "timestamp": 1793617941.7257202,
       "value": {
         "meta": {
           "archived": false,
@@ -2069,7 +2069,7 @@
           "homepage": "",
           "license": "Apache-2.0",
           "pushed_at": "2025-12-31T15:00:36Z",
-          "stars": 115
+          "stars": 114
         },
         "probe": {
           "content_type": "",
@@ -2083,16 +2083,16 @@
     },
     "v2:github:vast-ai-research/triposr": {
       "persist": true,
-      "timestamp": 1793005083.2695007,
+      "timestamp": 1793617941.2076395,
       "value": {
         "meta": {
           "archived": false,
           "description": "TripoSR: Fast 3D Object Reconstruction from a Single Image",
           "full_name": "VAST-AI-Research/TripoSR",
-          "homepage": "",
+          "homepage": "https://www.tripo3d.ai/research/triposr",
           "license": "MIT",
           "pushed_at": "2026-06-04T07:11:09Z",
-          "stars": 7222
+          "stars": 7277
         },
         "probe": {
           "content_type": "",
@@ -2106,7 +2106,7 @@
     },
     "v2:github:wan-video/wan2.1": {
       "persist": true,
-      "timestamp": 1793005113.866009,
+      "timestamp": 1793617941.5221097,
       "value": {
         "meta": {
           "archived": false,
@@ -2115,7 +2115,7 @@
           "homepage": "https://wan.video",
           "license": "Apache-2.0",
           "pushed_at": "2026-03-05T09:38:07Z",
-          "stars": 17302
+          "stars": 17359
         },
         "probe": {
           "content_type": "",
@@ -2129,7 +2129,7 @@
     },
     "v2:github:waymo-research/waymax": {
       "persist": true,
-      "timestamp": 1793005113.8689694,
+      "timestamp": 1793617941.543917,
       "value": {
         "meta": {
           "archived": false,
@@ -2138,7 +2138,7 @@
           "homepage": "",
           "license": "NOASSERTION",
           "pushed_at": "2025-10-23T04:29:20Z",
-          "stars": 1111
+          "stars": 1113
         },
         "probe": {
           "content_type": "",
@@ -2152,7 +2152,7 @@
     },
     "v2:github:xiaolul2/dynflowdrive": {
       "persist": true,
-      "timestamp": 1793005078.1325605,
+      "timestamp": 1793617937.1520026,
       "value": {
         "meta": {
           "archived": false,
@@ -2175,7 +2175,7 @@
     },
     "v2:github:zechao-guan/topodit-3d": {
       "persist": true,
-      "timestamp": 1793005083.1710837,
+      "timestamp": 1793617941.0695012,
       "value": {
         "meta": {
           "archived": false,
@@ -2198,7 +2198,7 @@
     },
     "v2:github:zhenglinzhou/its3d": {
       "persist": true,
-      "timestamp": 1793005080.6438992,
+      "timestamp": 1793617939.334692,
       "value": {
         "meta": {
           "archived": false,
@@ -2221,7 +2221,7 @@
     },
     "v2:http:https://3d-models.hunyuan.tencent.com/world/": {
       "persist": true,
-      "timestamp": 1793005081.0053158,
+      "timestamp": 1793617939.946292,
       "value": {
         "content_type": "text/html",
         "final_url": "https://3d-models.hunyuan.tencent.com/world/",
@@ -2233,7 +2233,7 @@
     },
     "v2:http:https://ali-vilab.github.io/VACE-Page/": {
       "persist": true,
-      "timestamp": 1793005113.6984293,
+      "timestamp": 1793617941.4550428,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://ali-vilab.github.io/VACE-Page/",
@@ -2245,7 +2245,7 @@
     },
     "v2:http:https://articulate-anymesh.github.io": {
       "persist": true,
-      "timestamp": 1793005078.5541997,
+      "timestamp": 1793617937.4941483,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://articulate-anymesh.github.io",
@@ -2257,7 +2257,7 @@
     },
     "v2:http:https://arxiv.org/abs/2310.08710": {
       "persist": true,
-      "timestamp": 1793005113.583158,
+      "timestamp": 1793617941.2458787,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2310.08710",
@@ -2269,7 +2269,7 @@
     },
     "v2:http:https://arxiv.org/abs/2310.12945": {
       "persist": true,
-      "timestamp": 1793005078.3124783,
+      "timestamp": 1793617937.380989,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2310.12945",
@@ -2281,7 +2281,7 @@
     },
     "v2:http:https://arxiv.org/abs/2403.02151": {
       "persist": true,
-      "timestamp": 1793005082.9688609,
+      "timestamp": 1793617940.9113503,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2403.02151",
@@ -2293,7 +2293,7 @@
     },
     "v2:http:https://arxiv.org/abs/2403.03206": {
       "persist": true,
-      "timestamp": 1793005079.248436,
+      "timestamp": 1793617938.4198782,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2403.03206",
@@ -2305,7 +2305,7 @@
     },
     "v2:http:https://arxiv.org/abs/2403.04692": {
       "persist": true,
-      "timestamp": 1793005081.340611,
+      "timestamp": 1793617939.9286685,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2403.04692",
@@ -2317,7 +2317,7 @@
     },
     "v2:http:https://arxiv.org/abs/2403.06845": {
       "persist": true,
-      "timestamp": 1793005078.946395,
+      "timestamp": 1793617937.7484941,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2403.06845",
@@ -2329,7 +2329,7 @@
     },
     "v2:http:https://arxiv.org/abs/2403.15698": {
       "persist": true,
-      "timestamp": 1793005082.053589,
+      "timestamp": 1793617940.3785412,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2403.15698",
@@ -2341,7 +2341,7 @@
     },
     "v2:http:https://arxiv.org/abs/2404.07191": {
       "persist": true,
-      "timestamp": 1793005080.339337,
+      "timestamp": 1793617939.0787077,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2404.07191",
@@ -2353,7 +2353,7 @@
     },
     "v2:http:https://arxiv.org/abs/2405.11616": {
       "persist": true,
-      "timestamp": 1793005079.1966643,
+      "timestamp": 1793617938.399791,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2405.11616",
@@ -2365,7 +2365,7 @@
     },
     "v2:http:https://arxiv.org/abs/2405.20343": {
       "persist": true,
-      "timestamp": 1793005083.092281,
+      "timestamp": 1793617941.0017889,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2405.20343",
@@ -2377,7 +2377,7 @@
     },
     "v2:http:https://arxiv.org/abs/2405.20759": {
       "persist": true,
-      "timestamp": 1793005080.3111033,
+      "timestamp": 1793617939.071062,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2405.20759",
@@ -2389,7 +2389,7 @@
     },
     "v2:http:https://arxiv.org/abs/2406.03293": {
       "persist": true,
-      "timestamp": 1793005082.7506201,
+      "timestamp": 1793617940.7401319,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2406.03293",
@@ -2401,7 +2401,7 @@
     },
     "v2:http:https://arxiv.org/abs/2406.05641": {
       "persist": true,
-      "timestamp": 1793005081.2605932,
+      "timestamp": 1793617939.9075198,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2406.05641",
@@ -2413,7 +2413,7 @@
     },
     "v2:http:https://arxiv.org/abs/2406.05814": {
       "persist": true,
-      "timestamp": 1793005082.7544487,
+      "timestamp": 1793617940.7690911,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2406.05814",
@@ -2425,7 +2425,7 @@
     },
     "v2:http:https://arxiv.org/abs/2406.10210": {
       "persist": true,
-      "timestamp": 1793005080.7001853,
+      "timestamp": 1793617939.3994799,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2406.10210",
@@ -2437,7 +2437,7 @@
     },
     "v2:http:https://arxiv.org/abs/2407.14979": {
       "persist": true,
-      "timestamp": 1793005081.7957804,
+      "timestamp": 1793617940.2888207,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2407.14979",
@@ -2449,7 +2449,7 @@
     },
     "v2:http:https://arxiv.org/abs/2408.06072": {
       "persist": true,
-      "timestamp": 1793005078.4584641,
+      "timestamp": 1793617937.4718637,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2408.06072",
@@ -2461,7 +2461,7 @@
     },
     "v2:http:https://arxiv.org/abs/2408.14732": {
       "persist": true,
-      "timestamp": 1793005081.0802135,
+      "timestamp": 1793617939.892598,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2408.14732",
@@ -2473,7 +2473,7 @@
     },
     "v2:http:https://arxiv.org/abs/2408.14837": {
       "persist": true,
-      "timestamp": 1793005078.6831486,
+      "timestamp": 1793617937.612009,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2408.14837",
@@ -2485,7 +2485,7 @@
     },
     "v2:http:https://arxiv.org/abs/2409.05463": {
       "persist": true,
-      "timestamp": 1793005079.0221262,
+      "timestamp": 1793617937.7724752,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2409.05463",
@@ -2497,7 +2497,7 @@
     },
     "v2:http:https://arxiv.org/abs/2409.08215": {
       "persist": true,
-      "timestamp": 1793005080.6886568,
+      "timestamp": 1793617939.4057398,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2409.08215",
@@ -2509,7 +2509,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.01295": {
       "persist": true,
-      "timestamp": 1793005080.420939,
+      "timestamp": 1793617939.3619292,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.01295",
@@ -2521,7 +2521,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.01699": {
       "persist": true,
-      "timestamp": 1793005078.3423781,
+      "timestamp": 1793617937.3785236,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.01699",
@@ -2533,7 +2533,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.05954": {
       "persist": true,
-      "timestamp": 1793005081.5717864,
+      "timestamp": 1793617940.2754025,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.05954",
@@ -2545,7 +2545,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.08261": {
       "persist": true,
-      "timestamp": 1793005080.8336933,
+      "timestamp": 1793617939.4622285,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.08261",
@@ -2557,7 +2557,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.10306": {
       "persist": true,
-      "timestamp": 1793005078.36725,
+      "timestamp": 1793617937.3878725,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.10306",
@@ -2569,7 +2569,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.10629": {
       "persist": true,
-      "timestamp": 1793005081.836757,
+      "timestamp": 1793617940.3093016,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.10629",
@@ -2581,7 +2581,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.11817": {
       "persist": true,
-      "timestamp": 1793005080.2276185,
+      "timestamp": 1793617939.0457175,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.11817",
@@ -2593,7 +2593,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.13863": {
       "persist": true,
-      "timestamp": 1793005079.2563195,
+      "timestamp": 1793617938.4268117,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.13863",
@@ -2605,7 +2605,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.16719": {
       "persist": true,
-      "timestamp": 1793005081.5026197,
+      "timestamp": 1793617940.036174,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.16719",
@@ -2617,7 +2617,7 @@
     },
     "v2:http:https://arxiv.org/abs/2410.18084": {
       "persist": true,
-      "timestamp": 1793005079.1091125,
+      "timestamp": 1793617937.855624,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2410.18084",
@@ -2629,7 +2629,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.00769": {
       "persist": true,
-      "timestamp": 1793005079.3762732,
+      "timestamp": 1793617938.476859,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.00769",
@@ -2641,7 +2641,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.04989": {
       "persist": true,
-      "timestamp": 1793005082.2438521,
+      "timestamp": 1793617940.4718003,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.04989",
@@ -2653,7 +2653,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.11252": {
       "persist": true,
-      "timestamp": 1793005079.1105795,
+      "timestamp": 1793617937.8299232,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.11252",
@@ -2665,7 +2665,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.13807": {
       "persist": true,
-      "timestamp": 1793005080.6725426,
+      "timestamp": 1793617939.4005888,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.13807",
@@ -2677,7 +2677,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.15236": {
       "persist": true,
-      "timestamp": 1793005082.686722,
+      "timestamp": 1793617940.7146904,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.15236",
@@ -2689,7 +2689,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.16443": {
       "persist": true,
-      "timestamp": 1793005082.452624,
+      "timestamp": 1793617940.5886962,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.16443",
@@ -2701,7 +2701,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.16503": {
       "persist": true,
-      "timestamp": 1793005081.0686755,
+      "timestamp": 1793617939.5862586,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.16503",
@@ -2713,7 +2713,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.17440": {
       "persist": true,
-      "timestamp": 1793005078.5424433,
+      "timestamp": 1793617937.5315034,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.17440",
@@ -2725,7 +2725,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.17592": {
       "persist": true,
-      "timestamp": 1793005083.3566031,
+      "timestamp": 1793617941.2003896,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.17592",
@@ -2737,7 +2737,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.17697": {
       "persist": true,
-      "timestamp": 1793005082.5044875,
+      "timestamp": 1793617940.616156,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.17697",
@@ -2749,7 +2749,7 @@
     },
     "v2:http:https://arxiv.org/abs/2411.18159": {
       "persist": true,
-      "timestamp": 1793005082.967687,
+      "timestamp": 1793617940.9627094,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2411.18159",
@@ -2761,7 +2761,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.00596": {
       "persist": true,
-      "timestamp": 1793005081.3193495,
+      "timestamp": 1793617939.9256804,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.00596",
@@ -2773,7 +2773,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.01506": {
       "persist": true,
-      "timestamp": 1793005082.8671293,
+      "timestamp": 1793617940.8812134,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.01506",
@@ -2785,7 +2785,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.02168": {
       "persist": true,
-      "timestamp": 1793005079.3993022,
+      "timestamp": 1793617938.709998,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.02168",
@@ -2797,7 +2797,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.02193": {
       "persist": true,
-      "timestamp": 1793005080.6035256,
+      "timestamp": 1793617939.3789015,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.02193",
@@ -2809,7 +2809,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.02912": {
       "persist": true,
-      "timestamp": 1793005082.3131247,
+      "timestamp": 1793617940.4969053,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.02912",
@@ -2821,7 +2821,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.03603": {
       "persist": true,
-      "timestamp": 1793005079.9144957,
+      "timestamp": 1793617938.75225,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.03603",
@@ -2833,7 +2833,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.05435": {
       "persist": true,
-      "timestamp": 1793005083.0948849,
+      "timestamp": 1793617941.015767,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.05435",
@@ -2845,7 +2845,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.05818": {
       "persist": true,
-      "timestamp": 1793005082.3520007,
+      "timestamp": 1793617940.5175047,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.05818",
@@ -2857,7 +2857,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.05848": {
       "persist": true,
-      "timestamp": 1793005081.0173745,
+      "timestamp": 1793617939.5795138,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.05848",
@@ -2869,7 +2869,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.09283": {
       "persist": true,
-      "timestamp": 1793005080.283985,
+      "timestamp": 1793617939.0718143,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.09283",
@@ -2881,7 +2881,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.09619": {
       "persist": true,
-      "timestamp": 1793005082.3808084,
+      "timestamp": 1793617940.5552297,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.09619",
@@ -2893,7 +2893,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.09856": {
       "persist": true,
-      "timestamp": 1793005080.6483402,
+      "timestamp": 1793617939.3780794,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.09856",
@@ -2905,7 +2905,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.11198": {
       "persist": true,
-      "timestamp": 1793005079.4102702,
+      "timestamp": 1793617938.485814,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.11198",
@@ -2917,7 +2917,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.11596": {
       "persist": true,
-      "timestamp": 1793005080.9137223,
+      "timestamp": 1793617939.4881237,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.11596",
@@ -2929,7 +2929,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.13188": {
       "persist": true,
-      "timestamp": 1793005082.5627422,
+      "timestamp": 1793617940.6419134,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.13188",
@@ -2941,7 +2941,7 @@
     },
     "v2:http:https://arxiv.org/abs/2412.21117": {
       "persist": true,
-      "timestamp": 1793005081.5492191,
+      "timestamp": 1793617940.042477,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2412.21117",
@@ -2953,7 +2953,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.03006": {
       "persist": true,
-      "timestamp": 1793005082.818063,
+      "timestamp": 1793617940.8680859,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.03006",
@@ -2965,7 +2965,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.03059": {
       "persist": true,
-      "timestamp": 1793005082.7227533,
+      "timestamp": 1793617940.7349815,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.03059",
@@ -2977,7 +2977,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.03575": {
       "persist": true,
-      "timestamp": 1793005078.638792,
+      "timestamp": 1793617937.5205567,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.03575",
@@ -2989,7 +2989,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.06481": {
       "persist": true,
-      "timestamp": 1793005079.3032186,
+      "timestamp": 1793617938.4281375,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.06481",
@@ -3001,7 +3001,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.07647": {
       "persist": true,
-      "timestamp": 1793005078.4095106,
+      "timestamp": 1793617937.4473283,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.07647",
@@ -3013,7 +3013,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.08325": {
       "persist": true,
-      "timestamp": 1793005079.356011,
+      "timestamp": 1793617938.4794407,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.08325",
@@ -3025,7 +3025,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.10021": {
       "persist": true,
-      "timestamp": 1793005113.8840883,
+      "timestamp": 1793617941.564725,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.10021",
@@ -3037,7 +3037,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.12202": {
       "persist": true,
-      "timestamp": 1793005079.882935,
+      "timestamp": 1793617938.7131028,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.12202",
@@ -3049,7 +3049,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.12910": {
       "persist": true,
-      "timestamp": 1793005081.3539882,
+      "timestamp": 1793617939.9531794,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.12910",
@@ -3061,7 +3061,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.13554": {
       "persist": true,
-      "timestamp": 1793005081.1774693,
+      "timestamp": 1793617939.889185,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.13554",
@@ -3073,7 +3073,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.14729": {
       "persist": true,
-      "timestamp": 1793005079.4570622,
+      "timestamp": 1793617938.708756,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.14729",
@@ -3085,7 +3085,7 @@
     },
     "v2:http:https://arxiv.org/abs/2501.18427": {
       "persist": true,
-      "timestamp": 1793005081.8143628,
+      "timestamp": 1793617940.2965624,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2501.18427",
@@ -3097,7 +3097,7 @@
     },
     "v2:http:https://arxiv.org/abs/2502.01061": {
       "persist": true,
-      "timestamp": 1793005081.1388648,
+      "timestamp": 1793617939.9005485,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2502.01061",
@@ -3109,7 +3109,7 @@
     },
     "v2:http:https://arxiv.org/abs/2502.02590": {
       "persist": true,
-      "timestamp": 1793005078.4184594,
+      "timestamp": 1793617937.4421268,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2502.02590",
@@ -3121,7 +3121,7 @@
     },
     "v2:http:https://arxiv.org/abs/2502.06145": {
       "persist": true,
-      "timestamp": 1793005078.3430934,
+      "timestamp": 1793617937.3835843,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2502.06145",
@@ -3133,7 +3133,7 @@
     },
     "v2:http:https://arxiv.org/abs/2502.10248": {
       "persist": true,
-      "timestamp": 1793005082.5474596,
+      "timestamp": 1793617940.627066,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2502.10248",
@@ -3145,7 +3145,7 @@
     },
     "v2:http:https://arxiv.org/abs/2502.10675": {
       "persist": true,
-      "timestamp": 1793005079.7942853,
+      "timestamp": 1793617938.7158763,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2502.10675",
@@ -3157,7 +3157,7 @@
     },
     "v2:http:https://arxiv.org/abs/2502.12456": {
       "persist": true,
-      "timestamp": 1793005081.1103473,
+      "timestamp": 1793617939.604981,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2502.12456",
@@ -3169,7 +3169,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.02187": {
       "persist": true,
-      "timestamp": 1793005079.4864132,
+      "timestamp": 1793617938.7185218,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.02187",
@@ -3181,7 +3181,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.07598": {
       "persist": true,
-      "timestamp": 1793005083.305801,
+      "timestamp": 1793617941.0872586,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.07598",
@@ -3193,7 +3193,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.08594": {
       "persist": true,
-      "timestamp": 1793005078.337924,
+      "timestamp": 1793617937.3596573,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.08594",
@@ -3205,7 +3205,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.13424": {
       "persist": true,
-      "timestamp": 1793005080.22822,
+      "timestamp": 1793617939.0638356,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.13424",
@@ -3217,7 +3217,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.13479": {
       "persist": true,
-      "timestamp": 1793005079.1057436,
+      "timestamp": 1793617937.8676085,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.13479",
@@ -3229,7 +3229,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.14445": {
       "persist": true,
-      "timestamp": 1793005078.3926663,
+      "timestamp": 1793617937.4458332,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.14445",
@@ -3241,7 +3241,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.15855": {
       "persist": true,
-      "timestamp": 1793005113.732712,
+      "timestamp": 1793617941.2277415,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.15855",
@@ -3253,7 +3253,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.16302": {
       "persist": true,
-      "timestamp": 1793005083.2385695,
+      "timestamp": 1793617941.0503511,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.16302",
@@ -3265,7 +3265,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.16375": {
       "persist": true,
-      "timestamp": 1793005081.0862074,
+      "timestamp": 1793617939.6290936,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.16375",
@@ -3277,7 +3277,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.16420": {
       "persist": true,
-      "timestamp": 1793005082.6490395,
+      "timestamp": 1793617940.669682,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.16420",
@@ -3289,7 +3289,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.18324": {
       "persist": true,
-      "timestamp": 1793005081.3754823,
+      "timestamp": 1793617939.9342637,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.18324",
@@ -3301,7 +3301,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.18476": {
       "persist": true,
-      "timestamp": 1793005079.4397836,
+      "timestamp": 1793617938.7049634,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.18476",
@@ -3313,7 +3313,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.18938": {
       "persist": true,
-      "timestamp": 1793005078.3603942,
+      "timestamp": 1793617937.376058,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.18938",
@@ -3325,7 +3325,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.19897": {
       "persist": true,
-      "timestamp": 1793005081.8259478,
+      "timestamp": 1793617940.3189182,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.19897",
@@ -3337,7 +3337,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.20314": {
       "persist": true,
-      "timestamp": 1793005113.5722637,
+      "timestamp": 1793617941.248023,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.20314",
@@ -3349,7 +3349,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.21732": {
       "persist": true,
-      "timestamp": 1793005082.4124258,
+      "timestamp": 1793617940.5866697,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.21732",
@@ -3361,7 +3361,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.21781": {
       "persist": true,
-      "timestamp": 1793005113.5522377,
+      "timestamp": 1793617941.2190042,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.21781",
@@ -3373,7 +3373,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.22231": {
       "persist": true,
-      "timestamp": 1793005078.4408727,
+      "timestamp": 1793617937.444385,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.22231",
@@ -3385,7 +3385,7 @@
     },
     "v2:http:https://arxiv.org/abs/2503.23284": {
       "persist": true,
-      "timestamp": 1793005082.3503785,
+      "timestamp": 1793617940.535972,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2503.23284",
@@ -3397,7 +3397,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.01724": {
       "persist": true,
-      "timestamp": 1793005078.8883517,
+      "timestamp": 1793617937.6744487,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.01724",
@@ -3409,7 +3409,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.06752": {
       "persist": true,
-      "timestamp": 1793005078.5264664,
+      "timestamp": 1793617937.476006,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.06752",
@@ -3421,7 +3421,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.06861": {
       "persist": true,
-      "timestamp": 1793005079.201373,
+      "timestamp": 1793617938.4064853,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.06861",
@@ -3433,7 +3433,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.08685": {
       "persist": true,
-      "timestamp": 1793005082.0674982,
+      "timestamp": 1793617940.3833704,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.08685",
@@ -3445,7 +3445,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.09975": {
       "persist": true,
-      "timestamp": 1793005081.1447675,
+      "timestamp": 1793617939.8906684,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.09975",
@@ -3457,7 +3457,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.11289": {
       "persist": true,
-      "timestamp": 1793005083.0867624,
+      "timestamp": 1793617940.9834232,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.11289",
@@ -3469,7 +3469,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.11346": {
       "persist": true,
-      "timestamp": 1793005082.1129823,
+      "timestamp": 1793617940.4298692,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.11346",
@@ -3481,7 +3481,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.11739": {
       "persist": true,
-      "timestamp": 1793005081.768595,
+      "timestamp": 1793617940.2873871,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.11739",
@@ -3493,7 +3493,7 @@
     },
     "v2:http:https://arxiv.org/abs/2504.12369": {
       "persist": true,
-      "timestamp": 1793005113.786166,
+      "timestamp": 1793617941.5468004,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2504.12369",
@@ -3505,7 +3505,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.02648": {
       "persist": true,
-      "timestamp": 1793005080.797248,
+      "timestamp": 1793617939.4219255,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.02648",
@@ -3517,7 +3517,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.02836": {
       "persist": true,
-      "timestamp": 1793005081.8855383,
+      "timestamp": 1793617940.3445716,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.02836",
@@ -3529,7 +3529,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.04622": {
       "persist": true,
-      "timestamp": 1793005081.4494178,
+      "timestamp": 1793617939.962243,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.04622",
@@ -3541,7 +3541,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.09140": {
       "persist": true,
-      "timestamp": 1793005082.809942,
+      "timestamp": 1793617940.7852802,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.09140",
@@ -3553,7 +3553,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.13447": {
       "persist": true,
-      "timestamp": 1793005080.7487187,
+      "timestamp": 1793617939.4435592,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.13447",
@@ -3565,7 +3565,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.14521": {
       "persist": true,
-      "timestamp": 1793005082.4164174,
+      "timestamp": 1793617940.5739145,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.14521",
@@ -3577,7 +3577,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.20287": {
       "persist": true,
-      "timestamp": 1793005080.9447398,
+      "timestamp": 1793617939.5284975,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.20287",
@@ -3589,7 +3589,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.21070": {
       "persist": true,
-      "timestamp": 1793005077.9625409,
+      "timestamp": 1793617937.0539289,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.21070",
@@ -3601,7 +3601,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.21960": {
       "persist": true,
-      "timestamp": 1793005081.2309747,
+      "timestamp": 1793617939.9035623,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.21960",
@@ -3613,7 +3613,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.23660": {
       "persist": true,
-      "timestamp": 1793005078.6757238,
+      "timestamp": 1793617937.5282004,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.23660",
@@ -3625,7 +3625,7 @@
     },
     "v2:http:https://arxiv.org/abs/2505.24877": {
       "persist": true,
-      "timestamp": 1793005078.370395,
+      "timestamp": 1793617937.377303,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2505.24877",
@@ -3637,7 +3637,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.02459": {
       "persist": true,
-      "timestamp": 1793005081.7476473,
+      "timestamp": 1793617940.278664,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.02459",
@@ -3649,7 +3649,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.04225": {
       "persist": true,
-      "timestamp": 1793005113.5795202,
+      "timestamp": 1793617941.238107,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.04225",
@@ -3661,7 +3661,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.05341": {
       "persist": true,
-      "timestamp": 1793005078.7865548,
+      "timestamp": 1793617937.6313295,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.05341",
@@ -3673,7 +3673,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.05573": {
       "persist": true,
-      "timestamp": 1793005081.2294528,
+      "timestamp": 1793617939.9098647,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.05573",
@@ -3685,7 +3685,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.07932": {
       "persist": true,
-      "timestamp": 1793005082.478172,
+      "timestamp": 1793617940.6111314,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.07932",
@@ -3697,7 +3697,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.16504": {
       "persist": true,
-      "timestamp": 1793005079.8490415,
+      "timestamp": 1793617938.731974,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.16504",
@@ -3709,7 +3709,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.17074": {
       "persist": true,
-      "timestamp": 1793005078.4066772,
+      "timestamp": 1793617937.4432547,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.17074",
@@ -3721,7 +3721,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.18538": {
       "persist": true,
-      "timestamp": 1793005082.241533,
+      "timestamp": 1793617940.395117,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.18538",
@@ -3733,7 +3733,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.18701": {
       "persist": true,
-      "timestamp": 1793005080.7446656,
+      "timestamp": 1793617939.4186134,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.18701",
@@ -3745,7 +3745,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.20590": {
       "persist": true,
-      "timestamp": 1793005113.560525,
+      "timestamp": 1793617941.2760108,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.20590",
@@ -3757,7 +3757,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.22291": {
       "persist": true,
-      "timestamp": 1793005081.779848,
+      "timestamp": 1793617940.2924347,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.22291",
@@ -3769,7 +3769,7 @@
     },
     "v2:http:https://arxiv.org/abs/2506.24113": {
       "persist": true,
-      "timestamp": 1793005079.186598,
+      "timestamp": 1793617938.3965487,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2506.24113",
@@ -3781,7 +3781,7 @@
     },
     "v2:http:https://arxiv.org/abs/2507.00603": {
       "persist": true,
-      "timestamp": 1793005113.7601213,
+      "timestamp": 1793617941.47271,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2507.00603",
@@ -3793,7 +3793,7 @@
     },
     "v2:http:https://arxiv.org/abs/2507.02857": {
       "persist": true,
-      "timestamp": 1793005078.395095,
+      "timestamp": 1793617937.3989935,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2507.02857",
@@ -3805,7 +3805,7 @@
     },
     "v2:http:https://arxiv.org/abs/2507.06165": {
       "persist": true,
-      "timestamp": 1793005081.1795187,
+      "timestamp": 1793617939.8876421,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2507.06165",
@@ -3817,7 +3817,7 @@
     },
     "v2:http:https://arxiv.org/abs/2507.08772": {
       "persist": true,
-      "timestamp": 1793005079.3107193,
+      "timestamp": 1793617938.4849765,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2507.08772",
@@ -3829,7 +3829,7 @@
     },
     "v2:http:https://arxiv.org/abs/2507.17745": {
       "persist": true,
-      "timestamp": 1793005082.9932423,
+      "timestamp": 1793617940.9769962,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2507.17745",
@@ -3841,7 +3841,7 @@
     },
     "v2:http:https://arxiv.org/abs/2507.19058": {
       "persist": true,
-      "timestamp": 1793005081.8571324,
+      "timestamp": 1793617940.3169627,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2507.19058",
@@ -3853,7 +3853,7 @@
     },
     "v2:http:https://arxiv.org/abs/2507.21809": {
       "persist": true,
-      "timestamp": 1793005079.9775686,
+      "timestamp": 1793617939.0349262,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2507.21809",
@@ -3865,7 +3865,7 @@
     },
     "v2:http:https://arxiv.org/abs/2508.02324": {
       "persist": true,
-      "timestamp": 1793005081.6438193,
+      "timestamp": 1793617940.2799876,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2508.02324",
@@ -3877,7 +3877,7 @@
     },
     "v2:http:https://arxiv.org/abs/2508.11952": {
       "persist": true,
-      "timestamp": 1793005083.2004879,
+      "timestamp": 1793617941.0334964,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2508.11952",
@@ -3889,7 +3889,7 @@
     },
     "v2:http:https://arxiv.org/abs/2508.15169": {
       "persist": true,
-      "timestamp": 1793005080.8973033,
+      "timestamp": 1793617939.5059175,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2508.15169",
@@ -3901,7 +3901,7 @@
     },
     "v2:http:https://arxiv.org/abs/2508.17832": {
       "persist": true,
-      "timestamp": 1793005079.9086428,
+      "timestamp": 1793617938.717394,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2508.17832",
@@ -3913,7 +3913,7 @@
     },
     "v2:http:https://arxiv.org/abs/2509.05263": {
       "persist": true,
-      "timestamp": 1793005080.5392833,
+      "timestamp": 1793617939.3741944,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2509.05263",
@@ -3925,7 +3925,7 @@
     },
     "v2:http:https://arxiv.org/abs/2509.14981": {
       "persist": true,
-      "timestamp": 1793005078.2353265,
+      "timestamp": 1793617937.2129192,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2509.14981",
@@ -3937,7 +3937,7 @@
     },
     "v2:http:https://arxiv.org/abs/2509.15249": {
       "persist": true,
-      "timestamp": 1793005078.439371,
+      "timestamp": 1793617937.4518275,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2509.15249",
@@ -3949,7 +3949,7 @@
     },
     "v2:http:https://arxiv.org/abs/2509.20414": {
       "persist": true,
-      "timestamp": 1793005081.9506695,
+      "timestamp": 1793617940.3493853,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2509.20414",
@@ -3961,7 +3961,7 @@
     },
     "v2:http:https://arxiv.org/abs/2509.22281": {
       "persist": true,
-      "timestamp": 1793005080.8414087,
+      "timestamp": 1793617939.4801052,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2509.22281",
@@ -3973,7 +3973,7 @@
     },
     "v2:http:https://arxiv.org/abs/2509.23951": {
       "persist": true,
-      "timestamp": 1793005079.8701081,
+      "timestamp": 1793617938.7420309,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2509.23951",
@@ -3985,7 +3985,7 @@
     },
     "v2:http:https://arxiv.org/abs/2509.25079": {
       "persist": true,
-      "timestamp": 1793005083.047315,
+      "timestamp": 1793617940.9957533,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2509.25079",
@@ -3997,7 +3997,7 @@
     },
     "v2:http:https://arxiv.org/abs/2510.02178": {
       "persist": true,
-      "timestamp": 1793005078.8440301,
+      "timestamp": 1793617937.6559963,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2510.02178",
@@ -4009,7 +4009,7 @@
     },
     "v2:http:https://arxiv.org/abs/2510.13678": {
       "persist": true,
-      "timestamp": 1793005079.1930194,
+      "timestamp": 1793617938.4016838,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2510.13678",
@@ -4021,7 +4021,7 @@
     },
     "v2:http:https://arxiv.org/abs/2510.14977": {
       "persist": true,
-      "timestamp": 1793005082.666012,
+      "timestamp": 1793617940.6889298,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2510.14977",
@@ -4033,7 +4033,7 @@
     },
     "v2:http:https://arxiv.org/abs/2510.23880": {
       "persist": true,
-      "timestamp": 1793005082.9865441,
+      "timestamp": 1793617940.8842535,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2510.23880",
@@ -4045,7 +4045,7 @@
     },
     "v2:http:https://arxiv.org/abs/2510.26140": {
       "persist": true,
-      "timestamp": 1793005079.3285348,
+      "timestamp": 1793617938.478166,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2510.26140",
@@ -4057,7 +4057,7 @@
     },
     "v2:http:https://arxiv.org/abs/2511.18173": {
       "persist": true,
-      "timestamp": 1793005079.0992622,
+      "timestamp": 1793617938.397441,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2511.18173",
@@ -4069,7 +4069,7 @@
     },
     "v2:http:https://arxiv.org/abs/2511.18870": {
       "persist": true,
-      "timestamp": 1793005079.8686604,
+      "timestamp": 1793617938.745502,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2511.18870",
@@ -4081,7 +4081,7 @@
     },
     "v2:http:https://arxiv.org/abs/2511.22456": {
       "persist": true,
-      "timestamp": 1793005080.36332,
+      "timestamp": 1793617939.0899596,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2511.22456",
@@ -4093,7 +4093,7 @@
     },
     "v2:http:https://arxiv.org/abs/2512.02012": {
       "persist": true,
-      "timestamp": 1793005080.1742566,
+      "timestamp": 1793617939.0381289,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2512.02012",
@@ -4105,7 +4105,7 @@
     },
     "v2:http:https://arxiv.org/abs/2512.03052": {
       "persist": true,
-      "timestamp": 1793005080.4678695,
+      "timestamp": 1793617939.351646,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2512.03052",
@@ -4117,7 +4117,7 @@
     },
     "v2:http:https://arxiv.org/abs/2512.09164": {
       "persist": true,
-      "timestamp": 1793005113.7750707,
+      "timestamp": 1793617941.467537,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2512.09164",
@@ -4129,7 +4129,7 @@
     },
     "v2:http:https://arxiv.org/abs/2512.14614": {
       "persist": true,
-      "timestamp": 1793005080.145152,
+      "timestamp": 1793617939.0366845,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2512.14614",
@@ -4141,7 +4141,7 @@
     },
     "v2:http:https://arxiv.org/abs/2512.21185": {
       "persist": true,
-      "timestamp": 1793005083.0364404,
+      "timestamp": 1793617940.9845414,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2512.21185",
@@ -4153,7 +4153,7 @@
     },
     "v2:http:https://arxiv.org/abs/2601.17124": {
       "persist": true,
-      "timestamp": 1793005077.8156664,
+      "timestamp": 1793617936.9844728,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2601.17124",
@@ -4165,7 +4165,7 @@
     },
     "v2:http:https://arxiv.org/abs/2601.19785": {
       "persist": true,
-      "timestamp": 1793005077.843691,
+      "timestamp": 1793617936.9963567,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2601.19785",
@@ -4177,7 +4177,7 @@
     },
     "v2:http:https://arxiv.org/abs/2602.01536": {
       "persist": true,
-      "timestamp": 1793005078.2358596,
+      "timestamp": 1793617937.3622167,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2602.01536",
@@ -4189,7 +4189,7 @@
     },
     "v2:http:https://arxiv.org/abs/2602.04770": {
       "persist": true,
-      "timestamp": 1793005077.75984,
+      "timestamp": 1793617936.9640882,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2602.04770",
@@ -4201,7 +4201,7 @@
     },
     "v2:http:https://arxiv.org/abs/2602.06521": {
       "persist": true,
-      "timestamp": 1793005077.653201,
+      "timestamp": 1793617936.8853564,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2602.06521",
@@ -4213,7 +4213,7 @@
     },
     "v2:http:https://arxiv.org/abs/2602.12100": {
       "persist": true,
-      "timestamp": 1793005077.4706724,
+      "timestamp": 1793617936.8445542,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2602.12100",
@@ -4225,7 +4225,7 @@
     },
     "v2:http:https://arxiv.org/abs/2602.17040": {
       "persist": true,
-      "timestamp": 1793005077.9245431,
+      "timestamp": 1793617936.9693067,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2602.17040",
@@ -4237,7 +4237,7 @@
     },
     "v2:http:https://arxiv.org/abs/2602.24096": {
       "persist": true,
-      "timestamp": 1793005077.4585826,
+      "timestamp": 1793617936.8478215,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2602.24096",
@@ -4249,7 +4249,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.14062": {
       "persist": true,
-      "timestamp": 1793005078.218967,
+      "timestamp": 1793617937.3533616,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.14062",
@@ -4261,7 +4261,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.14936": {
       "persist": true,
-      "timestamp": 1793005078.0813138,
+      "timestamp": 1793617937.187458,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.14936",
@@ -4273,7 +4273,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.15279": {
       "persist": true,
-      "timestamp": 1793005077.6739895,
+      "timestamp": 1793617936.8911831,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.15279",
@@ -4285,7 +4285,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.15478": {
       "persist": true,
-      "timestamp": 1793005078.3487997,
+      "timestamp": 1793617937.3643048,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.15478",
@@ -4297,7 +4297,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.16099": {
       "persist": true,
-      "timestamp": 1793005077.952196,
+      "timestamp": 1793617937.0717468,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.16099",
@@ -4309,7 +4309,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.16711": {
       "persist": true,
-      "timestamp": 1793005078.1794255,
+      "timestamp": 1793617937.1951323,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.16711",
@@ -4321,7 +4321,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.17652": {
       "persist": true,
-      "timestamp": 1793005077.4297528,
+      "timestamp": 1793617936.8547494,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.17652",
@@ -4333,7 +4333,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.17965": {
       "persist": true,
-      "timestamp": 1793005077.888719,
+      "timestamp": 1793617937.0275207,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.17965",
@@ -4345,7 +4345,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.18627": {
       "persist": true,
-      "timestamp": 1793005077.4323323,
+      "timestamp": 1793617936.8516705,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.18627",
@@ -4357,7 +4357,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.19206": {
       "persist": true,
-      "timestamp": 1793005078.1253886,
+      "timestamp": 1793617937.1912205,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.19206",
@@ -4369,7 +4369,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.19216": {
       "persist": true,
-      "timestamp": 1793005077.6478982,
+      "timestamp": 1793617936.8869092,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.19216",
@@ -4381,7 +4381,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.19222": {
       "persist": true,
-      "timestamp": 1793005078.2337952,
+      "timestamp": 1793617937.230786,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.19222",
@@ -4393,7 +4393,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.19360": {
       "persist": true,
-      "timestamp": 1793005078.2970343,
+      "timestamp": 1793617937.358206,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.19360",
@@ -4405,7 +4405,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.19598": {
       "persist": true,
-      "timestamp": 1793005077.7514973,
+      "timestamp": 1793617936.9078681,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.19598",
@@ -4417,7 +4417,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.19675": {
       "persist": true,
-      "timestamp": 1793005077.776702,
+      "timestamp": 1793617936.8886774,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.19675",
@@ -4429,7 +4429,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.20192": {
       "persist": true,
-      "timestamp": 1793005077.9631763,
+      "timestamp": 1793617937.0462608,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.20192",
@@ -4441,7 +4441,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.20470": {
       "persist": true,
-      "timestamp": 1793005077.4755337,
+      "timestamp": 1793617936.859322,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.20470",
@@ -4453,7 +4453,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.20725": {
       "persist": true,
-      "timestamp": 1793005078.0771317,
+      "timestamp": 1793617937.1822784,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.20725",
@@ -4465,7 +4465,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.21136": {
       "persist": true,
-      "timestamp": 1793005077.9611623,
+      "timestamp": 1793617937.073289,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.21136",
@@ -4477,7 +4477,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.21295": {
       "persist": true,
-      "timestamp": 1793005078.2403038,
+      "timestamp": 1793617937.3505123,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.21295",
@@ -4489,7 +4489,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.21783": {
       "persist": true,
-      "timestamp": 1793005078.1478963,
+      "timestamp": 1793617937.217491,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.21783",
@@ -4501,7 +4501,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.22041": {
       "persist": true,
-      "timestamp": 1793005077.6790717,
+      "timestamp": 1793617936.8785844,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.22041",
@@ -4513,7 +4513,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.22091": {
       "persist": true,
-      "timestamp": 1793005078.0825083,
+      "timestamp": 1793617937.1842177,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.22091",
@@ -4525,7 +4525,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.22228": {
       "persist": true,
-      "timestamp": 1793005078.2708602,
+      "timestamp": 1793617937.2207475,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.22228",
@@ -4537,7 +4537,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.22943": {
       "persist": true,
-      "timestamp": 1793005078.0437863,
+      "timestamp": 1793617937.1897366,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.22943",
@@ -4549,7 +4549,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.22972": {
       "persist": true,
-      "timestamp": 1793005078.309917,
+      "timestamp": 1793617937.3490186,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.22972",
@@ -4561,7 +4561,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.23140": {
       "persist": true,
-      "timestamp": 1793005077.4632874,
+      "timestamp": 1793617936.8496566,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.23140",
@@ -4573,7 +4573,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.23376": {
       "persist": true,
-      "timestamp": 1793005077.440537,
+      "timestamp": 1793617936.8563645,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.23376",
@@ -4585,7 +4585,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.23491": {
       "persist": true,
-      "timestamp": 1793005077.7444263,
+      "timestamp": 1793617936.9658124,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.23491",
@@ -4597,7 +4597,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.23500": {
       "persist": true,
-      "timestamp": 1793005078.301624,
+      "timestamp": 1793617937.3552017,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.23500",
@@ -4609,7 +4609,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.23973": {
       "persist": true,
-      "timestamp": 1793005078.1817482,
+      "timestamp": 1793617937.2091548,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.23973",
@@ -4621,7 +4621,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.24086": {
       "persist": true,
-      "timestamp": 1793005077.8926203,
+      "timestamp": 1793617937.0418303,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.24086",
@@ -4633,7 +4633,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.24570": {
       "persist": true,
-      "timestamp": 1793005077.4725723,
+      "timestamp": 1793617936.8459184,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.24570",
@@ -4645,7 +4645,7 @@
     },
     "v2:http:https://arxiv.org/abs/2603.24965": {
       "persist": true,
-      "timestamp": 1793005078.1277738,
+      "timestamp": 1793617937.2106583,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://arxiv.org/abs/2603.24965",
@@ -4657,7 +4657,7 @@
     },
     "v2:http:https://assembler3d.github.io": {
       "persist": true,
-      "timestamp": 1793005078.5375903,
+      "timestamp": 1793617937.526172,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://assembler3d.github.io",
@@ -4669,7 +4669,7 @@
     },
     "v2:http:https://bujiazi.github.io/bytheway.github.io/": {
       "persist": true,
-      "timestamp": 1793005078.9778183,
+      "timestamp": 1793617937.8651497,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://bujiazi.github.io/bytheway.github.io/",
@@ -4681,7 +4681,7 @@
     },
     "v2:http:https://dynamic-city.github.io/": {
       "persist": true,
-      "timestamp": 1793005079.2701688,
+      "timestamp": 1793617937.946297,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://dynamic-city.github.io/",
@@ -4693,7 +4693,7 @@
     },
     "v2:http:https://freemty.github.io/project-prometheus/": {
       "persist": true,
-      "timestamp": 1793005081.6797647,
+      "timestamp": 1793617940.2640555,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://freemty.github.io/project-prometheus/",
@@ -4705,7 +4705,7 @@
     },
     "v2:http:https://graphics.unizar.es/projects/PreciseCam2024": {
       "persist": true,
-      "timestamp": 1793005082.5736308,
+      "timestamp": 1793617940.948129,
       "value": {
         "content_type": "text/html",
         "final_url": "http://graphics.unizar.es/projects/PreciseCam2024/",
@@ -4717,7 +4717,7 @@
     },
     "v2:http:https://grisoon.github.io/DreamActor-M1/": {
       "persist": true,
-      "timestamp": 1793005079.0449476,
+      "timestamp": 1793617937.813281,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://grisoon.github.io/DreamActor-M1/",
@@ -4729,7 +4729,7 @@
     },
     "v2:http:https://guyyariv.github.io/TTM/": {
       "persist": true,
-      "timestamp": 1793005082.883373,
+      "timestamp": 1793617940.8049276,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://guyyariv.github.io/TTM/",
@@ -4741,7 +4741,7 @@
     },
     "v2:http:https://henghuiding.com/AnyI2V/": {
       "persist": true,
-      "timestamp": 1793005078.7656624,
+      "timestamp": 1793617937.7280583,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://henghuiding.com/AnyI2V/",
@@ -4753,7 +4753,7 @@
     },
     "v2:http:https://jinnmnm.github.io/Fuse3d.github.io/": {
       "persist": true,
-      "timestamp": 1793005078.0952353,
+      "timestamp": 1793617937.0146594,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://jinnmnm.github.io/Fuse3d.github.io/",
@@ -4765,7 +4765,7 @@
     },
     "v2:http:https://klingai.com/": {
       "persist": true,
-      "timestamp": 1793005082.23799,
+      "timestamp": 1793617940.2476747,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://kling.ai/",
@@ -4777,7 +4777,7 @@
     },
     "v2:http:https://kovenyu.com/WonderWorld/": {
       "persist": true,
-      "timestamp": 1793005114.571366,
+      "timestamp": 1793617942.239253,
       "value": {
         "content_type": "text/html; charset=UTF-8",
         "final_url": "https://kovenyu.com/wonderworld/",
@@ -4789,7 +4789,7 @@
     },
     "v2:http:https://lineargen.github.io/": {
       "persist": true,
-      "timestamp": 1793005080.769232,
+      "timestamp": 1793617939.4426675,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://lineargen.github.io/",
@@ -4801,7 +4801,7 @@
     },
     "v2:http:https://lizhihao6.github.io/Sparc3D": {
       "persist": true,
-      "timestamp": 1793005082.9236345,
+      "timestamp": 1793617940.9469037,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://lizhihao6.github.io/Sparc3D/",
@@ -4813,7 +4813,7 @@
     },
     "v2:http:https://magicdrive-v2.github.io/": {
       "persist": true,
-      "timestamp": 1793005081.1422515,
+      "timestamp": 1793617939.7604558,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://magicdrive-v2.github.io/",
@@ -4825,7 +4825,7 @@
     },
     "v2:http:https://mesatask.github.io/": {
       "persist": true,
-      "timestamp": 1793005081.003882,
+      "timestamp": 1793617939.5541828,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://mesatask.github.io/",
@@ -4837,7 +4837,7 @@
     },
     "v2:http:https://metadrivescape.github.io/papers_project/drivescapev1/index.html": {
       "persist": true,
-      "timestamp": 1793005079.1811943,
+      "timestamp": 1793617937.8441958,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://metadrivescape.github.io/papers_project/drivescapev1/index.html",
@@ -4849,7 +4849,7 @@
     },
     "v2:http:https://microsoft.github.io/TRELLIS/": {
       "persist": true,
-      "timestamp": 1793005083.37698,
+      "timestamp": 1793617941.1788218,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://microsoft.github.io/TRELLIS/",
@@ -4861,7 +4861,7 @@
     },
     "v2:http:https://nvlabs.github.io/Sana/": {
       "persist": true,
-      "timestamp": 1793005081.9967463,
+      "timestamp": 1793617940.3660603,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://nvlabs.github.io/Sana/",
@@ -4873,7 +4873,7 @@
     },
     "v2:http:https://omnihuman-lab.github.io/": {
       "persist": true,
-      "timestamp": 1793005081.2870202,
+      "timestamp": 1793617940.0206666,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://omnihuman-lab.github.io/",
@@ -4885,7 +4885,7 @@
     },
     "v2:http:https://openaccess.thecvf.com/content/CVPR2025/html/Bu_ByTheWay_Boost_Your_Text-to-Video_Generation_Model_to_Higher_Quality_in_CVPR_2025_paper.html": {
       "persist": true,
-      "timestamp": 1793005078.5083356,
+      "timestamp": 1793617937.4506042,
       "value": {
         "content_type": "text/html; charset=UTF-8",
         "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Bu_ByTheWay_Boost_Your_Text-to-Video_Generation_Model_to_Higher_Quality_in_CVPR_2025_paper.html",
@@ -4897,7 +4897,7 @@
     },
     "v2:http:https://openaccess.thecvf.com/content/CVPR2025/html/Yu_WonderWorld_Interactive_3D_Scene_Generation_from_a_Single_Image_CVPR_2025_paper.html": {
       "persist": true,
-      "timestamp": 1793005113.7371402,
+      "timestamp": 1793617941.3733191,
       "value": {
         "content_type": "text/html; charset=UTF-8",
         "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_WonderWorld_Interactive_3D_Scene_Generation_from_a_Single_Image_CVPR_2025_paper.html",
@@ -4909,7 +4909,7 @@
     },
     "v2:http:https://openreview.net/forum?id=amDkNPVWcn": {
       "persist": true,
-      "timestamp": 1793005079.5293918,
+      "timestamp": 1793617938.466193,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DamDkNPVWcn",
@@ -4921,7 +4921,7 @@
     },
     "v2:http:https://openreview.net/forum?id=lTrrnNdkOX": {
       "persist": true,
-      "timestamp": 1793005082.8903077,
+      "timestamp": 1793617940.713336,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DlTrrnNdkOX",
@@ -4933,7 +4933,7 @@
     },
     "v2:http:https://pku-yuangroup.github.io/ConsisID/": {
       "persist": true,
-      "timestamp": 1793005079.039663,
+      "timestamp": 1793617937.9386854,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://pku-yuangroup.github.io/ConsisID/",
@@ -4945,7 +4945,7 @@
     },
     "v2:http:https://primitiveanything.github.io": {
       "persist": true,
-      "timestamp": 1793005081.5897324,
+      "timestamp": 1793617940.015035,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://primitiveanything.github.io",
@@ -4957,7 +4957,7 @@
     },
     "v2:http:https://pyramid-flow.github.io/": {
       "persist": true,
-      "timestamp": 1793005081.7085404,
+      "timestamp": 1793617940.3310204,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://pyramid-flow.github.io/",
@@ -4969,7 +4969,7 @@
     },
     "v2:http:https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/": {
       "persist": true,
-      "timestamp": 1793005077.6728647,
+      "timestamp": 1793617937.0236456,
       "value": {
         "content_type": "text/html",
         "final_url": "https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer/",
@@ -4981,7 +4981,7 @@
     },
     "v2:http:https://scene-weaver.github.io/": {
       "persist": true,
-      "timestamp": 1793005082.0813363,
+      "timestamp": 1793617940.4486485,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://scene-weaver.github.io/",
@@ -4993,7 +4993,7 @@
     },
     "v2:http:https://seaweed.video/": {
       "persist": true,
-      "timestamp": 1793005082.620616,
+      "timestamp": 1793617940.858904,
       "value": {
         "content_type": "text/html",
         "final_url": "https://seaweed.video/",
@@ -5005,7 +5005,7 @@
     },
     "v2:http:https://seed.bytedance.com/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83": {
       "persist": true,
-      "timestamp": 1793005117.3920372,
+      "timestamp": 1793617995.7810702,
       "value": {
         "content_type": "text/html; charset=UTF-8",
         "final_url": "https://seed.bytedance.com/en/blog/seedream-3-0-%E6%96%87%E7%94%9F%E5%9B%BE%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E5%8F%91%E5%B8%83",
@@ -5017,7 +5017,7 @@
     },
     "v2:http:https://seed.bytedance.com/en/seedance": {
       "persist": true,
-      "timestamp": 1793005113.5065675,
+      "timestamp": 1793617991.9955747,
       "value": {
         "content_type": "text/html; charset=UTF-8",
         "final_url": "https://seed.bytedance.com/en/seedance",
@@ -5029,7 +5029,7 @@
     },
     "v2:http:https://wonder-free.github.io/": {
       "persist": true,
-      "timestamp": 1793005113.7131088,
+      "timestamp": 1793617941.4127555,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://wonder-free.github.io/",
@@ -5041,7 +5041,7 @@
     },
     "v2:http:https://wonderzoom.github.io/": {
       "persist": true,
-      "timestamp": 1793005113.976844,
+      "timestamp": 1793617941.7224035,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://wonderzoom.github.io/",
@@ -5053,7 +5053,7 @@
     },
     "v2:http:https://www.nvidia.com/en-us/ai/cosmos/": {
       "persist": true,
-      "timestamp": 1793005079.7911713,
+      "timestamp": 1793617938.3825324,
       "value": {
         "content_type": "text/html; charset=UTF-8",
         "final_url": "https://www.nvidia.com/en-us/ai/cosmos/",
@@ -5065,7 +5065,7 @@
     },
     "v2:http:https://xiac20.github.io/ScenePainter/": {
       "persist": true,
-      "timestamp": 1793005082.0415587,
+      "timestamp": 1793617940.412346,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://xiac20.github.io/ScenePainter/",
@@ -5077,7 +5077,7 @@
     },
     "v2:http:https://xiaomi-research.github.io/cogen/": {
       "persist": true,
-      "timestamp": 1793005078.6087298,
+      "timestamp": 1793617937.5829244,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://xiaomi-research.github.io/cogen/",
@@ -5089,7 +5089,7 @@
     },
     "v2:http:https://zhw-zhang.github.io/MotionPro-page/": {
       "persist": true,
-      "timestamp": 1793005081.109723,
+      "timestamp": 1793617939.6435692,
       "value": {
         "content_type": "text/html; charset=utf-8",
         "final_url": "https://zhw-zhang.github.io/MotionPro-page/",
@@ -5100,7 +5100,7 @@
       }
     }
   },
-  "generated_at": "2026-10-26 08:58:37 UTC",
+  "generated_at": "2026-11-02 11:13:15 UTC",
   "ttl_hours": 24.0,
   "version": 2
 }

@@ -1,0 +1,41 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "VoxLution: Evolving Voxels for High-Fidelity 3D Scene Generation",
+    "paper": "http://arxiv.org/abs/2610.41501v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "High-resolution 3D indoor scene generation is crucial for immersive applications such as virtual reality, spatial computing, and robotics simulation. We introduce VoxLution, a coarse-to-fine transformer-based approach that generates high-fidelity indoor scenes with rich details, overcoming the overly smooth geometry typical of existing generative models. First, we generate a low-resolution spatial layout; then, based on this structural information, we progressively refine the scene geometry locally in chunks. Key to our approach is formulating 3D super-resolution as a sequence modeling problem over multi-resolution sparse voxel grids. To achieve this, we introduce a training-free, resolution-invariant tokenization scheme that compactly encodes the geometric information of eight octants into a single decimal number. We formulate the transformer sequence to include multiple resolutions, allowing the coarse layout to guide the generation of fine local details. To ensure coherence across local chunks, we incorporate adjacent chunk boundary information directly into the transformer sequencing. VoxLution achieves scene generation at a finer voxel resolution than existing baselines, demonstrating state-of-the-art performance on standard benchmarks with 59.6% lower FPD and 51.1% lower FID on 3D-FRONT, and 70.5% lower FPD and 73.8% lower FID on Scannet++.",
+    "published": "2026-10-30T09:55:52Z",
+    "score": 58,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "robotics-worlds",
+    "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation",
+    "paper": "http://arxiv.org/abs/2610.40754v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "While frontier coding agents can generate high-quality 3D scenes and articulated assets, they struggle to create coherent long-horizon animations. When equipped with general-purpose harnesses, they frequently produce physically implausible outputs, generating objects that interpenetrate, lack physical support, or move unnaturally. Such bare agents struggle to repair these errors because they default to scripting the full animation in one pass, making it difficult to verify their work and disentangle complex spatiotemporal constraints. Drawing on the practice of human animators, we introduce DyCraft, a system for animated 3D scene generation that breaks animation into steps that coding agents can more reliably solve. DyCraft first expands the user's prompt into a detailed plan and builds a static scene. It then creates a 3D storyboard of key animation poses, where each frame is a static 3D scene that the agent can build and debug in isolation. Storyboarding decomposes the problem into pairs of verified start and end states, allowing the agent to author local motion between them with a collection of motion authoring tools. We evaluate DyCraft on 24 long-horizon, multi-shot animation tasks covering humanoid robots, human and animal characters, and physical mechanisms. Compared with a native GPT-6 agent in Codex and prior agentic baselines, DyCraft substantially reduces physical violations and generates higher-quality animated 3D scenes that are more often preferred by human raters.",
+    "published": "2026-10-29T16:42:04Z",
+    "score": 57,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "GeoFlip: Benchmarking Geometry-Sensitive Physics in Video Generation",
+    "paper": "http://arxiv.org/abs/2610.42002v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Video generation models synthesize realistic motion, but can they respond correctly to changes in initial geometry? We introduce GeoFlip, a video generation benchmark centered on physical outcome flips induced by geometry. With shared physical settings and textual prompts held fixed, GeoFlip applies controlled interventions to support extent, object placement, and mechanism configuration, constructing paired scenes with contrasting reference events, such as remaining stable versus falling or tipping. These pairs test whether models translate geometric differences in the first frame into correct physical evolution. The benchmark comprises 482 scene pairs and 964 reference videos across six physical categories, with reference outcomes established through procedural scene construction, physics simulation, and numerical validation and verification of physical events. We evaluate 16 models for image to video generation along three dimensions: event correctness, structural integrity, and similarity to reference videos. We examine evaluation consistency with independent vision language judges. On the 442 conditions shared by all models, the highest event correctness averaged across tasks is 27.98%, revealing substantial limitations in physical generation conditioned on geometry. Model strengths vary across physical mechanisms, and the three evaluation dimensions capture distinct capabilities. Typical failures include ignoring geometric changes, generating incorrect object motion, bending rigid objects, and introducing additional components. Rank correlations between judges reach 0.906 for event correctness and 0.929 for structural integrity. By combining controlled geometric interventions, verifiable physical references, and multidimensional evaluation, GeoFlip assesses progress from visual realism toward physical consistency conditioned on geometry.",
+    "published": "2026-10-30T16:45:07Z",
+    "score": 48,
+    "why": "recent paper candidate"
+  }
+]

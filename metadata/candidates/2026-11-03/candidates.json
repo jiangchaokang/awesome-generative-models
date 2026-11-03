@@ -1,0 +1,15 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "Generative diffusion in long-range correlated landscapes: Speciation cascade and the foam structure of the score",
+    "paper": "http://arxiv.org/abs/2611.02955v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "While state of the art for image and video generation, the fundamental reasons for the effectiveness of generative diffusion remain unclear. In particular, the observed advantage of following an entire reverse process with respect to single-shot or autoregressive methods, and for what type of data it may hold, is not well understood. In this work, we aim to better understand the role of the reverse process by considering a complex yet analytically tractable data model, the Gibbs measure of a high-dimensional Gaussian random potential with long-range correlations. Focusing on the exact score, we show that the speciation threshold, in which a trajectory commits to one class of the data, becomes a speciation window, in which the reverse process progressively resolves the Parisi tree of pure states of the full replica-symmetry breaking measure, committing to ever finer branches down to a single pure state. Importantly, these commitments take place at noise levels where the noisy sample distinguishes the pure states only through an energy of order one, beyond the reach of standard replica saddle points. Constructing a Larkin argument suited to such $O(1)$ energy gaps, we describe the score as a foam, with slab-like cells separated by shock-like boundaries. In the variance-exploding process we consider, this window is followed by a shrinkage of the samples towards the data support, and finally by reconstruction within the selected pure state. The denoising error of the exact score follows these stages, dropping during the speciation window with a profile set by the Parisi function alone, and then within the selected state. We believe that the generative foam we describe, and in particular the boundaries between cells, could play an important role in determining where the errors of trained diffusion models redistribute the mass of the generated samples when the data are long-range correlated.",
+    "published": "2026-11-02T11:22:51Z",
+    "score": 50,
+    "why": "recent paper candidate"
+  }
+]

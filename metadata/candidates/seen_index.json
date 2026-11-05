@@ -284,7 +284,8 @@
     "2610.42002": "2026-11-02",
     "2610.41501": "2026-11-02",
     "2610.40754": "2026-11-02",
-    "2611.02955": "2026-11-03"
+    "2611.02955": "2026-11-03",
+    "2611.06270": "2026-11-05"
   },
   "github": {
     "adobe-research/custom-diffusion": "2026-06-05",
@@ -525,6 +526,8 @@
     "black-forest-labs/flux-3-image-klein": "2026-10-16",
     "tencentarc/looking-ahead": "2026-10-22",
     "tencent-hunyuan/hy-nomas": "2026-10-24",
-    "nvlabs/nemotron-labs-diffusion-uni": "2026-10-27"
+    "nvlabs/nemotron-labs-diffusion-uni": "2026-10-27",
+    "tencent-hunyuan/emoreward": "2026-11-05",
+    "tencentarc/oreo-renderingedittingoptimization": "2026-11-05"
   }
 }

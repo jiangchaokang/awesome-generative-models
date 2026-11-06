@@ -1,45 +1,15 @@
 [
   {
     "source": "arXiv",
-    "artifact": "video",
-    "task": "text-to-video",
-    "title": "NextGAN: Towards Simple and Scalable GAN Training for Image and Video Generation",
-    "paper": "http://arxiv.org/abs/2611.06270v1",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "PlayGen2: Learning Real-Time Playable Worlds with Explicit 3D State",
+    "paper": "http://arxiv.org/abs/2611.07867v1",
     "repo": "",
     "homepage": "",
-    "abstract": "Adversarial training enables one- and few-step image and video generation, but conventional adversarial losses supervise critic values without directly specifying the gradients used to update the generator. We present NEXTGAN, which trains a scalar critic by regressing its input gradient onto displacements between independently paired reference and generated features at interpolated locations in frozen representation spaces. For a fixed generator, this regression is equivalent to an adversarial objective with a gradient-energy penalty, while the generator retains the standard potential-based GAN update. The same objective adapts pre-trained image and video generators with up to 14B parameters, without auxiliary losses, online teacher scores, or trajectories. On ImageNet $256 \\times 256$, NEXTGAN achieves one-step FIDs of 2.87 with pixel-space JiT-B and 1.54 with latent-space DiT-XL/1; its adversarial form further reaches 1.36. For text-to-video generation, a single trained Wan2.1-1.3B model supports one-, two-, and four-step sampling, achieving the highest VBench total scores among the compared 1.3B methods at one and two steps. At two steps, NEXTGAN scores 83.13, exceeding rCM and AnyFlow by 1.25 and 0.47 points, respectively. Code is available at https://github.com/LINs-lab/NextGAN.git.",
-    "published": "2026-11-04T10:16:06Z",
-    "score": 80,
+    "abstract": "Building a playable world requires more than generating plausible video: it demands responsive control, persistent spatial structure, and coherent interactions with dynamic entities. Using generated frames as the sole recurrent world representation ties these requirements to view-dependent appearance synthesis, making it difficult to maintain long-term spatial and temporal consistency in generation and interaction. We present PlayGen2, a real-time interactive world model that separates learned 3D state evolution from neural rendering. PlayGen2 maintains a persistent world memory comprising static geometry represented by a volumetric occupancy grid and identity-indexed 3D states for the player and other entities. Within a fixed-size local region, its world-state model jointly learns action-conditioned entity dynamics, geometry completion, and entity discovery, committing updates to a persistent world memory. A separate neural renderer synthesizes first-person observations from depth and semantic projections of the world state, without feeding generated images back into state prediction. Using Doom as a testbed, we demonstrate that the model successfully learns world dynamics including geometry-aware player motion and player--NPC interactions. The framework is computationally efficient, enabling the complete simulation and rendering pipeline to achieve approximately 160ms backend latency on a MacBook Pro with an M4 Pro chip. Beyond single-player interaction, we demonstrate zero-shot deployment on unseen Doom maps, multiplayer interaction through the composition of single-player models, and programmable gameplay through rule-based state interventions. These capabilities demonstrate the transferability and extensibility of the learned game-world model. Code and pretrained model weights are publicly available.",
+    "published": "2026-11-05T11:45:25Z",
+    "score": 78,
     "why": "recent paper candidate"
-  },
-  {
-    "source": "GitHub",
-    "artifact": "image-2d",
-    "task": "alignment-safety",
-    "title": "OREO-RenderingEdittingOptimization",
-    "paper": "",
-    "repo": "https://github.com/TencentARC/OREO-RenderingEdittingOptimization",
-    "homepage": "",
-    "abstract": "[ECCV 2026] OREO: Fidelity Alignment in 3D Generation via On-the-fly Rendering-Editing Optimization",
-    "published": "",
-    "created_at": "2026-11-04T14:13:52Z",
-    "updated_at": "2026-11-05T01:00:13Z",
-    "score": 61,
-    "why": "new repository in watched organization `Tencent ARC`"
-  },
-  {
-    "source": "GitHub",
-    "artifact": "video",
-    "task": "text-to-video",
-    "title": "EmoReward",
-    "paper": "",
-    "repo": "https://github.com/Tencent-Hunyuan/EmoReward",
-    "homepage": "https://emoreward-project.github.io/",
-    "abstract": "Official Implementation of EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL",
-    "published": "",
-    "created_at": "2026-11-02T04:48:20Z",
-    "updated_at": "2026-11-05T07:57:14Z",
-    "score": 58,
-    "why": "new repository in watched organization `Tencent Hunyuan`"
   }
 ]

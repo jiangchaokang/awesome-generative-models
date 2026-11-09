@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "source": "arXiv",
+    "artifact": "3d-scene",
+    "task": "layout-to-scene",
+    "title": "Align3D: Image-Structure Co-Aligned 3D Scene Generation with Observability-Aware Fidelity-Preserving Guidance",
+    "paper": "http://arxiv.org/abs/2611.08861v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "We present Align3D, an image-conditioned diffusion model that generates 3D indoor layouts that are both faithful to a single input photograph and physically plausible beyond the observed view. From the photograph we infer a confidence-calibrated scene graph and train a set-diffusion layout denoiser with image-structure co-alignment where confidence-weighted modality fusion balances image and scene-graph alignment using predicted confidences, while observability-aware fidelity-preserving guidance projects conflicting scene-quality gradients and reweighs them with an object-level confidence mask so under-observed degrees of freedom absorb physical priors without undoing the image-graph match. On 3D-FRONT, Align3D improves image-alignment and scene-quality metrics over recent baselines; once trained, it maps previously unseen photographs to layouts in a single feed-forward pass.",
+    "published": "2026-11-06T01:42:14Z",
+    "score": 57,
+    "why": "recent paper candidate"
+  }
+]

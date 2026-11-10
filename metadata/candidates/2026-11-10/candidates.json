@@ -1,0 +1,41 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "SoftPAT3D: Physics-Augmented Text-to-3D Scene Generation with Deformables",
+    "paper": "http://arxiv.org/abs/2611.11087v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "We present SoftPAT3D, a physics-augmented framework for text-to-3D scene generation in which deformable objects, such as cloth, stuffed toys and ropes, are generated as physically valid, simulation-ready bodies and placed in intersection-free contact with the furniture that supports them, with one another and with themselves. Existing physics-augmented pipelines simulate rigid bodies only and cannot accommodate a generated deformable object, which text-to-3D generation returns as a geometrically invalid mesh, sometimes self-intersecting, that has no rest shape, no material model and no admissible initial state. These are the inputs a deformable simulation requires, and we construct each from information already in the pipeline. The rest shape comes from how the object is manufactured rather than from the generated physically inconsistent deformed configuration, and a material library assigns each deformable object its initial elastic parameters, which can then be optimized. The occluded support is regenerated and converted into a watertight collision mesh, each object is released from an optimizable placement above the supporting part that the prompt specifies, and the complete scene is driven to static equilibrium under one unified contact model, with completion verified by geometric checks and a vision-language model. When a scene fails the prompt, a grid search over placements corrects it, and the adjoint of a differentiable simulation of the same contact energy reaches the targets the grid does not, places several bodies jointly and recovers and optimizes material parameters. Multi-body scenes equilibrate in a single simulation, and the pipeline also runs from the text prompt alone. On all sixty-five prompts, SoftPAT3D produces no undesired interpenetration of any kind, whereas every other system does, and its scenes directly support scene editing and robotic manipulation.",
+    "published": "2026-11-08T02:55:57Z",
+    "score": 58,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "3d-object-asset",
+    "task": "part-aware-generation",
+    "title": "SurfScaff3D: Bridging Geometric and Semantic Representations for LLM-based 3D Object Generation",
+    "paper": "http://arxiv.org/abs/2611.11678v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Creating high-quality 3D content has traditionally required specialist expertise and experience with complex tools. The growing ecosystem of AI-assisted creativity demands accessible and intuitive 3D generation systems. Recent advances in Large Language Models (LLMs) offer promising directions, yet extending their generative capabilities to 3D remains fundamentally challenging because existing 3D representations are not naturally compatible with language-based reasoning. Current approaches either depend on expensive fine-tuning or impose restrictive structural priors that sacrifice expressiveness and exclude organic shapes. We argue that the mismatch between LLM-native reasoning and conventional 3D parameterizations is a core bottleneck of LLM-driven 3D generation. To address this, we introduce the Hierarchical Patch Scaffold (HPS), a representation designed around semantically meaningful, interpretable part-level abstractions that are naturally understood by both humans and LLMs, enabling expressive, editable, and open-domain 3D generation without imposing restrictive geometric priors or expensive fine-tuning. Building upon HPS, we introduce SurfScaff3D, an interactive framework for text and image-to-3D generation. HPS inherits the flexibility of B-spline patches, while exposing an interface that leverages open-world capabilities of foundation models to reliably generate 3D. Its hierarchical part-level semantic labels enable targeted, natural-language edits at any level of granularity without re-running generation. Further, HPS offers explicit per-patch control over surface detail, enabling more expressive geometry capable of representing arbitrary objects. Extensive experiments against state-of-the-art LLM-based 3D generation methods demonstrate strong geometric fidelity, semantic alignment, and flexible editing across diverse object categories.",
+    "published": "2026-11-08T23:05:49Z",
+    "score": 49,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "OfficeTwin: Realizing 3D Reconstruction of Redundant Scenes through Partial Viewpoint Perception",
+    "paper": "http://arxiv.org/abs/2611.10241v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Feed-forward 3D reconstruction turns an uncalibrated monocular stream into a dense point cloud in a single inference pass, orders of magnitude faster than classical structure-from-motion (e.g., COLMAP), and reliable on the weakly textured, repetitive surfaces where keypoint matching fails outright. However, raw point clouds lack the object identity, physical properties, and watertight volume required for robot learning. This gap widens under robot-native capture. A camera mounted on a robot constrained to a few degrees of freedom sees each object only partially, and the repetitive, weakly textured structure of an office makes distinct workstations nearly indistinguishable, leaving redundant and partial observations that downstream reconstruction cannot resolve. Existing image-to-3D generation methods struggle with these conditions, hallucinating geometry under incomplete views and confusing repeated instances. We present OfficeTwin, a robot-native framework that converts these incomplete observations into simulation-ready digital twins. OfficeTwin first imposes metric and structural constraints, then exploits the office's structural redundancy by registering repeated cubicles into a shared canonical frame, where complementary observations recover geometry occluded in any single view without hallucination. On a real office scan, OfficeTwin recovers every cubicle as an individually watertight, metric solid, outperforming feed-forward reconstruction and generative baselines that fail to produce simulation-ready assets.",
+    "published": "2026-11-06T21:27:06Z",
+    "score": 47,
+    "why": "recent paper candidate"
+  }
+]

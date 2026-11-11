@@ -1,0 +1,15 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "image-2d",
+    "task": "text-to-image",
+    "title": "Domain adaptation of a video Foundation model for Heart Failure Diagnosis from Echocardiography",
+    "paper": "http://arxiv.org/abs/2611.13297v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "The rapid advancement of foundation models has transformed computer vision, yet their adaptation to medical imaging, particularly purpose built foundation models for spatio temporal echocardiography videos, remains limited. In this work, we explore the feasibility of fine tuning a pretrained foundation model for video (TimeSformer) for automated diagnosis of reduced ejection fraction heart failure (HFrEF) from apical four chamber videos. The model is finetuned on the publicly available RVENet A4C dataset with a phase aware clip generation strategy that captures complementary systolic and diastolic dynamics. We employ divided space time attention, layer wise learning rate decay, and multi clip inference to enhance robustness under limited data. Experimental results show that full fine tuning of the proposed model outperforms classifier only tuning and a 3D CNN baseline. These findings highlight the potential of leveraging foundation video models for echocardiography based heart failure diagnosis and motivates further domain adaptation studies in medical imaging.",
+    "published": "2026-11-09T22:04:03Z",
+    "score": 59,
+    "why": "recent paper candidate"
+  }
+]

@@ -296,7 +296,8 @@
     "2611.15149": "2026-11-14",
     "2611.16701": "2026-11-14",
     "2611.18550": "2026-11-16",
-    "2611.17797": "2026-11-16"
+    "2611.17797": "2026-11-16",
+    "2611.21029": "2026-11-17"
   },
   "github": {
     "adobe-research/custom-diffusion": "2026-06-05",
@@ -539,6 +540,7 @@
     "tencent-hunyuan/hy-nomas": "2026-10-24",
     "nvlabs/nemotron-labs-diffusion-uni": "2026-10-27",
     "tencent-hunyuan/emoreward": "2026-11-05",
-    "tencentarc/oreo-renderingedittingoptimization": "2026-11-05"
+    "tencentarc/oreo-renderingedittingoptimization": "2026-11-05",
+    "google-deepmind/robotics-antigravity-plugin": "2026-11-17"
   }
 }

@@ -1,28 +1,30 @@
 [
   {
-    "source": "arXiv",
-    "artifact": "image-2d",
-    "task": "model-efficiency",
-    "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
-    "paper": "http://arxiv.org/abs/2611.18550v1",
-    "repo": "",
-    "homepage": "",
-    "abstract": "Distilling diffusion models into few-step student models substantially reduces sampling latency, but induces severe diversity collapse: samples generated from different random seeds show minimal variation. In this work, we investigate the root cause of this failure by probing the internal representations of student models relative to their teachers. We find that distilled students maintain total activation variance comparable to their teachers, but concentrate it into substantially fewer directions. This directional collapse is localized to an identifiable intermediate block at the initial denoising step. Consequently, diversity collapse stems from a misallocation of activation variance rather than an inherent loss of generative capacity. Guided by this finding, we propose ReDiverse to reinstate the missing variance directions. At training time, ReDiverse-FT fine-tunes a lightweight adapter that regresses student activations onto the teacher's, reviving the teacher's feature variance characteristic. At inference time, ReDiverse-TF introduces a training-free mechanism that steers activations along precomputed teacher principal directions. Across image and video distillation benchmarks, ReDiverse consistently restores sample diversity while preserving generation quality, further supported by the user study.",
-    "published": "2026-11-13T18:55:59Z",
-    "score": 48,
-    "why": "recent paper candidate"
+    "source": "GitHub",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "robotics-antigravity-plugin",
+    "paper": "",
+    "repo": "https://github.com/google-deepmind/robotics-antigravity-plugin",
+    "homepage": "https://deepmind.google/models/gemini-robotics/",
+    "abstract": "GDM Robotics Skills for agentic robotics workflows across simulation and real robots.",
+    "published": "",
+    "created_at": "2026-11-16T18:50:28Z",
+    "updated_at": "2026-11-17T08:56:32Z",
+    "score": 51,
+    "why": "new repository in watched organization `Google DeepMind`"
   },
   {
     "source": "arXiv",
-    "artifact": "3d-object-asset",
-    "task": "image-to-3d",
-    "title": "Vision-as-a-Tool: Visual Harness for Multimodal Agentic Coding",
-    "paper": "http://arxiv.org/abs/2611.17797v1",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "Sparse Attention for Visual Generation: Toward Algorithm-System Co-Design",
+    "paper": "http://arxiv.org/abs/2611.21029v1",
     "repo": "",
     "homepage": "",
-    "abstract": "Multimodal agentic coding requires robust visual reasoning to analyze observations and evaluate generated artifacts. Current frameworks largely rely on a Thinking-with-Images paradigm, where agents depend on their intrinsic vision to execute visually grounded tasks. However, this architectural coupling introduces a fundamental bottleneck. Agent performance remains strictly bounded by internal perceptual limitations. Furthermore, text-only agents lack native perception. Without specialized tools, they cannot perform visual reasoning. To overcome these constraints, we introduce the Vision-as-a-Tool (VaaT) paradigm. Prior visual tool-use merely manipulates images for an agent's intrinsic vision to read. In contrast, VaaT reframes general-purpose multimodal large language models (MLLMs) as callable external utilities. As a result, text-only agents can completely offload visual reasoning during agentic execution. Meanwhile, vision-capable agents can dynamically augment their native perception on demand. We instantiate this paradigm in VHarness, a unified framework driven by five atomic actions. We comprehensively evaluate VHarness across Image-to-HTML, Image-to-SVG, and Image-to-3D generation tasks. Experimental results demonstrate that VHarness consistently improves visual fidelity and geometric accuracy across both text-only and multimodal coding agents. These findings highlight that modularizing visual reasoning into callable utilities provides a flexible and scalable foundation for future agentic coding systems.",
-    "published": "2026-11-13T06:23:19Z",
-    "score": 47,
+    "abstract": "Rapid advances in image and video generation have enabled high-fidelity synthesis at higher resolutions and longer durations, making the quadratic cost of dense self-attention a major bottleneck as visual token sequences grow. Sparse attention seeks to preserve generation quality at lower computational cost by retaining informative query-key interactions and omitting less consequential ones, with end-to-end gains depending on the cost of constructing sparse support and the efficiency with which the system maps the resulting workload to hardware. We survey sparse attention for visual generation through a 4+1+3 analytical framework that links algorithmic design to system implementation. The framework examines how static and dynamic methods use source information and the evidence derived from it to decide which interactions to retain and at what granularity, while accounting for the roles of reuse in reducing repeated computation and correction in compensating for omitted contributions. We relate these algorithmic choices to their implementation on hardware through the framework's three system dimensions of data organization, execution, and dataflow. We summarize common evaluation metrics and discuss open challenges and research directions, providing researchers and practitioners with a reference for the joint design of sparse attention algorithms and systems.",
+    "published": "2026-11-16T12:48:15Z",
+    "score": 50,
     "why": "recent paper candidate"
   }
 ]

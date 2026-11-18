@@ -3,12 +3,18 @@
 > Auto-generated harvesting report. **Manual review is required before touching `data/*.jsonl`.**
 > Shows only items never surfaced in an earlier run — a delta, not a re-scan.
 
-- Generated: `2026-11-17 09:18 UTC`
+- Generated: `2026-11-18 08:38 UTC`
 - Scope floor: **2025-01-01** — anything published/created earlier is dropped automatically
 - Lookback window: last **14** days
-- Raw files: `metadata/candidates/2026-11-17/`
-- New candidates today: **2**
-- New watched-org repositories today: **1**
+- Raw files: `metadata/candidates/2026-11-18/`
+- New candidates today: **1**
+- New watched-org repositories today: **0**
+
+## ⚠️ Fetch Errors
+
+Some sources could not be reached this run; today's report may be incomplete for those sources only.
+
+- arXiv query for `video` failed: The read operation timed out
 
 ## Review Checklist
 
@@ -21,16 +27,8 @@
 
 | Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
 |--:|:--|:--|:--|:--|:--|:--|
-| 51 | GitHub | 2026-11-16 | **robotics-antigravity-plugin** | simulation | new repository in watched organization `Google DeepMind` | [Repo](https://github.com/google-deepmind/robotics-antigravity-plugin) / [Home](https://deepmind.google/models/gemini-robotics/) |
-
-## video
-
-| Score | Source | Date | Candidate | Suggested Task | Why it matters | Links |
-|--:|:--|:--|:--|:--|:--|:--|
-| 50 | arXiv | 2026-11-16 | **Sparse Attention for Visual Generation: Toward Algorithm-System Co-Design** | text-to-video | recent paper candidate | [Paper](http://arxiv.org/abs/2611.21029v1) |
+| 60 | arXiv | 2026-11-17 | **Making the World React Realistically: A Closed-Loop Interactive World Model for Autonomous Driving** | autonomous-driving | recent paper candidate | [Paper](http://arxiv.org/abs/2611.22691v1) |
 
 ## New Repositories in Watched Organizations
 
-| Organization | Repo | Stars | Created | Why it may matter |
-|:--|:--|--:|:--|:--|
-| Google DeepMind | [google-deepmind/robotics-antigravity-plugin](https://github.com/google-deepmind/robotics-antigravity-plugin) | 5 | 2026-11-16 | new repository in watched organization `Google DeepMind` |
+- No new watched-org repositories were found.

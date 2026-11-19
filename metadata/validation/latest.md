@@ -5,5 +5,5 @@
 
 | Report | Generated | Blocking errors | Warnings |
 |:--|:--|--:|--:|
-| [Fast](fast/latest.md) | 2026-11-18 08:38:32 UTC | 0 | 15 |
+| [Fast](fast/latest.md) | 2026-11-19 08:53:31 UTC | 0 | 15 |
 | [Deep](deep/latest.md) | 2026-11-16 11:23:19 UTC | 6 | 17 |

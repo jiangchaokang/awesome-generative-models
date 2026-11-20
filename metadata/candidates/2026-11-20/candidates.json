@@ -1,0 +1,41 @@
+[
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "TrajCal: Trajectory-Calibrated Time Schedules for Few-Step Flow Sampling",
+    "paper": "http://arxiv.org/abs/2611.25847v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Flow matching enables high-quality image and video generation, but its iterative sampling process requires repeated evaluations of large neural networks. Existing few-step methods can distort the output and reduce its agreement with a many-step reference. We propose TrajCal, a training-free calibration framework for few-step sampling. Based on scatter search, a well-established metaheuristic for difficult optimization problems, TrajCal starts with diverse seed schedules, deforms and combines these candidates, and selects one fixed schedule by final output fidelity for reuse on new inputs. For both image and video generation, TrajCal achieves higher reference fidelity than all compared baselines at low evaluation budgets while maintaining competitive visual quality. The search is effective even with randomly generated seeds, while trajectory-based seeds further improve fidelity. For cross-style generalization, photography-calibrated schedules also improve fidelity on unseen image styles.",
+    "published": "2026-11-19T10:01:35Z",
+    "score": 60,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "world-models",
+    "title": "World-delta: Continually Integrating Observations for Incremental 3D Scene Generation",
+    "paper": "http://arxiv.org/abs/2611.25802v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Existing 3D generation methods synthesize visually compelling scenes from fixed inputs, yet struggle to continually expand and revise a 3D world as new observations arrive. Iterative approaches often fuse real observations and generated content into a single representation, treating generated content as established structure rather than revisable predictions. Consequently, early generation errors can persist and accumulate despite new evidence. We propose World-delta, an incremental 3D scene generation framework combining uncertainty-aware persistent world modeling with delta-guided diffusion for continual scene expansion and correction. Our framework comprises three components: 1) Visual Evidence Encoding integrates geometric and semantic cues from incoming images into unified world tokens. 2) Observation-Calibrated World Modeling maintains a persistent latent world state that distinguishes observation-supported content from provisional completion hypotheses. New evidence drives selective world deltas to revise conflicting hypotheses while preserving well-supported content. 3) Incremental World Diffusion Generation uses delta-derived masks to restrict diffusion to regions requiring updates, freezing unchanged regions. Only affected 3D chunks are decoded and integrated into the existing scene. Together, these components enable continual world expansion and revision while reducing redundant generation and preserving scene consistency. Experiments demonstrate the effectiveness of World-delta in incremental 3D scene generation, observation-driven correction, scene consistency, and update efficiency over successive scene updates.",
+    "published": "2026-11-19T09:25:57Z",
+    "score": 60,
+    "why": "recent paper candidate"
+  },
+  {
+    "source": "arXiv",
+    "artifact": "video",
+    "task": "text-to-video",
+    "title": "Posterior Matching Distillation",
+    "paper": "http://arxiv.org/abs/2611.26629v1",
+    "repo": "",
+    "homepage": "",
+    "abstract": "Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is often driven by reverse-KL objectives, whose mode-seeking bias favors dominant teacher modes at the expense of diversity across samples. We introduce Posterior Matching Distillation (PMD), a new member of the distribution-based distillation family that combines mode-covering posterior sampling with any-step generation. At zero population loss, PMD recovers the teacher's full posterior of clean images at each trained noise level. Its stochastic student supports any-step sampling budgets within the trained timestep grid without further training. To learn these posteriors, PMD matches exponentially reweighted averages of student samples conditioned on a fixed noisy state to corresponding teacher posterior means. Under Gaussian corruption, exponentially tilted posterior mean is a single teacher evaluation at a shifted input. We prove that, matching tilted means over an open neighborhood uniquely identifies the full posterior. PMD thus supervises the entire conditional distribution through a family of mean constraints, without any auxiliary student-score network. Experiments on SDXL and FLUX.2 [klein] 4B demonstrate that PMD achieves the best FID among 4-step methods on both models, while maintaining competitive or leading performance across prompt-alignment and perceptual-quality metrics.",
+    "published": "2026-11-19T18:59:57Z",
+    "score": 50,
+    "why": "recent paper candidate"
+  }
+]

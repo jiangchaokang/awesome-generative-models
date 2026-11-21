@@ -552,6 +552,7 @@
     "nvlabs/nemotron-labs-diffusion-uni": "2026-10-27",
     "tencent-hunyuan/emoreward": "2026-11-05",
     "tencentarc/oreo-renderingedittingoptimization": "2026-11-05",
-    "google-deepmind/robotics-antigravity-plugin": "2026-11-17"
+    "google-deepmind/robotics-antigravity-plugin": "2026-11-17",
+    "google-research/nmr-otoc": "2026-11-21"
   }
 }

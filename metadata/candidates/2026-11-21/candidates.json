@@ -1,0 +1,17 @@
+[
+  {
+    "source": "GitHub",
+    "artifact": "4d-dynamic-scene-world",
+    "task": "simulation",
+    "title": "nmr-otoc",
+    "paper": "",
+    "repo": "https://github.com/google-research/nmr-otoc",
+    "homepage": "",
+    "abstract": "End-to-end simulation of Out-of-Time-Order Correlators (OTOCs) in solid-state NMR spin systems from protein structures",
+    "published": "",
+    "created_at": "2026-11-11T21:58:14Z",
+    "updated_at": "2026-11-20T19:20:36Z",
+    "score": 42,
+    "why": "new repository in watched organization `Google Research`"
+  }
+]

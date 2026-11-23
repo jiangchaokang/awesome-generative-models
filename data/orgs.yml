@@ -1,0 +1,449 @@
+# Canonical organization normalization table (alias -> canonical name).
+# All affiliation normalization and GitHub-owner -> org mappings live here.
+# Do NOT hard-code affiliation maps in Python scripts.
+
+version: 1
+
+organizations:
+  - canonical: NVIDIA
+    slug: nvidia
+    color: "76B900"
+    logo: nvidia
+    github_owners: ["nvidia"]
+    aliases:
+      - nvidia
+      - nvidia corporation
+      - nvidia corp
+      - nvidia research
+      - nvidia ai
+
+  - canonical: NVLabs
+    slug: nvlabs
+    color: "76B900"
+    logo: nvidia
+    github_owners: ["nvlabs"]
+    aliases:
+      - nvlabs
+      - nvidia labs
+      - nvidia-labs
+
+  - canonical: Google DeepMind
+    slug: google-deepmind
+    color: "4285F4"
+    logo: google
+    github_owners: ["google-deepmind", "deepmind"]
+    aliases:
+      - google deepmind
+      - deepmind
+
+  - canonical: Google Research
+    slug: google-research
+    color: "4285F4"
+    logo: google
+    github_owners: ["google-research"]
+    aliases:
+      - google research
+      - google
+      - google llc
+      - google cloud ai
+
+  - canonical: Waymo
+    slug: waymo
+    color: "00A1F1"
+    logo: waymo
+    github_owners: ["waymo-research"]
+    aliases:
+      - waymo
+      - waymo llc
+      - waymo research
+
+  - canonical: Meta AI
+    slug: meta-ai
+    color: "0668E1"
+    logo: meta
+    github_owners: ["facebookresearch", "meta-llama"]
+    aliases:
+      - meta
+      - meta ai
+      - meta fair
+      - fair
+      - meta reality labs
+      - facebook ai research
+
+  - canonical: OpenAI
+    slug: openai
+    color: "111827"
+    logo: openai
+    github_owners: ["openai"]
+    aliases:
+      - openai
+
+  - canonical: Microsoft Research
+    slug: microsoft-research
+    color: "00A4EF"
+    logo: microsoft
+    github_owners: ["microsoft"]
+    aliases:
+      - microsoft
+      - microsoft research
+      - msra
+      - microsoft research asia
+
+  - canonical: Tencent Hunyuan
+    slug: tencent-hunyuan
+    color: "0064FF"
+    logo: tencentqq
+    github_owners: ["tencent-hunyuan"]
+    aliases:
+      - tencent hunyuan
+      - hunyuan
+      - tencent-hunyuan
+
+  - canonical: Tencent ARC
+    slug: tencent-arc
+    color: "0064FF"
+    logo: tencentqq
+    github_owners: ["tencentarc"]
+    aliases:
+      - tencent arc
+      - tencent arc lab
+      - tencentarc
+
+  - canonical: Tencent
+    slug: tencent
+    color: "0064FF"
+    logo: tencentqq
+    github_owners: ["tencent"]
+    aliases:
+      - tencent
+      - tencent ai lab
+      - tencent youtu lab
+
+  - canonical: Alibaba Wan
+    slug: alibaba-wan
+    color: "FF6A00"
+    logo: alibabacloud
+    github_owners: ["wan-video"]
+    aliases:
+      - alibaba wan
+      - wan team
+      - wan-video
+      - tongyi wanxiang
+
+  - canonical: Alibaba VILab
+    slug: alibaba-vilab
+    color: "FF6A00"
+    logo: alibabacloud
+    github_owners: ["ali-vilab"]
+    aliases:
+      - alibaba vilab
+      - ali-vilab
+      - alibaba tongyi lab
+      - tongyi lab
+
+  - canonical: Alibaba
+    slug: alibaba
+    color: "FF6A00"
+    logo: alibabacloud
+    github_owners: ["qwenlm", "alibaba"]
+    aliases:
+      - alibaba
+      - alibaba group
+      - alibaba damo academy
+      - damo academy
+      - qwen
+      - qwenlm
+
+  - canonical: ByteDance Seed
+    slug: bytedance-seed
+    color: "161823"
+    logo: bytedance
+    github_owners: ["bytedance-seed"]
+    aliases:
+      - bytedance seed
+      - bytedance-seed
+      - seed team
+
+  - canonical: ByteDance
+    slug: bytedance
+    color: "161823"
+    logo: bytedance
+    github_owners: ["bytedance"]
+    aliases:
+      - bytedance
+      - bytedance research
+      - tiktok
+
+  - canonical: Adobe Research
+    slug: adobe-research
+    color: "FF0000"
+    logo: adobe
+    github_owners: ["adobe-research"]
+    aliases:
+      - adobe
+      - adobe research
+
+  - canonical: Black Forest Labs
+    slug: black-forest-labs
+    color: "111827"
+    logo: null
+    github_owners: ["black-forest-labs"]
+    aliases:
+      - black forest labs
+      - bfl
+
+  - canonical: Stability AI
+    slug: stability-ai
+    color: "111827"
+    logo: null
+    github_owners: ["stability-ai"]
+    aliases:
+      - stability ai
+      - stabilityai
+
+  - canonical: StepFun
+    slug: stepfun
+    color: "334155"
+    logo: null
+    github_owners: ["stepfun-ai"]
+    aliases:
+      - stepfun
+      - stepfun ai
+
+  - canonical: Xiaomi
+    slug: xiaomi
+    color: "FF6900"
+    logo: xiaomi
+    github_owners: ["xiaomi", "xiaomimi"]
+    aliases:
+      - xiaomi
+      - xiaomi ev
+
+  - canonical: Tesla
+    slug: tesla
+    color: "CC0000"
+    logo: tesla
+    github_owners: ["tesla"]
+    aliases:
+      - tesla
+      - tesla ai
+
+  - canonical: THUDM
+    slug: thudm
+    color: "660000"
+    logo: null
+    github_owners: ["thudm", "zai-org"]
+    aliases:
+      - thudm
+      - zhipu ai
+      - zhipu
+
+  - canonical: Tsinghua University
+    slug: tsinghua-university
+    color: "660000"
+    logo: null
+    github_owners: []
+    aliases:
+      - tsinghua
+      - tsinghua university
+      - thu
+
+  - canonical: Peking University
+    slug: peking-university
+    color: "8B0000"
+    logo: null
+    github_owners: []
+    aliases:
+      - peking university
+      - pku
+
+  - canonical: Shanghai Jiao Tong University
+    slug: shanghai-jiao-tong-university
+    color: "8C1515"
+    logo: null
+    github_owners: []
+    aliases:
+      - shanghai jiao tong university
+      - sjtu
+
+  - canonical: Zhejiang University
+    slug: zhejiang-university
+    color: "003F88"
+    logo: null
+    github_owners: []
+    aliases:
+      - zhejiang university
+      - zju
+
+  - canonical: CUHK
+    slug: cuhk
+    color: "6B21A8"
+    logo: null
+    github_owners: []
+    aliases:
+      - cuhk
+      - the chinese university of hong kong
+      - chinese university of hong kong
+      - mmlab
+
+  - canonical: HKU
+    slug: hku
+    color: "1E3A8A"
+    logo: null
+    github_owners: []
+    aliases:
+      - hku
+      - university of hong kong
+      - the university of hong kong
+
+  - canonical: HKUST
+    slug: hkust
+    color: "1D4ED8"
+    logo: null
+    github_owners: []
+    aliases:
+      - hkust
+      - hong kong university of science and technology
+
+  - canonical: NUS
+    slug: nus
+    color: "0F4C81"
+    logo: null
+    github_owners: ["showlab"]
+    aliases:
+      - nus
+      - national university of singapore
+      - showlab
+
+  - canonical: NTU
+    slug: ntu
+    color: "991B1B"
+    logo: null
+    github_owners: []
+    aliases:
+      - ntu
+      - nanyang technological university
+
+  - canonical: Shanghai AI Lab
+    slug: shanghai-ai-lab
+    color: "2563EB"
+    logo: null
+    github_owners: ["open-mmlab", "internrobotics"]
+    aliases:
+      - shanghai ai lab
+      - shanghai ai laboratory
+      - shanghai artificial intelligence laboratory
+      - pjlab
+
+  - canonical: MIT
+    slug: mit
+    color: "A31F34"
+    logo: null
+    github_owners: []
+    aliases:
+      - mit
+      - massachusetts institute of technology
+      - mit csail
+
+  - canonical: Stanford University
+    slug: stanford-university
+    color: "8C1515"
+    logo: null
+    github_owners: []
+    aliases:
+      - stanford
+      - stanford university
+
+  - canonical: UC Berkeley
+    slug: uc-berkeley
+    color: "003262"
+    logo: null
+    github_owners: []
+    aliases:
+      - uc berkeley
+      - berkeley
+      - university of california berkeley
+      - university of california, berkeley
+
+  - canonical: CMU
+    slug: cmu
+    color: "C41230"
+    logo: null
+    github_owners: []
+    aliases:
+      - cmu
+      - carnegie mellon university
+
+  - canonical: ETH Zurich
+    slug: eth-zurich
+    color: "1F407A"
+    logo: null
+    github_owners: []
+    aliases:
+      - eth zurich
+      - eth zürich
+      - ethz
+
+  - canonical: Max Planck Institute
+    slug: max-planck-institute
+    color: "006C66"
+    logo: null
+    github_owners: []
+    aliases:
+      - max planck institute
+      - mpi
+      - max planck institute for intelligent systems
+
+  - canonical: University of Oxford
+    slug: university-of-oxford
+    color: "002147"
+    logo: null
+    github_owners: []
+    aliases:
+      - oxford
+      - university of oxford
+
+  - canonical: University of Washington
+    slug: university-of-washington
+    color: "4B2E83"
+    logo: null
+    github_owners: []
+    aliases:
+      - university of washington
+      - uw
+
+  - canonical: Cornell University
+    slug: cornell-university
+    color: "B31B1B"
+    logo: null
+    github_owners: []
+    aliases:
+      - cornell
+      - cornell university
+
+  - canonical: Princeton University
+    slug: princeton-university
+    color: "E77500"
+    logo: null
+    github_owners: []
+    aliases:
+      - princeton
+      - princeton university
+
+  - canonical: Apple
+    slug: apple
+    color: "111827"
+    logo: apple
+    github_owners: ["apple"]
+    aliases:
+      - apple
+      - apple ml research
+
+  - canonical: Independent
+    slug: independent
+    color: "475569"
+    logo: null
+    github_owners: []
+    aliases:
+      - independent
+      - independent researcher

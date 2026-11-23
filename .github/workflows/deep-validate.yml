@@ -1,0 +1,95 @@
+name: deep-validate
+
+on:
+  schedule:
+    # Wednesday 04:00 UTC (separated from Monday weekly-picks & arXiv weekend batch)
+    - cron: "0 4 * * 3"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: awesome-generative-models-writer
+  cancel-in-progress: false
+
+jobs:
+  deep-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install locked dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run deep validation with 24h two-strike quarantine (always green)
+        id: validate
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/validate_data.py \
+            --mode deep \
+            --write-cache \
+            --update-quarantine \
+            --soft-exit \
+            --timeout 10 \
+            --retries 3 \
+            --workers 8
+
+      - name: Rebuild pages with refreshed stats & quarantine exclusions
+        continue-on-error: true
+        run: |
+          python scripts/build.py
+          python scripts/check_internal_links.py
+
+      - name: Commit refreshed reports, stats, and quarantine state
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No deep-validation changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(validate): deep validation $(date -u +%Y-%m-%d) [skip ci]"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main || true
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 3))
+          done
+
+      - name: Create or update deduplicated deep-validation Issue
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/upsert_issue.py \
+            --title "Deep Validation Report (Rolling)" \
+            --label "deep-validation" \
+            --body-file metadata/validation/deep/latest.md

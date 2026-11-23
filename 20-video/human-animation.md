@@ -6,7 +6,7 @@
 
 #### 🌟 [UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer](https://arxiv.org/abs/2504.11289)
 
-![Venue: arXiv 2025](https://img.shields.io/static/v1?label=Venue&message=arXiv+2025&color=B31B1B&style=flat-square&labelColor=111827) ![Track: human-animation](https://img.shields.io/static/v1?label=Track&message=human-animation&color=7C3AED&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
+![Venue: arXiv 2025](https://img.shields.io/static/v1?label=Venue&message=arXiv+2025&color=B31B1B&style=flat-square&labelColor=111827) ![Track: human-animation](https://img.shields.io/static/v1?label=Track&message=human-animation&color=7C3AED&style=flat-square&labelColor=111827) ![Org: Alibaba VILab](https://img.shields.io/static/v1?label=Org&message=Alibaba+VILab&color=FF6A00&style=flat-square&labelColor=111827&logo=alibabacloud) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
 
 > Builds high-fidelity human animation on top of a large open video backbone with lightweight LoRA tuning.
 

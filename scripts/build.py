@@ -22,23 +22,43 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 import json
+import re
 
 from catalog_common import (
     ARTIFACT_META,
     ARTIFACT_ORDER,
     ARTIFACT_TASK_ORDER,
     DOMAIN_IGNORE,
-    ORG_BADGE_META,
     ROOT,
     SURVEY_LINKS,
     VENUE_COLORS,
     compact_number,
     load_records,
+    org_badge_meta_for,
     parse_github_repo,
     slugify,
 )
 
 CACHE_DIR = ROOT / "metadata" / "cache"
+WEEKLY_DATA_DIR = ROOT / "data" / "weekly"
+WEEKLY_ARCHIVE_DIR = ROOT / "weekly"
+
+WEEKLY_START_MARKER = "<!-- WEEKLY:START -->"
+WEEKLY_END_MARKER = "<!-- WEEKLY:END -->"
+WEEKLY_BLOCK_RE = re.compile(
+    rf"{re.escape(WEEKLY_START_MARKER)}.*?{re.escape(WEEKLY_END_MARKER)}",
+    re.DOTALL,
+)
+
+TRACK_DISPLAY = {
+    "image-2d": "Image 2D",
+    "video": "Video",
+    "3d-object": "3D Object",
+    "3d-scene": "3D Scene",
+    "4d-world": "4D / World",
+}
+
+REPO_SLUG = "jiangchaokang/awesome-generative-models"
 
 ARTIFACT_COLORS = {
     "image-2d": "2563EB",
@@ -330,7 +350,7 @@ def link_badges(rec: dict, repo_stats: dict) -> str:
 def spotlight_badges(rec: dict) -> list[str]:
     out = [venue_badge(rec), task_badge(rec)]
     for org in rec.get("orgs", [])[:1]:
-        meta = ORG_BADGE_META.get(slugify(org), {"label": org, "color": "334155", "logo": None})
+        meta = org_badge_meta_for(org)
         out.append(badge("Org", meta["label"], meta["color"], meta.get("logo")))
     if rec.get("open_source"):
         out.append(badge("Source", "Open", "16A34A", "opensourceinitiative"))
@@ -697,7 +717,245 @@ def build_organization_pages(papers: list[dict], repo_stats: dict) -> None:
     )
 
 
-def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
+def load_weekly_issues(weekly_dir: Path = WEEKLY_DATA_DIR) -> list[dict]:
+    """Load all data/weekly/YYYY-Www.json issues in reverse-chronological order."""
+    if not weekly_dir.exists():
+        return []
+    issues: list[dict] = []
+    for path in sorted(weekly_dir.glob("*-W*.json"), reverse=True):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if isinstance(payload, dict) and payload.get("week"):
+            issues.append(payload)
+    issues.sort(key=lambda x: str(x.get("week", "")), reverse=True)
+    return issues
+
+
+def format_authors(authors: list[str]) -> str:
+    cleaned = [a.strip() for a in (authors or []) if str(a).strip()]
+    if not cleaned:
+        return "Unknown"
+    if len(cleaned) <= 2:
+        return ", ".join(cleaned)
+    return f"{cleaned[0]}, {cleaned[1]} et al."
+
+
+def format_affiliations(affiliations: list[dict]) -> str:
+    names = [str(a.get("name", "")).strip() for a in (affiliations or []) if isinstance(a, dict) and a.get("name")]
+    return " · ".join(names) if names else "Unverified"
+
+
+def format_weekly_links(item: dict) -> str:
+    """Format Paper / Code / Project / HF links. Never show placeholders for missing links.
+    GitHub stars include fetch-date tooltip."""
+    links = item.get("links") or {}
+    stats = item.get("stats") or {}
+    fetched_date = str(stats.get("fetched_at") or "")[:10]
+    parts: list[str] = []
+
+    if links.get("paper"):
+        parts.append(f"[Paper]({links['paper']})")
+    if links.get("code"):
+        stars = int(stats.get("github_stars", 0) or 0)
+        star_label = f"Code ★{compact_number(stars)}" if stars > 0 else "Code"
+        if stars > 0 and fetched_date:
+            parts.append(f'[{star_label}]({links["code"]} "GitHub stars fetched {fetched_date}")')
+        else:
+            parts.append(f"[{star_label}]({links['code']})")
+    if links.get("project"):
+        parts.append(f"[Project]({links['project']})")
+    if links.get("hf"):
+        parts.append(f"[HF]({links['hf']})")
+
+    return " · ".join(parts)
+
+
+def render_weekly_items_table(items: list[dict]) -> str:
+    lines = [
+        "| Date | Work | Affiliation | Track | Score | Links |",
+        "|:--|:--|:--|:--|--:|:--|",
+    ]
+    ordered = sorted(
+        items,
+        key=lambda x: (
+            0 if x.get("is_pick_of_the_week") else 1,
+            -int((x.get("score") or {}).get("total", 0)),
+            str(x.get("title", "")).lower(),
+        ),
+    )
+    for item in ordered:
+        date_str = escape_table_cell(str(item.get("published_date") or "—"))
+        trophy = "🏆 " if item.get("is_pick_of_the_week") else ""
+        paper_url = (item.get("links") or {}).get("paper") or ""
+        title_text = escape_table_cell(str(item.get("title") or ""))
+        title_md = f"**[{title_text}]({paper_url})**" if paper_url else f"**{title_text}**"
+        authors_md = escape_table_cell(format_authors(item.get("authors") or []))
+        highlight_md = escape_table_cell(str(item.get("highlight") or ""))
+        work_cell = f"{trophy}{title_md}<br>{authors_md}<br>{highlight_md}"
+        aff_cell = escape_table_cell(format_affiliations(item.get("affiliations") or []))
+        track_cell = TRACK_DISPLAY.get(str(item.get("track") or ""), str(item.get("track") or "—"))
+        score_val = int((item.get("score") or {}).get("total", 0))
+        links_cell = format_weekly_links(item)
+        lines.append(
+            f"| {date_str} | {work_cell} | {aff_cell} | {track_cell} | {score_val} | {links_cell} |"
+        )
+    return "\n".join(lines)
+
+
+def render_weekly_block(
+    latest_issue: dict | None,
+    previous_issue: dict | None = None,
+) -> str:
+    """Render the README top Weekly Top Picks block wrapped in WEEKLY:START/END markers."""
+    if not latest_issue:
+        inner = "\n".join(
+            [
+                "## 🔥 This Week's Top Picks",
+                "> No weekly issue has been published yet. · [How we select](docs/SELECTION.md) · [Past weeks](weekly/README.md)",
+            ]
+        )
+        return f"{WEEKLY_START_MARKER}\n{inner}\n{WEEKLY_END_MARKER}"
+
+    week = latest_issue["week"]
+    window = latest_issue["window"]
+    generated_at = str(latest_issue.get("generated_at") or "").replace("T", " ").replace("Z", " UTC")
+    items = latest_issue.get("items") or []
+    honorable = latest_issue.get("honorable_mentions") or []
+    status = latest_issue.get("status", "empty")
+    notes = str(latest_issue.get("notes") or "").strip()
+
+    lines = [
+        f"## 🔥 This Week's Top Picks · {week} ({window['start']} → {window['end']})",
+        f"> Updated {generated_at} · Score ≥ 75 · [How we select](docs/SELECTION.md) · [Past weeks](weekly/README.md) · [Full issue](weekly/{week}.md)",
+        "",
+    ]
+
+    if items:
+        lines.append(render_weekly_items_table(items))
+        empty_tracks = latest_issue.get("empty_tracks") or []
+        if empty_tracks:
+            labels = ", ".join(TRACK_DISPLAY.get(t, t) for t in empty_tracks)
+            lines.extend(["", f"_No qualifying pick (≥ 75) this week for: {labels}._"])
+        fetch_dates = sorted(
+            {str((it.get("stats") or {}).get("fetched_at") or "")[:10] for it in items if (it.get("stats") or {}).get("fetched_at")}
+        )
+        if fetch_dates:
+            lines.append(f"_GitHub star counts fetched on {fetch_dates[-1]} (hover Code link for date; not real-time)._")
+    else:
+        lines.append(f"**No qualifying Top Picks (≥ 75) for {week}.**")
+        if notes:
+            lines.extend(["", f"> {notes}"])
+        if previous_issue:
+            prev_w = previous_issue["week"]
+            lines.extend(["", f"See previous issue: [{prev_w}](weekly/{prev_w}.md) · [All past weeks](weekly/README.md)"])
+        else:
+            lines.extend(["", "See [Weekly Archive](weekly/README.md) and [Hall of Fame](weekly/hall-of-fame.md)."])
+
+    if honorable:
+        lines.extend(["", f"### Notable (Score 65–74) · {len(honorable)}", "", render_weekly_items_table(honorable)])
+
+    inner = "\n".join(lines)
+    return f"{WEEKLY_START_MARKER}\n{inner}\n{WEEKLY_END_MARKER}"
+
+
+def replace_weekly_block(readme_text: str, weekly_block: str) -> str:
+    """Deterministically and idempotently replace ONLY the content between
+    <!-- WEEKLY:START --> and <!-- WEEKLY:END -->."""
+    if WEEKLY_START_MARKER not in readme_text or WEEKLY_END_MARKER not in readme_text:
+        raise ValueError("README is missing <!-- WEEKLY:START --> / <!-- WEEKLY:END --> markers.")
+    return WEEKLY_BLOCK_RE.sub(lambda _: weekly_block, readme_text, count=1)
+
+
+def build_weekly_archive(issues: list[dict], out_dir: Path = WEEKLY_ARCHIVE_DIR) -> None:
+    """Generate weekly/YYYY-Www.md for every issue and reverse-chronological weekly/README.md."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    for idx, issue in enumerate(issues):
+        week = issue["week"]
+        window = issue["window"]
+        generated_at = str(issue.get("generated_at") or "").replace("T", " ").replace("Z", " UTC")
+        items = issue.get("items") or []
+        honorable = issue.get("honorable_mentions") or []
+        empty_tracks = issue.get("empty_tracks") or []
+        notes = str(issue.get("notes") or "").strip()
+
+        lines = [
+            f"# 🔥 Weekly Top Picks · {week} ({window['start']} → {window['end']})",
+            "",
+            f"> Generated `{generated_at}` · Status: `{issue.get('status', 'empty')}` · "
+            "[← Homepage](../README.md) · [← All Weeks](README.md) · [Selection Rubric](../docs/SELECTION.md)",
+            "",
+        ]
+
+        if items:
+            lines.extend(["## Top Picks (Score ≥ 75)", "", render_weekly_items_table(items), ""])
+            if empty_tracks:
+                labels = ", ".join(TRACK_DISPLAY.get(t, t) for t in empty_tracks)
+                lines.extend([f"_No qualifying pick this week for: {labels} (tracks are never padded)._", ""])
+        else:
+            lines.extend(
+                [
+                    "## Top Picks (Score ≥ 75)",
+                    "",
+                    "_No qualifying Top Picks this week._",
+                    "",
+                ]
+            )
+            if notes:
+                lines.extend([f"> {notes}", ""])
+
+        if honorable:
+            lines.extend(["## Notable (Score 65–74)", "", render_weekly_items_table(honorable), ""])
+
+        if notes and items:
+            lines.extend(["## Notes", "", notes, ""])
+
+        prev_issue = issues[idx + 1] if idx + 1 < len(issues) else None
+        if prev_issue:
+            lines.extend([f"Previous issue: [{prev_issue['week']}]({prev_issue['week']}.md)", ""])
+
+        fetch_dates = sorted(
+            {
+                str((it.get("stats") or {}).get("fetched_at") or "")[:10]
+                for it in (items + honorable)
+                if (it.get("stats") or {}).get("fetched_at")
+            }
+        )
+        star_note = fetch_dates[-1] if fetch_dates else window["end"]
+        lines.extend(
+            [
+                "---",
+                f"_GitHub star counts shown on this page were fetched on `{star_note}` and are not real-time._",
+            ]
+        )
+        write_text(out_dir / f"{week}.md", "\n".join(lines))
+
+    # Reverse-chronological index weekly/README.md
+    index_lines = [
+        "# 📅 Weekly Top Picks Archive",
+        "",
+        "> Reverse-chronological archive of weekly curated issues (Monday 00:00 → Sunday 23:59 UTC).  ",
+        "> [← Homepage](../README.md) · [Selection Rubric](../docs/SELECTION.md) · [Hall of Fame (Legacy Editor's Picks)](hall-of-fame.md)",
+        "",
+    ]
+    if issues:
+        index_lines.extend(["| Week | Window (UTC) | Status | Top Picks | Notable |", "|:--|:--|:--|--:|--:|"])
+        for issue in issues:
+            w = issue["week"]
+            win = issue["window"]
+            index_lines.append(
+                f"| [{w}]({w}.md) | {win['start']} → {win['end']} | `{issue.get('status', 'empty')}` | "
+                f"{len(issue.get('items') or [])} | {len(issue.get('honorable_mentions') or [])} |"
+            )
+    else:
+        index_lines.append("_No weekly issues published yet._")
+
+    write_text(out_dir / "README.md", "\n".join(index_lines))
+
+
+def build_root_readme(papers: list[dict], repo_stats: dict, weekly_issues: list[dict]) -> None:
     by_artifact: dict[str, list[dict]] = defaultdict(list)
     by_domain: Counter = Counter()
     by_org: Counter = Counter()
@@ -711,7 +969,17 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
             by_org[org] += 1
 
     open_count = sum(1 for p in papers if p.get("open_source"))
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    latest_issue = weekly_issues[0] if weekly_issues else None
+    previous_issue = weekly_issues[1] if len(weekly_issues) > 1 else None
+    content_date = latest_issue["window"]["end"] if latest_issue else "uninitialized"
+
+    stars_badge = (
+        f"[![GitHub Stars](https://img.shields.io/github/stars/{REPO_SLUG}"
+        "?style=for-the-badge&labelColor=111827&color=F59E0B)]"
+        f"(https://github.com/{REPO_SLUG}/stargazers)"
+    )
+
+    weekly_block = render_weekly_block(latest_issue, previous_issue)
 
     lines = [
         "<!-- AUTO-GENERATED by scripts/build.py — DO NOT EDIT MANUALLY -->",
@@ -729,54 +997,41 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
         + " "
         + badge("Scope", "2025-01+", "0EA5E9", style="for-the-badge")
         + " "
-        + badge("Updated", today, "F59E0B", "githubactions", style="for-the-badge"),
+        + badge("Updated", content_date, "F59E0B", "githubactions", style="for-the-badge")
+        + " "
+        + stars_badge,
         "",
         badge("License", "MIT", "0F766E", link="LICENSE")
         + " "
         + badge("Contributing", "PRs Welcome", "2563EB", "github", "CONTRIBUTING.md")
         + " "
-        + badge("Candidates", "Daily Inbox", "EA580C", "githubactions", "metadata/candidates/latest.md")
+        + badge("Weekly", "Archive", "EA580C", "githubactions", "weekly/README.md")
         + " "
         + badge("Validation", "Report", "7C3AED", "checkmarx", "metadata/validation/latest.md"),
         "",
-        "*Exact paper / code / project links only — every entry is reviewed before merge.*",
+        "*Exact paper / code / project links only — every displayed fact is verifiable.*",
         "",
         "</div>",
         "",
         "---",
         "",
+        WEEKLY_START_MARKER,
+        WEEKLY_END_MARKER,
+        "",
         "## 🧭 Quick Navigation",
         "",
         render_artifact_navigation(by_artifact),
         "",
-        "## 🌟 Editor's Picks",
+        "<details>",
+        "<summary><b>📐 How each pipeline works</b> (click to expand)</summary>",
         "",
-        "> The highest-signal recent work in each area — newest, most complete, or most widely adopted.",
+        render_pipeline_overview_table(),
+        "",
+        "</details>",
+        "",
+        "## 🏷️ Explore by Topic",
         "",
     ]
-
-    for artifact in ARTIFACT_ORDER:
-        meta = ARTIFACT_META[artifact]
-        highlights = pick_highlights(by_artifact.get(artifact, []), repo_stats, limit=HOME_HIGHLIGHTS_PER_ARTIFACT)
-        if not highlights:
-            continue
-        lines.append(f"**{meta['emoji']} {meta['title']}** · [see all →]({meta['dir']}/README.md)")
-        lines.append("")
-        lines.extend(render_spotlight_card(rec, repo_stats) for rec in highlights)
-
-    lines.extend(
-        [
-            "<details>",
-            "<summary><b>📐 How each pipeline works</b> (click to expand)</summary>",
-            "",
-            render_pipeline_overview_table(),
-            "",
-            "</details>",
-            "",
-            "## 🏷️ Explore by Topic",
-            "",
-        ]
-    )
     if by_domain:
         max_domain = max(by_domain.values())
         lines.extend(["| Topic | Papers |", "|:--|:--|"])
@@ -800,34 +1055,34 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
             "## 📬 Daily Candidate Inbox",
             "",
             "> Each report lists only candidates never surfaced before (a delta, not a re-scan). "
-            "A day with 0 new items is normal — it means nothing new yet cleared the 2025-01-01+ scope and quality bar.",
+            "Weekly Top Picks are selected from the inbox plus redundant sources every Monday at 02:00 UTC ([selection rubric](docs/SELECTION.md) · [Hall of Fame](weekly/hall-of-fame.md)).",
             "",
             render_recent_candidate_reports_table(),
             "",
             "## ⚙️ Curation Pipeline",
             "",
             "```text",
-            "Daily harvesting (2025-01-01+ floor, true-novelty dates, quality score, dedupe ledger)",
-            "  -> metadata/candidates/YYYY-MM-DD/ -> human review -> data/*.jsonl",
-            "  -> fast validate (schema/scope/dedupe, every push) -> build -> publish",
-            "  -> weekly deep validate (live links + stars, non-blocking to daily)",
+            "Multi-source weekly harvest (arXiv + HF Daily Papers + GitHub + OpenAlex + Inbox)",
+            "  -> Hard Gates H1-H8 -> 100-pt Rubric Scoring -> data/weekly/YYYY-Www.json",
+            "  -> fast validate (deterministic, PR CI) -> build.py -> README & weekly archive",
+            "  -> Wednesday deep validate (24h two-strike quarantine, never turns scheduled CI red)",
             "```",
             "",
             "<details>",
             "<summary><b>🛠️ Build &amp; maintenance commands</b></summary>",
             "",
             "```bash",
-            "# fast: schema, vocab, dedupe, 2025+ scope -- no network, runs on every push",
+            "# fast: schema, vocab, dedupe, 2025+ scope, weekly schema -- no network",
             "python scripts/validate_data.py --skip-network",
             "",
-            "# deep: also verifies every exact link + refreshes GitHub star/license cache (weekly)",
-            "python scripts/validate_data.py --write-cache",
+            "# deep: live links, title similarity >= 0.90, 24h two-strike quarantine",
+            "python scripts/validate_data.py --mode deep --write-cache --update-quarantine --soft-exit",
             "",
-            "# rebuild README and all generated pages",
+            "# generate weekly picks (dry-run)",
+            "python scripts/weekly/pipeline.py --dry-run",
+            "",
+            "# rebuild README, weekly archive, and all generated pages",
             "python scripts/build.py",
-            "",
-            "# refresh the daily candidate inbox",
-            "python scripts/fetch_candidates.py --days 14",
             "```",
             "",
             "</details>",
@@ -852,20 +1107,23 @@ def build_root_readme(papers: list[dict], repo_stats: dict) -> None:
         ]
     )
 
-    write_text(ROOT / "README.md", "\n".join(lines))
+    rendered = replace_weekly_block("\n".join(lines), weekly_block)
+    write_text(ROOT / "README.md", rendered)
 
 
 def main() -> None:
-    papers = load_records()
+    papers = load_records(include_quarantined=False)
     repo_stats = load_json(CACHE_DIR / "repo_stats.json")
+    weekly_issues = load_weekly_issues()
 
     build_foundations_page(papers)
     build_artifact_pages(papers, repo_stats)
     build_topic_pages(papers, repo_stats)
     build_organization_pages(papers, repo_stats)
-    build_root_readme(papers, repo_stats)
+    build_weekly_archive(weekly_issues)
+    build_root_readme(papers, repo_stats, weekly_issues)
 
-    print(f"[build] generated pages for {len(papers)} entries.")
+    print(f"[build] generated pages for {len(papers)} entries and {len(weekly_issues)} weekly issue(s).")
 
 
 if __name__ == "__main__":

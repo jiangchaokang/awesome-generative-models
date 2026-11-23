@@ -1,0 +1,109 @@
+# Vocabulary and track keywords for weekly harvesting and classification.
+version: 1
+
+arxiv_categories:
+  - cs.CV
+  - cs.GR
+  - cs.LG
+  - cs.AI
+  - cs.RO
+
+generative_core_keywords:
+  - diffusion
+  - flow matching
+  - rectified flow
+  - autoregressive
+  - generative model
+  - image generation
+  - text-to-image
+  - video generation
+  - text-to-video
+  - image-to-video
+  - 3d generation
+  - text-to-3d
+  - image-to-3d
+  - scene generation
+  - 4d generation
+  - world model
+  - gaussian splatting
+  - neural rendering
+  - synthesizer
+  - synthesis
+
+non_generative_exclusion_keywords:
+  - a survey
+  - comprehensive survey
+  - benchmark for
+  - benchmarking
+  - evaluation suite
+  - dataset and benchmark
+  - empirical analysis of
+  - theoretical analysis of
+
+tracks:
+  image-2d:
+    artifact: image-2d
+    label: Image 2D
+    keywords:
+      - text-to-image
+      - image generation
+      - image synthesis
+      - image editing
+      - diffusion transformer
+      - t2i
+      - controllable image
+      - personalization
+  video:
+    artifact: video
+    label: Video
+    keywords:
+      - video generation
+      - text-to-video
+      - image-to-video
+      - video editing
+      - video foundation model
+      - human animation
+      - talking head
+      - long video
+      - surround-view video
+      - t2v
+      - i2v
+  3d-object:
+    artifact: 3d-object-asset
+    label: 3D Object
+    keywords:
+      - text-to-3d
+      - image-to-3d
+      - 3d asset
+      - 3d shape generation
+      - 3d object generation
+      - mesh generation
+      - 3d avatar
+      - articulated 3d
+      - part-aware 3d
+  3d-scene:
+    artifact: 3d-scene
+    label: 3D Scene
+    keywords:
+      - 3d scene generation
+      - indoor scene generation
+      - outdoor scene generation
+      - layout-to-scene
+      - scene synthesis
+      - navigable 3d scene
+      - scene editing
+      - 3d layout generation
+  4d-world:
+    artifact: 4d-dynamic-scene-world
+    label: 4D / World
+    keywords:
+      - world model
+      - world models
+      - 4d generation
+      - dynamic 3d
+      - interactive world
+      - autonomous driving world
+      - closed-loop simulation
+      - game world
+      - robotics world
+      - 4dgs

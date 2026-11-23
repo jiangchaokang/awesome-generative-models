@@ -1,0 +1,54 @@
+name: freshness-watchdog
+
+on:
+  schedule:
+    # Daily 06:00 UTC
+    - cron: "0 6 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: freshness-watchdog
+  cancel-in-progress: true
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install locked dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check weekly freshness and README consistency
+        id: check
+        continue-on-error: true
+        run: python scripts/check_freshness.py --max-stale-days 8
+
+      - name: Alert via deduplicated stale-homepage Issue if needed
+        if: steps.check.outputs.needs_alert == 'true'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/upsert_issue.py \
+            --title "Stale homepage detected" \
+            --label "stale-homepage" \
+            --body "Watchdog check on $(date -u +%Y-%m-%dT%H:%M:%SZ): ${{ steps.check.outputs.reason }} (latest_week=${{ steps.check.outputs.latest_week }}, week_end=${{ steps.check.outputs.week_end }}, days_since_end=${{ steps.check.outputs.days_since_end }}, readme_consistent=${{ steps.check.outputs.readme_consistent }})."

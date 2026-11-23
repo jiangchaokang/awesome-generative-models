@@ -1,4 +1,4 @@
-name: catalog-ci
+name: ci
 
 on:
   pull_request:
@@ -6,7 +6,10 @@ on:
       - "data/**"
       - "scripts/**"
       - "tests/**"
+      - "weekly/**"
+      - "docs/**"
       - "README.md"
+      - "requirements.txt"
       - "00-surveys-and-foundations/**"
       - "10-image-2d/**"
       - "20-video/**"
@@ -21,21 +24,20 @@ on:
     branches:
       - main
       - master
-    paths:
-      - "data/**"
-      - "scripts/**"
-      - "tests/**"
-      - ".github/workflows/**"
+    paths-ignore:
+      - "metadata/validation/**"
+      - "metadata/cache/**"
 
 permissions:
   contents: read
 
 concurrency:
-  group: catalog-ci-${{ github.ref }}
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   validate:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -44,30 +46,37 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install locked dependencies
+        run: pip install -r requirements.txt
 
       - name: Compile Python
         run: python -m compileall -q scripts tests
 
-      - name: Run unit tests
+      - name: Run unit & integration tests (offline fixtures)
         run: python -m unittest discover -s tests -p "test_*.py" -v
 
-      - name: Validate catalog data
+      - name: Deterministic fast validation (no network)
         run: |
           python scripts/validate_data.py \
-            --mode fast \
+            --skip-network \
             --report-root "${RUNNER_TEMP}/catalog-validation"
 
-      - name: Rebuild generated catalog
+      - name: Rebuild generated catalog & weekly archive
         run: python scripts/build.py
 
       - name: Check internal Markdown links
         run: python scripts/check_internal_links.py
 
-      - name: Check whitespace errors
-        run: git diff --check
+      - name: Verify generated files have no diff
+        run: |
+          git diff --check
+          git diff --exit-code

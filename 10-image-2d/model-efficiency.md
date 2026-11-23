@@ -6,7 +6,7 @@
 
 #### 🌟 [iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)
 
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: model-efficiency](https://img.shields.io/static/v1?label=Track&message=model-efficiency&color=2563EB&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
+![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: model-efficiency](https://img.shields.io/static/v1?label=Track&message=model-efficiency&color=2563EB&style=flat-square&labelColor=111827) ![Org: Tencent Hunyuan](https://img.shields.io/static/v1?label=Org&message=Tencent+Hunyuan&color=0064FF&style=flat-square&labelColor=111827&logo=tencentqq) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
 
 > A simple quantization improvement that makes FSQ stronger for high-quality image generation with minimal code changes.
 

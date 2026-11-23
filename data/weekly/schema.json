@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jiangchaokang/awesome-generative-models/data/weekly/schema.json",
+  "title": "Weekly Top Picks Issue",
+  "type": "object",
+  "required": ["week", "window", "generated_at", "status", "items", "honorable_mentions", "notes"],
+  "additionalProperties": true,
+  "properties": {
+    "week": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-W(0[1-9]|[1-4][0-9]|5[0-3])$"
+    },
+    "window": {
+      "type": "object",
+      "required": ["start", "end", "tz"],
+      "additionalProperties": false,
+      "properties": {
+        "start": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "end": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "tz": { "type": "string", "const": "UTC" }
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "minLength": 10
+    },
+    "status": {
+      "type": "string",
+      "enum": ["ok", "partial", "empty"]
+    },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/weeklyItem" }
+    },
+    "honorable_mentions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/weeklyItem" }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "pick_of_the_week_id": {
+      "type": ["string", "null"]
+    },
+    "empty_tracks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["image-2d", "video", "3d-object", "3d-scene", "4d-world"]
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": ["url", "quote"],
+      "additionalProperties": false,
+      "properties": {
+        "url": { "type": "string", "pattern": "^https?://" },
+        "quote": { "type": "string", "minLength": 1 }
+      }
+    },
+    "affiliation": {
+      "type": "object",
+      "required": ["name", "normalized", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "normalized": { "type": "string", "minLength": 1 },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/evidence" }
+        }
+      }
+    },
+    "weeklyItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "published_date",
+        "authors",
+        "affiliations",
+        "track",
+        "links",
+        "stats",
+        "venue",
+        "score",
+        "highlight",
+        "verification"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "pattern": "^arxiv:[0-9]{4}\\.[0-9]{4,5}$" },
+        "title": { "type": "string", "minLength": 3 },
+        "published_date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "affiliations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/affiliation" }
+        },
+        "track": {
+          "type": "string",
+          "enum": ["image-2d", "video", "3d-object", "3d-scene", "4d-world"]
+        },
+        "links": {
+          "type": "object",
+          "required": ["paper", "code", "project", "hf"],
+          "additionalProperties": false,
+          "properties": {
+            "paper": { "type": "string", "pattern": "^https?://" },
+            "code": { "type": ["string", "null"] },
+            "project": { "type": ["string", "null"] },
+            "hf": { "type": ["string", "null"] }
+          }
+        },
+        "stats": {
+          "type": "object",
+          "required": ["github_stars", "hf_upvotes", "fetched_at"],
+          "additionalProperties": true,
+          "properties": {
+            "github_stars": { "type": "integer", "minimum": 0 },
+            "hf_upvotes": { "type": "integer", "minimum": 0 },
+            "fetched_at": { "type": "string", "minLength": 10 }
+          }
+        },
+        "venue": { "type": "string", "minLength": 1 },
+        "score": {
+          "type": "object",
+          "required": ["total", "signals", "quality", "openness", "institution", "fit", "evidence"],
+          "additionalProperties": true,
+          "properties": {
+            "total": { "type": "number", "minimum": 0, "maximum": 100 },
+            "signals": { "type": "number", "minimum": 0, "maximum": 30 },
+            "quality": { "type": "number", "minimum": 0, "maximum": 30 },
+            "openness": { "type": "number", "minimum": 0, "maximum": 20 },
+            "institution": { "type": "number", "minimum": 0, "maximum": 10 },
+            "fit": { "type": "number", "minimum": 0, "maximum": 10 },
+            "quality_mode": { "type": "string", "enum": ["llm", "heuristic"] },
+            "evidence": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/evidence" }
+            }
+          }
+        },
+        "highlight": { "type": "string", "minLength": 5 },
+        "verification": {
+          "type": "object",
+          "required": ["arxiv_title_match", "code_identity", "links_ok", "affiliation_sources", "checked_at"],
+          "additionalProperties": true,
+          "properties": {
+            "arxiv_title_match": { "type": "number", "minimum": 0, "maximum": 1 },
+            "code_identity": { "type": "string", "enum": ["pass", "fail", "na"] },
+            "links_ok": { "type": "boolean" },
+            "affiliation_sources": { "type": "integer", "minimum": 0 },
+            "checked_at": { "type": "string", "minLength": 10 }
+          }
+        },
+        "is_pick_of_the_week": { "type": "boolean" },
+        "tier": { "type": "string", "enum": ["top-pick", "notable"] }
+      }
+    }
+  }
+}

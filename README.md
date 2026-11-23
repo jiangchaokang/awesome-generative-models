@@ -7,15 +7,26 @@
 **A high-precision, exact-link catalog of recent generative-model research**  
 **for images, video, 3D assets, 3D scenes, and 4D dynamic worlds.**
 
-![Papers: 207](https://img.shields.io/static/v1?label=Papers&message=207&color=2563EB&style=for-the-badge&labelColor=111827&logo=googlescholar) ![Open Source: 52](https://img.shields.io/static/v1?label=Open+Source&message=52&color=16A34A&style=for-the-badge&labelColor=111827&logo=opensourceinitiative) ![Scope: 2025-01+](https://img.shields.io/static/v1?label=Scope&message=2025-01%2B&color=0EA5E9&style=for-the-badge&labelColor=111827) ![Updated: 2026-11-22](https://img.shields.io/static/v1?label=Updated&message=2026-11-22&color=F59E0B&style=for-the-badge&labelColor=111827&logo=githubactions)
+![Papers: 207](https://img.shields.io/static/v1?label=Papers&message=207&color=2563EB&style=for-the-badge&labelColor=111827&logo=googlescholar) ![Open Source: 52](https://img.shields.io/static/v1?label=Open+Source&message=52&color=16A34A&style=for-the-badge&labelColor=111827&logo=opensourceinitiative) ![Scope: 2025-01+](https://img.shields.io/static/v1?label=Scope&message=2025-01%2B&color=0EA5E9&style=for-the-badge&labelColor=111827) ![Updated: 2026-11-22](https://img.shields.io/static/v1?label=Updated&message=2026-11-22&color=F59E0B&style=for-the-badge&labelColor=111827&logo=githubactions) [![GitHub Stars](https://img.shields.io/github/stars/jiangchaokang/awesome-generative-models?style=for-the-badge&labelColor=111827&color=F59E0B)](https://github.com/jiangchaokang/awesome-generative-models/stargazers)
 
-[![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=0F766E&style=flat-square&labelColor=111827)](LICENSE) [![Contributing: PRs Welcome](https://img.shields.io/static/v1?label=Contributing&message=PRs+Welcome&color=2563EB&style=flat-square&labelColor=111827&logo=github)](CONTRIBUTING.md) [![Candidates: Daily Inbox](https://img.shields.io/static/v1?label=Candidates&message=Daily+Inbox&color=EA580C&style=flat-square&labelColor=111827&logo=githubactions)](metadata/candidates/latest.md) [![Validation: Report](https://img.shields.io/static/v1?label=Validation&message=Report&color=7C3AED&style=flat-square&labelColor=111827&logo=checkmarx)](metadata/validation/latest.md)
+[![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=0F766E&style=flat-square&labelColor=111827)](LICENSE) [![Contributing: PRs Welcome](https://img.shields.io/static/v1?label=Contributing&message=PRs+Welcome&color=2563EB&style=flat-square&labelColor=111827&logo=github)](CONTRIBUTING.md) [![Weekly: Archive](https://img.shields.io/static/v1?label=Weekly&message=Archive&color=EA580C&style=flat-square&labelColor=111827&logo=githubactions)](weekly/README.md) [![Validation: Report](https://img.shields.io/static/v1?label=Validation&message=Report&color=7C3AED&style=flat-square&labelColor=111827&logo=checkmarx)](metadata/validation/latest.md)
 
-*Exact paper / code / project links only — every entry is reviewed before merge.*
+*Exact paper / code / project links only — every displayed fact is verifiable.*
 
 </div>
 
 ---
+
+<!-- WEEKLY:START -->
+## 🔥 This Week's Top Picks · 2026-W47 (2026-11-16 → 2026-11-22)
+> Updated 2026-11-23 05:56:22 UTC · Score ≥ 75 · [How we select](docs/SELECTION.md) · [Past weeks](weekly/README.md) · [Full issue](weekly/2026-W47.md)
+
+**No qualifying Top Picks (≥ 75) for 2026-W47.**
+
+> Evaluated 12 candidate(s) in 2026-11-16..2026-11-22 UTC; 0 passed hard gates H1-H8, 0 pending affiliation verification. No candidate cleared the ≥75 Top Pick threshold; tracks are not padded.
+
+See [Weekly Archive](weekly/README.md) and [Hall of Fame](weekly/hall-of-fame.md).
+<!-- WEEKLY:END -->
 
 ## 🧭 Quick Navigation
 
@@ -26,62 +37,6 @@
 | [🧊 3D Object / Asset](30-3d-object-asset/README.md) | Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation. | [3d-shape-generation](30-3d-object-asset/3d-shape-generation.md) · [image-to-3d](30-3d-object-asset/image-to-3d.md) · [text-to-3d](30-3d-object-asset/text-to-3d.md) · [part-aware-generation](30-3d-object-asset/part-aware-generation.md) · [articulated-asset](30-3d-object-asset/articulated-asset.md) · [human-avatar](30-3d-object-asset/human-avatar.md) | `██████████░░░░` 40 |
 | [🏙️ 3D Scene](40-3d-scene/README.md) | Multi-object 3D scene generation, indoor/outdoor scenes, layout-conditioned scenes, and scene editing. | [general-scene-generation](40-3d-scene/general-scene-generation.md) · [layout-to-scene](40-3d-scene/layout-to-scene.md) · [agentic-scene-generation](40-3d-scene/agentic-scene-generation.md) · [indoor](40-3d-scene/indoor.md) · [outdoor-urban](40-3d-scene/outdoor-urban.md) · [single-image-to-scene](40-3d-scene/single-image-to-scene.md) · [scene-editing](40-3d-scene/scene-editing.md) | `█████████░░░░░` 36 |
 | [🌍 4D Dynamic Scene / World](50-4d-dynamic-scene-world/README.md) | Dynamic 3D/4D scenes, world models, simulation, autonomous driving, game worlds, and interactive world modeling. | [autonomous-driving](50-4d-dynamic-scene-world/autonomous-driving.md) · [4d-generation](50-4d-dynamic-scene-world/4d-generation.md) · [world-models](50-4d-dynamic-scene-world/world-models.md) · [simulation](50-4d-dynamic-scene-world/simulation.md) · [game-worlds](50-4d-dynamic-scene-world/game-worlds.md) · [robotics-worlds](50-4d-dynamic-scene-world/robotics-worlds.md) | `██████░░░░░░░░` 24 |
-
-## 🌟 Editor's Picks
-
-> The highest-signal recent work in each area — newest, most complete, or most widely adopted.
-
-**🖼️ Image 2D** · [see all →](10-image-2d/README.md)
-
-#### 🌟 [iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)
-
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: model-efficiency](https://img.shields.io/static/v1?label=Track&message=model-efficiency&color=2563EB&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
-
-> A simple quantization improvement that makes FSQ stronger for high-quality image generation with minimal code changes.
-
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2601.17124) [![Code: GitHub ★ 108](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+108&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Tencent-Hunyuan/iFSQ)
-
-**🎬 Video** · [see all →](20-video/README.md)
-
-#### 🌟 [Anti-I2V: Safeguarding your photos from malicious image-to-video generation](https://arxiv.org/abs/2603.24570)
-
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: image-to-video](https://img.shields.io/static/v1?label=Track&message=image-to-video&color=7C3AED&style=flat-square&labelColor=111827)
-
-> A defensive method for protecting photos against misuse by malicious image-to-video generation systems.
-
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.24570)
-
-**🧊 3D Object / Asset** · [see all →](30-3d-object-asset/README.md)
-
-#### 🌟 [AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer](https://arxiv.org/abs/2602.12100)
-
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: text-to-3d](https://img.shields.io/static/v1?label=Track&message=text-to-3d&color=0D9488&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
-
-> Targets modular assets directly with autoregressive generation over part-aware structures.
-
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2602.12100) [![Code: GitHub ★ 41](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+41&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/Advocate99/AssetFormer)
-
-**🏙️ 3D Scene** · [see all →](40-3d-scene/README.md)
-
-#### 🌟 [FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow](https://arxiv.org/abs/2603.19598)
-
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: indoor](https://img.shields.io/static/v1?label=Track&message=indoor&color=EA580C&style=flat-square&labelColor=111827)
-
-> A graph-based rectified-flow approach to style-consistent indoor scene generation.
-
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.19598)
-
-**🌍 4D Dynamic Scene / World** · [see all →](50-4d-dynamic-scene-world/README.md)
-
-#### 🌟 [VectorWorld: Efficient Streaming World Model via Diffusion Flow on Vector Graphs](https://arxiv.org/abs/2603.17652)
-
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: autonomous-driving](https://img.shields.io/static/v1?label=Track&message=autonomous-driving&color=B31B1B&style=flat-square&labelColor=111827) ![Org: Independent](https://img.shields.io/static/v1?label=Org&message=Independent&color=475569&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
-
-> VectorWorld is a streaming autonomous-driving world model that incrementally generates ego-centric lane-agent vector-graph tiles during rollout. It uses a motion-aware VAE and one-step masked completion on vector graphs to achieve stable, real-time long-horizon simulation. The work is valuable because it targets policy-compatible closed-loop generation instead of offline video-only realism.
-
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.17652) [![Code: GitHub ★ 39](https://img.shields.io/static/v1?label=Code&message=GitHub+%E2%98%85+39&color=181717&style=flat-square&labelColor=111827&logo=github)](https://github.com/jiangchaokang/VectorWorld)
-
-`vae` `diffusion` `flow` `world-model`
 
 <details>
 <summary><b>📐 How each pipeline works</b> (click to expand)</summary>
@@ -112,14 +67,26 @@
 
 | Organization | Papers |
 |:--|:--|
-| [Tencent Hunyuan](91-organizations/tencent-hunyuan.md) | `██████████████` 9 |
-| [Independent](91-organizations/independent.md) | `██░░░░░░░░░░░░` 1 |
-| [Alibaba](91-organizations/alibaba.md) | `██░░░░░░░░░░░░` 1 |
-| [ByteDance Seed](91-organizations/bytedance-seed.md) | `██░░░░░░░░░░░░` 1 |
+| [Tencent Hunyuan](91-organizations/tencent-hunyuan.md) | `██████████████` 11 |
+| [ByteDance Seed](91-organizations/bytedance-seed.md) | `███░░░░░░░░░░░` 2 |
+| [Alibaba VILab](91-organizations/alibaba-vilab.md) | `███░░░░░░░░░░░` 2 |
+| [Independent](91-organizations/independent.md) | `█░░░░░░░░░░░░░` 1 |
+| [THUDM](91-organizations/thudm.md) | `█░░░░░░░░░░░░░` 1 |
+| [NVIDIA](91-organizations/nvidia.md) | `█░░░░░░░░░░░░░` 1 |
+| [NUS](91-organizations/nus.md) | `█░░░░░░░░░░░░░` 1 |
+| [Black Forest Labs](91-organizations/black-forest-labs.md) | `█░░░░░░░░░░░░░` 1 |
+| [Tencent ARC](91-organizations/tencent-arc.md) | `█░░░░░░░░░░░░░` 1 |
+| [Alibaba](91-organizations/alibaba.md) | `█░░░░░░░░░░░░░` 1 |
+| [NVLabs](91-organizations/nvlabs.md) | `█░░░░░░░░░░░░░` 1 |
+| [StepFun](91-organizations/stepfun.md) | `█░░░░░░░░░░░░░` 1 |
+| [Microsoft Research](91-organizations/microsoft-research.md) | `█░░░░░░░░░░░░░` 1 |
+| [Alibaba Wan](91-organizations/alibaba-wan.md) | `█░░░░░░░░░░░░░` 1 |
+| [Waymo](91-organizations/waymo.md) | `█░░░░░░░░░░░░░` 1 |
+| [ByteDance](91-organizations/bytedance.md) | `█░░░░░░░░░░░░░` 1 |
 
 ## 📬 Daily Candidate Inbox
 
-> Each report lists only candidates never surfaced before (a delta, not a re-scan). A day with 0 new items is normal — it means nothing new yet cleared the 2025-01-01+ scope and quality bar.
+> Each report lists only candidates never surfaced before (a delta, not a re-scan). Weekly Top Picks are selected from the inbox plus redundant sources every Monday at 02:00 UTC ([selection rubric](docs/SELECTION.md) · [Hall of Fame](weekly/hall-of-fame.md)).
 
 | Report | Report | Report |
 | :-- | :-- | :-- |
@@ -129,27 +96,27 @@
 ## ⚙️ Curation Pipeline
 
 ```text
-Daily harvesting (2025-01-01+ floor, true-novelty dates, quality score, dedupe ledger)
-  -> metadata/candidates/YYYY-MM-DD/ -> human review -> data/*.jsonl
-  -> fast validate (schema/scope/dedupe, every push) -> build -> publish
-  -> weekly deep validate (live links + stars, non-blocking to daily)
+Multi-source weekly harvest (arXiv + HF Daily Papers + GitHub + OpenAlex + Inbox)
+  -> Hard Gates H1-H8 -> 100-pt Rubric Scoring -> data/weekly/YYYY-Www.json
+  -> fast validate (deterministic, PR CI) -> build.py -> README & weekly archive
+  -> Wednesday deep validate (24h two-strike quarantine, never turns scheduled CI red)
 ```
 
 <details>
 <summary><b>🛠️ Build &amp; maintenance commands</b></summary>
 
 ```bash
-# fast: schema, vocab, dedupe, 2025+ scope -- no network, runs on every push
+# fast: schema, vocab, dedupe, 2025+ scope, weekly schema -- no network
 python scripts/validate_data.py --skip-network
 
-# deep: also verifies every exact link + refreshes GitHub star/license cache (weekly)
-python scripts/validate_data.py --write-cache
+# deep: live links, title similarity >= 0.90, 24h two-strike quarantine
+python scripts/validate_data.py --mode deep --write-cache --update-quarantine --soft-exit
 
-# rebuild README and all generated pages
+# generate weekly picks (dry-run)
+python scripts/weekly/pipeline.py --dry-run
+
+# rebuild README, weekly archive, and all generated pages
 python scripts/build.py
-
-# refresh the daily candidate inbox
-python scripts/fetch_candidates.py --days 14
 ```
 
 </details>

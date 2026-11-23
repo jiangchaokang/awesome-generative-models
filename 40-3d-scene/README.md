@@ -124,4 +124,4 @@ Static multi-object 3D scene
 
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
-| ⚪ **[ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment](https://arxiv.org/abs/2506.02459)** | arXiv 2025 | A language-model-based indoor scene synthesis and editing framework with explicit…<br>`indoor` | [📄 arXiv](https://arxiv.org/abs/2506.02459) |
+| ⚪ **[ReSpace: Text-Driven Autoregressive 3D Indoor Scene Synthesis and Editing](https://arxiv.org/abs/2506.02459)** | arXiv 2025 | A language-model-based indoor scene synthesis and editing framework with explicit…<br>`indoor` | [📄 arXiv](https://arxiv.org/abs/2506.02459) |

@@ -1,0 +1,21 @@
+{
+  "week": "2026-W47",
+  "window": {
+    "start": "2026-11-16",
+    "end": "2026-11-22",
+    "tz": "UTC"
+  },
+  "generated_at": "2026-11-23T05:56:22Z",
+  "status": "empty",
+  "pick_of_the_week_id": null,
+  "empty_tracks": [
+    "image-2d",
+    "video",
+    "3d-object",
+    "3d-scene",
+    "4d-world"
+  ],
+  "items": [],
+  "honorable_mentions": [],
+  "notes": "Evaluated 12 candidate(s) in 2026-11-16..2026-11-22 UTC; 0 passed hard gates H1-H8, 0 pending affiliation verification. No candidate cleared the ≥75 Top Pick threshold; tracks are not padded."
+}

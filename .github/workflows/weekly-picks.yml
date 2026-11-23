@@ -1,0 +1,153 @@
+name: weekly-picks
+
+on:
+  schedule:
+    # Monday 02:00 UTC (after Sunday 23:59 UTC calendar week ends)
+    - cron: "0 2 * * 1"
+
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "ISO week ID (e.g. 2026-W47). Leave empty for previous complete week."
+        required: false
+        default: ""
+        type: string
+      dry_run:
+        description: "Run pipeline without committing or pushing changes"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: awesome-generative-models-writer
+  cancel-in-progress: false
+
+jobs:
+  weekly-picks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install locked dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly harvest -> verify -> score -> select -> build -> fast validate
+        id: pipeline
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_BASE: ${{ vars.LLM_API_BASE }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          DRY_RUN="${{ inputs.dry_run || 'false' }}"
+          WEEK_ARG="${{ inputs.week || '' }}"
+
+          ARGS=(--output-summary "${RUNNER_TEMP}/weekly-summary.json")
+          if [ -n "${WEEK_ARG}" ]; then
+            ARGS+=(--week "${WEEK_ARG}")
+          fi
+          if [ "${DRY_RUN}" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+
+          python scripts/weekly/pipeline.py "${ARGS[@]}"
+
+          # Validate in-job because GITHUB_TOKEN pushes do not trigger ci.yml
+          python -m unittest discover -s tests -p "test_*.py" -v
+          python scripts/validate_data.py \
+            --skip-network \
+            --report-root "${RUNNER_TEMP}/weekly-fast-validation"
+
+          if [ "${DRY_RUN}" != "true" ]; then
+            python scripts/build.py
+            python scripts/check_internal_links.py
+          fi
+
+          WEEK_ID=$(python -c "import json; print(json.load(open('${RUNNER_TEMP}/weekly-summary.json'))['issue']['week'])")
+          STATUS=$(python -c "import json; print(json.load(open('${RUNNER_TEMP}/weekly-summary.json'))['issue']['status'])")
+          echo "week_id=${WEEK_ID}" >> "$GITHUB_OUTPUT"
+          echo "status=${STATUS}" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push weekly issue (with rebase retries & branch-protection fallback)
+        id: publish
+        if: steps.pipeline.outcome == 'success' && inputs.dry_run != true
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          WEEK_ID="${{ steps.pipeline.outputs.week_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/weekly/ weekly/ README.md 00-surveys-and-foundations/ 10-image-2d/ 20-video/ 30-3d-object-asset/ 40-3d-scene/ 50-4d-dynamic-scene-world/ 90-topics/ 91-organizations/
+
+          if git diff --cached --quiet; then
+            echo "No weekly changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(weekly): publish ${WEEK_ID} [skip ci]"
+
+          pushed=false
+          for attempt in 1 2 3; do
+            git pull --rebase origin main || true
+            if git push origin HEAD:main; then
+              pushed=true
+              break
+            fi
+            sleep $((attempt * 3))
+          done
+
+          if [ "${pushed}" != "true" ]; then
+            # Fallback for protected main branch: push bot branch and enable auto-merge PR
+            BRANCH="bot/weekly-${WEEK_ID}"
+            git checkout -B "${BRANCH}"
+            git push -u origin "${BRANCH}"
+            gh pr create \
+              --base main \
+              --head "${BRANCH}" \
+              --title "chore(weekly): publish ${WEEK_ID}" \
+              --body "Automated Weekly Top Picks issue for ${WEEK_ID}." || true
+            gh pr merge "${BRANCH}" --auto --squash || true
+          fi
+
+      - name: Report pipeline failure via deduplicated Issue (keep job green)
+        if: steps.pipeline.outcome != 'success' || steps.publish.outcome == 'failure'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          # Discard any partial working-tree changes so previous issue stays intact
+          git reset --hard HEAD || true
+          python scripts/upsert_issue.py \
+            --title "Pipeline failure: weekly-picks" \
+            --label "pipeline-failure" \
+            --body "The scheduled \`weekly-picks\` run failed on $(date -u +%Y-%m-%dT%H:%M:%SZ). Previous homepage content was kept unchanged. Inspect workflow run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          exit 0

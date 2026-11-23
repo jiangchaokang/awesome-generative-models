@@ -6,7 +6,7 @@
 
 #### 🌟 [HY-World 1.5 (WorldPlay): A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency](https://arxiv.org/abs/2512.14614)
 
-![Venue: arXiv 2025](https://img.shields.io/static/v1?label=Venue&message=arXiv+2025&color=B31B1B&style=flat-square&labelColor=111827) ![Track: world-models](https://img.shields.io/static/v1?label=Track&message=world-models&color=B31B1B&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
+![Venue: arXiv 2025](https://img.shields.io/static/v1?label=Venue&message=arXiv+2025&color=B31B1B&style=flat-square&labelColor=111827) ![Track: world-models](https://img.shields.io/static/v1?label=Track&message=world-models&color=B31B1B&style=flat-square&labelColor=111827) ![Org: Tencent Hunyuan](https://img.shields.io/static/v1?label=Org&message=Tencent+Hunyuan&color=0064FF&style=flat-square&labelColor=111827&logo=tencentqq) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
 
 > A real-time interactive world model focused on streaming generation, low latency, and long-horizon geometric consistency.
 

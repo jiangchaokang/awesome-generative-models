@@ -46,6 +46,12 @@ from catalog_common import (
 CACHE_DIR = ROOT / "metadata" / "cache"
 VALIDATION_ROOT = ROOT / "metadata" / "validation"
 NETWORK_CACHE_FILE = CACHE_DIR / "network_cache_v2.json"
+QUARANTINE_INDEX_FILE = ROOT / "metadata" / "quarantine" / "index.json"
+WEEKLY_DIR = ROOT / "data" / "weekly"
+WEEKLY_SCHEMA_FILE = WEEKLY_DIR / "schema.json"
+
+USER_AGENT = "awesome-generative-models/6.0 (+https://github.com/jiangchaokang/awesome-generative-models)"
+ARXIV_MIN_INTERVAL_SECONDS = 3.1
 
 DEFAULT_WORKERS = min(8, max(2, os.cpu_count() or 2))
 MAX_RESPONSE_BYTES = 200_000
@@ -102,6 +108,8 @@ class Probe:
     title: str = ""
     content_type: str = ""
     reason: str = ""
+    etag: str = ""
+    last_modified: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -269,16 +277,21 @@ def request_for(
     *,
     accept: str = "text/html,*/*",
     token: str = "",
+    etag: str = "",
+    last_modified: str = "",
 ) -> Request:
     headers = {
-        "User-Agent": "awesome-generative-models/5.0",
+        "User-Agent": USER_AGENT,
         "Accept": accept,
         "Accept-Encoding": "identity",
-        "Cache-Control": "no-cache",
     }
 
     if token:
         headers["Authorization"] = f"Bearer {token}"
+    if etag:
+        headers["If-None-Match"] = etag
+    if last_modified:
+        headers["If-Modified-Since"] = last_modified
 
     return Request(url, headers=headers)
 
@@ -394,6 +407,8 @@ def probe_http(
                 status = int(getattr(response, "status", 200) or 200)
                 body = read_limited(response)
                 content_type = response.headers.get("Content-Type", "") or ""
+                etag = response.headers.get("ETag", "") or ""
+                last_modified = response.headers.get("Last-Modified", "") or ""
                 html = body.decode("utf-8", errors="ignore")
 
                 probe = Probe(
@@ -402,12 +417,16 @@ def probe_http(
                     final_url=response.geturl(),
                     title=extract_html_title(html),
                     content_type=content_type,
+                    etag=etag,
+                    last_modified=last_modified,
                 )
                 cache.set(cache_key, probe.to_dict(), persist=probe.state == "ok")
                 return probe
 
         except HTTPError as exc:
             status = int(exc.code or 0)
+            if status == 304 and isinstance(cached, dict):
+                return Probe(**cached)
             body = b""
 
             try:
@@ -427,7 +446,7 @@ def probe_http(
             )
 
             if status in TRANSIENT_HTTP_CODES and attempt < retries:
-                time.sleep(min(2**attempt, 3))
+                time.sleep(min(2**attempt, 8))
                 continue
 
             cache.set(
@@ -453,7 +472,7 @@ def probe_http(
             )
 
             if attempt < retries:
-                time.sleep(min(2**attempt, 3))
+                time.sleep(min(2**attempt, 8))
                 continue
 
         except Exception as exc:
@@ -537,20 +556,9 @@ def title_match_score(expected: str, observed: str) -> float:
     return max(ratio, overlap)
 
 
-def title_matches(expected: str, observed: str) -> tuple[bool, float]:
+def title_matches(expected: str, observed: str, *, threshold: float = 0.90) -> tuple[bool, float]:
     score = title_match_score(expected, observed)
-    expected_tokens = title_tokens(expected)
-    observed_tokens = title_tokens(observed)
-
-    overlap = 0.0
-    if expected_tokens and observed_tokens:
-        overlap = len(expected_tokens & observed_tokens) / max(
-            1,
-            min(len(expected_tokens), len(observed_tokens)),
-        )
-
-    matched = score >= 0.82 or overlap >= 0.80
-    return matched, max(score, overlap)
+    return score >= threshold, score
 
 
 def fetch_arxiv_titles(
@@ -558,6 +566,7 @@ def fetch_arxiv_titles(
     *,
     timeout: int,
     cache: TtlCache,
+    min_interval: float = ARXIV_MIN_INTERVAL_SECONDS,
 ) -> tuple[dict[str, str], bool]:
     titles: dict[str, str] = {}
     unresolved: list[str] = []
@@ -570,8 +579,15 @@ def fetch_arxiv_titles(
             unresolved.append(arxiv_id)
 
     failed = False
+    last_call = 0.0
 
     for offset in range(0, len(unresolved), 40):
+        if last_call > 0.0 and min_interval > 0.0:
+            elapsed = time.monotonic() - last_call
+            if elapsed < min_interval:
+                time.sleep(min_interval - elapsed)
+        last_call = time.monotonic()
+
         chunk = unresolved[offset : offset + 40]
         query = urlencode(
             {
@@ -1626,6 +1642,93 @@ def merged_repo_stats(
     return merged
 
 
+def validate_weekly_issue_payload(
+    payload: Any,
+    location: str,
+    schema_path: Path = WEEKLY_SCHEMA_FILE,
+) -> list[Finding]:
+    """Validate a weekly issue JSON object against data/weekly/schema.json.
+    Uses jsonschema when available, and always enforces core structural rules."""
+    findings: list[Finding] = []
+    if not isinstance(payload, dict):
+        return [finding("error", "weekly.schema", location, "Weekly issue must be a JSON object.")]
+
+    if schema_path.exists():
+        try:
+            import jsonschema  # type: ignore
+
+            schema = json.loads(schema_path.read_text(encoding="utf-8"))
+            validator = jsonschema.Draft202012Validator(schema)
+            for err in sorted(validator.iter_errors(payload), key=lambda e: list(e.path)):
+                path_str = ".".join(str(p) for p in err.path) or "$"
+                findings.append(
+                    finding("error", "weekly.schema", location, f"{path_str}: {err.message}")
+                )
+            return findings
+        except ImportError:
+            pass
+
+    # Built-in fallback validator mirroring data/weekly/schema.json
+    required_top = ("week", "window", "generated_at", "status", "items", "honorable_mentions", "notes")
+    for field_name in required_top:
+        if field_name not in payload:
+            findings.append(finding("error", "weekly.schema", location, f"Missing required field `{field_name}`."))
+
+    week = str(payload.get("week", ""))
+    if week and not re.fullmatch(r"[0-9]{4}-W(0[1-9]|[1-4][0-9]|5[0-3])", week):
+        findings.append(finding("error", "weekly.schema", location, f"Invalid week identifier `{week}`."))
+
+    if payload.get("status") not in {"ok", "partial", "empty"}:
+        findings.append(finding("error", "weekly.schema", location, f"Invalid status `{payload.get('status')}`."))
+
+    window = payload.get("window")
+    if not isinstance(window, dict) or window.get("tz") != "UTC":
+        findings.append(finding("error", "weekly.schema", location, "`window` must be an object with `tz: UTC`."))
+    else:
+        for k in ("start", "end"):
+            if not re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", str(window.get(k, ""))):
+                findings.append(finding("error", "weekly.schema", location, f"Invalid `window.{k}` date."))
+
+    valid_tracks = {"image-2d", "video", "3d-object", "3d-scene", "4d-world"}
+    for bucket in ("items", "honorable_mentions"):
+        arr = payload.get(bucket)
+        if not isinstance(arr, list):
+            findings.append(finding("error", "weekly.schema", location, f"`{bucket}` must be an array."))
+            continue
+        for idx, item in enumerate(arr):
+            if not isinstance(item, dict):
+                findings.append(finding("error", "weekly.schema", location, f"`{bucket}[{idx}]` must be an object."))
+                continue
+            for req in (
+                "id", "title", "published_date", "authors", "affiliations",
+                "track", "links", "stats", "venue", "score", "highlight", "verification",
+            ):
+                if req not in item:
+                    findings.append(
+                        finding("error", "weekly.schema", location, f"`{bucket}[{idx}]` missing `{req}`.")
+                    )
+            if item.get("track") not in valid_tracks:
+                findings.append(
+                    finding("error", "weekly.schema", location, f"`{bucket}[{idx}].track` invalid: `{item.get('track')}`.")
+                )
+    return findings
+
+
+def validate_weekly_files(weekly_dir: Path = WEEKLY_DIR) -> list[Finding]:
+    findings: list[Finding] = []
+    if not weekly_dir.exists():
+        return findings
+    for path in sorted(weekly_dir.glob("*-W*.json")):
+        location = f"data/weekly/{path.name}"
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            findings.append(finding("error", "weekly.json", location, f"Invalid JSON: {exc}"))
+            continue
+        findings.extend(validate_weekly_issue_payload(payload, location, schema_path=weekly_dir / "schema.json"))
+    return findings
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Validate catalog data and exact links."
@@ -1645,8 +1748,18 @@ def main() -> int:
         action="store_true",
         help="Persist deep network cache and repository statistics.",
     )
-    parser.add_argument("--timeout", type=int, default=20)
-    parser.add_argument("--retries", type=int, default=2)
+    parser.add_argument(
+        "--update-quarantine",
+        action="store_true",
+        help="Apply 24h two-strike quarantine updates during deep validation.",
+    )
+    parser.add_argument(
+        "--soft-exit",
+        action="store_true",
+        help="Always exit 0 (used by scheduled deep validation).",
+    )
+    parser.add_argument("--timeout", type=int, default=10)
+    parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
     parser.add_argument("--cache-ttl-hours", type=float, default=24.0)
     parser.add_argument(
@@ -1693,6 +1806,8 @@ def main() -> int:
     findings.extend(duplicate_findings)
     deterministic_invalid |= duplicate_invalid
 
+    findings.extend(validate_weekly_files())
+
     missing_exact_dates = sum(
         not normalize_whitespace(str(record.get("published_at", "")))
         for record in records
@@ -1713,15 +1828,43 @@ def main() -> int:
     refreshed_repo_stats: dict[str, Any] = {}
 
     if mode == "deep":
+        token = (
+            os.environ.get("GITHUB_TOKEN", "").strip()
+            or os.environ.get("GH_TOKEN", "").strip()
+        )
         network_findings, link_report, refreshed_repo_stats = validate_network(
             records,
-            token=os.environ.get("GH_TOKEN", "").strip(),
+            token=token,
             timeout=max(1, args.timeout),
             retries=max(0, args.retries),
             workers=max(1, args.workers),
             cache=cache,
         )
         findings.extend(network_findings)
+
+        if args.update_quarantine and writes_repository_artifacts:
+            from quarantine import (
+                classify_error_tier,
+                load_quarantine_state,
+                save_quarantine_state,
+                update_quarantine_state,
+            )
+
+            observed_blocking: dict[str, dict[str, Any]] = {}
+            for item in network_findings:
+                if item.severity == "error" and classify_error_tier(item.code) == "BLOCKING":
+                    entry_key = item.location.split(" ", 1)[0]
+                    observed_blocking[entry_key] = {
+                        "reason_code": item.code,
+                        "message": item.message,
+                    }
+            q_state = load_quarantine_state(QUARANTINE_INDEX_FILE)
+            new_q_state, q_actions = update_quarantine_state(
+                q_state,
+                observed_blocking=observed_blocking,
+            )
+            save_quarantine_state(QUARANTINE_INDEX_FILE, new_q_state)
+            print(f"[validate] quarantine actions={q_actions}", file=sys.stderr)
 
     findings = sort_findings(findings)
 
@@ -1798,6 +1941,8 @@ def main() -> int:
     )
     print(f"[validate] report={report_path}")
 
+    if args.soft_exit:
+        return 0
     return 1 if errors else 0
 
 

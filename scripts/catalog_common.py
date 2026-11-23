@@ -4,9 +4,12 @@ from __future__ import annotations
 import json
 import re
 from datetime import date
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
+
+import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -240,35 +243,92 @@ VENUE_COLORS = {
     "MODEL": "64748B",
 }
 
-ORG_BADGE_META = {
-    "nvidia": {"label": "NVIDIA", "color": "76B900", "logo": "nvidia"},
-    "nvlabs": {"label": "NVLabs", "color": "76B900", "logo": "nvidia"},
-    "google": {"label": "Google", "color": "4285F4", "logo": "google"},
-    "google-research": {"label": "Google Research", "color": "4285F4", "logo": "google"},
-    "google-deepmind": {"label": "Google DeepMind", "color": "4285F4", "logo": "google"},
-    "waymo": {"label": "Waymo", "color": "00A1F1", "logo": "waymo"},
-    "waymo-research": {"label": "Waymo", "color": "00A1F1", "logo": "waymo"},
-    "tencent": {"label": "Tencent", "color": "0064FF", "logo": "tencentqq"},
-    "tencent-hunyuan": {"label": "Tencent Hunyuan", "color": "0064FF", "logo": "tencentqq"},
-    "tencentarc": {"label": "Tencent ARC", "color": "0064FF", "logo": "tencentqq"},
-    "bytedance": {"label": "ByteDance", "color": "161823", "logo": "bytedance"},
-    "bytedance-seed": {"label": "ByteDance Seed", "color": "161823", "logo": "bytedance"},
-    "xiaomi": {"label": "Xiaomi", "color": "FF6900", "logo": "xiaomi"},
-    "tesla": {"label": "Tesla", "color": "CC0000", "logo": "tesla"},
-    "adobe": {"label": "Adobe", "color": "FF0000", "logo": "adobe"},
-    "adobe-research": {"label": "Adobe Research", "color": "FF0000", "logo": "adobe"},
-    "alibaba": {"label": "Alibaba", "color": "FF6A00", "logo": "alibabacloud"},
-    "ali-vilab": {"label": "Alibaba VILab", "color": "FF6A00", "logo": "alibabacloud"},
-    "wan-video": {"label": "Wan", "color": "FF6A00", "logo": "alibabacloud"},
-    "black-forest-labs": {"label": "Black Forest Labs", "color": "111827", "logo": None},
-    "stability-ai": {"label": "Stability AI", "color": "111827", "logo": None},
-    "mit": {"label": "MIT", "color": "A31F34", "logo": None},
-    "uc-berkeley": {"label": "UC Berkeley", "color": "003262", "logo": None},
-    "berkeley": {"label": "UC Berkeley", "color": "003262", "logo": None},
-    "tsinghua-university": {"label": "Tsinghua", "color": "660000", "logo": None},
-    "shanghai-jiao-tong-university": {"label": "SJTU", "color": "8C1515", "logo": None},
-    "independent": {"label": "Independent", "color": "475569", "logo": None},
-}
+ORG_BADGE_META: dict[str, dict[str, Any]] = {}
+
+
+@lru_cache(maxsize=4)
+def load_orgs_config(orgs_path: str | None = None) -> dict[str, Any]:
+    """Load organization normalization, aliases, GitHub owners, and badge
+    metadata from data/orgs.yml (single source of truth)."""
+    path = Path(orgs_path) if orgs_path else ROOT / "data" / "orgs.yml"
+    if not path.exists():
+        return {"organizations": [], "alias_map": {}, "owner_map": {}, "badge_map": {}}
+
+    payload = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    orgs = payload.get("organizations") or []
+
+    alias_map: dict[str, dict[str, str]] = {}
+    owner_map: dict[str, str] = {}
+    badge_map: dict[str, dict[str, Any]] = {}
+
+    for entry in orgs:
+        canonical = normalize_whitespace(str(entry.get("canonical", "")))
+        slug = normalize_whitespace(str(entry.get("slug", ""))) or slugify(canonical)
+        if not canonical:
+            continue
+        info = {"name": canonical, "normalized": slug}
+        alias_map[canonical.lower()] = info
+        alias_map[slug.lower()] = info
+        for alias in entry.get("aliases") or []:
+            key = normalize_whitespace(str(alias)).lower()
+            if key:
+                alias_map[key] = info
+        for owner in entry.get("github_owners") or []:
+            key = normalize_whitespace(str(owner)).lower()
+            if key:
+                owner_map[key] = canonical
+        badge_map[slug] = {
+            "label": canonical,
+            "color": str(entry.get("color") or "334155"),
+            "logo": entry.get("logo"),
+        }
+
+    return {
+        "organizations": orgs,
+        "alias_map": alias_map,
+        "owner_map": owner_map,
+        "badge_map": badge_map,
+    }
+
+
+def normalize_org_name(raw: str, orgs_path: Path | None = None) -> tuple[str, str]:
+    """Normalize a raw organization string using data/orgs.yml.
+    Returns (canonical_name, normalized_slug)."""
+    cleaned = normalize_whitespace(raw)
+    if not cleaned:
+        return "", ""
+    cfg = load_orgs_config(str(orgs_path) if orgs_path else None)
+    hit = cfg["alias_map"].get(cleaned.lower()) or cfg["alias_map"].get(slugify(cleaned))
+    if hit:
+        return hit["name"], hit["normalized"]
+    return cleaned, slugify(cleaned)
+
+
+def org_badge_meta_for(org: str, orgs_path: Path | None = None) -> dict[str, Any]:
+    canonical, slug = normalize_org_name(org, orgs_path=orgs_path)
+    cfg = load_orgs_config(str(orgs_path) if orgs_path else None)
+    if slug in cfg["badge_map"]:
+        return cfg["badge_map"][slug]
+    return {"label": canonical or org, "color": "334155", "logo": None}
+
+
+def load_quarantine_ids(root: Path | None = None) -> set[str]:
+    """Return set of quarantined record IDs (`artifact/id` or `id`) from
+    metadata/quarantine/index.json."""
+    repo_root = root or ROOT
+    q_path = repo_root / "metadata" / "quarantine" / "index.json"
+    if not q_path.exists():
+        return set()
+    try:
+        payload = json.loads(q_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return set()
+    entries = payload.get("entries") or {}
+    if isinstance(entries, dict):
+        return set(entries.keys())
+    if isinstance(entries, list):
+        return {str(item.get("id", "")) for item in entries if isinstance(item, dict) and item.get("id")}
+    return set()
 
 def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
@@ -319,36 +379,19 @@ def parse_github_repo(url: str) -> str:
         return ""
     return f"{parts[0]}/{parts[1]}"
 
-REPO_OWNER_TO_ORG = {
-    "nvidia": "NVIDIA",
-    "nvlabs": "NVLabs",
-    "google-research": "Google Research",
-    "google-deepmind": "Google DeepMind",
-    "waymo-research": "Waymo",
-    "tencent": "Tencent",
-    "tencent-hunyuan": "Tencent Hunyuan",
-    "tencentarc": "Tencent ARC",
-    "qwenlm": "Alibaba",
-    "wan-video": "Alibaba Wan",
-    "ali-vilab": "Alibaba VILab",
-    "bytedance-seed": "ByteDance Seed",
-    "adobe-research": "Adobe Research",
-    "xiaomimi": "Xiaomi",
-    "tesla": "Tesla",
-    "thudm": "THUDM",
-    "black-forest-labs": "Black Forest Labs",
-    "stability-ai": "Stability AI",
-}
-
 def repo_owner_from_url(url: str) -> str:
     full_name = parse_github_repo(url)
     if not full_name:
         return ""
     return full_name.split("/", 1)[0].strip()
 
-def suggested_org_from_repo(url: str) -> str:
+
+def suggested_org_from_repo(url: str, orgs_path: Path | None = None) -> str:
     owner = repo_owner_from_url(url).lower()
-    return REPO_OWNER_TO_ORG.get(owner, "")
+    if not owner:
+        return ""
+    cfg = load_orgs_config(str(orgs_path) if orgs_path else None)
+    return cfg["owner_map"].get(owner, "")
 
 def arxiv_id_from_url(url: str) -> str:
     if not url:
@@ -372,9 +415,10 @@ def compact_number(value: int) -> str:
         return text.rstrip("0").rstrip(".")
     return str(value)
 
-def load_records(root: Path | None = None) -> list[dict]:
+def load_records(root: Path | None = None, *, include_quarantined: bool = True) -> list[dict]:
     repo_root = root or ROOT
     data_dir = repo_root / "data"
+    quarantine_ids = set() if include_quarantined else load_quarantine_ids(repo_root)
     records: list[dict] = []
 
     for file_name, artifact in FILE_ARTIFACT.items():
@@ -395,6 +439,11 @@ def load_records(root: Path | None = None) -> list[dict]:
                 record["artifact"] = artifact
 
                 record["id"] = normalize_whitespace(record.get("id") or slugify(record.get("title", "")))
+                if not include_quarantined and (
+                    record["id"] in quarantine_ids
+                    or f"{artifact}/{record['id']}" in quarantine_ids
+                ):
+                    continue
                 record["title"] = normalize_whitespace(record.get("title", ""))
                 record["venue"] = normalize_whitespace(record.get("venue", ""))
                 record["task"] = normalize_whitespace(record.get("task", ""))
@@ -410,6 +459,8 @@ def load_records(root: Path | None = None) -> list[dict]:
                 record["method"] = ensure_list(record.get("method"))
                 record["conditioning"] = ensure_list(record.get("conditioning"))
                 record["orgs"] = ensure_list(record.get("orgs"))
+                if not record.get("affiliation_status"):
+                    record["affiliation_status"] = "verified" if record["orgs"] else "unverified"
 
                 record["open_source"] = bool(record.get("open_source", False))
                 record["featured"] = bool(record.get("featured", False))

@@ -1,0 +1,63 @@
+# Configurable institution tier table for Weekly Top Picks scoring.
+# Points are capped at 10 to prevent "big company = top-tier".
+# Anti-gaming rule in scripts/weekly/score.py also enforces:
+#   signals + quality < 35 => never selected, regardless of institution tier.
+
+version: 1
+
+points:
+  tier1: 10
+  tier2: 6
+  other: 3
+  independent: 3
+
+tier1:
+  - nvidia
+  - nvlabs
+  - google-deepmind
+  - google-research
+  - waymo
+  - meta-ai
+  - openai
+  - microsoft-research
+  - tencent-hunyuan
+  - tencent-arc
+  - alibaba-wan
+  - alibaba-vilab
+  - bytedance-seed
+  - adobe-research
+  - black-forest-labs
+  - mit
+  - stanford-university
+  - uc-berkeley
+  - cmu
+  - eth-zurich
+  - tsinghua-university
+  - peking-university
+  - shanghai-ai-lab
+
+tier2:
+  - tencent
+  - alibaba
+  - bytedance
+  - stability-ai
+  - stepfun
+  - apple
+  - xiaomi
+  - tesla
+  - thudm
+  - shanghai-jiao-tong-university
+  - zhejiang-university
+  - cuhk
+  - hku
+  - hkust
+  - nus
+  - ntu
+  - max-planck-institute
+  - university-of-oxford
+  - university-of-washington
+  - cornell-university
+  - princeton-university
+
+independent:
+  - independent

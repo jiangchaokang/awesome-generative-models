@@ -29,7 +29,7 @@ Single 2D image
 
 #### 🌟 [iFSQ: Improving FSQ for Image Generation with 1 Line of Code](https://arxiv.org/abs/2601.17124)
 
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: model-efficiency](https://img.shields.io/static/v1?label=Track&message=model-efficiency&color=2563EB&style=flat-square&labelColor=111827) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
+![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: model-efficiency](https://img.shields.io/static/v1?label=Track&message=model-efficiency&color=2563EB&style=flat-square&labelColor=111827) ![Org: Tencent Hunyuan](https://img.shields.io/static/v1?label=Org&message=Tencent+Hunyuan&color=0064FF&style=flat-square&labelColor=111827&logo=tencentqq) ![Source: Open](https://img.shields.io/static/v1?label=Source&message=Open&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative)
 
 > A simple quantization improvement that makes FSQ stronger for high-quality image generation with minimal code changes.
 
@@ -43,13 +43,13 @@ Single 2D image
 
 [![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.18627)
 
-#### 🌟 [DAK-UCB: Diversity-Aware Prompt Routing for LLMs and Generative Models](https://arxiv.org/abs/2603.23140)
+#### 🌟 [Bridging the Intention-Expression Gap: Aligning Multi-Dimensional Preferences via Hierarchical Relevance Feedback in Text-to-Image Diffusion](https://arxiv.org/abs/2603.14936)
 
-![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: model-efficiency](https://img.shields.io/static/v1?label=Track&message=model-efficiency&color=2563EB&style=flat-square&labelColor=111827)
+![Venue: arXiv 2026](https://img.shields.io/static/v1?label=Venue&message=arXiv+2026&color=B31B1B&style=flat-square&labelColor=111827) ![Track: controllable-generation](https://img.shields.io/static/v1?label=Track&message=controllable-generation&color=2563EB&style=flat-square&labelColor=111827)
 
-> A routing strategy that allocates prompts across model choices to balance quality, diversity, and compute cost.
+> An interactive relevance-feedback loop for refining generations without retraining the underlying diffusion model.
 
-[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.23140)
+[![Paper: arXiv](https://img.shields.io/static/v1?label=Paper&message=arXiv&color=B31B1B&style=flat-square&labelColor=111827&logo=arxiv)](https://arxiv.org/abs/2603.14936)
 
 ## Full Catalog
 
@@ -83,8 +83,8 @@ Single 2D image
 | Title | Venue | What it does | Links |
 |:--|:--|:--|:--|
 | ⚪ **[Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation](https://arxiv.org/abs/2603.18627)** | arXiv 2026 | Uses agentic search over flow trajectories to improve spatial grounding for difficult… | [📄 arXiv](https://arxiv.org/abs/2603.18627) |
+| ⚪ **[Bridging the Intention-Expression Gap: Aligning Multi-Dimensional Preferences via Hierarchical Relevance Feedback in Text-to-Image Diffusion](https://arxiv.org/abs/2603.14936)** | arXiv 2026 | An interactive relevance-feedback loop for refining generations without retraining the… | [📄 arXiv](https://arxiv.org/abs/2603.14936) |
 | ⚪ **[LGTM: Training-Free Light-Guided Text-to-Image Diffusion Model via Initial Noise Manipulation](https://arxiv.org/abs/2603.24086)** | arXiv 2026 | A training-free method that steers lighting effects by directly manipulating the initial… | [📄 arXiv](https://arxiv.org/abs/2603.24086) |
-| ⚪ **[Relevance Feedback in Text-to-Image Diffusion: A Training-Free And Model-Agnostic Interactive Framework](https://arxiv.org/abs/2603.14936)** | arXiv 2026 | An interactive relevance-feedback loop for refining generations without retraining the… | [📄 arXiv](https://arxiv.org/abs/2603.14936) |
 | ⚪ **[SpatialReward: Verifiable Spatial Reward Modeling for Fine-Grained Spatial Consistency in Text-to-Image Generation](https://arxiv.org/abs/2603.22228)** | arXiv 2026 | Introduces verifiable reward modeling for spatial relations to improve fine-grained… | [📄 arXiv](https://arxiv.org/abs/2603.22228) |
 | ⚪ **[Compass Control: Multi Object Orientation Control for Text-to-Image Generation](https://arxiv.org/abs/2504.06752)** | CVPR 2025 | Introduces orientation-aware compass tokens for explicit multi-object pose control in… | [📄 arXiv](https://arxiv.org/abs/2504.06752) |
 | ⚪ **[Focus-N-Fix: Region-Aware Fine-Tuning for Text-to-Image Generation](https://arxiv.org/abs/2501.06481)** | CVPR 2025 | A localized fine-tuning method that corrects only problematic regions while preserving… | [📄 arXiv](https://arxiv.org/abs/2501.06481) |

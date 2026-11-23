@@ -129,17 +129,12 @@ MODEL_STAGES = {
     "4d-dynamic-scene-world": ("Observation / action / trajectory", "Dynamics rollout · world model · simulator", "Interactive world / closed-loop simulation"),
 }
 
-HOME_HIGHLIGHTS_PER_ARTIFACT = 1
 ARTIFACT_HIGHLIGHTS_PER_PAGE = 3
 # Below this many entries, a spotlight card would just repeat the whole
 # table right underneath it, so smaller task/topic/org pages skip it.
 SPOTLIGHT_MIN_POOL = 4
 TOPIC_INDEX_LIMIT = 20
 ORG_INDEX_LIMIT = 20
-
-CANDIDATE_REPORT_DATE_FORMAT = "%Y-%m-%d"
-RECENT_CANDIDATE_REPORT_LIMIT = 6
-RECENT_CANDIDATE_REPORT_COLUMNS = 3
 
 LEGEND = "**Legend:** 🟢 code publicly available · ⚪ code not (yet) public · ★ live GitHub stars (refreshed weekly)"
 
@@ -187,15 +182,6 @@ def badge(
     alt = f"{label}: {message}"
     image = f"![{alt}]({shields_url(label, message, color, logo, style, label_color)})"
     return f"[{image}]({link})" if link else image
-
-
-def bar(count: int, max_count: int, width: int = 14) -> str:
-    """Tiny text-only bar chart. No images, so it renders instantly and
-    identically in light/dark themes and on mobile."""
-    if max_count <= 0 or count <= 0:
-        return "░" * width
-    filled = max(1, round(width * count / max_count))
-    return "█" * filled + "░" * (width - filled)
 
 
 def record_repo_stats(rec: dict, repo_stats: dict) -> dict:
@@ -432,8 +418,7 @@ def render_table(records: list[dict], repo_stats: dict, show_artifact: bool = Fa
 
 
 def render_artifact_navigation(by_artifact: dict[str, list[dict]]) -> str:
-    lines = ["| Artifact | Focus | Explore by task | Papers |", "|:--|:--|:--|:--|"]
-    max_count = max((len(v) for v in by_artifact.values()), default=0)
+    lines = ["| Track | Papers | Direct Task Shortcuts |", "|:--|--:|:--|"]
 
     for artifact in ARTIFACT_ORDER:
         meta = ARTIFACT_META[artifact]
@@ -444,69 +429,19 @@ def render_artifact_navigation(by_artifact: dict[str, list[dict]]) -> str:
             for task in ARTIFACT_TASK_ORDER[artifact]
             if task in present_tasks
         ]
-        lines.append(
-            f"| [{meta['emoji']} {meta['title']}]({meta['dir']}/README.md) | {meta['short']} | "
-            f"{' · '.join(task_links) if task_links else '—'} | `{bar(len(items), max_count)}` {len(items)} |"
-        )
+        track_cell = f"**[{meta['emoji']} {meta['title']}]({meta['dir']}/README.md)**<br><sub>{meta['short']}</sub>"
+        tasks_cell = " · ".join(task_links) if task_links else "—"
+        lines.append(f"| {track_cell} | **{len(items)}** | {tasks_cell} |")
 
     return "\n".join(lines)
 
 
 def render_pipeline_overview_table() -> str:
-    lines = ["| Artifact | Input | Core generator | Output |", "|:--|:--|:--|:--|"]
+    lines = ["| Track | Input | Core Generator | Output |", "|:--|:--|:--|:--|"]
     for artifact in ARTIFACT_ORDER:
         meta = ARTIFACT_META[artifact]
         stage_in, stage_core, stage_out = MODEL_STAGES[artifact]
         lines.append(f"| {meta['emoji']} {meta['title']} | {stage_in} | {stage_core} | {stage_out} |")
-    return "\n".join(lines)
-
-
-def list_recent_candidate_reports(limit: int = RECENT_CANDIDATE_REPORT_LIMIT) -> list[dict[str, str]]:
-    candidates_dir = ROOT / "metadata" / "candidates"
-    reports: list[dict[str, str]] = []
-
-    if not candidates_dir.exists():
-        return reports
-
-    for child in candidates_dir.iterdir():
-        if not child.is_dir():
-            continue
-        try:
-            datetime.strptime(child.name, CANDIDATE_REPORT_DATE_FORMAT)
-        except ValueError:
-            continue
-
-        report_path = child / "report.md"
-        if not report_path.exists():
-            continue
-
-        reports.append({"date": child.name, "path": report_path.relative_to(ROOT).as_posix()})
-
-    reports.sort(key=lambda item: item["date"], reverse=True)
-    return reports[: max(0, int(limit))]
-
-
-def render_recent_candidate_reports_table(
-    limit: int = RECENT_CANDIDATE_REPORT_LIMIT,
-    columns: int = RECENT_CANDIDATE_REPORT_COLUMNS,
-) -> str:
-    reports = list_recent_candidate_reports(limit=limit)
-    if not reports:
-        return (
-            "_No daily reports yet on this freshly reset inbox — the next scheduled run "
-            "(daily at 01:25 UTC) will populate this section automatically._"
-        )
-
-    cells = [f"[{item['date']}]({item['path']})" for item in reports]
-    total_slots = len(cells)
-    remainder = total_slots % columns
-    if remainder:
-        total_slots += columns - remainder
-    cells.extend(["—"] * (total_slots - len(cells)))
-
-    lines = ["| " + " | ".join(["Report"] * columns) + " |", "| " + " | ".join([":--"] * columns) + " |"]
-    for start in range(0, total_slots, columns):
-        lines.append("| " + " | ".join(cells[start : start + columns]) + " |")
     return "\n".join(lines)
 
 
@@ -653,9 +588,9 @@ def _build_crosscut_pages(
         write_text(out_dir / "README.md", "\n".join(index_lines))
         return
 
-    index_lines.extend([f"| {column_label} | Papers |", "|:--|:--|"])
+    index_lines.extend([f"| {column_label} | Papers |", "|:--|--:|"])
     for key, items in ranked:
-        index_lines.append(f"| [{key}]({slugify(key)}.md) | `{bar(len(items), max_count)}` {len(items)} |")
+        index_lines.append(f"| [{key}]({slugify(key)}.md) | **{len(items)}** |")
 
     for key, items in ranked:
         items_sorted = sort_records(items, repo_stats)
@@ -975,11 +910,28 @@ def build_root_readme(papers: list[dict], repo_stats: dict, weekly_issues: list[
 
     stars_badge = (
         f"[![GitHub Stars](https://img.shields.io/github/stars/{REPO_SLUG}"
-        "?style=for-the-badge&labelColor=111827&color=F59E0B)]"
+        "?style=flat-square&labelColor=111827&color=F59E0B)]"
         f"(https://github.com/{REPO_SLUG}/stargazers)"
     )
 
     weekly_block = render_weekly_block(latest_issue, previous_issue)
+
+    topic_pills = (
+        " · ".join(
+            f"[{domain}](90-topics/{slugify(domain)}.md) `({count})`"
+            for domain, count in by_domain.most_common(TOPIC_INDEX_LIMIT)
+        )
+        if by_domain
+        else "_No topic pages yet._"
+    )
+    org_pills = (
+        " · ".join(
+            f"[{org}](91-organizations/{slugify(org)}.md) `({count})`"
+            for org, count in by_org.most_common(ORG_INDEX_LIMIT)
+        )
+        if by_org
+        else "_No organization metadata yet._"
+    )
 
     lines = [
         "<!-- AUTO-GENERATED by scripts/build.py — DO NOT EDIT MANUALLY -->",
@@ -988,28 +940,26 @@ def build_root_readme(papers: list[dict], repo_stats: dict, weekly_issues: list[
         "",
         "# ✨ Awesome Generative Models",
         "",
-        "**A high-precision, exact-link catalog of recent generative-model research**  ",
-        "**for images, video, 3D assets, 3D scenes, and 4D dynamic worlds.**",
+        "**A self-healing, verified weekly catalog of generative models**  ",
+        "Image · Video · 3D Assets · 3D Scenes · 4D Worlds",
         "",
-        badge("Papers", str(len(papers)), "2563EB", "googlescholar", style="for-the-badge")
+        badge("Papers", str(len(papers)), "2563EB", "googlescholar")
         + " "
-        + badge("Open Source", str(open_count), "16A34A", "opensourceinitiative", style="for-the-badge")
+        + badge("Open Source", str(open_count), "16A34A", "opensourceinitiative")
         + " "
-        + badge("Scope", "2025-01+", "0EA5E9", style="for-the-badge")
+        + badge("Updated", content_date, "0EA5E9", "githubactions")
         + " "
-        + badge("Updated", content_date, "F59E0B", "githubactions", style="for-the-badge")
+        + stars_badge
         + " "
-        + stars_badge,
+        + badge("License", "MIT", "0F766E", link="LICENSE"),
         "",
-        badge("License", "MIT", "0F766E", link="LICENSE")
-        + " "
-        + badge("Contributing", "PRs Welcome", "2563EB", "github", "CONTRIBUTING.md")
-        + " "
-        + badge("Weekly", "Archive", "EA580C", "githubactions", "weekly/README.md")
-        + " "
-        + badge("Validation", "Report", "7C3AED", "checkmarx", "metadata/validation/latest.md"),
-        "",
-        "*Exact paper / code / project links only — every displayed fact is verifiable.*",
+        "[🧭 Tracks](#-browse-by-track) · "
+        "[🏢 Organizations](#-browse-by-organization) · "
+        "[🏷️ Topics](#-browse-by-topic) · "
+        "[📅 Weekly Archive](weekly/README.md) · "
+        "[🏛️ Hall of Fame](weekly/hall-of-fame.md) · "
+        "[📖 Surveys](#-recommended-surveys) · "
+        "[🤝 Contribute](CONTRIBUTING.md)",
         "",
         "</div>",
         "",
@@ -1018,79 +968,23 @@ def build_root_readme(papers: list[dict], repo_stats: dict, weekly_issues: list[
         WEEKLY_START_MARKER,
         WEEKLY_END_MARKER,
         "",
-        "## 🧭 Quick Navigation",
+        "---",
+        "",
+        "## 🧭 Browse by Track",
         "",
         render_artifact_navigation(by_artifact),
         "",
-        "<details>",
-        "<summary><b>📐 How each pipeline works</b> (click to expand)</summary>",
+        "## 🏢 Browse by Organization",
         "",
-        render_pipeline_overview_table(),
+        f"{org_pills} · [All organizations →](91-organizations/README.md)",
         "",
-        "</details>",
+        "## 🏷️ Browse by Topic",
         "",
-        "## 🏷️ Explore by Topic",
+        f"{topic_pills} · [All topics →](90-topics/README.md)",
+        "",
+        "## 📖 Recommended Surveys",
         "",
     ]
-    if by_domain:
-        max_domain = max(by_domain.values())
-        lines.extend(["| Topic | Papers |", "|:--|:--|"])
-        for domain, count in by_domain.most_common(TOPIC_INDEX_LIMIT):
-            lines.append(f"| [{domain}](90-topics/{slugify(domain)}.md) | `{bar(count, max_domain)}` {count} |")
-    else:
-        lines.append("_No topic pages yet._")
-
-    lines.extend(["", "## 🏢 Explore by Organization", ""])
-    if by_org:
-        max_org = max(by_org.values())
-        lines.extend(["| Organization | Papers |", "|:--|:--|"])
-        for org, count in by_org.most_common(ORG_INDEX_LIMIT):
-            lines.append(f"| [{org}](91-organizations/{slugify(org)}.md) | `{bar(count, max_org)}` {count} |")
-    else:
-        lines.append("_No organization metadata yet._")
-
-    lines.extend(
-        [
-            "",
-            "## 📬 Daily Candidate Inbox",
-            "",
-            "> Each report lists only candidates never surfaced before (a delta, not a re-scan). "
-            "Weekly Top Picks are selected from the inbox plus redundant sources every Monday at 02:00 UTC ([selection rubric](docs/SELECTION.md) · [Hall of Fame](weekly/hall-of-fame.md)).",
-            "",
-            render_recent_candidate_reports_table(),
-            "",
-            "## ⚙️ Curation Pipeline",
-            "",
-            "```text",
-            "Multi-source weekly harvest (arXiv + HF Daily Papers + GitHub + OpenAlex + Inbox)",
-            "  -> Hard Gates H1-H8 -> 100-pt Rubric Scoring -> data/weekly/YYYY-Www.json",
-            "  -> fast validate (deterministic, PR CI) -> build.py -> README & weekly archive",
-            "  -> Wednesday deep validate (24h two-strike quarantine, never turns scheduled CI red)",
-            "```",
-            "",
-            "<details>",
-            "<summary><b>🛠️ Build &amp; maintenance commands</b></summary>",
-            "",
-            "```bash",
-            "# fast: schema, vocab, dedupe, 2025+ scope, weekly schema -- no network",
-            "python scripts/validate_data.py --skip-network",
-            "",
-            "# deep: live links, title similarity >= 0.90, 24h two-strike quarantine",
-            "python scripts/validate_data.py --mode deep --write-cache --update-quarantine --soft-exit",
-            "",
-            "# generate weekly picks (dry-run)",
-            "python scripts/weekly/pipeline.py --dry-run",
-            "",
-            "# rebuild README, weekly archive, and all generated pages",
-            "python scripts/build.py",
-            "```",
-            "",
-            "</details>",
-            "",
-            "## 📖 Recommended Surveys",
-            "",
-        ]
-    )
     for title, url in SURVEY_LINKS:
         lines.append(f"- [{title}]({url})")
 
@@ -1099,9 +993,44 @@ def build_root_readme(papers: list[dict], repo_stats: dict, weekly_issues: list[
             "",
             "---",
             "",
+            "<details>",
+            "<summary><b>📐 Architecture, Selection Rubric &amp; Local Commands</b></summary>",
+            "",
+            "### Generative Pipelines by Track",
+            "",
+            render_pipeline_overview_table(),
+            "",
+            "### Self-Healing Curation Pipeline",
+            "",
+            "```text",
+            "Multi-source weekly harvest (arXiv + HF Daily Papers + GitHub + OpenAlex + Inbox)",
+            "  -> Hard Gates H1-H8 -> 100-pt Evidence Rubric -> data/weekly/YYYY-Www.json",
+            "  -> Deterministic PR CI (fast validate + build diff) -> README & Weekly Archive",
+            "  -> Wednesday Deep Validate (24h two-strike quarantine, never breaks scheduled CI)",
+            "```",
+            "",
+            "### Documentation & Reports",
+            "",
+            "- [Selection Rubric (`docs/SELECTION.md`)](docs/SELECTION.md) — Hard gates H1–H8, 100-pt rubric, anti-gaming rules",
+            "- [Operations Manual (`docs/OPERATIONS.md`)](docs/OPERATIONS.md) — Re-running weekly picks, quarantine release, thresholds",
+            "- [Repository Audit (`docs/AUDIT.md`)](docs/AUDIT.md) — Root-cause analysis and 6 blocking-error fixes",
+            "- [Validation Report (`metadata/validation/latest.md`)](metadata/validation/latest.md) — Fast & deep verification status",
+            "",
+            "### Local Commands",
+            "",
+            "```bash",
+            "python scripts/validate_data.py --skip-network   # deterministic validation",
+            "python scripts/weekly/pipeline.py --dry-run      # preview weekly top picks",
+            "python scripts/build.py                          # rebuild README & all pages",
+            "python -m unittest discover -s tests -v          # run offline test suite",
+            "```",
+            "",
+            "</details>",
+            "",
             '<div align="center">',
             "",
-            "**If this repository helps your research or engineering work, please consider giving it a star.**",
+            "<sub>Every displayed fact is verifiable from primary sources · "
+            "If this catalog helps your research, consider giving it a ⭐.</sub>",
             "",
             "</div>",
         ]

@@ -15,8 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Single source of truth for the catalog's scope floor. Only work that was
 # actually published/created on or after this date is considered in-scope.
-# Both the harvester (fetch_candidates.py) and the validator (validate_data.py)
-# must agree on this boundary.
+# Both the weekly harvester and the validator agree on this boundary.
 SCOPE_START_DATE = date(2025, 1, 1)
 
 FILE_ARTIFACT = {

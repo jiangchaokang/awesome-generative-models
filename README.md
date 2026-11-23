@@ -4,14 +4,12 @@
 
 # ✨ Awesome Generative Models
 
-**A high-precision, exact-link catalog of recent generative-model research**  
-**for images, video, 3D assets, 3D scenes, and 4D dynamic worlds.**
+**A self-healing, verified weekly catalog of generative models**  
+Image · Video · 3D Assets · 3D Scenes · 4D Worlds
 
-![Papers: 207](https://img.shields.io/static/v1?label=Papers&message=207&color=2563EB&style=for-the-badge&labelColor=111827&logo=googlescholar) ![Open Source: 52](https://img.shields.io/static/v1?label=Open+Source&message=52&color=16A34A&style=for-the-badge&labelColor=111827&logo=opensourceinitiative) ![Scope: 2025-01+](https://img.shields.io/static/v1?label=Scope&message=2025-01%2B&color=0EA5E9&style=for-the-badge&labelColor=111827) ![Updated: 2026-11-22](https://img.shields.io/static/v1?label=Updated&message=2026-11-22&color=F59E0B&style=for-the-badge&labelColor=111827&logo=githubactions) [![GitHub Stars](https://img.shields.io/github/stars/jiangchaokang/awesome-generative-models?style=for-the-badge&labelColor=111827&color=F59E0B)](https://github.com/jiangchaokang/awesome-generative-models/stargazers)
+![Papers: 207](https://img.shields.io/static/v1?label=Papers&message=207&color=2563EB&style=flat-square&labelColor=111827&logo=googlescholar) ![Open Source: 52](https://img.shields.io/static/v1?label=Open+Source&message=52&color=16A34A&style=flat-square&labelColor=111827&logo=opensourceinitiative) ![Updated: 2026-11-22](https://img.shields.io/static/v1?label=Updated&message=2026-11-22&color=0EA5E9&style=flat-square&labelColor=111827&logo=githubactions) [![GitHub Stars](https://img.shields.io/github/stars/jiangchaokang/awesome-generative-models?style=flat-square&labelColor=111827&color=F59E0B)](https://github.com/jiangchaokang/awesome-generative-models/stargazers) [![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=0F766E&style=flat-square&labelColor=111827)](LICENSE)
 
-[![License: MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=0F766E&style=flat-square&labelColor=111827)](LICENSE) [![Contributing: PRs Welcome](https://img.shields.io/static/v1?label=Contributing&message=PRs+Welcome&color=2563EB&style=flat-square&labelColor=111827&logo=github)](CONTRIBUTING.md) [![Weekly: Archive](https://img.shields.io/static/v1?label=Weekly&message=Archive&color=EA580C&style=flat-square&labelColor=111827&logo=githubactions)](weekly/README.md) [![Validation: Report](https://img.shields.io/static/v1?label=Validation&message=Report&color=7C3AED&style=flat-square&labelColor=111827&logo=checkmarx)](metadata/validation/latest.md)
-
-*Exact paper / code / project links only — every displayed fact is verifiable.*
+[🧭 Tracks](#-browse-by-track) · [🏢 Organizations](#-browse-by-organization) · [🏷️ Topics](#-browse-by-topic) · [📅 Weekly Archive](weekly/README.md) · [🏛️ Hall of Fame](weekly/hall-of-fame.md) · [📖 Surveys](#-recommended-surveys) · [🤝 Contribute](CONTRIBUTING.md)
 
 </div>
 
@@ -28,98 +26,25 @@
 See [Weekly Archive](weekly/README.md) and [Hall of Fame](weekly/hall-of-fame.md).
 <!-- WEEKLY:END -->
 
-## 🧭 Quick Navigation
+---
 
-| Artifact | Focus | Explore by task | Papers |
-|:--|:--|:--|:--|
-| [🖼️ Image 2D](10-image-2d/README.md) | Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference. | [text-to-image](10-image-2d/text-to-image.md) · [controllable-generation](10-image-2d/controllable-generation.md) · [model-efficiency](10-image-2d/model-efficiency.md) · [alignment-safety](10-image-2d/alignment-safety.md) · [personalization](10-image-2d/personalization.md) | `██████████████` 56 |
-| [🎬 Video](20-video/README.md) | Final output is a video: text-to-video, image-to-video, editing, human animation, long video, and surround-view video. | [text-to-video](20-video/text-to-video.md) · [image-to-video](20-video/image-to-video.md) · [video-editing](20-video/video-editing.md) · [human-animation](20-video/human-animation.md) · [long-video](20-video/long-video.md) · [autonomous-driving-video](20-video/autonomous-driving-video.md) | `█████████████░` 51 |
-| [🧊 3D Object / Asset](30-3d-object-asset/README.md) | Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation. | [3d-shape-generation](30-3d-object-asset/3d-shape-generation.md) · [image-to-3d](30-3d-object-asset/image-to-3d.md) · [text-to-3d](30-3d-object-asset/text-to-3d.md) · [part-aware-generation](30-3d-object-asset/part-aware-generation.md) · [articulated-asset](30-3d-object-asset/articulated-asset.md) · [human-avatar](30-3d-object-asset/human-avatar.md) | `██████████░░░░` 40 |
-| [🏙️ 3D Scene](40-3d-scene/README.md) | Multi-object 3D scene generation, indoor/outdoor scenes, layout-conditioned scenes, and scene editing. | [general-scene-generation](40-3d-scene/general-scene-generation.md) · [layout-to-scene](40-3d-scene/layout-to-scene.md) · [agentic-scene-generation](40-3d-scene/agentic-scene-generation.md) · [indoor](40-3d-scene/indoor.md) · [outdoor-urban](40-3d-scene/outdoor-urban.md) · [single-image-to-scene](40-3d-scene/single-image-to-scene.md) · [scene-editing](40-3d-scene/scene-editing.md) | `█████████░░░░░` 36 |
-| [🌍 4D Dynamic Scene / World](50-4d-dynamic-scene-world/README.md) | Dynamic 3D/4D scenes, world models, simulation, autonomous driving, game worlds, and interactive world modeling. | [autonomous-driving](50-4d-dynamic-scene-world/autonomous-driving.md) · [4d-generation](50-4d-dynamic-scene-world/4d-generation.md) · [world-models](50-4d-dynamic-scene-world/world-models.md) · [simulation](50-4d-dynamic-scene-world/simulation.md) · [game-worlds](50-4d-dynamic-scene-world/game-worlds.md) · [robotics-worlds](50-4d-dynamic-scene-world/robotics-worlds.md) | `██████░░░░░░░░` 24 |
+## 🧭 Browse by Track
 
-<details>
-<summary><b>📐 How each pipeline works</b> (click to expand)</summary>
+| Track | Papers | Direct Task Shortcuts |
+|:--|--:|:--|
+| **[🖼️ Image 2D](10-image-2d/README.md)**<br><sub>Final output is a single 2D image: text-to-image, controllable generation, safety, personalization, and efficient inference.</sub> | **56** | [text-to-image](10-image-2d/text-to-image.md) · [controllable-generation](10-image-2d/controllable-generation.md) · [model-efficiency](10-image-2d/model-efficiency.md) · [alignment-safety](10-image-2d/alignment-safety.md) · [personalization](10-image-2d/personalization.md) |
+| **[🎬 Video](20-video/README.md)**<br><sub>Final output is a video: text-to-video, image-to-video, editing, human animation, long video, and surround-view video.</sub> | **51** | [text-to-video](20-video/text-to-video.md) · [image-to-video](20-video/image-to-video.md) · [video-editing](20-video/video-editing.md) · [human-animation](20-video/human-animation.md) · [long-video](20-video/long-video.md) · [autonomous-driving-video](20-video/autonomous-driving-video.md) |
+| **[🧊 3D Object / Asset](30-3d-object-asset/README.md)**<br><sub>Reusable 3D objects, assets, avatars, articulated assets, and part-aware generation.</sub> | **40** | [3d-shape-generation](30-3d-object-asset/3d-shape-generation.md) · [image-to-3d](30-3d-object-asset/image-to-3d.md) · [text-to-3d](30-3d-object-asset/text-to-3d.md) · [part-aware-generation](30-3d-object-asset/part-aware-generation.md) · [articulated-asset](30-3d-object-asset/articulated-asset.md) · [human-avatar](30-3d-object-asset/human-avatar.md) |
+| **[🏙️ 3D Scene](40-3d-scene/README.md)**<br><sub>Multi-object 3D scene generation, indoor/outdoor scenes, layout-conditioned scenes, and scene editing.</sub> | **36** | [general-scene-generation](40-3d-scene/general-scene-generation.md) · [layout-to-scene](40-3d-scene/layout-to-scene.md) · [agentic-scene-generation](40-3d-scene/agentic-scene-generation.md) · [indoor](40-3d-scene/indoor.md) · [outdoor-urban](40-3d-scene/outdoor-urban.md) · [single-image-to-scene](40-3d-scene/single-image-to-scene.md) · [scene-editing](40-3d-scene/scene-editing.md) |
+| **[🌍 4D Dynamic Scene / World](50-4d-dynamic-scene-world/README.md)**<br><sub>Dynamic 3D/4D scenes, world models, simulation, autonomous driving, game worlds, and interactive world modeling.</sub> | **24** | [autonomous-driving](50-4d-dynamic-scene-world/autonomous-driving.md) · [4d-generation](50-4d-dynamic-scene-world/4d-generation.md) · [world-models](50-4d-dynamic-scene-world/world-models.md) · [simulation](50-4d-dynamic-scene-world/simulation.md) · [game-worlds](50-4d-dynamic-scene-world/game-worlds.md) · [robotics-worlds](50-4d-dynamic-scene-world/robotics-worlds.md) |
 
-| Artifact | Input | Core generator | Output |
-|:--|:--|:--|:--|
-| 🖼️ Image 2D | Prompt / control / reference | Diffusion · Flow · AR · VQ latent generator | Single 2D image |
-| 🎬 Video | Text / image / pose / camera | Spatiotemporal DiT · diffusion · flow | Video clip / surround-view sequence |
-| 🧊 3D Object / Asset | Text / image / multiview prior | 3D latent generator + geometry / texture heads | Reusable 3D object / asset / avatar |
-| 🏙️ 3D Scene | Text / layout / room constraints | 3DGS · mesh · occupancy scene generator | Static multi-object 3D scene |
-| 🌍 4D Dynamic Scene / World | Observation / action / trajectory | Dynamics rollout · world model · simulator | Interactive world / closed-loop simulation |
+## 🏢 Browse by Organization
 
-</details>
+[Tencent Hunyuan](91-organizations/tencent-hunyuan.md) `(11)` · [ByteDance Seed](91-organizations/bytedance-seed.md) `(2)` · [Alibaba VILab](91-organizations/alibaba-vilab.md) `(2)` · [Independent](91-organizations/independent.md) `(1)` · [THUDM](91-organizations/thudm.md) `(1)` · [NVIDIA](91-organizations/nvidia.md) `(1)` · [NUS](91-organizations/nus.md) `(1)` · [Black Forest Labs](91-organizations/black-forest-labs.md) `(1)` · [Tencent ARC](91-organizations/tencent-arc.md) `(1)` · [Alibaba](91-organizations/alibaba.md) `(1)` · [NVLabs](91-organizations/nvlabs.md) `(1)` · [StepFun](91-organizations/stepfun.md) `(1)` · [Microsoft Research](91-organizations/microsoft-research.md) `(1)` · [Alibaba Wan](91-organizations/alibaba-wan.md) `(1)` · [Waymo](91-organizations/waymo.md) `(1)` · [ByteDance](91-organizations/bytedance.md) `(1)` · [All organizations →](91-organizations/README.md)
 
-## 🏷️ Explore by Topic
+## 🏷️ Browse by Topic
 
-| Topic | Papers |
-|:--|:--|
-| [autonomous-driving](90-topics/autonomous-driving.md) | `██████████████` 18 |
-| [indoor](90-topics/indoor.md) | `████████░░░░░░` 10 |
-| [human-avatar](90-topics/human-avatar.md) | `███████░░░░░░░` 9 |
-| [gameplay](90-topics/gameplay.md) | `████░░░░░░░░░░` 5 |
-| [outdoor-urban](90-topics/outdoor-urban.md) | `██░░░░░░░░░░░░` 3 |
-| [robotics](90-topics/robotics.md) | `█░░░░░░░░░░░░░` 1 |
-| [tabletop](90-topics/tabletop.md) | `█░░░░░░░░░░░░░` 1 |
-
-## 🏢 Explore by Organization
-
-| Organization | Papers |
-|:--|:--|
-| [Tencent Hunyuan](91-organizations/tencent-hunyuan.md) | `██████████████` 11 |
-| [ByteDance Seed](91-organizations/bytedance-seed.md) | `███░░░░░░░░░░░` 2 |
-| [Alibaba VILab](91-organizations/alibaba-vilab.md) | `███░░░░░░░░░░░` 2 |
-| [Independent](91-organizations/independent.md) | `█░░░░░░░░░░░░░` 1 |
-| [THUDM](91-organizations/thudm.md) | `█░░░░░░░░░░░░░` 1 |
-| [NVIDIA](91-organizations/nvidia.md) | `█░░░░░░░░░░░░░` 1 |
-| [NUS](91-organizations/nus.md) | `█░░░░░░░░░░░░░` 1 |
-| [Black Forest Labs](91-organizations/black-forest-labs.md) | `█░░░░░░░░░░░░░` 1 |
-| [Tencent ARC](91-organizations/tencent-arc.md) | `█░░░░░░░░░░░░░` 1 |
-| [Alibaba](91-organizations/alibaba.md) | `█░░░░░░░░░░░░░` 1 |
-| [NVLabs](91-organizations/nvlabs.md) | `█░░░░░░░░░░░░░` 1 |
-| [StepFun](91-organizations/stepfun.md) | `█░░░░░░░░░░░░░` 1 |
-| [Microsoft Research](91-organizations/microsoft-research.md) | `█░░░░░░░░░░░░░` 1 |
-| [Alibaba Wan](91-organizations/alibaba-wan.md) | `█░░░░░░░░░░░░░` 1 |
-| [Waymo](91-organizations/waymo.md) | `█░░░░░░░░░░░░░` 1 |
-| [ByteDance](91-organizations/bytedance.md) | `█░░░░░░░░░░░░░` 1 |
-
-## 📬 Daily Candidate Inbox
-
-> Each report lists only candidates never surfaced before (a delta, not a re-scan). Weekly Top Picks are selected from the inbox plus redundant sources every Monday at 02:00 UTC ([selection rubric](docs/SELECTION.md) · [Hall of Fame](weekly/hall-of-fame.md)).
-
-| Report | Report | Report |
-| :-- | :-- | :-- |
-| [2026-11-22](metadata/candidates/2026-11-22/report.md) | [2026-11-21](metadata/candidates/2026-11-21/report.md) | [2026-11-20](metadata/candidates/2026-11-20/report.md) |
-| [2026-11-19](metadata/candidates/2026-11-19/report.md) | [2026-11-18](metadata/candidates/2026-11-18/report.md) | [2026-11-17](metadata/candidates/2026-11-17/report.md) |
-
-## ⚙️ Curation Pipeline
-
-```text
-Multi-source weekly harvest (arXiv + HF Daily Papers + GitHub + OpenAlex + Inbox)
-  -> Hard Gates H1-H8 -> 100-pt Rubric Scoring -> data/weekly/YYYY-Www.json
-  -> fast validate (deterministic, PR CI) -> build.py -> README & weekly archive
-  -> Wednesday deep validate (24h two-strike quarantine, never turns scheduled CI red)
-```
-
-<details>
-<summary><b>🛠️ Build &amp; maintenance commands</b></summary>
-
-```bash
-# fast: schema, vocab, dedupe, 2025+ scope, weekly schema -- no network
-python scripts/validate_data.py --skip-network
-
-# deep: live links, title similarity >= 0.90, 24h two-strike quarantine
-python scripts/validate_data.py --mode deep --write-cache --update-quarantine --soft-exit
-
-# generate weekly picks (dry-run)
-python scripts/weekly/pipeline.py --dry-run
-
-# rebuild README, weekly archive, and all generated pages
-python scripts/build.py
-```
-
-</details>
+[autonomous-driving](90-topics/autonomous-driving.md) `(18)` · [indoor](90-topics/indoor.md) `(10)` · [human-avatar](90-topics/human-avatar.md) `(9)` · [gameplay](90-topics/gameplay.md) `(5)` · [outdoor-urban](90-topics/outdoor-urban.md) `(3)` · [robotics](90-topics/robotics.md) `(1)` · [tabletop](90-topics/tabletop.md) `(1)` · [All topics →](90-topics/README.md)
 
 ## 📖 Recommended Surveys
 
@@ -130,8 +55,48 @@ python scripts/build.py
 
 ---
 
+<details>
+<summary><b>📐 Architecture, Selection Rubric &amp; Local Commands</b></summary>
+
+### Generative Pipelines by Track
+
+| Track | Input | Core Generator | Output |
+|:--|:--|:--|:--|
+| 🖼️ Image 2D | Prompt / control / reference | Diffusion · Flow · AR · VQ latent generator | Single 2D image |
+| 🎬 Video | Text / image / pose / camera | Spatiotemporal DiT · diffusion · flow | Video clip / surround-view sequence |
+| 🧊 3D Object / Asset | Text / image / multiview prior | 3D latent generator + geometry / texture heads | Reusable 3D object / asset / avatar |
+| 🏙️ 3D Scene | Text / layout / room constraints | 3DGS · mesh · occupancy scene generator | Static multi-object 3D scene |
+| 🌍 4D Dynamic Scene / World | Observation / action / trajectory | Dynamics rollout · world model · simulator | Interactive world / closed-loop simulation |
+
+### Self-Healing Curation Pipeline
+
+```text
+Multi-source weekly harvest (arXiv + HF Daily Papers + GitHub + OpenAlex + Inbox)
+  -> Hard Gates H1-H8 -> 100-pt Evidence Rubric -> data/weekly/YYYY-Www.json
+  -> Deterministic PR CI (fast validate + build diff) -> README & Weekly Archive
+  -> Wednesday Deep Validate (24h two-strike quarantine, never breaks scheduled CI)
+```
+
+### Documentation & Reports
+
+- [Selection Rubric (`docs/SELECTION.md`)](docs/SELECTION.md) — Hard gates H1–H8, 100-pt rubric, anti-gaming rules
+- [Operations Manual (`docs/OPERATIONS.md`)](docs/OPERATIONS.md) — Re-running weekly picks, quarantine release, thresholds
+- [Repository Audit (`docs/AUDIT.md`)](docs/AUDIT.md) — Root-cause analysis and 6 blocking-error fixes
+- [Validation Report (`metadata/validation/latest.md`)](metadata/validation/latest.md) — Fast & deep verification status
+
+### Local Commands
+
+```bash
+python scripts/validate_data.py --skip-network   # deterministic validation
+python scripts/weekly/pipeline.py --dry-run      # preview weekly top picks
+python scripts/build.py                          # rebuild README & all pages
+python -m unittest discover -s tests -v          # run offline test suite
+```
+
+</details>
+
 <div align="center">
 
-**If this repository helps your research or engineering work, please consider giving it a star.**
+<sub>Every displayed fact is verifiable from primary sources · If this catalog helps your research, consider giving it a ⭐.</sub>
 
 </div>

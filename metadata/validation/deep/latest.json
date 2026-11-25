@@ -1,41 +1,17 @@
 {
-  "blocking_errors": 6,
-  "commit": "7a04e53d04d06fca1fa98976b1b8db68cd31a49c",
+  "blocking_errors": 2,
+  "commit": "5f8914e343fd014f155e4a30120257f6d1ae4565",
   "findings": [
     {
       "code": "semantic.paper_mismatch",
-      "location": "10-image-2d/relevance-feedback-t2i (image_2d.jsonl:15)",
-      "message": "Paper title mismatch. Expected `Relevance Feedback in Text-to-Image Diffusion: A Training-Free And Model-Agnostic Interactive Framework`; arXiv API returned `Bridging the Intention-Expression Gap: Aligning Multi-Dimensional Preferences via Hierarchical Relevance Feedback in Text-to-Image Diffusion` (score=0.56).",
+      "location": "30-3d-object-asset/pointcloud-ar-upsampling (object_3d.jsonl:17)",
+      "message": "Paper title mismatch. Expected `3D Point Cloud Generation via Autoregressive Up-sampling`; arXiv API returned `PointNSP: Autoregressive 3D Point Cloud Generation with Next-Scale Level-of-Detail Prediction` (score=0.80).",
       "severity": "error"
     },
     {
       "code": "semantic.paper_mismatch",
-      "location": "20-video/seedance (video.jsonl:15)",
-      "message": "Paper title mismatch. Expected `Seedance 1.0: Exploring the Boundaries of Video Generation Models`; arXiv API returned `A Question Bank to Assess AI Inclusivity: Mapping out the Journey from Diversity Errors to Inclusion Excellence` (score=0.38).",
-      "severity": "error"
-    },
-    {
-      "code": "semantic.paper_mismatch",
-      "location": "20-video/step-video (video.jsonl:18)",
-      "message": "Paper title mismatch. Expected `Step-Video-T2V: A State-of-the-Art Text-to-Video Model`; arXiv API returned `Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model` (score=0.55).",
-      "severity": "error"
-    },
-    {
-      "code": "semantic.paper_mismatch",
-      "location": "20-video/wan2.1 (video.jsonl:10)",
-      "message": "Paper title mismatch. Expected `Wan 2.1: Open-Source Video Foundation Model`; arXiv API returned `Wan: Open and Advanced Large-Scale Video Generative Models` (score=0.59).",
-      "severity": "error"
-    },
-    {
-      "code": "semantic.paper_mismatch",
-      "location": "30-3d-object-asset/squeeze3d (object_3d.jsonl:12)",
-      "message": "Paper title mismatch. Expected `Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural Compressor`; arXiv API returned `Squeeze3D: Extreme Neural Compression with Latent Space Bridging` (score=0.51).",
-      "severity": "error"
-    },
-    {
-      "code": "semantic.paper_mismatch",
-      "location": "40-3d-scene/respace (scene_3d.jsonl:13)",
-      "message": "Paper title mismatch. Expected `ReSpace: Text-Driven 3D Scene Synthesis and Editing with Preference Alignment`; arXiv API returned `ReSpace: Text-Driven Autoregressive 3D Indoor Scene Synthesis and Editing` (score=0.75).",
+      "location": "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)",
+      "message": "Paper title mismatch. Expected `HY-World 1.5 (WorldPlay): A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency`; arXiv API returned `WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling` (score=0.80).",
       "severity": "error"
     },
     {
@@ -45,33 +21,9 @@
       "severity": "warning"
     },
     {
-      "code": "metadata.organization",
-      "location": "10-image-2d/flux (image_2d.jsonl:49)",
-      "message": "Repository owner suggests organization `Black Forest Labs`.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "10-image-2d/ifsq (image_2d.jsonl:38)",
-      "message": "Repository owner suggests organization `Tencent Hunyuan`.",
-      "severity": "warning"
-    },
-    {
       "code": "semantic.paper_unverified",
       "location": "10-image-2d/pt-t2iv (image_2d.jsonl:37)",
       "message": "Paper title could not be verified because the remote site returned a bot-challenge or generic page.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "10-image-2d/sana-1.5 (image_2d.jsonl:48)",
-      "message": "Repository owner suggests organization `NVLabs`.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "20-video/cogvideox (video.jsonl:16)",
-      "message": "Repository owner suggests organization `THUDM`.",
       "severity": "warning"
     },
     {
@@ -87,57 +39,15 @@
       "severity": "warning"
     },
     {
-      "code": "metadata.organization",
-      "location": "20-video/unianimate-dit (video.jsonl:51)",
-      "message": "Repository owner suggests organization `Alibaba VILab`.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "20-video/vace (video.jsonl:39)",
-      "message": "Repository owner suggests organization `Alibaba VILab`.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "20-video/wan2.1 (video.jsonl:10)",
-      "message": "Repository owner suggests organization `Alibaba Wan`.",
-      "severity": "warning"
-    },
-    {
       "code": "metadata.missing_paper",
       "location": "30-3d-object-asset/hunyuan3d-2.1 (object_3d.jsonl:27)",
       "message": "Missing `paper` link.",
       "severity": "warning"
     },
     {
-      "code": "metadata.organization",
-      "location": "30-3d-object-asset/instantmesh (object_3d.jsonl:31)",
-      "message": "Repository owner suggests organization `Tencent ARC`.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "50-4d-dynamic-scene-world/hy-worldplay (world_4d.jsonl:19)",
-      "message": "Repository owner suggests organization `Tencent Hunyuan`.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "50-4d-dynamic-scene-world/nvidia-cosmos (world_4d.jsonl:20)",
-      "message": "Repository owner suggests organization `NVIDIA`.",
-      "severity": "warning"
-    },
-    {
-      "code": "metadata.organization",
-      "location": "50-4d-dynamic-scene-world/waymax (world_4d.jsonl:22)",
-      "message": "Repository owner suggests organization `Waymo`.",
-      "severity": "warning"
-    },
-    {
       "code": "date.precision",
       "location": "catalog",
-      "message": "207 records do not have `published_at`; day-level freshness cannot be guaranteed until they are backfilled.",
+      "message": "202 records do not have `published_at`; day-level freshness cannot be guaranteed until they are backfilled.",
       "severity": "warning"
     },
     {
@@ -159,11 +69,11 @@
       "severity": "notice"
     }
   ],
-  "generated_at": "2026-11-16 11:23:19 UTC",
+  "generated_at": "2026-11-25 13:57:15 UTC",
   "mode": "deep",
   "notices": 3,
   "records_checked": 207,
   "status": "fail",
   "version": 2,
-  "warnings": 17
+  "warnings": 6
 }

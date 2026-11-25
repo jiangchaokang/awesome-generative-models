@@ -1,6 +1,21 @@
 {
-  "version": 1,
-  "updated_at": "2026-11-23T00:00:00Z",
-  "pending_strikes": {},
-  "entries": {}
+  "entries": {},
+  "pending_strikes": {
+    "30-3d-object-asset/pointcloud-ar-upsampling": {
+      "first_detected_at": "2026-11-25T13:57:15Z",
+      "last_detected_at": "2026-11-25T13:57:15Z",
+      "message": "Paper title mismatch. Expected `3D Point Cloud Generation via Autoregressive Up-sampling`; arXiv API returned `PointNSP: Autoregressive 3D Point Cloud Generation with Next-Scale Level-of-Detail Prediction` (score=0.80).",
+      "reason_code": "semantic.paper_mismatch",
+      "strikes": 1
+    },
+    "50-4d-dynamic-scene-world/hy-worldplay": {
+      "first_detected_at": "2026-11-25T13:57:15Z",
+      "last_detected_at": "2026-11-25T13:57:15Z",
+      "message": "Paper title mismatch. Expected `HY-World 1.5 (WorldPlay): A Systematic Framework for Interactive World Modeling with Real-Time Latency and Geometric Consistency`; arXiv API returned `WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling` (score=0.80).",
+      "reason_code": "semantic.paper_mismatch",
+      "strikes": 1
+    }
+  },
+  "updated_at": "2026-11-25T13:57:15Z",
+  "version": 1
 }
